@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="4Msph1fQcpWLr1g_IYiFtlesWNIoKgT2QirhKeE5ZmI" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>労務</title>
+  <style>
+    /* ─── 全体 ─── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── ヘッダー／バナー ─── */
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+
+    /* ─── モバイル調整 ─── */
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+
+    /* ─── 本文コンテナ ─── */
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    /* ─── 求人詳細ブロック ─── */
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+  </style>
+  
+  <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "労務",
+  "description": "経験を活かして裁量権のある仕事をお任せ【総務・労務】",
+  "datePosted": "2025-05-11",
+  "validThrough": "2025-06-10T23:59",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社スイート・ピア"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都渋谷区南平台町3-8　渋谷TSKビル3階",
+      "addressLocality": "東京都",
+      "addressRegion": "JP",
+      "addressCountry": "JP",
+      "postalCode": ""
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3500000,
+      "maxValue": 4500000,
+      "unitText": "YEAR"
+    }
+  },
+  "workHours": "9:00〜18:00 所定労働時間：8時間、休憩1時間",
+  "jobBenefits": [
+    "◆社会保険完備",
+    "◆エステ半額利用",
+    "◆自社化粧品割引",
+    "◆結婚祝い金制度",
+    "◆家族手当(だんな手当、あしなが手当)",
+    "◆健康診断",
+    "◆福利厚生サービス（ベネフィットステーション）",
+    "◆産休・育休制度",
+    "◆時短勤務制度"
+  ],
+  "occupationalCategory": "事務・オフィスワーク"
+}
+      </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップページ",
+      "item": "https://job-site-y86.pages.dev/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "求人一覧",
+      "item": "https://job-site-y86.pages.dev/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "労務",
+      "item": "https://job-site-y86.pages.dev/job-3369.html"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="banner__inner">
+      <img
+        class="banner__icon"
+        src="assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">
+          あなたの新しいキャリアを、私たちが全力サポートします
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>労務</h1>
+      <p><em>経験を活かして裁量権のある仕事をお任せ【総務・労務】</em></p>
+      <p><strong>会社名：</strong>株式会社スイート・ピア</p>
+      <p><strong>勤務地：</strong>東京都渋谷区南平台町3-8　渋谷TSKビル3階</p>
+      <p><strong>雇用形態：</strong>FULL_TIME</p>
+      <p><strong>給与：</strong>年収 350万円〜450万円</p>
+      <h3>仕事内容：</h3>
+      <p>・保険関連事務<br>・入退職手続き<br>・産休育休関連業務<br>・社内広報などの業務<br>・その他労務関連事務<br><br>【具体的には】<br>総務担当として以下のような業務をお任せ。<br><br>◼️保険関連、事務・入退職の手続き（各月10名程度）<br>◼️各省庁への報告関連業務<br>◼️産育休関連業務<br>◼️社宅関連業務<br>→社内広報や社宅管理・内見対応、手続き<br>◼️社員情報マスタ登録等関連業務<br>◼️社内備品管理<br>→庶務スタッフと一緒に行います。<br><br>これまで、経理や人事が分担して担当してきた業務なので困ったことがあれば、いつでもサポートできる体制です。<br>遠慮なく相談してくださいね。</p>
+      <h3>勤務時間：</h3>
+      <p>9:00〜18:00<br>所定労働時間：8時間、休憩1時間</p>
+      <h3>休暇・休日：</h3>
+      <p>完全週休2日制（土日祝）<br><br>◆産休・育休・・・取得率100％・復職率98%以上！<br>◆有給休暇（10日〜勤続年数に応じて最大20日）<br>◆忌引き<br>など</p>
+      <h3>受動喫煙対策：</h3>
+      <p>受動喫煙対策： 禁煙</p>
+      <h3>福利厚生：</h3>
+      <ul><li>◆社会保険完備</li><li>◆エステ半額利用</li><li>◆自社化粧品割引</li><li>◆結婚祝い金制度</li><li>◆家族手当(だんな手当、あしなが手当)</li><li>◆健康診断</li><li>◆福利厚生サービス（ベネフィットステーション）</li><li>◆産休・育休制度</li><li>◆時短勤務制度</li></ul>
+      <p>
+        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%88%E3%83%BB%E3%83%94%E3%82%A2" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="4Msph1fQcpWLr1g_IYiFtlesWNIoKgT2QirhKeE5ZmI" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>個人営業</title>
+  <style>
+    /* ─── 全体 ─── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── ヘッダー／バナー ─── */
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+
+    /* ─── モバイル調整 ─── */
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+
+    /* ─── 本文コンテナ ─── */
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    /* ─── 求人詳細ブロック ─── */
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+  </style>
+  
+  <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "個人営業",
+  "description": "【正社員/名古屋】子犬子猫のバイヤーの新しい仲間を募集します！",
+  "datePosted": "2025-05-11",
+  "validThrough": "2025-06-10T23:59",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社AHB"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "愛知県名古屋市北区辻町5-58",
+      "addressLocality": "愛知県",
+      "addressRegion": "JP",
+      "addressCountry": "JP",
+      "postalCode": ""
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3500000,
+      "maxValue": 5000000,
+      "unitText": "YEAR"
+    }
+  },
+  "workHours": "1ヶ月単位の変形労働時間制（週平均40時間以内） ※残業は月20時間以下と少なめです。 ＜勤務例＞ 9：30～18：30（実働8時間） 9：00～19：00（実働9時間） 9：30～17：30（実働7時間）",
+  "jobBenefits": [
+    "諸手当：交通費4万/月・残業手当",
+    "昇給：年１回",
+    "賞与：年２回＋決算賞与(業績による/過去６年連続支給実績あり)",
+    "福利厚生：健康保険・厚生年金・雇用保険・労災/労働組合/退職金制度/その他資格取得制度・教育制度あり"
+  ],
+  "occupationalCategory": "営業"
+}
+      </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップページ",
+      "item": "https://job-site-y86.pages.dev/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "求人一覧",
+      "item": "https://job-site-y86.pages.dev/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "個人営業",
+      "item": "https://job-site-y86.pages.dev/job-1900.html"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="banner__inner">
+      <img
+        class="banner__icon"
+        src="assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">
+          あなたの新しいキャリアを、私たちが全力サポートします
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>個人営業</h1>
+      <p><em>【正社員/名古屋】子犬子猫のバイヤーの新しい仲間を募集します！</em></p>
+      <p><strong>会社名：</strong>株式会社AHB</p>
+      <p><strong>勤務地：</strong>愛知県名古屋市北区辻町5-58</p>
+      <p><strong>雇用形態：</strong>FULL_TIME</p>
+      <p><strong>給与：</strong>年収 350万円〜500万円</p>
+      <h3>仕事内容：</h3>
+      <p>子犬や子猫の仕入れ、金額交渉などをお任せします。<br><br>【具体的には・・・？】<br>・お取引先様を訪問<br>・子犬や子猫の健康チェック<br>・外貌を踏まえた金額交渉や仕入れなど<br>・新規お取引先様の開拓<br>・書類作成などの事務作業<br><br>★とあるバイヤーの１日★<br>9：00　出社→お取引先様を訪問<br>10：00　子犬や子猫の仕入れ<br>13：00　休憩（外出先で済ませることが多いです）<br>14：00　子犬や子猫の仕入れ<br>18：30　帰社→事務作業を終え帰宅<br>※１日に複数のお取引先様を訪問することが多いです</p>
+      <h3>勤務時間：</h3>
+      <p>1ヶ月単位の変形労働時間制（週平均40時間以内）<br>※残業は月20時間以下と少なめです。<br>＜勤務例＞<br>9：30～18：30（実働8時間）<br>9：00～19：00（実働9時間）<br>9：30～17：30（実働7時間）</p>
+      <h3>休暇・休日：</h3>
+      <p>週休2日制（月間休日8～9日）<br>・有給休暇（初年度10日）<br>・慶弔休暇<br>・上期下期休暇<br>・育児介護休業<br>・業務上傷病休業<br>・赴任休暇<br>・ストック有給休暇<br>・ペット忌引き</p>
+      <h3>受動喫煙対策：</h3>
+      <p>受動喫煙対策： 喫煙スペースあり</p>
+      <h3>福利厚生：</h3>
+      <ul><li>諸手当：交通費4万/月・残業手当</li><li>昇給：年１回</li><li>賞与：年２回＋決算賞与(業績による/過去６年連続支給実績あり)</li><li>福利厚生：健康保険・厚生年金・雇用保険・労災/労働組合/退職金制度/その他資格取得制度・教育制度あり</li></ul>
+      <p>
+        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAHB" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
+</body>
+</html>

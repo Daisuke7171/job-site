@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://job-site-y86.pages.dev/sitemap.xml

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="4Msph1fQcpWLr1g_IYiFtlesWNIoKgT2QirhKeE5ZmI" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Webサービス系エンジニア・プログラマ</title>
+  <style>
+    /* ─── 全体 ─── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── ヘッダー／バナー ─── */
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+
+    /* ─── モバイル調整 ─── */
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+
+    /* ─── 本文コンテナ ─── */
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    /* ─── 求人詳細ブロック ─── */
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+  </style>
+  
+  <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "Webサービス系エンジニア・プログラマ",
+  "description": "【経験者エンジニア大募集】1年以上の経験で書類選考通過率アップ！昨年立ち上がったスタートアップ事業◎",
+  "datePosted": "2025-05-11",
+  "validThrough": "2025-06-10T23:59",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社Onfleek"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都新宿区西新宿7-5-2 西新宿ビジネスキューブ2階",
+      "addressLocality": "東京都",
+      "addressRegion": "JP",
+      "addressCountry": "JP",
+      "postalCode": ""
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 10000000,
+      "unitText": "YEAR"
+    }
+  },
+  "workHours": "9:00〜18:00　(所定労働時間8時間、休憩1時間) 夜間勤務：状況に応じてある  勤務地は一都三県の各プロジェクト先に配属になります。【客先常駐勤務】",
+  "jobBenefits": [
+    "•社会保険完備（雇用・労災・健康・厚生年金）",
+    "•交通費全額支給",
+    "•資格取得手当",
+    "•住宅手当(3年目以降〜)",
+    "•役職手当",
+    "•退職金",
+    "•定期健康診断",
+    "•私服勤務OK",
+    "•パソコン支給あり",
+    "•社員旅行（全額会社負担） ",
+    "•各種社内イベントあり（BBQ、忘年会、新年会など）※自由参加",
+    "•リーダー研修",
+    "•管理職研修",
+    "•部活動（野球・ゴルフ・麻雀等）",
+    "•結婚お祝い金　一時的に支給",
+    "•配偶者手当　毎月支給",
+    "•子ども手当　毎月支給",
+    "•ランチ会（補助制度あり）",
+    "•読書手当制度",
+    "会社負担で月3冊まで購入可能（オフィスに保管）",
+    "•副業OK　申請必須",
+    "•夜ご飯ライス無料"
+  ],
+  "occupationalCategory": "IT・クリエイティブ"
+}
+      </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップページ",
+      "item": "https://job-site-y86.pages.dev/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "求人一覧",
+      "item": "https://job-site-y86.pages.dev/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Webサービス系エンジニア・プログラマ",
+      "item": "https://job-site-y86.pages.dev/job-1137.html"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="banner__inner">
+      <img
+        class="banner__icon"
+        src="assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">
+          あなたの新しいキャリアを、私たちが全力サポートします
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>Webサービス系エンジニア・プログラマ</h1>
+      <p><em>【経験者エンジニア大募集】1年以上の経験で書類選考通過率アップ！昨年立ち上がったスタートアップ事業◎</em></p>
+      <p><strong>会社名：</strong>株式会社Onfleek</p>
+      <p><strong>勤務地：</strong>東京都新宿区西新宿7-5-2 西新宿ビジネスキューブ2階</p>
+      <p><strong>雇用形態：</strong>FULL_TIME</p>
+      <p><strong>給与：</strong>年収 300万円〜1,000万円</p>
+      <h3>仕事内容：</h3>
+      <p>システム開発やWebアプリケーション開発をお任せします。<br>上流工程から開発、運用、保守まで一気通貫して業務に携わることが可能です。<br>得意な分野・言語、キャリアプラン、就業環境、勤務地など、<br>ご希望を確認した上で適切なプロジェクトにアサインします。<br><br>•プロジェクト例<br>・プロダクト開発・業務系システム開発：通信インフラ系、官公庁系、金融系、生損保系 、他<br>・Web系開発：ECサイト、情報誌系サイト、会員管理システム、アプリ開発　ゲーム開発 他<br><br> •開発環境例<br>Java(Spring)、JavaScript(Vue、React)、PHP(Laravel)、C#、.NET、Python、Ruby、Delphi、COBOL、Flutter、Android(TM)、Objective-C、Swift<br><br><br>インフラエンジニアとしては要件定義・設計・構築・検証・運用・監視業務などをご担当頂きます。<br>まずはネットワークエンジニア、サーバーエンジニアとしてご自身のご経験に沿った実務に就いていただき、<br>その後、ご希望やご経験、キャリアアップに合わせた業務に従事していただきます。<br><br>•担当システム：基幹業務システム、情報系システム、Web 他<br>•開発環境・OS：UNIX、Linux、Windows 他<br>•Server：WEB、Mail、DNS、Proxy 他<br>•Network：router、SW、Firewall製品 他<br>•クラウド：AWS、Azure、GCP</p>
+      <h3>勤務時間：</h3>
+      <p>9:00〜18:00　(所定労働時間8時間、休憩1時間)<br>夜間勤務：状況に応じてある<br><br>勤務地は一都三県の各プロジェクト先に配属になります。【客先常駐勤務】</p>
+      <h3>休暇・休日：</h3>
+      <p>•週休2日制(プロジェクトに準ずる)<br>•祝日休暇(プロジェクトに準ずる)<br>•年末年始休暇（プロジェクトに準ずる）<br>•GW休暇(プロジェクトに準ずる)<br>•夏季休暇(プロジェクトに準ずる)<br>•慶弔休暇 <br>•有給休暇（10日～勤続年数に応じて最大20日）<br>•産前・産後休暇<br>•育児休暇<br>•介護休暇<br>•特別休暇<br>•リフレッシュ休暇</p>
+      <h3>受動喫煙対策：</h3>
+      <p>受動喫煙対策： 喫煙スペースあり</p>
+      <h3>福利厚生：</h3>
+      <ul><li>•社会保険完備（雇用・労災・健康・厚生年金）</li><li>•交通費全額支給</li><li>•資格取得手当</li><li>•住宅手当(3年目以降〜)</li><li>•役職手当</li><li>•退職金</li><li>•定期健康診断</li><li>•私服勤務OK</li><li>•パソコン支給あり</li><li>•社員旅行（全額会社負担） </li><li>•各種社内イベントあり（BBQ、忘年会、新年会など）※自由参加</li><li>•リーダー研修</li><li>•管理職研修</li><li>•部活動（野球・ゴルフ・麻雀等）</li><li>•結婚お祝い金　一時的に支給</li><li>•配偶者手当　毎月支給</li><li>•子ども手当　毎月支給</li><li>•ランチ会（補助制度あり）</li><li>•読書手当制度</li><li>会社負担で月3冊まで購入可能（オフィスに保管）</li><li>•副業OK　申請必須</li><li>•夜ご飯ライス無料</li></ul>
+      <p>
+        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEOnfleek" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
+</body>
+</html>

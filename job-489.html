@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="4Msph1fQcpWLr1g_IYiFtlesWNIoKgT2QirhKeE5ZmI" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Webサービス系エンジニア・プログラマ</title>
+  <style>
+    /* ─── 全体 ─── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── ヘッダー／バナー ─── */
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+
+    /* ─── モバイル調整 ─── */
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+
+    /* ─── 本文コンテナ ─── */
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    /* ─── 求人詳細ブロック ─── */
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+  </style>
+  
+  <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "Webサービス系エンジニア・プログラマ",
+  "description": "AIエンジニア（PJリーダー候補）／AIプロジェクト／在宅ワーク",
+  "datePosted": "2025-05-11",
+  "validThrough": "2025-06-10T23:59",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "エッジテクノロジー株式会社"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都千代田区神田須田町1-32-7　クレス不動産神田ビル5階",
+      "addressLocality": "東京都",
+      "addressRegion": "JP",
+      "addressCountry": "JP",
+      "postalCode": ""
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 5000000,
+      "maxValue": 8000000,
+      "unitText": "YEAR"
+    }
+  },
+  "workHours": "9:00〜18:00 所定労働時間：8時間、休憩1時間（休憩は個々のタイミングで取得） ※出社時は通勤ラッシュを避けて7時～10時の間で出勤時間を調整可。 ※18時以降に業務予定がある場合、日単位で出勤調整可。例：10時～19時勤務等",
+  "jobBenefits": [
+    "・社会保険完備（健康／労災／雇用／厚生年金）（関東ITS健康保険組合）",
+    "・健康診断",
+    "・通勤交通費（月3万上限）",
+    "・副業OK（規定に順ずる）",
+    "・有給時間単位の取得OK（年間5日分まで）",
+    "・貸与品（PC、モニター、マウス、ポケットWi-Fi、携帯）",
+    "・資格取得費支援、セミナー参加支援",
+    "・AIジョブカレ養成スクール受講無料",
+    "・書籍購入制度",
+    "・シャッフルランチ（月1実施）",
+    "・部活動支援",
+    "・メンター制度（ランチ・ディナー費用支援）"
+  ],
+  "occupationalCategory": "IT・クリエイティブ"
+}
+      </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップページ",
+      "item": "https://job-site-y86.pages.dev/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "求人一覧",
+      "item": "https://job-site-y86.pages.dev/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Webサービス系エンジニア・プログラマ",
+      "item": "https://job-site-y86.pages.dev/job-489.html"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="banner__inner">
+      <img
+        class="banner__icon"
+        src="assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">
+          あなたの新しいキャリアを、私たちが全力サポートします
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>Webサービス系エンジニア・プログラマ</h1>
+      <p><em>AIエンジニア（PJリーダー候補）／AIプロジェクト／在宅ワーク</em></p>
+      <p><strong>会社名：</strong>エッジテクノロジー株式会社</p>
+      <p><strong>勤務地：</strong>東京都千代田区神田須田町1-32-7　クレス不動産神田ビル5階</p>
+      <p><strong>雇用形態：</strong>FULL_TIME</p>
+      <p><strong>給与：</strong>年収 500万円〜800万円</p>
+      <h3>仕事内容：</h3>
+      <p>【仕事内容】<br>当社に依頼された様々な業界のクライアントのデータ活用、深層学習に関するプロジェクト（主に受託開発）に自社社員のコンサルタントや技術顧問と共に、深層学習エンジニアとしての経験を活かして携わっていただきます。<br>プロジェクトはクライアントの業務内容をヒアリングした上でデータを活用した最適なソリューションを提案・システム化まで行い業務の改善に貢献します。<br>また、チーム体制によってはジュニアクラスである当社員の教育にも携わっていただきます。<br>　以下内容をチームメンバーもしくは、クライアントサイドのメンバーと協力しながら進めます。<br><br>社内のPMとチーム体制でプロジェクトを進めていただきますので、資料や見積もり（細かい条件設定等）の作成やスコープ、スケジュール管理など、煩わしいビジネスサイドの業務に悩まず開発に集中できる環境です。 また、技術的な課題については状況に応じて技術顧問と相談しながら進めることが可能です。<br><br>　※深層学習案件以外も多く、深層学習案件のみのアサインとならない事があります。<br>　・分析提案・要件定義<br>　・データ収集・分析基盤構築・ETL構築<br>　・データ前処理<br>　・モデル構築<br>　・モデル評価・報告書作成<br>　・モデルの可視化<br>　・構築したモデルを搭載するAPI開発<br>　・モデルの再評価を主としたMLOps<br>　・クライアントとの調整<br><br>•プロジェクト例<br>・位置情報を活用したイベント実施時の来場者測定及びイベントの効果検証に関する分析・可視化（統計分析、機械学習）<br>・商談ツール利用による取得した商談時の音声データをテキスト化したデータを活用したトップセールスマンに特有のテキスト内容に関する分析（機械学習、ディープラーニング）<br>・大手リース会社が保有するリース物品における需要予測と売買タイミングの選択肢の最適化検討（統計分析、機械学習）<br>・某国立大学および企業の共同研究にてサプライチェーン全体の最適化をもとに行われた社会実験のデータを用いた仮説検証（統計分析）<br>・製造現場にて取得されている生産、機器、人の入力データをデータウェアハウスに構築、可視化するためのシステム開発（データ活用）<br>・広告配信用のデータ収集基盤構築 およびワークフロー構築、データ活用のためのGUIツールの開発、クライアント内展開（データ活用）<br>・動画撮影時にリアルタイムで特定の人以外にモザイクを自動でかけるiOS向け顔認識エンジンの開発（深層学習/画像処理）<br>・飲料品購入のキャンペーンにおいて、アップロードされたレシート画像からキャンペーン条件を満たすか判定を行うAPI開発(OCR、API開発、モデル構築)</p>
+      <h3>勤務時間：</h3>
+      <p>9:00〜18:00<br>所定労働時間：8時間、休憩1時間（休憩は個々のタイミングで取得）<br>※出社時は通勤ラッシュを避けて7時～10時の間で出勤時間を調整可。<br>※18時以降に業務予定がある場合、日単位で出勤調整可。例：10時～19時勤務等</p>
+      <h3>休暇・休日：</h3>
+      <p>・完全週休二日制（土日）<br>・祝日<br>・有給休暇（10日〜勤続年数に応じて最大20日）</p>
+      <h3>受動喫煙対策：</h3>
+      <p>受動喫煙対策： 禁煙
+受動喫煙対策（詳細）： 屋内原則禁煙（喫煙スペースあり）</p>
+      <h3>福利厚生：</h3>
+      <ul><li>・社会保険完備（健康／労災／雇用／厚生年金）（関東ITS健康保険組合）</li><li>・健康診断</li><li>・通勤交通費（月3万上限）</li><li>・副業OK（規定に順ずる）</li><li>・有給時間単位の取得OK（年間5日分まで）</li><li>・貸与品（PC、モニター、マウス、ポケットWi-Fi、携帯）</li><li>・資格取得費支援、セミナー参加支援</li><li>・AIジョブカレ養成スクール受講無料</li><li>・書籍購入制度</li><li>・シャッフルランチ（月1実施）</li><li>・部活動支援</li><li>・メンター制度（ランチ・ディナー費用支援）</li></ul>
+      <p>
+        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E3%82%A8%E3%83%83%E3%82%B8%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
+</body>
+</html>

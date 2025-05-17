@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="4Msph1fQcpWLr1g_IYiFtlesWNIoKgT2QirhKeE5ZmI" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>法人営業</title>
+  <style>
+    /* ─── 全体 ─── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── ヘッダー／バナー ─── */
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+
+    /* ─── モバイル調整 ─── */
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+
+    /* ─── 本文コンテナ ─── */
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    /* ─── 求人詳細ブロック ─── */
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+  </style>
+  
+  <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "法人営業",
+  "description": "【未経験OK】ソリューション営業/年休120日以上/インセン保障月10万/残業ほぼ無し",
+  "datePosted": "2025-05-11",
+  "validThrough": "2025-06-10T23:59",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社ピーアップ"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都足立区千住1-23-16",
+      "addressLocality": "東京都",
+      "addressRegion": "JP",
+      "addressCountry": "JP",
+      "postalCode": ""
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3500000,
+      "maxValue": 5500000,
+      "unitText": "YEAR"
+    }
+  },
+  "workHours": "1日8時間労働、休憩60分 フレックス制（9時～18時もしくは10時～19時）",
+  "jobBenefits": [
+    "各種社会保険完備",
+    "退職金制度あり（10年勤続以上が対象）",
+    "研修制度あり",
+    "保養所あり（沖縄・ハワイ・タイ）",
+    "独立支援制度（直近3年で3名の実績あり）",
+    "セミナー受講制度",
+    "最新デバイス購入制度",
+    "ホームカミング制度",
+    "持ち株会制度",
+    "出産立会い制度",
+    "事業部交流飲み会制度",
+    "住宅購入支援制度",
+    "出戻り制度",
+    "マネーレンディング制度",
+    "産前・産後休暇制度",
+    "子育てサポート制度"
+  ],
+  "occupationalCategory": "営業"
+}
+      </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップページ",
+      "item": "https://job-site-y86.pages.dev/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "求人一覧",
+      "item": "https://job-site-y86.pages.dev/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "法人営業",
+      "item": "https://job-site-y86.pages.dev/job-3097.html"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="banner__inner">
+      <img
+        class="banner__icon"
+        src="assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">
+          あなたの新しいキャリアを、私たちが全力サポートします
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>法人営業</h1>
+      <p><em>【未経験OK】ソリューション営業/年休120日以上/インセン保障月10万/残業ほぼ無し</em></p>
+      <p><strong>会社名：</strong>株式会社ピーアップ</p>
+      <p><strong>勤務地：</strong>東京都足立区千住1-23-16</p>
+      <p><strong>雇用形態：</strong>FULL_TIME</p>
+      <p><strong>給与：</strong>年収 350万円〜550万円</p>
+      <h3>仕事内容：</h3>
+      <p>当社が運営しているモバイルショップにご来店をされた<br>法人契約をご希望のお客様に対して通信機器の営業をします。<br><br>店頭で接客をするかたちではなく、北千住の事務所にて勤務をしていただき<br>店舗から上がってきた案件に対して対応する形となります。<br><br><br>・法人のお客様へお電話でアフターフォロー<br>・月平均10~15社程度の案件が上がってきます。<br>※凸アポなし</p>
+      <h3>勤務時間：</h3>
+      <p>1日8時間労働、休憩60分<br>フレックス制（9時～18時もしくは10時～19時）</p>
+      <h3>休暇・休日：</h3>
+      <p>完全週休2日（土日）、祝日<br>夏季休暇<br>年末年始休暇<br>有給休暇（10日〜最大20日）</p>
+      <h3>受動喫煙対策：</h3>
+      <p>受動喫煙対策： 禁煙</p>
+      <h3>福利厚生：</h3>
+      <ul><li>各種社会保険完備</li><li>退職金制度あり（10年勤続以上が対象）</li><li>研修制度あり</li><li>保養所あり（沖縄・ハワイ・タイ）</li><li>独立支援制度（直近3年で3名の実績あり）</li><li>セミナー受講制度</li><li>最新デバイス購入制度</li><li>ホームカミング制度</li><li>持ち株会制度</li><li>出産立会い制度</li><li>事業部交流飲み会制度</li><li>住宅購入支援制度</li><li>出戻り制度</li><li>マネーレンディング制度</li><li>産前・産後休暇制度</li><li>子育てサポート制度</li></ul>
+      <p>
+        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%94%E3%83%BC%E3%82%A2%E3%83%83%E3%83%97" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
+</body>
+</html>
