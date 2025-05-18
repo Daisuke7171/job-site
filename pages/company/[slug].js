@@ -6,13 +6,18 @@ import { slugify }     from '../../lib/slugify'
 
 export async function getStaticPaths() {
   const all = await fetchJobs()
-  // 会社名を重複除去したあと、空文字は落とす
-  const companies = Array.from(
-    new Set(all.map(j => j.company).filter(name => name && name.trim() !== ""))
-  )
+
+  // 空文字や null を除外して一意に
+  const companies = Array.from(new Set(
+    all
+      .map(j => j.company)
+      .filter(name => name && name.trim() !== "")
+  ))
+
   const paths = companies.map(name => ({
     params: { slug: slugify(name) }
   }))
+
   return { paths, fallback: false }
 }
 
