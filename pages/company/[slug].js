@@ -1,25 +1,21 @@
-// pages/company/[slug].js
+// pages/companies/[slug].js
+
 import Link from 'next/link'
-import { fetchJobs } from '../../lib/fetchJobs'
-import { slugify } from '../../lib/slugify'
+import { fetchJobs }   from '../../lib/fetchJobs'
+import { slugify }     from '../../lib/slugify'
 
 export async function getStaticPaths() {
-  // ① まず全ジョブを取ってくる
   const all = await fetchJobs()
-
-  // ② 会社名だけを重複なく集める
-  const companies = Array.from(new Set(all.map(j => j.company)))
-
-  // ③ それぞれ slugify して params.slug に入れる
+  // 会社名を重複除去したあと、空文字は落とす
+  const companies = Array.from(
+    new Set(all.map(j => j.company).filter(name => name && name.trim() !== ""))
+  )
   const paths = companies.map(name => ({
     params: { slug: slugify(name) }
   }))
-
-  return {
-    paths,
-    fallback: false
-  }
+  return { paths, fallback: false }
 }
+
 export async function getStaticProps({ params }) {
   const all = await fetchJobs()
   const companyName = all
