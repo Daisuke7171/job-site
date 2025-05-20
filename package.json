@@ -2,9 +2,10 @@
   "name": "job-site-generator",
   "version": "1.0.0",
 "scripts": {
+  "dev": "next dev",
   "build": "next build",
   "start": "next start",
-  "dev": "next dev"
+  "lint": "next lint"
 }
 ,
   "dependencies": {
