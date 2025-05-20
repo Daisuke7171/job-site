@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // 静的出力を無効にする
-  // output: 'export',
-  
-  // トレイリングスラッシュの設定
-  trailingSlash: true
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  }
 }
 
 module.exports = nextConfig
