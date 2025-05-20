@@ -7,3 +7,8 @@ node_modules/
 .next/
 
 .vercel
+# .gitignore
+.next/
+out/
+node_modules/
+# 他にもあれば
