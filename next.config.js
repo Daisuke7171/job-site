@@ -1,3 +1,4 @@
+// job-site/next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
@@ -5,4 +6,5 @@ const nextConfig = {
     unoptimized: true,
   },
 };
+
 module.exports = nextConfig;
