@@ -31,7 +31,7 @@ export default function JobDetailPage({ job }) {
     "@context": "https://schema.org",
     "@type": "JobPosting",
     "title":       job.title,
-    "description": job.description,
+    "description": job.description ? job.description.substring(0, 1000) + '...' : '',
     "datePosted":  job.datePosted,
     "validThrough": job.validThrough,
     "employmentType": job.employmentType || "FULL_TIME",
@@ -82,7 +82,7 @@ export default function JobDetailPage({ job }) {
   <dt>勤務地：</dt><dd>{job.location}</dd>
   <dt>雇用形態：</dt><dd>{job.employmentType}</dd>
   <dt>給与：</dt><dd>{job.minSalary}〜{job.maxSalary} {job.currency}</dd>
-  <dt>仕事内容：</dt><dd dangerouslySetInnerHTML={{ __html: job.description.replace(/\n/g, '<br>') }} />
+  <dt>仕事内容：</dt><dd dangerouslySetInnerHTML={{ __html: job.description ? job.description.replace(/\n/g, '<br>') : '' }} />
   <dt>勤務時間：</dt><dd>{job.workHours}</dd>
   <dt>休暇・休日：</dt><dd>{job.holidays}</dd>
   <dt>福利厚生：</dt><dd><ul>{(job.benefits||[]).map((b,i)=><li key={i}>{b}</li>)}</ul></dd>

@@ -11,15 +11,23 @@ export async function getStaticPaths() {
       all
         .map(j => j.company || '')
         .map(name => name.trim())
-        .filter(name => name.length > 0)
+        .filter(name => name.length > 0)      // ← 空文字を除外
     )
   )
 
   const paths = companies
-    .map(name => ({
-      params: { slug: slugify(name) }
-    }))
-    .filter(path => path.params.slug !== 'companies') // "companies"というスラッグを除外
+    .map(name => {
+      const slug = slugify(name);
+      return {
+        params: { slug }
+      };
+    })
+    .filter(path => 
+      // 空のslugやcompaniesと一致するslugを除外
+      path.params.slug && 
+      path.params.slug !== '' && 
+      path.params.slug !== 'companies'
+    );
 
   return { paths, fallback: false }
 }

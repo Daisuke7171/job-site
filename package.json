@@ -2,10 +2,10 @@
   "name": "job-site-generator",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
+  "build": "next build",
+  "start": "next start",
+  "dev": "next dev"
+},
   "dependencies": {
     "date-fns": "^4.1.0",
     "next": "15.3.2",
