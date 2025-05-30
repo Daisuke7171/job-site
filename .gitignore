@@ -12,3 +12,4 @@ npm-debug.log*
 
 # もし public 以下に動的に生成した sitemap.xml があるなら
 /public/sitemap.xml
+/*.html
