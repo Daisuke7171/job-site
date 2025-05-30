@@ -1,14 +1,14 @@
-# Next.js / Node.js
-node_modules/
-.next/
-node_modules/
-.next/
-node_modules/
-.next/
+# Next.js のビルド成果物
+/.next/
+/.vercel/
+/out/          # もし static エクスポート先が out/ なら
 
-.vercel
-# .gitignore
-.next/
-out/
-node_modules/
-# 他にもあればout/
+# 依存モジュール
+/node_modules/
+
+# 一時ファイル
+.DS_Store
+npm-debug.log*
+
+# もし public 以下に動的に生成した sitemap.xml があるなら
+/public/sitemap.xml
