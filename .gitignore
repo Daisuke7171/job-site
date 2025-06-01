@@ -1,7 +1,7 @@
 # Next.js のビルド成果物
 /.next/
 /.vercel/
-/out/          # もし static エクスポート先が out/ なら
+/out/          # Next.js の静的エクスポート先として out/ を使っている場合
 
 # 依存モジュール
 /node_modules/
