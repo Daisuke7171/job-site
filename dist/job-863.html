@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>863. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>個人営業</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "個人営業",
+  "description": " =====================\n動画で弊社事業について知りたい方はコチラ↓\n\nせきえもんの買取大学\nhttps://youtu.be/yNl1GoTnp1Q\n=====================\n\n「自分の明日は、自分で創る！」を理念に、「リユース×IT」で確実に業績を上げています。\n\n今回はフランチャイズ事業好調に伴い、FCコンサル候補を新しく募集します。\n業績・スキルに応じて最短1年でFCコンサルになることが可能です！\n\n＜仕事内容＞\n■WEBから問合せ頂いたお客様への対応\n※100%反響営業！電話、チャットやビデオ査定等を使って、訪問のアポイント調整します。\n\n■訪問によるフィールドセールス\n※その場で査定、見積をします。成約率は7～8割と高いです！\n\n■顧客情報や契約内容を社内システムに入力します。\n※1日平均4件程度の訪問数。営業範囲は都内～首都圏が中心です。\n\n★取り扱いアイテム\n家具、家電、PC、スマホ、自転車、楽器、お酒、アパレル、ブランド品、コスメ、食器、アクセサリー…など。実にさまざまなアイテムを扱います。\n\n＜組織体制＞\n20代～30代中心に現在15名のスタッフが在籍しています。（平均年齢：28歳）\nバイヤー（営業）他、リユース（販売）チームにアルバイトスタッフ、マーケティングやシステム関連にインターン生などが十数名ほど関わっています。\n\n＜キャリアステップ＞\n◎入社時　基礎的な買取の業務、営業スキルを習得。\n動画コンテンツが計40本あり、ノウハウをインプットすることができますし、\n先輩に同行しながらOJTでも行いますので経験がなくても安心してスタートできます！\n↓\n◎～6か月　一人で案件に対応できるようになります。\n※その後も特殊な案件などは先輩や上司に相談することができます。\n↓\n◎1年～3年　リーダー（新人教育）、拠点のマネージャーへとステップアップ\n↓\n◎3年～5年　新規拠点立ち上げなどの経験を積みながら、\nその後は、複数拠点統括や、FCオーナーのコンサルティング、\nはたまたFCオーナーとしての独立など幅広い夢やビジョンを実現していただける環境です。",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:19",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社マクサス"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都品川区東五反田1-9-2 ダイアパレス五反田1F",
+      "addressLocality": "品川区",
+      "addressRegion": "東京都",
+      "postalCode": "1410022",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 12000000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "【勤務時間の目安】\n10：00～19：00（所定労働時間8時間、休憩1時間）",
+  "jobBenefits": [
+    "・営業手当 ※3半期ごとに実績に応じたインセンティブを支給！", "・リーダー手当", "・管理者手当", "・FCコンサル手当", "", "・社保完備", "・PC、社有車支給", "・駐車場代などの経費申請可", "・副業、Wワーク可", "・一部在宅ワーク可", "・独立支援"
+  ],
+  "occupationalCategory": "営業"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>個人営業</h1>
+      <p><em>東京求人｜最短2日で内定【FCコンサル候補】未経験歓迎★リユース×IT★100%反響営業</em></p>
+      <p><strong>会社名：</strong>株式会社マクサス</p>
+      <p><strong>勤務地：</strong>東京都品川区東五反田1-9-2 ダイアパレス五反田1F</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 3000000〜12000000</p>
+      <h3>仕事内容：</h3><p> =====================<br>動画で弊社事業について知りたい方はコチラ↓<br><br>せきえもんの買取大学<br>https://youtu.be/yNl1GoTnp1Q<br>=====================<br><br>「自分の明日は、自分で創る！」を理念に、「リユース×IT」で確実に業績を上げています。<br><br>今回はフランチャイズ事業好調に伴い、FCコンサル候補を新しく募集します。<br>業績・スキルに応じて最短1年でFCコンサルになることが可能です！<br><br>＜仕事内容＞<br>■WEBから問合せ頂いたお客様への対応<br>※100%反響営業！電話、チャットやビデオ査定等を使って、訪問のアポイント調整します。<br><br>■訪問によるフィールドセールス<br>※その場で査定、見積をします。成約率は7～8割と高いです！<br><br>■顧客情報や契約内容を社内システムに入力します。<br>※1日平均4件程度の訪問数。営業範囲は都内～首都圏が中心です。<br><br>★取り扱いアイテム<br>家具、家電、PC、スマホ、自転車、楽器、お酒、アパレル、ブランド品、コスメ、食器、アクセサリー…など。実にさまざまなアイテムを扱います。<br><br>＜組織体制＞<br>20代～30代中心に現在15名のスタッフが在籍しています。（平均年齢：28歳）<br>バイヤー（営業）他、リユース（販売）チームにアルバイトスタッフ、マーケティングやシステム関連にインターン生などが十数名ほど関わっています。<br><br>＜キャリアステップ＞<br>◎入社時　基礎的な買取の業務、営業スキルを習得。<br>動画コンテンツが計40本あり、ノウハウをインプットすることができますし、<br>先輩に同行しながらOJTでも行いますので経験がなくても安心してスタートできます！<br>↓<br>◎～6か月　一人で案件に対応できるようになります。<br>※その後も特殊な案件などは先輩や上司に相談することができます。<br>↓<br>◎1年～3年　リーダー（新人教育）、拠点のマネージャーへとステップアップ<br>↓<br>◎3年～5年　新規拠点立ち上げなどの経験を積みながら、<br>その後は、複数拠点統括や、FCオーナーのコンサルティング、<br>はたまたFCオーナーとしての独立など幅広い夢やビジョンを実現していただける環境です。</p>
+      <h3>勤務時間：</h3><p>【勤務時間の目安】<br>10：00～19：00（所定労働時間8時間、休憩1時間）</p>
+      <h3>休暇・休日：</h3><p>■シフト制（月8～9日）<br>※仕事とプライベートとのメリハリをつけて生産性高く働ける環境です<br>・年末年始休暇<br>・有給休暇（10日～勤続年数に応じて最大20日）<br>・産前産後休暇<br>・育児休暇<br>・介護休暇<br>・慶弔休暇</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 喫煙スペースあり</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>・営業手当 ※3半期ごとに実績に応じたインセンティブを支給！</li><li>・リーダー手当</li><li>・管理者手当</li><li>・FCコンサル手当</li><li></li><li>・社保完備</li><li>・PC、社有車支給</li><li>・駐車場代などの経費申請可</li><li>・副業、Wワーク可</li><li>・一部在宅ワーク可</li><li>・独立支援</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

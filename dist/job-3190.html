@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>3190. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>一般事務・営業事務</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "一般事務・営業事務",
+  "description": "【仕事内容】\n＜事務＞\n・企業とのメール、電話のやり取り\n・面接日程の調整、確認\n・求人票の作成　など\n\n弊社の営業スタッフと一緒に\n求職者と企業のサポートをしていきます♪\n---------------------\n～1日の流れ～\n10:00~　メールの確認、返信\n11:00~　企業様への推薦\n12:00~　求人票の作成\n13:00~14:00　お昼休憩♪\n14:00~　メールの確認、返信\n16:00~　企業様との打ち合わせ\n18:00~　翌日の面接確認\n19:00　　帰宅♪（残業はほとんど無いです！\n\n---------------------\n＜その他＞\n・SNS等を使い、情報発信のお手伝いもしてただきます。\n\nまずは出来る業務からスタートしていきますので\n分からない事があれば何でも聞いてください♪\n\n【会社の特徴】\nまだ小さい会社ですが、社内の風通しは良く、日々コミュニケーションを取りながら明るい雰囲気で働いています！",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:21",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Owen株式会社"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都中央区銀座八丁目10番6号  銀座MEビル3階",
+      "addressLocality": "中央区",
+      "addressRegion": "福岡県",
+      "postalCode": "1040061",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 3500000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "10:00〜19:00\n所定労働時間8時間、休憩1時間",
+  "jobBenefits": [
+    "・社会保険完備（健康保険・雇用保険・労災保険・厚生年金保険）", "・ネイル自由", "・服装自由（たまにオフィスカジュアル）", "・フリードリンク", "・資格取得手当", "・定期健康診断制度・社員旅行(年2回程度)", "・月1飲み", "・各種イベント・レクリエーション", "・水曜ランチ", "・毎週金曜早帰りday"
+  ],
+  "occupationalCategory": "事務・オフィスワーク"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>一般事務・営業事務</h1>
+      <p><em>＜急募＞【未経験歓迎】≪事務職≫ ネイル自由！服装自由！残業ほぼなし！土日祝休み！</em></p>
+      <p><strong>会社名：</strong>Owen株式会社</p>
+      <p><strong>勤務地：</strong>東京都中央区銀座八丁目10番6号  銀座MEビル3階</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 3000000〜3500000</p>
+      <h3>仕事内容：</h3><p>【仕事内容】<br>＜事務＞<br>・企業とのメール、電話のやり取り<br>・面接日程の調整、確認<br>・求人票の作成　など<br><br>弊社の営業スタッフと一緒に<br>求職者と企業のサポートをしていきます♪<br>---------------------<br>～1日の流れ～<br>10:00~　メールの確認、返信<br>11:00~　企業様への推薦<br>12:00~　求人票の作成<br>13:00~14:00　お昼休憩♪<br>14:00~　メールの確認、返信<br>16:00~　企業様との打ち合わせ<br>18:00~　翌日の面接確認<br>19:00　　帰宅♪（残業はほとんど無いです！<br><br>---------------------<br>＜その他＞<br>・SNS等を使い、情報発信のお手伝いもしてただきます。<br><br>まずは出来る業務からスタートしていきますので<br>分からない事があれば何でも聞いてください♪<br><br>【会社の特徴】<br>まだ小さい会社ですが、社内の風通しは良く、日々コミュニケーションを取りながら明るい雰囲気で働いています！</p>
+      <h3>勤務時間：</h3><p>10:00〜19:00<br>所定労働時間8時間、休憩1時間</p>
+      <h3>休暇・休日：</h3><p>・完全土日祝休み<br>・夏季休暇<br>・年末年始休暇<br>・慶弔休暇<br>・産前産後/育児休暇<br>・有給休暇（半年後から支給。10日～勤続年数に応じて最大20日）</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 禁煙</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>・社会保険完備（健康保険・雇用保険・労災保険・厚生年金保険）</li><li>・ネイル自由</li><li>・服装自由（たまにオフィスカジュアル）</li><li>・フリードリンク</li><li>・資格取得手当</li><li>・定期健康診断制度・社員旅行(年2回程度)</li><li>・月1飲み</li><li>・各種イベント・レクリエーション</li><li>・水曜ランチ</li><li>・毎週金曜早帰りday</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

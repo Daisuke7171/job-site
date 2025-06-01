@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>3889. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>一般事務・営業事務</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "一般事務・営業事務",
+  "description": "顧客先に配属の上での勤務となります。\n主にIT通信に関わる企業様への配属先が多くITや通信インフラなどに関わる知識やスキルを身に着ける事が出来ます。\n\n■資料作成（見積作成・契約書の査読など）\n■配布文書の校閲\n■会議体の管理（メンバーのスケジュール管理、会議室の手配など）\n■会議の議事録作成\n■電話・メール対応\n■図面・報告書のチェック\n■データ集計、更新\n\n＊将来のキャリアパス＊\n本社勤務（事務、広報、人事、総務、マーケティング、エンジニア、営業）など、幅広い業務に携われるチャンスがあります。\n現在社員が兼任していますが近いうちに各部門の立ち上げも予定。\n会社が成長フェーズにある今、頑張り次第で早期から希望ポジションに就けるチャンスがあります！！！\n本社事務・人事・事業部長・人材コーディネーター・企画部など…将来の選択肢は豊富です。\n\n\n【変更の範囲】\n※事業や所属部門の状況の変化等により、会社の指示する職務内容（業務全般）へ変更することがある。",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:21",
+  "employmentType": "契約社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社ワールドワン"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都港区六本木7−12−2",
+      "addressLocality": "港区",
+      "addressRegion": "東京都",
+      "postalCode": "1060032",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 2000000,
+      "maxValue": 2500000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "9:00〜18:00(所定労働時間8時間、休憩1時間)\n ※勤務地によっては異なる場合がございます。",
+  "jobBenefits": [
+    "交通費支給", "社会保険手当（雇用・労災・健康・厚生年金）", "資格手当", "研修制度", "時間外手当（超過分）", "社内分煙", "副業OK", "役職手当", "昇給制度有り", "インセンティブ制度", "リファラル制度", "友達を紹介して入社した場合、手当10万円支給"
+  ],
+  "occupationalCategory": "事務・オフィスワーク"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>一般事務・営業事務</h1>
+      <p><em>【事務職希望大歓迎】【東京・神奈川】20代が活躍する一般事務</em></p>
+      <p><strong>会社名：</strong>株式会社ワールドワン</p>
+      <p><strong>勤務地：</strong>東京都港区六本木7−12−2</p>
+      <p><strong>雇用形態：</strong>契約社員</p>
+      <p><strong>給与：</strong>年収 2000000〜2500000</p>
+      <h3>仕事内容：</h3><p>顧客先に配属の上での勤務となります。<br>主にIT通信に関わる企業様への配属先が多くITや通信インフラなどに関わる知識やスキルを身に着ける事が出来ます。<br><br>■資料作成（見積作成・契約書の査読など）<br>■配布文書の校閲<br>■会議体の管理（メンバーのスケジュール管理、会議室の手配など）<br>■会議の議事録作成<br>■電話・メール対応<br>■図面・報告書のチェック<br>■データ集計、更新<br><br>＊将来のキャリアパス＊<br>本社勤務（事務、広報、人事、総務、マーケティング、エンジニア、営業）など、幅広い業務に携われるチャンスがあります。<br>現在社員が兼任していますが近いうちに各部門の立ち上げも予定。<br>会社が成長フェーズにある今、頑張り次第で早期から希望ポジションに就けるチャンスがあります！！！<br>本社事務・人事・事業部長・人材コーディネーター・企画部など…将来の選択肢は豊富です。<br><br><br>【変更の範囲】<br>※事業や所属部門の状況の変化等により、会社の指示する職務内容（業務全般）へ変更することがある。</p>
+      <h3>勤務時間：</h3><p>9:00〜18:00(所定労働時間8時間、休憩1時間)<br> ※勤務地によっては異なる場合がございます。</p>
+      <h3>休暇・休日：</h3><p>■週休2日制<br>土日休<br>祝日休<br>※稀に休日出勤を依頼する場合がございます。<br>GW、年末年始<br><br>有給休暇<br>※勤続6ヶ月以降10日付与。勤続年数に応じて最大20日</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 喫煙スペースあり<br>受動喫煙対策（詳細）： 喫煙スペースあり</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>交通費支給</li><li>社会保険手当（雇用・労災・健康・厚生年金）</li><li>資格手当</li><li>研修制度</li><li>時間外手当（超過分）</li><li>社内分煙</li><li>副業OK</li><li>役職手当</li><li>昇給制度有り</li><li>インセンティブ制度</li><li>リファラル制度</li><li>友達を紹介して入社した場合、手当10万円支給</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

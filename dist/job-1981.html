@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>1981. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Webデザイナー</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "Webデザイナー",
+  "description": "【仕事内容】\n『買取大吉』の内装・店舗デザイン・レイアウト作成をお任せします。（illustrator・Photoshop等使用）\n\n＜具体的な仕事内容＞\n竣工写真加工やレイアウト作成など店舗施工に関する店舗デザイン業務\n\n※時間が空いた場合に書類整理・庶務雑務などをお願いする可能性もございます。\n\n■店舗の肝となる内装デザイン\n2021年、更なる認知度拡大のため「買取大吉」はブランディングを強化。それに伴いロゴをリニューアルし、“和モダン”をコンセプトとして新たにスタートを切りました。「買取大吉」らしいお店づくりをしていくために欠かせない重要なポジションです。\n\n【入社後の流れ】\n入社後、あなたのスキル・経験に基づいてできる範囲から業務をお任せしていきます。\n培ってきたご経験を生かして、早期に戦力としてご活躍いただくことを想定しております。もちろん、不明点などはどんどんご質問ください！",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:20",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社エンパワー"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都新宿区西新宿6-8-1 住友不動産新宿オークタワー10階",
+      "addressLocality": "新宿区",
+      "addressRegion": "東京都",
+      "postalCode": "1600023",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 4000000,
+      "maxValue": 5500000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "9:30～18:30\n所定労働時間：8時間、休憩1時間（13:00〜14:00）",
+  "jobBenefits": [
+    "・社会保険完備（健康／労災／雇用／厚生年金）", "・賞与年2回（4月、10月）", "・交通費支給（実費支給）", "・時間外手当（みなし時間超過分）", "・住宅手当（規定あり/3万円）", "※当社最寄駅（西新宿駅・都庁前駅）から2駅圏内かつ、駅から自宅まで徒歩15分以内であることが支給条件です。", "・報奨金制度あり", "└結婚祝い金、出産祝い金、傷病見舞金、災害見舞金、死亡弔慰金、家族弔慰金", "・ノートPC貸与"
+  ],
+  "occupationalCategory": "IT・クリエイティブ"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>Webデザイナー</h1>
+      <p><em>月給30.1万円＋賞与年2回★IKKOさんのTVCMでおなじみ『買取大吉』店舗デザイナー★残業ほぼ0</em></p>
+      <p><strong>会社名：</strong>株式会社エンパワー</p>
+      <p><strong>勤務地：</strong>東京都新宿区西新宿6-8-1 住友不動産新宿オークタワー10階</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 4000000〜5500000</p>
+      <h3>仕事内容：</h3><p>【仕事内容】<br>『買取大吉』の内装・店舗デザイン・レイアウト作成をお任せします。（illustrator・Photoshop等使用）<br><br>＜具体的な仕事内容＞<br>竣工写真加工やレイアウト作成など店舗施工に関する店舗デザイン業務<br><br>※時間が空いた場合に書類整理・庶務雑務などをお願いする可能性もございます。<br><br>■店舗の肝となる内装デザイン<br>2021年、更なる認知度拡大のため「買取大吉」はブランディングを強化。それに伴いロゴをリニューアルし、“和モダン”をコンセプトとして新たにスタートを切りました。「買取大吉」らしいお店づくりをしていくために欠かせない重要なポジションです。<br><br>【入社後の流れ】<br>入社後、あなたのスキル・経験に基づいてできる範囲から業務をお任せしていきます。<br>培ってきたご経験を生かして、早期に戦力としてご活躍いただくことを想定しております。もちろん、不明点などはどんどんご質問ください！</p>
+      <h3>勤務時間：</h3><p>9:30～18:30<br>所定労働時間：8時間、休憩1時間（13:00〜14:00）</p>
+      <h3>休暇・休日：</h3><p>・完全週休2日制（土日）<br>・夏季休暇（3日）<br>・年末年始休暇（5日）<br>・年次有給休暇<br>・慶弔休暇<br>・産前産後休暇（※取得実績あり）<br>・育児介護休暇（※取得実績あり）</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 禁煙<br>受動喫煙対策（詳細）： 就業時間内禁煙</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>・社会保険完備（健康／労災／雇用／厚生年金）</li><li>・賞与年2回（4月、10月）</li><li>・交通費支給（実費支給）</li><li>・時間外手当（みなし時間超過分）</li><li>・住宅手当（規定あり/3万円）</li><li>※当社最寄駅（西新宿駅・都庁前駅）から2駅圏内かつ、駅から自宅まで徒歩15分以内であることが支給条件です。</li><li>・報奨金制度あり</li><li>└結婚祝い金、出産祝い金、傷病見舞金、災害見舞金、死亡弔慰金、家族弔慰金</li><li>・ノートPC貸与</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

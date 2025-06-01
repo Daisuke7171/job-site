@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>2623. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>一般事務・営業事務</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "一般事務・営業事務",
+  "description": "【仕事内容】\n※下記にかかわらず、選考実施時点で募集している幅広いポジションから\n　 候補者様の経験・適性が活かせるポジションを打診し、選考を行います。\n　 希望しないポジションで無理に選考を進めることは致しませんので、ご安心ください。\n\n※マネジメント経験をお持ちの方、ゆくゆくマネジメントに携わりたい方には\n　 チーフ・リーダー・マネージャー等のポジションも含めて適性を判断いたします。\n\n＜事務系ポジション＞ 当社が取り扱うサービスをご利用いただくユーザーに対し\n事務業務を通じてサポートを行ういずれかの部署に配属。\n・契約手続き、請求関連の事務サポート\n・データの整理、移し替え、更新などを行うデータ管理スタッフ\n・申込書に基づき求人広告を作成する求人広告作成スタッフ\n（いずれも電話対応が３割程度が発生する可能性がございます）\n\n＜セールス系ポジション＞\n当社が取り扱うサービスをご利用いただくユーザーに対し\nお電話にてヒアリングや提案営業等を行ういずれかの部署に配属。\n・初めてサービスをご利用いただくユーザー（法人）への導入サポート\n・ユーザー（法人）に適したオプション機能等の提案営業\n・医療系人材紹介サービスをご利用中のユーザー（法人）への採用状況ヒアリング\n・リフォームを検討中のユーザー（個人・法人）へのヒアリング\n（いずれのポジションもお電話対応が中心のインサイドセールス職です）\n\n※ご紹介のタイミングによっては、採用枠充足のため募集終了となるポジションが\n　発生する場合がございます。ご了承ください。",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:21",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社エス・エム・エスサポートサービス"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "北海道札幌市中央区北五条西2丁目5番",
+      "addressLocality": "札幌市",
+      "addressRegion": "北海道",
+      "postalCode": "",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 2500000,
+      "maxValue": 4500000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "8:50〜18:00\n所定労働時間：8時間、休憩1時間10分",
+  "jobBenefits": [
+    "・社会保険完備", "・通勤交通費支給（上限3万5,000円）", "・定期検診制度", "・予防接種", "・書籍購⼊⽀援制度", "・資格取得⽀援制度", "・従業員持株制度"
+  ],
+  "occupationalCategory": "事務・オフィスワーク"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>一般事務・営業事務</h1>
+      <p><em>【未経験OK・オープンポジション】適性に応じて、さまざまなポジションでの業務をお任せ★年休127日</em></p>
+      <p><strong>会社名：</strong>株式会社エス・エム・エスサポートサービス</p>
+      <p><strong>勤務地：</strong>北海道札幌市中央区北五条西2丁目5番</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 2500000〜4500000</p>
+      <h3>仕事内容：</h3><p>【仕事内容】<br>※下記にかかわらず、選考実施時点で募集している幅広いポジションから<br>　 候補者様の経験・適性が活かせるポジションを打診し、選考を行います。<br>　 希望しないポジションで無理に選考を進めることは致しませんので、ご安心ください。<br><br>※マネジメント経験をお持ちの方、ゆくゆくマネジメントに携わりたい方には<br>　 チーフ・リーダー・マネージャー等のポジションも含めて適性を判断いたします。<br><br>＜事務系ポジション＞ 当社が取り扱うサービスをご利用いただくユーザーに対し<br>事務業務を通じてサポートを行ういずれかの部署に配属。<br>・契約手続き、請求関連の事務サポート<br>・データの整理、移し替え、更新などを行うデータ管理スタッフ<br>・申込書に基づき求人広告を作成する求人広告作成スタッフ<br>（いずれも電話対応が３割程度が発生する可能性がございます）<br><br>＜セールス系ポジション＞<br>当社が取り扱うサービスをご利用いただくユーザーに対し<br>お電話にてヒアリングや提案営業等を行ういずれかの部署に配属。<br>・初めてサービスをご利用いただくユーザー（法人）への導入サポート<br>・ユーザー（法人）に適したオプション機能等の提案営業<br>・医療系人材紹介サービスをご利用中のユーザー（法人）への採用状況ヒアリング<br>・リフォームを検討中のユーザー（個人・法人）へのヒアリング<br>（いずれのポジションもお電話対応が中心のインサイドセールス職です）<br><br>※ご紹介のタイミングによっては、採用枠充足のため募集終了となるポジションが<br>　発生する場合がございます。ご了承ください。</p>
+      <h3>勤務時間：</h3><p>8:50〜18:00<br>所定労働時間：8時間、休憩1時間10分</p>
+      <h3>休暇・休日：</h3><p>・土日祝<br>・年間休日127日（2023年度実績）<br>・有給休暇（10日～勤続年数に応じて最大20日）<br>・夏季休暇3日<br>・年末年始5日<br>・産休／育休制度<br>・介護休職制度</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 禁煙</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>・社会保険完備</li><li>・通勤交通費支給（上限3万5,000円）</li><li>・定期検診制度</li><li>・予防接種</li><li>・書籍購⼊⽀援制度</li><li>・資格取得⽀援制度</li><li>・従業員持株制度</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

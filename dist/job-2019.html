@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>2019. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>法人営業</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "法人営業",
+  "description": "当社では「WEB技術が中小企業様を元気にする」を事業ミッションに掲げ、独自にAIやWEB技術を駆使をし開発を行なった、WEB制作管理システムやアプリ制作パッケージにて「売上・集客・採用活動」をお手伝いしています。\n\n５G通信などの通信インフラに代表されるように、時代の移り変わりが早いインターネット業界にて、甘んじる事なく「挑戦・チャレンジ」を積極的に行い、提供できる事業領域の拡大を実施すること、すなわち失敗を恐れず挑戦を続けていく事業姿勢が、お客様やお取引先様、人材育成などにも良い影響を与えて、やがてはすべての方々に貢献できる企業へと成長できる事を目指し、日々活動をしております。\n\n◆主力商品\n・AI搭載のコンテンツ型Web制作\nお客様自信で編集可能なコンテンツとなり、検索順位で上位にあがるよう対策。AIを搭載しているため、面倒なブログの更新において、記事作成のお手伝いが可能。\n・アプリ制作\nお店のロゴを使用した店舗アプリ。ユーザーへダイレクトにお届け可能なプッシュ通知を利用した販促活動を可能に。\n・ランディングページ制作\nWebページの課題である離脱率・直帰率を最小限に抑える目的のページ。1ページ完結の詳細ページを作成し、サイトのコンバージョン率をアップ。\n・ローカルビジネス集客支援\n検索したワードと位置情報から最適な店舗を表示する仕組みのGoogleMAPで店舗検索する時代。弊社独自コンテンツでは、対策ワードを無限に増やし上位表示が見込めます。\n・SEOサブスクサービス\n障がい者や雇用機会の少ない地域からの人材を採用し、ブログの記事投稿と被リンクの施工をサブスクリプションで提供。\n\n\n◆WEBコンサルの主な業務内容\n店舗オーナー様のお悩みをヒアリングして、集客アップに繋げていくWebサービスを提案していただきます。\nお相手は、飲食店・美容サロン・整体院・学習塾・建築事務所・弁護士事務所などの中小企業様がメインです。\n様々な職種・業界のオーナー様と関わることができるので、幅広い知見が身に付きます。\nその中で、課題解決能力や経営者目線の思考なども養うことができます！",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:20",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社エス・ケイ通信"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "愛知県名古屋市中村区那古野1-47-17　名古屋国際センタービル15階",
+      "addressLocality": "名古屋市",
+      "addressRegion": "東京都",
+      "postalCode": "4500001",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 3500000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "9：00～18：00（所定労働時間8時間、休憩1時間）",
+  "jobBenefits": [
+    "◆社会保険完備(IT健保組合)", "◆AIU保険ハイパーメディカル加入", "◆役職手当", "◆時間外手当(みなし残業超過分を支給)", "◆交通費支給(月2万円まで)", "◆出張手当", "◆子ども手当", "◆お誕生日は幸せいっぱい制度", "◆大家族制度(住宅手当・年齢手当・在籍手当)", "　※社内規程あり", "◆報奨金制度(MVP賞・功労賞・新人賞・社長賞など)", "◆退職金制度", "◆FA制度(部門異動制度)", "◆借上げ社宅(敷金・礼金・引越代金は会社負担! 遠方より引越する場合もご相談を)", "　※社内規程あり", "◆携帯電話、ノートPC、Wi-fi、ボイスレコーダー貸与", "◆NAKAMAメシ(昼食を従業員にふるまう制度)", "◆各種レクリエーション(BBQ・食事会・忘年会など/会社負担)"
+  ],
+  "occupationalCategory": "営業"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>法人営業</h1>
+      <p><em>【未経験入社から、月収100万円を稼ぐ責任者へ！】名古屋勤務_WEBコンサル(営業)</em></p>
+      <p><strong>会社名：</strong>株式会社エス・ケイ通信</p>
+      <p><strong>勤務地：</strong>愛知県名古屋市中村区那古野1-47-17　名古屋国際センタービル15階</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 3000000〜3500000</p>
+      <h3>仕事内容：</h3><p>当社では「WEB技術が中小企業様を元気にする」を事業ミッションに掲げ、独自にAIやWEB技術を駆使をし開発を行なった、WEB制作管理システムやアプリ制作パッケージにて「売上・集客・採用活動」をお手伝いしています。<br><br>５G通信などの通信インフラに代表されるように、時代の移り変わりが早いインターネット業界にて、甘んじる事なく「挑戦・チャレンジ」を積極的に行い、提供できる事業領域の拡大を実施すること、すなわち失敗を恐れず挑戦を続けていく事業姿勢が、お客様やお取引先様、人材育成などにも良い影響を与えて、やがてはすべての方々に貢献できる企業へと成長できる事を目指し、日々活動をしております。<br><br>◆主力商品<br>・AI搭載のコンテンツ型Web制作<br>お客様自信で編集可能なコンテンツとなり、検索順位で上位にあがるよう対策。AIを搭載しているため、面倒なブログの更新において、記事作成のお手伝いが可能。<br>・アプリ制作<br>お店のロゴを使用した店舗アプリ。ユーザーへダイレクトにお届け可能なプッシュ通知を利用した販促活動を可能に。<br>・ランディングページ制作<br>Webページの課題である離脱率・直帰率を最小限に抑える目的のページ。1ページ完結の詳細ページを作成し、サイトのコンバージョン率をアップ。<br>・ローカルビジネス集客支援<br>検索したワードと位置情報から最適な店舗を表示する仕組みのGoogleMAPで店舗検索する時代。弊社独自コンテンツでは、対策ワードを無限に増やし上位表示が見込めます。<br>・SEOサブスクサービス<br>障がい者や雇用機会の少ない地域からの人材を採用し、ブログの記事投稿と被リンクの施工をサブスクリプションで提供。<br><br><br>◆WEBコンサルの主な業務内容<br>店舗オーナー様のお悩みをヒアリングして、集客アップに繋げていくWebサービスを提案していただきます。<br>お相手は、飲食店・美容サロン・整体院・学習塾・建築事務所・弁護士事務所などの中小企業様がメインです。<br>様々な職種・業界のオーナー様と関わることができるので、幅広い知見が身に付きます。<br>その中で、課題解決能力や経営者目線の思考なども養うことができます！</p>
+      <h3>勤務時間：</h3><p>9：00～18：00（所定労働時間8時間、休憩1時間）</p>
+      <h3>休暇・休日：</h3><p>週休2日制（土・日）※年間に10日程土曜出社あり<br>祝日<br>GW<br>夏季休暇（前期実績5連休）<br>年末年始（今期7連休予定）<br>有給休暇（10日〜勤続年数に応じて最大20日）<br>慶弔休暇<br>育児介護休暇<br>産休育休<br>特別休暇</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 喫煙スペースあり<br>受動喫煙対策（詳細）： 屋内に喫煙所スペースあり（分煙）</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>◆社会保険完備(IT健保組合)</li><li>◆AIU保険ハイパーメディカル加入</li><li>◆役職手当</li><li>◆時間外手当(みなし残業超過分を支給)</li><li>◆交通費支給(月2万円まで)</li><li>◆出張手当</li><li>◆子ども手当</li><li>◆お誕生日は幸せいっぱい制度</li><li>◆大家族制度(住宅手当・年齢手当・在籍手当)</li><li>　※社内規程あり</li><li>◆報奨金制度(MVP賞・功労賞・新人賞・社長賞など)</li><li>◆退職金制度</li><li>◆FA制度(部門異動制度)</li><li>◆借上げ社宅(敷金・礼金・引越代金は会社負担! 遠方より引越する場合もご相談を)</li><li>　※社内規程あり</li><li>◆携帯電話、ノートPC、Wi-fi、ボイスレコーダー貸与</li><li>◆NAKAMAメシ(昼食を従業員にふるまう制度)</li><li>◆各種レクリエーション(BBQ・食事会・忘年会など/会社負担)</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

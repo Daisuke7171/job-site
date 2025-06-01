@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>4000. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>生産・品質管理</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "生産・品質管理",
+  "description": "マルチテックはエネルギー関連プラントの各種装置や設備を中心に、設計・品質管理・建設補助にまつわる技術支援や人材派遣を手がけるエンジニア集団です。\n2021年には、国内最大規模の技術者人材サービス企業であるアウトソーシングテクノロジーグループの一員に加わりました。会社として新たなフェーズを迎えた今こそ、みなさんとともにより大きくチャレンジしていきたいと考えています。\nそんな私たちマルチテックの仕事内容をお伝えします。\n\n\n【仕事内容】\n弊社の7割～8割のお仕事がプラント関係での就業です。\n(※プラントとは生活に必要な電気や水など様々な再生可能なエネルギ―を創る場所です)\nその他施設の建設・メンテナンス・保守点検における一品質管理業務をお任せいたします。\n機器の設置工事業務に関する施工管理業務や、試運転・メンテナンスなども手がけます。\n 大型機械設備を設置する際などには、その試運転やメンテナンス等を行います。\n\n◎原子力発電施設等のプラント施設内の品質管理・検査対応など\n\n【具体的な業務内容】\n◆プラント建設（主に発電設備）の品質管理に関する業務\n◯製品が図面通りに取り付けられているかのチェック・記録\n◯製品に正しい材料が使用されているかのチェック・記録\n◯溶接前に設けられる溶接継手の開先検査・記録\n◯圧力容器、配管にかかる圧力の耐圧検査・記録\n◯材料、製品に関する品番のチェック・記録\n◯非破壊検査によるチェック・記録\n◯事務処理",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:21",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社マルチテック"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "兵庫県神戸市兵庫区上庄通2丁目1-3",
+      "addressLocality": "神戸市",
+      "addressRegion": "福岡県",
+      "postalCode": "6520862",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 5000000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "8:40~17:40（所定労働8時間、休憩60分）\n※配属先により異なる場合があります。",
+  "jobBenefits": [
+    "【諸手当】", "■交通費支給（月5万円まで）", "■残業手当100%支給", "■休日出勤手当", "■深夜手当", "■出張手当", "■家族手当", "■引越費用負担(※上限3万円まで)", "", "【福利厚生】 ", "■社会保険完備（健康保険、厚生年金保険、労災保険、雇用保険）", "■借上社宅制度", "■慶弔金制度", "■退職金制度", "■定期健康診断", "■提携保養所", "■キャリア形成支援研修", "", "", "【寮（借上げ社宅）について】", "・通勤圏（目安として90分以内）を超える場合、借上げ社宅制度をご利用いただけます。会社都合ではない引っ越しの場合は、費用負担はできかねます", "※会社都合の例：●●県に住んでおり、その家から通える場合の就業が可能。その上で、通勤で90分を超える現場で勤務となった場合、転居を伴うためのに借上げ社宅の使用して就業、など。", "", "・家賃負担は会社との折半となります（上限3万円）。基本的には、家具家電付きの物件への入居となり、お荷物の送料負担の上限は3万円までとなります。光熱費は自己負担となります。"
+  ],
+  "occupationalCategory": ""
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>生産・品質管理</h1>
+      <p><em>未経験OKの品質管理業務★年間休日120日以上</em></p>
+      <p><strong>会社名：</strong>株式会社マルチテック</p>
+      <p><strong>勤務地：</strong>兵庫県神戸市兵庫区上庄通2丁目1-3</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 3000000〜5000000</p>
+      <h3>仕事内容：</h3><p>マルチテックはエネルギー関連プラントの各種装置や設備を中心に、設計・品質管理・建設補助にまつわる技術支援や人材派遣を手がけるエンジニア集団です。<br>2021年には、国内最大規模の技術者人材サービス企業であるアウトソーシングテクノロジーグループの一員に加わりました。会社として新たなフェーズを迎えた今こそ、みなさんとともにより大きくチャレンジしていきたいと考えています。<br>そんな私たちマルチテックの仕事内容をお伝えします。<br><br><br>【仕事内容】<br>弊社の7割～8割のお仕事がプラント関係での就業です。<br>(※プラントとは生活に必要な電気や水など様々な再生可能なエネルギ―を創る場所です)<br>その他施設の建設・メンテナンス・保守点検における一品質管理業務をお任せいたします。<br>機器の設置工事業務に関する施工管理業務や、試運転・メンテナンスなども手がけます。<br> 大型機械設備を設置する際などには、その試運転やメンテナンス等を行います。<br><br>◎原子力発電施設等のプラント施設内の品質管理・検査対応など<br><br>【具体的な業務内容】<br>◆プラント建設（主に発電設備）の品質管理に関する業務<br>◯製品が図面通りに取り付けられているかのチェック・記録<br>◯製品に正しい材料が使用されているかのチェック・記録<br>◯溶接前に設けられる溶接継手の開先検査・記録<br>◯圧力容器、配管にかかる圧力の耐圧検査・記録<br>◯材料、製品に関する品番のチェック・記録<br>◯非破壊検査によるチェック・記録<br>◯事務処理</p>
+      <h3>勤務時間：</h3><p>8:40~17:40（所定労働8時間、休憩60分）<br>※配属先により異なる場合があります。</p>
+      <h3>休暇・休日：</h3><p>■完全週休２日制（土・日）<br>■祝日<br>■GW<br>■夏季休暇<br>■年末年始<br>■特別休暇（産休・育児・介護、慶弔休暇）<br>■有給休暇（入社半年後10日〜勤続年数に応じて20日）<br><br>2024年：年間休日126日</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 喫煙スペースあり</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>【諸手当】</li><li>■交通費支給（月5万円まで）</li><li>■残業手当100%支給</li><li>■休日出勤手当</li><li>■深夜手当</li><li>■出張手当</li><li>■家族手当</li><li>■引越費用負担(※上限3万円まで)</li><li></li><li>【福利厚生】 </li><li>■社会保険完備（健康保険、厚生年金保険、労災保険、雇用保険）</li><li>■借上社宅制度</li><li>■慶弔金制度</li><li>■退職金制度</li><li>■定期健康診断</li><li>■提携保養所</li><li>■キャリア形成支援研修</li><li></li><li></li><li>【寮（借上げ社宅）について】</li><li>・通勤圏（目安として90分以内）を超える場合、借上げ社宅制度をご利用いただけます。会社都合ではない引っ越しの場合は、費用負担はできかねます</li><li>※会社都合の例：●●県に住んでおり、その家から通える場合の就業が可能。その上で、通勤で90分を超える現場で勤務となった場合、転居を伴うためのに借上げ社宅の使用して就業、など。</li><li></li><li>・家賃負担は会社との折半となります（上限3万円）。基本的には、家具家電付きの物件への入居となり、お荷物の送料負担の上限は3万円までとなります。光熱費は自己負担となります。</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

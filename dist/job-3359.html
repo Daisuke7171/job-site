@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>3359. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>一般事務・営業事務</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "一般事務・営業事務",
+  "description": "・レセプション業務(お客様対応/予約対応（電話・メール）/電話対応/お会計)\n・マネージャー業務(店舗のスタッフ管理、シフト作成等)",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:21",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社空"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都港区南青山5丁目11-2 SANWA南青山ビル6F",
+      "addressLocality": "港区",
+      "addressRegion": "兵庫県",
+      "postalCode": "1070062",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 4000000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "9時30分～21時の間の実働8時間(休憩一時間)\n※店舗によって営業時間は多少異なります",
+  "jobBenefits": [
+    "・社会保険完備（雇用・労災・健康・厚生年金）", "・交通費全額支給", "・皆勤手当（月1万円）", "・勤務年数手当(上限５万円)", "・役職手当", "・社員旅行", "・健康診断", "・制服支給"
+  ],
+  "occupationalCategory": "事務・オフィスワーク"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>一般事務・営業事務</h1>
+      <p><em>《大人気サロン受付スタッフ》HEAD SPA Kuu レセプション募集</em></p>
+      <p><strong>会社名：</strong>株式会社空</p>
+      <p><strong>勤務地：</strong>東京都港区南青山5丁目11-2 SANWA南青山ビル6F</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 3000000〜4000000</p>
+      <h3>仕事内容：</h3><p>・レセプション業務(お客様対応/予約対応（電話・メール）/電話対応/お会計)<br>・マネージャー業務(店舗のスタッフ管理、シフト作成等)</p>
+      <h3>勤務時間：</h3><p>9時30分～21時の間の実働8時間(休憩一時間)<br>※店舗によって営業時間は多少異なります</p>
+      <h3>休暇・休日：</h3><p>完全週休2日制（曜日シフト制）<br>有給休暇（勤務半年後10日～勤続年数に応じて最大20日）<br>年末年始休暇<br>夏季休暇</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 禁煙</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>・社会保険完備（雇用・労災・健康・厚生年金）</li><li>・交通費全額支給</li><li>・皆勤手当（月1万円）</li><li>・勤務年数手当(上限５万円)</li><li>・役職手当</li><li>・社員旅行</li><li>・健康診断</li><li>・制服支給</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

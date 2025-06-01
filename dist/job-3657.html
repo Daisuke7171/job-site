@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>3657. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>人事</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "人事",
+  "description": "■業務内容\n・新卒採用業務\n└グローバル志向を持つ学生の採用（2025年度新卒：13名入社予定）\n└適切な採用チャネルの選定\n└採用PR動画のディレクション\n└KPI管理\n└面接対応（説明会や１次面接は別メンバーが対応予定）\n└内定者フォロー企画、実行\n※主に新卒採用における全体計画のディレクションを行っていただきます。\n\n・中途採用業務\n└経営陣との採用要件すり合わせ\n└適切な採用チャネルの選定\n└スカウト媒体ディレクション（配信業務はRPO提携企業に委託）\n└KPI管理\n└面接対応（主に１次面接やカジュアル面談を担当）\n└アトラクト戦略立案、実行\n※計画立案から実行まで一連の流れをお任せいたします。\n\n・リテンション施策の実施\n└社員面談（入社後、評価時など）\n\n・評価制度運用、改善\n└人事評価制度のメンテナンス\n└経営陣への改善提案\n\n・MVV浸透施策\n└行動指針（クレド）の浸透\n└評価制度への連動設計\n\n・教育研修フローの確立\n└スキルマップ策定\n└教育方針の決定\n└研修プログラムの設計\n└研修ベンダー会社との調整業務\n\n※職務内容補足\n雇入れ直後：上記参照\n変更の範囲：当社における各種業務全般\n\n■人事チーム\n部長1名（取締役）、メンバー2名（20代）、パートナー企業（戦略立案、応募者対応、スカウト実務実行、採用広報記事作成など）\n※入社後は取締役およびパートナー企業と連携しながら業務遂行していただきます。\n\n■入社後の流れ\nオンボーディングのために数日～1週間、本社で研修やオリエンテーションに参加していただきます。",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:21",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "マスターピース・グループ株式会社"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都港区西麻布1-8-12 MPG西麻布ビル",
+      "addressLocality": "港区",
+      "addressRegion": "愛知県",
+      "postalCode": "1060031",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 4000000,
+      "maxValue": 6000000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "フレックスタイム制　標準労働時間1日8時間（コアタイムは10時～15時）\n休憩時間：60分",
+  "jobBenefits": [
+    "通勤手当", "社会保険完備（健康保険、厚生年金保険、雇用保険、労災保険）", "退職金制度（5年以上の勤務者が対象）", "育児支援制度", "フレックスタイム制（コアタイム10時〜16時）", "中堅社員研修（内部、外部）", "資格取得支援制度", "在宅勤務制度（相談可＜週1~リモート＞）", "社員割引制度（輸入食材）", "時短勤務制度（10：00～16：00等）"
+  ],
+  "occupationalCategory": "事務・オフィスワーク"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>人事</h1>
+      <p><em>【リモート制度有／人事担当者】組織の戦略立案フェーズをCOO直下で担う【フレックス】</em></p>
+      <p><strong>会社名：</strong>マスターピース・グループ株式会社</p>
+      <p><strong>勤務地：</strong>東京都港区西麻布1-8-12 MPG西麻布ビル</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 4000000〜6000000</p>
+      <h3>仕事内容：</h3><p>■業務内容<br>・新卒採用業務<br>└グローバル志向を持つ学生の採用（2025年度新卒：13名入社予定）<br>└適切な採用チャネルの選定<br>└採用PR動画のディレクション<br>└KPI管理<br>└面接対応（説明会や１次面接は別メンバーが対応予定）<br>└内定者フォロー企画、実行<br>※主に新卒採用における全体計画のディレクションを行っていただきます。<br><br>・中途採用業務<br>└経営陣との採用要件すり合わせ<br>└適切な採用チャネルの選定<br>└スカウト媒体ディレクション（配信業務はRPO提携企業に委託）<br>└KPI管理<br>└面接対応（主に１次面接やカジュアル面談を担当）<br>└アトラクト戦略立案、実行<br>※計画立案から実行まで一連の流れをお任せいたします。<br><br>・リテンション施策の実施<br>└社員面談（入社後、評価時など）<br><br>・評価制度運用、改善<br>└人事評価制度のメンテナンス<br>└経営陣への改善提案<br><br>・MVV浸透施策<br>└行動指針（クレド）の浸透<br>└評価制度への連動設計<br><br>・教育研修フローの確立<br>└スキルマップ策定<br>└教育方針の決定<br>└研修プログラムの設計<br>└研修ベンダー会社との調整業務<br><br>※職務内容補足<br>雇入れ直後：上記参照<br>変更の範囲：当社における各種業務全般<br><br>■人事チーム<br>部長1名（取締役）、メンバー2名（20代）、パートナー企業（戦略立案、応募者対応、スカウト実務実行、採用広報記事作成など）<br>※入社後は取締役およびパートナー企業と連携しながら業務遂行していただきます。<br><br>■入社後の流れ<br>オンボーディングのために数日～1週間、本社で研修やオリエンテーションに参加していただきます。</p>
+      <h3>勤務時間：</h3><p>フレックスタイム制　標準労働時間1日8時間（コアタイムは10時～15時）<br>休憩時間：60分</p>
+      <h3>休暇・休日：</h3><p>完全週休2日制（休日は土日祝日）<br>年末年始休暇<br>年次有給休暇（10日～20日※消化率80％以上）<br>産前産後休暇、育児休暇（育休後復帰率100%）<br>年間休日日数120日</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 喫煙スペースあり</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>通勤手当</li><li>社会保険完備（健康保険、厚生年金保険、雇用保険、労災保険）</li><li>退職金制度（5年以上の勤務者が対象）</li><li>育児支援制度</li><li>フレックスタイム制（コアタイム10時〜16時）</li><li>中堅社員研修（内部、外部）</li><li>資格取得支援制度</li><li>在宅勤務制度（相談可＜週1~リモート＞）</li><li>社員割引制度（輸入食材）</li><li>時短勤務制度（10：00～16：00等）</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>3106. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>カスタマーサポート・コールセンター運営</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "カスタマーサポート・コールセンター運営",
+  "description": "株式会社Enjinは、PR会社として18期を迎える企業です。\n2021年6月には東証グロース市場に上場を果たし、\n更なる価値提供に向けて組織の拡大/強化を進めているフェーズのため\nカスタマーサポートチームメンバーを募集します！！！\n\n【メディアマッチングサービス「メディチョク」について】\n新聞・テレビ・雑誌・WEBなどで発信する情報を探す\nメディア・報道関係者と、企業を直接つなぎ、\n低コストで企業の広報活動をサポートするプラットフォームです。\n\n《メディア関係者》\n　・ネタ募集\n　・メディア出演依頼\n　⇅\n《広報担当者》\n　・プレスリリース\n　・情報提供\n\n一般的な広報・PR会社と契約した場合に比べ、\nコストを大幅に削減しながらメディア露出を実現でき、\n圧倒的な低コスト・高効率な広報・PR活動を実現します。\n\n【業務内容】\n・クライアントにレポート提出（テンプレはありますが、オリジナル要素もあります）\n・ナーチャリング資料作成\n・クライアントとMTG（オンライン）\n・クライアントとオンボーディングMTG（使い方をお伝えするMTG）\n\n【1日の流れ】\n〇午前中\n・メディチョク管理画面をチェックしてクライアントのアクティブ状況確認\n・メディア側の提案や募集内容を確認\n・メール対応\n\n〇午後\n・クライアントと初回MTG\n・資料作り\n・管理画面チェック\n・クライアントに企画提案",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:21",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社Ｅｎｊｉｎ"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都中央区銀座5-13-16 ヒューリック銀座イーストビル8階（7F：スタジオ/受付）",
+      "addressLocality": "中央区",
+      "addressRegion": "東京都",
+      "postalCode": "1040061",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 5000000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "9:30～18:30（所定労働時間8時間、休憩1時間）\n\n◎毎週月曜日は9:30-11:00まで自己研鑽時間\n⇒Enjin Way勉強会といって各自、知識や\nスキルをアップするための勉強時間としています。\n(月曜日が祝日の場合は火曜日)",
+  "jobBenefits": [
+    "■社会保険完備", "■オフィスカフェ", "…CAFE OHANA", "■社員部活動支援", "…ジム部など", "■オハナ旅", "…有休を利用して社員同士で旅行する場合、最大年5万円支給", "■親孝行休暇", "…両親の誕生日（もしくは命日）は特別休暇となり、帰省費を一部支給", "■持ち株会制度"
+  ],
+  "occupationalCategory": "営業"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>カスタマーサポート・コールセンター運営</h1>
+      <p><em>未経験可！業界注目の｜メディアマッチングプラットフォーム｜でカスタマーサクセスを募集</em></p>
+      <p><strong>会社名：</strong>株式会社Ｅｎｊｉｎ</p>
+      <p><strong>勤務地：</strong>東京都中央区銀座5-13-16 ヒューリック銀座イーストビル8階（7F：スタジオ/受付）</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 3000000〜5000000</p>
+      <h3>仕事内容：</h3><p>株式会社Enjinは、PR会社として18期を迎える企業です。<br>2021年6月には東証グロース市場に上場を果たし、<br>更なる価値提供に向けて組織の拡大/強化を進めているフェーズのため<br>カスタマーサポートチームメンバーを募集します！！！<br><br>【メディアマッチングサービス「メディチョク」について】<br>新聞・テレビ・雑誌・WEBなどで発信する情報を探す<br>メディア・報道関係者と、企業を直接つなぎ、<br>低コストで企業の広報活動をサポートするプラットフォームです。<br><br>《メディア関係者》<br>　・ネタ募集<br>　・メディア出演依頼<br>　⇅<br>《広報担当者》<br>　・プレスリリース<br>　・情報提供<br><br>一般的な広報・PR会社と契約した場合に比べ、<br>コストを大幅に削減しながらメディア露出を実現でき、<br>圧倒的な低コスト・高効率な広報・PR活動を実現します。<br><br>【業務内容】<br>・クライアントにレポート提出（テンプレはありますが、オリジナル要素もあります）<br>・ナーチャリング資料作成<br>・クライアントとMTG（オンライン）<br>・クライアントとオンボーディングMTG（使い方をお伝えするMTG）<br><br>【1日の流れ】<br>〇午前中<br>・メディチョク管理画面をチェックしてクライアントのアクティブ状況確認<br>・メディア側の提案や募集内容を確認<br>・メール対応<br><br>〇午後<br>・クライアントと初回MTG<br>・資料作り<br>・管理画面チェック<br>・クライアントに企画提案</p>
+      <h3>勤務時間：</h3><p>9:30～18:30（所定労働時間8時間、休憩1時間）<br><br>◎毎週月曜日は9:30-11:00まで自己研鑽時間<br>⇒Enjin Way勉強会といって各自、知識や<br>スキルをアップするための勉強時間としています。<br>(月曜日が祝日の場合は火曜日)</p>
+      <h3>休暇・休日：</h3><p>《★年間休日124日》<br>■完全週休2日制(土日)<br>■祝日<br>■年末年始休暇(5日)<br>■夏季休暇(3日)<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>■慶弔休暇<br>■介護休暇<br>■親孝行休暇（2日）<br>⇒帰省費も一部会社負担☆<br>■産前・産後・育児休暇（取得実績あり）<br>◎モアナイン制度<br>⇒有給を5日連続で取得し、土日と併せて9連休も可！</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 禁煙</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>■社会保険完備</li><li>■オフィスカフェ</li><li>…CAFE OHANA</li><li>■社員部活動支援</li><li>…ジム部など</li><li>■オハナ旅</li><li>…有休を利用して社員同士で旅行する場合、最大年5万円支給</li><li>■親孝行休暇</li><li>…両親の誕生日（もしくは命日）は特別休暇となり、帰省費を一部支給</li><li>■持ち株会制度</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

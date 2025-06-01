@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>958. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>法人営業</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "法人営業",
+  "description": "採用活動を行っている法人(ベンチャー〜上場企業まであり)の採用に関わる課題に対して、大手求人広告をフックに採用代行、採用コンサルなど総合的にプランを企画し提案営業。提案金額は数十万〜数千万と幅広い。\n\n具体的に\n◆ターゲット選定\n◆アポイント獲得(電話を中心にDMやメールを活用するケースもあり)\n◆商談(オンライン商談がメイン)\n◆クライントに応じたプラン企画\n◆受注後フォロー、カスタマーサクセス、コンサルティング\n◆既存クライアントへのアップセル、クロスセル提案\n\n経験者や力がついてきた方は\n◆マネジメント\n◆採用コンサルティング事業部の戦略立案\n◆自社サービスの企画・開発\n\n―――――――― \n研修・サポートについて \n―――――――― \n◆メンター・メンティー制度\n入社3ヶ月先輩がついてわからないことは何でも教えてくれます。\n◆部署制度\n責任者1名＋メンバー6名程度の部署に配属され、日々の営業に関する質問やロープレ、ログのフィードバックなど丁寧にしてもらえます。\n ◆定例ミーティング\n週1度上司と1時間のミーティングで問題、原因、改善をあげ達成までのストーリーをすり合わせます。\n ◆研修動画\n代表の社内向けの営業やビジネスで結果を出す方法の動画が100本以上ありいつでも見れるようになっています。\n ◆代表研修\n入社から3ヶ月間週1度代表からの研修があります。\n\nその他、入社から3日間のランチ制度(会社が負担しメンバーとローテーションでご飯に行く)や毎月の決起会、その他上司がご飯に誘ったりなど環境に慣れていただくため様々な制度を用意しています！",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:19",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社Delight"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都豊島区東池袋3丁目22-17  東池袋セントラルプレイス3F",
+      "addressLocality": "豊島区",
+      "addressRegion": "神奈川県",
+      "postalCode": "1700013",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3500000,
+      "maxValue": 6500000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "◆9:00〜18:00\n1日の労働時間：8時間、休憩1時間\n1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下）",
+  "jobBenefits": [
+    "■各種社会保険完備", "■交通費支給（2万円まで）", "■優秀者食事会", "■優秀者キャンペーン（海外旅行やスパ）", "■サウナリフレッシュDAY", "■スポーツホリデイ", "■二日酔い休暇", "■イベント（腹筋大会、合宿等）", "■社宅シェアハウス入居可（東京・大阪）", "■家賃補助(3駅以内など規定あり)", "■社員旅行・合宿", "■服装・ネイル自由"
+  ],
+  "occupationalCategory": "営業"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>法人営業</h1>
+      <p><em>【新卒限定】求人広告の企画提案営業／昇給年4回＋インセンティブあり/25歳で事業部長</em></p>
+      <p><strong>会社名：</strong>株式会社Delight</p>
+      <p><strong>勤務地：</strong>東京都豊島区東池袋3丁目22-17  東池袋セントラルプレイス3F</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 3500000〜6500000</p>
+      <h3>仕事内容：</h3><p>採用活動を行っている法人(ベンチャー〜上場企業まであり)の採用に関わる課題に対して、大手求人広告をフックに採用代行、採用コンサルなど総合的にプランを企画し提案営業。提案金額は数十万〜数千万と幅広い。<br><br>具体的に<br>◆ターゲット選定<br>◆アポイント獲得(電話を中心にDMやメールを活用するケースもあり)<br>◆商談(オンライン商談がメイン)<br>◆クライントに応じたプラン企画<br>◆受注後フォロー、カスタマーサクセス、コンサルティング<br>◆既存クライアントへのアップセル、クロスセル提案<br><br>経験者や力がついてきた方は<br>◆マネジメント<br>◆採用コンサルティング事業部の戦略立案<br>◆自社サービスの企画・開発<br><br>―――――――― <br>研修・サポートについて <br>―――――――― <br>◆メンター・メンティー制度<br>入社3ヶ月先輩がついてわからないことは何でも教えてくれます。<br>◆部署制度<br>責任者1名＋メンバー6名程度の部署に配属され、日々の営業に関する質問やロープレ、ログのフィードバックなど丁寧にしてもらえます。<br> ◆定例ミーティング<br>週1度上司と1時間のミーティングで問題、原因、改善をあげ達成までのストーリーをすり合わせます。<br> ◆研修動画<br>代表の社内向けの営業やビジネスで結果を出す方法の動画が100本以上ありいつでも見れるようになっています。<br> ◆代表研修<br>入社から3ヶ月間週1度代表からの研修があります。<br><br>その他、入社から3日間のランチ制度(会社が負担しメンバーとローテーションでご飯に行く)や毎月の決起会、その他上司がご飯に誘ったりなど環境に慣れていただくため様々な制度を用意しています！</p>
+      <h3>勤務時間：</h3><p>◆9:00〜18:00<br>1日の労働時間：8時間、休憩1時間<br>1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下）</p>
+      <h3>休暇・休日：</h3><p>◆週休2日制（土日）<br>◆有給休暇（10日〜勤続年数に応じて最大20日）</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 喫煙スペースあり</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>■各種社会保険完備</li><li>■交通費支給（2万円まで）</li><li>■優秀者食事会</li><li>■優秀者キャンペーン（海外旅行やスパ）</li><li>■サウナリフレッシュDAY</li><li>■スポーツホリデイ</li><li>■二日酔い休暇</li><li>■イベント（腹筋大会、合宿等）</li><li>■社宅シェアハウス入居可（東京・大阪）</li><li>■家賃補助(3駅以内など規定あり)</li><li>■社員旅行・合宿</li><li>■服装・ネイル自由</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>3209. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>運輸・配送・倉庫関連</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "運輸・配送・倉庫関連",
+  "description": "【仕事内容】\n軽バンで東京23区内の配送業務をお任せいたします。\nおもな業務フローの参考例は下記の通りです。\n\n7:30〜 8:30　 ▶　出勤・荷物の積み込み・朝礼\n8:30〜　　　　▶　担当の配送エリアへ移動（東京23区内）\n09:00～13:00　▶　時間指定の配送\n12:00～15:00　▶　時間指定の配送　※適時、昼食・休憩\n15:00～18:00　▶　時間指定の配送　\n16:00～19:30 　▶　担当のエリアにて集荷業務（BtoB）\n19:30〜20:00 　▶　帰社・締め作業（荷物の仕分け）・退勤\n18:00～21:00　▶　時間指定の配送　※日によって変動あり\n\n【入社後の研修】\n当社での座学研修、現場研修、横乗り研修（同行研修）を行います。\n当社スタッフ、先輩ドライバーがしっかりサポートしますので、ご安心ください。\n\n【補足】\n・当社で働いているドライバーさんは20代～50代まで、もちろん女性\n　ドライバーさんも活躍しています。\n・運転免許証・やる気・責任感があれば、当社スタッフと先輩ドライバー\n　さんが全力でサポートいたします。\n\n【キャリアプラン／チェンジ】\n・まずはドライバーとしてのキャリアを数年積んでいただきましたら\n　教育担当や現場の管理責任者までお任せします。\n・営業職や内勤へのキャリアチェンジもございます。",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:21",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "【ナビロジ】ナビゲーションロジスティクス株式会社"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都江東区辰巳3-19-12",
+      "addressLocality": "江東区",
+      "addressRegion": "東京都",
+      "postalCode": "1350053",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 4000000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "1ヶ月単位の変形労働時間制（週の平均労働時間44時間）\n7：00〜21：00（現場による）※シフト制\n1日の勤務時間：8時間\n休憩1時間",
+  "jobBenefits": [
+    "社会保険完備（雇用・労災・健康・厚生年金）", "車両貸出あり", "健康診断", "週払い制度あり", "交通費：月20,000円まで", "資格取得制度＜トラック免許全額負担！＞"
+  ],
+  "occupationalCategory": ""
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>運輸・配送・倉庫関連</h1>
+      <p><em>【積極採用】軽ドライバー未経験OK／キャリアチェンジ可／資格取得支援制度あり</em></p>
+      <p><strong>会社名：</strong>【ナビロジ】ナビゲーションロジスティクス株式会社</p>
+      <p><strong>勤務地：</strong>東京都江東区辰巳3-19-12</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 3000000〜4000000</p>
+      <h3>仕事内容：</h3><p>【仕事内容】<br>軽バンで東京23区内の配送業務をお任せいたします。<br>おもな業務フローの参考例は下記の通りです。<br><br>7:30〜 8:30　 ▶　出勤・荷物の積み込み・朝礼<br>8:30〜　　　　▶　担当の配送エリアへ移動（東京23区内）<br>09:00～13:00　▶　時間指定の配送<br>12:00～15:00　▶　時間指定の配送　※適時、昼食・休憩<br>15:00～18:00　▶　時間指定の配送　<br>16:00～19:30 　▶　担当のエリアにて集荷業務（BtoB）<br>19:30〜20:00 　▶　帰社・締め作業（荷物の仕分け）・退勤<br>18:00～21:00　▶　時間指定の配送　※日によって変動あり<br><br>【入社後の研修】<br>当社での座学研修、現場研修、横乗り研修（同行研修）を行います。<br>当社スタッフ、先輩ドライバーがしっかりサポートしますので、ご安心ください。<br><br>【補足】<br>・当社で働いているドライバーさんは20代～50代まで、もちろん女性<br>　ドライバーさんも活躍しています。<br>・運転免許証・やる気・責任感があれば、当社スタッフと先輩ドライバー<br>　さんが全力でサポートいたします。<br><br>【キャリアプラン／チェンジ】<br>・まずはドライバーとしてのキャリアを数年積んでいただきましたら<br>　教育担当や現場の管理責任者までお任せします。<br>・営業職や内勤へのキャリアチェンジもございます。</p>
+      <h3>勤務時間：</h3><p>1ヶ月単位の変形労働時間制（週の平均労働時間44時間）<br>7：00〜21：00（現場による）※シフト制<br>1日の勤務時間：8時間<br>休憩1時間</p>
+      <h3>休暇・休日：</h3><p>月8〜9休日（シフト制）<br>夏季休暇<br>冬期休暇<br>年次有給休暇（10日〜20日）※積極消化していますので取得しやすいです。<br>慶弔休暇</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 喫煙スペースあり<br>受動喫煙対策（詳細）： 屋外にて喫煙</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>社会保険完備（雇用・労災・健康・厚生年金）</li><li>車両貸出あり</li><li>健康診断</li><li>週払い制度あり</li><li>交通費：月20,000円まで</li><li>資格取得制度＜トラック免許全額負担！＞</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

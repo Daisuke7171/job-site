@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>3285. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>キャリアカウンセラー・人材コーディネーター</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "キャリアカウンセラー・人材コーディネーター",
+  "description": "【業務概要】\nスポーツ人財のコーディネーター（法人営業／キャリアアドバイザー）として、法人・個人双方へのコンサルティング業務をお任せいたします。\nクライアントが抱える問題に対し、多様なアプローチから企画・提案を行い、最適な解決方法をプランニングしてください。\n\n\n【業務詳細】\n（1）法人向け…新卒採用、中途採用を検討している企業に対し、スポーツ人財の素晴らしさを伝え、課題解決に向けて様々な商材を提案していただきます。\n（2）個人向け…「スポナビ」、「スポナビキャリア」登録ユーザーや、転職活動を行うスポーツ人財にアプローチを行い、個人の夢や目標に寄り添った支援を通して、理想のキャリアを築けるようアドバイスをしていただきます。\n\n\n【一日の流れの例】\n08：50　\n↓掃除、朝礼\n09：05　\n↓始業、企業営業（営業架電、訪問等）\n12：00\n↓昼休み\n13：00\n↓人財面談\n18：00\n↓日報記載\n19：00\n↓完全退社\n21：00　\n※水曜日は18：00、金曜日は20：00退社",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:21",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社スポーツフィールド"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "神奈川県横浜市神奈川区金港町1-4 横浜イーストスクエア 4F",
+      "addressLocality": "横浜市",
+      "addressRegion": "千葉県",
+      "postalCode": "2210056",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3500000,
+      "maxValue": 5000000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "8:50 - 18:00\n（休憩70分）",
+  "jobBenefits": [
+    "資格取得奨励金制度/育児休暇制度/社員旅行/持ち株制度", "月間、半期、年間個人・エリアMVP表彰/社内表彰（SFアワード）/記念日早帰り/社内カフェ・バースペース/社員誕生日お祝い制度/社外研修費用（年間10万円まで）社内プチ社食・オフィスコンビニ（拠点により）"
+  ],
+  "occupationalCategory": "営業"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>キャリアカウンセラー・人材コーディネーター</h1>
+      <p><em>急募エリア(名古屋・大阪・岡山・広島・福岡)スポーツ経験者（新卒採用/中途採用）人財コーディネーター</em></p>
+      <p><strong>会社名：</strong>株式会社スポーツフィールド</p>
+      <p><strong>勤務地：</strong>神奈川県横浜市神奈川区金港町1-4 横浜イーストスクエア 4F</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 3500000〜5000000</p>
+      <h3>仕事内容：</h3><p>【業務概要】<br>スポーツ人財のコーディネーター（法人営業／キャリアアドバイザー）として、法人・個人双方へのコンサルティング業務をお任せいたします。<br>クライアントが抱える問題に対し、多様なアプローチから企画・提案を行い、最適な解決方法をプランニングしてください。<br><br><br>【業務詳細】<br>（1）法人向け…新卒採用、中途採用を検討している企業に対し、スポーツ人財の素晴らしさを伝え、課題解決に向けて様々な商材を提案していただきます。<br>（2）個人向け…「スポナビ」、「スポナビキャリア」登録ユーザーや、転職活動を行うスポーツ人財にアプローチを行い、個人の夢や目標に寄り添った支援を通して、理想のキャリアを築けるようアドバイスをしていただきます。<br><br><br>【一日の流れの例】<br>08：50　<br>↓掃除、朝礼<br>09：05　<br>↓始業、企業営業（営業架電、訪問等）<br>12：00<br>↓昼休み<br>13：00<br>↓人財面談<br>18：00<br>↓日報記載<br>19：00<br>↓完全退社<br>21：00　<br>※水曜日は18：00、金曜日は20：00退社</p>
+      <h3>勤務時間：</h3><p>8:50 - 18:00<br>（休憩70分）</p>
+      <h3>休暇・休日：</h3><p>完全週休2日制（土・日）/祝日/年末年始休暇/有給休暇/慶弔休暇/出産・育児休暇/カフェテリア休暇</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 禁煙</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>資格取得奨励金制度/育児休暇制度/社員旅行/持ち株制度</li><li>月間、半期、年間個人・エリアMVP表彰/社内表彰（SFアワード）/記念日早帰り/社内カフェ・バースペース/社員誕生日お祝い制度/社外研修費用（年間10万円まで）社内プチ社食・オフィスコンビニ（拠点により）</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

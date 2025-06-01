@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>3213. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>機械・機構設計・金型設計</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "機械・機構設計・金型設計",
+  "description": "日本が誇る大手自動車メーカーの車に欠かせない、様々な部品を設計する仕事です！\n\n【Q】どんなものを設計するの？\n自動車の内装や外装ボディ等の様々なパーツを、平面図（設計図）から立体的な図を設計するお仕事です。\n\n【Q】何を使って設計する？\n「CATIA（キャティア）-V5」という3次元CADソフトです。3次元CAD（キャド）とは、立体的なモノを設計する時に使用するソフトウェア。リアルな形状を画像で確認しながら設計でき、ニーズが伸びています。\n\n【Ｑ】入社後の流れは？\n未経験でも不安なくスタートできるよう、まずは2カ月の研修。ほとんどの先輩が未経験スタートですのでご安心を。自動車部品設計の基礎からの設計ソフトの使い方まで丁寧に教えます！\n\n【Ｑ】未経験でも本当に大丈夫？\n当社は約20年前に、3次元CADによる設計を学ぶ学校を開設。300人以上の技術者を育てた実績があります。その時のカリキュラムと講師を使って育成するので、知識ゼロの方でもしっかり育ちます。\n\n【Ｑ】研修後の流れは？\n先輩がいる設計チームに入り、アシスタント業務を通して段階的に実務を学習。今まで何人もの未経験者を育ててきた先輩が、自信がつくまで丁寧にレクチャーします！\n　▼\n慣れてきたら、あなたの適性に合う案件にアサイン。ひとり立ちした後もチャットツールでいつでも先輩や上司とつながっているので、悩みや不安もすぐに相談・解決できます！",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:21",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社ラージック"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "愛知県みよし市黒笹町",
+      "addressLocality": "みよし市",
+      "addressRegion": "愛知県",
+      "postalCode": "4700201",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3500000,
+      "maxValue": 6000000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "9：00～18：00（本社勤務の場合）\n※常駐先により変動\n所定労働時間：8時間\n休憩：60分",
+  "jobBenefits": [
+    "＜働く環境も充実！＞", "■社会保険完備", "■副業OK", "■退職金制度", "■オフィス内禁煙", "■借り上げ社宅有（社内規定有）", "■リファラル制度", "└紹介してくれた方が採用決定した場合一時金として10万、紹介した方が在籍中に限り毎月1万支給！", "＜豊富な成長支援！＞", "★Udemy（Eラーニング講座を使い放題）", "★勉強会（不定期開催・参加任意）", "「この資格を取るための勉強がしたい」など、どんな勉強会を開いてほしいかの意見を出すこともできます。会社をあげてスキルアップをサポートします。", "★資格取得支援", "1級機械設計技術者・技術士、2級機械設計技術者、1級機械・プラント製図、2級機械・プラント製図などが対象。取得後には資格手当も支給しまう！"
+  ],
+  "occupationalCategory": ""
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>機械・機構設計・金型設計</h1>
+      <p><em>★未経験歓迎★自動車部品設計ポジション｜2年目年収400万以上可｜初年度年休23日付与</em></p>
+      <p><strong>会社名：</strong>株式会社ラージック</p>
+      <p><strong>勤務地：</strong>愛知県みよし市黒笹町</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 3500000〜6000000</p>
+      <h3>仕事内容：</h3><p>日本が誇る大手自動車メーカーの車に欠かせない、様々な部品を設計する仕事です！<br><br>【Q】どんなものを設計するの？<br>自動車の内装や外装ボディ等の様々なパーツを、平面図（設計図）から立体的な図を設計するお仕事です。<br><br>【Q】何を使って設計する？<br>「CATIA（キャティア）-V5」という3次元CADソフトです。3次元CAD（キャド）とは、立体的なモノを設計する時に使用するソフトウェア。リアルな形状を画像で確認しながら設計でき、ニーズが伸びています。<br><br>【Ｑ】入社後の流れは？<br>未経験でも不安なくスタートできるよう、まずは2カ月の研修。ほとんどの先輩が未経験スタートですのでご安心を。自動車部品設計の基礎からの設計ソフトの使い方まで丁寧に教えます！<br><br>【Ｑ】未経験でも本当に大丈夫？<br>当社は約20年前に、3次元CADによる設計を学ぶ学校を開設。300人以上の技術者を育てた実績があります。その時のカリキュラムと講師を使って育成するので、知識ゼロの方でもしっかり育ちます。<br><br>【Ｑ】研修後の流れは？<br>先輩がいる設計チームに入り、アシスタント業務を通して段階的に実務を学習。今まで何人もの未経験者を育ててきた先輩が、自信がつくまで丁寧にレクチャーします！<br>　▼<br>慣れてきたら、あなたの適性に合う案件にアサイン。ひとり立ちした後もチャットツールでいつでも先輩や上司とつながっているので、悩みや不安もすぐに相談・解決できます！</p>
+      <h3>勤務時間：</h3><p>9：00～18：00（本社勤務の場合）<br>※常駐先により変動<br>所定労働時間：8時間<br>休憩：60分</p>
+      <h3>休暇・休日：</h3><p>年間休日<br>121日<br>休日・休暇<br>■完全週休2日制<br>（土・日）※トヨタ関連の仕事の場合、祝日はトヨタカレンダーに準じます。<br>■年末年始休暇<br>└2024年度は9連休<br>■GW休暇<br>└2024年度は9連休<br>■夏季休暇<br>└2024年度は9連休<br>■慶弔休暇<br>■有給休暇<br>└初年度23日支給／消化率80％（詳細は下記参照）<br>■産前・産後休暇<br>└女性・男性社員取得実績あり<br>■育児休暇<br>└取得実績100％※<br>■介護休暇<br>■看護休暇<br>＜有給休暇について＞<br>入社初日から3日間付与、半年後にさらに20日間付与。初年度に23日の付与となります！</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 禁煙</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>＜働く環境も充実！＞</li><li>■社会保険完備</li><li>■副業OK</li><li>■退職金制度</li><li>■オフィス内禁煙</li><li>■借り上げ社宅有（社内規定有）</li><li>■リファラル制度</li><li>└紹介してくれた方が採用決定した場合一時金として10万、紹介した方が在籍中に限り毎月1万支給！</li><li>＜豊富な成長支援！＞</li><li>★Udemy（Eラーニング講座を使い放題）</li><li>★勉強会（不定期開催・参加任意）</li><li>「この資格を取るための勉強がしたい」など、どんな勉強会を開いてほしいかの意見を出すこともできます。会社をあげてスキルアップをサポートします。</li><li>★資格取得支援</li><li>1級機械設計技術者・技術士、2級機械設計技術者、1級機械・プラント製図、2級機械・プラント製図などが対象。取得後には資格手当も支給しまう！</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

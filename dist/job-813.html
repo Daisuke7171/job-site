@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>813. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>警備・施設管理関連職</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "警備・施設管理関連職",
+  "description": "安楽亭は、国内外への積極的な出店と業態開発、M&Aを通じて、2030年までにグループのグローバル売上1000億円を目標としています。その実現を目指し設備メンテナンス部門では事故未然防止や安全管理対応力の強化を図っていきます。\n\nメンテナンス部門は自社ブランド店舗の設備機器や店舗（建物）の修繕、改善対応を行なうと共に業態のオペレーション合理化や設備関係の視点からお客様への新たな付加価値を提案する部署です。外部の設備業者とは違い、単なる修繕対応だけではなく店舗の安全管理や改善提案、従業員への指導・教育までも業務範囲とし、事故の未然防止やお客様満足度の向上、修繕コストの圧縮、新規業者や新技術の開拓を行ないます。メンテナンス担当者には店舗に関わる様々な設備機器のトラブルに対応するマルチな活躍が求められます。お客様にとっても従業員にとっても安楽亭グループをより安全で快適な場所にするために、メンテナンスのプロ集団を目指します。\n・店舗の修繕案件の対応\n・店舗や設備機器の定期点検、安全確認\n・設備機器の取扱いや清掃に関して、店舗従業員への指導教育\n・新たな修繕方法、清掃方法合理化に向けての立案、検証、採用\n・新技術、新設備の検証、採用\n・オペレーション合理化やお客様への付加価値提案",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:19",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社安楽亭"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "埼玉県さいたま市中央区上落合2-3-5 アルーサB館4F",
+      "addressLocality": "さいたま市",
+      "addressRegion": "大阪府",
+      "postalCode": "3380001",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 4000000,
+      "maxValue": 5000000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "8：45～17：45（所定労働時間8時間、休憩60分）",
+  "jobBenefits": [
+    "・各種社会保険完備", "・交通費規定支給", "・車通勤可（無料駐車場有、ガソリン代規定支給）", "・社員持株会制度", "・財形貯蓄", "・団体生保・団体損保", "・社員割引制度（安楽亭直営店舗を20％割引で利用できます）", "・退職金制度（規定有）"
+  ],
+  "occupationalCategory": "販売・接客・サービス"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>警備・施設管理関連職</h1>
+      <p><em>メンテナンス担当</em></p>
+      <p><strong>会社名：</strong>株式会社安楽亭</p>
+      <p><strong>勤務地：</strong>埼玉県さいたま市中央区上落合2-3-5 アルーサB館4F</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 4000000〜5000000</p>
+      <h3>仕事内容：</h3><p>安楽亭は、国内外への積極的な出店と業態開発、M&Aを通じて、2030年までにグループのグローバル売上1000億円を目標としています。その実現を目指し設備メンテナンス部門では事故未然防止や安全管理対応力の強化を図っていきます。<br><br>メンテナンス部門は自社ブランド店舗の設備機器や店舗（建物）の修繕、改善対応を行なうと共に業態のオペレーション合理化や設備関係の視点からお客様への新たな付加価値を提案する部署です。外部の設備業者とは違い、単なる修繕対応だけではなく店舗の安全管理や改善提案、従業員への指導・教育までも業務範囲とし、事故の未然防止やお客様満足度の向上、修繕コストの圧縮、新規業者や新技術の開拓を行ないます。メンテナンス担当者には店舗に関わる様々な設備機器のトラブルに対応するマルチな活躍が求められます。お客様にとっても従業員にとっても安楽亭グループをより安全で快適な場所にするために、メンテナンスのプロ集団を目指します。<br>・店舗の修繕案件の対応<br>・店舗や設備機器の定期点検、安全確認<br>・設備機器の取扱いや清掃に関して、店舗従業員への指導教育<br>・新たな修繕方法、清掃方法合理化に向けての立案、検証、採用<br>・新技術、新設備の検証、採用<br>・オペレーション合理化やお客様への付加価値提案</p>
+      <h3>勤務時間：</h3><p>8：45～17：45（所定労働時間8時間、休憩60分）</p>
+      <h3>休暇・休日：</h3><p>・シフト制（毎月9～10日休み、基本は土日祝日中心に休みを調整します）<br>・有給休暇（入社後６ヶ月経過後付与）<br>・慶弔休暇<br>・介護休暇<br>・産前産後休暇・育児休暇（取得実績多数あり）<br>※年末年始や長期休暇も有給消化で積極的に取得しています。</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 禁煙<br>受動喫煙対策（詳細）： 屋内の受動喫煙対策：有（禁煙）</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>・各種社会保険完備</li><li>・交通費規定支給</li><li>・車通勤可（無料駐車場有、ガソリン代規定支給）</li><li>・社員持株会制度</li><li>・財形貯蓄</li><li>・団体生保・団体損保</li><li>・社員割引制度（安楽亭直営店舗を20％割引で利用できます）</li><li>・退職金制度（規定有）</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

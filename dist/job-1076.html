@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>1076. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>宿泊施設・ホテル</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "宿泊施設・ホテル",
+  "description": "ご婚礼をご検討のお客様の来館対応や、打ち合わせ・手配物発注などウエディング業務全般。\n\n①初めて来館されるお客様には、入力いただいたアンケートを基にご要望に合う会場をご案内しウェスティンウエディングの魅力をご説明するお仕事\n②当ホテルで披露宴をご決定いただいたお客様には、料理、会場装花、写真撮影内容など打ち合わせを行い、ご一緒にウエディングを創り上げていくお仕事\n\n打ち合わせにはシェフやフローリスト、カメラマンなども同席しますので、ウエディングの専門知識がなくても一から学べます。\n必要なのは「お客様にウェスティンホテル大阪で幸せになっていただきたい」という熱意と「笑顔でのコミュニケーション力」です。\n\nファミリーウエディングから大人数でのウエディングまで幅広くお客様にご提案できる施設が揃っています。\nシェフやバンケットサービス、衣裳スタッフ、美容スタッフだけではなく、宿泊部門やレストラン部門とも連携を取りながら一組一組丁寧にオリジナルオーダーのウエディングを創り上げていきます。",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:19",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "ウェスティンホテル大阪"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "大阪府大阪市北区大淀中1-1-20",
+      "addressLocality": "大阪市",
+      "addressRegion": "大阪府",
+      "postalCode": "5310076",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3500000,
+      "maxValue": 5000000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "（例）10:00〜19:00\n1ヶ月単位の変形労働時間制（週の労働時間40時間）",
+  "jobBenefits": [
+    "・退職金制度", "・社会保険完備（健康／労災／雇用／厚生年金）", "・昇給あり", "・残業手当", "・交通費全額支給", "・全世界のグループホテル利用割引", "・従業員食堂あり", "・育児、介護休業制度", "お客様や上司から褒められたりしたことを「GoodJob制度」として表彰しております。", "社内でのちょっとしたことを褒めあう文化を醸成するため「ええやんカード制度」を作り、表彰しております。", "外国語の堪能な方へその能力を内外にアピールいただけるよう「マルチリンガルバッチ制度」があります。"
+  ],
+  "occupationalCategory": "販売・接客・サービス"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>宿泊施設・ホテル</h1>
+      <p><em>【年間休日118日】幸せをプロデュースするウエディングプランナー</em></p>
+      <p><strong>会社名：</strong>ウェスティンホテル大阪</p>
+      <p><strong>勤務地：</strong>大阪府大阪市北区大淀中1-1-20</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 3500000〜5000000</p>
+      <h3>仕事内容：</h3><p>ご婚礼をご検討のお客様の来館対応や、打ち合わせ・手配物発注などウエディング業務全般。<br><br>①初めて来館されるお客様には、入力いただいたアンケートを基にご要望に合う会場をご案内しウェスティンウエディングの魅力をご説明するお仕事<br>②当ホテルで披露宴をご決定いただいたお客様には、料理、会場装花、写真撮影内容など打ち合わせを行い、ご一緒にウエディングを創り上げていくお仕事<br><br>打ち合わせにはシェフやフローリスト、カメラマンなども同席しますので、ウエディングの専門知識がなくても一から学べます。<br>必要なのは「お客様にウェスティンホテル大阪で幸せになっていただきたい」という熱意と「笑顔でのコミュニケーション力」です。<br><br>ファミリーウエディングから大人数でのウエディングまで幅広くお客様にご提案できる施設が揃っています。<br>シェフやバンケットサービス、衣裳スタッフ、美容スタッフだけではなく、宿泊部門やレストラン部門とも連携を取りながら一組一組丁寧にオリジナルオーダーのウエディングを創り上げていきます。</p>
+      <h3>勤務時間：</h3><p>（例）10:00〜19:00<br>1ヶ月単位の変形労働時間制（週の労働時間40時間）</p>
+      <h3>休暇・休日：</h3><p>・月10日休み（2月のみ8日）<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 喫煙スペースあり<br>受動喫煙対策（詳細）： 敷地内屋外禁煙スペースあり</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>・退職金制度</li><li>・社会保険完備（健康／労災／雇用／厚生年金）</li><li>・昇給あり</li><li>・残業手当</li><li>・交通費全額支給</li><li>・全世界のグループホテル利用割引</li><li>・従業員食堂あり</li><li>・育児、介護休業制度</li><li>お客様や上司から褒められたりしたことを「GoodJob制度」として表彰しております。</li><li>社内でのちょっとしたことを褒めあう文化を醸成するため「ええやんカード制度」を作り、表彰しております。</li><li>外国語の堪能な方へその能力を内外にアピールいただけるよう「マルチリンガルバッチ制度」があります。</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

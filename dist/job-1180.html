@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>1180. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>販売・サービススタッフ</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "販売・サービススタッフ",
+  "description": "＼「働きがいのある会社」7年連続で選出されています／\n\n＜活躍の舞台は、地上221mのレストラン＞\n47階からの景色を、自慢の料理とともに楽しんでいただく当レストラン。\n歓送迎会などの会食はもちろん、記念日や結婚式、プロポーズプランなど…大切な時間を過ごしていただけるようなプランを用意しています。\n\n＜お任せするお仕事＞\n・接客（レストランサービス、バンケットサービス）\n・各種ミーティング\n・ダイニングの空間設営・演出の設計\n・メニュー、プランの企画・提案\n・レストラン、ゲストサービスの品質管理\n\n＜縦にも横にも広がるキャリア＞\n（1）レストランサービス⇒マネージャーとして育成・店舗運営に従事\n（2）レストランサービス⇒新規店舗立ち上げ⇒ユニットマネージャー昇格⇒マーケティング＆ブランディング室 レストラン担当マーケター",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:19",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社ポジティブドリームパーソンズ"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都中央区明石町８−１ 聖路加ガーデン 47階",
+      "addressLocality": "中央区",
+      "addressRegion": "東京都",
+      "postalCode": "1040044",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 4000000,
+      "maxValue": 6000000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "＜労働時間区分＞\n1ヶ月単位の変形労働時間制\n週平均労働時間：40時間00分\n休憩時間：60分\n時間外労働有無：有\n\n＜標準的な勤務時間帯＞\n10:00~23:00",
+  "jobBenefits": [
+    "◆昇給（半年の1回）※人事考課による", "◆賞与年4回（5月・8月・11月・2月）", "◆社会保険完備（雇用・労災・健康・厚生年金）", "◆交通費（1か月の上限50，000円）", "◆全国勤務手当（月8,000円～15,000円※対象者限定）", "◆特殊技能手当/キッチン職（月30,000円～55,000円）", "◆役職手当（55,000円～185,000円）", "◆勤務地エリア限定制度あり", "◆社員割引制度", "（レストラン：利用額から20％OFF、ホテル宿泊：30％OFF、フラワー：20％OFFなど）", "◆披露宴参加サポート制度（1回あたり5,000円）", "◆ロングラン表彰制度", "（勤続年数10年・15年・20年を迎えるメンバーへの祝い金/社員の場合：100,000円～300,000円）", "◆感動グランプリ‼レストラングランプリ‼賞金（50,000円～300,000円）", "◆ママズ制度", "（子どもが小学校6年生の3月末まで時短勤務が可能。※現場職種限定）"
+  ],
+  "occupationalCategory": "販売・接客・サービス"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>販売・サービススタッフ</h1>
+      <p><em>【東京・築地】ダイニングプランナー</em></p>
+      <p><strong>会社名：</strong>株式会社ポジティブドリームパーソンズ</p>
+      <p><strong>勤務地：</strong>東京都中央区明石町８−１ 聖路加ガーデン 47階</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 4000000〜6000000</p>
+      <h3>仕事内容：</h3><p>＼「働きがいのある会社」7年連続で選出されています／<br><br>＜活躍の舞台は、地上221mのレストラン＞<br>47階からの景色を、自慢の料理とともに楽しんでいただく当レストラン。<br>歓送迎会などの会食はもちろん、記念日や結婚式、プロポーズプランなど…大切な時間を過ごしていただけるようなプランを用意しています。<br><br>＜お任せするお仕事＞<br>・接客（レストランサービス、バンケットサービス）<br>・各種ミーティング<br>・ダイニングの空間設営・演出の設計<br>・メニュー、プランの企画・提案<br>・レストラン、ゲストサービスの品質管理<br><br>＜縦にも横にも広がるキャリア＞<br>（1）レストランサービス⇒マネージャーとして育成・店舗運営に従事<br>（2）レストランサービス⇒新規店舗立ち上げ⇒ユニットマネージャー昇格⇒マーケティング＆ブランディング室 レストラン担当マーケター</p>
+      <h3>勤務時間：</h3><p>＜労働時間区分＞<br>1ヶ月単位の変形労働時間制<br>週平均労働時間：40時間00分<br>休憩時間：60分<br>時間外労働有無：有<br><br>＜標準的な勤務時間帯＞<br>10:00~23:00</p>
+      <h3>休暇・休日：</h3><p>■月9日休 ※シフト制（2月のみ8日休）<br>■有給休暇<br>■産休・育休（取得実績100％）<br>■慶弔休暇<br>※夏季休暇や年末年始などで5日以上の長期連休取得も可能！</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 禁煙</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>◆昇給（半年の1回）※人事考課による</li><li>◆賞与年4回（5月・8月・11月・2月）</li><li>◆社会保険完備（雇用・労災・健康・厚生年金）</li><li>◆交通費（1か月の上限50，000円）</li><li>◆全国勤務手当（月8,000円～15,000円※対象者限定）</li><li>◆特殊技能手当/キッチン職（月30,000円～55,000円）</li><li>◆役職手当（55,000円～185,000円）</li><li>◆勤務地エリア限定制度あり</li><li>◆社員割引制度</li><li>（レストラン：利用額から20％OFF、ホテル宿泊：30％OFF、フラワー：20％OFFなど）</li><li>◆披露宴参加サポート制度（1回あたり5,000円）</li><li>◆ロングラン表彰制度</li><li>（勤続年数10年・15年・20年を迎えるメンバーへの祝い金/社員の場合：100,000円～300,000円）</li><li>◆感動グランプリ‼レストラングランプリ‼賞金（50,000円～300,000円）</li><li>◆ママズ制度</li><li>（子どもが小学校6年生の3月末まで時短勤務が可能。※現場職種限定）</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>

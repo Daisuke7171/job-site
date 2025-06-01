@@ -2,12 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>705. タイトル未設定</title>
+  <!-- Google サイト認証タグ等があればここに追加 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>販売・サービススタッフ</title>
+  <style>
+    /* ──────────── 以下は job-1.html のスタイルをほぼコピー ──────────── */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    section.job-detail {
+      background: #ffffff;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #0073aa;
+    }
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
+      line-height: 1.6;
+    }
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #fff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    /* ───────────────────────────────────────────────────────────────────────── */
+  </style>
+
+  <!-- JSON-LD の構造化データ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "販売・サービススタッフ",
+  "description": "◆充実した研修制度で未経験からエステティシャンに！未経験8割/美容の知識が身につく/美容が大好き！手に職をつけたい方大募集♪入社後は先輩たちがしっかりサポートします♪\n\nフィットネスクラブ内にて、当社独自のセラピーを活かし\nお客様の『美』をプロデュースします。\n\n*:━━━━━━━━━━:*\n　　  具体的には？\n*:━━━━━━━━━━:*\n『ボディエステ』や『ボディケア』『フェイシャル』などの施術を行います。\nお客様一人ひとりが理想としている美をヒアリングし\n理想に沿ったプランをご提案。\nお客様の美意識を高めるサポートができる仕事です♪\n\n*:━━━━━━━━━━:*\n  こんな仕事もおまかせ\n*:━━━━━━━━━━:*\n◇カウンセリング\n◇マシーンやハンドでの施術\n◇予算や期間など施術内容のプランニング、ご提案\n◇コスメやサプリメントのご提案\n◇『キネスティックセラピー』を用いたボディケア\n◇血流改善やデトックス効果のある『ゲルマニウム温浴』のご案内　など\n\n◆『キネスティックセラピー』とは？\n‘‘背骨の可動域を正常化させること‘‘を目的とした当社独自の施術です。\n\n身体に想像以上の負担が掛かる\n立ちっぱなしや座りっぱなしの姿勢。\nそこから起こる体のむくみや姿勢の悪さ、慢性疲労、肩こり、腰痛など…\n体調改善がしたい方や運動の効率を上げダイエットに繋げたい方など、\nさまざまな方から好評をいただいています！",
+  "datePosted": "2025-06-01",
+  "validThrough": "2025-07-01T01:19:19",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社アスウイッツ"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "神奈川県横浜市都筑区池辺町４２６１−５",
+      "addressLocality": "横浜市",
+      "addressRegion": "東京都",
+      "postalCode": "2240053",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 2500000,
+      "maxValue": 3000000,
+      "unitText": "年収"
+    }
+  },
+  "workHours": "シフト制（店舗により時間は異なる）\n例10:00～21:00、11:00～20:00\n1日の労働時間：8時間、休憩1時間\n1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下）\n\n基本的には月8日休み\n希望により月6～10日休み（シフト制による）も相談可能です",
+  "jobBenefits": [
+    "■賞与あり（実績による）", "■昇給随時（実績による）", "■インセンティブあり（実績による）", "■月次ボーナスあり（実績による）", "■社会保険完備", "■交通費支給", "■役職手当", "■社内表彰制度", "■育児支援制度", "■健康診断", "■社員旅行", "■保養所あり（エクシブリゾート）", "■社員割引", "■再雇用制度", "■制服あり", "■独立・開業支援", "■研修制度あり"
+  ],
+  "occupationalCategory": "販売・接客・サービス"
+}
+  </script>
 </head>
 <body>
-  <h1>タイトル未設定</h1>
-  <p>詳細リンク: <a href="undefined">undefined</a></p>
-  <p>説明: </p>
-  <!-- その他、CSV の列に合わせたフィールドがあればここに追加 -->
+  <header>
+    <div class="banner__inner">
+      <!-- banner アイコンは相対パスで読み込み -->
+      <img
+        class="banner__icon"
+        src="../assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="job-detail">
+      <h1>販売・サービススタッフ</h1>
+      <p><em>未経験からプロのエステティシャンに♪美容が大好き/自分自身も綺麗になりたい方！充実した研修制度あり！</em></p>
+      <p><strong>会社名：</strong>株式会社アスウイッツ</p>
+      <p><strong>勤務地：</strong>神奈川県横浜市都筑区池辺町４２６１−５</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 2500000〜3000000</p>
+      <h3>仕事内容：</h3><p>◆充実した研修制度で未経験からエステティシャンに！未経験8割/美容の知識が身につく/美容が大好き！手に職をつけたい方大募集♪入社後は先輩たちがしっかりサポートします♪<br><br>フィットネスクラブ内にて、当社独自のセラピーを活かし<br>お客様の『美』をプロデュースします。<br><br>*:━━━━━━━━━━:*<br>　　  具体的には？<br>*:━━━━━━━━━━:*<br>『ボディエステ』や『ボディケア』『フェイシャル』などの施術を行います。<br>お客様一人ひとりが理想としている美をヒアリングし<br>理想に沿ったプランをご提案。<br>お客様の美意識を高めるサポートができる仕事です♪<br><br>*:━━━━━━━━━━:*<br>  こんな仕事もおまかせ<br>*:━━━━━━━━━━:*<br>◇カウンセリング<br>◇マシーンやハンドでの施術<br>◇予算や期間など施術内容のプランニング、ご提案<br>◇コスメやサプリメントのご提案<br>◇『キネスティックセラピー』を用いたボディケア<br>◇血流改善やデトックス効果のある『ゲルマニウム温浴』のご案内　など<br><br>◆『キネスティックセラピー』とは？<br>‘‘背骨の可動域を正常化させること‘‘を目的とした当社独自の施術です。<br><br>身体に想像以上の負担が掛かる<br>立ちっぱなしや座りっぱなしの姿勢。<br>そこから起こる体のむくみや姿勢の悪さ、慢性疲労、肩こり、腰痛など…<br>体調改善がしたい方や運動の効率を上げダイエットに繋げたい方など、<br>さまざまな方から好評をいただいています！</p>
+      <h3>勤務時間：</h3><p>シフト制（店舗により時間は異なる）<br>例10:00～21:00、11:00～20:00<br>1日の労働時間：8時間、休憩1時間<br>1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下）<br><br>基本的には月8日休み<br>希望により月6～10日休み（シフト制による）も相談可能です</p>
+      <h3>休暇・休日：</h3><p>年間休日110日相当<br>※詳細は面接時にお伝えします<br><br>■基本的には月8日休み（シフト制）<br>※希望により月6日～10日休み（シフト制による）相談可能です<br>■夏季休暇<br>■年末年始休暇<br>■誕生日休暇<br>■育児休暇あり<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>待遇・福利厚生・その他</p>
+      <h3>受動喫煙対策：</h3><p>受動喫煙対策： 喫煙スペースあり<br>受動喫煙対策（詳細）： サロン内になければ外の喫煙所でお願いしております。</p>
+      <h3>福利厚生：</h3>
+        <ul>
+          <li>■賞与あり（実績による）</li><li>■昇給随時（実績による）</li><li>■インセンティブあり（実績による）</li><li>■月次ボーナスあり（実績による）</li><li>■社会保険完備</li><li>■交通費支給</li><li>■役職手当</li><li>■社内表彰制度</li><li>■育児支援制度</li><li>■健康診断</li><li>■社員旅行</li><li>■保養所あり（エクシブリゾート）</li><li>■社員割引</li><li>■再雇用制度</li><li>■制服あり</li><li>■独立・開業支援</li><li>■研修制度あり</li>
+        </ul>
+      <!-- ↓ 応募リンクがある場合には href を適宜書き換えてください -->
+      <p>
+        <a
+          class="form-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📝 この求人に応募する
+        </a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>
