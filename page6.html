@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>求人一覧 6/423</title>
+
+   <!-- self-referencing canonical -->
+  <link rel="canonical" href="https://your-domain.com/page6.html" />
+  <link rel="prev" href="https://your-domain.com/page5.html" />
+  <link rel="next" href="https://your-domain.com/page7.html" />
+
+
+  <style>
+ /* 全体 */
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background: #f2f5f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ヘッダー／バナー */
+    header {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .banner__inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      /* SVG に fill="currentColor" を指定しておくと color が効きます */
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #0073aa;  /* テキスト色をサイトの青に */
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
+      color: #0073aa;
+    }
+
+    /* モバイル用微調整 */
+    @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
+    }
+    .container {
+      max-width: 720px;
+      margin: 1.5em auto;
+      padding: 0 1em;
+    }
+    .job-card {
+      background: #ffffff;
+      padding: 1.5em;
+      margin-bottom: 1.2em;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .job-card h2 {
+      margin: 0 0 0.5em;
+      font-size: 1.3em;
+      color: #0073aa;
+    }
+    .job-card p { margin: 0.4em 0; color: #555; }
+    .form-button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #0073aa;
+      color: #ffffff;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .form-button:hover {
+      background: #005f8d;
+    }
+    .pagination {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4em;
+      justify-content: center;
+      margin: 2em 0;
+    }
+    .pagination a, .pagination .ellipsis {
+      padding: 0.5em 0.75em;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+      background: #fff;
+    }
+    .pagination a.active {
+      background: #0073aa;
+      color: #fff;
+      border-color: #0073aa;
+    }
+    .pagination .ellipsis {
+      border: none;
+      color: #999;
+    }
+    @media (max-width:600px) {
+      header h1 { font-size: 1.2em; }
+      .job-card { padding: 1em; }
+      .job-card h2 { font-size: 1.1em; }
+      .form-button { padding: 0.5em 1em; }
+      .pagination a, .pagination .ellipsis { padding: 0.4em 0.6em; font-size: 0.9em; }
+    }
+
+    header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* モバイル時 */
+@media (max-width:600px) {
+  .banner__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner__icon {
+    margin: 0 0 0.5em;
+  }
+  .banner__text h1 { font-size: 1.2em; }
+  .banner__text .tagline { font-size: 0.85em; }
+}
+
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"JobPosting","title":"販売・サービススタッフ","description":"【ブランド品・雑貨等の鑑定士（エコリング上大岡カミオ店）】新店舗★上大岡駅から徒歩1分(95ｍ)","datePosted":"2025-06-01","validThrough":"2025-07-01T23:59","employmentType":"正社員","hiringOrganization":{"@type":"Organization","name":"アスベックス株式会社"},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"神奈川県横浜市港南区上大岡西１丁目15番1号 camio　1階109区画","addressLocality":"神奈川県横浜市","addressRegion":"京都","postalCode":"2330002","addressCountry":"JP"}},"baseSalary":{"@type":"MonetaryAmount","currency":"JPY","value":{"@type":"QuantitativeValue","value":3500000,"unitText":"YEAR"}}},{"@context":"https://schema.org","@type":"JobPosting","title":"販売・サービススタッフ","description":"【ブランド品・雑貨等の鑑定士（エコリング鶴見店）】未経験歓迎★鶴見駅から徒歩5分（350ｍ）","datePosted":"2025-06-01","validThrough":"2025-07-01T23:59","employmentType":"正社員","hiringOrganization":{"@type":"Organization","name":"アスベックス株式会社"},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"神奈川県横浜市鶴見区豊岡町21-11","addressLocality":"横浜市","addressRegion":"神奈川県","postalCode":"2300062","addressCountry":"JP"}},"baseSalary":{"@type":"MonetaryAmount","currency":"JPY","value":{"@type":"QuantitativeValue","value":3500000,"unitText":"YEAR"}}},{"@context":"https://schema.org","@type":"JobPosting","title":"個人営業","description":"【柏市勤務】BtoC新規営業/未経験歓迎/20代活躍中","datePosted":"2025-06-01","validThrough":"2025-07-01T23:59","employmentType":"正社員","hiringOrganization":{"@type":"Organization","name":"株式会社style"},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"千葉県柏市柏6-4-24　柏ビルディング６F","addressLocality":"千葉県柏市","addressRegion":"神奈川県","postalCode":"2770005","addressCountry":"JP"}},"baseSalary":{"@type":"MonetaryAmount","currency":"JPY","value":{"@type":"QuantitativeValue","value":3500000,"unitText":"YEAR"}}},{"@context":"https://schema.org","@type":"JobPosting","title":"調理","description":"【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業","datePosted":"2025-06-01","validThrough":"2025-07-01T23:59","employmentType":"正社員","hiringOrganization":{"@type":"Organization","name":"チムニー株式会社"},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"北海道札幌市北区麻生町５－４－１２　１Ｆ","addressLocality":"北海道札幌市","addressRegion":"千葉県","postalCode":"10045","addressCountry":"JP"}},"baseSalary":{"@type":"MonetaryAmount","currency":"JPY","value":{"@type":"QuantitativeValue","value":3000000,"unitText":"YEAR"}}},{"@context":"https://schema.org","@type":"JobPosting","title":"調理","description":"【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業","datePosted":"2025-06-01","validThrough":"2025-07-01T23:59","employmentType":"正社員","hiringOrganization":{"@type":"Organization","name":"チムニー株式会社"},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"北海道札幌市白石区東札幌２条２－４－１５","addressLocality":"札幌市","addressRegion":"北海道","postalCode":"30002","addressCountry":"JP"}},"baseSalary":{"@type":"MonetaryAmount","currency":"JPY","value":{"@type":"QuantitativeValue","value":3000000,"unitText":"YEAR"}}},{"@context":"https://schema.org","@type":"JobPosting","title":"調理","description":"【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業","datePosted":"2025-06-01","validThrough":"2025-07-01T23:59","employmentType":"正社員","hiringOrganization":{"@type":"Organization","name":"チムニー株式会社"},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"北海道札幌市中央区北２条西２－３１　ＭＩＺＵＨＯビル１Ｆ・２Ｆ","addressLocality":"札幌市","addressRegion":"北海道","postalCode":"600002","addressCountry":"JP"}},"baseSalary":{"@type":"MonetaryAmount","currency":"JPY","value":{"@type":"QuantitativeValue","value":3000000,"unitText":"YEAR"}}},{"@context":"https://schema.org","@type":"JobPosting","title":"調理","description":"【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業","datePosted":"2025-06-01","validThrough":"2025-07-01T23:59","employmentType":"正社員","hiringOrganization":{"@type":"Organization","name":"チムニー株式会社"},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"北海道札幌市白石区南郷１丁目南８番１０号　白石ガーデンプレイス　地下１階","addressLocality":"札幌市","addressRegion":"北海道","postalCode":"30022","addressCountry":"JP"}},"baseSalary":{"@type":"MonetaryAmount","currency":"JPY","value":{"@type":"QuantitativeValue","value":3000000,"unitText":"YEAR"}}},{"@context":"https://schema.org","@type":"JobPosting","title":"調理","description":"【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業","datePosted":"2025-06-01","validThrough":"2025-07-01T23:59","employmentType":"正社員","hiringOrganization":{"@type":"Organization","name":"チムニー株式会社"},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"北海道千歳市千代田町３丁目１３　ベストウェスタンプラスｈフィーノ千歳","addressLocality":"千歳市","addressRegion":"北海道","postalCode":"660062","addressCountry":"JP"}},"baseSalary":{"@type":"MonetaryAmount","currency":"JPY","value":{"@type":"QuantitativeValue","value":3000000,"unitText":"YEAR"}}},{"@context":"https://schema.org","@type":"JobPosting","title":"調理","description":"【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業","datePosted":"2025-06-01","validThrough":"2025-07-01T23:59","employmentType":"正社員","hiringOrganization":{"@type":"Organization","name":"チムニー株式会社"},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"北海道札幌市北区北２３条西４丁目２－２７　第２長寿庵ビル１階","addressLocality":"札幌市","addressRegion":"北海道","postalCode":"10023","addressCountry":"JP"}},"baseSalary":{"@type":"MonetaryAmount","currency":"JPY","value":{"@type":"QuantitativeValue","value":3000000,"unitText":"YEAR"}}},{"@context":"https://schema.org","@type":"JobPosting","title":"調理","description":"【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業","datePosted":"2025-06-01","validThrough":"2025-07-01T23:59","employmentType":"正社員","hiringOrganization":{"@type":"Organization","name":"チムニー株式会社"},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"北海道札幌市厚別区厚別中央２条５－６－１　ＪＲ高架下","addressLocality":"札幌市","addressRegion":"北海道","postalCode":"40052","addressCountry":"JP"}},"baseSalary":{"@type":"MonetaryAmount","currency":"JPY","value":{"@type":"QuantitativeValue","value":3000000,"unitText":"YEAR"}}}]}
+  </script>
+</head>
+<body>
+ <header>
+    <div class="banner__inner">
+      <img
+        class="banner__icon"
+        src="assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>求人一覧 — Page 6/423</h2>
+    
+    <section class="job-card">
+      <h2>販売・サービススタッフ</h2>
+      <p><em>【ブランド品・雑貨等の鑑定士（エコリング上大岡カミオ店）】新店舗★上大岡駅から徒歩1分(95ｍ)</em></p>
+      <p><strong>会社名：</strong>アスベックス株式会社</p>
+      <p><strong>勤務地：</strong>神奈川県横浜市港南区上大岡西１丁目15番1号 camio　1階109区画</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 350万円〜400万円</p>
+      <p><strong>仕事内容：</strong><br>リサイクル品の店頭買取業務をお任せします。販売はありません。お客様がお持ちになったブランド品・装飾品・雑貨まで、幅広い商品の査定・買取業務をお任せします。<br><br>【具体的には…】<br>・お客様対応<br>・持ち込まれた品の査定<br>・査定金額の提示、ご納得いただけたら買い取り<br>・データ入力作業（顧客情報・商品情報など）<br>・その他（店頭の清掃、バックヤード整理、POPの掲示など）<br>など<br><br>査定した商品の金額を提示し、お客様が価格に納得されたら買取が成立します。<br>適正な金額で買い取る能力が求められますが、研修も充実していますので安心してスタートすることが可能です。<br><br>【1日の流れ】<br>9:45　出社・開店準備：店舗内の掃除や立て看板の設置をして開店準備を進めます。<br>▼<br>11:00　店舗オープン：お客様が来店されたら最優先に対応していきます。それ以外の時間では、バックヤード整理や事務仕事などを行います。<br>▼<br>18:45　閉店、退社：閉店作業と明日の準備をして、退社します！<br><br>【入社後の流れ】<br>入社後は研修やOJTを通してマナーから業界、鑑定士スキルまでを学んでいただきます。少しずつ知識を増やし、独り立ちを目指していただきます。困った時も相談しやすい雰囲気がありますので、スキルアップしやすい環境です。<br><br>【キャリアステップ】<br>・未経験入社2年目の23歳で店長（ポジションなど）に就任<br><br>【未経験でも安心してスタートできる理由】<br>研修やサポート体制も充実。現時点では「ブランド品にはあまり詳しくない」「お客様と接する仕事は初めて」という方も心配ありません！未経験スタートの先輩社員が多数。ほとんどが未経験スタートだからこそ、鑑定士の育成施設があります。もちろん研修終了後も先輩がマンツーマンで指導していきますので、分からないことがあっても安心です。<br>※エコリング本部にて約1ヶ月の研修がございます。</p>
+      <p><a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%A2%E3%82%B9%E3%83%99%E3%83%83%E3%82%AF%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">📝 応募する</a></p>
+    </section>
+    <section class="job-card">
+      <h2>販売・サービススタッフ</h2>
+      <p><em>【ブランド品・雑貨等の鑑定士（エコリング鶴見店）】未経験歓迎★鶴見駅から徒歩5分（350ｍ）</em></p>
+      <p><strong>会社名：</strong>アスベックス株式会社</p>
+      <p><strong>勤務地：</strong>神奈川県横浜市鶴見区豊岡町21-11</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 350万円〜400万円</p>
+      <p><strong>仕事内容：</strong><br>リサイクル品の店頭買取業務をお任せします。販売はありません。お客様がお持ちになったブランド品・装飾品・雑貨まで、幅広い商品の査定・買取業務をお任せします。<br><br>【具体的には…】<br>・お客様対応<br>・持ち込まれた品の査定<br>・査定金額の提示、ご納得いただけたら買い取り<br>・データ入力作業（顧客情報・商品情報など）<br>・その他（店頭の清掃、バックヤード整理、POPの掲示など）<br>など<br><br>査定した商品の金額を提示し、お客様が価格に納得されたら買取が成立します。<br>適正な金額で買い取る能力が求められますが、研修も充実していますので安心してスタートすることが可能です。<br><br>【1日の流れ】<br>9:45　出社・開店準備：店舗内の掃除や立て看板の設置をして開店準備を進めます。<br>▼<br>11:00　店舗オープン：お客様が来店されたら最優先に対応していきます。それ以外の時間では、バックヤード整理や事務仕事などを行います。<br>▼<br>18:45　閉店、退社：閉店作業と明日の準備をして、退社します！<br><br>【入社後の流れ】<br>入社後は研修やOJTを通してマナーから業界、鑑定士スキルまでを学んでいただきます。少しずつ知識を増やし、独り立ちを目指していただきます。困った時も相談しやすい雰囲気がありますので、スキルアップしやすい環境です。<br><br>【キャリアステップ】<br>・未経験入社2年目の23歳で店長（ポジションなど）に就任<br><br>【未経験でも安心してスタートできる理由】<br>研修やサポート体制も充実。現時点では「ブランド品にはあまり詳しくない」「お客様と接する仕事は初めて」という方も心配ありません！未経験スタートの先輩社員が多数。ほとんどが未経験スタートだからこそ、鑑定士の育成施設があります。もちろん研修終了後も先輩がマンツーマンで指導していきますので、分からないことがあっても安心です。<br>※エコリング本部にて約1ヶ月の研修がございます。</p>
+      <p><a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%A2%E3%82%B9%E3%83%99%E3%83%83%E3%82%AF%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">📝 応募する</a></p>
+    </section>
+    <section class="job-card">
+      <h2>個人営業</h2>
+      <p><em>【柏市勤務】BtoC新規営業/未経験歓迎/20代活躍中</em></p>
+      <p><strong>会社名：</strong>株式会社style</p>
+      <p><strong>勤務地：</strong>千葉県柏市柏6-4-24　柏ビルディング６F</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 350万円〜850万円</p>
+      <p><strong>仕事内容：</strong><br>お客様のお宅へお伺いし、リユース・リサイクルの提案営業をチームで行います。<br>不要になり、処分に困っているものをリユース品として次の商品に繋げていく持続性の高い仕事です。<br>1.	お客様宅で不要になったが、処分に困っているものはないかヒアリング<br>2.	リサイクル・リユースの査定に出してみないか提案・案内<br>3.	ご依頼を頂き、査定会社へ引継ぎ</p>
+      <p><a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEstyle" target="_blank">📝 応募する</a></p>
+    </section>
+    <section class="job-card">
+      <h2>調理</h2>
+      <p><em>【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業</em></p>
+      <p><strong>会社名：</strong>チムニー株式会社</p>
+      <p><strong>勤務地：</strong>北海道札幌市北区麻生町５－４－１２　１Ｆ</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 300万円〜400万円</p>
+      <p><strong>仕事内容：</strong><br>弊社が運営する飲食店にて、調理業務を中心とした各種業務をお任せいたします。<br><br>【仕事内容】<br>・キッチン内で仕込み、盛り付け、調理<br>・料理と飲み物の配膳、片付け（バッシング）、ホール内の清掃<br>・お客様のご案内、注文取り、レジ業務<br>・発注<br>・現金管理<br>・衛生管理<br>・スタッフシフト管理<br>・その他（清掃、採用面接）<br><br>入社後まずは仕込みを中心とした簡単な調理業務や接客、配膳などからお任せしていきます。業務に習熟していったら、本格的な調理や発注業務、現金管理などもお任せしていき、将来的には調理長としてキッチンおよび調理の全体管理を担っていただくことを想定しています。<br><br>【店舗について】<br>弊社の運営する飲食店はオーソドックスな居酒屋から焼き鳥店、すし居酒屋まで業態はさまざま。老若男女多くのお客さまが来店されるため、幅広い接客スキルを身につけることができます。</p>
+      <p><a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%81%E3%83%A0%E3%83%8B%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">📝 応募する</a></p>
+    </section>
+    <section class="job-card">
+      <h2>調理</h2>
+      <p><em>【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業</em></p>
+      <p><strong>会社名：</strong>チムニー株式会社</p>
+      <p><strong>勤務地：</strong>北海道札幌市白石区東札幌２条２－４－１５</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 300万円〜400万円</p>
+      <p><strong>仕事内容：</strong><br>弊社が運営する飲食店にて、調理業務を中心とした各種業務をお任せいたします。<br><br>【仕事内容】<br>・キッチン内で仕込み、盛り付け、調理<br>・料理と飲み物の配膳、片付け（バッシング）、ホール内の清掃<br>・お客様のご案内、注文取り、レジ業務<br>・発注<br>・現金管理<br>・衛生管理<br>・スタッフシフト管理<br>・その他（清掃、採用面接）<br><br>入社後まずは仕込みを中心とした簡単な調理業務や接客、配膳などからお任せしていきます。業務に習熟していったら、本格的な調理や発注業務、現金管理などもお任せしていき、将来的には調理長としてキッチンおよび調理の全体管理を担っていただくことを想定しています。<br><br>【店舗について】<br>弊社の運営する飲食店はオーソドックスな居酒屋から焼き鳥店、すし居酒屋まで業態はさまざま。老若男女多くのお客さまが来店されるため、幅広い接客スキルを身につけることができます。</p>
+      <p><a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%81%E3%83%A0%E3%83%8B%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">📝 応募する</a></p>
+    </section>
+    <section class="job-card">
+      <h2>調理</h2>
+      <p><em>【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業</em></p>
+      <p><strong>会社名：</strong>チムニー株式会社</p>
+      <p><strong>勤務地：</strong>北海道札幌市中央区北２条西２－３１　ＭＩＺＵＨＯビル１Ｆ・２Ｆ</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 300万円〜400万円</p>
+      <p><strong>仕事内容：</strong><br>弊社が運営する飲食店にて、調理業務を中心とした各種業務をお任せいたします。<br><br>【仕事内容】<br>・キッチン内で仕込み、盛り付け、調理<br>・料理と飲み物の配膳、片付け（バッシング）、ホール内の清掃<br>・お客様のご案内、注文取り、レジ業務<br>・発注<br>・現金管理<br>・衛生管理<br>・スタッフシフト管理<br>・その他（清掃、採用面接）<br><br>入社後まずは仕込みを中心とした簡単な調理業務や接客、配膳などからお任せしていきます。業務に習熟していったら、本格的な調理や発注業務、現金管理などもお任せしていき、将来的には調理長としてキッチンおよび調理の全体管理を担っていただくことを想定しています。<br><br>【店舗について】<br>弊社の運営する飲食店はオーソドックスな居酒屋から焼き鳥店、すし居酒屋まで業態はさまざま。老若男女多くのお客さまが来店されるため、幅広い接客スキルを身につけることができます。</p>
+      <p><a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%81%E3%83%A0%E3%83%8B%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">📝 応募する</a></p>
+    </section>
+    <section class="job-card">
+      <h2>調理</h2>
+      <p><em>【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業</em></p>
+      <p><strong>会社名：</strong>チムニー株式会社</p>
+      <p><strong>勤務地：</strong>北海道札幌市白石区南郷１丁目南８番１０号　白石ガーデンプレイス　地下１階</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 300万円〜400万円</p>
+      <p><strong>仕事内容：</strong><br>弊社が運営する飲食店にて、調理業務を中心とした各種業務をお任せいたします。<br><br>【仕事内容】<br>・キッチン内で仕込み、盛り付け、調理<br>・料理と飲み物の配膳、片付け（バッシング）、ホール内の清掃<br>・お客様のご案内、注文取り、レジ業務<br>・発注<br>・現金管理<br>・衛生管理<br>・スタッフシフト管理<br>・その他（清掃、採用面接）<br><br>入社後まずは仕込みを中心とした簡単な調理業務や接客、配膳などからお任せしていきます。業務に習熟していったら、本格的な調理や発注業務、現金管理などもお任せしていき、将来的には調理長としてキッチンおよび調理の全体管理を担っていただくことを想定しています。<br><br>【店舗について】<br>弊社の運営する飲食店はオーソドックスな居酒屋から焼き鳥店、すし居酒屋まで業態はさまざま。老若男女多くのお客さまが来店されるため、幅広い接客スキルを身につけることができます。</p>
+      <p><a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%81%E3%83%A0%E3%83%8B%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">📝 応募する</a></p>
+    </section>
+    <section class="job-card">
+      <h2>調理</h2>
+      <p><em>【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業</em></p>
+      <p><strong>会社名：</strong>チムニー株式会社</p>
+      <p><strong>勤務地：</strong>北海道千歳市千代田町３丁目１３　ベストウェスタンプラスｈフィーノ千歳</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 300万円〜400万円</p>
+      <p><strong>仕事内容：</strong><br>弊社が運営する飲食店にて、調理業務を中心とした各種業務をお任せいたします。<br><br>【仕事内容】<br>・キッチン内で仕込み、盛り付け、調理<br>・料理と飲み物の配膳、片付け（バッシング）、ホール内の清掃<br>・お客様のご案内、注文取り、レジ業務<br>・発注<br>・現金管理<br>・衛生管理<br>・スタッフシフト管理<br>・その他（清掃、採用面接）<br><br>入社後まずは仕込みを中心とした簡単な調理業務や接客、配膳などからお任せしていきます。業務に習熟していったら、本格的な調理や発注業務、現金管理などもお任せしていき、将来的には調理長としてキッチンおよび調理の全体管理を担っていただくことを想定しています。<br><br>【店舗について】<br>弊社の運営する飲食店はオーソドックスな居酒屋から焼き鳥店、すし居酒屋まで業態はさまざま。老若男女多くのお客さまが来店されるため、幅広い接客スキルを身につけることができます。</p>
+      <p><a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%81%E3%83%A0%E3%83%8B%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">📝 応募する</a></p>
+    </section>
+    <section class="job-card">
+      <h2>調理</h2>
+      <p><em>【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業</em></p>
+      <p><strong>会社名：</strong>チムニー株式会社</p>
+      <p><strong>勤務地：</strong>北海道札幌市北区北２３条西４丁目２－２７　第２長寿庵ビル１階</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 300万円〜400万円</p>
+      <p><strong>仕事内容：</strong><br>弊社が運営する飲食店にて、調理業務を中心とした各種業務をお任せいたします。<br><br>【仕事内容】<br>・キッチン内で仕込み、盛り付け、調理<br>・料理と飲み物の配膳、片付け（バッシング）、ホール内の清掃<br>・お客様のご案内、注文取り、レジ業務<br>・発注<br>・現金管理<br>・衛生管理<br>・スタッフシフト管理<br>・その他（清掃、採用面接）<br><br>入社後まずは仕込みを中心とした簡単な調理業務や接客、配膳などからお任せしていきます。業務に習熟していったら、本格的な調理や発注業務、現金管理などもお任せしていき、将来的には調理長としてキッチンおよび調理の全体管理を担っていただくことを想定しています。<br><br>【店舗について】<br>弊社の運営する飲食店はオーソドックスな居酒屋から焼き鳥店、すし居酒屋まで業態はさまざま。老若男女多くのお客さまが来店されるため、幅広い接客スキルを身につけることができます。</p>
+      <p><a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%81%E3%83%A0%E3%83%8B%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">📝 応募する</a></p>
+    </section>
+    <section class="job-card">
+      <h2>調理</h2>
+      <p><em>【調理スタッフ（調理長候補）】上場企業・全国500店舗を展開する大手飲食企業</em></p>
+      <p><strong>会社名：</strong>チムニー株式会社</p>
+      <p><strong>勤務地：</strong>北海道札幌市厚別区厚別中央２条５－６－１　ＪＲ高架下</p>
+      <p><strong>雇用形態：</strong>正社員</p>
+      <p><strong>給与：</strong>年収 300万円〜400万円</p>
+      <p><strong>仕事内容：</strong><br>弊社が運営する飲食店にて、調理業務を中心とした各種業務をお任せいたします。<br><br>【仕事内容】<br>・キッチン内で仕込み、盛り付け、調理<br>・料理と飲み物の配膳、片付け（バッシング）、ホール内の清掃<br>・お客様のご案内、注文取り、レジ業務<br>・発注<br>・現金管理<br>・衛生管理<br>・スタッフシフト管理<br>・その他（清掃、採用面接）<br><br>入社後まずは仕込みを中心とした簡単な調理業務や接客、配膳などからお任せしていきます。業務に習熟していったら、本格的な調理や発注業務、現金管理などもお任せしていき、将来的には調理長としてキッチンおよび調理の全体管理を担っていただくことを想定しています。<br><br>【店舗について】<br>弊社の運営する飲食店はオーソドックスな居酒屋から焼き鳥店、すし居酒屋まで業態はさまざま。老若男女多くのお客さまが来店されるため、幅広い接客スキルを身につけることができます。</p>
+      <p><a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%81%E3%83%A0%E3%83%8B%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">📝 応募する</a></p>
+    </section>   
+    <div class="pagination"><a href="index.html">1</a><span class="ellipsis">…</span><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html" class="active">6</a><a href="page7.html">7</a><a href="page8.html">8</a><span class="ellipsis">…</span><a href="page423.html">423</a></div>
+  </div>
+</body>
+
+</html>
