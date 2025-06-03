@@ -3,48 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>個人営業｜株式会社アートネイチャー</title>
+  <title>個人営業</title>
 
-  <!-- JSON-LD（構造化データ） -->
+  <!-- JSON-LD：構造化データ -->
   <script type="application/ld+json">
 {
-  "@context": "https://schema.org/",
-  "@type": "JobPosting",
-  "title": "個人営業",
-  "description": "レディースヘアカウンセラー（反響営業）",
-  "datePosted": "2025-06-03",
-  "validThrough": "",
-  "employmentType": "正社員",
-  "hiringOrganization": {
-    "@type": "Organization",
-    "name": "株式会社アートネイチャー"
-  },
-  "jobLocation": {
-    "@type": "Place",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "愛知県名古屋市中区栄3-7-12 サカエ東栄ビル 8F",
-      "addressLocality": "名古屋市",
-      "addressRegion": "香川県",
-      "postalCode": "4600008",
-      "addressCountry": "JP"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "JobPosting",
+      "title": "個人営業",
+      "description": "■担当業務：<br>商品やサービスに関するお問い合わせのあったお客様に当社サロンにご来店頂きご提案をして頂きます。一部ご来店ができないお客様は訪問での対応を行います。お客様の髪のお悩みを丁寧にカウンセリングし最適なプランをご提案して頂きます。<br>※レディース向けカウンセリングは、平日に実施することが多いため、土日にお休みを頂くこともあります※<br><br>■仕事の流れ：<br>テレビCMなどをご覧になり問い合わせを頂いたお客様とアポイントを設定し、直接お会いしてカウンセリングして頂きます。ヘアスタイルや髪の悩みを丁寧にヒアリングしながら、お客様の要望に沿った商品をサンプルを用い実際にご提案して頂きます。<br><br>商品が完成した後はサロンに再度お越し頂き、納品していきます。その際にイメージ通りかどうかなどの最終チェックまで行います。ウイッグを始めとする各種サービスは、毛髪の悩みはもちろん、ファッションとしてのニーズも強く、色々な角度からお客様の笑顔・満足の創出に関われる非常にやりがいのある仕事です。<br><br>■研修について：<br>3週間を研修期間（リモートもしくは東京本社or大阪事務所にて実施／遠方者の宿泊は会社手配）とし、商品や毛髪についての知識と販売・営業についての研修を行います。先輩社員との営業同行や、OJTを通じ、一人前の営業社員としての育成を行わせて頂きます。",
+      "datePosted": "2025-06-04",
+      "validThrough": "",
+      "employmentType": "FULL_TIME",
+      "hiringOrganization": {
+        "@type": "Organization",
+        "name": "株式会社アートネイチャー"
+      },
+      "jobLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "愛知県名古屋市中区栄3-7-12 サカエ東栄ビル 8F",
+          "addressLocality": "名古屋市",
+          "addressRegion": "香川県",
+          "postalCode": "4600008",
+          "addressCountry": "JP"
+        }
+      },
+      "baseSalary": {
+        "@type": "MonetaryAmount",
+        "currency": "JPY",
+        "value": {
+          "@type": "QuantitativeValue",
+          "minValue": 3000000,
+          "maxValue": 4500000,
+          "unitText": "YEAR"
+        }
+      },
+      "workHours": "9:40～18:40 （所定労働時間8時間） 休憩時間：60分",
+      "jobBenefits": [
+        "社会保険完備",
+        "通勤手当（全額支給）",
+        "家族手当（配偶者：1万円／月、子1人あたり：5000円／月）",
+        "住居手当（会社都合により転職を伴う場合に支給）",
+        "引越し準備金",
+        "厚生年金基金",
+        "退職金制度",
+        "確定拠出年金制度",
+        "社員持株会制度",
+        "社員会制度",
+        "直行直帰OK",
+        "受動喫煙対策: 受動喫煙対策： 禁煙"
+      ],
+      "occupationalCategory": "営業"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "トップページ",
+          "item": "https://job-site-6aa.pages.dev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "求人一覧",
+          "item": "https://job-site-6aa.pages.dev/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "個人営業",
+          "item": "https://job-site-6aa.pages.dev/job-3548.html"
+        }
+      ]
     }
-  },
-  "baseSalary": {
-    "@type": "MonetaryAmount",
-    "currency": "JPY",
-    "value": {
-      "@type": "QuantitativeValue",
-      "minValue": 3000000,
-      "maxValue": 4500000,
-      "unitText": "YEAR"
-    }
-  }
+  ]
 }
   </script>
 
   <style>
-    /* ─── 全体のスタイル ─── */
+    /* ===== 全体設定 ===== */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -55,54 +100,60 @@
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner {
+    .banner__inner {
       max-width: 720px;
       margin: 0 auto;
-      padding: 1em;
       display: flex;
       align-items: center;
-      justify-content: center;
+      padding: 1em;
     }
-    .banner h1 {
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+      flex-shrink: 0;
+    }
+    .banner__text h1 {
       margin: 0;
-      font-size: 1.4em;
+      font-size: 1.5em;
+      color: #0073aa;
+    }
+    .banner__text .tagline {
+      margin: 0.2em 0 0;
+      font-size: 0.95em;
       color: #0073aa;
     }
 
-    /* ─── コンテンツ領域 ─── */
+    /* ===== コンテンツ領域 ===== */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
+    }
+    section.job-detail {
       background: #fff;
+      padding: 1.5em;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    .container h2 {
-      font-size: 1.3em;
+    section.job-detail h1 {
+      margin-top: 0;
+      font-size: 1.4em;
       color: #0073aa;
-      margin-top: 0.8em;
-      margin-bottom: 0.4em;
-      border-bottom: 2px solid #0073aa;
-      padding-bottom: 0.2em;
     }
-    dl.info {
-      margin: 0;
-      padding: 0;
-    }
-    dl dt {
-      font-weight: bold;
-      margin-top: 1em;
-    }
-    dl dd {
-      margin: 0.4em 0 0;
+    section.job-detail p {
+      margin: 0.6em 0;
+      color: #555;
       line-height: 1.6;
     }
-
-    /* 応募ボタン */
-    .apply-button {
+    section.job-detail h3 {
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    .form-button {
       display: inline-block;
-      margin-top: 1.2em;
+      margin-top: 1em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -110,21 +161,31 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .apply-button:hover {
+    .form-button:hover {
       background: #005f8d;
     }
 
-    /* モバイル時の調整 */
+    /* ===== モバイル時調整 ===== */
     @media (max-width: 600px) {
+      .banner__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner__icon {
+        margin: 0 0 0.5em;
+      }
+      .banner__text h1 {
+        font-size: 1.2em;
+      }
+      .banner__text .tagline {
+        font-size: 0.85em;
+      }
       .container {
         padding: 0.8em;
         margin: 1em auto;
       }
-      .banner h1 {
+      section.job-detail h1 {
         font-size: 1.2em;
-      }
-      dl dt, dl dd {
-        font-size: 0.95em;
       }
     }
   </style>
@@ -132,87 +193,66 @@
 
 <body>
   <header>
-    <div class="banner">
-      <h1>レディースヘアカウンセラー（反響営業）</h1>
+    <div class="banner__inner">
+      <!-- アイコン画像は /assets/handshake-icon.svg を参照 -->
+      <img class="banner__icon" src="assets/handshake-icon.svg" alt="握手マーク ロゴ" />
+      <div class="banner__text">
+        <h1>日本転職サポートセンター</h1>
+        <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
+      </div>
     </div>
   </header>
 
-  <header>
-  <div class="banner__inner">
-    <img
-      class="banner__icon"
-      src="/assets/handshake-icon.svg"
-      alt="握手マーク ロゴ"
-    />
-    <div class="banner__text">
-      <h1>日本転職サポートセンター</h1>
-      <p class="tagline">あなたの新しいキャリアを、私たちが全力サポートします</p>
-    </div>
-  </div>
-</header>
-
-
   <div class="container">
-    <h2>求人詳細</h2>
-    <dl class="info">
-      <dt>会社名</dt>
-      <dd>株式会社アートネイチャー</dd>
+    <section class="job-detail">
+      <h1>個人営業</h1>
+      <p><em>レディースヘアカウンセラー（反響営業）</em></p>
 
-      <dt>職種名</dt>
-      <dd>個人営業</dd>
+      <p><strong>会社名：</strong>株式会社アートネイチャー</p>
+      <p><strong>勤務地：</strong>愛知県名古屋市中区栄3-7-12 サカエ東栄ビル 8F</p>
+      <p><strong>雇用形態：</strong>FULL_TIME</p>
+      <p><strong>給与：</strong>年収 300万円〜450万円</p>
 
-      <dt>勤務地</dt>
-      <dd>愛知県名古屋市中区栄3-7-12 サカエ東栄ビル 8F</dd>
+      <h3>仕事内容：</h3>
+      <p>■担当業務：<br>商品やサービスに関するお問い合わせのあったお客様に当社サロンにご来店頂きご提案をして頂きます。一部ご来店ができないお客様は訪問での対応を行います。お客様の髪のお悩みを丁寧にカウンセリングし最適なプランをご提案して頂きます。<br>※レディース向けカウンセリングは、平日に実施することが多いため、土日にお休みを頂くこともあります※<br><br>■仕事の流れ：<br>テレビCMなどをご覧になり問い合わせを頂いたお客様とアポイントを設定し、直接お会いしてカウンセリングして頂きます。ヘアスタイルや髪の悩みを丁寧にヒアリングしながら、お客様の要望に沿った商品をサンプルを用い実際にご提案して頂きます。<br><br>商品が完成した後はサロンに再度お越し頂き、納品していきます。その際にイメージ通りかどうかなどの最終チェックまで行います。ウイッグを始めとする各種サービスは、毛髪の悩みはもちろん、ファッションとしてのニーズも強く、色々な角度からお客様の笑顔・満足の創出に関われる非常にやりがいのある仕事です。<br><br>■研修について：<br>3週間を研修期間（リモートもしくは東京本社or大阪事務所にて実施／遠方者の宿泊は会社手配）とし、商品や毛髪についての知識と販売・営業についての研修を行います。先輩社員との営業同行や、OJTを通じ、一人前の営業社員としての育成を行わせて頂きます。</p>
 
-      <dt>都道府県</dt>
-      <dd>香川県</dd>
+      <h3>勤務時間：</h3>
+      <p>9:40～18:40 （所定労働時間8時間）<br>休憩時間：60分</p>
 
-      <dt>市区町村</dt>
-      <dd>名古屋市</dd>
+      <h3>休暇・休日：</h3>
+      <p>完全週休2日制（曜日はシフト制／半日ごとに取得可能）<br>年末年始休暇<br>特別休暇<br>慶弔休暇<br>年次有給休暇（10～20日支給）<br>メモリアル休暇（初年度より10～12日支給）<br>産前産後休暇<br>育児休暇</p>
 
-      <dt>郵便番号</dt>
-      <dd>4600008</dd>
+      <h3>受動喫煙対策：</h3>
+      <p>受動喫煙対策： 禁煙</p>
 
-      <dt>雇用形態</dt>
-      <dd>正社員</dd>
+      <h3>待遇・福利厚生：</h3>
+      <ul>
+        <li>社会保険完備</li>
+        <li>通勤手当（全額支給）</li>
+        <li>家族手当（配偶者：1万円／月、子1人あたり：5000円／月）</li>
+        <li>住居手当（会社都合により転職を伴う場合に支給）</li>
+        <li>引越し準備金</li>
+        <li>厚生年金基金</li>
+        <li>退職金制度</li>
+        <li>確定拠出年金制度</li>
+        <li>社員持株会制度</li>
+        <li>社員会制度</li>
+        <li>直行直帰OK</li>
+      </ul>
 
-      <dt>給与</dt>
-      <dd>3000000 ～ 4500000 (年収)</dd>
+      <h3>職種カテゴリー：</h3>
+      <p>営業</p>
 
-      <dt>仕事内容</dt>
-      <dd>■担当業務：<br>商品やサービスに関するお問い合わせのあったお客様に当社サロンにご来店頂きご提案をして頂きます。一部ご来店ができないお客様は訪問での対応を行います。お客様の髪のお悩みを丁寧にカウンセリングし最適なプランをご提案して頂きます。<br>※レディース向けカウンセリングは、平日に実施することが多いため、土日にお休みを頂くこともあります※<br><br>■仕事の流れ：<br>テレビCMなどをご覧になり問い合わせを頂いたお客様とアポイントを設定し、直接お会いしてカウンセリングして頂きます。ヘアスタイルや髪の悩みを丁寧にヒアリングしながら、お客様の要望に沿った商品をサンプルを用い実際にご提案して頂きます。<br><br>商品が完成した後はサロンに再度お越し頂き、納品していきます。その際にイメージ通りかどうかなどの最終チェックまで行います。ウイッグを始めとする各種サービスは、毛髪の悩みはもちろん、ファッションとしてのニーズも強く、色々な角度からお客様の笑顔・満足の創出に関われる非常にやりがいのある仕事です。<br><br>■研修について：<br>3週間を研修期間（リモートもしくは東京本社or大阪事務所にて実施／遠方者の宿泊は会社手配）とし、商品や毛髪についての知識と販売・営業についての研修を行います。先輩社員との営業同行や、OJTを通じ、一人前の営業社員としての育成を行わせて頂きます。</dd>
-
-      <dt>勤務時間・曜日</dt>
-      <dd>9:40～18:40 （所定労働時間8時間）<br>休憩時間：60分</dd>
-
-      <dt>休暇・休日</dt>
-      <dd>完全週休2日制（曜日はシフト制／半日ごとに取得可能）<br>年末年始休暇<br>特別休暇<br>慶弔休暇<br>年次有給休暇（10～20日支給）<br>メモリアル休暇（初年度より10～12日支給）<br>産前産後休暇<br>育児休暇</dd>
-
-      <dt>受動喫煙対策</dt>
-      <dd>受動喫煙対策： 禁煙</dd>
-
-      <dt>待遇・福利厚生</dt>
-      <dd>社会保険完備<br>通勤手当（全額支給）<br>家族手当（配偶者：1万円／月、子1人あたり：5000円／月）<br>住居手当（会社都合により転職を伴う場合に支給）<br>引越し準備金<br>厚生年金基金<br>退職金制度<br>確定拠出年金制度<br>社員持株会制度<br>社員会制度<br>直行直帰OK</dd>
-
-      <dt>職種カテゴリー</dt>
-      <dd>営業</dd>
-
-      <!-- 掲載画像があれば表示 -->
       
 
-      <!-- ■■■ ここで 必ず formURL を埋め込む ■■■ -->
-      <dt>応募</dt>
-      <dd>
-        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%83%BC%E3%83%88%E3%83%8D%E3%82%A4%E3%83%81%E3%83%A3%E3%83%BC" target="_blank">
-          この求人に応募する
-        </a>
-      </dd>
-    </dl>
+      
 
-    <!-- ページ下部に一覧ページへ戻るリンク -->
-    <p style="text-align:center; margin: 2em 0;">
-      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
-    </p>
+      <p style="text-align:center; margin: 2em 0;">
+        <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
+          ← 求人一覧に戻る
+        </a>
+      </p>
+    </section>
   </div>
 </body>
 </html>
