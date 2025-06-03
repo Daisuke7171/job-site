@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>業務系アプリケーションエンジニア・プログラマ</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>業務系アプリケーションエンジニア・プログラマ｜アベールソリューションズ株式会社</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "業務系アプリケーションエンジニア・プログラマ",
+  "description": "PMO【経験浅め枠】",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "アベールソリューションズ株式会社"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都中央区銀座5-9-8　クロス銀座6",
+      "addressLocality": "中央区",
+      "addressRegion": "東京都",
+      "postalCode": "1040061",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 4000000,
+      "maxValue": 12000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,146 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "業務系アプリケーションエンジニア・プログラマ",
-      "description": "【当ポジションについて】\nプロジェクトマネジメントのプロとして顧客先のITプロジェクトに参画し、計画立案・進捗管理・課題/リスクの可視化などを行い、プロジェクトマネージャーの正確でスピード感のある意思決定を支援することで、プロジェクトの成功に貢献するポジションです。\n\n【業務内容】\n・プロジェクト全体のスケジュール策定\n・プロジェクト体制構築の支援\n・プロジェクト計画書の作成\n・社内外の関係者調整\n・ベンダー管理\n・プロジェクト実行支援／進捗・課題管理\n・品質管理 など\n\n★これからPMOに挑戦する方は、上記のサポートから始め徐々にできることを増やしていき、無理のないスピードで着実に成長して頂きます。\n\n【携わるシステム】\n各業務システムと基幹システム（会計、販売、生産管理など）\n\n【携わるプロジェクト】\n担当業種は電機メーカーや、通信キャリア、金融機関などさまざまです。\n有名企業の規模案件を中心に最上流から携わっているのが特徴です。\nカジュアル面談／面接ではこれまでのご経験を軸に、今後携わってみたい業界やポジション開発環境など、遠慮なくおっしゃって頂ければと思います。\n\n\n【プロジェクト事例】\n＜事例1＞\n■業界：通信業\n■ 案件概要：顧客先のIS業務の代行/支援\n■ 参画人数：約40名\n■ 役割：IS業務全般（顧客先の社員代行）\n■ 業務内容：各部署のマネージャのもとで、システム企画/要件定義/基本設計の実施、及び、構築・運用・保守の管理を担当\n※開発は、顧客が契約したベンダーにて実施\n\n＜事例2＞ ■業界：流通・小売業\n■ 案件概要：IS構造改革支援、及び、ポイントシステム構築/導入支援\n■ 参画人数：約10名\n■ 役割：コンサルティング、PMO\n■ 業務内容：顧客先の企画部門が進めるIS構造改革を推進するための各種提案、システム棚卸、推進計画策定/管理\n■ 業務内容：PMO：プロジェクト計画立案、進捗/課題/リスク管理、テスト管理を実施\n※開発は、顧客が契約したベンダーにて実施",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "アベールソリューションズ株式会社"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都中央区銀座5-9-8　クロス銀座6",
-          "addressLocality": "中央区",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": "1040061"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 4000000,
-          "maxValue": 12000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "9:00〜17:45 所定労働時間：7時間45分（休憩1時間） ※就業時間はプロジェクト先により変動いたします。 ★フレックスタイム制あり",
-      "jobBenefits": [
-        "【保険】",
-        "■各種社会保険完備",
-        "■退職金制度",
-        "■福利厚生リロクラブ加入",
-        "【諸手当】",
-        "■交通費全額支給",
-        "■テレワーク手当",
-        "■出張手当",
-        "【社内交流支援】",
-        "■懇親会費用全額負担（毎月1回）",
-        "■オンライン懇親会費用負担（毎月1回）",
-        "■サークル活動支援制度",
-        "【スキルアップ支援】",
-        "■研修費用全額負担",
-        "■図書購入費用全額負担",
-        "■資格受験費用全額負担",
-        "■資格取得一時金支給",
-        "■PMI日本支部加入（PMIの研修を受けられます）",
-        "【ライフワークバランス支援】",
-        "■スポーツクラブの費用全額支給",
-        "■時短勤務制度",
-        "■産休・育休制度（取得実績あり）",
-        "受動喫煙対策: 受動喫煙対策： 禁煙"
-      ],
-      "occupationalCategory": "IT・クリエイティブ"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "業務系アプリケーションエンジニア・プログラマ",
-          "item": "https://job-site-6aa.pages.dev/job-588.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>PMO【経験浅め枠】</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>業務系アプリケーションエンジニア・プログラマ</h1>
-      <p><em>PMO【経験浅め枠】</em></p>
-      <p><strong>会社名：</strong>アベールソリューションズ株式会社</p>
-      <p><strong>勤務地：</strong>東京都中央区銀座5-9-8　クロス銀座6</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 400万円〜1,200万円</p>
-      <h3>仕事内容：</h3>
-      <p>【当ポジションについて】<br>プロジェクトマネジメントのプロとして顧客先のITプロジェクトに参画し、計画立案・進捗管理・課題/リスクの可視化などを行い、プロジェクトマネージャーの正確でスピード感のある意思決定を支援することで、プロジェクトの成功に貢献するポジションです。<br><br>【業務内容】<br>・プロジェクト全体のスケジュール策定<br>・プロジェクト体制構築の支援<br>・プロジェクト計画書の作成<br>・社内外の関係者調整<br>・ベンダー管理<br>・プロジェクト実行支援／進捗・課題管理<br>・品質管理 など<br><br>★これからPMOに挑戦する方は、上記のサポートから始め徐々にできることを増やしていき、無理のないスピードで着実に成長して頂きます。<br><br>【携わるシステム】<br>各業務システムと基幹システム（会計、販売、生産管理など）<br><br>【携わるプロジェクト】<br>担当業種は電機メーカーや、通信キャリア、金融機関などさまざまです。<br>有名企業の規模案件を中心に最上流から携わっているのが特徴です。<br>カジュアル面談／面接ではこれまでのご経験を軸に、今後携わってみたい業界やポジション開発環境など、遠慮なくおっしゃって頂ければと思います。<br><br><br>【プロジェクト事例】<br>＜事例1＞<br>•業界：通信業<br>• 案件概要：顧客先のIS業務の代行/支援<br>• 参画人数：約40名<br>• 役割：IS業務全般（顧客先の社員代行）<br>• 業務内容：各部署のマネージャのもとで、システム企画/要件定義/基本設計の実施、及び、構築・運用・保守の管理を担当<br>※開発は、顧客が契約したベンダーにて実施<br><br>＜事例2＞ •業界：流通・小売業<br>• 案件概要：IS構造改革支援、及び、ポイントシステム構築/導入支援<br>• 参画人数：約10名<br>• 役割：コンサルティング、PMO<br>• 業務内容：顧客先の企画部門が進めるIS構造改革を推進するための各種提案、システム棚卸、推進計画策定/管理<br>• 業務内容：PMO：プロジェクト計画立案、進捗/課題/リスク管理、テスト管理を実施<br>※開発は、顧客が契約したベンダーにて実施</p>
-      <h3>勤務時間：</h3>
-      <p>9:00〜17:45<br>所定労働時間：7時間45分（休憩1時間）<br>※就業時間はプロジェクト先により変動いたします。<br>★フレックスタイム制あり</p>
-      <h3>休暇・休日：</h3>
-      <p>•年間休日127日<br>•完全週休2日制（土日）<br>•祝日休み<br>•年末年始休暇<br>•慶弔休暇<br>•有給休暇※初年度11日間<br>•産前・産後休暇※取得実績あり<br>•育児休暇※男性の取得実績もあり<br>•リフレッシュ休暇（年5日間）※有給休暇とは別途で付与される休暇</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>【保険】</li><li>•各種社会保険完備</li><li>•退職金制度</li><li>•福利厚生リロクラブ加入</li><li>【諸手当】</li><li>•交通費全額支給</li><li>•テレワーク手当</li><li>•出張手当</li><li>【社内交流支援】</li><li>•懇親会費用全額負担（毎月1回）</li><li>•オンライン懇親会費用負担（毎月1回）</li><li>•サークル活動支援制度</li><li>【スキルアップ支援】</li><li>•研修費用全額負担</li><li>•図書購入費用全額負担</li><li>•資格受験費用全額負担</li><li>•資格取得一時金支給</li><li>•PMI日本支部加入（PMIの研修を受けられます）</li><li>【ライフワークバランス支援】</li><li>•スポーツクラブの費用全額支給</li><li>•時短勤務制度</li><li>•産休・育休制度（取得実績あり）</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E3%82%A2%E3%83%99%E3%83%BC%E3%83%AB%E3%82%BD%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BA%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>アベールソリューションズ株式会社</dd>
+
+      <dt>職種名</dt>
+      <dd>業務系アプリケーションエンジニア・プログラマ</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都中央区銀座5-9-8　クロス銀座6</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>中央区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1040061</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>4000000 ～ 12000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>【当ポジションについて】<br>プロジェクトマネジメントのプロとして顧客先のITプロジェクトに参画し、計画立案・進捗管理・課題/リスクの可視化などを行い、プロジェクトマネージャーの正確でスピード感のある意思決定を支援することで、プロジェクトの成功に貢献するポジションです。<br><br>【業務内容】<br>・プロジェクト全体のスケジュール策定<br>・プロジェクト体制構築の支援<br>・プロジェクト計画書の作成<br>・社内外の関係者調整<br>・ベンダー管理<br>・プロジェクト実行支援／進捗・課題管理<br>・品質管理 など<br><br>★これからPMOに挑戦する方は、上記のサポートから始め徐々にできることを増やしていき、無理のないスピードで着実に成長して頂きます。<br><br>【携わるシステム】<br>各業務システムと基幹システム（会計、販売、生産管理など）<br><br>【携わるプロジェクト】<br>担当業種は電機メーカーや、通信キャリア、金融機関などさまざまです。<br>有名企業の規模案件を中心に最上流から携わっているのが特徴です。<br>カジュアル面談／面接ではこれまでのご経験を軸に、今後携わってみたい業界やポジション開発環境など、遠慮なくおっしゃって頂ければと思います。<br><br><br>【プロジェクト事例】<br>＜事例1＞<br>■業界：通信業<br>■ 案件概要：顧客先のIS業務の代行/支援<br>■ 参画人数：約40名<br>■ 役割：IS業務全般（顧客先の社員代行）<br>■ 業務内容：各部署のマネージャのもとで、システム企画/要件定義/基本設計の実施、及び、構築・運用・保守の管理を担当<br>※開発は、顧客が契約したベンダーにて実施<br><br>＜事例2＞ ■業界：流通・小売業<br>■ 案件概要：IS構造改革支援、及び、ポイントシステム構築/導入支援<br>■ 参画人数：約10名<br>■ 役割：コンサルティング、PMO<br>■ 業務内容：顧客先の企画部門が進めるIS構造改革を推進するための各種提案、システム棚卸、推進計画策定/管理<br>■ 業務内容：PMO：プロジェクト計画立案、進捗/課題/リスク管理、テスト管理を実施<br>※開発は、顧客が契約したベンダーにて実施</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>9:00〜17:45<br>所定労働時間：7時間45分（休憩1時間）<br>※就業時間はプロジェクト先により変動いたします。<br>★フレックスタイム制あり</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>■年間休日127日<br>■完全週休2日制（土日）<br>■祝日休み<br>■年末年始休暇<br>■慶弔休暇<br>■有給休暇※初年度11日間<br>■産前・産後休暇※取得実績あり<br>■育児休暇※男性の取得実績もあり<br>■リフレッシュ休暇（年5日間）※有給休暇とは別途で付与される休暇</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>【保険】<br>■各種社会保険完備<br>■退職金制度<br>■福利厚生リロクラブ加入<br><br>【諸手当】<br>■交通費全額支給<br>■テレワーク手当<br>■出張手当<br><br>【社内交流支援】<br>■懇親会費用全額負担（毎月1回）<br>■オンライン懇親会費用負担（毎月1回）<br>■サークル活動支援制度<br><br>【スキルアップ支援】<br>■研修費用全額負担<br>■図書購入費用全額負担<br>■資格受験費用全額負担<br>■資格取得一時金支給<br>■PMI日本支部加入（PMIの研修を受けられます）<br><br>【ライフワークバランス支援】<br>■スポーツクラブの費用全額支給<br>■時短勤務制度<br>■産休・育休制度（取得実績あり）</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>IT・クリエイティブ</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

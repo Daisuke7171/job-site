@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>法人営業</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>法人営業｜株式会社Azoop</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "法人営業",
+  "description": "【法人営業：第二新卒】首都圏・関西！営業責任者は元リクルート最年少部長/インセンティブあり",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社Azoop"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "大阪府吹田市広芝町10-8 江坂董友ビル THE HUB江坂南507号室",
+      "addressLocality": "吹田市",
+      "addressRegion": "東京都",
+      "postalCode": "5640052",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3500000,
+      "maxValue": 4500000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,128 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "法人営業",
-      "description": "創業8期目を迎え売上・社員数ともに昨年対比約200％と急成長・急拡大しているスタートアップ企業です。ここから更に事業拡大していくため、市場シェア拡大へ向けた【新規開拓営業】を募集致します。\n\n■業務概要\n\n全国に運送事業者様は約6.2万社近くいらっしゃる中で、当社市場シェアはまだ5%未満と、まだまだリーチできていない企業様が多くいらっしゃいます。 現状、アカウント営業による飛び込み営業をメインに顧客開拓をしており、おかげさまで取引社数は累計で2,000社を超えましたが、更なる市場のシェア拡大へ向けて新規開拓営業をお任せします。 1回の接点で終わりではなく、お客様と中長期的な関係を築きながら、お客様の経営課題に向き合い、継続的に支援をしていきます。新規開拓営業だけでなく、新規立ち上げ事業である人材事業など多様なサービスをかけあわせ、お客様の業務効率化へ向けてご支援をしていくため、課題解決型営業の力がつくポジションです。\n\n【提供サービス】\n・商用車流通のDXプラットフォーム「トラッカーズ」\n・車両管理・運行管理をクラウドにて一元管理するSaas「トラッカーズマネジャー」\n・新規事業人材紹介「トラッカーズジョブ」\n・新規事業M＆A事業 ※サービスが複数あるため、お客様の課題解決へ向けた、取り組みを行います。\n\n【顧客】\n・コアターゲットは運送業を営む法人企業 　\n※担当はエリア制となり、担当エリアの新規マーケット開拓をお任せします！\n\n【具体的な１日の流れ】\n・担当エリアのリスト一覧から訪問する企業をご自身でリストアップします。\n\n・電車で最寄り駅まで移動し、カーシェアにて1日に15件前後の運送会社様を訪問、 名刺交換→お客様の状況をヒアリング→トラッカーズシリーズを中心にご紹介を行います。\n\n・具体的な案件をいただけた際は、他部署と連携し、見積作成・クロージングへ取り組みます。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社Azoop"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "大阪府吹田市広芝町10-8 江坂董友ビル THE HUB江坂南507号室",
-          "addressLocality": "吹田市",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": "5640052"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3500000,
-          "maxValue": 4500000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "9時00分～18時00分（所定労働8時間、休憩1時間）",
-      "jobBenefits": [
-        "・社会保険完備",
-        "・交通費支給（上限25,000円）",
-        "・業務用PC、携帯",
-        "・書籍購入補助制度：業務に役立つ書籍の購入費を全額負担します",
-        "受動喫煙対策: 受動喫煙対策： 禁煙"
-      ],
-      "occupationalCategory": "営業"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "法人営業",
-          "item": "https://job-site-6aa.pages.dev/job-3821.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【法人営業：第二新卒】首都圏・関西！営業責任者は元リクルート最年少部長/インセンティブあり</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>法人営業</h1>
-      <p><em>【法人営業：第二新卒】首都圏・関西！営業責任者は元リクルート最年少部長/インセンティブあり</em></p>
-      <p><strong>会社名：</strong>株式会社Azoop</p>
-      <p><strong>勤務地：</strong>大阪府吹田市広芝町10-8 江坂董友ビル THE HUB江坂南507号室</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 350万円〜450万円</p>
-      <h3>仕事内容：</h3>
-      <p>創業8期目を迎え売上・社員数ともに昨年対比約200％と急成長・急拡大しているスタートアップ企業です。ここから更に事業拡大していくため、市場シェア拡大へ向けた【新規開拓営業】を募集致します。<br><br>•業務概要<br><br>全国に運送事業者様は約6.2万社近くいらっしゃる中で、当社市場シェアはまだ5%未満と、まだまだリーチできていない企業様が多くいらっしゃいます。 現状、アカウント営業による飛び込み営業をメインに顧客開拓をしており、おかげさまで取引社数は累計で2,000社を超えましたが、更なる市場のシェア拡大へ向けて新規開拓営業をお任せします。 1回の接点で終わりではなく、お客様と中長期的な関係を築きながら、お客様の経営課題に向き合い、継続的に支援をしていきます。新規開拓営業だけでなく、新規立ち上げ事業である人材事業など多様なサービスをかけあわせ、お客様の業務効率化へ向けてご支援をしていくため、課題解決型営業の力がつくポジションです。<br><br>【提供サービス】<br>・商用車流通のDXプラットフォーム「トラッカーズ」<br>・車両管理・運行管理をクラウドにて一元管理するSaas「トラッカーズマネジャー」<br>・新規事業人材紹介「トラッカーズジョブ」<br>・新規事業M＆A事業 ※サービスが複数あるため、お客様の課題解決へ向けた、取り組みを行います。<br><br>【顧客】<br>・コアターゲットは運送業を営む法人企業 　<br>※担当はエリア制となり、担当エリアの新規マーケット開拓をお任せします！<br><br>【具体的な１日の流れ】<br>・担当エリアのリスト一覧から訪問する企業をご自身でリストアップします。<br><br>・電車で最寄り駅まで移動し、カーシェアにて1日に15件前後の運送会社様を訪問、 名刺交換→お客様の状況をヒアリング→トラッカーズシリーズを中心にご紹介を行います。<br><br>・具体的な案件をいただけた際は、他部署と連携し、見積作成・クロージングへ取り組みます。</p>
-      <h3>勤務時間：</h3>
-      <p>9時00分～18時00分（所定労働8時間、休憩1時間）</p>
-      <h3>休暇・休日：</h3>
-      <p>•休日<br>年間122日<br>(内訳)　完全週休二日制　土曜 日曜 祝日<br><br>•有給休暇<br>入社半年経過時点10日〜最大20日<br>※入社時に3日間の特別休暇付与<br><br>•特別休暇<br>・生理休暇　2日／年<br>・ファミリーケア休暇　2日／年<br>・記念日休暇　1日／年<br>・不妊治療休暇　2日／年</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>・社会保険完備</li><li>・交通費支給（上限25,000円）</li><li>・業務用PC、携帯</li><li>・書籍購入補助制度：業務に役立つ書籍の購入費を全額負担します</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAzoop" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社Azoop</dd>
+
+      <dt>職種名</dt>
+      <dd>法人営業</dd>
+
+      <dt>勤務地</dt>
+      <dd>大阪府吹田市広芝町10-8 江坂董友ビル THE HUB江坂南507号室</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>吹田市</dd>
+
+      <dt>郵便番号</dt>
+      <dd>5640052</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3500000 ～ 4500000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>創業8期目を迎え売上・社員数ともに昨年対比約200％と急成長・急拡大しているスタートアップ企業です。ここから更に事業拡大していくため、市場シェア拡大へ向けた【新規開拓営業】を募集致します。<br><br>■業務概要<br><br>全国に運送事業者様は約6.2万社近くいらっしゃる中で、当社市場シェアはまだ5%未満と、まだまだリーチできていない企業様が多くいらっしゃいます。 現状、アカウント営業による飛び込み営業をメインに顧客開拓をしており、おかげさまで取引社数は累計で2,000社を超えましたが、更なる市場のシェア拡大へ向けて新規開拓営業をお任せします。 1回の接点で終わりではなく、お客様と中長期的な関係を築きながら、お客様の経営課題に向き合い、継続的に支援をしていきます。新規開拓営業だけでなく、新規立ち上げ事業である人材事業など多様なサービスをかけあわせ、お客様の業務効率化へ向けてご支援をしていくため、課題解決型営業の力がつくポジションです。<br><br>【提供サービス】<br>・商用車流通のDXプラットフォーム「トラッカーズ」<br>・車両管理・運行管理をクラウドにて一元管理するSaas「トラッカーズマネジャー」<br>・新規事業人材紹介「トラッカーズジョブ」<br>・新規事業M＆A事業 ※サービスが複数あるため、お客様の課題解決へ向けた、取り組みを行います。<br><br>【顧客】<br>・コアターゲットは運送業を営む法人企業 　<br>※担当はエリア制となり、担当エリアの新規マーケット開拓をお任せします！<br><br>【具体的な１日の流れ】<br>・担当エリアのリスト一覧から訪問する企業をご自身でリストアップします。<br><br>・電車で最寄り駅まで移動し、カーシェアにて1日に15件前後の運送会社様を訪問、 名刺交換→お客様の状況をヒアリング→トラッカーズシリーズを中心にご紹介を行います。<br><br>・具体的な案件をいただけた際は、他部署と連携し、見積作成・クロージングへ取り組みます。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>9時00分～18時00分（所定労働8時間、休憩1時間）</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>■休日<br>年間122日<br>(内訳)　完全週休二日制　土曜 日曜 祝日<br><br>■有給休暇<br>入社半年経過時点10日〜最大20日<br>※入社時に3日間の特別休暇付与<br><br>■特別休暇<br>・生理休暇　2日／年<br>・ファミリーケア休暇　2日／年<br>・記念日休暇　1日／年<br>・不妊治療休暇　2日／年</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>・社会保険完備<br>・交通費支給（上限25,000円）<br>・業務用PC、携帯<br>・書籍購入補助制度：業務に役立つ書籍の購入費を全額負担します</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>営業</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

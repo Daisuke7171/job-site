@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>一般事務・営業事務</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>一般事務・営業事務｜株式会社コングレ・グローバルコミュニケーションズ</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "一般事務・営業事務",
+  "description": "通訳コーディネーター（本社）★企業内会議から国際会議まで、サポートするお仕事です！",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社コングレ・グローバルコミュニケーションズ"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都中央区日本橋3-10-5 オンワードパークビルディング５F",
+      "addressLocality": "中央区",
+      "addressRegion": "東京都",
+      "postalCode": "1030027",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3500000,
+      "maxValue": 5000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,131 +110,90 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "一般事務・営業事務",
-      "description": "私たち株式会社コングレ・グローバルコミュニケーションズは、通訳・翻訳サービスや語学人材派遣・紹介サービスを手がけています。顧客は大手グローバル企業が多数。語学のプロとグローバル企業の橋渡しをする、大変やりがいのあるお仕事です。\n\n今回募集のポジションは、政府が主催する国際会議や医学会、世界的な国際イベント、企業内の会議など、ビジネスシーンに欠かせない通訳者の手配全般を行うお仕事です！社内外の複数人でチームを組み、関係者と協力して業務を行っていただきます。クライアントと通訳者の間に入り、相互の円滑なコミュニケーションの手助けをして最適なマッチングを行うお仕事です。\n\n【仕事内容】\n・クライアントから照会内容に応じて、要望をヒアリング\n・会議の性質や分野などを考慮し、通訳者を手配\n・通訳に必要な資料、情報の収集\n・会場の設営状況の確認\n※会議当日も通訳現場に立ち会い、通訳者のサポートをする可能性もございます。\n・クライアントとの連絡調整、折衝、交渉等\n・請求書、見積書、プレゼン資料等各種書類作成\n・その他、電話対応、来客応対、一般事務など通訳コーディネーター業務全般および付随する業務全般\n\n最初は先輩が丁寧に指導しますのでご安心ください！\n基本的には、事務業務がメインです（地味な作業も多いお仕事です）。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社コングレ・グローバルコミュニケーションズ"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都中央区日本橋3-10-5 オンワードパークビルディング５F",
-          "addressLocality": "中央区",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": "1030027"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3500000,
-          "maxValue": 5000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "9:00～18:00（所定労働時間8時間、休憩1時間）",
-      "jobBenefits": [
-        "社会保険完備（雇用・労災・健康・厚生年金）",
-        "交通費支給（月5万円まで）※弊社規程による",
-        "出張手当",
-        "家族手当（配偶者：月1万円、子一人：月5000円）※弊社規程による",
-        "役職手当",
-        "TOEIC受験料全額支給（年4回まで）、スキルアップ支援制度あり（キャリアカウンセラー、キャリアコンサルタント、産業カウンセラー、社労士、ビジネスマネージャ検定試験、プロジェクトマネージャー検定試験、簿記、衛生管理士等、合格の場合、受験料会社負担）※合格者のみ",
-        "受動喫煙対策: 受動喫煙対策： 禁煙\n受動喫煙対策（詳細）： ビル内に喫煙スペースあり（オフィス内は禁煙）"
-      ],
-      "occupationalCategory": "事務・オフィスワーク"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "一般事務・営業事務",
-          "item": "https://job-site-6aa.pages.dev/job-3419.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>通訳コーディネーター（本社）★企業内会議から国際会議まで、サポートするお仕事です！</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>一般事務・営業事務</h1>
-      <p><em>通訳コーディネーター（本社）★企業内会議から国際会議まで、サポートするお仕事です！</em></p>
-      <p><strong>会社名：</strong>株式会社コングレ・グローバルコミュニケーションズ</p>
-      <p><strong>勤務地：</strong>東京都中央区日本橋3-10-5 オンワードパークビルディング５F</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 350万円〜500万円</p>
-      <h3>仕事内容：</h3>
-      <p>私たち株式会社コングレ・グローバルコミュニケーションズは、通訳・翻訳サービスや語学人材派遣・紹介サービスを手がけています。顧客は大手グローバル企業が多数。語学のプロとグローバル企業の橋渡しをする、大変やりがいのあるお仕事です。<br><br>今回募集のポジションは、政府が主催する国際会議や医学会、世界的な国際イベント、企業内の会議など、ビジネスシーンに欠かせない通訳者の手配全般を行うお仕事です！社内外の複数人でチームを組み、関係者と協力して業務を行っていただきます。クライアントと通訳者の間に入り、相互の円滑なコミュニケーションの手助けをして最適なマッチングを行うお仕事です。<br><br>【仕事内容】<br>・クライアントから照会内容に応じて、要望をヒアリング<br>・会議の性質や分野などを考慮し、通訳者を手配<br>・通訳に必要な資料、情報の収集<br>・会場の設営状況の確認<br>※会議当日も通訳現場に立ち会い、通訳者のサポートをする可能性もございます。<br>・クライアントとの連絡調整、折衝、交渉等<br>・請求書、見積書、プレゼン資料等各種書類作成<br>・その他、電話対応、来客応対、一般事務など通訳コーディネーター業務全般および付随する業務全般<br><br>最初は先輩が丁寧に指導しますのでご安心ください！<br>基本的には、事務業務がメインです（地味な作業も多いお仕事です）。</p>
-      <h3>勤務時間：</h3>
-      <p>9:00～18:00（所定労働時間8時間、休憩1時間）</p>
-      <h3>休暇・休日：</h3>
-      <p>完全週休2日制（土・日）<br>祝日<br>年末年始休暇（12月29日～1月3日）<br>年次有給休暇（10日〜20日　労基法に基づく）<br>慶弔休暇<br>産休・育休<br>介護休業</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙
-受動喫煙対策（詳細）： ビル内に喫煙スペースあり（オフィス内は禁煙）</p>
-      <h3>福利厚生：</h3>
-      <ul><li>社会保険完備（雇用・労災・健康・厚生年金）</li><li>交通費支給（月5万円まで）※弊社規程による</li><li>出張手当</li><li>家族手当（配偶者：月1万円、子一人：月5000円）※弊社規程による</li><li>役職手当</li><li>TOEIC受験料全額支給（年4回まで）、スキルアップ支援制度あり（キャリアカウンセラー、キャリアコンサルタント、産業カウンセラー、社労士、ビジネスマネージャ検定試験、プロジェクトマネージャー検定試験、簿記、衛生管理士等、合格の場合、受験料会社負担）※合格者のみ</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B3%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BB%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BA" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社コングレ・グローバルコミュニケーションズ</dd>
+
+      <dt>職種名</dt>
+      <dd>一般事務・営業事務</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都中央区日本橋3-10-5 オンワードパークビルディング５F</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>中央区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1030027</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3500000 ～ 5000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>私たち株式会社コングレ・グローバルコミュニケーションズは、通訳・翻訳サービスや語学人材派遣・紹介サービスを手がけています。顧客は大手グローバル企業が多数。語学のプロとグローバル企業の橋渡しをする、大変やりがいのあるお仕事です。<br><br>今回募集のポジションは、政府が主催する国際会議や医学会、世界的な国際イベント、企業内の会議など、ビジネスシーンに欠かせない通訳者の手配全般を行うお仕事です！社内外の複数人でチームを組み、関係者と協力して業務を行っていただきます。クライアントと通訳者の間に入り、相互の円滑なコミュニケーションの手助けをして最適なマッチングを行うお仕事です。<br><br>【仕事内容】<br>・クライアントから照会内容に応じて、要望をヒアリング<br>・会議の性質や分野などを考慮し、通訳者を手配<br>・通訳に必要な資料、情報の収集<br>・会場の設営状況の確認<br>※会議当日も通訳現場に立ち会い、通訳者のサポートをする可能性もございます。<br>・クライアントとの連絡調整、折衝、交渉等<br>・請求書、見積書、プレゼン資料等各種書類作成<br>・その他、電話対応、来客応対、一般事務など通訳コーディネーター業務全般および付随する業務全般<br><br>最初は先輩が丁寧に指導しますのでご安心ください！<br>基本的には、事務業務がメインです（地味な作業も多いお仕事です）。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>9:00～18:00（所定労働時間8時間、休憩1時間）</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>完全週休2日制（土・日）<br>祝日<br>年末年始休暇（12月29日～1月3日）<br>年次有給休暇（10日〜20日　労基法に基づく）<br>慶弔休暇<br>産休・育休<br>介護休業</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙
+受動喫煙対策（詳細）： ビル内に喫煙スペースあり（オフィス内は禁煙）</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>社会保険完備（雇用・労災・健康・厚生年金）<br>交通費支給（月5万円まで）※弊社規程による<br>出張手当<br>家族手当（配偶者：月1万円、子一人：月5000円）※弊社規程による<br>役職手当<br>TOEIC受験料全額支給（年4回まで）、スキルアップ支援制度あり（キャリアカウンセラー、キャリアコンサルタント、産業カウンセラー、社労士、ビジネスマネージャ検定試験、プロジェクトマネージャー検定試験、簿記、衛生管理士等、合格の場合、受験料会社負担）※合格者のみ</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>事務・オフィスワーク</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

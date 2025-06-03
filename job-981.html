@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>警備・施設管理関連職</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>警備・施設管理関連職｜ＡＬＳＯＫ東京株式会社</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "警備・施設管理関連職",
+  "description": "【女性活躍中】セキュリティスタッフ【丸の内のオフィスビル】",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "ＡＬＳＯＫ東京株式会社"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都千代田区丸の内三丁目",
+      "addressLocality": "千代田区",
+      "addressRegion": "愛知県",
+      "postalCode": "1000005",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 2500000,
+      "maxValue": 3000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,150 +110,90 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "警備・施設管理関連職",
-      "description": "【仕事内容】\n・出入管理：出入口などに立ち、お客様の出入監視（入館証の目視確認など）を行います。\n・巡回：犯罪抑止としてのパトロール、落とし物や迷子の発見、といった業務を行います。\n・防災センター：監視カメラなど防犯、防災機器の監視、入館申請などの処理、書類作成、などを行います。\n\n【研修等について】\n以下のような教育制度を設けておりますので、未経験の方でもご安心ください。\n１　初任研修／入社時４泊５日の研修、ＡＬＳＯＫ研修施設（東京都稲城市）で実施\n２　実地研修／配属先にてOJT研修（３週間程度）\n３　現任研修／年２回本社で実施\n・その他各種研修／資格試験の実技実習や英会話講習など\n\n【資格取得について】\n１　消防・警備関係資格\n　　初年度：上級救命講習、自衛消防技術認定証、防災センター要員\n　　会社指定により警備業務検定などの国家資格も取得可能\n２　ＡＬＳＯＫ通信教育（マネジメント、語学、その他ビジネススキル）\n\n【キャリアパス】\n＜ＡＬＳＯＫグループの階級制度＞\n７段階の階級制度があり、階級に沿って勤務地での役職が決まる仕組みになっています。警備隊、本社（管理部門）関わらず監督職、管理職といったマネジメントする立場となれるポジションがございます。もちろん、昇任によって収入も大幅アップしていきます。一社で長く働きたいという方にとって、しっかりしたキャリアパスは魅力になるでしょう。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "ＡＬＳＯＫ東京株式会社"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都千代田区丸の内三丁目",
-          "addressLocality": "千代田区",
-          "addressRegion": "愛知県",
-          "addressCountry": "JP",
-          "postalCode": "1000005"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 2500000,
-          "maxValue": 3000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "1週間40時間を基準とする1ヶ月単位の変形労働時間制 ・ 9:00～18:00（休憩1時間） ・ 8:00〜17:00（休憩1時間） ・10:00～19:00（休憩1時間） など。 夜勤や当直勤務もございますが、こちらの求人については日勤のみを想定しています。夜勤や当直勤務にもご興味ある方は、面接時にご希望をお伺いします。",
-      "jobBenefits": [
-        "・昇給年1回（4月）",
-        "・賞与年2回（6・12月）※2年目実績見込3.3ヶ月分",
-        "・社会保険完備（雇用、労災、健康、厚生年金）",
-        "・交通費支給（月5万円まで）",
-        "・時間外手当※全額",
-        "・資格手当※TOEIC、英検、秘書検定、自衛消防技術認定証、施設警備業務検定等",
-        "・家族手当※扶養する60歳以上の両親：1人月2000円／配偶者：月1万8000円／子1人：月5000円、2人以上の場合には月6000円×人数分",
-        "・住宅手当（月2～3万円　※給与に含まれます）",
-        "・役職手当",
-        "・退職金",
-        "・財形貯蓄",
-        "・社員持株会",
-        "・資格取得支援（会社指定の場合は費用補助や社内研修あり）",
-        "・制服貸与",
-        "・確定拠出年金",
-        "・ALSOKグループ企業年金",
-        "・住宅取得支援",
-        "・財産形成支援",
-        "・社内貸付金制度",
-        "・ライフサポート倶楽部",
-        "・保養施設",
-        "・ALSOK通信教育講座（英会話、マネジメントスキル等）",
-        "・社内イベント・レクリエーション",
-        "・再雇用制度",
-        "など",
-        "受動喫煙対策: 受動喫煙対策： 喫煙スペースあり\n受動喫煙対策（詳細）： 喫煙目的室設置"
-      ],
-      "occupationalCategory": "販売・接客・サービス"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "警備・施設管理関連職",
-          "item": "https://job-site-6aa.pages.dev/job-981.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【女性活躍中】セキュリティスタッフ【丸の内のオフィスビル】</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>警備・施設管理関連職</h1>
-      <p><em>【女性活躍中】セキュリティスタッフ【丸の内のオフィスビル】</em></p>
-      <p><strong>会社名：</strong>ＡＬＳＯＫ東京株式会社</p>
-      <p><strong>勤務地：</strong>東京都千代田区丸の内三丁目</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 250万円〜300万円</p>
-      <h3>仕事内容：</h3>
-      <p>【仕事内容】<br>・出入管理：出入口などに立ち、お客様の出入監視（入館証の目視確認など）を行います。<br>・巡回：犯罪抑止としてのパトロール、落とし物や迷子の発見、といった業務を行います。<br>・防災センター：監視カメラなど防犯、防災機器の監視、入館申請などの処理、書類作成、などを行います。<br><br>【研修等について】<br>以下のような教育制度を設けておりますので、未経験の方でもご安心ください。<br>１　初任研修／入社時４泊５日の研修、ＡＬＳＯＫ研修施設（東京都稲城市）で実施<br>２　実地研修／配属先にてOJT研修（３週間程度）<br>３　現任研修／年２回本社で実施<br>・その他各種研修／資格試験の実技実習や英会話講習など<br><br>【資格取得について】<br>１　消防・警備関係資格<br>　　初年度：上級救命講習、自衛消防技術認定証、防災センター要員<br>　　会社指定により警備業務検定などの国家資格も取得可能<br>２　ＡＬＳＯＫ通信教育（マネジメント、語学、その他ビジネススキル）<br><br>【キャリアパス】<br>＜ＡＬＳＯＫグループの階級制度＞<br>７段階の階級制度があり、階級に沿って勤務地での役職が決まる仕組みになっています。警備隊、本社（管理部門）関わらず監督職、管理職といったマネジメントする立場となれるポジションがございます。もちろん、昇任によって収入も大幅アップしていきます。一社で長く働きたいという方にとって、しっかりしたキャリアパスは魅力になるでしょう。</p>
-      <h3>勤務時間：</h3>
-      <p>1週間40時間を基準とする1ヶ月単位の変形労働時間制<br>・ 9:00～18:00（休憩1時間）<br>・ 8:00〜17:00（休憩1時間）<br>・10:00～19:00（休憩1時間）<br>など。<br>夜勤や当直勤務もございますが、こちらの求人については日勤のみを想定しています。夜勤や当直勤務にもご興味ある方は、面接時にご希望をお伺いします。</p>
-      <h3>休暇・休日：</h3>
-      <p>4週8休制<br>（所定外で休日が勤務に変わることが出てきますが、週一日の休みは確保できるようにシフトを組んでおります）<br>有給休暇（入社半年後10日〜勤続年数に応じて最大20日）<br>慶弔休暇<br>産休・育休<br>（現在も20名近くが取得中。職場復帰もフォローしますので安心です）<br>介護休職　など</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 喫煙スペースあり
-受動喫煙対策（詳細）： 喫煙目的室設置</p>
-      <h3>福利厚生：</h3>
-      <ul><li>・昇給年1回（4月）</li><li>・賞与年2回（6・12月）※2年目実績見込3.3ヶ月分</li><li>・社会保険完備（雇用、労災、健康、厚生年金）</li><li>・交通費支給（月5万円まで）</li><li>・時間外手当※全額</li><li>・資格手当※TOEIC、英検、秘書検定、自衛消防技術認定証、施設警備業務検定等</li><li>・家族手当※扶養する60歳以上の両親：1人月2000円／配偶者：月1万8000円／子1人：月5000円、2人以上の場合には月6000円×人数分</li><li>・住宅手当（月2～3万円　※給与に含まれます）</li><li>・役職手当</li><li>・退職金</li><li>・財形貯蓄</li><li>・社員持株会</li><li>・資格取得支援（会社指定の場合は費用補助や社内研修あり）</li><li>・制服貸与</li><li>・確定拠出年金</li><li>・ALSOKグループ企業年金</li><li>・住宅取得支援</li><li>・財産形成支援</li><li>・社内貸付金制度</li><li>・ライフサポート倶楽部</li><li>・保養施設</li><li>・ALSOK通信教育講座（英会話、マネジメントスキル等）</li><li>・社内イベント・レクリエーション</li><li>・再雇用制度</li><li>など</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%EF%BC%A1%EF%BC%AC%EF%BC%B3%EF%BC%AF%EF%BC%AB%E6%9D%B1%E4%BA%AC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>ＡＬＳＯＫ東京株式会社</dd>
+
+      <dt>職種名</dt>
+      <dd>警備・施設管理関連職</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都千代田区丸の内三丁目</dd>
+
+      <dt>都道府県</dt>
+      <dd>愛知県</dd>
+
+      <dt>市区町村</dt>
+      <dd>千代田区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1000005</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>2500000 ～ 3000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>【仕事内容】<br>・出入管理：出入口などに立ち、お客様の出入監視（入館証の目視確認など）を行います。<br>・巡回：犯罪抑止としてのパトロール、落とし物や迷子の発見、といった業務を行います。<br>・防災センター：監視カメラなど防犯、防災機器の監視、入館申請などの処理、書類作成、などを行います。<br><br>【研修等について】<br>以下のような教育制度を設けておりますので、未経験の方でもご安心ください。<br>１　初任研修／入社時４泊５日の研修、ＡＬＳＯＫ研修施設（東京都稲城市）で実施<br>２　実地研修／配属先にてOJT研修（３週間程度）<br>３　現任研修／年２回本社で実施<br>・その他各種研修／資格試験の実技実習や英会話講習など<br><br>【資格取得について】<br>１　消防・警備関係資格<br>　　初年度：上級救命講習、自衛消防技術認定証、防災センター要員<br>　　会社指定により警備業務検定などの国家資格も取得可能<br>２　ＡＬＳＯＫ通信教育（マネジメント、語学、その他ビジネススキル）<br><br>【キャリアパス】<br>＜ＡＬＳＯＫグループの階級制度＞<br>７段階の階級制度があり、階級に沿って勤務地での役職が決まる仕組みになっています。警備隊、本社（管理部門）関わらず監督職、管理職といったマネジメントする立場となれるポジションがございます。もちろん、昇任によって収入も大幅アップしていきます。一社で長く働きたいという方にとって、しっかりしたキャリアパスは魅力になるでしょう。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>1週間40時間を基準とする1ヶ月単位の変形労働時間制<br>・ 9:00～18:00（休憩1時間）<br>・ 8:00〜17:00（休憩1時間）<br>・10:00～19:00（休憩1時間）<br>など。<br>夜勤や当直勤務もございますが、こちらの求人については日勤のみを想定しています。夜勤や当直勤務にもご興味ある方は、面接時にご希望をお伺いします。</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>4週8休制<br>（所定外で休日が勤務に変わることが出てきますが、週一日の休みは確保できるようにシフトを組んでおります）<br>有給休暇（入社半年後10日〜勤続年数に応じて最大20日）<br>慶弔休暇<br>産休・育休<br>（現在も20名近くが取得中。職場復帰もフォローしますので安心です）<br>介護休職　など</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 喫煙スペースあり
+受動喫煙対策（詳細）： 喫煙目的室設置</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>・昇給年1回（4月）<br>・賞与年2回（6・12月）※2年目実績見込3.3ヶ月分<br>・社会保険完備（雇用、労災、健康、厚生年金）<br>・交通費支給（月5万円まで）<br>・時間外手当※全額<br>・資格手当※TOEIC、英検、秘書検定、自衛消防技術認定証、施設警備業務検定等<br>・家族手当※扶養する60歳以上の両親：1人月2000円／配偶者：月1万8000円／子1人：月5000円、2人以上の場合には月6000円×人数分<br>・住宅手当（月2～3万円　※給与に含まれます）<br>・役職手当<br>・退職金<br>・財形貯蓄<br>・社員持株会<br>・資格取得支援（会社指定の場合は費用補助や社内研修あり）<br>・制服貸与<br>・確定拠出年金<br>・ALSOKグループ企業年金<br>・住宅取得支援<br>・財産形成支援<br>・社内貸付金制度<br>・ライフサポート倶楽部<br>・保養施設<br>・ALSOK通信教育講座（英会話、マネジメントスキル等）<br>・社内イベント・レクリエーション<br>・再雇用制度<br>など</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>販売・接客・サービス</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

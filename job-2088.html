@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>一般事務・営業事務</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>一般事務・営業事務｜株式会社DUALホールディングス</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "一般事務・営業事務",
+  "description": "【事務職(リーダー候補)】年間休日123日／服装髪型自由＆ネイルOK／賞与3カ月分",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社DUALホールディングス"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都品川区北品川1-8-11　Daiwa品川Northビル8F",
+      "addressLocality": "品川区",
+      "addressRegion": "神奈川県",
+      "postalCode": "1400001",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 4500000,
+      "maxValue": 6000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,155 +110,90 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "一般事務・営業事務",
-      "description": "当社サービス「ライフラインConcierge」の\n運営スタッフとして事務のお仕事全般をお任せします。\n\n●お仕事内容\n・事務プロジェクトにおけるメンバー管理と進捗管理\n・業務フロー整備などのオペレーション管理\n・スタッフの教育・フォローなどのメンバーマネジメント\n・クライアントとの連絡や提案、プロジェクトの収支管理　など",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社DUALホールディングス"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都品川区北品川1-8-11　Daiwa品川Northビル8F",
-          "addressLocality": "品川区",
-          "addressRegion": "神奈川県",
-          "addressCountry": "JP",
-          "postalCode": "1400001"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 4500000,
-          "maxValue": 6000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "・09:50~19:00 ・休憩：60分休憩+10分休憩　(計70分) ・夜間勤務：なし",
-      "jobBenefits": [
-        "【保険制度】 ",
-        "・健康保険 ",
-        "・厚生年金 ",
-        "・雇用保険",
-        " ・労災保険",
-        "【待遇・福利厚生】 ",
-        "・通勤交通費全額支給 ",
-        "・営業交通費全額支給 ",
-        "・時間外手当（固定残業代超過分）",
-        " ・役職手当 ",
-        "・結婚祝い金 ",
-        "・出産祝い金",
-        " ・健康診断（年1回）",
-        " ・インフルエンザ予防接費用一部負担",
-        " ・物価高騰支援手当 　",
-        "月給とは別に、毎月1万円を支給し、社員の生活をサポートする手当です。 　昨今の物価上昇による生活費の負担を軽減するために社長の立案で設けられました！",
-        " 【社内に広くて快適な休憩室あり】",
-        " └自動販売機・レンジ・冷蔵庫など自由に利用可能！",
-        " └ドリンクサーバー完備（無料） ",
-        "└水素水飲み放題！ ",
-        "└仕事終わりに飲めるお酒も用意しています！ ",
-        "※各種、社内規程あり",
-        "・クローズドマート",
-        " SDGsに基づき、食品ロスや商品ロスの削減を推進する「職域販売サービス」 賞味期限間近の食品や一般流通が難しい製品、型落ち商品などを社内で安く販売しています。 （例：化粧水、シャンプーなど93％OFFで購入することができます） ",
-        "・vitalityアプリ ",
-        "社員が楽しく健康的な生活を送れるように健康増進プログラムを提供しています。 日々の運動量をポイント化し、くじ引きをすることができます。 コンビニで使用できる引換券や、某カフェの割引券が当たるチャンスもあります！",
-        " ・ポスタルくらぶ会員サービス ",
-        "└国内・海外旅行の割引 ",
-        "└グルメ・エンタメ・テーマパーク ",
-        "└災害見舞金等保険 その他保険 など、様々なサービスを会員特典割引で利用することができます！",
-        "受動喫煙対策: 受動喫煙対策： 喫煙スペースあり\n受動喫煙対策（詳細）： ビル敷地内：屋外に喫煙所あり"
-      ],
-      "occupationalCategory": "事務・オフィスワーク"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "一般事務・営業事務",
-          "item": "https://job-site-6aa.pages.dev/job-2088.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【事務職(リーダー候補)】年間休日123日／服装髪型自由＆ネイルOK／賞与3カ月分</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>一般事務・営業事務</h1>
-      <p><em>【事務職(リーダー候補)】年間休日123日／服装髪型自由＆ネイルOK／賞与3カ月分</em></p>
-      <p><strong>会社名：</strong>株式会社DUALホールディングス</p>
-      <p><strong>勤務地：</strong>東京都品川区北品川1-8-11　Daiwa品川Northビル8F</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 450万円〜600万円</p>
-      <h3>仕事内容：</h3>
-      <p>当社サービス「ライフラインConcierge」の<br>運営スタッフとして事務のお仕事全般をお任せします。<br><br>●お仕事内容<br>・事務プロジェクトにおけるメンバー管理と進捗管理<br>・業務フロー整備などのオペレーション管理<br>・スタッフの教育・フォローなどのメンバーマネジメント<br>・クライアントとの連絡や提案、プロジェクトの収支管理　など</p>
-      <h3>勤務時間：</h3>
-      <p>・09:50~19:00<br>・休憩：60分休憩+10分休憩　(計70分)<br>・夜間勤務：なし</p>
-      <h3>休暇・休日：</h3>
-      <p>・休日：シフト制<br>・年間休日：123日<br>補足情報：<br>カレンダー通りの公休数です（月9～12日休み） <br>└毎月20日に翌月のお休み希望を出すことができます。 連休の取得や土日休みも可能です◎ <br><br>・年末年始休暇 <br>・有給休暇 （10日〜勤続年数に応じて最大20日）<br>・結婚休暇 <br>・出産休暇 <br>・育児休暇 <br>・介護休暇<br> ・忌引き休暇 <br>・ボランティア休暇<br>・リカバリー休暇 　<br>6カ月未満の新入社員が、体調不良などでお休みした際、 利用することができる休暇制度です。 有給休暇の前借ではなく、別枠で設けられた特別な休暇として、 新しい環境に慣れるまでの不安を少しでも軽減し、 安心して働けるように設けられた制度です。 <br><br>※各種、社内規程あり</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 喫煙スペースあり
-受動喫煙対策（詳細）： ビル敷地内：屋外に喫煙所あり</p>
-      <h3>福利厚生：</h3>
-      <ul><li>【保険制度】 </li><li>・健康保険 </li><li>・厚生年金 </li><li>・雇用保険</li><li> ・労災保険</li><li>【待遇・福利厚生】 </li><li>・通勤交通費全額支給 </li><li>・営業交通費全額支給 </li><li>・時間外手当（固定残業代超過分）</li><li> ・役職手当 </li><li>・結婚祝い金 </li><li>・出産祝い金</li><li> ・健康診断（年1回）</li><li> ・インフルエンザ予防接費用一部負担</li><li> ・物価高騰支援手当 　</li><li>月給とは別に、毎月1万円を支給し、社員の生活をサポートする手当です。 　昨今の物価上昇による生活費の負担を軽減するために社長の立案で設けられました！</li><li> 【社内に広くて快適な休憩室あり】</li><li> └自動販売機・レンジ・冷蔵庫など自由に利用可能！</li><li> └ドリンクサーバー完備（無料） </li><li>└水素水飲み放題！ </li><li>└仕事終わりに飲めるお酒も用意しています！ </li><li>※各種、社内規程あり</li><li>・クローズドマート</li><li> SDGsに基づき、食品ロスや商品ロスの削減を推進する「職域販売サービス」 賞味期限間近の食品や一般流通が難しい製品、型落ち商品などを社内で安く販売しています。 （例：化粧水、シャンプーなど93％OFFで購入することができます） </li><li>・vitalityアプリ </li><li>社員が楽しく健康的な生活を送れるように健康増進プログラムを提供しています。 日々の運動量をポイント化し、くじ引きをすることができます。 コンビニで使用できる引換券や、某カフェの割引券が当たるチャンスもあります！</li><li> ・ポスタルくらぶ会員サービス </li><li>└国内・海外旅行の割引 </li><li>└グルメ・エンタメ・テーマパーク </li><li>└災害見舞金等保険 その他保険 など、様々なサービスを会員特典割引で利用することができます！</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEDUAL%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B9" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社DUALホールディングス</dd>
+
+      <dt>職種名</dt>
+      <dd>一般事務・営業事務</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都品川区北品川1-8-11　Daiwa品川Northビル8F</dd>
+
+      <dt>都道府県</dt>
+      <dd>神奈川県</dd>
+
+      <dt>市区町村</dt>
+      <dd>品川区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1400001</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>4500000 ～ 6000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>当社サービス「ライフラインConcierge」の<br>運営スタッフとして事務のお仕事全般をお任せします。<br><br>●お仕事内容<br>・事務プロジェクトにおけるメンバー管理と進捗管理<br>・業務フロー整備などのオペレーション管理<br>・スタッフの教育・フォローなどのメンバーマネジメント<br>・クライアントとの連絡や提案、プロジェクトの収支管理　など</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>・09:50~19:00<br>・休憩：60分休憩+10分休憩　(計70分)<br>・夜間勤務：なし</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>・休日：シフト制<br>・年間休日：123日<br>補足情報：<br>カレンダー通りの公休数です（月9～12日休み） <br>└毎月20日に翌月のお休み希望を出すことができます。 連休の取得や土日休みも可能です◎ <br><br>・年末年始休暇 <br>・有給休暇 （10日〜勤続年数に応じて最大20日）<br>・結婚休暇 <br>・出産休暇 <br>・育児休暇 <br>・介護休暇<br> ・忌引き休暇 <br>・ボランティア休暇<br>・リカバリー休暇 　<br>6カ月未満の新入社員が、体調不良などでお休みした際、 利用することができる休暇制度です。 有給休暇の前借ではなく、別枠で設けられた特別な休暇として、 新しい環境に慣れるまでの不安を少しでも軽減し、 安心して働けるように設けられた制度です。 <br><br>※各種、社内規程あり</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 喫煙スペースあり
+受動喫煙対策（詳細）： ビル敷地内：屋外に喫煙所あり</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>【保険制度】 <br>・健康保険 <br>・厚生年金 <br>・雇用保険<br> ・労災保険<br><br>【待遇・福利厚生】 <br>・通勤交通費全額支給 <br>・営業交通費全額支給 <br>・時間外手当（固定残業代超過分）<br> ・役職手当 <br>・結婚祝い金 <br>・出産祝い金<br> ・健康診断（年1回）<br> ・インフルエンザ予防接費用一部負担<br> ・物価高騰支援手当 　<br>月給とは別に、毎月1万円を支給し、社員の生活をサポートする手当です。 　昨今の物価上昇による生活費の負担を軽減するために社長の立案で設けられました！<br><br> 【社内に広くて快適な休憩室あり】<br> └自動販売機・レンジ・冷蔵庫など自由に利用可能！<br> └ドリンクサーバー完備（無料） <br>└水素水飲み放題！ <br>└仕事終わりに飲めるお酒も用意しています！ <br><br>※各種、社内規程あり<br><br>・クローズドマート<br> SDGsに基づき、食品ロスや商品ロスの削減を推進する「職域販売サービス」 賞味期限間近の食品や一般流通が難しい製品、型落ち商品などを社内で安く販売しています。 （例：化粧水、シャンプーなど93％OFFで購入することができます） <br>・vitalityアプリ <br>社員が楽しく健康的な生活を送れるように健康増進プログラムを提供しています。 日々の運動量をポイント化し、くじ引きをすることができます。 コンビニで使用できる引換券や、某カフェの割引券が当たるチャンスもあります！<br> ・ポスタルくらぶ会員サービス <br>└国内・海外旅行の割引 <br>└グルメ・エンタメ・テーマパーク <br>└災害見舞金等保険 その他保険 など、様々なサービスを会員特典割引で利用することができます！</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>事務・オフィスワーク</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>回路・システム設計</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>回路・システム設計｜株式会社日立オートメーション</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "回路・システム設計",
+  "description": "【産業設備の電気設計】※マネージャー候補",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社日立オートメーション"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "岐阜県各務原市テクノプラザ2-15",
+      "addressLocality": "各務原市",
+      "addressRegion": "岐阜県",
+      "postalCode": "5090109",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 8000000,
+      "maxValue": 9000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,135 +110,90 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "回路・システム設計",
-      "description": "【具体的には……】\n・自動車生産設備における電気設計\n・ハード図設計\n・ラダープログラム設計\n・設備試運転対応\n・仕入先への手配業務、日程管理業務、予実管理\n・グループ内マネジメント\n\n\n主な使用ツール\n■PLC（シーケンサ）設計、ラダー設計\n　＜使用ソフト＞\n　・三菱電機（MELSEC）GX Works3、GX Works2\n　・オムロン　CX-Programmer\n　・シャープ　JW300SP\n　・キーエンス　KV STUDIO\n■タッチパネル設計\n　＜使用ソフト＞\n　・三菱電機（MELSEC）GT Designer3\n　・オムロン　CX-Designer\n　・シャープ　ZM-71S、ZM-72S\n　・キーエンス　VT STUDIO\n　・シュナイダー　GP-Pro EX\n　・発紘電機　V-SFTV\n■電気図面（回路）設計】\n　＜使用ソフト＞\n　・Autodesk　Autocad\n　・進和電機　Unidraf\n\n\n【当社について】\n1981年の創業以来、ロボットシステムインテグレーション（SI）事業を手がけ、自動車を中心に、各種製造現場において、生産ラインの自動化をしています。生産ラインのシステム構築と設備構築に計画段階から携わり、初期打合せから、設計・製作・据付・メンテナンスに至る一貫したサービスを提供しています。特に、産業用ロボットを活用した溶接工程におけるロボットSI技術に強みを持っています。\n創業以来40年以上に及ぶ”設備愛”で自動車設備産業をサポートしてきた当社。実績・ノウハウや、豊富なライン立上げ経験による対応力、豊富な設備と協力体制による高い生産能力を持っています。そして、設計から設置までのトータルサポート体制で、お客様の自動車生産ラインを支えています。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社日立オートメーション"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "岐阜県各務原市テクノプラザ2-15",
-          "addressLocality": "各務原市",
-          "addressRegion": "岐阜県",
-          "addressCountry": "JP",
-          "postalCode": "5090109"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 8000000,
-          "maxValue": 9000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "8：30～17：00  所定労働時間7.75時間、休憩45分",
-      "jobBenefits": [
-        "通勤手当（会社規定による）",
-        "家族手当（会社規定による）",
-        "住宅手当（会社規定による）",
-        "残業手当",
-        "OJT",
-        "団体保険制度",
-        "退職金制度",
-        "社員食堂",
-        "無料駐車場完備",
-        "安全衛生委員会活動（毎月1回産業医の先生をお招きし安全衛生委員会を開催）",
-        "受動喫煙対策: 受動喫煙対策： 喫煙スペースあり\n受動喫煙対策（詳細）： 屋内全面禁煙"
-      ],
-      "occupationalCategory": ""
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "回路・システム設計",
-          "item": "https://job-site-6aa.pages.dev/job-699.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【産業設備の電気設計】※マネージャー候補</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>回路・システム設計</h1>
-      <p><em>【産業設備の電気設計】※マネージャー候補</em></p>
-      <p><strong>会社名：</strong>株式会社日立オートメーション</p>
-      <p><strong>勤務地：</strong>岐阜県各務原市テクノプラザ2-15</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 800万円〜900万円</p>
-      <h3>仕事内容：</h3>
-      <p>【具体的には……】<br>・自動車生産設備における電気設計<br>・ハード図設計<br>・ラダープログラム設計<br>・設備試運転対応<br>・仕入先への手配業務、日程管理業務、予実管理<br>・グループ内マネジメント<br><br><br>主な使用ツール<br>•PLC（シーケンサ）設計、ラダー設計<br>　＜使用ソフト＞<br>　・三菱電機（MELSEC）GX Works3、GX Works2<br>　・オムロン　CX-Programmer<br>　・シャープ　JW300SP<br>　・キーエンス　KV STUDIO<br>•タッチパネル設計<br>　＜使用ソフト＞<br>　・三菱電機（MELSEC）GT Designer3<br>　・オムロン　CX-Designer<br>　・シャープ　ZM-71S、ZM-72S<br>　・キーエンス　VT STUDIO<br>　・シュナイダー　GP-Pro EX<br>　・発紘電機　V-SFTV<br>•電気図面（回路）設計】<br>　＜使用ソフト＞<br>　・Autodesk　Autocad<br>　・進和電機　Unidraf<br><br><br>【当社について】<br>1981年の創業以来、ロボットシステムインテグレーション（SI）事業を手がけ、自動車を中心に、各種製造現場において、生産ラインの自動化をしています。生産ラインのシステム構築と設備構築に計画段階から携わり、初期打合せから、設計・製作・据付・メンテナンスに至る一貫したサービスを提供しています。特に、産業用ロボットを活用した溶接工程におけるロボットSI技術に強みを持っています。<br>創業以来40年以上に及ぶ”設備愛”で自動車設備産業をサポートしてきた当社。実績・ノウハウや、豊富なライン立上げ経験による対応力、豊富な設備と協力体制による高い生産能力を持っています。そして、設計から設置までのトータルサポート体制で、お客様の自動車生産ラインを支えています。</p>
-      <h3>勤務時間：</h3>
-      <p>8：30～17：00 <br>所定労働時間7.75時間、休憩45分</p>
-      <h3>休暇・休日：</h3>
-      <p>完全週休2日制（土・日）<br>※お客様の都合上土日出社が発生する場合がございますが、振休の取得が可能です。<br>フレックス制度あり</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 喫煙スペースあり
-受動喫煙対策（詳細）： 屋内全面禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>通勤手当（会社規定による）</li><li>家族手当（会社規定による）</li><li>住宅手当（会社規定による）</li><li>残業手当</li><li>OJT</li><li>団体保険制度</li><li>退職金制度</li><li>社員食堂</li><li>無料駐車場完備</li><li>安全衛生委員会活動（毎月1回産業医の先生をお招きし安全衛生委員会を開催）</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%97%A5%E7%AB%8B%E3%82%AA%E3%83%BC%E3%83%88%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社日立オートメーション</dd>
+
+      <dt>職種名</dt>
+      <dd>回路・システム設計</dd>
+
+      <dt>勤務地</dt>
+      <dd>岐阜県各務原市テクノプラザ2-15</dd>
+
+      <dt>都道府県</dt>
+      <dd>岐阜県</dd>
+
+      <dt>市区町村</dt>
+      <dd>各務原市</dd>
+
+      <dt>郵便番号</dt>
+      <dd>5090109</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>8000000 ～ 9000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>【具体的には……】<br>・自動車生産設備における電気設計<br>・ハード図設計<br>・ラダープログラム設計<br>・設備試運転対応<br>・仕入先への手配業務、日程管理業務、予実管理<br>・グループ内マネジメント<br><br><br>主な使用ツール<br>■PLC（シーケンサ）設計、ラダー設計<br>　＜使用ソフト＞<br>　・三菱電機（MELSEC）GX Works3、GX Works2<br>　・オムロン　CX-Programmer<br>　・シャープ　JW300SP<br>　・キーエンス　KV STUDIO<br>■タッチパネル設計<br>　＜使用ソフト＞<br>　・三菱電機（MELSEC）GT Designer3<br>　・オムロン　CX-Designer<br>　・シャープ　ZM-71S、ZM-72S<br>　・キーエンス　VT STUDIO<br>　・シュナイダー　GP-Pro EX<br>　・発紘電機　V-SFTV<br>■電気図面（回路）設計】<br>　＜使用ソフト＞<br>　・Autodesk　Autocad<br>　・進和電機　Unidraf<br><br><br>【当社について】<br>1981年の創業以来、ロボットシステムインテグレーション（SI）事業を手がけ、自動車を中心に、各種製造現場において、生産ラインの自動化をしています。生産ラインのシステム構築と設備構築に計画段階から携わり、初期打合せから、設計・製作・据付・メンテナンスに至る一貫したサービスを提供しています。特に、産業用ロボットを活用した溶接工程におけるロボットSI技術に強みを持っています。<br>創業以来40年以上に及ぶ”設備愛”で自動車設備産業をサポートしてきた当社。実績・ノウハウや、豊富なライン立上げ経験による対応力、豊富な設備と協力体制による高い生産能力を持っています。そして、設計から設置までのトータルサポート体制で、お客様の自動車生産ラインを支えています。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>8：30～17：00 <br>所定労働時間7.75時間、休憩45分</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>完全週休2日制（土・日）<br>※お客様の都合上土日出社が発生する場合がございますが、振休の取得が可能です。<br>フレックス制度あり</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 喫煙スペースあり
+受動喫煙対策（詳細）： 屋内全面禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>通勤手当（会社規定による）<br>家族手当（会社規定による）<br>住宅手当（会社規定による）<br>残業手当<br>OJT<br>団体保険制度<br>退職金制度<br>社員食堂<br>無料駐車場完備<br>安全衛生委員会活動（毎月1回産業医の先生をお招きし安全衛生委員会を開催）</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd></dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

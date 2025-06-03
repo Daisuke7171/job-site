@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>一般事務・営業事務</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>一般事務・営業事務｜株式会社エス・エム・エスサポートサービス</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "一般事務・営業事務",
+  "description": "【未経験歓迎】業務プロセス改善担当／介護系ITサービス",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社エス・エム・エスサポートサービス"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "北海道札幌市中央区北五条西2丁目5番",
+      "addressLocality": "札幌市",
+      "addressRegion": "福岡県",
+      "postalCode": "",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 4000000,
+      "maxValue": 6000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,131 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "一般事務・営業事務",
-      "description": "■仕事内容\n当社が扱う介護サービスに関する業務プロセス改善を担当いただきます。\n後輩育成も業務に含むため、マネジメント経験者、もしくは将来的にマネジメントの経験を積みたい方の採用を前提としています。\n\n具体的には、\n・顧客からの問合せ対応に関する（電話やチャット）データの抽出・調査・分析\n・業務マニュアル、業務オペレーションの構築\n・各種検証に関する分析とモニタリング\n・分析に基づくモニタリングルールや、結果に対する次回の施策立案\n・業務改善提案の企画、運用管理\n\n■配属部署\nご本人ご希望や適性から以下のいずれかで配属部署をアサインします。\n\n◇介護事業者向け経営支援サービス（カイポケ） 業務効率化や、\n介護事業者の経営改善に役立つサービスを提供するクラウドサービスです。\n介護業務以外の間接業務を削減する業務支援機能、勤怠・給与・労務や会計などの経営・運営支援機能を提供し、 介護事業者が目指す理想の介護サービス実現を支援します。\n\n◇介護職専門求人情報サイト（カイゴジョブ）\n日本最大規模の「介護専門」の求人サイトです。\n人材不足の介護業界に於いて事業者、求職者の両面から採用支援を行う人材キャリア事業です。\n介護・医療業界の人材不足解消を支援することで、生産性高く遣り甲斐をもって働く従事者の活躍が促進され、\n結果的に質の高い介護・医療サービスの継続提供の貢献へと繋がっていきます。\n\n■チームの特徴\n・10名程度の小チームです。（20代～30代女性が中心）\n・業務が多岐に渡るため、チーム内連携はもちろんのこと、メンバー1人1人の業務改善力を重視しています。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社エス・エム・エスサポートサービス"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "北海道札幌市中央区北五条西2丁目5番",
-          "addressLocality": "札幌市",
-          "addressRegion": "福岡県",
-          "addressCountry": "JP",
-          "postalCode": ""
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 4000000,
-          "maxValue": 6000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "8:50〜18:00 所定労働時間：8時間、休憩1時間10分",
-      "jobBenefits": [
-        "・社会保険完備",
-        "・通勤交通費支給（上限3万5,000円）",
-        "・定期検診制度",
-        "・予防接種",
-        "・書籍購⼊⽀援制度",
-        "・資格取得⽀援制度",
-        "・従業員持株制度",
-        "受動喫煙対策: 受動喫煙対策： 禁煙"
-      ],
-      "occupationalCategory": "事務・オフィスワーク"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "一般事務・営業事務",
-          "item": "https://job-site-6aa.pages.dev/job-1689.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【未経験歓迎】業務プロセス改善担当／介護系ITサービス</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>一般事務・営業事務</h1>
-      <p><em>【未経験歓迎】業務プロセス改善担当／介護系ITサービス</em></p>
-      <p><strong>会社名：</strong>株式会社エス・エム・エスサポートサービス</p>
-      <p><strong>勤務地：</strong>北海道札幌市中央区北五条西2丁目5番</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 400万円〜600万円</p>
-      <h3>仕事内容：</h3>
-      <p>•仕事内容<br>当社が扱う介護サービスに関する業務プロセス改善を担当いただきます。<br>後輩育成も業務に含むため、マネジメント経験者、もしくは将来的にマネジメントの経験を積みたい方の採用を前提としています。<br><br>具体的には、<br>・顧客からの問合せ対応に関する（電話やチャット）データの抽出・調査・分析<br>・業務マニュアル、業務オペレーションの構築<br>・各種検証に関する分析とモニタリング<br>・分析に基づくモニタリングルールや、結果に対する次回の施策立案<br>・業務改善提案の企画、運用管理<br><br>•配属部署<br>ご本人ご希望や適性から以下のいずれかで配属部署をアサインします。<br><br>◇介護事業者向け経営支援サービス（カイポケ） 業務効率化や、<br>介護事業者の経営改善に役立つサービスを提供するクラウドサービスです。<br>介護業務以外の間接業務を削減する業務支援機能、勤怠・給与・労務や会計などの経営・運営支援機能を提供し、 介護事業者が目指す理想の介護サービス実現を支援します。<br><br>◇介護職専門求人情報サイト（カイゴジョブ）<br>日本最大規模の「介護専門」の求人サイトです。<br>人材不足の介護業界に於いて事業者、求職者の両面から採用支援を行う人材キャリア事業です。<br>介護・医療業界の人材不足解消を支援することで、生産性高く遣り甲斐をもって働く従事者の活躍が促進され、<br>結果的に質の高い介護・医療サービスの継続提供の貢献へと繋がっていきます。<br><br>•チームの特徴<br>・10名程度の小チームです。（20代～30代女性が中心）<br>・業務が多岐に渡るため、チーム内連携はもちろんのこと、メンバー1人1人の業務改善力を重視しています。</p>
-      <h3>勤務時間：</h3>
-      <p>8:50〜18:00<br>所定労働時間：8時間、休憩1時間10分</p>
-      <h3>休暇・休日：</h3>
-      <p>・土日祝<br>・年間休日127日（2023年度実績）<br>・有給休暇（10日～勤続年数に応じて最大20日）<br>・夏季休暇3日<br>・年末年始5日<br>・産休／育休制度<br>・介護休職制度</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>・社会保険完備</li><li>・通勤交通費支給（上限3万5,000円）</li><li>・定期検診制度</li><li>・予防接種</li><li>・書籍購⼊⽀援制度</li><li>・資格取得⽀援制度</li><li>・従業員持株制度</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%82%B9%E3%83%BB%E3%82%A8%E3%83%A0%E3%83%BB%E3%82%A8%E3%82%B9%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社エス・エム・エスサポートサービス</dd>
+
+      <dt>職種名</dt>
+      <dd>一般事務・営業事務</dd>
+
+      <dt>勤務地</dt>
+      <dd>北海道札幌市中央区北五条西2丁目5番</dd>
+
+      <dt>都道府県</dt>
+      <dd>福岡県</dd>
+
+      <dt>市区町村</dt>
+      <dd>札幌市</dd>
+
+      <dt>郵便番号</dt>
+      <dd></dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>4000000 ～ 6000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>■仕事内容<br>当社が扱う介護サービスに関する業務プロセス改善を担当いただきます。<br>後輩育成も業務に含むため、マネジメント経験者、もしくは将来的にマネジメントの経験を積みたい方の採用を前提としています。<br><br>具体的には、<br>・顧客からの問合せ対応に関する（電話やチャット）データの抽出・調査・分析<br>・業務マニュアル、業務オペレーションの構築<br>・各種検証に関する分析とモニタリング<br>・分析に基づくモニタリングルールや、結果に対する次回の施策立案<br>・業務改善提案の企画、運用管理<br><br>■配属部署<br>ご本人ご希望や適性から以下のいずれかで配属部署をアサインします。<br><br>◇介護事業者向け経営支援サービス（カイポケ） 業務効率化や、<br>介護事業者の経営改善に役立つサービスを提供するクラウドサービスです。<br>介護業務以外の間接業務を削減する業務支援機能、勤怠・給与・労務や会計などの経営・運営支援機能を提供し、 介護事業者が目指す理想の介護サービス実現を支援します。<br><br>◇介護職専門求人情報サイト（カイゴジョブ）<br>日本最大規模の「介護専門」の求人サイトです。<br>人材不足の介護業界に於いて事業者、求職者の両面から採用支援を行う人材キャリア事業です。<br>介護・医療業界の人材不足解消を支援することで、生産性高く遣り甲斐をもって働く従事者の活躍が促進され、<br>結果的に質の高い介護・医療サービスの継続提供の貢献へと繋がっていきます。<br><br>■チームの特徴<br>・10名程度の小チームです。（20代～30代女性が中心）<br>・業務が多岐に渡るため、チーム内連携はもちろんのこと、メンバー1人1人の業務改善力を重視しています。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>8:50〜18:00<br>所定労働時間：8時間、休憩1時間10分</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>・土日祝<br>・年間休日127日（2023年度実績）<br>・有給休暇（10日～勤続年数に応じて最大20日）<br>・夏季休暇3日<br>・年末年始5日<br>・産休／育休制度<br>・介護休職制度</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>・社会保険完備<br>・通勤交通費支給（上限3万5,000円）<br>・定期検診制度<br>・予防接種<br>・書籍購⼊⽀援制度<br>・資格取得⽀援制度<br>・従業員持株制度</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>事務・オフィスワーク</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

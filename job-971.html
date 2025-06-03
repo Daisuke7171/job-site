@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Webサービス系エンジニア・プログラマ</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Webサービス系エンジニア・プログラマ｜アスクプロ株式会社</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "Webサービス系エンジニア・プログラマ",
+  "description": "※急募※実務不問【Webエンジニア】専門家マッチングシステム/多方面に事業展開中",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "アスクプロ株式会社"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都新宿区四谷三丁目5番4階",
+      "addressLocality": "新宿区",
+      "addressRegion": "兵庫県",
+      "postalCode": "1600004",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 7000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,132 +110,90 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "Webサービス系エンジニア・プログラマ",
-      "description": "士業のマーケットで設立14年目の弊社。\n専門家マッチングシステムに加え、自社パッケージの開発、受託/請負開発事業、SES事業と多方面に事業展開しております。\n主戦場の士業マーケットを超えてのシステム開発依頼の急増、事業計画の変更もあり急遽増員します。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "アスクプロ株式会社"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都新宿区四谷三丁目5番4階",
-          "addressLocality": "新宿区",
-          "addressRegion": "兵庫県",
-          "addressCountry": "JP",
-          "postalCode": "1600004"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3000000,
-          "maxValue": 7000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "10:00～19:00 所定労働時間8時間、休憩1時間",
-      "jobBenefits": [
-        "■交通費支給（上限あり） ",
-        "■社会保険完備",
-        "■住宅手当",
-        "■研修あり",
-        "■資格取得支援制度",
-        "■福利厚生サービス加入",
-        "　ホテル・旅館・映画館などの様々なサービスの割引優待",
-        "受動喫煙対策: 受動喫煙対策： 禁煙\n受動喫煙対策（詳細）： 喫煙ルーム別所あり。"
-      ],
-      "occupationalCategory": "IT・クリエイティブ"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Webサービス系エンジニア・プログラマ",
-          "item": "https://job-site-6aa.pages.dev/job-971.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>※急募※実務不問【Webエンジニア】専門家マッチングシステム/多方面に事業展開中</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>Webサービス系エンジニア・プログラマ</h1>
-      <p><em>※急募※実務不問【Webエンジニア】専門家マッチングシステム/多方面に事業展開中</em></p>
-      <p><strong>会社名：</strong>アスクプロ株式会社</p>
-      <p><strong>勤務地：</strong>東京都新宿区四谷三丁目5番4階</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 300万円〜700万円</p>
-      <h3>仕事内容：</h3>
-      <p>士業のマーケットで設立14年目の弊社。<br>専門家マッチングシステムに加え、自社パッケージの開発、受託/請負開発事業、SES事業と多方面に事業展開しております。<br>主戦場の士業マーケットを超えてのシステム開発依頼の急増、事業計画の変更もあり急遽増員します。</p>
-      <h3>勤務時間：</h3>
-      <p>10:00～19:00<br>所定労働時間8時間、休憩1時間</p>
-      <h3>休暇・休日：</h3>
-      <p>•週休2日制（土日祝日休み）<br>•年次有給休暇（入社半年後に10日付与。最大20日）<br>•夏季休暇<br>•年末年始休暇<br>•慶弔休暇<br>•産休育休（実績あり）</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙
-受動喫煙対策（詳細）： 喫煙ルーム別所あり。</p>
-      <h3>福利厚生：</h3>
-      <ul><li>•交通費支給（上限あり） </li><li>•社会保険完備</li><li>•住宅手当</li><li>•研修あり</li><li>•資格取得支援制度</li><li>•福利厚生サービス加入</li><li>　ホテル・旅館・映画館などの様々なサービスの割引優待</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E3%82%A2%E3%82%B9%E3%82%AF%E3%83%97%E3%83%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>アスクプロ株式会社</dd>
+
+      <dt>職種名</dt>
+      <dd>Webサービス系エンジニア・プログラマ</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都新宿区四谷三丁目5番4階</dd>
+
+      <dt>都道府県</dt>
+      <dd>兵庫県</dd>
+
+      <dt>市区町村</dt>
+      <dd>新宿区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1600004</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3000000 ～ 7000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>士業のマーケットで設立14年目の弊社。<br>専門家マッチングシステムに加え、自社パッケージの開発、受託/請負開発事業、SES事業と多方面に事業展開しております。<br>主戦場の士業マーケットを超えてのシステム開発依頼の急増、事業計画の変更もあり急遽増員します。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>10:00～19:00<br>所定労働時間8時間、休憩1時間</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>■週休2日制（土日祝日休み）<br>■年次有給休暇（入社半年後に10日付与。最大20日）<br>■夏季休暇<br>■年末年始休暇<br>■慶弔休暇<br>■産休育休（実績あり）</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙
+受動喫煙対策（詳細）： 喫煙ルーム別所あり。</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>■交通費支給（上限あり） <br>■社会保険完備<br>■住宅手当<br>■研修あり<br>■資格取得支援制度<br>■福利厚生サービス加入<br>　ホテル・旅館・映画館などの様々なサービスの割引優待</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>IT・クリエイティブ</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

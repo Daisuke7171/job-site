@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>インフラエンジニア</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>インフラエンジニア｜株式会社ワールドフェイマス</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "インフラエンジニア",
+  "description": "【東京】完全未経験からエンジニアへ【あなたのチャレンジを応援!!】",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "契約社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社ワールドフェイマス"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都千代田区飯田橋2-1-5 S-Glanz KUDAN BLD.1F",
+      "addressLocality": "千代田区",
+      "addressRegion": "東京都",
+      "postalCode": "1020072",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 2500000,
+      "maxValue": 4000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,138 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "インフラエンジニア",
-      "description": "入社後１か月間、CCNAスクールに通っていただきます。スクールにて講義を受講していただき、CCNAの資格を取得していただきます。\nCCNA資格取得後は、大手通信企業を中心としたさまざまなクライアント先でのプロジェクトに携わっていただきます。\n学んだ知識を生かし、実務を通してネットワークエンジニアを目指せます。\n\n＜主に携わる業務概要＞\n・ネットワーク設計・構築・運用\n・ネットワーク構築にかかわるベンダー対応\n・通信ネットワークを主としたソリューション提案\nなど",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "CONTRACTOR",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社ワールドフェイマス"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都千代田区飯田橋2-1-5 S-Glanz KUDAN BLD.1F",
-          "addressLocality": "千代田区",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": "1020072"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 2500000,
-          "maxValue": 4000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "9:00～18:00（所定労働時間8時間、休憩1時間） ※勤務地によっては異なる場合がございます。  勤務：NWエンジニア業務の性質上、夜勤対応、休日出勤、出張が発生することがあるため対応可能であること ※振替休日等は必ず取得して頂きます",
-      "jobBenefits": [
-        "昇給:年2回（社内ポイント制度で明確な評価）（正社員のみ）",
-        "賞与:年2回評価制度に基づくインセンティブ賞与有（正社員のみ）",
-        "通勤手当（1ヵ月分の通勤定期代）",
-        "残業手当（月給に応じて固定残業代あり）",
-        "転勤手当",
-        "資格手当",
-        "社員紹介手当（１人当たり20万円※勤続３ヶ月経過後に支給）",
-        "【資格手当について】",
-        "当社が推奨する資格が対象。",
-        "資格によって支給される金額が異なり、最大月15万円まで支給されます。",
-        "資格取得支援制度もありますので、ぜひ積極的に資格取得に向けてチャレンジしてみてください。",
-        "例:CCNA→月3万円、CCNP→月5万円、CCIE→月15万円",
-        "※入社前の取得資格は対象外となります",
-        "※当求人でのスクール生として取得したCCNAは資格手当対象外となります",
-        "受動喫煙対策: 受動喫煙対策： 禁煙"
-      ],
-      "occupationalCategory": "IT・クリエイティブ"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "インフラエンジニア",
-          "item": "https://job-site-6aa.pages.dev/job-1351.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【東京】完全未経験からエンジニアへ【あなたのチャレンジを応援!!】</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>インフラエンジニア</h1>
-      <p><em>【東京】完全未経験からエンジニアへ【あなたのチャレンジを応援!!】</em></p>
-      <p><strong>会社名：</strong>株式会社ワールドフェイマス</p>
-      <p><strong>勤務地：</strong>東京都千代田区飯田橋2-1-5 S-Glanz KUDAN BLD.1F</p>
-      <p><strong>雇用形態：</strong>CONTRACTOR</p>
-      <p><strong>給与：</strong>年収 250万円〜400万円</p>
-      <h3>仕事内容：</h3>
-      <p>入社後１か月間、CCNAスクールに通っていただきます。スクールにて講義を受講していただき、CCNAの資格を取得していただきます。<br>CCNA資格取得後は、大手通信企業を中心としたさまざまなクライアント先でのプロジェクトに携わっていただきます。<br>学んだ知識を生かし、実務を通してネットワークエンジニアを目指せます。<br><br>＜主に携わる業務概要＞<br>・ネットワーク設計・構築・運用<br>・ネットワーク構築にかかわるベンダー対応<br>・通信ネットワークを主としたソリューション提案<br>など</p>
-      <h3>勤務時間：</h3>
-      <p>9:00～18:00（所定労働時間8時間、休憩1時間）<br>※勤務地によっては異なる場合がございます。<br><br>勤務：NWエンジニア業務の性質上、夜勤対応、休日出勤、出張が発生することがあるため対応可能であること<br>※振替休日等は必ず取得して頂きます</p>
-      <h3>休暇・休日：</h3>
-      <p>完全週休2日制（土日祝）<br>年末年始休暇<br>GW休暇<br>年次有給休暇（入社6ヶ月後に10日付与、最大20日分）<br>特別休暇<br>　・慶弔休暇<br>　・産前・産後休暇<br>　・育児看護休暇＆介護休暇<br>　・バースデー休暇<br>その他育児休業・介護休業など</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>昇給:年2回（社内ポイント制度で明確な評価）（正社員のみ）</li><li>賞与:年2回評価制度に基づくインセンティブ賞与有（正社員のみ）</li><li>通勤手当（1ヵ月分の通勤定期代）</li><li>残業手当（月給に応じて固定残業代あり）</li><li>転勤手当</li><li>資格手当</li><li>社員紹介手当（１人当たり20万円※勤続３ヶ月経過後に支給）</li><li>【資格手当について】</li><li>当社が推奨する資格が対象。</li><li>資格によって支給される金額が異なり、最大月15万円まで支給されます。</li><li>資格取得支援制度もありますので、ぜひ積極的に資格取得に向けてチャレンジしてみてください。</li><li>例:CCNA→月3万円、CCNP→月5万円、CCIE→月15万円</li><li>※入社前の取得資格は対象外となります</li><li>※当求人でのスクール生として取得したCCNAは資格手当対象外となります</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%83%95%E3%82%A7%E3%82%A4%E3%83%9E%E3%82%B9" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社ワールドフェイマス</dd>
+
+      <dt>職種名</dt>
+      <dd>インフラエンジニア</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都千代田区飯田橋2-1-5 S-Glanz KUDAN BLD.1F</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>千代田区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1020072</dd>
+
+      <dt>雇用形態</dt>
+      <dd>契約社員</dd>
+
+      <dt>給与</dt>
+      <dd>2500000 ～ 4000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>入社後１か月間、CCNAスクールに通っていただきます。スクールにて講義を受講していただき、CCNAの資格を取得していただきます。<br>CCNA資格取得後は、大手通信企業を中心としたさまざまなクライアント先でのプロジェクトに携わっていただきます。<br>学んだ知識を生かし、実務を通してネットワークエンジニアを目指せます。<br><br>＜主に携わる業務概要＞<br>・ネットワーク設計・構築・運用<br>・ネットワーク構築にかかわるベンダー対応<br>・通信ネットワークを主としたソリューション提案<br>など</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>9:00～18:00（所定労働時間8時間、休憩1時間）<br>※勤務地によっては異なる場合がございます。<br><br>勤務：NWエンジニア業務の性質上、夜勤対応、休日出勤、出張が発生することがあるため対応可能であること<br>※振替休日等は必ず取得して頂きます</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>完全週休2日制（土日祝）<br>年末年始休暇<br>GW休暇<br>年次有給休暇（入社6ヶ月後に10日付与、最大20日分）<br>特別休暇<br>　・慶弔休暇<br>　・産前・産後休暇<br>　・育児看護休暇＆介護休暇<br>　・バースデー休暇<br>その他育児休業・介護休業など</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>昇給:年2回（社内ポイント制度で明確な評価）（正社員のみ）<br>賞与:年2回評価制度に基づくインセンティブ賞与有（正社員のみ）<br>通勤手当（1ヵ月分の通勤定期代）<br>残業手当（月給に応じて固定残業代あり）<br>転勤手当<br>資格手当<br>社員紹介手当（１人当たり20万円※勤続３ヶ月経過後に支給）<br><br>【資格手当について】<br>当社が推奨する資格が対象。<br>資格によって支給される金額が異なり、最大月15万円まで支給されます。<br>資格取得支援制度もありますので、ぜひ積極的に資格取得に向けてチャレンジしてみてください。<br>例:CCNA→月3万円、CCNP→月5万円、CCIE→月15万円<br>※入社前の取得資格は対象外となります<br>※当求人でのスクール生として取得したCCNAは資格手当対象外となります</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>IT・クリエイティブ</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>個人営業</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>個人営業｜株式会社ARIKI</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "個人営業",
+  "description": "【個人営業（未経験OK）】エコ商材企業★インセンティブ年3回／株式会社ARIKI",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社ARIKI"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "埼玉県さいたま市大宮区吉敷町 1-135 アライ吉敷一丁目ビル 7F",
+      "addressLocality": "さいたま市",
+      "addressRegion": "神奈川県",
+      "postalCode": "3300843",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 3500000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,133 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "個人営業",
-      "description": "【仕事内容】\n当社の営業職として、一般家庭向けに太陽光パネルやオール電化などエコ商材の提案をお任せします。\n\n＜具体的な仕事内容＞\n・顧客の開拓\n・取扱い商品のPR\n・提案日程の確定（アポイント取得）\n・ヒアリング、商品の提案（商談）\n・見積もり、受注（成約）\n・アフターフォロー\n\nご入社後、まずはアポイント取得までをお任せします。\n当社では、未経験の方でも始めやすく、業務効率化のために営業プロセスを分業しています。商品の提案（商談）以降は先輩社員が担当します。\n\n＜営業手法＞\n一般家庭へ飛び込みでアプローチします。\n目標の立て方：1ヶ月ごとに個人で目標を立てます。（アポイント取得数や契約件数など、何でもOKです！ノルマはありません。）\n1日のアポイント取得数目標：１件～\n\n＜商材・サービス＞\n当社の商材・サービスは、PanasonicやSHARPなど大手メーカーの太陽光パネル・オール電化・蓄電池です。\n\n＜主な顧客＞\n・一般家庭\n\n【1日の流れ】\n11:30　出社後：朝礼や情報共有、事前準備\n▼\n12:30　外回り：4名ほどのメンバーでチームを組み、車で営業エリアへ外回り\n▼\n13:00　ランチ：チームメンバーと営業エリアでランチ\n▼\n14:00　訪問担当者決め：太陽光発電のメリットがありそうな住宅をピックアップし、難易度やスキルにあわせて担当者を決定\n▼\n17:00　営業開始：お客様へ住宅設備の導入をご案内し、興味を持っていただけたらアポイント日程を決定（アポイント平均月10件程度）\n▼\n20:30　退社：車で会社に戻り、退社\n\n【入社後の流れ】\n当社は業界・職種未経験の方でも早期に活躍できるよう、ステップを踏んでいきますのでご安心ください。\n＜研修＞\n入社後、配属支店にて新人研修を行います。\nまず、アプローチマニュアルを覚えていただきます。\n支店配属後も毎日ロープレを行います。\n\n＜支店配属＞\n1チーム3~4名構成となっており、先輩社員が丁寧に業務についてレクチャーします。話し方・敬語・名刺交換など、社会人の基礎から学べます。\n\n＜実践業務＞\n簡単な案内からお任せします。先輩が隣でフォローするので、ご安心ください。\n1週間程度で、1人で営業できるようになります。\n\n【キャリアステップ】\n・自信の頑張り次第で、成約担当や役職もお任せします。将来的には商談メインのお仕事になります。\n・当社では実績に基づいた評価制度のため、年齢に関わらず昇格が可能。最初のステップとして、チームをまとめる主任に昇格し、その後も随時昇給、昇格していきます。新拠点の展開を計画中なので、新支店の支店長などに就くチャンスがあります。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社ARIKI"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "埼玉県さいたま市大宮区吉敷町 1-135 アライ吉敷一丁目ビル 7F",
-          "addressLocality": "さいたま市",
-          "addressRegion": "神奈川県",
-          "addressCountry": "JP",
-          "postalCode": "3300843"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3000000,
-          "maxValue": 3500000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "11:30～21:30 所定労働時間：8時間、休憩2時間",
-      "jobBenefits": [
-        "・社会保険完備（健康／労災／雇用／厚生年金）",
-        "・営業にかかる交通費全額支給",
-        "・通勤交通費（上限3万円／月）",
-        "・インセンティブ年3回（4月、8月、12月）",
-        "・別途決算賞与",
-        "・昇給随時",
-        "・役職手当",
-        "・営業車貸与",
-        "・営業経費全額負担",
-        "受動喫煙対策: 受動喫煙対策： 禁煙"
-      ],
-      "occupationalCategory": "営業"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "個人営業",
-          "item": "https://job-site-6aa.pages.dev/job-2190.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【個人営業（未経験OK）】エコ商材企業★インセンティブ年3回／株式会社ARIKI</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>個人営業</h1>
-      <p><em>【個人営業（未経験OK）】エコ商材企業★インセンティブ年3回／株式会社ARIKI</em></p>
-      <p><strong>会社名：</strong>株式会社ARIKI</p>
-      <p><strong>勤務地：</strong>埼玉県さいたま市大宮区吉敷町 1-135 アライ吉敷一丁目ビル 7F</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 300万円〜350万円</p>
-      <h3>仕事内容：</h3>
-      <p>【仕事内容】<br>当社の営業職として、一般家庭向けに太陽光パネルやオール電化などエコ商材の提案をお任せします。<br><br>＜具体的な仕事内容＞<br>・顧客の開拓<br>・取扱い商品のPR<br>・提案日程の確定（アポイント取得）<br>・ヒアリング、商品の提案（商談）<br>・見積もり、受注（成約）<br>・アフターフォロー<br><br>ご入社後、まずはアポイント取得までをお任せします。<br>当社では、未経験の方でも始めやすく、業務効率化のために営業プロセスを分業しています。商品の提案（商談）以降は先輩社員が担当します。<br><br>＜営業手法＞<br>一般家庭へ飛び込みでアプローチします。<br>目標の立て方：1ヶ月ごとに個人で目標を立てます。（アポイント取得数や契約件数など、何でもOKです！ノルマはありません。）<br>1日のアポイント取得数目標：１件～<br><br>＜商材・サービス＞<br>当社の商材・サービスは、PanasonicやSHARPなど大手メーカーの太陽光パネル・オール電化・蓄電池です。<br><br>＜主な顧客＞<br>・一般家庭<br><br>【1日の流れ】<br>11:30　出社後：朝礼や情報共有、事前準備<br>▼<br>12:30　外回り：4名ほどのメンバーでチームを組み、車で営業エリアへ外回り<br>▼<br>13:00　ランチ：チームメンバーと営業エリアでランチ<br>▼<br>14:00　訪問担当者決め：太陽光発電のメリットがありそうな住宅をピックアップし、難易度やスキルにあわせて担当者を決定<br>▼<br>17:00　営業開始：お客様へ住宅設備の導入をご案内し、興味を持っていただけたらアポイント日程を決定（アポイント平均月10件程度）<br>▼<br>20:30　退社：車で会社に戻り、退社<br><br>【入社後の流れ】<br>当社は業界・職種未経験の方でも早期に活躍できるよう、ステップを踏んでいきますのでご安心ください。<br>＜研修＞<br>入社後、配属支店にて新人研修を行います。<br>まず、アプローチマニュアルを覚えていただきます。<br>支店配属後も毎日ロープレを行います。<br><br>＜支店配属＞<br>1チーム3~4名構成となっており、先輩社員が丁寧に業務についてレクチャーします。話し方・敬語・名刺交換など、社会人の基礎から学べます。<br><br>＜実践業務＞<br>簡単な案内からお任せします。先輩が隣でフォローするので、ご安心ください。<br>1週間程度で、1人で営業できるようになります。<br><br>【キャリアステップ】<br>・自信の頑張り次第で、成約担当や役職もお任せします。将来的には商談メインのお仕事になります。<br>・当社では実績に基づいた評価制度のため、年齢に関わらず昇格が可能。最初のステップとして、チームをまとめる主任に昇格し、その後も随時昇給、昇格していきます。新拠点の展開を計画中なので、新支店の支店長などに就くチャンスがあります。</p>
-      <h3>勤務時間：</h3>
-      <p>11:30～21:30<br>所定労働時間：8時間、休憩2時間</p>
-      <h3>休暇・休日：</h3>
-      <p>・完全週休2日制（原則として日・月）<br>・GW<br>・夏季休暇<br>・年末年始休暇<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>※100％消化推進中<br>・慶弔休暇</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>・社会保険完備（健康／労災／雇用／厚生年金）</li><li>・営業にかかる交通費全額支給</li><li>・通勤交通費（上限3万円／月）</li><li>・インセンティブ年3回（4月、8月、12月）</li><li>・別途決算賞与</li><li>・昇給随時</li><li>・役職手当</li><li>・営業車貸与</li><li>・営業経費全額負担</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEARIKI" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社ARIKI</dd>
+
+      <dt>職種名</dt>
+      <dd>個人営業</dd>
+
+      <dt>勤務地</dt>
+      <dd>埼玉県さいたま市大宮区吉敷町 1-135 アライ吉敷一丁目ビル 7F</dd>
+
+      <dt>都道府県</dt>
+      <dd>神奈川県</dd>
+
+      <dt>市区町村</dt>
+      <dd>さいたま市</dd>
+
+      <dt>郵便番号</dt>
+      <dd>3300843</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3000000 ～ 3500000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>【仕事内容】<br>当社の営業職として、一般家庭向けに太陽光パネルやオール電化などエコ商材の提案をお任せします。<br><br>＜具体的な仕事内容＞<br>・顧客の開拓<br>・取扱い商品のPR<br>・提案日程の確定（アポイント取得）<br>・ヒアリング、商品の提案（商談）<br>・見積もり、受注（成約）<br>・アフターフォロー<br><br>ご入社後、まずはアポイント取得までをお任せします。<br>当社では、未経験の方でも始めやすく、業務効率化のために営業プロセスを分業しています。商品の提案（商談）以降は先輩社員が担当します。<br><br>＜営業手法＞<br>一般家庭へ飛び込みでアプローチします。<br>目標の立て方：1ヶ月ごとに個人で目標を立てます。（アポイント取得数や契約件数など、何でもOKです！ノルマはありません。）<br>1日のアポイント取得数目標：１件～<br><br>＜商材・サービス＞<br>当社の商材・サービスは、PanasonicやSHARPなど大手メーカーの太陽光パネル・オール電化・蓄電池です。<br><br>＜主な顧客＞<br>・一般家庭<br><br>【1日の流れ】<br>11:30　出社後：朝礼や情報共有、事前準備<br>▼<br>12:30　外回り：4名ほどのメンバーでチームを組み、車で営業エリアへ外回り<br>▼<br>13:00　ランチ：チームメンバーと営業エリアでランチ<br>▼<br>14:00　訪問担当者決め：太陽光発電のメリットがありそうな住宅をピックアップし、難易度やスキルにあわせて担当者を決定<br>▼<br>17:00　営業開始：お客様へ住宅設備の導入をご案内し、興味を持っていただけたらアポイント日程を決定（アポイント平均月10件程度）<br>▼<br>20:30　退社：車で会社に戻り、退社<br><br>【入社後の流れ】<br>当社は業界・職種未経験の方でも早期に活躍できるよう、ステップを踏んでいきますのでご安心ください。<br>＜研修＞<br>入社後、配属支店にて新人研修を行います。<br>まず、アプローチマニュアルを覚えていただきます。<br>支店配属後も毎日ロープレを行います。<br><br>＜支店配属＞<br>1チーム3~4名構成となっており、先輩社員が丁寧に業務についてレクチャーします。話し方・敬語・名刺交換など、社会人の基礎から学べます。<br><br>＜実践業務＞<br>簡単な案内からお任せします。先輩が隣でフォローするので、ご安心ください。<br>1週間程度で、1人で営業できるようになります。<br><br>【キャリアステップ】<br>・自信の頑張り次第で、成約担当や役職もお任せします。将来的には商談メインのお仕事になります。<br>・当社では実績に基づいた評価制度のため、年齢に関わらず昇格が可能。最初のステップとして、チームをまとめる主任に昇格し、その後も随時昇給、昇格していきます。新拠点の展開を計画中なので、新支店の支店長などに就くチャンスがあります。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>11:30～21:30<br>所定労働時間：8時間、休憩2時間</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>・完全週休2日制（原則として日・月）<br>・GW<br>・夏季休暇<br>・年末年始休暇<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>※100％消化推進中<br>・慶弔休暇</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・営業にかかる交通費全額支給<br>・通勤交通費（上限3万円／月）<br>・インセンティブ年3回（4月、8月、12月）<br>・別途決算賞与<br>・昇給随時<br>・役職手当<br>・営業車貸与<br>・営業経費全額負担</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>営業</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

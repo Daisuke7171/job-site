@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ホールスタッフ</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ホールスタッフ｜株式会社FTG Company</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "ホールスタッフ",
+  "description": "【未経験歓迎】焼肉ダイニング／ホールスタッフ／転勤なし／福利厚生◎【肉亭ふたご】",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社FTG Company"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都新宿区歌舞伎町１丁目１８−９ WaMall歌舞伎町10",
+      "addressLocality": "新宿区",
+      "addressRegion": "大阪府",
+      "postalCode": "1600021",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3500000,
+      "maxValue": 4500000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,142 +110,90 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "ホールスタッフ",
-      "description": "GPTW「働きがいのある会社」で4年連続（2021年～2024年）認定の会社が運営する人気の焼肉ダイニング「肉亭ふたごiki」。\n\n当社の飲食事業は全国で100店舗以上を運営しており、「肉亭ふたごiki」は「落ち着いた大人の“IKI”」をコンセプトに旅の宿のような凛とした和の空間で、おもてなしの心を形にしたサービスと洗練した料理を提供するお店です。\n\n現在東京に2店舗・軽井沢に1店舗、姉妹店を関西に2店舗展開中。この度、東京店舗の売上拡大に伴い、ホールスタッフを募集致します。\n\n【職務概要】\n将来的に様々なキャリアを進んでいくことができる会社です。入社後はまず各店舗運営からスタート。店舗でキャリアを積むことはもちろん、昇格後、意欲や実績次第では本部のポジションなどもお任せしていくことになります。\n\n【具体的な職務内容】\n下記ホール業務全般をお任せします。\n・お客様のご案内\n・料理の提供\n・レジ業務\n・予約受付\n\nまた店舗全体の管理業務や、マネジメントにも携わることが可能です。\n・売上・原価管理\n・シフト管理\n・スタッフの育成\n・販促企画\n・プロモーション など",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社FTG Company"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都新宿区歌舞伎町１丁目１８−９ WaMall歌舞伎町10",
-          "addressLocality": "新宿区",
-          "addressRegion": "大阪府",
-          "addressCountry": "JP",
-          "postalCode": "1600021"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3500000,
-          "maxValue": 4500000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "13:00〜23:00 シフト制 1日の労働時間：8時間、休憩1時間 1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下） ※終電考慮します。",
-      "jobBenefits": [
-        "◇社会保険完備（健康／労災／雇用／厚生年金）",
-        "◇交通費支給（月5万円まで）",
-        "◇慶弔金制度",
-        "◇誕生日祝い（誕生月の社員が集まる食事会に招待）",
-        "◇まかない無料",
-        "◇社員表彰制度",
-        "◇社員旅行（海外含む5種類の中から自由選択）",
-        "◇社員割引（30％引き）",
-        "◇髪型自由（社内規定あり）",
-        "当社独自制度",
-        "◇NIGIRI制度（社員が自身で目標設定し、達成時の報酬内容をプレゼンし契約できる制度）",
-        "◇独立支援制度（マネージャー職以上かつ3年以上の勤務で独立資格を認定）→入社3年目社員の実現例あり",
-        "◇親孝行手当（社員の誕生月に両親へ贈るプレゼント代（上限1万円）支給）",
-        "◇配偶者誕生日手当（配偶者に1万円相当のプレゼント）",
-        "◇家族手当（子ども1人目：月1万円、2人目以降：月5000円）※諸条件あり",
-        "◇社内結婚手当（スタッフ同士の結婚で25万円支給）",
-        "◇ふたご手当（一卵性双生児が生まれた家庭に100万円支給）",
-        "受動喫煙対策: 受動喫煙対策： 喫煙スペースあり\n受動喫煙対策（詳細）： 受動喫煙対策について : 禁煙、喫煙スペースあり"
-      ],
-      "occupationalCategory": "販売・接客・サービス"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "ホールスタッフ",
-          "item": "https://job-site-6aa.pages.dev/job-1854.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【未経験歓迎】焼肉ダイニング／ホールスタッフ／転勤なし／福利厚生◎【肉亭ふたご】</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>ホールスタッフ</h1>
-      <p><em>【未経験歓迎】焼肉ダイニング／ホールスタッフ／転勤なし／福利厚生◎【肉亭ふたご】</em></p>
-      <p><strong>会社名：</strong>株式会社FTG Company</p>
-      <p><strong>勤務地：</strong>東京都新宿区歌舞伎町１丁目１８−９ WaMall歌舞伎町10</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 350万円〜450万円</p>
-      <h3>仕事内容：</h3>
-      <p>GPTW「働きがいのある会社」で4年連続（2021年～2024年）認定の会社が運営する人気の焼肉ダイニング「肉亭ふたごiki」。<br><br>当社の飲食事業は全国で100店舗以上を運営しており、「肉亭ふたごiki」は「落ち着いた大人の“IKI”」をコンセプトに旅の宿のような凛とした和の空間で、おもてなしの心を形にしたサービスと洗練した料理を提供するお店です。<br><br>現在東京に2店舗・軽井沢に1店舗、姉妹店を関西に2店舗展開中。この度、東京店舗の売上拡大に伴い、ホールスタッフを募集致します。<br><br>【職務概要】<br>将来的に様々なキャリアを進んでいくことができる会社です。入社後はまず各店舗運営からスタート。店舗でキャリアを積むことはもちろん、昇格後、意欲や実績次第では本部のポジションなどもお任せしていくことになります。<br><br>【具体的な職務内容】<br>下記ホール業務全般をお任せします。<br>・お客様のご案内<br>・料理の提供<br>・レジ業務<br>・予約受付<br><br>また店舗全体の管理業務や、マネジメントにも携わることが可能です。<br>・売上・原価管理<br>・シフト管理<br>・スタッフの育成<br>・販促企画<br>・プロモーション など</p>
-      <h3>勤務時間：</h3>
-      <p>13:00〜23:00<br>シフト制<br>1日の労働時間：8時間、休憩1時間<br>1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下）<br>※終電考慮します。</p>
-      <h3>休暇・休日：</h3>
-      <p>◇週休二日制（シフト制／土日の休みも柔軟に対応いたします！）<br>◇年末年始休暇<br>◇慶弔休暇<br>◇有給休暇（10日〜勤続年数に応じて最大20日）（※積極的な取得を推奨）<br>◇産前・産後休暇（※取得実績あり）<br>◇育児休暇（※取得実績あり）<br>◇介護休暇<br>★5日以上の連続休暇の取得OK！</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 喫煙スペースあり
-受動喫煙対策（詳細）： 受動喫煙対策について : 禁煙、喫煙スペースあり</p>
-      <h3>福利厚生：</h3>
-      <ul><li>◇社会保険完備（健康／労災／雇用／厚生年金）</li><li>◇交通費支給（月5万円まで）</li><li>◇慶弔金制度</li><li>◇誕生日祝い（誕生月の社員が集まる食事会に招待）</li><li>◇まかない無料</li><li>◇社員表彰制度</li><li>◇社員旅行（海外含む5種類の中から自由選択）</li><li>◇社員割引（30％引き）</li><li>◇髪型自由（社内規定あり）</li><li>当社独自制度</li><li>◇NIGIRI制度（社員が自身で目標設定し、達成時の報酬内容をプレゼンし契約できる制度）</li><li>◇独立支援制度（マネージャー職以上かつ3年以上の勤務で独立資格を認定）→入社3年目社員の実現例あり</li><li>◇親孝行手当（社員の誕生月に両親へ贈るプレゼント代（上限1万円）支給）</li><li>◇配偶者誕生日手当（配偶者に1万円相当のプレゼント）</li><li>◇家族手当（子ども1人目：月1万円、2人目以降：月5000円）※諸条件あり</li><li>◇社内結婚手当（スタッフ同士の結婚で25万円支給）</li><li>◇ふたご手当（一卵性双生児が生まれた家庭に100万円支給）</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEFTG%20Company" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社FTG Company</dd>
+
+      <dt>職種名</dt>
+      <dd>ホールスタッフ</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都新宿区歌舞伎町１丁目１８−９ WaMall歌舞伎町10</dd>
+
+      <dt>都道府県</dt>
+      <dd>大阪府</dd>
+
+      <dt>市区町村</dt>
+      <dd>新宿区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1600021</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3500000 ～ 4500000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>GPTW「働きがいのある会社」で4年連続（2021年～2024年）認定の会社が運営する人気の焼肉ダイニング「肉亭ふたごiki」。<br><br>当社の飲食事業は全国で100店舗以上を運営しており、「肉亭ふたごiki」は「落ち着いた大人の“IKI”」をコンセプトに旅の宿のような凛とした和の空間で、おもてなしの心を形にしたサービスと洗練した料理を提供するお店です。<br><br>現在東京に2店舗・軽井沢に1店舗、姉妹店を関西に2店舗展開中。この度、東京店舗の売上拡大に伴い、ホールスタッフを募集致します。<br><br>【職務概要】<br>将来的に様々なキャリアを進んでいくことができる会社です。入社後はまず各店舗運営からスタート。店舗でキャリアを積むことはもちろん、昇格後、意欲や実績次第では本部のポジションなどもお任せしていくことになります。<br><br>【具体的な職務内容】<br>下記ホール業務全般をお任せします。<br>・お客様のご案内<br>・料理の提供<br>・レジ業務<br>・予約受付<br><br>また店舗全体の管理業務や、マネジメントにも携わることが可能です。<br>・売上・原価管理<br>・シフト管理<br>・スタッフの育成<br>・販促企画<br>・プロモーション など</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>13:00〜23:00<br>シフト制<br>1日の労働時間：8時間、休憩1時間<br>1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下）<br>※終電考慮します。</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>◇週休二日制（シフト制／土日の休みも柔軟に対応いたします！）<br>◇年末年始休暇<br>◇慶弔休暇<br>◇有給休暇（10日〜勤続年数に応じて最大20日）（※積極的な取得を推奨）<br>◇産前・産後休暇（※取得実績あり）<br>◇育児休暇（※取得実績あり）<br>◇介護休暇<br>★5日以上の連続休暇の取得OK！</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 喫煙スペースあり
+受動喫煙対策（詳細）： 受動喫煙対策について : 禁煙、喫煙スペースあり</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>◇社会保険完備（健康／労災／雇用／厚生年金）<br>◇交通費支給（月5万円まで）<br>◇慶弔金制度<br>◇誕生日祝い（誕生月の社員が集まる食事会に招待）<br>◇まかない無料<br>◇社員表彰制度<br>◇社員旅行（海外含む5種類の中から自由選択）<br>◇社員割引（30％引き）<br>◇髪型自由（社内規定あり）<br><br>当社独自制度<br>◇NIGIRI制度（社員が自身で目標設定し、達成時の報酬内容をプレゼンし契約できる制度）<br>◇独立支援制度（マネージャー職以上かつ3年以上の勤務で独立資格を認定）→入社3年目社員の実現例あり<br>◇親孝行手当（社員の誕生月に両親へ贈るプレゼント代（上限1万円）支給）<br>◇配偶者誕生日手当（配偶者に1万円相当のプレゼント）<br>◇家族手当（子ども1人目：月1万円、2人目以降：月5000円）※諸条件あり<br>◇社内結婚手当（スタッフ同士の結婚で25万円支給）<br>◇ふたご手当（一卵性双生児が生まれた家庭に100万円支給）</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>販売・接客・サービス</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

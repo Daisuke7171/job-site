@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>内勤営業・カウンターセールス</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>内勤営業・カウンターセールス｜株式会社Jent</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "内勤営業・カウンターセールス",
+  "description": "オフィス移転にて採用拡大/年内入社可【新規事業部  / CS】IT企業で様々なキャリアパス選択が可能",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社Jent"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都港区芝大門2-11-1 富士ビル5F",
+      "addressLocality": "港区",
+      "addressRegion": "東京都",
+      "postalCode": "1050012",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 5000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,132 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "内勤営業・カウンターセールス",
-      "description": "■賃貸物件を紹介する「LINE」を用いたチャットサービス『スミカ』を開発・運営\n\nJentはITと不動産を融合し、業界最先端、完全非対面営業のチャット集客に特化した企業です。\n\n賃貸物件を探すユーザーはライトユーザーが多いため、不動産仲介業者は集客に課題を抱えています。\nこうした課題を解決すべく、強固なチャットシステムとオペレーションを構築し、温度感の高いユーザーだけを不動産業者に送客するサービスを開発・運営しております。\n\nサービス開始から、400店舗を超える店舗と提携し、クライアント数は年300%ペースで増加中。売上も年200%強と急速に拡大しております。\n\n今後はすでにスタートしている新規事業に加え、不動産賃貸以外の領域にもサービス拡大予定です。\n\n今回の募集ポジションは、そんなJentでさらなる顧客体験を提供する、新規事業のメンバーとして一翼を担っていただきます。\n\n電話とチャットのハイブリッドでお客様と密接にやりとりし、\nお客様の問い合わせや要望に対し、スピーディーかつ効果的な対応が求められます。\n\n自社開発の独自CRM（顧客関係管理システム）は日々改良を続けているため、\n積極的にメンバーからのフィードバックを取り入れ、サービスの向上を追求しています。\nそのようないTベンチャー企業ならではの、最先端のシステム/オペレーションの構築にも携わっていただけます。\n\n<対応手法>\n賃貸物件をお探しのお客様と、 自社の専用システム(=CRM)にて電話・チャットでのやり取りを行っております。\n\n\n＜1日のスケジュール例＞\n  10:00-13:00   共有事項の確認／電話・チャット対応／パートナー対応\n  13:00-14:00   休憩\n  14:00-18:30   電話・チャット対応／新しい対応についてのレクチャー受けやOJT\n  18:30-19:00   エスカレや質問した対応の振り返り／コーチへの質問\n\n※適正に応じてクライアントとのやり取りや、業務委託のオペレーターのサポート等もお任せいたします。\n\n\n＜入社後の流れ＞\nまずはオリエンテーションとして簡単な不動産知識や、システムの使い方を学びます。\n次に、テンプレートの選択の練習、システムの使い方の練習を行ったあと、\nOJTとして隣にマネージャーがいながら実際の対応を行います。\n未経験の方でも安心して業務が行えるようにサポートする体制となっています。\n\n＜キャリアパスについて＞\n■SV\nオペレーターやコーチのサポート、エスカレーション対応\nマニュアル作成\nレクチャー、教育等\n↓\n■マネージャー\n業務分析･改善\n数値･進捗･品質･シフト管理\n採用･育成等\n\n上記記載だけではなく、新規事業につき、様々なポスト、セクションのキャリア選択が可能です。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社Jent"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都港区芝大門2-11-1 富士ビル5F",
-          "addressLocality": "港区",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": "1050012"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3000000,
-          "maxValue": 5000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "8:00～21:00のうちシフトで所定労働時間8時間（休憩1時間）  サービスの営業時間が8:00～22:00で毎日営業しておりますので、広い範囲からご希望に合わせたシフトで稼働できます。 (曜日と時間が固定のシフトを相談しながら決めていきます)  固定シフト制(=月ごとにシフトが変わらず、月火休みであればずっと月火休み)といった体制ですので、 オンオフをしっかり分けられ、かつ自分のスタイルにあった曜日や時間を選べます！",
-      "jobBenefits": [
-        "・各種社会保険完備",
-        "・昇給あり",
-        "・交通費支給（上限月1万5000円）",
-        "※バスや電車等交通機関は問いません",
-        "・従業員の引越しサポートもございます",
-        "・オフィス用具購入制度",
-        "・社員ランチ/飲み会補助制度",
-        "・副業可能（業務に影響がない範囲に限る）",
-        "受動喫煙対策: 受動喫煙対策： 喫煙スペースあり"
-      ],
-      "occupationalCategory": "営業"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "内勤営業・カウンターセールス",
-          "item": "https://job-site-6aa.pages.dev/job-3486.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>オフィス移転にて採用拡大/年内入社可【新規事業部  / CS】IT企業で様々なキャリアパス選択が可能</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>内勤営業・カウンターセールス</h1>
-      <p><em>オフィス移転にて採用拡大/年内入社可【新規事業部  / CS】IT企業で様々なキャリアパス選択が可能</em></p>
-      <p><strong>会社名：</strong>株式会社Jent</p>
-      <p><strong>勤務地：</strong>東京都港区芝大門2-11-1 富士ビル5F</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 300万円〜500万円</p>
-      <h3>仕事内容：</h3>
-      <p>•賃貸物件を紹介する「LINE」を用いたチャットサービス『スミカ』を開発・運営<br><br>JentはITと不動産を融合し、業界最先端、完全非対面営業のチャット集客に特化した企業です。<br><br>賃貸物件を探すユーザーはライトユーザーが多いため、不動産仲介業者は集客に課題を抱えています。<br>こうした課題を解決すべく、強固なチャットシステムとオペレーションを構築し、温度感の高いユーザーだけを不動産業者に送客するサービスを開発・運営しております。<br><br>サービス開始から、400店舗を超える店舗と提携し、クライアント数は年300%ペースで増加中。売上も年200%強と急速に拡大しております。<br><br>今後はすでにスタートしている新規事業に加え、不動産賃貸以外の領域にもサービス拡大予定です。<br><br>今回の募集ポジションは、そんなJentでさらなる顧客体験を提供する、新規事業のメンバーとして一翼を担っていただきます。<br><br>電話とチャットのハイブリッドでお客様と密接にやりとりし、<br>お客様の問い合わせや要望に対し、スピーディーかつ効果的な対応が求められます。<br><br>自社開発の独自CRM（顧客関係管理システム）は日々改良を続けているため、<br>積極的にメンバーからのフィードバックを取り入れ、サービスの向上を追求しています。<br>そのようないTベンチャー企業ならではの、最先端のシステム/オペレーションの構築にも携わっていただけます。<br><br>&lt;対応手法&gt;<br>賃貸物件をお探しのお客様と、 自社の専用システム(=CRM)にて電話・チャットでのやり取りを行っております。<br><br><br>＜1日のスケジュール例＞<br>  10:00-13:00   共有事項の確認／電話・チャット対応／パートナー対応<br>  13:00-14:00   休憩<br>  14:00-18:30   電話・チャット対応／新しい対応についてのレクチャー受けやOJT<br>  18:30-19:00   エスカレや質問した対応の振り返り／コーチへの質問<br><br>※適正に応じてクライアントとのやり取りや、業務委託のオペレーターのサポート等もお任せいたします。<br><br><br>＜入社後の流れ＞<br>まずはオリエンテーションとして簡単な不動産知識や、システムの使い方を学びます。<br>次に、テンプレートの選択の練習、システムの使い方の練習を行ったあと、<br>OJTとして隣にマネージャーがいながら実際の対応を行います。<br>未経験の方でも安心して業務が行えるようにサポートする体制となっています。<br><br>＜キャリアパスについて＞<br>•SV<br>オペレーターやコーチのサポート、エスカレーション対応<br>マニュアル作成<br>レクチャー、教育等<br>↓<br>•マネージャー<br>業務分析･改善<br>数値･進捗･品質･シフト管理<br>採用･育成等<br><br>上記記載だけではなく、新規事業につき、様々なポスト、セクションのキャリア選択が可能です。</p>
-      <h3>勤務時間：</h3>
-      <p>8:00～21:00のうちシフトで所定労働時間8時間（休憩1時間）<br><br>サービスの営業時間が8:00～22:00で毎日営業しておりますので、広い範囲からご希望に合わせたシフトで稼働できます。<br>(曜日と時間が固定のシフトを相談しながら決めていきます)<br><br>固定シフト制(=月ごとにシフトが変わらず、月火休みであればずっと月火休み)といった体制ですので、<br>オンオフをしっかり分けられ、かつ自分のスタイルにあった曜日や時間を選べます！</p>
-      <h3>休暇・休日：</h3>
-      <p>完全週休2日制<br>年末年始休み<br>年次有給休暇（入社半年後10日〜勤続年数に応じて最大20日）</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 喫煙スペースあり</p>
-      <h3>福利厚生：</h3>
-      <ul><li>・各種社会保険完備</li><li>・昇給あり</li><li>・交通費支給（上限月1万5000円）</li><li>※バスや電車等交通機関は問いません</li><li>・従業員の引越しサポートもございます</li><li>・オフィス用具購入制度</li><li>・社員ランチ/飲み会補助制度</li><li>・副業可能（業務に影響がない範囲に限る）</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEJent" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社Jent</dd>
+
+      <dt>職種名</dt>
+      <dd>内勤営業・カウンターセールス</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都港区芝大門2-11-1 富士ビル5F</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>港区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1050012</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3000000 ～ 5000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>■賃貸物件を紹介する「LINE」を用いたチャットサービス『スミカ』を開発・運営<br><br>JentはITと不動産を融合し、業界最先端、完全非対面営業のチャット集客に特化した企業です。<br><br>賃貸物件を探すユーザーはライトユーザーが多いため、不動産仲介業者は集客に課題を抱えています。<br>こうした課題を解決すべく、強固なチャットシステムとオペレーションを構築し、温度感の高いユーザーだけを不動産業者に送客するサービスを開発・運営しております。<br><br>サービス開始から、400店舗を超える店舗と提携し、クライアント数は年300%ペースで増加中。売上も年200%強と急速に拡大しております。<br><br>今後はすでにスタートしている新規事業に加え、不動産賃貸以外の領域にもサービス拡大予定です。<br><br>今回の募集ポジションは、そんなJentでさらなる顧客体験を提供する、新規事業のメンバーとして一翼を担っていただきます。<br><br>電話とチャットのハイブリッドでお客様と密接にやりとりし、<br>お客様の問い合わせや要望に対し、スピーディーかつ効果的な対応が求められます。<br><br>自社開発の独自CRM（顧客関係管理システム）は日々改良を続けているため、<br>積極的にメンバーからのフィードバックを取り入れ、サービスの向上を追求しています。<br>そのようないTベンチャー企業ならではの、最先端のシステム/オペレーションの構築にも携わっていただけます。<br><br>&lt;対応手法&gt;<br>賃貸物件をお探しのお客様と、 自社の専用システム(=CRM)にて電話・チャットでのやり取りを行っております。<br><br><br>＜1日のスケジュール例＞<br>  10:00-13:00   共有事項の確認／電話・チャット対応／パートナー対応<br>  13:00-14:00   休憩<br>  14:00-18:30   電話・チャット対応／新しい対応についてのレクチャー受けやOJT<br>  18:30-19:00   エスカレや質問した対応の振り返り／コーチへの質問<br><br>※適正に応じてクライアントとのやり取りや、業務委託のオペレーターのサポート等もお任せいたします。<br><br><br>＜入社後の流れ＞<br>まずはオリエンテーションとして簡単な不動産知識や、システムの使い方を学びます。<br>次に、テンプレートの選択の練習、システムの使い方の練習を行ったあと、<br>OJTとして隣にマネージャーがいながら実際の対応を行います。<br>未経験の方でも安心して業務が行えるようにサポートする体制となっています。<br><br>＜キャリアパスについて＞<br>■SV<br>オペレーターやコーチのサポート、エスカレーション対応<br>マニュアル作成<br>レクチャー、教育等<br>↓<br>■マネージャー<br>業務分析･改善<br>数値･進捗･品質･シフト管理<br>採用･育成等<br><br>上記記載だけではなく、新規事業につき、様々なポスト、セクションのキャリア選択が可能です。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>8:00～21:00のうちシフトで所定労働時間8時間（休憩1時間）<br><br>サービスの営業時間が8:00～22:00で毎日営業しておりますので、広い範囲からご希望に合わせたシフトで稼働できます。<br>(曜日と時間が固定のシフトを相談しながら決めていきます)<br><br>固定シフト制(=月ごとにシフトが変わらず、月火休みであればずっと月火休み)といった体制ですので、<br>オンオフをしっかり分けられ、かつ自分のスタイルにあった曜日や時間を選べます！</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>完全週休2日制<br>年末年始休み<br>年次有給休暇（入社半年後10日〜勤続年数に応じて最大20日）</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>・各種社会保険完備<br>・昇給あり<br>・交通費支給（上限月1万5000円）<br>※バスや電車等交通機関は問いません<br>・従業員の引越しサポートもございます<br>・オフィス用具購入制度<br>・社員ランチ/飲み会補助制度<br><br>・副業可能（業務に影響がない範囲に限る）</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>営業</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

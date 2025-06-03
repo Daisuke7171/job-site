@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>調理</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>調理｜株式会社玉</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "調理",
+  "description": "『ラーメン環2家』(家系総本山 吉村家直系店)  正社員 / 引越し支援・家賃補助/ 月収27万円～",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社玉"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "神奈川県川崎市川崎区小川町14-2",
+      "addressLocality": "川崎市",
+      "addressRegion": "東京都",
+      "postalCode": "2100023",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 5000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,151 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "調理",
-      "description": "――知る人ぞ知る名店で、技を磨きませんか――\n\n横浜家系総本山 吉村家直系店『環2家』。「しょっぱ旨さ」を求めて、\n日本全国からラーメン好きが訪れます。\n\nお客さまの7割は常連さん。土日にはファミリーや遠方からのお客さまも訪れます。\n常連さんから飲み物などの差し入れをいただくことも多いです。\n\n\n\n◆イチからノウハウを伝授！\n￣￣￣￣￣￣￣￣￣￣￣￣￣￣\n＞＞STEP1：基本業務\nまずはお客さまのご案内・バッシング・洗い場などをお任せします。\n\n＞＞STEP2：盛り付け\nどんぶりにタレを入れ、盛り付け。お客さまごとの要望に応じてトッピングを変更します。\n\n＞＞STEP3：麺あげ（ここまで3～6ヶ月）\nお客さま一人ひとりに注文を伺い、麺の硬さ・味の濃さ・油の量：”おこのみ”を記憶。\nその通り麺を湯で、盛り付けを担当者に指示します。\n\n＞＞STEP4：スープ管理（約1年～3年）\n毎朝スープのダシを取るところからスタート。匂い・味・量などを見ながら、\n“いつもの味” を提供できるよう営業中も微調整を続けます。\n\n※店長を目指す場合、売上の管理やシフト作成、棚卸しなどの店長業務を、\n店長と一緒に少しずつこなしていきます。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社玉"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "神奈川県川崎市川崎区小川町14-2",
-          "addressLocality": "川崎市",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": "2100023"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3000000,
-          "maxValue": 5000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "8:00～23:00の間でシフト制 上記時間の中で1日の労働時間：8〜11時間、休憩1〜2時間 1ヶ月単位の変形労働時間制  ＼ 休憩をしっかり取れます！／ しっかり休めるよう休憩室完備！まかないのラーメンも食べられます。 食費も浮くと好評です！",
-      "jobBenefits": [
-        "◆社会保険完備（雇用・労災・健康・厚生年金）",
-        "◆自社オリジナルのeラーニングシステム（使用料金無料）",
-        "　各種研修内容や昇格試験のための対策コース受講など",
-        "◆各種研修",
-        "　入社時の座学研修から始まり、",
-        "　その後は、キャリアアップ支援の一環として、",
-        "　飲食店運営に必要な様々な知識と教養を学んでいくための定期講習会（月1回）や、",
-        "　テストキッチンの導入によるスープ試作・勉強会など多岐にわたります。",
-        "◆資格取得支援",
-        "（※食品衛生責任者・防火防災管理者の資格取得費用を会社が負担）",
-        "◆目標管理制度",
-        "◆定期健康診断",
-        "◆産前・産後及び育児休業制度（パパ育休の実績もあります）",
-        "◆交通費全額支給",
-        "◆家族手当",
-        "┗配偶者：5000円／月、子ども：1人につき5000円／月※第3子迄※18歳迄",
-        "◆残業手当",
-        "┗みなし残業手当超過分に対して支給",
-        "◆深夜残業手当",
-        "┗深夜勤務手当超過分に対して支給",
-        "◆まかない補助（1食165円）",
-        "◆制服貸与",
-        "◆県外への転勤または県外からの入社に伴う支援",
-        "◆引っ越し費用補助（※規定あり）",
-        "◆家賃補助制度（※規定あり）",
-        "◆社宅使用（※使用規約あり）",
-        "◆各種レクリエーション（研修も兼ねた「ラーメン食べ歩き会」など）",
-        "受動喫煙対策: 受動喫煙対策： 禁煙"
-      ],
-      "occupationalCategory": "販売・接客・サービス"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "調理",
-          "item": "https://job-site-6aa.pages.dev/job-4164.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>『ラーメン環2家』(家系総本山 吉村家直系店)  正社員 / 引越し支援・家賃補助/ 月収27万円～</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>調理</h1>
-      <p><em>『ラーメン環2家』(家系総本山 吉村家直系店)  正社員 / 引越し支援・家賃補助/ 月収27万円～</em></p>
-      <p><strong>会社名：</strong>株式会社玉</p>
-      <p><strong>勤務地：</strong>神奈川県川崎市川崎区小川町14-2</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 300万円〜500万円</p>
-      <h3>仕事内容：</h3>
-      <p>――知る人ぞ知る名店で、技を磨きませんか――<br><br>横浜家系総本山 吉村家直系店『環2家』。「しょっぱ旨さ」を求めて、<br>日本全国からラーメン好きが訪れます。<br><br>お客さまの7割は常連さん。土日にはファミリーや遠方からのお客さまも訪れます。<br>常連さんから飲み物などの差し入れをいただくことも多いです。<br><br><br><br>◆イチからノウハウを伝授！<br>￣￣￣￣￣￣￣￣￣￣￣￣￣￣<br>＞＞STEP1：基本業務<br>まずはお客さまのご案内・バッシング・洗い場などをお任せします。<br><br>＞＞STEP2：盛り付け<br>どんぶりにタレを入れ、盛り付け。お客さまごとの要望に応じてトッピングを変更します。<br><br>＞＞STEP3：麺あげ（ここまで3～6ヶ月）<br>お客さま一人ひとりに注文を伺い、麺の硬さ・味の濃さ・油の量：”おこのみ”を記憶。<br>その通り麺を湯で、盛り付けを担当者に指示します。<br><br>＞＞STEP4：スープ管理（約1年～3年）<br>毎朝スープのダシを取るところからスタート。匂い・味・量などを見ながら、<br>“いつもの味” を提供できるよう営業中も微調整を続けます。<br><br>※店長を目指す場合、売上の管理やシフト作成、棚卸しなどの店長業務を、<br>店長と一緒に少しずつこなしていきます。</p>
-      <h3>勤務時間：</h3>
-      <p>8:00～23:00の間でシフト制<br>上記時間の中で1日の労働時間：8〜11時間、休憩1〜2時間<br>1ヶ月単位の変形労働時間制<br><br>＼ 休憩をしっかり取れます！／<br>しっかり休めるよう休憩室完備！まかないのラーメンも食べられます。<br>食費も浮くと好評です！</p>
-      <h3>休暇・休日：</h3>
-      <p>・4週7～9休（シフト制）<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・慶弔休暇<br>・産前、産後休暇<br>・育児休暇</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>◆社会保険完備（雇用・労災・健康・厚生年金）</li><li>◆自社オリジナルのeラーニングシステム（使用料金無料）</li><li>　各種研修内容や昇格試験のための対策コース受講など</li><li>◆各種研修</li><li>　入社時の座学研修から始まり、</li><li>　その後は、キャリアアップ支援の一環として、</li><li>　飲食店運営に必要な様々な知識と教養を学んでいくための定期講習会（月1回）や、</li><li>　テストキッチンの導入によるスープ試作・勉強会など多岐にわたります。</li><li>◆資格取得支援</li><li>（※食品衛生責任者・防火防災管理者の資格取得費用を会社が負担）</li><li>◆目標管理制度</li><li>◆定期健康診断</li><li>◆産前・産後及び育児休業制度（パパ育休の実績もあります）</li><li>◆交通費全額支給</li><li>◆家族手当</li><li>┗配偶者：5000円／月、子ども：1人につき5000円／月※第3子迄※18歳迄</li><li>◆残業手当</li><li>┗みなし残業手当超過分に対して支給</li><li>◆深夜残業手当</li><li>┗深夜勤務手当超過分に対して支給</li><li>◆まかない補助（1食165円）</li><li>◆制服貸与</li><li>◆県外への転勤または県外からの入社に伴う支援</li><li>◆引っ越し費用補助（※規定あり）</li><li>◆家賃補助制度（※規定あり）</li><li>◆社宅使用（※使用規約あり）</li><li>◆各種レクリエーション（研修も兼ねた「ラーメン食べ歩き会」など）</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E7%8E%89" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社玉</dd>
+
+      <dt>職種名</dt>
+      <dd>調理</dd>
+
+      <dt>勤務地</dt>
+      <dd>神奈川県川崎市川崎区小川町14-2</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>川崎市</dd>
+
+      <dt>郵便番号</dt>
+      <dd>2100023</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3000000 ～ 5000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>――知る人ぞ知る名店で、技を磨きませんか――<br><br>横浜家系総本山 吉村家直系店『環2家』。「しょっぱ旨さ」を求めて、<br>日本全国からラーメン好きが訪れます。<br><br>お客さまの7割は常連さん。土日にはファミリーや遠方からのお客さまも訪れます。<br>常連さんから飲み物などの差し入れをいただくことも多いです。<br><br><br><br>◆イチからノウハウを伝授！<br>￣￣￣￣￣￣￣￣￣￣￣￣￣￣<br>＞＞STEP1：基本業務<br>まずはお客さまのご案内・バッシング・洗い場などをお任せします。<br><br>＞＞STEP2：盛り付け<br>どんぶりにタレを入れ、盛り付け。お客さまごとの要望に応じてトッピングを変更します。<br><br>＞＞STEP3：麺あげ（ここまで3～6ヶ月）<br>お客さま一人ひとりに注文を伺い、麺の硬さ・味の濃さ・油の量：”おこのみ”を記憶。<br>その通り麺を湯で、盛り付けを担当者に指示します。<br><br>＞＞STEP4：スープ管理（約1年～3年）<br>毎朝スープのダシを取るところからスタート。匂い・味・量などを見ながら、<br>“いつもの味” を提供できるよう営業中も微調整を続けます。<br><br>※店長を目指す場合、売上の管理やシフト作成、棚卸しなどの店長業務を、<br>店長と一緒に少しずつこなしていきます。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>8:00～23:00の間でシフト制<br>上記時間の中で1日の労働時間：8〜11時間、休憩1〜2時間<br>1ヶ月単位の変形労働時間制<br><br>＼ 休憩をしっかり取れます！／<br>しっかり休めるよう休憩室完備！まかないのラーメンも食べられます。<br>食費も浮くと好評です！</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>・4週7～9休（シフト制）<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・慶弔休暇<br>・産前、産後休暇<br>・育児休暇</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>◆社会保険完備（雇用・労災・健康・厚生年金）<br><br>◆自社オリジナルのeラーニングシステム（使用料金無料）<br>　各種研修内容や昇格試験のための対策コース受講など<br><br>◆各種研修<br>　入社時の座学研修から始まり、<br>　その後は、キャリアアップ支援の一環として、<br>　飲食店運営に必要な様々な知識と教養を学んでいくための定期講習会（月1回）や、<br>　テストキッチンの導入によるスープ試作・勉強会など多岐にわたります。<br><br>◆資格取得支援<br>（※食品衛生責任者・防火防災管理者の資格取得費用を会社が負担）<br><br>◆目標管理制度<br><br>◆定期健康診断<br><br>◆産前・産後及び育児休業制度（パパ育休の実績もあります）<br><br>◆交通費全額支給<br><br>◆家族手当<br>┗配偶者：5000円／月、子ども：1人につき5000円／月※第3子迄※18歳迄<br>◆残業手当<br>┗みなし残業手当超過分に対して支給<br>◆深夜残業手当<br>┗深夜勤務手当超過分に対して支給<br><br>◆まかない補助（1食165円）<br><br>◆制服貸与<br><br>◆県外への転勤または県外からの入社に伴う支援<br>◆引っ越し費用補助（※規定あり）<br>◆家賃補助制度（※規定あり）<br>◆社宅使用（※使用規約あり）<br><br>◆各種レクリエーション（研修も兼ねた「ラーメン食べ歩き会」など）</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>販売・接客・サービス</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

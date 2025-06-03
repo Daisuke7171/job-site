@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>法人営業</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>法人営業｜株式会社プルークス</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "法人営業",
+  "description": "マーケティング最先端ツールの「動画」を活用して企業の課題解決するアカウントプランナーのリーダー候補",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社プルークス"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都中央区日本橋大伝馬町14－17 大伝馬町千歳ビル4階",
+      "addressLocality": "中央区",
+      "addressRegion": "東京都",
+      "postalCode": "1030011",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 5000000,
+      "maxValue": 7000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,133 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "法人営業",
-      "description": "動画広告の制作ディレクションを行う【コンサルティング部】のリーダー〜マネージャー候補を募集しています！\n具体的にはアカウントプランナーとして、クライアントの本質的な課題に向き合い、最適な広告手法の提案から制作、配信まで携わっていただきます。正式な受注後は、制作チームや広告運用チームとも連携を取りながらプロジェクトの中心となってリードいただくことを期待しております。\n※入社職位は面接にて相談しながら決定いたしますが、まずはリーダー候補としてご入社いただき、更なるステップアップを目指していただけることを期待しております。\n\n▍具体的な業務\n＜コンサルタントとしての仕事＞\n・顧客へのヒアリング、マーケティング課題の整理、施策の方針設計\n・企画提案～クロージングまでの営業活動\n・動画や広告手法の企画・立案からシナリオ作成、配信設計\n・プロジェクトマネジメント（制作クリエイターとの調整、キャスト選定、撮影監督、クリエイティブの確認）\n・社内のメディアプランナー・運用コンサルタントと協業し、広告媒体の選定から効果検証までのディレクション\n\n＜リーダーとしての仕事＞\n・メンバーマネジメント、進捗管理（4~5名）\n・新人育成、OJT\n・組織作りのための施策立案（MVV浸透やスキルアップ施策の立案）\n・勉強会や研修の運営など\n\n▍魅力点\n・「企画〜制作・配信まで」一気通貫で行えることに加え、取引の半数以上が【直販】のため、顧客との距離が近い環境で働くことができます。\n・様々な業界の顧客と対峙しながら、ブランディング、認知拡大、教育研修など幅広い領域の制作に関わることができるため、経験の幅を広げることができます。また、【誰もが見たことがある大型プロモーション】など、世の中に影響を与える広告制作を手掛けることも可能です。\n・プランナーとしての提案・交渉力、プロジェクトマネジメント力、デジタルマーケティングの知見を身につけることが可能です。\n\n▍クライアント事例\nKDDI、ソフトバンク、NTT、住友商事、ファミリーマート、JTB、三菱東京UFJ銀行、ロッテ、花王、資生堂、日本航空\n富士通、ウェザーニューズ、雪印メグミルク、サイボウズ、Sansan、ベルフェイス、マネーフォワード、内閣府、外務省、JA、早稲田大学、同志社大学、千葉大学、成城小学校\n\n▍取り扱い媒体\n・Instagram,TikTok,facebook,Linkedin,Pinterest,LINEなどの各種SNS、Google、Yahoo！、サイネージ、交通広告、TVCM、TVer、Spotify",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社プルークス"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都中央区日本橋大伝馬町14－17 大伝馬町千歳ビル4階",
-          "addressLocality": "中央区",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": "1030011"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 5000000,
-          "maxValue": 7000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "9時-18時（休憩時間：1時間） 所定労働時間：8時間00分 ※時差勤務（8-17時、10時-19時）可能 ※リモートワーク可能 （業務の都合に合わせて週3日程度リモートで働く社員が多いですが、週5日出社や週5日リモートワークも可能です。必要な際には出社いただきます。）",
-      "jobBenefits": [
-        "各種社会保険完備",
-        "ドリンク無料(コーヒー・お茶・水)",
-        "役職手当",
-        "リロクラブ",
-        "産休、育児・介護休暇",
-        "感謝ギフトプレゼント",
-        "健康診断・インフルエンザ予防接種",
-        "社用携帯貸与",
-        "wifi貸与",
-        "受動喫煙対策: 受動喫煙対策： 禁煙"
-      ],
-      "occupationalCategory": "営業"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "法人営業",
-          "item": "https://job-site-6aa.pages.dev/job-719.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>マーケティング最先端ツールの「動画」を活用して企業の課題解決するアカウントプランナーのリーダー候補</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>法人営業</h1>
-      <p><em>マーケティング最先端ツールの「動画」を活用して企業の課題解決するアカウントプランナーのリーダー候補</em></p>
-      <p><strong>会社名：</strong>株式会社プルークス</p>
-      <p><strong>勤務地：</strong>東京都中央区日本橋大伝馬町14－17 大伝馬町千歳ビル4階</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 500万円〜700万円</p>
-      <h3>仕事内容：</h3>
-      <p>動画広告の制作ディレクションを行う【コンサルティング部】のリーダー〜マネージャー候補を募集しています！<br>具体的にはアカウントプランナーとして、クライアントの本質的な課題に向き合い、最適な広告手法の提案から制作、配信まで携わっていただきます。正式な受注後は、制作チームや広告運用チームとも連携を取りながらプロジェクトの中心となってリードいただくことを期待しております。<br>※入社職位は面接にて相談しながら決定いたしますが、まずはリーダー候補としてご入社いただき、更なるステップアップを目指していただけることを期待しております。<br><br>▍具体的な業務<br>＜コンサルタントとしての仕事＞<br>・顧客へのヒアリング、マーケティング課題の整理、施策の方針設計<br>・企画提案～クロージングまでの営業活動<br>・動画や広告手法の企画・立案からシナリオ作成、配信設計<br>・プロジェクトマネジメント（制作クリエイターとの調整、キャスト選定、撮影監督、クリエイティブの確認）<br>・社内のメディアプランナー・運用コンサルタントと協業し、広告媒体の選定から効果検証までのディレクション<br><br>＜リーダーとしての仕事＞<br>・メンバーマネジメント、進捗管理（4~5名）<br>・新人育成、OJT<br>・組織作りのための施策立案（MVV浸透やスキルアップ施策の立案）<br>・勉強会や研修の運営など<br><br>▍魅力点<br>・「企画〜制作・配信まで」一気通貫で行えることに加え、取引の半数以上が【直販】のため、顧客との距離が近い環境で働くことができます。<br>・様々な業界の顧客と対峙しながら、ブランディング、認知拡大、教育研修など幅広い領域の制作に関わることができるため、経験の幅を広げることができます。また、【誰もが見たことがある大型プロモーション】など、世の中に影響を与える広告制作を手掛けることも可能です。<br>・プランナーとしての提案・交渉力、プロジェクトマネジメント力、デジタルマーケティングの知見を身につけることが可能です。<br><br>▍クライアント事例<br>KDDI、ソフトバンク、NTT、住友商事、ファミリーマート、JTB、三菱東京UFJ銀行、ロッテ、花王、資生堂、日本航空<br>富士通、ウェザーニューズ、雪印メグミルク、サイボウズ、Sansan、ベルフェイス、マネーフォワード、内閣府、外務省、JA、早稲田大学、同志社大学、千葉大学、成城小学校<br><br>▍取り扱い媒体<br>・Instagram,TikTok,facebook,Linkedin,Pinterest,LINEなどの各種SNS、Google、Yahoo！、サイネージ、交通広告、TVCM、TVer、Spotify</p>
-      <h3>勤務時間：</h3>
-      <p>9時-18時（休憩時間：1時間）<br>所定労働時間：8時間00分<br>※時差勤務（8-17時、10時-19時）可能<br>※リモートワーク可能<br>（業務の都合に合わせて週3日程度リモートで働く社員が多いですが、週5日出社や週5日リモートワークも可能です。必要な際には出社いただきます。）</p>
-      <h3>休暇・休日：</h3>
-      <p>完全週休2日制(土・日)<br>祝日年末年始休暇<br>ゴールデンウィーク<br>夏季休暇<br>有給休暇（入社半年後10日〜勤続年数に応じて最大20日）、等</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>各種社会保険完備</li><li>ドリンク無料(コーヒー・お茶・水)</li><li>役職手当</li><li>リロクラブ</li><li>産休、育児・介護休暇</li><li>感謝ギフトプレゼント</li><li>健康診断・インフルエンザ予防接種</li><li>社用携帯貸与</li><li>wifi貸与</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%97%E3%83%AB%E3%83%BC%E3%82%AF%E3%82%B9" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社プルークス</dd>
+
+      <dt>職種名</dt>
+      <dd>法人営業</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都中央区日本橋大伝馬町14－17 大伝馬町千歳ビル4階</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>中央区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1030011</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>5000000 ～ 7000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>動画広告の制作ディレクションを行う【コンサルティング部】のリーダー〜マネージャー候補を募集しています！<br>具体的にはアカウントプランナーとして、クライアントの本質的な課題に向き合い、最適な広告手法の提案から制作、配信まで携わっていただきます。正式な受注後は、制作チームや広告運用チームとも連携を取りながらプロジェクトの中心となってリードいただくことを期待しております。<br>※入社職位は面接にて相談しながら決定いたしますが、まずはリーダー候補としてご入社いただき、更なるステップアップを目指していただけることを期待しております。<br><br>▍具体的な業務<br>＜コンサルタントとしての仕事＞<br>・顧客へのヒアリング、マーケティング課題の整理、施策の方針設計<br>・企画提案～クロージングまでの営業活動<br>・動画や広告手法の企画・立案からシナリオ作成、配信設計<br>・プロジェクトマネジメント（制作クリエイターとの調整、キャスト選定、撮影監督、クリエイティブの確認）<br>・社内のメディアプランナー・運用コンサルタントと協業し、広告媒体の選定から効果検証までのディレクション<br><br>＜リーダーとしての仕事＞<br>・メンバーマネジメント、進捗管理（4~5名）<br>・新人育成、OJT<br>・組織作りのための施策立案（MVV浸透やスキルアップ施策の立案）<br>・勉強会や研修の運営など<br><br>▍魅力点<br>・「企画〜制作・配信まで」一気通貫で行えることに加え、取引の半数以上が【直販】のため、顧客との距離が近い環境で働くことができます。<br>・様々な業界の顧客と対峙しながら、ブランディング、認知拡大、教育研修など幅広い領域の制作に関わることができるため、経験の幅を広げることができます。また、【誰もが見たことがある大型プロモーション】など、世の中に影響を与える広告制作を手掛けることも可能です。<br>・プランナーとしての提案・交渉力、プロジェクトマネジメント力、デジタルマーケティングの知見を身につけることが可能です。<br><br>▍クライアント事例<br>KDDI、ソフトバンク、NTT、住友商事、ファミリーマート、JTB、三菱東京UFJ銀行、ロッテ、花王、資生堂、日本航空<br>富士通、ウェザーニューズ、雪印メグミルク、サイボウズ、Sansan、ベルフェイス、マネーフォワード、内閣府、外務省、JA、早稲田大学、同志社大学、千葉大学、成城小学校<br><br>▍取り扱い媒体<br>・Instagram,TikTok,facebook,Linkedin,Pinterest,LINEなどの各種SNS、Google、Yahoo！、サイネージ、交通広告、TVCM、TVer、Spotify</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>9時-18時（休憩時間：1時間）<br>所定労働時間：8時間00分<br>※時差勤務（8-17時、10時-19時）可能<br>※リモートワーク可能<br>（業務の都合に合わせて週3日程度リモートで働く社員が多いですが、週5日出社や週5日リモートワークも可能です。必要な際には出社いただきます。）</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>完全週休2日制(土・日)<br>祝日年末年始休暇<br>ゴールデンウィーク<br>夏季休暇<br>有給休暇（入社半年後10日〜勤続年数に応じて最大20日）、等</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>各種社会保険完備<br>ドリンク無料(コーヒー・お茶・水)<br>役職手当<br>リロクラブ<br>産休、育児・介護休暇<br>感謝ギフトプレゼント<br>健康診断・インフルエンザ予防接種<br>社用携帯貸与<br>wifi貸与</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>営業</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

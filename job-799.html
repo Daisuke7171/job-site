@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>法人営業</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>法人営業｜株式会社アルティス</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "法人営業",
+  "description": "【提案営業（未経験OK）】住宅会社・設計事務所に向けたオリジナル浴槽ブランドの営業★賞与年2回",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社アルティス"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都港区六本木3-16-33　青葉六本木ビルANNEX2F",
+      "addressLocality": "港区",
+      "addressRegion": "東京都",
+      "postalCode": "1060032",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3500000,
+      "maxValue": 6000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,140 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "法人営業",
-      "description": "【仕事内容】\n当社の営業職として、住宅会社・設計事務所に対するオリジナル浴槽ブランド「Artis（アルティス）」の提案営業をお任せします。\n\n＜具体的な仕事内容＞\n・商材提案資料の準備　\n・設計事務所やハウスメーカーへの営業訪問\n・見積書の作成\n・顧客管理シート作成\n・お客様への商材、工事提案　など\n\n商品を直接販売するのではなく、建築現場で使用するために、建築設計士・ハウスメーカー・コーディネーターの方々から、図面に自社製品を指定していただけるよう、提案営業を行います。\n\n＜営業手法＞\n・問い合わせに対する「反響営業」\n・ターゲット先への「定期訪問」\n・予算達成に向けたシナリオ作りと行動\n\n＜商材＞\n当社の商材はオリジナル浴槽ブランド「Artis（アルティス）」です。\n\n＜主な顧客＞\n・設計事務所\n・ハウスメーカー\n・元請け（工務店など）\n\n【1日の流れ】\n09:00　出社\n▼\n09:00　見積もりなど社内事務処理など\n▼\n12:00　ランチ\n▼\n13:00　定期訪問、取引先や納材現場への訪問、打ち合わせなど\n▼\n18:00　退社\n\n【入社後の流れ】\n入社後はOJT、工場研修や施工現場見学などを通して商品、工事、社内システム、販売の仕組みなどについて学んでいただきます。スキル・経験に応じて、できる範囲から業務をお任せしていきますので、ご安心ください。\n\n【キャリアステップ】\n社内規定による昇給、昇格制度があります。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社アルティス"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都港区六本木3-16-33　青葉六本木ビルANNEX2F",
-          "addressLocality": "港区",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": "1060032"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3500000,
-          "maxValue": 6000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "9:00〜18:00 所定労働時間：8時間、休憩1時間",
-      "jobBenefits": [
-        "・社会保険完備（健康／労災／雇用／厚生年金）",
-        "・給与改定：年1回（1月）",
-        "・賞与：年2回（6月、12月）",
-        "・通勤手当（実費支給）",
-        "・住宅手当（地域、扶養親族状況等により月1万円〜4万円）",
-        "※年齢制限あり",
-        "・扶養子女手当（18歳未満の子女1人につき月1万5000円）",
-        "・営工手当（営業担当者に対して月1万4000円）",
-        "・単身赴任手当（社命による転勤で止むを得ず家族と別居する者に対して月4万円～6万円）",
-        "・資格取得支援",
-        "・社宅制度",
-        "・退職金制度",
-        "・資産形成補助",
-        "・健診補助",
-        "・社員共済制度",
-        "・自社所有保養施設",
-        "受動喫煙対策: 受動喫煙対策： 禁煙"
-      ],
-      "occupationalCategory": "営業"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "法人営業",
-          "item": "https://job-site-6aa.pages.dev/job-799.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【提案営業（未経験OK）】住宅会社・設計事務所に向けたオリジナル浴槽ブランドの営業★賞与年2回</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>法人営業</h1>
-      <p><em>【提案営業（未経験OK）】住宅会社・設計事務所に向けたオリジナル浴槽ブランドの営業★賞与年2回</em></p>
-      <p><strong>会社名：</strong>株式会社アルティス</p>
-      <p><strong>勤務地：</strong>東京都港区六本木3-16-33　青葉六本木ビルANNEX2F</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 350万円〜600万円</p>
-      <h3>仕事内容：</h3>
-      <p>【仕事内容】<br>当社の営業職として、住宅会社・設計事務所に対するオリジナル浴槽ブランド「Artis（アルティス）」の提案営業をお任せします。<br><br>＜具体的な仕事内容＞<br>・商材提案資料の準備　<br>・設計事務所やハウスメーカーへの営業訪問<br>・見積書の作成<br>・顧客管理シート作成<br>・お客様への商材、工事提案　など<br><br>商品を直接販売するのではなく、建築現場で使用するために、建築設計士・ハウスメーカー・コーディネーターの方々から、図面に自社製品を指定していただけるよう、提案営業を行います。<br><br>＜営業手法＞<br>・問い合わせに対する「反響営業」<br>・ターゲット先への「定期訪問」<br>・予算達成に向けたシナリオ作りと行動<br><br>＜商材＞<br>当社の商材はオリジナル浴槽ブランド「Artis（アルティス）」です。<br><br>＜主な顧客＞<br>・設計事務所<br>・ハウスメーカー<br>・元請け（工務店など）<br><br>【1日の流れ】<br>09:00　出社<br>▼<br>09:00　見積もりなど社内事務処理など<br>▼<br>12:00　ランチ<br>▼<br>13:00　定期訪問、取引先や納材現場への訪問、打ち合わせなど<br>▼<br>18:00　退社<br><br>【入社後の流れ】<br>入社後はOJT、工場研修や施工現場見学などを通して商品、工事、社内システム、販売の仕組みなどについて学んでいただきます。スキル・経験に応じて、できる範囲から業務をお任せしていきますので、ご安心ください。<br><br>【キャリアステップ】<br>社内規定による昇給、昇格制度があります。</p>
-      <h3>勤務時間：</h3>
-      <p>9:00〜18:00<br>所定労働時間：8時間、休憩1時間</p>
-      <h3>休暇・休日：</h3>
-      <p>・完全週休二日制（土日）<br>・祝日<br>・夏季休暇<br>・年末年始休暇<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・永年勤続休暇</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>・社会保険完備（健康／労災／雇用／厚生年金）</li><li>・給与改定：年1回（1月）</li><li>・賞与：年2回（6月、12月）</li><li>・通勤手当（実費支給）</li><li>・住宅手当（地域、扶養親族状況等により月1万円〜4万円）</li><li>※年齢制限あり</li><li>・扶養子女手当（18歳未満の子女1人につき月1万5000円）</li><li>・営工手当（営業担当者に対して月1万4000円）</li><li>・単身赴任手当（社命による転勤で止むを得ず家族と別居する者に対して月4万円～6万円）</li><li>・資格取得支援</li><li>・社宅制度</li><li>・退職金制度</li><li>・資産形成補助</li><li>・健診補助</li><li>・社員共済制度</li><li>・自社所有保養施設</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%83%AB%E3%83%86%E3%82%A3%E3%82%B9" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社アルティス</dd>
+
+      <dt>職種名</dt>
+      <dd>法人営業</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都港区六本木3-16-33　青葉六本木ビルANNEX2F</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>港区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1060032</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3500000 ～ 6000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>【仕事内容】<br>当社の営業職として、住宅会社・設計事務所に対するオリジナル浴槽ブランド「Artis（アルティス）」の提案営業をお任せします。<br><br>＜具体的な仕事内容＞<br>・商材提案資料の準備　<br>・設計事務所やハウスメーカーへの営業訪問<br>・見積書の作成<br>・顧客管理シート作成<br>・お客様への商材、工事提案　など<br><br>商品を直接販売するのではなく、建築現場で使用するために、建築設計士・ハウスメーカー・コーディネーターの方々から、図面に自社製品を指定していただけるよう、提案営業を行います。<br><br>＜営業手法＞<br>・問い合わせに対する「反響営業」<br>・ターゲット先への「定期訪問」<br>・予算達成に向けたシナリオ作りと行動<br><br>＜商材＞<br>当社の商材はオリジナル浴槽ブランド「Artis（アルティス）」です。<br><br>＜主な顧客＞<br>・設計事務所<br>・ハウスメーカー<br>・元請け（工務店など）<br><br>【1日の流れ】<br>09:00　出社<br>▼<br>09:00　見積もりなど社内事務処理など<br>▼<br>12:00　ランチ<br>▼<br>13:00　定期訪問、取引先や納材現場への訪問、打ち合わせなど<br>▼<br>18:00　退社<br><br>【入社後の流れ】<br>入社後はOJT、工場研修や施工現場見学などを通して商品、工事、社内システム、販売の仕組みなどについて学んでいただきます。スキル・経験に応じて、できる範囲から業務をお任せしていきますので、ご安心ください。<br><br>【キャリアステップ】<br>社内規定による昇給、昇格制度があります。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>9:00〜18:00<br>所定労働時間：8時間、休憩1時間</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>・完全週休二日制（土日）<br>・祝日<br>・夏季休暇<br>・年末年始休暇<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・永年勤続休暇</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・給与改定：年1回（1月）<br>・賞与：年2回（6月、12月）<br>・通勤手当（実費支給）<br>・住宅手当（地域、扶養親族状況等により月1万円〜4万円）<br>※年齢制限あり<br>・扶養子女手当（18歳未満の子女1人につき月1万5000円）<br>・営工手当（営業担当者に対して月1万4000円）<br>・単身赴任手当（社命による転勤で止むを得ず家族と別居する者に対して月4万円～6万円）<br>・資格取得支援<br>・社宅制度<br>・退職金制度<br>・資産形成補助<br>・健診補助<br>・社員共済制度<br>・自社所有保養施設</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>営業</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>カスタマーサポート・コールセンター運営</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>カスタマーサポート・コールセンター運営｜Guidy株式会社</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "カスタマーサポート・コールセンター運営",
+  "description": "営業事務・カスタマーサポート",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Guidy株式会社"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都品川区西五反田一丁目26番2号五反田サンハイツ911",
+      "addressLocality": "品川区",
+      "addressRegion": "東京都",
+      "postalCode": "1410031",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 4000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,141 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "カスタマーサポート・コールセンター運営",
-      "description": "★財務・経理・IT・マーケティングなど幅広い知識をゲット\n\n★女性管理職在籍\n\n★20～30代の女性社員活躍中！子育てと両立\n\n★半日単位の有給取得OK\n\n★業務は全てオンラインで完結\n\n補助金導入を検討するベンチャー企業に対して、\n\n補助金の申請・入金までのサポートをお任せします！\n\n～* 具体的なお仕事内容 *～\n\n◇申請内容の確認・提案\n\n◇申請資料の作成～入金までのサポート\n\n◇問い合わせ対応\n\n～* ご提案する補助金の一例 *～\n\n当社ではIT企業をはじめ多種多様なクライアントに対して補助金支援を行っています。\n\n「ものづくり補助金」や「テレワーク補助金」など\n\nベストな補助金をご提案し、クライアント企業のビジネス促進に貢献できるやりがいを実感できます◎",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "Guidy株式会社"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都品川区西五反田一丁目26番2号五反田サンハイツ911",
-          "addressLocality": "品川区",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": "1410031"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3000000,
-          "maxValue": 4000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "フレックスタイム制（1日の標準労働時間：8時間、休憩1時間） コアタイム：10:00〜16:00 フレキシブルタイム：5:00〜22:00  ～*リモートワークについて* ～ 入社3ヶ月後より、 週2～3日のリモートワークが可能です！　※フルリモート不可",
-      "jobBenefits": [
-        "◇昇給年2回（1月・7月）",
-        "◇賞与年2回（業績連動）",
-        "◇各種社会保険完備",
-        "◇交通費支給（上限2万円/月）",
-        "◇住宅手当支給（3万円/月）",
-        "※オフィス半径3km以内に住宅がある場合・交通費と選択",
-        "◇引っ越し支援制度",
-        "（通勤に際して、転居を伴う引越しが必要な際に支給）※支給条件有り",
-        "◇食事手当（※親睦ランチ補助／2人以上で月1回、1人1500円支給）",
-        "◇フリードリンク（オフィスドリンク飲み放題）",
-        "◇ノートPC・社用スマートフォン貸与",
-        "◇リファラル報奨金制度",
-        "◇書籍購入支援制度",
-        "◇服装自由",
-        "◇ネイルOK",
-        "◇髪色自由",
-        "◇屋内禁煙",
-        "受動喫煙対策: 受動喫煙対策： 喫煙スペースあり"
-      ],
-      "occupationalCategory": "営業"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "カスタマーサポート・コールセンター運営",
-          "item": "https://job-site-6aa.pages.dev/job-4035.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>営業事務・カスタマーサポート</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>カスタマーサポート・コールセンター運営</h1>
-      <p><em>営業事務・カスタマーサポート</em></p>
-      <p><strong>会社名：</strong>Guidy株式会社</p>
-      <p><strong>勤務地：</strong>東京都品川区西五反田一丁目26番2号五反田サンハイツ911</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 300万円〜400万円</p>
-      <h3>仕事内容：</h3>
-      <p>★財務・経理・IT・マーケティングなど幅広い知識をゲット<br><br>★女性管理職在籍<br><br>★20～30代の女性社員活躍中！子育てと両立<br><br>★半日単位の有給取得OK<br><br>★業務は全てオンラインで完結<br><br>補助金導入を検討するベンチャー企業に対して、<br><br>補助金の申請・入金までのサポートをお任せします！<br><br>～* 具体的なお仕事内容 *～<br><br>◇申請内容の確認・提案<br><br>◇申請資料の作成～入金までのサポート<br><br>◇問い合わせ対応<br><br>～* ご提案する補助金の一例 *～<br><br>当社ではIT企業をはじめ多種多様なクライアントに対して補助金支援を行っています。<br><br>「ものづくり補助金」や「テレワーク補助金」など<br><br>ベストな補助金をご提案し、クライアント企業のビジネス促進に貢献できるやりがいを実感できます◎</p>
-      <h3>勤務時間：</h3>
-      <p>フレックスタイム制（1日の標準労働時間：8時間、休憩1時間）<br>コアタイム：10:00〜16:00<br>フレキシブルタイム：5:00〜22:00<br><br>～*リモートワークについて* ～<br>入社3ヶ月後より、<br>週2～3日のリモートワークが可能です！　※フルリモート不可</p>
-      <h3>休暇・休日：</h3>
-      <p>＊＊＊年間休日120日以上＊＊＊<br><br>◇完全週休2日制（土日）<br><br>◇祝日<br><br>◇有給休暇（10日〜勤続年数に応じて最大20日） ☆有給取得率100％<br><br>◇年末年始休暇<br><br>◇産前・産後休暇<br><br>◇育児休暇　★グループ内での取得実績あり<br><br>◇勤続年数休暇（勤続年数により付与）<br><br>◇慶弔休暇</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 喫煙スペースあり</p>
-      <h3>福利厚生：</h3>
-      <ul><li>◇昇給年2回（1月・7月）</li><li>◇賞与年2回（業績連動）</li><li>◇各種社会保険完備</li><li>◇交通費支給（上限2万円/月）</li><li>◇住宅手当支給（3万円/月）</li><li>※オフィス半径3km以内に住宅がある場合・交通費と選択</li><li>◇引っ越し支援制度</li><li>（通勤に際して、転居を伴う引越しが必要な際に支給）※支給条件有り</li><li>◇食事手当（※親睦ランチ補助／2人以上で月1回、1人1500円支給）</li><li>◇フリードリンク（オフィスドリンク飲み放題）</li><li>◇ノートPC・社用スマートフォン貸与</li><li>◇リファラル報奨金制度</li><li>◇書籍購入支援制度</li><li>◇服装自由</li><li>◇ネイルOK</li><li>◇髪色自由</li><li>◇屋内禁煙</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=Guidy%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>Guidy株式会社</dd>
+
+      <dt>職種名</dt>
+      <dd>カスタマーサポート・コールセンター運営</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都品川区西五反田一丁目26番2号五反田サンハイツ911</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>品川区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1410031</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3000000 ～ 4000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>★財務・経理・IT・マーケティングなど幅広い知識をゲット<br><br>★女性管理職在籍<br><br>★20～30代の女性社員活躍中！子育てと両立<br><br>★半日単位の有給取得OK<br><br>★業務は全てオンラインで完結<br><br>補助金導入を検討するベンチャー企業に対して、<br><br>補助金の申請・入金までのサポートをお任せします！<br><br>～* 具体的なお仕事内容 *～<br><br>◇申請内容の確認・提案<br><br>◇申請資料の作成～入金までのサポート<br><br>◇問い合わせ対応<br><br>～* ご提案する補助金の一例 *～<br><br>当社ではIT企業をはじめ多種多様なクライアントに対して補助金支援を行っています。<br><br>「ものづくり補助金」や「テレワーク補助金」など<br><br>ベストな補助金をご提案し、クライアント企業のビジネス促進に貢献できるやりがいを実感できます◎</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>フレックスタイム制（1日の標準労働時間：8時間、休憩1時間）<br>コアタイム：10:00〜16:00<br>フレキシブルタイム：5:00〜22:00<br><br>～*リモートワークについて* ～<br>入社3ヶ月後より、<br>週2～3日のリモートワークが可能です！　※フルリモート不可</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>＊＊＊年間休日120日以上＊＊＊<br><br>◇完全週休2日制（土日）<br><br>◇祝日<br><br>◇有給休暇（10日〜勤続年数に応じて最大20日） ☆有給取得率100％<br><br>◇年末年始休暇<br><br>◇産前・産後休暇<br><br>◇育児休暇　★グループ内での取得実績あり<br><br>◇勤続年数休暇（勤続年数により付与）<br><br>◇慶弔休暇</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>◇昇給年2回（1月・7月）<br><br>◇賞与年2回（業績連動）<br><br>◇各種社会保険完備<br><br>◇交通費支給（上限2万円/月）<br><br>◇住宅手当支給（3万円/月）<br><br>※オフィス半径3km以内に住宅がある場合・交通費と選択<br><br>◇引っ越し支援制度<br><br>（通勤に際して、転居を伴う引越しが必要な際に支給）※支給条件有り<br><br>◇食事手当（※親睦ランチ補助／2人以上で月1回、1人1500円支給）<br><br>◇フリードリンク（オフィスドリンク飲み放題）<br><br>◇ノートPC・社用スマートフォン貸与<br><br>◇リファラル報奨金制度<br><br>◇書籍購入支援制度<br><br>◇服装自由<br><br>◇ネイルOK<br><br>◇髪色自由<br><br>◇屋内禁煙</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>営業</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

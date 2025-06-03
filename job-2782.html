@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>施工管理・設備・環境保全</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>施工管理・設備・環境保全｜株式会社オンテックス</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "施工管理・設備・環境保全",
+  "description": "【メンテナンス担当/東海エリア】外壁塗装のトップブランド企業★未経験OK★",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社オンテックス"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "愛知県名古屋市東区葵1‐26‐8葵ビル3階",
+      "addressLocality": "名古屋市",
+      "addressRegion": "静岡県",
+      "postalCode": "4610004",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3500000,
+      "maxValue": 4000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,142 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "施工管理・設備・環境保全",
-      "description": "全国に60支店を展開、累積施工実績14万件以上と、業界のリーディングカンパニーとして確固たる地位を築いている当社。営業チームの活躍もあり、新規のご依頼は右肩上がりに増加中。\nそこで、過去オンテックスにて工事させて頂いたお客様へのメンテナンス担当者を増員することとなりました。\n\n【具体的には……】\n過去に外壁や屋根塗装・リフォーム工事をして頂いた顧客様からの問い合わせに対応していただきます。\n・顧客様からの問い合わせに対する対応\n・お問い合わせ頂いた内容の精査(現場調査)\n・職人の手配や資材の発注　※現場作業を行うこともあります。\n・お客様との交渉対応など\n\n※トータルリフォームを手掛けている会社の為、塗装部門に留まらず、内装・外構にも携わっていただきます。\nこれまで住宅・建設関連に携わってきた方や、これから知識等を身に着けていきたい方にピッタリです！\n\n\n顧客様と長くお付き合いしていく中で、お客様が不安に思ったことに対して迅速に対応していただきます。\nお客様がより長く安心して生活していけるよう、アフターフォローを行う部署となります。\n\n\n【1日の流れ】\n出社後、朝のミーティング。段取り確認。\n▼\n社用車で担当するお客様宅へ。 1日平均5〜6ヶ所　昼食や休憩（計2時間）をはさみながら巡回します。 \n▼\n17時前後に帰社。 担当現場の書類作成や提出、事務処理（現場日報や業務日報）など。 \n▼\n業務終了。\nほとんどの社員が19時までに退社しています。\n\n【資格を取ってステップアップ】\n施工管理技士など、仕事に役立つ資格の取得は会社が費用を負担。合格後には、資格手当の支給もあります。\n※例：2級建築施工管理技士1万円　1級建築施工管理技士2万円など。\n\n【入社後1ヶ月間は……】\nベテラン社員の受け持つ現場に同行、仕事の流れ〜実務のノウハウを学びます。並行して、業界の専門知識や当社の商材・サービスについて学ぶ座学研修を実施。常にマンツーマンでサポートがあるので、未経験でも心配はありません！\n\n【当社について】\n外壁塗装・リフォームの分野で、年間売上10年以上国内No.1（※）達成！\n人材教育に力を入れる当社では、ゼロから学べる手厚い研修・サポート制度を用意し、 未経験でも安心してスタートできる環境があります。\n（※）出典=住宅リフォーム市場データブック2023／リフォーム産業新聞社",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社オンテックス"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "愛知県名古屋市東区葵1‐26‐8葵ビル3階",
-          "addressLocality": "名古屋市",
-          "addressRegion": "静岡県",
-          "addressCountry": "JP",
-          "postalCode": "4610004"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3500000,
-          "maxValue": 4000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "8：00〜17：30 所定労働時間：7時間30分、休憩2時間",
-      "jobBenefits": [
-        "社会保険完備",
-        "財形貯蓄制度",
-        "制服・社用車貸与",
-        "定期健康診断",
-        "昇給年3回",
-        "賞与年2回",
-        "※給与1年ごとに一律1万円アップ（最⻑5年）",
-        "通勤交通費（月5万円まで）",
-        "家族手当",
-        "結婚祝金",
-        "出産祝金",
-        "資格手当",
-        "運転手当",
-        "資格支援制度",
-        "保養施設 etc.",
-        "配属先でOJT（現場同行）＋座学研修を実施。",
-        "※独り立ちまでは、ベテラン社員がマンツーマンで指導します。",
-        "※勤務地を問わず車・バイク通勤不可。",
-        "受動喫煙対策: 受動喫煙対策： 禁煙"
-      ],
-      "occupationalCategory": "建築・土木・建設"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "施工管理・設備・環境保全",
-          "item": "https://job-site-6aa.pages.dev/job-2782.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【メンテナンス担当/東海エリア】外壁塗装のトップブランド企業★未経験OK★</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>施工管理・設備・環境保全</h1>
-      <p><em>【メンテナンス担当/東海エリア】外壁塗装のトップブランド企業★未経験OK★</em></p>
-      <p><strong>会社名：</strong>株式会社オンテックス</p>
-      <p><strong>勤務地：</strong>愛知県名古屋市東区葵1‐26‐8葵ビル3階</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 350万円〜400万円</p>
-      <h3>仕事内容：</h3>
-      <p>全国に60支店を展開、累積施工実績14万件以上と、業界のリーディングカンパニーとして確固たる地位を築いている当社。営業チームの活躍もあり、新規のご依頼は右肩上がりに増加中。<br>そこで、過去オンテックスにて工事させて頂いたお客様へのメンテナンス担当者を増員することとなりました。<br><br>【具体的には……】<br>過去に外壁や屋根塗装・リフォーム工事をして頂いた顧客様からの問い合わせに対応していただきます。<br>・顧客様からの問い合わせに対する対応<br>・お問い合わせ頂いた内容の精査(現場調査)<br>・職人の手配や資材の発注　※現場作業を行うこともあります。<br>・お客様との交渉対応など<br><br>※トータルリフォームを手掛けている会社の為、塗装部門に留まらず、内装・外構にも携わっていただきます。<br>これまで住宅・建設関連に携わってきた方や、これから知識等を身に着けていきたい方にピッタリです！<br><br><br>顧客様と長くお付き合いしていく中で、お客様が不安に思ったことに対して迅速に対応していただきます。<br>お客様がより長く安心して生活していけるよう、アフターフォローを行う部署となります。<br><br><br>【1日の流れ】<br>出社後、朝のミーティング。段取り確認。<br>▼<br>社用車で担当するお客様宅へ。 1日平均5〜6ヶ所　昼食や休憩（計2時間）をはさみながら巡回します。 <br>▼<br>17時前後に帰社。 担当現場の書類作成や提出、事務処理（現場日報や業務日報）など。 <br>▼<br>業務終了。<br>ほとんどの社員が19時までに退社しています。<br><br>【資格を取ってステップアップ】<br>施工管理技士など、仕事に役立つ資格の取得は会社が費用を負担。合格後には、資格手当の支給もあります。<br>※例：2級建築施工管理技士1万円　1級建築施工管理技士2万円など。<br><br>【入社後1ヶ月間は……】<br>ベテラン社員の受け持つ現場に同行、仕事の流れ〜実務のノウハウを学びます。並行して、業界の専門知識や当社の商材・サービスについて学ぶ座学研修を実施。常にマンツーマンでサポートがあるので、未経験でも心配はありません！<br><br>【当社について】<br>外壁塗装・リフォームの分野で、年間売上10年以上国内No.1（※）達成！<br>人材教育に力を入れる当社では、ゼロから学べる手厚い研修・サポート制度を用意し、 未経験でも安心してスタートできる環境があります。<br>（※）出典=住宅リフォーム市場データブック2023／リフォーム産業新聞社</p>
-      <h3>勤務時間：</h3>
-      <p>8：00〜17：30<br>所定労働時間：7時間30分、休憩2時間</p>
-      <h3>休暇・休日：</h3>
-      <p>週休2日制（土・日）<br>祝日休み<br>※年6回程度土曜出勤有<br>年末年始休暇<br>GW休暇<br>夏季休暇<br>慶弔休暇<br>有給休暇（10日～勤続年数に応じて最大20日）<br>産前産後休暇<br>振替休日制度<br>※お客様都合により休日出勤した場合は、必ず振替休日を取得。</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>社会保険完備</li><li>財形貯蓄制度</li><li>制服・社用車貸与</li><li>定期健康診断</li><li>昇給年3回</li><li>賞与年2回</li><li>※給与1年ごとに一律1万円アップ（最⻑5年）</li><li>通勤交通費（月5万円まで）</li><li>家族手当</li><li>結婚祝金</li><li>出産祝金</li><li>資格手当</li><li>運転手当</li><li>資格支援制度</li><li>保養施設 etc.</li><li>配属先でOJT（現場同行）＋座学研修を実施。</li><li>※独り立ちまでは、ベテラン社員がマンツーマンで指導します。</li><li>※勤務地を問わず車・バイク通勤不可。</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%AA%E3%83%B3%E3%83%86%E3%83%83%E3%82%AF%E3%82%B9" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社オンテックス</dd>
+
+      <dt>職種名</dt>
+      <dd>施工管理・設備・環境保全</dd>
+
+      <dt>勤務地</dt>
+      <dd>愛知県名古屋市東区葵1‐26‐8葵ビル3階</dd>
+
+      <dt>都道府県</dt>
+      <dd>静岡県</dd>
+
+      <dt>市区町村</dt>
+      <dd>名古屋市</dd>
+
+      <dt>郵便番号</dt>
+      <dd>4610004</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3500000 ～ 4000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>全国に60支店を展開、累積施工実績14万件以上と、業界のリーディングカンパニーとして確固たる地位を築いている当社。営業チームの活躍もあり、新規のご依頼は右肩上がりに増加中。<br>そこで、過去オンテックスにて工事させて頂いたお客様へのメンテナンス担当者を増員することとなりました。<br><br>【具体的には……】<br>過去に外壁や屋根塗装・リフォーム工事をして頂いた顧客様からの問い合わせに対応していただきます。<br>・顧客様からの問い合わせに対する対応<br>・お問い合わせ頂いた内容の精査(現場調査)<br>・職人の手配や資材の発注　※現場作業を行うこともあります。<br>・お客様との交渉対応など<br><br>※トータルリフォームを手掛けている会社の為、塗装部門に留まらず、内装・外構にも携わっていただきます。<br>これまで住宅・建設関連に携わってきた方や、これから知識等を身に着けていきたい方にピッタリです！<br><br><br>顧客様と長くお付き合いしていく中で、お客様が不安に思ったことに対して迅速に対応していただきます。<br>お客様がより長く安心して生活していけるよう、アフターフォローを行う部署となります。<br><br><br>【1日の流れ】<br>出社後、朝のミーティング。段取り確認。<br>▼<br>社用車で担当するお客様宅へ。 1日平均5〜6ヶ所　昼食や休憩（計2時間）をはさみながら巡回します。 <br>▼<br>17時前後に帰社。 担当現場の書類作成や提出、事務処理（現場日報や業務日報）など。 <br>▼<br>業務終了。<br>ほとんどの社員が19時までに退社しています。<br><br>【資格を取ってステップアップ】<br>施工管理技士など、仕事に役立つ資格の取得は会社が費用を負担。合格後には、資格手当の支給もあります。<br>※例：2級建築施工管理技士1万円　1級建築施工管理技士2万円など。<br><br>【入社後1ヶ月間は……】<br>ベテラン社員の受け持つ現場に同行、仕事の流れ〜実務のノウハウを学びます。並行して、業界の専門知識や当社の商材・サービスについて学ぶ座学研修を実施。常にマンツーマンでサポートがあるので、未経験でも心配はありません！<br><br>【当社について】<br>外壁塗装・リフォームの分野で、年間売上10年以上国内No.1（※）達成！<br>人材教育に力を入れる当社では、ゼロから学べる手厚い研修・サポート制度を用意し、 未経験でも安心してスタートできる環境があります。<br>（※）出典=住宅リフォーム市場データブック2023／リフォーム産業新聞社</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>8：00〜17：30<br>所定労働時間：7時間30分、休憩2時間</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>週休2日制（土・日）<br>祝日休み<br>※年6回程度土曜出勤有<br>年末年始休暇<br>GW休暇<br>夏季休暇<br>慶弔休暇<br>有給休暇（10日～勤続年数に応じて最大20日）<br>産前産後休暇<br>振替休日制度<br>※お客様都合により休日出勤した場合は、必ず振替休日を取得。</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>社会保険完備<br>財形貯蓄制度<br>制服・社用車貸与<br>定期健康診断<br>昇給年3回<br>賞与年2回<br>※給与1年ごとに一律1万円アップ（最⻑5年）<br>通勤交通費（月5万円まで）<br>家族手当<br>結婚祝金<br>出産祝金<br>資格手当<br>運転手当<br>資格支援制度<br>保養施設 etc.<br>配属先でOJT（現場同行）＋座学研修を実施。<br>※独り立ちまでは、ベテラン社員がマンツーマンで指導します。<br><br>※勤務地を問わず車・バイク通勤不可。</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>建築・土木・建設</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>販売・サービススタッフ</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>販売・サービススタッフ｜株式会社Recrea</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "販売・サービススタッフ",
+  "description": "【アパレル販売・接客スタッフ】髪色自由・ネイル可／残業10h以下",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社Recrea"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "福岡県福岡市博多区博多駅中央街１−１",
+      "addressLocality": "福岡市",
+      "addressRegion": "京都",
+      "postalCode": "8120012",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 4000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,135 +110,90 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "販売・サービススタッフ",
-      "description": "【主な業務内容】\nレディース服を取り扱うショップにて、以下のお仕事をお任せします。\n◎接客販売\n◎商品管理\n◎店舗レイアウト\n◎店舗運営\n\n【入社後の流れとキャリアステップ】\n1. 入社後研修\nビジネスマナーや業界知識など、\n基本的なことから研修を通して学んでいきます。\n\n2. 販売研修\n配属先の店舗で販売スタッフデビュー！\n未経験の方も安心して働けるよう、分からないことは先輩スタッフが一から教えるのでご安心下さい♪\n\n3. マネジメント研修\n販売スタッフとして一定の経験を積んだ後は、ご希望に応じてサブリーダー、リーダーにキャリアアップ！\n各店舗のスタッフマネジメントをお任せします！\n\n【店舗の雰囲気】\nお客様一人一人に寄り添った接客を心がけています。\nまた、チームワークを大切にする文化のため、一緒に楽しみながら働ける環境が整っています！",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社Recrea"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "福岡県福岡市博多区博多駅中央街１−１",
-          "addressLocality": "福岡市",
-          "addressRegion": "京都",
-          "addressCountry": "JP",
-          "postalCode": "8120012"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3000000,
-          "maxValue": 4000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "シフト制 9:00〜22:00 上記時間の中で所定労働時間：8時間、休憩1時間",
-      "jobBenefits": [
-        "◎社会保険完備",
-        "◎交通費支給（上限あり）",
-        "◎研修制度",
-        "◎社用PC、携帯貸与",
-        "◎キャリアサポート制度",
-        "◎上京支援金制度（社内規定あり）",
-        "◎社宅制度（社内規定あり）",
-        "◎独立支援制度",
-        "◎髪色自由",
-        "◎ネイル可能",
-        "受動喫煙対策: 受動喫煙対策： 喫煙スペースあり\n受動喫煙対策（詳細）： 屋内禁煙、喫煙スペースあり"
-      ],
-      "occupationalCategory": "販売・接客・サービス"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "販売・サービススタッフ",
-          "item": "https://job-site-6aa.pages.dev/job-2899.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【アパレル販売・接客スタッフ】髪色自由・ネイル可／残業10h以下</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>販売・サービススタッフ</h1>
-      <p><em>【アパレル販売・接客スタッフ】髪色自由・ネイル可／残業10h以下</em></p>
-      <p><strong>会社名：</strong>株式会社Recrea</p>
-      <p><strong>勤務地：</strong>福岡県福岡市博多区博多駅中央街１−１</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 300万円〜400万円</p>
-      <h3>仕事内容：</h3>
-      <p>【主な業務内容】<br>レディース服を取り扱うショップにて、以下のお仕事をお任せします。<br>◎接客販売<br>◎商品管理<br>◎店舗レイアウト<br>◎店舗運営<br><br>【入社後の流れとキャリアステップ】<br>1. 入社後研修<br>ビジネスマナーや業界知識など、<br>基本的なことから研修を通して学んでいきます。<br><br>2. 販売研修<br>配属先の店舗で販売スタッフデビュー！<br>未経験の方も安心して働けるよう、分からないことは先輩スタッフが一から教えるのでご安心下さい♪<br><br>3. マネジメント研修<br>販売スタッフとして一定の経験を積んだ後は、ご希望に応じてサブリーダー、リーダーにキャリアアップ！<br>各店舗のスタッフマネジメントをお任せします！<br><br>【店舗の雰囲気】<br>お客様一人一人に寄り添った接客を心がけています。<br>また、チームワークを大切にする文化のため、一緒に楽しみながら働ける環境が整っています！</p>
-      <h3>勤務時間：</h3>
-      <p>シフト制 9:00〜22:00<br>上記時間の中で所定労働時間：8時間、休憩1時間</p>
-      <h3>休暇・休日：</h3>
-      <p>◎週休二日制<br>◎年次有給休暇（10日～勤続年数に応じて最大20日）<br>◎慶弔休暇</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 喫煙スペースあり
-受動喫煙対策（詳細）： 屋内禁煙、喫煙スペースあり</p>
-      <h3>福利厚生：</h3>
-      <ul><li>◎社会保険完備</li><li>◎交通費支給（上限あり）</li><li>◎研修制度</li><li>◎社用PC、携帯貸与</li><li>◎キャリアサポート制度</li><li>◎上京支援金制度（社内規定あり）</li><li>◎社宅制度（社内規定あり）</li><li>◎独立支援制度</li><li>◎髪色自由</li><li>◎ネイル可能</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BERecrea" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社Recrea</dd>
+
+      <dt>職種名</dt>
+      <dd>販売・サービススタッフ</dd>
+
+      <dt>勤務地</dt>
+      <dd>福岡県福岡市博多区博多駅中央街１−１</dd>
+
+      <dt>都道府県</dt>
+      <dd>京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>福岡市</dd>
+
+      <dt>郵便番号</dt>
+      <dd>8120012</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3000000 ～ 4000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>【主な業務内容】<br>レディース服を取り扱うショップにて、以下のお仕事をお任せします。<br>◎接客販売<br>◎商品管理<br>◎店舗レイアウト<br>◎店舗運営<br><br>【入社後の流れとキャリアステップ】<br>1. 入社後研修<br>ビジネスマナーや業界知識など、<br>基本的なことから研修を通して学んでいきます。<br><br>2. 販売研修<br>配属先の店舗で販売スタッフデビュー！<br>未経験の方も安心して働けるよう、分からないことは先輩スタッフが一から教えるのでご安心下さい♪<br><br>3. マネジメント研修<br>販売スタッフとして一定の経験を積んだ後は、ご希望に応じてサブリーダー、リーダーにキャリアアップ！<br>各店舗のスタッフマネジメントをお任せします！<br><br>【店舗の雰囲気】<br>お客様一人一人に寄り添った接客を心がけています。<br>また、チームワークを大切にする文化のため、一緒に楽しみながら働ける環境が整っています！</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>シフト制 9:00〜22:00<br>上記時間の中で所定労働時間：8時間、休憩1時間</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>◎週休二日制<br>◎年次有給休暇（10日～勤続年数に応じて最大20日）<br>◎慶弔休暇</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 喫煙スペースあり
+受動喫煙対策（詳細）： 屋内禁煙、喫煙スペースあり</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>◎社会保険完備<br>◎交通費支給（上限あり）<br>◎研修制度<br>◎社用PC、携帯貸与<br>◎キャリアサポート制度<br>◎上京支援金制度（社内規定あり）<br>◎社宅制度（社内規定あり）<br>◎独立支援制度<br>◎髪色自由<br>◎ネイル可能</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>販売・接客・サービス</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>施工管理・設備・環境保全</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>施工管理・設備・環境保全｜株式会社京浜マリンエンジニアリング</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "施工管理・設備・環境保全",
+  "description": "未経験歓迎【施工管理】平均残業月20ｈ/土日祝休/手当充実/積極採用中",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社京浜マリンエンジニアリング"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "神奈川県横浜市神奈川区新子安１－１４－７",
+      "addressLocality": "横浜市",
+      "addressRegion": "京都",
+      "postalCode": "2210013",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 4500000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,140 +110,90 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "施工管理・設備・環境保全",
-      "description": "◎今回募集するのは、鋼構造物部門の施工管理◎\n東京・神奈川を中心に、トンネル、道路（高速道路、臨港道路、滑走路など）、橋梁などの公共インフラ建設工事の進行・管理をお任せします。\n※入社後の職種変更なし\n\n◎具体的な作業内容◎\n・各種管理作業（工程管理、安全管理、品質管理、原価管理）\n・現場での作業指示、監督\n・元請企業様との打ち合わせ\n・次の日の準備（人員の割り振り、道具の確認、段取りの検討など）\n・内業（各種書類作成、次の現場の計画など）　など\n\n◎入社後の流れ◎\n入社後はベテランと一緒に現場に入り、朝礼～上司の指示を職人に伝えるなど補佐的な仕事から慣れていきます。\n施工計画書作成ではPCも使用するため、PCスキルを含めて、デスクワークにも少しずつ慣れていきましょう。\n工期が長い大規模案件で、腰を据えて成長できます。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社京浜マリンエンジニアリング"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "神奈川県横浜市神奈川区新子安１－１４－７",
-          "addressLocality": "横浜市",
-          "addressRegion": "京都",
-          "addressCountry": "JP",
-          "postalCode": "2210013"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3000000,
-          "maxValue": 4500000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "8:00〜17:00 1日の労働時間：8時間、休憩1時間 1ヶ月単位の変形労働時間制（週の平均労働時間30時間以下） 夜間勤務：あり",
-      "jobBenefits": [
-        "■社保完備（＝労災、雇用、健康、厚生年金保険適用）",
-        "■退職金制度",
-        "■社用車貸与",
-        "■ガソリン代支給",
-        "■携帯・タブレット支給",
-        "■社宅・家賃補助制度",
-        "■オフィス内禁煙・分煙",
-        "■マイカー通勤可",
-        "■生命保険加入の費用負担",
-        "■寮完備",
-        "■ネイル・ピアス・髪型自由",
-        "■懇親会",
-        "└ 釣り大会やBBQなど会社負担で開催♪",
-        "■資格取得支援制度",
-        "└ 資格にかかる費用を全額負担！資格を受けた日の日当も支給しています！",
-        "受動喫煙対策: 受動喫煙対策： 禁煙\n受動喫煙対策（詳細）： 屋内禁煙"
-      ],
-      "occupationalCategory": "建築・土木・建設"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "施工管理・設備・環境保全",
-          "item": "https://job-site-6aa.pages.dev/job-1373.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>未経験歓迎【施工管理】平均残業月20ｈ/土日祝休/手当充実/積極採用中</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>施工管理・設備・環境保全</h1>
-      <p><em>未経験歓迎【施工管理】平均残業月20ｈ/土日祝休/手当充実/積極採用中</em></p>
-      <p><strong>会社名：</strong>株式会社京浜マリンエンジニアリング</p>
-      <p><strong>勤務地：</strong>神奈川県横浜市神奈川区新子安１－１４－７</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 300万円〜450万円</p>
-      <h3>仕事内容：</h3>
-      <p>◎今回募集するのは、鋼構造物部門の施工管理◎<br>東京・神奈川を中心に、トンネル、道路（高速道路、臨港道路、滑走路など）、橋梁などの公共インフラ建設工事の進行・管理をお任せします。<br>※入社後の職種変更なし<br><br>◎具体的な作業内容◎<br>・各種管理作業（工程管理、安全管理、品質管理、原価管理）<br>・現場での作業指示、監督<br>・元請企業様との打ち合わせ<br>・次の日の準備（人員の割り振り、道具の確認、段取りの検討など）<br>・内業（各種書類作成、次の現場の計画など）　など<br><br>◎入社後の流れ◎<br>入社後はベテランと一緒に現場に入り、朝礼～上司の指示を職人に伝えるなど補佐的な仕事から慣れていきます。<br>施工計画書作成ではPCも使用するため、PCスキルを含めて、デスクワークにも少しずつ慣れていきましょう。<br>工期が長い大規模案件で、腰を据えて成長できます。</p>
-      <h3>勤務時間：</h3>
-      <p>8:00〜17:00<br>1日の労働時間：8時間、休憩1時間<br>1ヶ月単位の変形労働時間制（週の平均労働時間30時間以下）<br>夜間勤務：あり</p>
-      <h3>休暇・休日：</h3>
-      <p>•週休2日制<br>•祝日<br>•GW休暇（7～10日※有休含む）<br>•夏季休暇<br>•年末年始休暇<br>•有給休暇（10日〜勤続年数に応じて最大20日）<br>•慶弔休暇<br>•産前・産後休暇 ◎取得実績あり<br>•育児休暇 ◎取得実績あり<br>•介護休暇 ◎取得実績あり<br><br>★有給を消化し、連休で家族旅行に行く先輩もいます！働きやすい環境づくりを推進しています。</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙
-受動喫煙対策（詳細）： 屋内禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>•社保完備（＝労災、雇用、健康、厚生年金保険適用）</li><li>•退職金制度</li><li>•社用車貸与</li><li>•ガソリン代支給</li><li>•携帯・タブレット支給</li><li>•社宅・家賃補助制度</li><li>•オフィス内禁煙・分煙</li><li>•マイカー通勤可</li><li>•生命保険加入の費用負担</li><li>•寮完備</li><li>•ネイル・ピアス・髪型自由</li><li>•懇親会</li><li>└ 釣り大会やBBQなど会社負担で開催♪</li><li>•資格取得支援制度</li><li>└ 資格にかかる費用を全額負担！資格を受けた日の日当も支給しています！</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E4%BA%AC%E6%B5%9C%E3%83%9E%E3%83%AA%E3%83%B3%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社京浜マリンエンジニアリング</dd>
+
+      <dt>職種名</dt>
+      <dd>施工管理・設備・環境保全</dd>
+
+      <dt>勤務地</dt>
+      <dd>神奈川県横浜市神奈川区新子安１－１４－７</dd>
+
+      <dt>都道府県</dt>
+      <dd>京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>横浜市</dd>
+
+      <dt>郵便番号</dt>
+      <dd>2210013</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3000000 ～ 4500000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>◎今回募集するのは、鋼構造物部門の施工管理◎<br>東京・神奈川を中心に、トンネル、道路（高速道路、臨港道路、滑走路など）、橋梁などの公共インフラ建設工事の進行・管理をお任せします。<br>※入社後の職種変更なし<br><br>◎具体的な作業内容◎<br>・各種管理作業（工程管理、安全管理、品質管理、原価管理）<br>・現場での作業指示、監督<br>・元請企業様との打ち合わせ<br>・次の日の準備（人員の割り振り、道具の確認、段取りの検討など）<br>・内業（各種書類作成、次の現場の計画など）　など<br><br>◎入社後の流れ◎<br>入社後はベテランと一緒に現場に入り、朝礼～上司の指示を職人に伝えるなど補佐的な仕事から慣れていきます。<br>施工計画書作成ではPCも使用するため、PCスキルを含めて、デスクワークにも少しずつ慣れていきましょう。<br>工期が長い大規模案件で、腰を据えて成長できます。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>8:00〜17:00<br>1日の労働時間：8時間、休憩1時間<br>1ヶ月単位の変形労働時間制（週の平均労働時間30時間以下）<br>夜間勤務：あり</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>■週休2日制<br>■祝日<br>■GW休暇（7～10日※有休含む）<br>■夏季休暇<br>■年末年始休暇<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>■慶弔休暇<br>■産前・産後休暇 ◎取得実績あり<br>■育児休暇 ◎取得実績あり<br>■介護休暇 ◎取得実績あり<br><br>★有給を消化し、連休で家族旅行に行く先輩もいます！働きやすい環境づくりを推進しています。</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙
+受動喫煙対策（詳細）： 屋内禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>■社保完備（＝労災、雇用、健康、厚生年金保険適用）<br>■退職金制度<br>■社用車貸与<br>■ガソリン代支給<br>■携帯・タブレット支給<br>■社宅・家賃補助制度<br>■オフィス内禁煙・分煙<br>■マイカー通勤可<br>■生命保険加入の費用負担<br>■寮完備<br>■ネイル・ピアス・髪型自由<br>■懇親会<br>└ 釣り大会やBBQなど会社負担で開催♪<br>■資格取得支援制度<br>└ 資格にかかる費用を全額負担！資格を受けた日の日当も支給しています！</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>建築・土木・建設</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

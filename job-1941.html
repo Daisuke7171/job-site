@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>運輸・配送・倉庫関連</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>運輸・配送・倉庫関連｜ダイワ産業株式会社</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "運輸・配送・倉庫関連",
+  "description": "【2tトラックドライバー／横浜】未経験OK★⻑距離・夜勤なし★完全週休2日制★OA機器等の配送・設置",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "ダイワ産業株式会社"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "神奈川県横浜市神奈川区神奈川2-1-8　チェストポート1F",
+      "addressLocality": "横浜市",
+      "addressRegion": "大阪府",
+      "postalCode": "2210045",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 4000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,133 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "運輸・配送・倉庫関連",
-      "description": "私たちダイワ産業は、質の高い人財と独自ノウハウでベストソリューションを提供する人材サービス会社です。特に大手メーカーからの信頼が厚く、複合機の組立、製造助手、配送などの業務請負を通じて顧客のビジネスに貢献しています。\n\n【仕事内容】\n2～3名のチーム体制で、複合機・PCサーバー・OA機器を倉庫からオフィスへ届けるお仕事です。その他に、住宅建材などを⼾建て住宅や建築現場に配送するお仕事もあります。機器の組み⽴てや設定などは不要です！チームで作業するため、重い荷物があっても安心。協⼒して運びます。\n※建材配送の場合は2tショートでのワンマン配送になります。\n\n【具体的には……】\n・荷主の倉庫での商品積み込み\n・配送先のオフィスへ納品（トラックの運転、荷下ろし〜オフィス内への運搬）\n・荷主の倉庫に戻り報告業務\nなど\n\n【1日の業務例】\n07:50　出社（タイムカード打刻・着替え）\n08:05　点呼（運行の注意点・健康状態の確認）\n08:30　荷主倉庫にて商品の積み込み\n09:00　伝票を確認し配送先のオフィスに納品（1日あたり5～7社に配送）\n12:00　お昼休憩\n16:40　荷主倉庫に戻り1日の配送業務報告\n17:00　帰社（タイムカード打刻）\n\n【入社後の流れ】\n基本的に、入社後いきなり運転をお任せすることはありません。まずは積み下ろしなど、スキル・経験に応じてできる範囲から業務をお任せします。慣れてきた後に、運転・配送先でのやり取り（設置場所の確認など）をお任せしていきます。\n当社のドライバーは未経験スタートがほとんど。⼊社する前は乗⽤⾞しか運転したことがなかったメンバーも、現在では2トントラックを運転できています！当社でドライバーのスキルを⾝につけたメンバーばかりなので、経験が無くて不安だ、という⽅も安⼼して始められる環境です。\n\n＜輸送品⽬＞\n複合機、住宅建材資材\n\n＜⾞種＞\n・2tトラック\n・2tショート\n・ワイドパワーゲート\n\n＜特徴＞\n専属⾞両\nパレット輸送\nかご⾞・パワーゲート\nAT⾞あり\nバックアイモニター装備\nルート配送\nドライブレコーダー\n安全装置搭載\nETC付き⾞両",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "ダイワ産業株式会社"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "神奈川県横浜市神奈川区神奈川2-1-8　チェストポート1F",
-          "addressLocality": "横浜市",
-          "addressRegion": "大阪府",
-          "addressCountry": "JP",
-          "postalCode": "2210045"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3000000,
-          "maxValue": 4000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "8:00～17:00（所定労働時間8時間、休憩60分。シフト制） ※時間は案件によります",
-      "jobBenefits": [
-        "■社会保険制度完備(健康保険・厚生年金・雇用保険・労災保険)",
-        "■資格取得⽀援制度あり（免許取得費⽤補助）",
-        "■5⽇以上の連休取得OK",
-        "■マイカー・バイク通勤可",
-        "■残業手当全額支給",
-        "■交通費全額支給",
-        "■退職金制度あり",
-        "■友人紹介制度あり(最大12万円支給)",
-        "■入社祝金（入社6ヶ月後に10万円を支給）",
-        "受動喫煙対策: 受動喫煙対策： 喫煙スペースあり"
-      ],
-      "occupationalCategory": ""
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "運輸・配送・倉庫関連",
-          "item": "https://job-site-6aa.pages.dev/job-1941.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【2tトラックドライバー／横浜】未経験OK★⻑距離・夜勤なし★完全週休2日制★OA機器等の配送・設置</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>運輸・配送・倉庫関連</h1>
-      <p><em>【2tトラックドライバー／横浜】未経験OK★⻑距離・夜勤なし★完全週休2日制★OA機器等の配送・設置</em></p>
-      <p><strong>会社名：</strong>ダイワ産業株式会社</p>
-      <p><strong>勤務地：</strong>神奈川県横浜市神奈川区神奈川2-1-8　チェストポート1F</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 300万円〜400万円</p>
-      <h3>仕事内容：</h3>
-      <p>私たちダイワ産業は、質の高い人財と独自ノウハウでベストソリューションを提供する人材サービス会社です。特に大手メーカーからの信頼が厚く、複合機の組立、製造助手、配送などの業務請負を通じて顧客のビジネスに貢献しています。<br><br>【仕事内容】<br>2～3名のチーム体制で、複合機・PCサーバー・OA機器を倉庫からオフィスへ届けるお仕事です。その他に、住宅建材などを⼾建て住宅や建築現場に配送するお仕事もあります。機器の組み⽴てや設定などは不要です！チームで作業するため、重い荷物があっても安心。協⼒して運びます。<br>※建材配送の場合は2tショートでのワンマン配送になります。<br><br>【具体的には……】<br>・荷主の倉庫での商品積み込み<br>・配送先のオフィスへ納品（トラックの運転、荷下ろし〜オフィス内への運搬）<br>・荷主の倉庫に戻り報告業務<br>など<br><br>【1日の業務例】<br>07:50　出社（タイムカード打刻・着替え）<br>08:05　点呼（運行の注意点・健康状態の確認）<br>08:30　荷主倉庫にて商品の積み込み<br>09:00　伝票を確認し配送先のオフィスに納品（1日あたり5～7社に配送）<br>12:00　お昼休憩<br>16:40　荷主倉庫に戻り1日の配送業務報告<br>17:00　帰社（タイムカード打刻）<br><br>【入社後の流れ】<br>基本的に、入社後いきなり運転をお任せすることはありません。まずは積み下ろしなど、スキル・経験に応じてできる範囲から業務をお任せします。慣れてきた後に、運転・配送先でのやり取り（設置場所の確認など）をお任せしていきます。<br>当社のドライバーは未経験スタートがほとんど。⼊社する前は乗⽤⾞しか運転したことがなかったメンバーも、現在では2トントラックを運転できています！当社でドライバーのスキルを⾝につけたメンバーばかりなので、経験が無くて不安だ、という⽅も安⼼して始められる環境です。<br><br>＜輸送品⽬＞<br>複合機、住宅建材資材<br><br>＜⾞種＞<br>・2tトラック<br>・2tショート<br>・ワイドパワーゲート<br><br>＜特徴＞<br>専属⾞両<br>パレット輸送<br>かご⾞・パワーゲート<br>AT⾞あり<br>バックアイモニター装備<br>ルート配送<br>ドライブレコーダー<br>安全装置搭載<br>ETC付き⾞両</p>
-      <h3>勤務時間：</h3>
-      <p>8:00～17:00（所定労働時間8時間、休憩60分。シフト制）<br>※時間は案件によります</p>
-      <h3>休暇・休日：</h3>
-      <p>週休2⽇制（⼟⽇）<br>祝⽇<br>GW休暇<br>夏季・年末年始<br>有給休暇（10日～勤続年数に応じて最大20日）※週5⽇以上の連休取得もOKです！<br><br>※⼟⽇祝出勤になることもあります（代休あり）</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 喫煙スペースあり</p>
-      <h3>福利厚生：</h3>
-      <ul><li>•社会保険制度完備(健康保険・厚生年金・雇用保険・労災保険)</li><li>•資格取得⽀援制度あり（免許取得費⽤補助）</li><li>•5⽇以上の連休取得OK</li><li>•マイカー・バイク通勤可</li><li>•残業手当全額支給</li><li>•交通費全額支給</li><li>•退職金制度あり</li><li>•友人紹介制度あり(最大12万円支給)</li><li>•入社祝金（入社6ヶ月後に10万円を支給）</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E3%83%80%E3%82%A4%E3%83%AF%E7%94%A3%E6%A5%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>ダイワ産業株式会社</dd>
+
+      <dt>職種名</dt>
+      <dd>運輸・配送・倉庫関連</dd>
+
+      <dt>勤務地</dt>
+      <dd>神奈川県横浜市神奈川区神奈川2-1-8　チェストポート1F</dd>
+
+      <dt>都道府県</dt>
+      <dd>大阪府</dd>
+
+      <dt>市区町村</dt>
+      <dd>横浜市</dd>
+
+      <dt>郵便番号</dt>
+      <dd>2210045</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3000000 ～ 4000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>私たちダイワ産業は、質の高い人財と独自ノウハウでベストソリューションを提供する人材サービス会社です。特に大手メーカーからの信頼が厚く、複合機の組立、製造助手、配送などの業務請負を通じて顧客のビジネスに貢献しています。<br><br>【仕事内容】<br>2～3名のチーム体制で、複合機・PCサーバー・OA機器を倉庫からオフィスへ届けるお仕事です。その他に、住宅建材などを⼾建て住宅や建築現場に配送するお仕事もあります。機器の組み⽴てや設定などは不要です！チームで作業するため、重い荷物があっても安心。協⼒して運びます。<br>※建材配送の場合は2tショートでのワンマン配送になります。<br><br>【具体的には……】<br>・荷主の倉庫での商品積み込み<br>・配送先のオフィスへ納品（トラックの運転、荷下ろし〜オフィス内への運搬）<br>・荷主の倉庫に戻り報告業務<br>など<br><br>【1日の業務例】<br>07:50　出社（タイムカード打刻・着替え）<br>08:05　点呼（運行の注意点・健康状態の確認）<br>08:30　荷主倉庫にて商品の積み込み<br>09:00　伝票を確認し配送先のオフィスに納品（1日あたり5～7社に配送）<br>12:00　お昼休憩<br>16:40　荷主倉庫に戻り1日の配送業務報告<br>17:00　帰社（タイムカード打刻）<br><br>【入社後の流れ】<br>基本的に、入社後いきなり運転をお任せすることはありません。まずは積み下ろしなど、スキル・経験に応じてできる範囲から業務をお任せします。慣れてきた後に、運転・配送先でのやり取り（設置場所の確認など）をお任せしていきます。<br>当社のドライバーは未経験スタートがほとんど。⼊社する前は乗⽤⾞しか運転したことがなかったメンバーも、現在では2トントラックを運転できています！当社でドライバーのスキルを⾝につけたメンバーばかりなので、経験が無くて不安だ、という⽅も安⼼して始められる環境です。<br><br>＜輸送品⽬＞<br>複合機、住宅建材資材<br><br>＜⾞種＞<br>・2tトラック<br>・2tショート<br>・ワイドパワーゲート<br><br>＜特徴＞<br>専属⾞両<br>パレット輸送<br>かご⾞・パワーゲート<br>AT⾞あり<br>バックアイモニター装備<br>ルート配送<br>ドライブレコーダー<br>安全装置搭載<br>ETC付き⾞両</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>8:00～17:00（所定労働時間8時間、休憩60分。シフト制）<br>※時間は案件によります</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>週休2⽇制（⼟⽇）<br>祝⽇<br>GW休暇<br>夏季・年末年始<br>有給休暇（10日～勤続年数に応じて最大20日）※週5⽇以上の連休取得もOKです！<br><br>※⼟⽇祝出勤になることもあります（代休あり）</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>■社会保険制度完備(健康保険・厚生年金・雇用保険・労災保険)<br>■資格取得⽀援制度あり（免許取得費⽤補助）<br>■5⽇以上の連休取得OK<br>■マイカー・バイク通勤可<br>■残業手当全額支給<br>■交通費全額支給<br>■退職金制度あり<br>■友人紹介制度あり(最大12万円支給)<br>■入社祝金（入社6ヶ月後に10万円を支給）</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd></dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

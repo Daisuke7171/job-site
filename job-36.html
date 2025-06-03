@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Webサービス系エンジニア・プログラマ</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Webサービス系エンジニア・プログラマ｜株式会社リ・バース</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "Webサービス系エンジニア・プログラマ",
+  "description": "【SE（リーダークラス）】エンジニアの働きやすさ追求/平均残業時間15h以下/定着率92％！",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社リ・バース"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都23区内",
+      "addressLocality": "23区",
+      "addressRegion": "東京都",
+      "postalCode": "",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 6000000,
+      "maxValue": 8000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,133 +110,90 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "Webサービス系エンジニア・プログラマ",
-      "description": "【仕事概要】\n・案件のアサイン方法\n社長やプロジェクトリーダーが全社員と面談を実施し、社員の経験、今後のキャリアを考え、適材適所で案件を決めています。\n\n【案件の一部抜粋】\n＜金融＞\n・クレジットカードの決済代行サービスのシステム改修プロジェクト\n・銀行構築\n・イシュイング、アクワイアリングサービス開発\n・インターネットバンキングシステム、他\n＜証券＞\n・大手証券会社向けシステムPMO\n・デリバディブ発注システム\n・証券ミドル、他\n＜保険＞\n・大手損保向け次世代システム\n・大手生保向け横断PMO、他\n＜物流、産業＞\n・大手コンビニ向けPMO\n・大手コンテンツ会社向けPMO、他",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社リ・バース"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都23区内",
-          "addressLocality": "23区",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": ""
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 6000000,
-          "maxValue": 8000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "専門業務型裁量労働制 1日のみなし労働時間/10時間 標準的な勤務時間9:00～18:00",
-      "jobBenefits": [
-        "社会保険完備",
-        "確定拠出年金制度",
-        "健康診断全額支給",
-        "インフルエンザ予防接種代支給",
-        "スキルアップサポート（資格試験代、書籍代等）全額支給",
-        "社員同士の懇親会費用　会社負担",
-        "社員旅行（2023年、2022年宮古島。全額会社負担、家族も参加可能）",
-        "転勤：無し",
-        "受動喫煙対策: 受動喫煙対策： 喫煙スペースあり\n受動喫煙対策（詳細）： テラスでの喫煙可（客先の場合は客先の施設によります）"
-      ],
-      "occupationalCategory": "IT・クリエイティブ"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Webサービス系エンジニア・プログラマ",
-          "item": "https://job-site-6aa.pages.dev/job-36.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【SE（リーダークラス）】エンジニアの働きやすさ追求/平均残業時間15h以下/定着率92％！</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>Webサービス系エンジニア・プログラマ</h1>
-      <p><em>【SE（リーダークラス）】エンジニアの働きやすさ追求/平均残業時間15h以下/定着率92％！</em></p>
-      <p><strong>会社名：</strong>株式会社リ・バース</p>
-      <p><strong>勤務地：</strong>東京都23区内</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 600万円〜800万円</p>
-      <h3>仕事内容：</h3>
-      <p>【仕事概要】<br>・案件のアサイン方法<br>社長やプロジェクトリーダーが全社員と面談を実施し、社員の経験、今後のキャリアを考え、適材適所で案件を決めています。<br><br>【案件の一部抜粋】<br>＜金融＞<br>・クレジットカードの決済代行サービスのシステム改修プロジェクト<br>・銀行構築<br>・イシュイング、アクワイアリングサービス開発<br>・インターネットバンキングシステム、他<br>＜証券＞<br>・大手証券会社向けシステムPMO<br>・デリバディブ発注システム<br>・証券ミドル、他<br>＜保険＞<br>・大手損保向け次世代システム<br>・大手生保向け横断PMO、他<br>＜物流、産業＞<br>・大手コンビニ向けPMO<br>・大手コンテンツ会社向けPMO、他</p>
-      <h3>勤務時間：</h3>
-      <p>専門業務型裁量労働制<br>1日のみなし労働時間/10時間<br>標準的な勤務時間9:00～18:00</p>
-      <h3>休暇・休日：</h3>
-      <p>週休2日（土曜 日曜 祝日）<br>夏期休暇：3日<br>年末年始：7日<br>有給休暇：入社時に10日付与。最大20日<br>有給奨励日あり</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 喫煙スペースあり
-受動喫煙対策（詳細）： テラスでの喫煙可（客先の場合は客先の施設によります）</p>
-      <h3>福利厚生：</h3>
-      <ul><li>社会保険完備</li><li>確定拠出年金制度</li><li>健康診断全額支給</li><li>インフルエンザ予防接種代支給</li><li>スキルアップサポート（資格試験代、書籍代等）全額支給</li><li>社員同士の懇親会費用　会社負担</li><li>社員旅行（2023年、2022年宮古島。全額会社負担、家族も参加可能）</li><li>転勤：無し</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AA%E3%83%BB%E3%83%90%E3%83%BC%E3%82%B9" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社リ・バース</dd>
+
+      <dt>職種名</dt>
+      <dd>Webサービス系エンジニア・プログラマ</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都23区内</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>23区</dd>
+
+      <dt>郵便番号</dt>
+      <dd></dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>6000000 ～ 8000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>【仕事概要】<br>・案件のアサイン方法<br>社長やプロジェクトリーダーが全社員と面談を実施し、社員の経験、今後のキャリアを考え、適材適所で案件を決めています。<br><br>【案件の一部抜粋】<br>＜金融＞<br>・クレジットカードの決済代行サービスのシステム改修プロジェクト<br>・銀行構築<br>・イシュイング、アクワイアリングサービス開発<br>・インターネットバンキングシステム、他<br>＜証券＞<br>・大手証券会社向けシステムPMO<br>・デリバディブ発注システム<br>・証券ミドル、他<br>＜保険＞<br>・大手損保向け次世代システム<br>・大手生保向け横断PMO、他<br>＜物流、産業＞<br>・大手コンビニ向けPMO<br>・大手コンテンツ会社向けPMO、他</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>専門業務型裁量労働制<br>1日のみなし労働時間/10時間<br>標準的な勤務時間9:00～18:00</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>週休2日（土曜 日曜 祝日）<br>夏期休暇：3日<br>年末年始：7日<br>有給休暇：入社時に10日付与。最大20日<br>有給奨励日あり</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 喫煙スペースあり
+受動喫煙対策（詳細）： テラスでの喫煙可（客先の場合は客先の施設によります）</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>社会保険完備<br>確定拠出年金制度<br>健康診断全額支給<br>インフルエンザ予防接種代支給<br>スキルアップサポート（資格試験代、書籍代等）全額支給<br>社員同士の懇親会費用　会社負担<br>社員旅行（2023年、2022年宮古島。全額会社負担、家族も参加可能）<br>転勤：無し</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>IT・クリエイティブ</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

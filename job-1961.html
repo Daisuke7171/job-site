@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>人事</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>人事｜株式会社HRC</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "人事",
+  "description": "成長企業で叶えるキャリア！「理想の姿」を実現する人事リーダー候補募集",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社HRC"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都豊島区高田３－１４－２９ＫＤＸ高田馬場ビル５階",
+      "addressLocality": "豊島区",
+      "addressRegion": "東京都",
+      "postalCode": "1710033",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 5000000,
+      "maxValue": 6000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,138 +110,90 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "人事",
-      "description": "通販事業領域の人事責任者候補として、グループでも初の子会社人事を立ち上げ、マネジメントを担っていただける方を募集しています。\nこれまで、ネクステージグループの本社人事が主導で各子会社に対し採用や、育成研修などのサポートを行ってきました。\n\n今後の組織拡大や、組織課題の解決を見越して各子会社に人事組織を立ち上げを行っていきます。本社人事と連携をとりながら人事面、組織面から成長を内部で支え、各子会社代表と組織戦略を立案し組織を作る、経営に直結する重要なポジションの募集となります。\n\n戦略的な視点をもって、0→1で組織を作っていく過程を裁量をもって人事としてキャリアアップできるポジションでEC産業を代表するフェムケアブランドの人事に挑戦することができます。\n\n具体的には下記の業務を行います。\n\n・事業会社（通販事業）採用計画の立案、中途採用、面接実施\n・事業会社（通販事業）育成計画の立案とマネジメント\n・育成研修体系の設計、運用（オンボーディング、キャリア研修）\n・研修講師として登壇\n・本社人事との連携\n・評価制度　運用/管理\n\nこれまでのご経験、お持ちのスキルをふまえて、お任せする領域の幅や深さは調整します。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社HRC"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都豊島区高田３－１４－２９ＫＤＸ高田馬場ビル５階",
-          "addressLocality": "豊島区",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": "1710033"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 5000000,
-          "maxValue": 6000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "始業9：30 終業18：30 所定労働時間：8時間 休憩：60分",
-      "jobBenefits": [
-        "■各種社会保険完備 ( 雇用・健康・労災・厚生年金 )",
-        "■社外研修・セミナー費用全額負担（要審査）",
-        "■食事会（達成会・歓迎会・誕生日会など）",
-        "■各種イベント有り（忘年会、スポーツイベントなど）",
-        "■健康診断",
-        "■人間ドック",
-        "■婦人科健診",
-        "■インフルエンザ予防接種",
-        "■家族・扶養手当（配偶者：1万円、子1人：5000円／月）",
-        "■住宅手当（3.5万円／月）（条件：高田馬場駅より半径5km以内）",
-        "■育児支援制度有り",
-        "■交通費支給有り(限度額：月2万円)",
-        "※バス利用の場合は直線距離２km以上で支給対象になります。",
-        "受動喫煙対策: 受動喫煙対策： 喫煙スペースあり\n受動喫煙対策（詳細）： 屋外喫煙スペースあり"
-      ],
-      "occupationalCategory": "事務・オフィスワーク"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "人事",
-          "item": "https://job-site-6aa.pages.dev/job-1961.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>成長企業で叶えるキャリア！「理想の姿」を実現する人事リーダー候補募集</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>人事</h1>
-      <p><em>成長企業で叶えるキャリア！「理想の姿」を実現する人事リーダー候補募集</em></p>
-      <p><strong>会社名：</strong>株式会社HRC</p>
-      <p><strong>勤務地：</strong>東京都豊島区高田３－１４－２９ＫＤＸ高田馬場ビル５階</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 500万円〜600万円</p>
-      <h3>仕事内容：</h3>
-      <p>通販事業領域の人事責任者候補として、グループでも初の子会社人事を立ち上げ、マネジメントを担っていただける方を募集しています。<br>これまで、ネクステージグループの本社人事が主導で各子会社に対し採用や、育成研修などのサポートを行ってきました。<br><br>今後の組織拡大や、組織課題の解決を見越して各子会社に人事組織を立ち上げを行っていきます。本社人事と連携をとりながら人事面、組織面から成長を内部で支え、各子会社代表と組織戦略を立案し組織を作る、経営に直結する重要なポジションの募集となります。<br><br>戦略的な視点をもって、0→1で組織を作っていく過程を裁量をもって人事としてキャリアアップできるポジションでEC産業を代表するフェムケアブランドの人事に挑戦することができます。<br><br>具体的には下記の業務を行います。<br><br>・事業会社（通販事業）採用計画の立案、中途採用、面接実施<br>・事業会社（通販事業）育成計画の立案とマネジメント<br>・育成研修体系の設計、運用（オンボーディング、キャリア研修）<br>・研修講師として登壇<br>・本社人事との連携<br>・評価制度　運用/管理<br><br>これまでのご経験、お持ちのスキルをふまえて、お任せする領域の幅や深さは調整します。</p>
-      <h3>勤務時間：</h3>
-      <p>始業9：30<br>終業18：30<br>所定労働時間：8時間<br>休憩：60分</p>
-      <h3>休暇・休日：</h3>
-      <p>•完全週休2日制（土・日）、祝日<br>•GW休暇<br>•夏季休暇（5日）<br>•年末年始休暇（9日）<br>•有給休暇（10日～勤続年数に応じて最大20日）<br>•慶弔休暇<br>•特別休暇<br>•リフレッシュ休暇<br><br>※産休・育休取得実績あり</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 喫煙スペースあり
-受動喫煙対策（詳細）： 屋外喫煙スペースあり</p>
-      <h3>福利厚生：</h3>
-      <ul><li>•各種社会保険完備 ( 雇用・健康・労災・厚生年金 )</li><li>•社外研修・セミナー費用全額負担（要審査）</li><li>•食事会（達成会・歓迎会・誕生日会など）</li><li>•各種イベント有り（忘年会、スポーツイベントなど）</li><li>•健康診断</li><li>•人間ドック</li><li>•婦人科健診</li><li>•インフルエンザ予防接種</li><li>•家族・扶養手当（配偶者：1万円、子1人：5000円／月）</li><li>•住宅手当（3.5万円／月）（条件：高田馬場駅より半径5km以内）</li><li>•育児支援制度有り</li><li>•交通費支給有り(限度額：月2万円)</li><li>※バス利用の場合は直線距離２km以上で支給対象になります。</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEHRC" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社HRC</dd>
+
+      <dt>職種名</dt>
+      <dd>人事</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都豊島区高田３－１４－２９ＫＤＸ高田馬場ビル５階</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>豊島区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1710033</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>5000000 ～ 6000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>通販事業領域の人事責任者候補として、グループでも初の子会社人事を立ち上げ、マネジメントを担っていただける方を募集しています。<br>これまで、ネクステージグループの本社人事が主導で各子会社に対し採用や、育成研修などのサポートを行ってきました。<br><br>今後の組織拡大や、組織課題の解決を見越して各子会社に人事組織を立ち上げを行っていきます。本社人事と連携をとりながら人事面、組織面から成長を内部で支え、各子会社代表と組織戦略を立案し組織を作る、経営に直結する重要なポジションの募集となります。<br><br>戦略的な視点をもって、0→1で組織を作っていく過程を裁量をもって人事としてキャリアアップできるポジションでEC産業を代表するフェムケアブランドの人事に挑戦することができます。<br><br>具体的には下記の業務を行います。<br><br>・事業会社（通販事業）採用計画の立案、中途採用、面接実施<br>・事業会社（通販事業）育成計画の立案とマネジメント<br>・育成研修体系の設計、運用（オンボーディング、キャリア研修）<br>・研修講師として登壇<br>・本社人事との連携<br>・評価制度　運用/管理<br><br>これまでのご経験、お持ちのスキルをふまえて、お任せする領域の幅や深さは調整します。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>始業9：30<br>終業18：30<br>所定労働時間：8時間<br>休憩：60分</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>■完全週休2日制（土・日）、祝日<br>■GW休暇<br>■夏季休暇（5日）<br>■年末年始休暇（9日）<br>■有給休暇（10日～勤続年数に応じて最大20日）<br>■慶弔休暇<br>■特別休暇<br>■リフレッシュ休暇<br><br>※産休・育休取得実績あり</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 喫煙スペースあり
+受動喫煙対策（詳細）： 屋外喫煙スペースあり</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>■各種社会保険完備 ( 雇用・健康・労災・厚生年金 )<br>■社外研修・セミナー費用全額負担（要審査）<br>■食事会（達成会・歓迎会・誕生日会など）<br>■各種イベント有り（忘年会、スポーツイベントなど）<br>■健康診断<br>■人間ドック<br>■婦人科健診<br>■インフルエンザ予防接種<br>■家族・扶養手当（配偶者：1万円、子1人：5000円／月）<br>■住宅手当（3.5万円／月）（条件：高田馬場駅より半径5km以内）<br>■育児支援制度有り<br>■交通費支給有り(限度額：月2万円)<br>※バス利用の場合は直線距離２km以上で支給対象になります。</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>事務・オフィスワーク</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

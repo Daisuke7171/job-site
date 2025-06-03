@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>法人営業</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>法人営業｜株式会社いちたす</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "法人営業",
+  "description": "【未経験OK】 幼保業界×経営コンサルティング｜応募後即日中に対応！事業を牽引する次世代リーダー募集",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社いちたす"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "宮城県仙台市青葉区一番町1-1-31 山口ビル 7階",
+      "addressLocality": "仙台市",
+      "addressRegion": "東京都",
+      "postalCode": "9800811",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 4000000,
+      "maxValue": 4500000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,136 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "法人営業",
-      "description": "▎当社紹介\n〜経営者に、家族を「いちたす(1+)」〜\n\n株式会社いちたすは、幼児教育・保育事業に特化した経営コンサルティングを行う会社です。\n\n経営者の時間とお金を確保、そして価値を高めるという3つの軸に沿ったサービスを提供しています。\n1) 財務・会計顧問業務\n2) 経営コンサルティング業務\n3) 企業ブランディング業務\n\n▎お任せしたい業務内容\n経営コンサルタント\n※適正によって別ポジションのご提案をさせていただくことがございます\n　(ex:会計業務/営業事務etc…)\n\nー 具体的な仕事内容 ー\nお客様が抱えている課題を、オンライン打ち合わせを通して解決していく。\n　・収支の改善\n　・園児募集の支援\n　・職員のマネジメント\n　・行政書類作成の支援\n　・制度解説\n\n部署関係なく、全社員がサポートしますのでご安心ください♪",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社いちたす"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "宮城県仙台市青葉区一番町1-1-31 山口ビル 7階",
-          "addressLocality": "仙台市",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": "9800811"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 4000000,
-          "maxValue": 4500000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "フレックスタイム制（1日の標準労働時間：8時間、休憩：1時間） コアタイム：10:00〜16:00  ※今後リモート勤務導入予定",
-      "jobBenefits": [
-        "・社会保険完備（健康／労災／雇用／厚生年金）",
-        "・希望者にはバランスボール支給",
-        "・全職員に34インチの湾曲ディスプレイモニターの支給",
-        "・昇降式デスク（一般的な事務机よりも大きい机）",
-        "・自社専用セミナールーム(打合せスペース)",
-        "・図書祝金制度",
-        "・上司の許可があれば就業時間中にセミナーを受講出来る",
-        "・上司の許可があれば会社で図書を購入できる",
-        "・エアードッグ導入",
-        "・住宅手当：3万円(事務所から半径2キロ圏内に住所がある方)",
-        "・引越し手当：10万円(隣接している県からの引越し　※岩手県、福島県、山形県、秋田県)",
-        "　※遠方の方は金額については応相談可能",
-        "受動喫煙対策: 受動喫煙対策： 禁煙"
-      ],
-      "occupationalCategory": "営業"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "法人営業",
-          "item": "https://job-site-6aa.pages.dev/job-1091.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【未経験OK】 幼保業界×経営コンサルティング｜応募後即日中に対応！事業を牽引する次世代リーダー募集</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>法人営業</h1>
-      <p><em>【未経験OK】 幼保業界×経営コンサルティング｜応募後即日中に対応！事業を牽引する次世代リーダー募集</em></p>
-      <p><strong>会社名：</strong>株式会社いちたす</p>
-      <p><strong>勤務地：</strong>宮城県仙台市青葉区一番町1-1-31 山口ビル 7階</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 400万円〜450万円</p>
-      <h3>仕事内容：</h3>
-      <p>▎当社紹介<br>〜経営者に、家族を「いちたす(1+)」〜<br><br>株式会社いちたすは、幼児教育・保育事業に特化した経営コンサルティングを行う会社です。<br><br>経営者の時間とお金を確保、そして価値を高めるという3つの軸に沿ったサービスを提供しています。<br>1) 財務・会計顧問業務<br>2) 経営コンサルティング業務<br>3) 企業ブランディング業務<br><br>▎お任せしたい業務内容<br>経営コンサルタント<br>※適正によって別ポジションのご提案をさせていただくことがございます<br>　(ex:会計業務/営業事務etc…)<br><br>ー 具体的な仕事内容 ー<br>お客様が抱えている課題を、オンライン打ち合わせを通して解決していく。<br>　・収支の改善<br>　・園児募集の支援<br>　・職員のマネジメント<br>　・行政書類作成の支援<br>　・制度解説<br><br>部署関係なく、全社員がサポートしますのでご安心ください♪</p>
-      <h3>勤務時間：</h3>
-      <p>フレックスタイム制（1日の標準労働時間：8時間、休憩：1時間）<br>コアタイム：10:00〜16:00<br><br>※今後リモート勤務導入予定</p>
-      <h3>休暇・休日：</h3>
-      <p>・完全週休2日制（土日祝）<br>・お盆など会社が定めた日<br>・試験休暇<br>・看護休暇<br>・家族都合の急なお休みOK<br>・有給休暇（10日〜勤続年数に応じて最大20日）</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>・社会保険完備（健康／労災／雇用／厚生年金）</li><li>・希望者にはバランスボール支給</li><li>・全職員に34インチの湾曲ディスプレイモニターの支給</li><li>・昇降式デスク（一般的な事務机よりも大きい机）</li><li>・自社専用セミナールーム(打合せスペース)</li><li>・図書祝金制度</li><li>・上司の許可があれば就業時間中にセミナーを受講出来る</li><li>・上司の許可があれば会社で図書を購入できる</li><li>・エアードッグ導入</li><li>・住宅手当：3万円(事務所から半径2キロ圏内に住所がある方)</li><li>・引越し手当：10万円(隣接している県からの引越し　※岩手県、福島県、山形県、秋田県)</li><li>　※遠方の方は金額については応相談可能</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%81%84%E3%81%A1%E3%81%9F%E3%81%99" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社いちたす</dd>
+
+      <dt>職種名</dt>
+      <dd>法人営業</dd>
+
+      <dt>勤務地</dt>
+      <dd>宮城県仙台市青葉区一番町1-1-31 山口ビル 7階</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>仙台市</dd>
+
+      <dt>郵便番号</dt>
+      <dd>9800811</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>4000000 ～ 4500000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>▎当社紹介<br>〜経営者に、家族を「いちたす(1+)」〜<br><br>株式会社いちたすは、幼児教育・保育事業に特化した経営コンサルティングを行う会社です。<br><br>経営者の時間とお金を確保、そして価値を高めるという3つの軸に沿ったサービスを提供しています。<br>1) 財務・会計顧問業務<br>2) 経営コンサルティング業務<br>3) 企業ブランディング業務<br><br>▎お任せしたい業務内容<br>経営コンサルタント<br>※適正によって別ポジションのご提案をさせていただくことがございます<br>　(ex:会計業務/営業事務etc…)<br><br>ー 具体的な仕事内容 ー<br>お客様が抱えている課題を、オンライン打ち合わせを通して解決していく。<br>　・収支の改善<br>　・園児募集の支援<br>　・職員のマネジメント<br>　・行政書類作成の支援<br>　・制度解説<br><br>部署関係なく、全社員がサポートしますのでご安心ください♪</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>フレックスタイム制（1日の標準労働時間：8時間、休憩：1時間）<br>コアタイム：10:00〜16:00<br><br>※今後リモート勤務導入予定</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>・完全週休2日制（土日祝）<br>・お盆など会社が定めた日<br>・試験休暇<br>・看護休暇<br>・家族都合の急なお休みOK<br>・有給休暇（10日〜勤続年数に応じて最大20日）</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・希望者にはバランスボール支給<br>・全職員に34インチの湾曲ディスプレイモニターの支給<br>・昇降式デスク（一般的な事務机よりも大きい机）<br>・自社専用セミナールーム(打合せスペース)<br>・図書祝金制度<br>・上司の許可があれば就業時間中にセミナーを受講出来る<br>・上司の許可があれば会社で図書を購入できる<br>・エアードッグ導入<br>・住宅手当：3万円(事務所から半径2キロ圏内に住所がある方)<br>・引越し手当：10万円(隣接している県からの引越し　※岩手県、福島県、山形県、秋田県)<br>　※遠方の方は金額については応相談可能</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>営業</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

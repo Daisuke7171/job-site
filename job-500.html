@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>インフラエンジニア</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>インフラエンジニア｜株式会社アン情報サービス</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "インフラエンジニア",
+  "description": "システム運用・保守（リーダー候補）",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社アン情報サービス"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "埼玉県さいたま市中央区上落合2-3-5 アルーサＢ館 ４Ｆ（安楽亭本部内）",
+      "addressLocality": "さいたま市",
+      "addressRegion": "埼玉県",
+      "postalCode": "3380001",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 4000000,
+      "maxValue": 6000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,130 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "インフラエンジニア",
-      "description": "今回募集するアン情報サービスのシステム運用・保守チームはグループ全体のITインフラの構築・運用・保守および各システムの運用保守と品質管理を担う部署です。「安楽亭」や「ステーキのどん」など複数業態の300店舗以上に設置してあるデバイスや当社独自の開発システムに加え、既製のパッケージシステムなどが対象範囲となり幅広い業務に携わっていただきます。\n安楽亭からの業務委託の形式を取っていますが、「受注する」というよりもより良いものをともにつくっていく雰囲気があります。ユーザーである店舗・本社従業員や来店されるお客様目線での新たな気づきや改善点を集約し、積極的に関与していただきますので、自分の創意工夫を活かすことができるポジションです。\n\n具体的には\n・自社開発の店舗運営システムの設置・導入\n・配膳ロポットの店舗導入・セッティング・調整\n・サーバーやネットワークを含む本社及び店舗のITインフラの構築・運用・保守\n・店舗POSレジや業務用タブレット等の管理、IT機器の選定・購入\n・セキュリティ分析と対策の提案・実施\n・ITによる従業員の業務効率向上支援\n・協力業者（ハードウェアベンダー、通信業者など）との折衝\n\n※ITに関する様々な経験・知識が活かせる環境です。ご経験・志向に応じて担当業務を決定します。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社アン情報サービス"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "埼玉県さいたま市中央区上落合2-3-5 アルーサＢ館 ４Ｆ（安楽亭本部内）",
-          "addressLocality": "さいたま市",
-          "addressRegion": "埼玉県",
-          "addressCountry": "JP",
-          "postalCode": "3380001"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 4000000,
-          "maxValue": 6000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "専門業務型 裁量労働制 ■1 日のみなし労働時間：8時間（休憩60分） ■モデル勤務時間：8：45～17：45",
-      "jobBenefits": [
-        "◎交通費規定支給",
-        "◎社会保険完備（健康、厚生年金、雇用、労災）",
-        "◎昇給：随時（四半期評価による）",
-        "◎賞与：年2回",
-        "◎車通勤可（無料駐車場有、ガソリン代規定支給）",
-        "◎社員割引（安楽亭直営店舗を20％割引で利用できます）",
-        "受動喫煙対策: 受動喫煙対策： 禁煙"
-      ],
-      "occupationalCategory": "IT・クリエイティブ"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "インフラエンジニア",
-          "item": "https://job-site-6aa.pages.dev/job-500.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>システム運用・保守（リーダー候補）</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>インフラエンジニア</h1>
-      <p><em>システム運用・保守（リーダー候補）</em></p>
-      <p><strong>会社名：</strong>株式会社アン情報サービス</p>
-      <p><strong>勤務地：</strong>埼玉県さいたま市中央区上落合2-3-5 アルーサＢ館 ４Ｆ（安楽亭本部内）</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 400万円〜600万円</p>
-      <h3>仕事内容：</h3>
-      <p>今回募集するアン情報サービスのシステム運用・保守チームはグループ全体のITインフラの構築・運用・保守および各システムの運用保守と品質管理を担う部署です。「安楽亭」や「ステーキのどん」など複数業態の300店舗以上に設置してあるデバイスや当社独自の開発システムに加え、既製のパッケージシステムなどが対象範囲となり幅広い業務に携わっていただきます。<br>安楽亭からの業務委託の形式を取っていますが、「受注する」というよりもより良いものをともにつくっていく雰囲気があります。ユーザーである店舗・本社従業員や来店されるお客様目線での新たな気づきや改善点を集約し、積極的に関与していただきますので、自分の創意工夫を活かすことができるポジションです。<br><br>具体的には<br>・自社開発の店舗運営システムの設置・導入<br>・配膳ロポットの店舗導入・セッティング・調整<br>・サーバーやネットワークを含む本社及び店舗のITインフラの構築・運用・保守<br>・店舗POSレジや業務用タブレット等の管理、IT機器の選定・購入<br>・セキュリティ分析と対策の提案・実施<br>・ITによる従業員の業務効率向上支援<br>・協力業者（ハードウェアベンダー、通信業者など）との折衝<br><br>※ITに関する様々な経験・知識が活かせる環境です。ご経験・志向に応じて担当業務を決定します。</p>
-      <h3>勤務時間：</h3>
-      <p>専門業務型 裁量労働制<br>•1 日のみなし労働時間：8時間（休憩60分）<br>•モデル勤務時間：8：45～17：45</p>
-      <h3>休暇・休日：</h3>
-      <p>◎週休2日制（基本土日祝）※月9～10日休み<br>◎有給休暇（10〜20日）<br>◎慶弔休暇<br>◎介護休暇<br>◎産前産後休暇<br>◎育児休暇<br>◎年末年始や長期休暇も有給消化で積極的に任意取得しています。</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>◎交通費規定支給</li><li>◎社会保険完備（健康、厚生年金、雇用、労災）</li><li>◎昇給：随時（四半期評価による）</li><li>◎賞与：年2回</li><li>◎車通勤可（無料駐車場有、ガソリン代規定支給）</li><li>◎社員割引（安楽亭直営店舗を20％割引で利用できます）</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%83%B3%E6%83%85%E5%A0%B1%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社アン情報サービス</dd>
+
+      <dt>職種名</dt>
+      <dd>インフラエンジニア</dd>
+
+      <dt>勤務地</dt>
+      <dd>埼玉県さいたま市中央区上落合2-3-5 アルーサＢ館 ４Ｆ（安楽亭本部内）</dd>
+
+      <dt>都道府県</dt>
+      <dd>埼玉県</dd>
+
+      <dt>市区町村</dt>
+      <dd>さいたま市</dd>
+
+      <dt>郵便番号</dt>
+      <dd>3380001</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>4000000 ～ 6000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>今回募集するアン情報サービスのシステム運用・保守チームはグループ全体のITインフラの構築・運用・保守および各システムの運用保守と品質管理を担う部署です。「安楽亭」や「ステーキのどん」など複数業態の300店舗以上に設置してあるデバイスや当社独自の開発システムに加え、既製のパッケージシステムなどが対象範囲となり幅広い業務に携わっていただきます。<br>安楽亭からの業務委託の形式を取っていますが、「受注する」というよりもより良いものをともにつくっていく雰囲気があります。ユーザーである店舗・本社従業員や来店されるお客様目線での新たな気づきや改善点を集約し、積極的に関与していただきますので、自分の創意工夫を活かすことができるポジションです。<br><br>具体的には<br>・自社開発の店舗運営システムの設置・導入<br>・配膳ロポットの店舗導入・セッティング・調整<br>・サーバーやネットワークを含む本社及び店舗のITインフラの構築・運用・保守<br>・店舗POSレジや業務用タブレット等の管理、IT機器の選定・購入<br>・セキュリティ分析と対策の提案・実施<br>・ITによる従業員の業務効率向上支援<br>・協力業者（ハードウェアベンダー、通信業者など）との折衝<br><br>※ITに関する様々な経験・知識が活かせる環境です。ご経験・志向に応じて担当業務を決定します。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>専門業務型 裁量労働制<br>■1 日のみなし労働時間：8時間（休憩60分）<br>■モデル勤務時間：8：45～17：45</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>◎週休2日制（基本土日祝）※月9～10日休み<br>◎有給休暇（10〜20日）<br>◎慶弔休暇<br>◎介護休暇<br>◎産前産後休暇<br>◎育児休暇<br>◎年末年始や長期休暇も有給消化で積極的に任意取得しています。</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>◎交通費規定支給<br>◎社会保険完備（健康、厚生年金、雇用、労災）<br>◎昇給：随時（四半期評価による）<br>◎賞与：年2回<br>◎車通勤可（無料駐車場有、ガソリン代規定支給）<br>◎社員割引（安楽亭直営店舗を20％割引で利用できます）</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>IT・クリエイティブ</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

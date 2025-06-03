@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>法人営業</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>法人営業｜株式会社ニチエネ西日本</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "法人営業",
+  "description": "【営業（福岡）／未経験OK】ガス給湯器・エアコン等の提案営業",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社ニチエネ西日本"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "福岡県福岡市中央区那の津4-4-22",
+      "addressLocality": "福岡市",
+      "addressRegion": "福岡県",
+      "postalCode": "8100071",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 2500000,
+      "maxValue": 4000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,145 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "法人営業",
-      "description": "＜主なお仕事＞\n不動産管理会社などの法人様を中心に給湯器・エアコン等の商品買い替えやご提案をお任せします。\n\n＜具体的に＞\n「エアコンを新しいものに交換したい」「もっと省エネにつながる機器はない？」などまずはお客様からのお悩みをお伺いし、それに合う機器などをご紹介していきます。\n\n工事内容の見積もり作成や受注後のアフターフォローにも携わることができ、幅広い経験を積むことができます。\n\n＜扱う商品について＞\n給湯器、エアコン、キッチン、ユニットバスなどの住宅設備機器。\n暮らしに欠かせない商品となります。\n\n＜主な顧客／取引先＞\n不動産管理会社様、賃貸経営者様をメインに個人のご家庭も対象です。\n\n＜1日のスケジュール例＞\n09：00　出社・見積書の確認\n09：30　問い合わせ対応\n10：30　見積書の作成・工事手配\n12：00　お昼休憩\n13：00　外回り（取引先の訪問）\n17：00　帰社・明日の準備\n18：00　退社、お疲れさまでした!\n\n＜未経験でも始めやすい＞\nお客様からお問い合わせいただいた後の「反響営業」となりますので、無理な飛び込み営業やノルマなどは一切ありません。\n\nご自分のペースでお客様のニーズを１つひとつ受けとめ寄り添ったサービスをご提供できるのが魅力。\n\n経験がない方でも話をすることが好きな方やコミュニケーションを大切にできる方ならお仕事を楽しめると思います。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社ニチエネ西日本"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "福岡県福岡市中央区那の津4-4-22",
-          "addressLocality": "福岡市",
-          "addressRegion": "福岡県",
-          "addressCountry": "JP",
-          "postalCode": "8100071"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 2500000,
-          "maxValue": 4000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "9:00〜18:00 1日の労働時間：7時間30分、休憩1時間30分 1年単位の変形労働時間制（週の平均労働時間40時間以下）",
-      "jobBenefits": [
-        "・社会保険完備（健康／労災／雇用／厚生年金）",
-        "・通勤手当（上限月3万円）",
-        "・昇給年1回※会社業績による",
-        "・賞与年2回（1〜2ヶ月分 ※入社年数による）＋決算賞与",
-        "・確定拠出年金",
-        "・定年制あり（一律60歳）",
-        "・再雇用制度あり（上限65歳）",
-        "・育児休暇（取得実績あり）",
-        "・看護休暇（取得実績あり）",
-        "・介護休暇",
-        "・資格取得支援制度",
-        "・資格手当",
-        "・役職手当",
-        "・出張手当",
-        "・社宅手当（勤務地までの距離に条件あり）",
-        "・退職金制度",
-        "・社内表彰制度",
-        "・育児支援制度",
-        "・制服貸与",
-        "・各種外部研修（メーカー研修等）",
-        "・社員旅行（旅費は全額会社負担。場所は選択制：東京・大阪・福岡）",
-        "受動喫煙対策: 受動喫煙対策： 喫煙スペースあり"
-      ],
-      "occupationalCategory": "営業"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "法人営業",
-          "item": "https://job-site-6aa.pages.dev/job-1370.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【営業（福岡）／未経験OK】ガス給湯器・エアコン等の提案営業</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>法人営業</h1>
-      <p><em>【営業（福岡）／未経験OK】ガス給湯器・エアコン等の提案営業</em></p>
-      <p><strong>会社名：</strong>株式会社ニチエネ西日本</p>
-      <p><strong>勤務地：</strong>福岡県福岡市中央区那の津4-4-22</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 250万円〜400万円</p>
-      <h3>仕事内容：</h3>
-      <p>＜主なお仕事＞<br>不動産管理会社などの法人様を中心に給湯器・エアコン等の商品買い替えやご提案をお任せします。<br><br>＜具体的に＞<br>「エアコンを新しいものに交換したい」「もっと省エネにつながる機器はない？」などまずはお客様からのお悩みをお伺いし、それに合う機器などをご紹介していきます。<br><br>工事内容の見積もり作成や受注後のアフターフォローにも携わることができ、幅広い経験を積むことができます。<br><br>＜扱う商品について＞<br>給湯器、エアコン、キッチン、ユニットバスなどの住宅設備機器。<br>暮らしに欠かせない商品となります。<br><br>＜主な顧客／取引先＞<br>不動産管理会社様、賃貸経営者様をメインに個人のご家庭も対象です。<br><br>＜1日のスケジュール例＞<br>09：00　出社・見積書の確認<br>09：30　問い合わせ対応<br>10：30　見積書の作成・工事手配<br>12：00　お昼休憩<br>13：00　外回り（取引先の訪問）<br>17：00　帰社・明日の準備<br>18：00　退社、お疲れさまでした!<br><br>＜未経験でも始めやすい＞<br>お客様からお問い合わせいただいた後の「反響営業」となりますので、無理な飛び込み営業やノルマなどは一切ありません。<br><br>ご自分のペースでお客様のニーズを１つひとつ受けとめ寄り添ったサービスをご提供できるのが魅力。<br><br>経験がない方でも話をすることが好きな方やコミュニケーションを大切にできる方ならお仕事を楽しめると思います。</p>
-      <h3>勤務時間：</h3>
-      <p>9:00〜18:00<br>1日の労働時間：7時間30分、休憩1時間30分<br>1年単位の変形労働時間制（週の平均労働時間40時間以下）</p>
-      <h3>休暇・休日：</h3>
-      <p>・シフト制（月7〜8日休み）<br>※1ヶ月ごとにシフト表により決定。土日のどちらかに出勤するパターンが多いですが、希望休可能です。<br>・春季休暇（3日）<br>・年末年始休暇（4日）<br>・誕生日休暇（1日）<br>・新人特別休暇（入社2か月後に2日付与。有給休暇付与の前日まで利用可能）<br>・有給休暇（入社半年後に10日付与〜勤続年数に応じて最大20日）<br>・リフレッシュ休暇5日（入社10年目ごとに支給）</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 喫煙スペースあり</p>
-      <h3>福利厚生：</h3>
-      <ul><li>・社会保険完備（健康／労災／雇用／厚生年金）</li><li>・通勤手当（上限月3万円）</li><li>・昇給年1回※会社業績による</li><li>・賞与年2回（1〜2ヶ月分 ※入社年数による）＋決算賞与</li><li>・確定拠出年金</li><li>・定年制あり（一律60歳）</li><li>・再雇用制度あり（上限65歳）</li><li>・育児休暇（取得実績あり）</li><li>・看護休暇（取得実績あり）</li><li>・介護休暇</li><li>・資格取得支援制度</li><li>・資格手当</li><li>・役職手当</li><li>・出張手当</li><li>・社宅手当（勤務地までの距離に条件あり）</li><li>・退職金制度</li><li>・社内表彰制度</li><li>・育児支援制度</li><li>・制服貸与</li><li>・各種外部研修（メーカー研修等）</li><li>・社員旅行（旅費は全額会社負担。場所は選択制：東京・大阪・福岡）</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%8B%E3%83%81%E3%82%A8%E3%83%8D%E8%A5%BF%E6%97%A5%E6%9C%AC" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社ニチエネ西日本</dd>
+
+      <dt>職種名</dt>
+      <dd>法人営業</dd>
+
+      <dt>勤務地</dt>
+      <dd>福岡県福岡市中央区那の津4-4-22</dd>
+
+      <dt>都道府県</dt>
+      <dd>福岡県</dd>
+
+      <dt>市区町村</dt>
+      <dd>福岡市</dd>
+
+      <dt>郵便番号</dt>
+      <dd>8100071</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>2500000 ～ 4000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>＜主なお仕事＞<br>不動産管理会社などの法人様を中心に給湯器・エアコン等の商品買い替えやご提案をお任せします。<br><br>＜具体的に＞<br>「エアコンを新しいものに交換したい」「もっと省エネにつながる機器はない？」などまずはお客様からのお悩みをお伺いし、それに合う機器などをご紹介していきます。<br><br>工事内容の見積もり作成や受注後のアフターフォローにも携わることができ、幅広い経験を積むことができます。<br><br>＜扱う商品について＞<br>給湯器、エアコン、キッチン、ユニットバスなどの住宅設備機器。<br>暮らしに欠かせない商品となります。<br><br>＜主な顧客／取引先＞<br>不動産管理会社様、賃貸経営者様をメインに個人のご家庭も対象です。<br><br>＜1日のスケジュール例＞<br>09：00　出社・見積書の確認<br>09：30　問い合わせ対応<br>10：30　見積書の作成・工事手配<br>12：00　お昼休憩<br>13：00　外回り（取引先の訪問）<br>17：00　帰社・明日の準備<br>18：00　退社、お疲れさまでした!<br><br>＜未経験でも始めやすい＞<br>お客様からお問い合わせいただいた後の「反響営業」となりますので、無理な飛び込み営業やノルマなどは一切ありません。<br><br>ご自分のペースでお客様のニーズを１つひとつ受けとめ寄り添ったサービスをご提供できるのが魅力。<br><br>経験がない方でも話をすることが好きな方やコミュニケーションを大切にできる方ならお仕事を楽しめると思います。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>9:00〜18:00<br>1日の労働時間：7時間30分、休憩1時間30分<br>1年単位の変形労働時間制（週の平均労働時間40時間以下）</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>・シフト制（月7〜8日休み）<br>※1ヶ月ごとにシフト表により決定。土日のどちらかに出勤するパターンが多いですが、希望休可能です。<br>・春季休暇（3日）<br>・年末年始休暇（4日）<br>・誕生日休暇（1日）<br>・新人特別休暇（入社2か月後に2日付与。有給休暇付与の前日まで利用可能）<br>・有給休暇（入社半年後に10日付与〜勤続年数に応じて最大20日）<br>・リフレッシュ休暇5日（入社10年目ごとに支給）</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・通勤手当（上限月3万円）<br>・昇給年1回※会社業績による<br>・賞与年2回（1〜2ヶ月分 ※入社年数による）＋決算賞与<br>・確定拠出年金<br>・定年制あり（一律60歳）<br>・再雇用制度あり（上限65歳）<br>・育児休暇（取得実績あり）<br>・看護休暇（取得実績あり）<br>・介護休暇<br>・資格取得支援制度<br>・資格手当<br>・役職手当<br>・出張手当<br>・社宅手当（勤務地までの距離に条件あり）<br>・退職金制度<br>・社内表彰制度<br>・育児支援制度<br>・制服貸与<br>・各種外部研修（メーカー研修等）<br>・社員旅行（旅費は全額会社負担。場所は選択制：東京・大阪・福岡）</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>営業</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

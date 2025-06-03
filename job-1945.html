@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>業務系アプリケーションエンジニア・プログラマ</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>業務系アプリケーションエンジニア・プログラマ｜シーシーエー株式会社</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "業務系アプリケーションエンジニア・プログラマ",
+  "description": "【プログラマ・経験1年未満の方大歓迎】ハイブリットワーク可★完全週休2日",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "シーシーエー株式会社"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東京都大田区山王2-8-26　東辰ビル 2F",
+      "addressLocality": "大田区",
+      "addressRegion": "東京都",
+      "postalCode": "1430023",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 5000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,139 +110,90 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "業務系アプリケーションエンジニア・プログラマ",
-      "description": "業務系のwebシステムのフロントからバックシステムの開発及び保守を行って頂きます。\n\n【仕事内容】\nプログラマとして、下記の工程作業を行っていただきます。\n・要件定義\n・基本設計\n・詳細設計　←△\n・開発（コーディング）←〇\n・単体テスト、結合テスト←〇\n・総合テスト←△\n・ユーザーテスト　←△\n・保守、その他　←△\n\n基本的には顧客先での常駐勤務となります。\n経験に応じた工程作業を行い、状況を見ながらスキルアップをして行けるように相談しながら考えて行きます。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "シーシーエー株式会社"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "東京都大田区山王2-8-26　東辰ビル 2F",
-          "addressLocality": "大田区",
-          "addressRegion": "東京都",
-          "addressCountry": "JP",
-          "postalCode": "1430023"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3000000,
-          "maxValue": 5000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "9:00〜18:00 所定労働時間8時間、休憩1時間",
-      "jobBenefits": [
-        "■昇給：年2回（4・10月）\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
-        "■各種社会保険完備",
-        "ＩＴＳ健康保険、雇用保険、労災など",
-        "■イベント（社員旅行、バーベキュー、ボーリング大会、忘年会、新年会、社員全体会議）",
-        "■入院特約（社員全員対象）",
-        "　※入院に掛かった費用の30万円まで保証",
-        "■企業型確定拠出年金加入",
-        "■健康サポートプログラム導入（社員の健康管理プログラム）",
-        "【教育制度】",
-        "・OJT",
-        "・外部講習会：新卒、未経験など（講習のタイミングによる）",
-        "・Eラーニング",
-        "　①初心者～中級者向け（初級～中級。言語、環境、DBの講習）",
-        "　②スキルアップ（中級～上級）",
-        "受動喫煙対策: 受動喫煙対策： 禁煙\n受動喫煙対策（詳細）： 客先常駐時は顧客先に順ずる（主な顧客先は禁煙）"
-      ],
-      "occupationalCategory": "IT・クリエイティブ"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "業務系アプリケーションエンジニア・プログラマ",
-          "item": "https://job-site-6aa.pages.dev/job-1945.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>【プログラマ・経験1年未満の方大歓迎】ハイブリットワーク可★完全週休2日</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>業務系アプリケーションエンジニア・プログラマ</h1>
-      <p><em>【プログラマ・経験1年未満の方大歓迎】ハイブリットワーク可★完全週休2日</em></p>
-      <p><strong>会社名：</strong>シーシーエー株式会社</p>
-      <p><strong>勤務地：</strong>東京都大田区山王2-8-26　東辰ビル 2F</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 300万円〜500万円</p>
-      <h3>仕事内容：</h3>
-      <p>業務系のwebシステムのフロントからバックシステムの開発及び保守を行って頂きます。<br><br>【仕事内容】<br>プログラマとして、下記の工程作業を行っていただきます。<br>・要件定義<br>・基本設計<br>・詳細設計　←△<br>・開発（コーディング）←〇<br>・単体テスト、結合テスト←〇<br>・総合テスト←△<br>・ユーザーテスト　←△<br>・保守、その他　←△<br><br>基本的には顧客先での常駐勤務となります。<br>経験に応じた工程作業を行い、状況を見ながらスキルアップをして行けるように相談しながら考えて行きます。</p>
-      <h3>勤務時間：</h3>
-      <p>9:00〜18:00<br>所定労働時間8時間、休憩1時間</p>
-      <h3>休暇・休日：</h3>
-      <p>•完全週休2日制（土・日）<br>•祝日<br>•年末年始<br>•夏期休暇（3日）<br>•ゴールデンウィーク<br>•年次有給休暇（入社半年後に10日付与。最大20日）</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙
-受動喫煙対策（詳細）： 客先常駐時は顧客先に順ずる（主な顧客先は禁煙）</p>
-      <h3>福利厚生：</h3>
-      <ul><li>•昇給：年2回（4・10月）																					</li><li>•各種社会保険完備</li><li>ＩＴＳ健康保険、雇用保険、労災など</li><li>•イベント（社員旅行、バーベキュー、ボーリング大会、忘年会、新年会、社員全体会議）</li><li>•入院特約（社員全員対象）</li><li>　※入院に掛かった費用の30万円まで保証</li><li>•企業型確定拠出年金加入</li><li>•健康サポートプログラム導入（社員の健康管理プログラム）</li><li>【教育制度】</li><li>・OJT</li><li>・外部講習会：新卒、未経験など（講習のタイミングによる）</li><li>・Eラーニング</li><li>　①初心者～中級者向け（初級～中級。言語、環境、DBの講習）</li><li>　②スキルアップ（中級～上級）</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E3%82%B7%E3%83%BC%E3%82%B7%E3%83%BC%E3%82%A8%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>シーシーエー株式会社</dd>
+
+      <dt>職種名</dt>
+      <dd>業務系アプリケーションエンジニア・プログラマ</dd>
+
+      <dt>勤務地</dt>
+      <dd>東京都大田区山王2-8-26　東辰ビル 2F</dd>
+
+      <dt>都道府県</dt>
+      <dd>東京都</dd>
+
+      <dt>市区町村</dt>
+      <dd>大田区</dd>
+
+      <dt>郵便番号</dt>
+      <dd>1430023</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3000000 ～ 5000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>業務系のwebシステムのフロントからバックシステムの開発及び保守を行って頂きます。<br><br>【仕事内容】<br>プログラマとして、下記の工程作業を行っていただきます。<br>・要件定義<br>・基本設計<br>・詳細設計　←△<br>・開発（コーディング）←〇<br>・単体テスト、結合テスト←〇<br>・総合テスト←△<br>・ユーザーテスト　←△<br>・保守、その他　←△<br><br>基本的には顧客先での常駐勤務となります。<br>経験に応じた工程作業を行い、状況を見ながらスキルアップをして行けるように相談しながら考えて行きます。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>9:00〜18:00<br>所定労働時間8時間、休憩1時間</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>■完全週休2日制（土・日）<br>■祝日<br>■年末年始<br>■夏期休暇（3日）<br>■ゴールデンウィーク<br>■年次有給休暇（入社半年後に10日付与。最大20日）</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙
+受動喫煙対策（詳細）： 客先常駐時は顧客先に順ずる（主な顧客先は禁煙）</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>■昇給：年2回（4・10月）																					<br>■各種社会保険完備<br>ＩＴＳ健康保険、雇用保険、労災など<br>■イベント（社員旅行、バーベキュー、ボーリング大会、忘年会、新年会、社員全体会議）<br>■入院特約（社員全員対象）<br>　※入院に掛かった費用の30万円まで保証<br>■企業型確定拠出年金加入<br>■健康サポートプログラム導入（社員の健康管理プログラム）<br>【教育制度】<br>・OJT<br>・外部講習会：新卒、未経験など（講習のタイミングによる）<br>・Eラーニング<br>　①初心者～中級者向け（初級～中級。言語、環境、DBの講習）<br>　②スキルアップ（中級～上級）</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>IT・クリエイティブ</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>

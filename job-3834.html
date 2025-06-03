@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="cztVUkzWJp_BG3akYNkTIRs-0tsNl3QNdf4AXxbIzIw" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Webサービス系エンジニア・プログラマ</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Webサービス系エンジニア・プログラマ｜株式会社エヌエス・フューチャー</title>
+
+  <!-- JSON-LD（構造化データ） -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "Webサービス系エンジニア・プログラマ",
+  "description": "★愛知県★運用・監視業務　3勤3休　シフト制　未経験可「エンジニアになりたい」それだけでOKです♪",
+  "datePosted": "2025-06-03",
+  "validThrough": "",
+  "employmentType": "正社員",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "株式会社エヌエス・フューチャー"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "愛知県名古屋市中区丸の内一丁目",
+      "addressLocality": "名古屋市",
+      "addressRegion": "宮城県",
+      "postalCode": "4600002",
+      "addressCountry": "JP"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "JPY",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 3000000,
+      "maxValue": 4000000,
+      "unitText": "YEAR"
+    }
+  }
+}
+  </script>
+
   <style>
-    /* ─── 全体 ─── */
+    /* ─── 全体のスタイル ─── */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
       margin: 0;
       padding: 0;
     }
-
-    /* ─── ヘッダー／バナー ─── */
     header {
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .banner__inner {
+    .banner {
       max-width: 720px;
       margin: 0 auto;
+      padding: 1em;
       display: flex;
       align-items: center;
-      padding: 1em;
+      justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      color: #0073aa;          /* SVGにfill="currentColor" のものを使う */
-      flex-shrink: 0;
-    }
-    .banner__text h1 {
+    .banner h1 {
       margin: 0;
-      font-size: 1.5em;
-      color: #0073aa;
-    }
-    .banner__text .tagline {
-      margin: 0.2em 0 0;
-      font-size: 0.95em;
+      font-size: 1.4em;
       color: #0073aa;
     }
 
-    /* ─── モバイル調整 ─── */
-    @media (max-width: 600px) {
-      .banner__inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .banner__icon {
-        margin: 0 0 0.5em;
-      }
-      .banner__text h1 {
-        font-size: 1.2em;
-      }
-      .banner__text .tagline {
-        font-size: 0.85em;
-      }
-    }
-
-    /* ─── 本文コンテナ ─── */
+    /* ─── コンテンツ領域 ─── */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
       padding: 0 1em;
-    }
-    /* ─── 求人詳細ブロック ─── */
-    section.job-detail {
-      background: #ffffff;
-      padding: 1.5em;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    section.job-detail h1 {
-      margin-top: 0;
-      font-size: 1.4em;
+    .container h2 {
+      font-size: 1.3em;
       color: #0073aa;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #0073aa;
+      padding-bottom: 0.2em;
     }
-    section.job-detail p {
-      margin: 0.6em 0;
-      color: #555;
+    dl.info {
+      margin: 0;
+      padding: 0;
+    }
+    dl dt {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    dl dd {
+      margin: 0.4em 0 0;
       line-height: 1.6;
     }
-    section.job-detail h3 {
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    .form-button {
+
+    /* 応募ボタン */
+    .apply-button {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 1.2em;
       background: #0073aa;
       color: #fff;
       padding: 0.6em 1.2em;
@@ -98,135 +110,89 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .form-button:hover {
+    .apply-button:hover {
       background: #005f8d;
     }
-  </style>
-  
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "JobPosting",
-      "title": "Webサービス系エンジニア・プログラマ",
-      "description": "基盤システムの運用監視業務となります。\n24時間365日体制にて監視、アラート・障害に対するログ解析、調査から適切なエスカレーション。その他、顧客からの問合せ対応や日次定例業務等、手順書が整備されている運用保守業務となります。\n今後も成長が見込まれるデータセンター業界での仕事となり、キャリア形成において将来性の安定も見込めます。\nここを礎にして、エンジニアになりたい方大募集です。",
-      "datePosted": "2025-06-02",
-      "validThrough": "2025-07-02T23:59",
-      "employmentType": "FULL_TIME",
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "株式会社エヌエス・フューチャー"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "愛知県名古屋市中区丸の内一丁目",
-          "addressLocality": "名古屋市",
-          "addressRegion": "宮城県",
-          "addressCountry": "JP",
-          "postalCode": "4600002"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "JPY",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 3000000,
-          "maxValue": 4000000,
-          "unitText": "YEAR"
-        }
-      },
-      "workHours": "2交代制 日勤　9：00～20：00　　休憩1時間00分 夜勤　19：30～翌9：30　休憩4時間00分 シフト制",
-      "jobBenefits": [
-        "〇昇給年2回",
-        "〇各種社会保険完備（雇用・労災・厚生年金）",
-        "〇交通費全額支給",
-        "〇資格手当",
-        "〇時間外手当（全額）",
-        "〇住宅手当（月1～2万円）",
-        "〇扶養手当（配偶者月1万円/子1人5千円）",
-        "〇職能手当",
-        "〇技術手当",
-        "〇業務手当",
-        "〇資格取得支援制度",
-        "受動喫煙対策: 受動喫煙対策： 禁煙"
-      ],
-      "occupationalCategory": "IT・クリエイティブ"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "トップページ",
-          "item": "https://job-site-6aa.pages.dev/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "求人一覧",
-          "item": "https://job-site-6aa.pages.dev/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Webサービス系エンジニア・プログラマ",
-          "item": "https://job-site-6aa.pages.dev/job-3834.html"
-        }
-      ]
-    }
-  ]
-}
-  </script>
 
+    /* モバイル時の調整 */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.8em;
+        margin: 1em auto;
+      }
+      .banner h1 {
+        font-size: 1.2em;
+      }
+      dl dt, dl dd {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <div class="banner__inner">
-      <img
-        class="banner__icon"
-        src="assets/handshake-icon.svg"
-        alt="握手マーク ロゴ"
-      >
-      <div class="banner__text">
-        <h1>日本転職サポートセンター</h1>
-        <p class="tagline">
-          あなたの新しいキャリアを、私たちが全力サポートします
-        </p>
-      </div>
+    <div class="banner">
+      <h1>★愛知県★運用・監視業務　3勤3休　シフト制　未経験可「エンジニアになりたい」それだけでOKです♪</h1>
     </div>
   </header>
 
   <div class="container">
-    <section class="job-detail">
-      <h1>Webサービス系エンジニア・プログラマ</h1>
-      <p><em>★愛知県★運用・監視業務　3勤3休　シフト制　未経験可「エンジニアになりたい」それだけでOKです♪</em></p>
-      <p><strong>会社名：</strong>株式会社エヌエス・フューチャー</p>
-      <p><strong>勤務地：</strong>愛知県名古屋市中区丸の内一丁目</p>
-      <p><strong>雇用形態：</strong>FULL_TIME</p>
-      <p><strong>給与：</strong>年収 300万円〜400万円</p>
-      <h3>仕事内容：</h3>
-      <p>基盤システムの運用監視業務となります。<br>24時間365日体制にて監視、アラート・障害に対するログ解析、調査から適切なエスカレーション。その他、顧客からの問合せ対応や日次定例業務等、手順書が整備されている運用保守業務となります。<br>今後も成長が見込まれるデータセンター業界での仕事となり、キャリア形成において将来性の安定も見込めます。<br>ここを礎にして、エンジニアになりたい方大募集です。</p>
-      <h3>勤務時間：</h3>
-      <p>2交代制<br>日勤　9：00～20：00　　休憩1時間00分<br>夜勤　19：30～翌9：30　休憩4時間00分<br>シフト制</p>
-      <h3>休暇・休日：</h3>
-      <p>〇シフト制（3勤3休）<br>〇有給休暇（入社6ヶ月後から10日付与。最大20日）<br>〇GW休暇<br>〇夏季休暇<br>〇年末年始<br>〇慶弔休暇<br>〇産休・育休</p>
-      <h3>受動喫煙対策：</h3>
-      <p>受動喫煙対策： 禁煙</p>
-      <h3>福利厚生：</h3>
-      <ul><li>〇昇給年2回</li><li>〇各種社会保険完備（雇用・労災・厚生年金）</li><li>〇交通費全額支給</li><li>〇資格手当</li><li>〇時間外手当（全額）</li><li>〇住宅手当（月1～2万円）</li><li>〇扶養手当（配偶者月1万円/子1人5千円）</li><li>〇職能手当</li><li>〇技術手当</li><li>〇業務手当</li><li>〇資格取得支援制度</li></ul>
-      <p>
-        <a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform??usp=header&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%83%8C%E3%82%A8%E3%82%B9%E3%83%BB%E3%83%95%E3%83%A5%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC" target="_blank">
-          📝 この求人に応募する
-        </a>
-      </p>
-    </section>
+    <h2>求人詳細</h2>
+    <dl class="info">
+      <dt>会社名</dt>
+      <dd>株式会社エヌエス・フューチャー</dd>
+
+      <dt>職種名</dt>
+      <dd>Webサービス系エンジニア・プログラマ</dd>
+
+      <dt>勤務地</dt>
+      <dd>愛知県名古屋市中区丸の内一丁目</dd>
+
+      <dt>都道府県</dt>
+      <dd>宮城県</dd>
+
+      <dt>市区町村</dt>
+      <dd>名古屋市</dd>
+
+      <dt>郵便番号</dt>
+      <dd>4600002</dd>
+
+      <dt>雇用形態</dt>
+      <dd>正社員</dd>
+
+      <dt>給与</dt>
+      <dd>3000000 ～ 4000000 (年収)</dd>
+
+      <dt>仕事内容</dt>
+      <dd>基盤システムの運用監視業務となります。<br>24時間365日体制にて監視、アラート・障害に対するログ解析、調査から適切なエスカレーション。その他、顧客からの問合せ対応や日次定例業務等、手順書が整備されている運用保守業務となります。<br>今後も成長が見込まれるデータセンター業界での仕事となり、キャリア形成において将来性の安定も見込めます。<br>ここを礎にして、エンジニアになりたい方大募集です。</dd>
+
+      <dt>勤務時間・曜日</dt>
+      <dd>2交代制<br>日勤　9：00～20：00　　休憩1時間00分<br>夜勤　19：30～翌9：30　休憩4時間00分<br>シフト制</dd>
+
+      <dt>休暇・休日</dt>
+      <dd>〇シフト制（3勤3休）<br>〇有給休暇（入社6ヶ月後から10日付与。最大20日）<br>〇GW休暇<br>〇夏季休暇<br>〇年末年始<br>〇慶弔休暇<br>〇産休・育休</dd>
+
+      <dt>受動喫煙対策</dt>
+      <dd>受動喫煙対策： 禁煙</dd>
+
+      <dt>待遇・福利厚生</dt>
+      <dd>〇昇給年2回<br>〇各種社会保険完備（雇用・労災・厚生年金）<br>〇交通費全額支給<br>〇資格手当<br>〇時間外手当（全額）<br>〇住宅手当（月1～2万円）<br>〇扶養手当（配偶者月1万円/子1人5千円）<br>〇職能手当<br>〇技術手当<br>〇業務手当<br>〇資格取得支援制度</dd>
+
+      <dt>職種カテゴリー</dt>
+      <dd>IT・クリエイティブ</dd>
+
+      <!-- 掲載画像があれば表示 -->
+      
+
+      <!-- 応募リンクがあればボタンを表示 -->
+      
+    </dl>
+
+    <!-- ページ下部に一覧ページへ戻るリンク -->
+    <p style="text-align:center; margin: 2em 0;">
+      <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">← 求人一覧に戻る</a>
+    </p>
   </div>
 </body>
 </html>
