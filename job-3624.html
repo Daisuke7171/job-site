@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜STA株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【未経験可！残業ほとんどなし】土日祝休みの人気事務職です！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>STA株式会社</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市福島区福島1-4-4　セントラル70ビル2A</dd>
+
       <dt>都道府県</dt>
       <dd>愛知県</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5530003</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2000000 ～ 3000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>皆さんにびっくりされるほど多くの事業を展開している当社。<br><br>・梅田ではあの【Repezen Foxx】のFC店となるバーを運営！<br>・日常でも使えるゴルフウェアのアパレルを展開！<br>関西を中心にさまざまな事業を行なっています♪<br><br>年齢層は20代～40代まで幅広く、過去に経験していた職種もバラバラ！<br>当社は2023年11月から人材派遣事業を開始しましたが、2024年8月時点で離職率は0％を誇っています。<br>アフターフォローを重視しており、社内イベントの開催、定期訪問、三者面談などを行っています。<br><br>今回、あなたにお任せしたいお仕事は顧客先での【事務職】のお仕事。<br>パソコンを使用しての書類作成や電話対応がメインのお仕事となります。 <br>育成枠としての採用なので、完全未経験からのチャレンジOK！事務職経験は問いません！<br><br>【具体的な業務内容】<br>・PCでのデータ入力 <br>・各種資料作成 <br>・受発注業務のサポート <br>・伝票整理、経理補助 等 <br><br>上記以外にも、進捗に合わせてオフィスワークにチャレンジしていただきます。<br><br>できることを一つずつ増やしていけば全く問題ないので、少しずつ前進していきましょう！<br><br>【求める人物像】<br>完全人柄重視の採用です！<br>「チャレンジしてみたい」<br>「一から新しい仕事に取り組んでみたい」<br>など、前向きに取り組みたい方は歓迎です！<br><br>【こんな方は特に歓迎です♪】<br>・明るく円滑なコミュニケーションを図れる方<br>・協調性がある方<br>・自ら学ぶ意欲のある方<br><br>将来的にはキャリアチェンジも可能！<br>長期的に活躍いただけます！<br><br>詳しい仕事内容は、面接時にも説明しますので気軽にご応募ください♪<br><br><br>【研修】<br>・配属前：研修期間あり。<br>・配属後：テキストの支給により学習していただきます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00<br>8:00〜17:00<br><br>所定労働時間8時間<br>休憩12:00〜13:00（1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休二日制（土日祝）<br>年末年始休暇<br>夏季休暇<br>産前・産後休暇<br>育児休暇<br>有給休暇（半年後に10日支給〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（健康／厚生年金／雇用／労災）<br>評価により昇給あり<br>交通費全額支給<br>職務手当　マネージャー職　50,000円／月<br>　　　　　リーダー職　　　20,000円／月<br>社内ベンチャー制度<br>当社運営民泊施設　社員割引<br>・totonohouse 一泊無料／年<br>・totonohouse付属テントサウナ　無料<br>当社運営飲食店舗 社員割引<br>・BARエルフ梅田店 3杯無料（月2回まで）<br>・BAR Red Canyon 1杯無料（月2回まで）<br>・coco shrimp（沖縄） 1杯無料<br>・鶏そばルカライフ（水戸） 1杯無料<br>住宅補助（条件あり）<br>資格取得支援制度<br>　・弊社支給教材費控除<br>　・試験料無料（同試験一回まで）<br>フリードリンク制度<br>弊社ブランドLF.OB　一着無料</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=STA%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

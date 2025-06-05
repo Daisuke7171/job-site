@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜株式会社オンテックス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【サポート事務 】未経験OK★9時〜17時勤務・残業ほぼなし★外壁塗装のトップブランド企業</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社オンテックス</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区北新宿1－1－19　ダイヤフゲンビル7階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1690074</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 3000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>1984年の創業以来、住宅リフォームの先進的企業として業界をリードしている当社。今回はさらなる成長に向け、会社を支える事務スタッフを募集いたします。経験や知識は一切問いません。人と接することが好きな方や、人を支える仕事に携わりたい方を、幅広く歓迎します！<br><br>【仕事内容】<br>当社をオフィスから支える、事務のお仕事をお任せします。<br><br>【具体的には】<br>・Word、Excelを使用したデータ入力<br>・管理業務及び来客対応、電話対応<br>・社内文書管理<br>・郵便物の処理<br>・その他庶務業務 など<br>※上記内容から少しずつできる領域を増やしていただきます。<br><br>【入社後の流れ……】<br>イチから先輩スタッフが業務について教えてくれる体制です。少人数でメンバー同士の距離も近く、話しやすい雰囲気。分からないことがあればなんでも聞いてくださいね！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00～17：00<br>所定労働時間7時間、休憩時間1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土日祝休み）<br>年末年始休暇<br>有給休暇（10日～勤続年数に応じて最大20日）<br>慶弔休暇<br>GW休暇<br>夏期休暇<br>産前産後休暇<br>育児休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>研修あり<br>給与改定 年3回<br>交通費支給(上限5万円)<br>福利厚生施設利用制度<br>家族手当<br>結婚祝い金<br>出産祝い金<br>財形貯蓄制度<br>従業員特別価格制度<br>チームリクルーティング制度<br>定期健康診断<br>※家族手当は入社3年経過後、18歳未満の子ども1名につき5000円／月を支給いたします。<br><br>※勤務地を問わず車・バイク通勤不可。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%AA%E3%83%B3%E3%83%86%E3%83%83%E3%82%AF%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
