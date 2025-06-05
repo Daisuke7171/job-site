@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>サービスエンジニア・サポートエンジニア｜株式会社オール</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【関東】大型液晶〈デジタルビジョン〉の設置施工スタッフ急募！【フィールドエンジニア】</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社オール</dd>
+
       <dt>職種名</dt>
       <dd>サービスエンジニア・サポートエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>埼玉県三郷市高州2-99</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>三郷市</dd>
+
       <dt>郵便番号</dt>
       <dd>3410037</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>＜街にあふれている、液晶広告の大注目業界に携わるチャンス！＞<br><br>大型液晶〈デジタルビジョン〉を取り扱う、<br>フィールドエンジニアへチャレンジしてみませんか？<br><br>街角やショッピングモールに流れている、液晶広告に目を止めたことはありませんか？<br>そんな、生活の中に点在しているLEDビジョン・液晶ディスプレイに携わることができるお仕事です！<br><br>……フィールドエンジニアとは？<br>　＊機器やシステムの導入先へ訪問し、製品の設置やメンテナンスなどに対応する施工者のことを指します＊<br>難しいシステムはわからない、学んだことがない……<br>気になるけど、何をするのかイメージが湧かない……<br>そんな方でも一度、お問い合わせください！<br>未経験OK、技術を一から学んで身につけることができます。<br>（もちろん経験者の方は即戦力として大・大歓迎です！）<br><br>日本で少数のLEDメーカーとして注目される当社では<br>製造工場・営業・エンジニア、allメンバーが一丸となり、<br>『お客様のニーズに沿った提案』、『納得いく表現』、『長く愛されるように』<br>受注から導入後のメンテナンスを含め一貫した対応を行っております。<br>案件によっては打ち合わせ段階から参加ができるため、設置されるまでの一連の業務に携わることが可能です。<br><br>【メインで担当してもらう業務 】<br>LEDビジョン、液晶ディスプレイなどAV機器を設置納品するまでの各種作業<br>また、システムが不具合を起こした際などの都度メンテナンス対応など<br>・施工：検品／仮組、機材の設置や配線<br>・設置：搬入、試運転<br>・保守：点検や部品の交換・修理<br>・定期点検、障害対応<br>・不具合時の電話応対などの事務作業</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>フレックスタイム制（1日の標準労働時間：7時間45分、休憩45分）<br>コアタイムなし<br><br>深夜残業、休日出勤があった場合には代休の取得をしていただきます。</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休二日制（土・日）<br>祝日<br>年末年始休暇<br>夏季休暇（3～5日）<br>GW<br>有給休暇（10日〜勤続年数に応じて最大20日）<br>慶弔休暇<br>特別休暇（出産・結婚）<br>※5日以上の連続休暇も取得可能です！</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 喫煙目的ルームあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>営業・通勤交通費全額支給<br>役職手当<br>出張手当<br>時間外手当（固定残業代の超過分を支給）<br>iPhone・PC貸与<br>資格取得支援制度<br>定期健康診断<br>ベネフィット・ワン（社員向け優待・割引）<br>出産手当<br>結婚手当</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%AA%E3%83%BC%E3%83%AB" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

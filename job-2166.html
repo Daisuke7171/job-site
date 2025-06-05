@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>運輸・配送・倉庫関連｜株式会社ＴＳロジテック（TS Logitech Co. Ltd）</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>物流センタースタッフ募集【東証プライム上場スーパーの100％子会社】</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ＴＳロジテック（TS Logitech Co. Ltd）</dd>
+
       <dt>職種名</dt>
       <dd>運輸・配送・倉庫関連</dd>
+
       <dt>勤務地</dt>
       <dd>茨城県桜川市上野原地新田291-1</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>桜川市</dd>
+
       <dt>郵便番号</dt>
       <dd>3091226</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>食品スーパーマーケットを運営する株式会社エコス。その100％子会社として発足した当社にて、物流センタースタッフとして下記の業務をお任せいたします。<br>・商品仕分け作業<br>・商品入荷受付、検品作業<br>・倉庫管理システム等入力作業<br>・伝票事務<br>・配送管理業務<br>・清掃作業<br>・商品、備品発注業務<br>・シフト管理<br>・物流什器等回収業務<br>・その他</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>1ヶ月位の変形労働時間制<br>（1ヶ月を平均して1週間40時間以内のシフト制）<br>1日あたりの所定労働時間：4～10時間、休憩：1〜2時間<br>シフトの例：5時～14時、9時～18時、14時～23時、16時～1時、22時～7時</dd>
+
       <dt>休暇・休日</dt>
       <dd>■シフト制により1ヶ月あたり9日の公休（月の日数が28日間の場合は8日）<br>■夏期休暇、冬期休暇：1～2日<br><br>【その他の休暇】<br>■年次有給休暇（入社半年後に付与。10日～最大20日）<br>■病気有給休暇<br>■産前産後休暇<br>■慶弔休暇（結婚5日、配偶者出産2日、弔慰休暇1～5日）<br>■裁判員休暇<br>■生理休暇<br>※年間休日109日に年次有給休暇は含まれません。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋内全面禁煙。敷地内（共有部等）に喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備（厚年/健保/雇保/労災）<br>■労災付加給付制度<br>■従業員持株会<br>■健康相談ダイヤル設置<br>■通信教育費用負担制度<br>■永年勤続表彰制度<br>■厚生資金貸付制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%EF%BC%B4%EF%BC%B3%E3%83%AD%E3%82%B8%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88TS%20Logitech%20Co.%20Ltd%EF%BC%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

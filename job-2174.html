@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社コア・コンピタンス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>人材コーディネーター・総合営業職《大阪支店》</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社コア・コンピタンス</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府守口市京阪本通１丁目２−３ 損保ジャパン守口ビル7階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>守口市</dd>
+
       <dt>郵便番号</dt>
       <dd>5700083</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>地域に密着した人材サービスを展開し、人材を求めている「企業」と、新たな仕事を求めている「求職者」を繋げるサービスを提供しています。<br><br>企業と求職者をマッチングさせ、入社からアフターフォローなどの業務をお任せする人材コーディネーターを新たに募集します。<br><br>【業務の流れ】<br>・人材を募集している企業に対し、求める人材や要望のヒアリングに伺います<br>↓<br>・ヒアリングの内容を元に、求職者の検索、求人票の作成をします<br>↓<br>・応募者と面談をし、お仕事の紹介、条件面の確認をし、それぞれにあったお仕事を紹介します（マッチング）<br>↓<br>・お仕事が決まれば、企業、応募者に対し、契約書の作成など事務手続きなどを行います<br>↓<br>・勤務開始！スタッフの方が安心して働けるようにフォローを行っていきます<br><br>□■■□■■□■■□■■□■■□■■□■■□■■□■■□■■□■■□■<br>【1】未経験入社多数＆安心のフォロー体制！<br>＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br>当社の人材コーディネーターの大半が、営業や人材業界未経験からのスタート。未経験者目線に立った研修が充実しているため、知識が無くてもイチから人材業界の知識や実務を学んでいただけます。独り立ち後もわからないことがあればすぐに先輩社員に相談し、フォローしてもらえる環境があります。<br><br>【2】成果はインセンティブやキャリアで評価<br>＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br>社員の努力や成果は、インセンティブや評価にしっかり反映します。早期キャリアアップも可能で、中には20代で管理職を任せられた社員もいます！<br><br>【3】自由度高め！働き方は自分次第<br>＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br>仕事の進め方や日々のスケジュール組みなどは、一人ひとりにお任せ。社員の自主性を尊重している当社では、常に考えて行動することが習慣になります。自分の目標に向けて、毎日の行動を計画してもらいます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9時00分〜18時00分<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休二日制（土日祝）<br>・夏季休暇<br>・年末年始休暇<br>・有給休暇（10日〜勤続年数に応じて最大20日）<br>※有給奨励日（年5回）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 喫煙スペース有り</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険<br>・結婚祝い金<br>・出産祝い金<br>・産休<br>・育休</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B3%E3%82%A2%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%94%E3%82%BF%E3%83%B3%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

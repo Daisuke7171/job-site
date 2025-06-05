@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>財務・経理｜株式会社PIM</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【経理スタッフ募集】勤務地：渋谷★残業ほぼなし★年間休日120日超★</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社PIM</dd>
+
       <dt>職種名</dt>
       <dd>財務・経理</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区渋谷1-2-5　MFPR渋谷ビル4F</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500002</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>◆日常経理業務<br>仕訳入力、売掛金・買掛金管理、振込入金対応、経費精算から決算に関わる業務（資料作成・手配など）を担っていただきます。<br><br>◆決算に関わる業務<br>・資料作成<br>・手配等<br>※会計事務所に相談しながら決算の取りまとめまでを担当していただきます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>◆10時～19時　(所定労働時間8時間、休憩1時間)<br><br>時差出勤制度（入社3か月後）<br>8：00～17：00<br>9：00～18：00</dd>
+
       <dt>休暇・休日</dt>
       <dd>◆土日・祝日休み（年間休日120日越）<br>◆夏季休暇　5日間（7月〜9月に取得）<br>◆年末年始　7日程度（社内カレンダーによる）<br>◆GW<br>◆有給休暇（初年度10日〜勤続年数に応じて20日）<br>◆産前産後・育児・介護休暇<br>◆慶弔休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◇社会保険完備（健康／労災／雇用／厚生年金）<br>◇交通費支給（上限月5万円）<br>◇社宅手当（自社管理物件紹介　会社負担40％：上限月3万円）<br>◇宅地建物取引士手当（月2万円）<br>◇宅建資格取得講座あり<br>◇賃貸不動産経営管理士手当(月1万円)<br>◇退職金積立制度<br>◇社員旅行（年1回）　　※6年連続ハワイに行きました。<br>◇結婚、出産祝い金あり（社内規定あり）<br>◇ゴルフレッスン(月1回開催予定)</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEPIM" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
