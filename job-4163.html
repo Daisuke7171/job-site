@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>調理｜株式会社玉</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>『ラーメン環2家』(家系総本山 吉村家直系店)  正社員 / 引越し支援・家賃補助/ 月収27万円～</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社玉</dd>
+
       <dt>職種名</dt>
       <dd>調理</dd>
+
       <dt>勤務地</dt>
       <dd>東京都大田区西蒲田7-1-10</dd>
+
       <dt>都道府県</dt>
       <dd>静岡県</dd>
+
       <dt>市区町村</dt>
       <dd>大田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1440051</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>――知る人ぞ知る名店で、技を磨きませんか――<br><br>横浜家系総本山 吉村家直系店『環2家』。「しょっぱ旨さ」を求めて、<br>日本全国からラーメン好きが訪れます。<br><br>お客さまの7割は常連さん。土日にはファミリーや遠方からのお客さまも訪れます。<br>常連さんから飲み物などの差し入れをいただくことも多いです。<br><br><br><br>◆イチからノウハウを伝授！<br>￣￣￣￣￣￣￣￣￣￣￣￣￣￣<br>＞＞STEP1：基本業務<br>まずはお客さまのご案内・バッシング・洗い場などをお任せします。<br><br>＞＞STEP2：盛り付け<br>どんぶりにタレを入れ、盛り付け。お客さまごとの要望に応じてトッピングを変更します。<br><br>＞＞STEP3：麺あげ（ここまで3～6ヶ月）<br>お客さま一人ひとりに注文を伺い、麺の硬さ・味の濃さ・油の量：”おこのみ”を記憶。<br>その通り麺を湯で、盛り付けを担当者に指示します。<br><br>＞＞STEP4：スープ管理（約1年～3年）<br>毎朝スープのダシを取るところからスタート。匂い・味・量などを見ながら、<br>“いつもの味” を提供できるよう営業中も微調整を続けます。<br><br>※店長を目指す場合、売上の管理やシフト作成、棚卸しなどの店長業務を、<br>店長と一緒に少しずつこなしていきます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:00～23:00の間でシフト制<br>上記時間の中で1日の労働時間：8〜11時間、休憩1〜2時間<br>1ヶ月単位の変形労働時間制<br><br>＼ 休憩をしっかり取れます！／<br>しっかり休めるよう休憩室完備！まかないのラーメンも食べられます。<br>食費も浮くと好評です！</dd>
+
       <dt>休暇・休日</dt>
       <dd>・4週7～9休（シフト制）<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・慶弔休暇<br>・産前、産後休暇<br>・育児休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◆社会保険完備（雇用・労災・健康・厚生年金）<br><br>◆自社オリジナルのeラーニングシステム（使用料金無料）<br>　各種研修内容や昇格試験のための対策コース受講など<br><br>◆各種研修<br>　入社時の座学研修から始まり、<br>　その後は、キャリアアップ支援の一環として、<br>　飲食店運営に必要な様々な知識と教養を学んでいくための定期講習会（月1回）や、<br>　テストキッチンの導入によるスープ試作・勉強会など多岐にわたります。<br><br>◆資格取得支援<br>（※食品衛生責任者・防火防災管理者の資格取得費用を会社が負担）<br><br>◆目標管理制度<br><br>◆定期健康診断<br><br>◆産前・産後及び育児休業制度（パパ育休の実績もあります）<br><br>◆交通費全額支給<br><br>◆家族手当<br>┗配偶者：5000円／月、子ども：1人につき5000円／月※第3子迄※18歳迄<br>◆残業手当<br>┗みなし残業手当超過分に対して支給<br>◆深夜残業手当<br>┗深夜勤務手当超過分に対して支給<br><br>◆まかない補助（1食165円）<br><br>◆制服貸与<br><br>◆県外への転勤または県外からの入社に伴う支援<br>◆引っ越し費用補助（※規定あり）<br>◆家賃補助制度（※規定あり）<br>◆社宅使用（※使用規約あり）<br><br>◆各種レクリエーション（研修も兼ねた「ラーメン食べ歩き会」など）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E7%8E%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

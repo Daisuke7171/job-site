@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>不動産・プロパティマネジメント系専門職｜株式会社LIFEFUND</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>中古住宅の買取再販営業職</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社LIFEFUND</dd>
+
       <dt>職種名</dt>
       <dd>不動産・プロパティマネジメント系専門職</dd>
+
       <dt>勤務地</dt>
       <dd>静岡県浜松市中央区住吉2丁目1－15</dd>
+
       <dt>都道府県</dt>
       <dd>静岡県</dd>
+
       <dt>市区町村</dt>
       <dd>浜松市</dd>
+
       <dt>郵便番号</dt>
       <dd>4300906</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>▼募集背景<br>事業拡大に伴う増員募集です。2025年には新店舗の出店も計画しています。<br><br>▼業務内容<br>　◆中古物件の仕入および仕入先の開拓と管理<br>　◆買取価格および販売価格の企画<br>　◆販売計画および販売活動<br><br>変更範囲：会社の定める業務<br><br>▼事業展開エリアについて<br>静岡県西部を中心に事業展開しています。<br>本エリアは団塊世代の相続が進み、空き家が急速に増加している傾向にあります。<br>その中で空き家再生を積極的に進めるべく、事業部を立ち上げました。<br>事業推進をすることで、地域社会の課題を克服することも目指しています。<br><br>▼入社後のイメージ<br>入社後にはビジネスモデルと手法論の理解のための基礎研修がございます。<br>経験者の方は、即時で業務に携わっていただけるように準備します。<br>基本的にはマニュアルに基づいて実践を積み重ねながらスキルを身に付けていきます。<br>また、地域協働という観点で、地方自治体の関係者とコミュニケーションを取り、<br>地域課題の克服に向けた取り組みにも参画します。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>標準勤務時間帯9:00〜18:00<br>・所定の労働時間：8時間<br>・休憩：45分<br>対象期間の総所定労働時間：2040時間00分<br>（業務により残業あり）<br>フレックスタイム制度あり</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日とは別に計画年休5日間取得できます<br>お休みは自分の仕事のスケジュールに合わせて、月に8〜11日<br>（お客様とのお打合せが土日に集中しますので、お休みは基本平日になります）<br>有給休暇有り(6ヶ月継続で10日付与・最大20日付与)<br><br>※会社公休日は以下の通りです<br>GW、夏季休暇、年末年始休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋内禁煙（屋外喫煙可能場所あり）</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>【待遇・福利厚生】<br>・産前・産後休暇 ※取得実績あり<br>・育児休暇 ※取得実績あり<br>・交通費支給（社内規定による）<br>・パソコン支給貸与<br>・服装自由<br>・充実した社内研修と社外研修を用意しております<br>・書籍購入支援<br><br>＜加入保険＞<br>・社会保障完備（健康保険、厚生年金、雇用保険、労災保険）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BELIFEFUND" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

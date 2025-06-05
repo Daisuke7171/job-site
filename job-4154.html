@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社LIFEFUND</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>新築注文住宅のアドバイザー【建築家とつくる『ARRCH』】</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社LIFEFUND</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>静岡県浜松市中央区鴨江3丁目70-23</dd>
+
       <dt>都道府県</dt>
       <dd>静岡県</dd>
+
       <dt>市区町村</dt>
       <dd>浜松市</dd>
+
       <dt>郵便番号</dt>
       <dd>4328023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>＜業務拡大のため、新たな仲間を募集します。＞<br>■業界・職種未経験者多数：金融業、通信業、販売業、家具販売業、不動産業、人材業など異業種・異職種からの転職者も多数在籍してます。<br><br>■セールスステップ<br>モデルハウスや完成見学会などお申し込みされた初回接客の見込み客に対して、ARRCHの商品と接客に好意を持ったお客様を作り出すことが最初の接点です。<br>１STEP<br>初回接客で好意を持ったお客様が、ARRCHなら『家づくり』の不安を解消し課題解決できるパートナーとして期待を持って貰うことが最初のステップです。<br>２STEP<br>お客様の資金面の不安を解消する為に根拠のある資金計画を提示し、お客様が無理なく建てられる予算を決めた状態を目指します。<br>３STEP<br>予算を決めたお客様が理想のマイホームの暮らしを実現させるためのヒアリングを行います。<br>４STEP<br>お客様が全ての不安を解消し納得して不同意がなく、パートナー申し込みを頂くことがゴールです。<br><br>変更範囲：会社の定める業務<br><br>■入社後の流れ/キャリアパス<br>OJTによって、座学とロールプレイングでARRCHのセールスステップを学んで頂き、モデルハウスやショールームのご案内をする事から始めて頂きます。<br>その後、各セールスステップのテストに合格した後に商談にデビュー出来ます。<br>キャッチアップが早い方については１年目で６棟契約しました。※異業種からの転職者<br><br>■働き方<br>・お客様優先にはなりますが、会社カレンダーの休日の中から自由に選択し休みを取っていただきます。※原則：月8-11日の休みを月末に申請<br>・残業時間は月平均30～40時間です。限られた時間で集中して仕事を行い、18時での退社を推奨しています。<br><br>■1日の流れ（入社１年目）<br>（平日）<br>9:00　出社、業務の準備・メール確認<br>10:00　チームMTGで情報共有<br>12:00　昼食<br>13:00　ロールプレイングでスキルアップ<br>14:00　アドバイザーMTG<br>16:00　書類作成や事務作業<br>17:00　業務の整理・翌日の準備<br>18:00　退社<br><br>（土日）<br>9:00　出社、業務の準備・メール確認・商談準備<br>10:00　お客様との商談①<br>12:00　昼食<br>13:00　お客様との商談②<br>16:00　お客様との商談③<br>19:00　商談整理・申し送り<br>19:30　退社<br><br>■評価制度：四半期ごとに目標設定をし、半期に一度上長と評価面談を行い達成度合いにより評価が決まります。<br>決まった評価に対して半期ごとに給与改定を行い、１年に一度等級の昇降給があります。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>標準勤務時間帯9:00〜18:00<br>・所定の労働時間：8時間<br>・休憩：60分<br><br>対象期間の総所定労働時間：2040時間00分<br>（業務により残業あり）<br>フレックスタイム制度あり</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日とは別に計画年休5日間取得できます<br>お休みは自分の仕事のスケジュールに合わせて、月に8〜11日<br>（お客様とのお打合せが土日に集中しますので、お休みは基本平日になります）<br>有給休暇有り(6ヶ月継続で10日付与・最大20日付与)<br><br>※会社公休日は以下の通りです<br>GW、夏季休暇、年末年始休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋内禁煙（屋外喫煙可能場所あり）</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>【待遇・福利厚生】<br>・賞与年２回<br>・給与改定年２回<br>・産前・産後休暇 ※取得実績あり<br>・育児休暇 ※取得実績あり<br>・交通費支給（社内規定による）<br>・住宅手当：自社で住宅を購入した方に支給<br>・パソコン支給貸与<br>・服装自由<br>・充実した社内研修と社外研修を用意しております<br>・書籍購入支援<br><br>＜加入保険＞<br>・社会保障完備（健康保険、厚生年金、雇用保険、労災保険）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BELIFEFUND" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
