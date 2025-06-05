@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>調理｜株式会社玉</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>調理スタッフ：株式会社玉：新ブランド正社員募集（未経験OK）　★4週7～9休／充実の福利厚生</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社玉</dd>
+
       <dt>職種名</dt>
       <dd>調理</dd>
+
       <dt>勤務地</dt>
       <dd>神奈川県横浜市旭区二俣川1-3 ジョイナステラス二俣川</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>横浜市</dd>
+
       <dt>郵便番号</dt>
       <dd>2410821</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br><br><br>■調理・接客どちらもカンタン<br><br>調理と接客どちらも担当します。調理はスープの仕込みや具材のカットなど。<br>いずれも工程はシンプルなので、未経験でもすぐに慣れることができます。<br><br>接客では一般的なホール業務を担当して頂きます。<br>お客様のご案内・食券受け取り・料理のご提供・バッシング等<br>※フードコートの店舗は、ホール業務ではなくレジ対応になります。<br><br><br><br>■その他業務<br><br>オープンやクローズ業務、<br>発注・在庫管理等の店舗運営に関する業務全般も担当します。<br><br><br><br><br>【店長業務】<br><br>一通りの店舗業務ができるようになったら、以下もお任せする予定です。<br>・材料の発注<br>・原価管理<br>・売上管理<br>・メンバーの指導　など<br><br><br>＜客層＞<br>・学生<br>・会社員<br>・家族連れ　など<br><br><br><br><br>【入社後の流れ】<br><br>入社後は、研究を重ね、味や具材にこだわった当社のつけめん・<br>らーめんの作り方をゼロから丁寧にお教えします。<br>「包丁を握ったことがない」という方もご安心ください。<br>3〜6ヶ月程度で、自信を持ってらーめんを提供できるようになります。<br><br><br>【キャリアステップ】<br><br>早ければ1〜2年ほどで店長になることも可能です。<br>また、店舗業務を経験した後、ご自身の志向や適性に合わせて、<br>以下のような業務を経験することも可能です。多彩なキャリアパスをご用意しております。<br><br>・管理業務（本社勤務）<br>・エリアマネージャー業務（数店舗を統括）<br>・商品開発（セントラルキッチンでの麺・スープなどの開発）<br><br><br><br><br><br>【キャリアパスイメージ】<br><br><br>・ビギナー（入社～6か月）　　　　 月収27万円<br>　　　　　身につくスキル：ＯＰ基礎・接客・調理基礎など<br><br>・ルーキー（入社～1年）　　　　　月収27万円 → 28万円　<br>　　　　　身につくスキル：ＯＰ実践・接客・調理実践など<br><br>・レギュラー（入社1～2年）　　　　月収30万円 ～ 35万円　<br>　　　　　身につくスキル： 店舗運営・発注業務・後輩育成など<br><br>・エース（入社2～3年）　　　　　　月収35万円 → 40万円　<br>　　　　　身につくスキル：店長業務・社員教育・数字管理・緊急対応など<br><br>・マスター（入社3～4年）　　　　　月収40万円 → 50万円以上<br>　　　　　身につくスキル：複数の店舗運営・管理・臨店・次期店長教育など<br><br><br><br>※年数と月収は、イメージ・一例ではありますが、<br>適時、ポジションに応じた研修・昇格試験などがあり、次世代を担える<br>人材の育成に力を入れており、飲食店運営のノウハウを一から<br>身につけていただき、数字管理などの経営スキルも学んでいっていただいてます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～23:00の間でシフト制（店舗により異なる）<br>上記時間の中で1日の労働時間：8〜11時間、休憩1〜2時間<br>1ヶ月単位の変形労働時間制</dd>
+
       <dt>休暇・休日</dt>
       <dd>・4週7～9休（シフト制、週休2日）<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・慶弔休暇<br>・産前、産後休暇<br>・育児休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◆社会保険完備（雇用・労災・健康・厚生年金）<br><br>◆自社オリジナルのeラーニングシステム（使用料金無料）<br>　各種研修内容や昇格試験のための対策コース受講など<br><br>◆各種研修<br>　入社時の座学研修から始まり、<br>　その後は、キャリアアップ支援の一環として、<br>　飲食店運営に必要な様々な知識と教養を学んでいくための定期講習会（月1回）や、<br>　テストキッチンの導入によるスープ試作・勉強会など多岐にわたります。<br><br>◆資格取得支援<br>（※食品衛生責任者・防火防災管理者の資格取得費用を会社が負担）<br><br>◆目標管理制度<br><br>◆定期健康診断<br><br>◆産前・産後及び育児休業制度（パパ育休の実績もあります）<br><br>◆交通費全額支給<br><br>◆家族手当<br>┗配偶者：5000円／月、子ども：1人につき5000円／月※第3子迄※18歳迄<br>◆残業手当<br>┗みなし残業手当超過分に対して支給<br>◆深夜残業手当<br>┗深夜勤務手当超過分に対して支給<br><br>◆まかない補助（1食165円）<br><br>◆制服貸与<br><br>◆県外への転勤または県外からの入社に伴う支援<br>◆引っ越し費用補助（※規定あり）<br>◆家賃補助制度（※規定あり）<br>◆社宅使用（※使用規約あり）<br><br>◆各種レクリエーション（研修も兼ねた「ラーメン食べ歩き会」など）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E7%8E%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

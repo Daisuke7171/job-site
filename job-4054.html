@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ビジネスコンサルタント・シンクタンク｜株式会社シニアジョブ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【リクルートコンサルタント／中途】シニア特化型人材紹介を展開／内定まで最短2日／未経験・第二新卒◎</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社シニアジョブ</dd>
+
       <dt>職種名</dt>
       <dd>ビジネスコンサルタント・シンクタンク</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区大久保2-5-22セキサクビル8F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1690072</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>5000000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>◆リクルートコンサルタント　 　<br>難易度が高いと言われるシニアの転職を支援します。<br>転職における要件定義を転職希望者と共にビジョンを成立させ、本人要望と転職市場をすり合わせて、論理的かつ合理的に魅力あるキャリアビジョンを設定して、転職を成功へと導きます。　<br>人生で最後になるかもしれない転職を成功に導くことで、求職者様より涙ながらに感謝の声をいただくこともあります。<br><br>◆ビジネスグロース<br>新規事業や新規プロジェクトが定期的に生まれているフェーズのため、<br>市場調査から戦略制定、PDCAを回しながら事業グロースを図ります。<br>主に社長直下でのポジションになる為、事業スピードを感じながらマーケティング力や要件定義能力など、ビジネスグロースに必要な能力を付ける事が可能です。<br><br>◆得られるスキル<br>- 論理的思考力<br>- 仮説思考能力<br>- 合理的判断能力<br>- コミュニケーション能力<br>- 課題解決能力<br>- マーケティングスキル<br>- ビジネス折衝能力<br><br>◆今後の事業方針<br>【エージェント事業の拡大】<br>人材拡充と広告増加により、売上/利益を現在の2、3倍にすることを目指します<br><br>【toB向けの新規事業立ち上げ】<br>toB向けの新規事業の展開を予定しています<br><br>【5年後の上場を目指す】<br>エージェント事業と求人メディア事業を拡大させ上場を目指します<br><br>【シニアの衣食住を支えるサービスへ】<br>転職支援だけでなくシニアの生活を各方面で支援します</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00<br>（所定労働8時間、休憩60分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>- 完全週休2日制（日曜日固定・シフトによる他曜日）<br>- 年末年始休暇<br>- 時季制定有給休暇（GW・夏季）<br>- 有給休暇（6ヶ月勤務で10日の有給休暇、勤続年数に応じて最大20日支給）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>- 各種社会保険完備<br>- パソコン(Mac)<br>- 携帯電話貸与<br>- 私服勤務OK（内勤時）<br>- 交通費支給：上限20,000円/月<br>- 家賃補助：20,000円/月（対象：正社員、半径1.5km以内に居住の方）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B7%E3%83%8B%E3%82%A2%E3%82%B8%E3%83%A7%E3%83%96" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
