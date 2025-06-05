@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>インフラエンジニア｜株式会社ミラクルソリューション</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【経験者】セキュリティエンジニア</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ミラクルソリューション</dd>
+
       <dt>職種名</dt>
       <dd>インフラエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区代々木3-24-3 サンテージ西新宿1F・2F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1510053</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>ネットワークやシステムのセキュリティ監視、ウィルスやサイバー攻撃の分析・対応、サーバー運用など、様々な案件に携わっていただきます。<br><br>▼入社後の流れ<br>まずは、1ヶ月ほど自社出版本「なる本研修」を実施。スキルを習得しながら案件参画を目指します。なお、案件市場やスキル感によって案件参画時期や案件内容は異なります。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00～18:00（所定労働時間7時間、休憩60分）<br>※現場に参画した場合は、現場の就業時間に合わせます。</dd>
+
       <dt>休暇・休日</dt>
       <dd>□完全週休2日制（土・日・祝日）<br>□年末年始休暇<br>□GW休暇<br>□年次有給休暇<br>□慶弔休暇<br>□産前産後休暇<br>□育児休暇（取得・復職実績あり）※男性の取得実績あり<br>□介護休暇<br>□ミニバケーション休暇<br>※5日以上の連続休暇の取得可能</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内全面禁煙。主要常駐先も屋内全面禁煙となります（詳細は常駐先によって異なる）。</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■昇給年1回（4月）<br>■賞与年2回（6月・12月）<br>■交通費（月3万円まで）<br>■各種社会保険完備（雇用、労災、健康、厚生年金）<br>■時間外手当（1分単位で全額支給）<br>■役職手当（10,000円～/月）<br>■勤続手当（5年勤続で3万円、10年勤続で10万円を支給）<br>■出張手当<br>■出産祝い金（第1子・第2子：1万円、第3子以降：5000円）<br>■在宅ワーク案件あり<br>■服装自由<br>■オフィス内禁煙<br>■保養所あり<br><br>【資格取得を応援】<br>当社では資格取得によるスキルアップに向け、受験料のサポートと取得後の手当支給（3000円～）をご用意。自身のスキル向上はもちろん、努力次第で大幅給与UPも実現可能です！<br><br>【研修制度】<br>□なる本研修<br>□マイクロソフト トレーニングおよびイベント<br>□トーマツイノベーション受講　その他<br><br>【フォロー体制】<br>スキルや希望を考慮しつつ、案件ごとに営業担当と面談を実施しながら案件を決定します。<br>参画後は3日後、2週間後、1ヶ月後、2ヶ月後のタイミングでフォローが入りますので、案件のレベルや働き方などで何かあればご相談ください！<br>またランチミーティングも実施しており、案件の進捗など相談も可能です◎</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%9F%E3%83%A9%E3%82%AF%E3%83%AB%E3%82%BD%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社ケーイーシー</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【企画営業】メディアで話題♪自社開発の教育商材を全国へ広める！ホワイト企業認定取得企業★</h1>
     </div>
   </header>
@@ -146,46 +152,63 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ケーイーシー</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市阿倍野区阿倍野筋1-5-31 アポロビル7階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5450052</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>プログラミング及びオンライン英会話の教育コンテンツの反響営業をお願いします。<br>商談は基本オンラインで、全国の学校や学習塾を運営する企業へのご案内をお任せします。<br>＊当ポジションはご入社後、株式会社ケーイーシーのグループ会社である株式会社KEC Mirizへの出向となります。<br><br>具体的には…<br>▼ニーズのヒアリング<br>▼自社教育コンテンツの提案<br>▼体験会の企画・実施<br>など提案～契約まで一気通貫でお任せ！<br>★飛び込み営業や無作為な営業電話はナシ<br>反響営業スタイルなので、アプローチ先は関心を持ってくださっているお客様なので、<br>しっかり提案が可能です。<br><br>【提案商材】<br>●プロクラ<br>世界1億7000万人以上に愛される人気ゲーム「マインクラフト」の世界でプログラミングを学べる教育コンテンツです！<br>メディアで話題となっています。<br><br>●CHATTY（チャッティー）<br>学年とレベルに合わせ独自に開発したオンライン英会話の教育コンテンツです。<br>学校法人や企業のニーズに合うカリキュラムをカスタマイズできる点が特長です。<br><br>いずれも高成約率の人気商材です！自社開発＆高い注目度というのが強みです！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:30‐18:30<br>所定労働時間：8時間、休憩1時間<br>※お客様対応やイベントなどでスライド勤務していただく場合があります</dd>
+
       <dt>休暇・休日</dt>
       <dd>・年間休日実質125日（年休120日＋計画年休5日）<br>・完全週休2日制（土日or日月で相談可能）<br>※祝日は休日カレンダーによります。<br>※イベントや会社行事で振替出勤する場合はあります。<br>・GW休暇（9連休）<br>・夏季休暇（7連休）<br>・年末年始休暇（11連休）<br>※上記は2024年度の予定・実績<br>・有給休暇（10日〜勤続年数に応じて最大20日）<br>・産休／育休（取得実績あり）<br>・福利強制（管理職以上を対象に3年ごとに1週間の長期休暇を取得可能）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 社内完全禁煙
 ※アポロビル内に喫煙スペースはあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>＜社員のお子さまにも充実の教育環境を優遇提供！＞<br>・やまと西大寺KEC保育園の保育料割引＆優先入園<br>・KECの集団指導授業料無料（個別指導は授業料50％OFF）<br>・社会保険完備<br>・交通費支給<br>・役職手当<br>・家族手当（社内規定あり）<br>・住宅手当（社内規定あり）<br>・引っ越し手当（上限あり）<br>・インフルエンザ接種手当<br>・退職金<br>・パソコン貸与<br>・社内禁煙<br>・飲みにケーション制度<br>※学期に1度チーム内での会食費を一部負担<br>・社員の友人や知人紹介で内定承諾に至った場合の紹介料支 給<br>・事業部を超えたコミュニケーションの活発化を目的としたサークル支援制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B1%E3%83%BC%E3%82%A4%E3%83%BC%E3%82%B7%E3%83%BC" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

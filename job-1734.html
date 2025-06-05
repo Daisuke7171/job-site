@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜株式会社MAYA STAFFING</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【新宿勤務】人材コーディネーター＼年休124日★土日祝休み／</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社MAYA STAFFING</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿2-6-1 新宿住友ビル27階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>ご経験を活かし、戦略的な掲載～採用をお任せ！<br>将来的にはメンバーの育成マネジメントも担うポジションへ！<br><br>【具体的には】<br>・求人媒体の選定<br>→代理店との定例MTGなども行い、どの媒体で掲載をすれば採用が成功するか考えながら戦略的に進めます★<br>・応募者対応業務<br>→エントリーいただいた求職者の方と専用システムを使って、やりとりをしていただきます！<br>・面談対応、求職者対応<br>→web面談を中心に平均3～5名/日と面談をしていきます。<br>人数の多いオーダーはメンバーと協力しながら対応をしていきます。<br>・契約社員採用<br>→委託案件も対応している当社は、派遣スタッフだけでなく契約社員の採用も行っています！<br>　首都圏を中心に当社のBPOセンターの採用活動もお願いしております！<br>　＼裁量権を持って、働いていただける環境です／<br>・数値管理（媒体費、応募者数から採用に至るまでの推移率など）<br>・営業部門との定例MTG<br>・その他スタッフ対応、事務対応　　など</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:30～18:30　（休憩60分）※実働8時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制（土日）<br>※休日出勤の可能性有<br>（出勤した場合は振替休日をとってもらっています）<br>■祝日<br>■年次有給休暇（10日〜勤続年数に応じて最大20日）<br>■産前・産後休暇<br>■育児・介護休暇<br>■夏季休暇<br>■年末年始休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： ビル内喫煙スペース有</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社保完備<br>■確定拠出年金<br>■退職金（勤続年数5年以上）<br>■通勤交通費（月上限3万円まで）<br>■定期健康診断<br>■パソコン貸与<br>■グループ会社が経営するネイルサロン、飲食店の優待</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEMAYA%20STAFFING" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜株式会社交換できるくん</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【大阪営業所のリーダーポジション】住宅設備機器×IT企業・グロース市場上場企業◎</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社交換できるくん</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市北区中崎西2-4-12 梅田センタービル30F</dd>
+
       <dt>都道府県</dt>
       <dd>神奈川県</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5300015</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>6500000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>住宅設備機器と取付工事をセットでネット販売する当社のビジネスを支えるインサイドセールス部門を担っていただく方、将来の大阪支店の責任者候補を募集します。<br><br>【具体的な仕事内容】<br>インターネットを活用した住宅設備(主にエアコン、給湯器、エコキュートなど)販売における、お客様問合せから見積りを担当するグループの責任者(候補)です。<br><br>【ポジション】<br>ネットを活用し反響に対するインサイドセールス部門の責任者ポジションで、スタッフの育成やKPI管理、プロセス改善、事業創出などマネージャーとして組織をけん引していただきます。<br><br>【本ポジションの期待】<br>■現在は東京本社の社員が大阪支店の責任者を兼任していますが、将来的には大阪支店の責任者を目指していただきます。<br>■ご自身の専門的な知識や経験をスタッフに教えていただきます。また、予算管理、KPI管理をしていただきます。<br>■将来的には、支店長になっていただき、大阪支店のレポート作成、事業拡張の計画・実行をお任せします。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>09:00～18:00<br><br>1ヶ月単位の変形労働時間制<br>週平均労働時間40時間<br><br>■所定労働時間<br>08時間00分 休憩60分<br><br>■フレックスタイム制<br>無</dd>
+
       <dt>休暇・休日</dt>
       <dd>■有給休暇<br>入社半年経過時点10日 最高付与日数20日<br><br>■その他<br>その他（シフト制）<br><br>【休暇制度】<br>■年末年始休暇　<br>■夏季休暇　<br>■慶弔休暇　<br>■介護休暇　<br>■産前産後休暇・育児休暇(育児休暇取得率100％・復職率100％)　<br>■リフレッシュ休暇（最長9日間）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 敷地内禁煙（屋外に喫煙場所設置）</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>【社会保険】<br>健康保険：有、厚生年金：有、雇用保険：有、労災保険：有<br><br>【福利厚生】<br>■健康診断無料　<br>■慶弔見舞金制度　<br>■従業員持ち株会　<br>■社員総会（年1回）<br>■リファラル制度　<br>■永年勤続制度（長期勤続制度）※5年/10年　<br>■書籍無料貸出し制度　<br>■社内割引（住宅リフォーム製品を割引価格で購入可）<br>■PC支給（ダブルモニター）<br>■オフィスカジュアルOK（Tシャツ/スニーカー）<br><br>【オフィス環境】<br>■ビル内コンビニ、飲食店あり　<br>■電子レンジ完備　<br>■冷蔵庫・自販機<br>■ウェルカムランチ制度　<br>■オフィスグリコ（お菓子や飲み物などがオフィス内で購入できるサービス）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E4%BA%A4%E6%8F%9B%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%8F%E3%82%93" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

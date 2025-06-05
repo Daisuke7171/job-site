@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>機械・機構設計・金型設計｜朝日電器株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【未経験歓迎/研修制度充実】電気製品の品質管理｜年間休日124日・賞与合計4ヶ月分◎大阪</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>朝日電器株式会社</dd>
+
       <dt>職種名</dt>
       <dd>機械・機構設計・金型設計</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大東市新田中町3-11</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>大東市</dd>
+
       <dt>郵便番号</dt>
       <dd>5740056</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>自社ブランド『ELPA』の品質管理業務で、設計審査・製品評価・サンプル審査・法令管理などをお任せいたします。商品は1万種類以上あり、徐々に業務幅を広げていただき3年目安で独り立ちを目指していただきます。<br><br>■入社後は業務例：測定器を用いて光の色や明るさ・温度による影響・電気量・防水性能等を数値化してデータにまとめます。<br><br>■将来的な業務例：数値化されたデータから問題点を割り出し、開発部や工場と改良のためのやり取りを行っていきます。<br><br>■製造現場である中国(主に深セン)への出張もございます。現地法人のサポートがあるため、中国語での会話の必要はありません。<br><br>【入社後の働き方】<br>品質管理部はベテラン社員も在籍しているため、入社後はOJTにてしっかり育成致します。またクレーム対応等は基本的に別担当がつくため、ELPA製品の品質向上に集中することが可能です。会社として品質管理に今後さらに力をいれて参ります。常に高い品質を求めたレベルの高い仕事となります。<br><br>【ＥＬＰＡ商品について】<br>延長コードなどの配線器具、AVアクセサリー、LED電球や懐中電灯などの照明器具、防犯用品…といった幅広いアイテム約4000点を取り扱っています！<br>ホームセンターや家電量販店、ドラッグストア、コンビニなど、業態問わず多くの販路を有しています。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:45～17:45（所定労働時間8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日<br>124日<br><br>休日・休暇<br>■完全週休2日制（土日）<br>■祝日休み<br>■年末年始休暇<br>■夏季休暇<br>■慶弔休暇<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>■育児休暇（実績あり）<br>■介護休暇（実績あり）<br><br>＜有給休暇について＞<br>試用期間が終了し、本採用となった日が10月31日までの場合は10日間付与します。<br>※以降2月1日を付与日とする</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備<br>■退職金制度あり<br>■借上げ住宅制度あり<br>■確定拠出年金制度（DC）／確定給付金制度（DB）<br>■財形貯蓄制度あり<br>■資格取得奨励金制度あり<br>■研修制度あり（階層別研修、職種別研修など）<br>■車通勤可・専用駐車場あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%9C%9D%E6%97%A5%E9%9B%BB%E5%99%A8%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
