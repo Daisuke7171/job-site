@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>社内情報システム（社内SE）｜株式会社アドバンス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>社内ヘルプデスクの募集です！研修充実・ボーナス年2回支給の企業で安定して働きませんか？</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社アドバンス</dd>
+
       <dt>職種名</dt>
       <dd>社内情報システム（社内SE）</dd>
+
       <dt>勤務地</dt>
       <dd>茨城県龍ケ崎市久保台二丁目2番地1</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>龍ケ崎市</dd>
+
       <dt>郵便番号</dt>
       <dd>3010001</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>＜主な業務内容＞<br>社内の基幹システムの運用保守や、社内ヘルプデスク業務に携わっていただきます！<br>・社内PCの保守業務（キッティング、障害対応、管理業務など）<br>・社内の情報システムの運営管理<br>・システムのメンテナンスや情報セキュリティに関する業務<br>・社内からの問い合わせ、トラブルへの対応（ヘルプデスク）<br>・営業部門の実績集計（Excel）<br>・社内システム導入の企画検討<br><br>をお任せいたします。<br><br>ヘルプデスクやテクニカルサポートのご経験がある方歓迎です！<br>経験がない方でも、ITやPC・システムの仕事に興味がある方や<br>組織をフォローするお仕事をしてみたい方など、ぜひご応募ください！<br><br>【職場環境】<br>アドバンスでは自己啓発をサポート！<br>資格取得制度もあり、ご自身の興味のある資格取得を目指すことが可能です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:30〜17:30<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>・週休二日制（月9〜10日休み）<br>・年末年始休暇<br>・慶弔休暇<br>・年次有給休暇（入社半年後に10日付与〜勤続年数に応じて最大20日）<br>・特別休暇<br>・バースデー休暇<br>・リフレッシュ休暇<br>・産前産後、育児休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・昇給年2回<br>・賞与（初年度は一律23万円）<br>・残業手当（残業時間に応じて1分単位で別途支給）<br>・通勤手当（会社規定に基づき支給）<br>・社員持株会制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

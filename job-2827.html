@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜株式会社スイート・ピア</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【店長候補採用！】フィットネススパのエステティシャン～美と健康のサポート～</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社スイート・ピア</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区南平台町3-8　渋谷TSKビル3階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500036</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 8500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>大手フィットネスクラブに併設されるサロンに勤務し、エステティシャンとして受付から施術まで幅広いお仕事をお任せします。<br><br>＊具体的には＊<br><br>■エステティシャン業務<br>・来店されたお客様の対応<br>・予約管理/電話対応<br>・施術<br>・問い合わせ対応<br>・カウンセリング<br>・フェイシャル、痩身の施術<br>・食事や運動についてのアドバイス・ホームケアや美容全般のご提案<br><br>■店長としての役割<br>・育成/マネジメント<br>・店舗運営(分析・考案)<br>・クレームやトラブル対応など</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>裁量労働時間制<br>1日のみなし労働時間：8〜9時間　休憩時間　60分<br><br>原則営業時間に付随 ※店舗開閉作業による所定労働時間外あり<br>本社研修：10：20～所定労働時間8時間<br>店舗研修：10：20～営業時間に付随<br>≪営業時間≫<br>平日 11:00～20:00（最大21:00）<br>土曜 11:00～19:00（最大20:00）<br>日祝 11:00～18:00（最大19:00）</dd>
+
       <dt>休暇・休日</dt>
       <dd>店長①　7～8日/月<br>スタッフ①　7～8日/月<br>スタッフ②　　10日/月<br><br>★有給休暇（10日〜勤続年数に応じて最大20日）<br>★その他フィットネスクラブが定める休日（年末年始休業等）<br>★産休・育休<br>★忌引き　など  <br>※法定の労働時間超過は36協定の締結により年間630時間まで。<br>※最低賃金を下回らないように調整しています。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◆社会保険完備<br>◆制服貸与<br>◆健康診断<br>◆福利厚生サービス（ベネフィットステーション）<br>◆各種ステップアップ研修<br>◆海外研修制度<br><br>《その他》<br>◆エステ半額利用<br>◆自社化粧品割引<br>◆フィットネスクラブ利用無料　など</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%88%E3%83%BB%E3%83%94%E3%82%A2" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

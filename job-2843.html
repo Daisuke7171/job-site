@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社エムコム</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【業界未経験歓迎】インバウンドでのコンサルティング・お客様に寄り添う新規営業◎20代活躍中!!</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社エムコム</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区千駄ケ谷５丁目３１−１１  住友不動産新宿南口ビル14階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1510051</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>企業様に向けて通信コンサルタントを行って頂きます。<br><br>当社グループでは『法人携帯』『クラウドPBX』『OA機器』『電気コラボ』『光コラボ』『HP制作請負』『新卒採用』『MEO』など、企業様の課題解決の為に多岐にわたる商材を揃えております。<br>特に『法人携帯』については、全国の法人向けソフトバンクモバイル販売会社の中で2023年度上半期販売台数1位の実績を持っており、<br>新規顧客の獲得においては、モバイル販売の強みを活かして、<br>Web広告（法人スマホon-line、法人スマホプランナー）やパートナー企業様からのご紹介、コールセンターからの送客などで集客を行い、ドコよりもお得な独自還元提案で高い生産性を実現しております。<br><br>法人携帯をご契約頂いたお客様に対し、アフターフォローと併せてヒアリングやアンケートを元に+@での課題解決のご提案を行い、長く継続して当グループをご利用頂ける様務めています。<br><br>主に行っていただくのは<br>法人様へ携帯販売の契約や課題解決のための提案を行っていただきます。<br><br>WEB広告やパートナー企業様からの送客に対し、チームマネージャーが<br>アプローチ＆アポイント取得をし、配下の営業社員がお客様宅への訪問の上、契約お手続きを行います。<br><br>携帯以外でも弊社グループでは<br>インフラ系(電気ガス)やOA商材(クラウド)など様々な商材があるので<br>法人携帯＋αの提案をし<br>お客様のニーズやご要望にあった提案が可能です！<br>＋αで販売した商材に関しては賞与で還元されます♪<br><br>担当エリアは日本全国なので新幹線や飛行機等を使った、<br>遠方へ訪問（日帰りや出張）が週に3日程度ございます。<br><br>＜業務の流れ＞<br>①アポインターがアポイント獲得<br>②マネージャーが、問い合わせいただいた企業へ電話　<br>　サービス内容・料金などを説明をし、口頭受注する<br>③口頭受注した企業へ訪問し、契約内容を今一度確認　<br>　問題なければ契約締結を進める<br>④ソフトバンクへ契約書を送り、法人携帯を納品・サービス開始してもらう<br><br>＜入社後の流れ＞<br>先輩社員の営業に同行し、業務の流れを覚えます<br>⇨ 先輩社員にフォローをしてもらいながら、顧客を担当<br>⇨ 一連の流れを一人でできるようになったら独り立ちです！<br><br>＜キャリアアップ＞<br>STEP1：一般社員<br>・アポインターが獲得したアポイントへ訪問・契約<br>・モバイル契約時に別途通信コンサル案内<br>・自身が契約したお客様のフォローアップ<br>・テレアポ(新規のお客様獲得)<br><br>STEP2：マネージャー<br>・サービス内容・料金などを説明をし、口頭受注する<br>・チームリーダーとして部下の教育、マネージメント、スケジュール調整<br>・チーム予算責任者として組織を運用<br><br>STEP3：エリアマネージャー<br>・複数のマネージャーを部下に持ち、自組織の指揮を行う<br>・集客サイトの改善、開拓<br>・各取引先とのアライアンス改善<br><br>STEP4：統括<br>・事業部予算責任者としてビジネスモデルの構築を行う<br>・事業部戦略の立案・具現化<br>・各取引先との交渉</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～19:00（所定労働時間8時間/休憩2時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>休日：土日祝休み<br>⇒月0～3回土曜出社有　※社内カレンダーに準ずる<br><br>休暇制度：年末年始休暇、夏季休暇、GW休暇、特別休暇、慶弔休暇、<br>　　　　　産休・育休、有給休暇（10日〜勤続年数に応じて最大20日）<br><br>子供を持つ社員も多く、休暇制度の充実及び<br>有休の取りやすさに力をいれております。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 喫煙所あり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>交通費支給<br>住宅手当<br>健康診断<br>役職手当<br>家族手当<br>資格手当<br>資格取得制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%83%A0%E3%82%B3%E3%83%A0" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

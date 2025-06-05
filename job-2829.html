@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜プロパティエージェント株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【反響営業職】世代間を超える資産運用をご提案！DX×不動産(フィールドセールス)</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>プロパティエージェント株式会社</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿6-5-1新宿アイランドタワー41F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1631390</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 20000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■仕事概要<br>フィールドセールスとして投資用不動産による資産形成のコンサルティングお任せします。<br>弊社が提供する投資用不動産についてのメリット、競合他社との違いなどをご説明し、その上でお客様のライフプランにあったご提案をいたします。<br><br><br>◆基本的にメインは商談！<br>フィールドセールスがアポイント取得時に得た情報を元に商談を行い、契約からアフターフォローまで行います。<br><br>◎商談<br>∟お電話でお伺いしたご状況基に更に詳しくお客様の現状や課題をヒアリングする。最終的にお客様一人一人にマッチしたプランを作成し提案。<br>◎契約<br>∟提案したプランにお様が納得したら、契約となり、そこから長いお付き合いが始まる。<br>◎アフターフォロー<br>∟契約後も定期的にお客様とコミュニケーションを取りながら、お客様のライフステージの変化に合わせて際プランニングも行う。<br>　その他、商談のための資料準備、システムへの入力等<br><br><br>【就業環境】<br>・ノルマについて<br>個々⼈に一定程度の販売件数ノルマはありますが、しっかりと取り組めば達成できるノルマとなっています。<br><br>【顧客層】<br>会社役員・医師・弁護⼠・富裕層に留まることなく、⼀般の会社員の⽅等、幅広い層の顧客を対象とします。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>週休２日のシフト制<br>月～金：11:30～20:30<br>土・日・祝：9:30～18:30<br>※所定労働時間8時間、休憩60分<br>※基本的に火・水休み</dd>
+
       <dt>休暇・休日</dt>
       <dd>・曜日ごとのシフト制<br>（その月の日曜日、祝日、土曜日の日数分をお休みいただきます）<br>・入社前特別休暇（入社～半年間は3日間の特別休暇制度有）<br>・有給休暇（入社半年後に10日付与。最大20日）<br>・夏季休暇<br>・年末年始<br>・会社が指定する日<br>・慶弔休暇等</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内全面禁煙（敷地内に屋外の喫煙場所有）</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・宅建支援<br>・各種社会保険完備<br>・都市圏から3時間以内の各所に社員利用可能な会員制の保養所施設有<br>・定期健康診断<br>・産前産後休暇、育児休暇<br>・研修（ビジネスマナー、コンプライアンス、IT研修、事例研修、年次別各種OJT）<br>・表彰年2回（都内ホテルにて社員総会を開催）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
