@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>店長・SV（スーパーバイザー）｜株式会社一家ダイニングプロジェクト</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>居酒屋・韓国料理・和食店などの【店舗運営スタッフ】★未経験OK</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社一家ダイニングプロジェクト</dd>
+
       <dt>職種名</dt>
       <dd>店長・SV（スーパーバイザー）</dd>
+
       <dt>勤務地</dt>
       <dd>東京都千代田区東神田3－7－20</dd>
+
       <dt>都道府県</dt>
       <dd>千葉県</dd>
+
       <dt>市区町村</dt>
       <dd>千代田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1010031</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【おもてなしを大事にした接客】多彩な飲食業態を展開する当社で、店舗オペレーションからスタート。いずれ店舗運営に携わり、店長を目指せます！<br>具体的には<br>『博多劇場』『にのや』といった居酒屋業態をはじめ、非日常を味わうダイニングレストラン『TANGO』や結婚式場の『The Place of Tokyo』等の様々な飲食店舗や施設をを展開しています。<br><br>【主な仕事内容】<br>◆店舗での接客<br>◆キッチンでの調理<br>◆食材や備品の発注　など</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>13:00～24:00（シフト制）<br>上記時間の中で1日の労働時間：9時間、休憩1時間<br>1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下）</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制（月8～9日休み）<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>■慶弔休暇<br>■産前・産後休暇（取得・復帰実績あり）<br>■育児休暇（取得・復帰実績あり）<br>└ 男女問わず取得実績があります！</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備<br>■服装・髪色・ネイル自由<br>■インセンティブ制度<br>■研修制度<br>■健康診断<br>■制服貸与<br>■誕生日祝い（豪華ホテルの宿泊券＋食事券）<br>■まかないあり<br>■社割あり（飲食代20％オフ）<br>■社内イベント・社員旅行<br>■クラブ活動（将棋、サッカー、野球、ダンスなど）<br>■お年玉<br>■独立支援制度<br>■保養所<br>■制服貸与<br>■配偶者へのプレゼント<br>■永年勤続表彰<br>（5年で5万円／10年で10万円／20年で20万円）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E4%B8%80%E5%AE%B6%E3%83%80%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
