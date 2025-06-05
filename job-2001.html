@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>内勤営業・カウンターセールス｜株式会社TAKUTO</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>接客事務（UR賃貸住宅のお申込み受付・お客様対応）</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社TAKUTO</dd>
+
       <dt>職種名</dt>
       <dd>内勤営業・カウンターセールス</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市北区梅田2-2-22 ハービスエントオフィスタワー12階</dd>
+
       <dt>都道府県</dt>
       <dd>千葉県</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5300001</dd>
+
       <dt>雇用形態</dt>
       <dd>契約社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>UR賃貸住宅をご希望のお客様から寄せられるお申込み・窓口対応など<br><br>【具体的には】<br>■来店されたお客様の窓口対応・プランのご案内<br>■お客様情報の入力・契約書の作成などの事務作業<br>■お問い合わせの電話対応　など<br><br>＜充実の研修制度＞<br>入社後、先輩による研修を実施します。<br>基礎から学べるマニュアルをご用意していますが、マニュアルの内容を<br>自分なりに分かりやすく工夫しても問題ありません。<br>研修後は、仕事の流れを把握するために、窓口業務や契約書の作成業務<br>から覚えていきます。2～3年の経験を積めば、全ての業務内容を習得し、<br>一人立ちできるようになるでしょう。<br><br>＜売り込み・ノルマなし＞<br>サポートスタッフの大切な役割は、お客様に合ったプランを<br>「正確にお伝えすること」です。そのため、強引な売り込みや<br>駆け引きなどを行う必要はなく、ノルマもありません。<br>ご案内するプランは、10～15種類ほど。<br>季節ごとのキャンペーンが用意されており、状況に合わせて<br>丁寧に説明していただきます。また、お客様情報の入力や<br>契約書の作成は、専用のソフトを使用するため、パソコンが<br>苦手な方でも簡単に作業を進められます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>勤務時間：9:15～19:00<br><br>※上記時間の間で所定労働時間7時間25分（早番・遅番制）、休憩1時間<br>※運営の状況により、変動する可能性有</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制<br>シフトで運用しております。<br>年間休日128日前後<br>有給休暇（10日～勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内喫煙所あり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>【試用期間】<br>なし<br><br>【保険制度】<br>・健康保険<br>・厚生年金<br>・雇用保険<br>・労災保険<br><br>【受動喫煙体制】<br>・屋内全面禁煙<br><br>・研修制度（入社時研修／1カ月間）<br>・定期健康診断<br>・インフルエンザ予防接種<br>・結婚祝い金<br>・出産祝い金<br>・正社員登用制度あり<br>※契約更新／原則1年ごと</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BETAKUTO" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

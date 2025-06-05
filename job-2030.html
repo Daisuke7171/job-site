@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>料理長｜五反田銭場精肉店（株式会社ZENIBA）</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>一頭買いした雌牛を溶岩焼スタイルで提供する料理長候補</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>五反田銭場精肉店（株式会社ZENIBA）</dd>
+
       <dt>職種名</dt>
       <dd>料理長</dd>
+
       <dt>勤務地</dt>
       <dd>東京都品川区西五反田1-28-4 田口ビル 2F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>品川区</dd>
+
       <dt>郵便番号</dt>
       <dd>1410031</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>＼肉のプロを目指せる仕事！／<br>トウガラシ・トモ三角・ザブトン……<br>一頭買いするから希少部位を扱う機会も多数あり！<br>◎毎月インセンティブ支給♪◎賞与年２回♪◎<br>＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br><br>【お任せしたいお仕事】<br>仕込み・調理など基本的なキッチン内での業務をお願いします。それに加えて、メニュー開発・在庫管理・スタッフ管理などの店舗運営・マネジメントもお任せしていきます。<br><br>【サポート体制】<br>数字管理・スタッフ教育など店舗運営に必要な知識をお伝えします。ここで料理長として経験を積むことで、経営者に必要なノウハウを身につけられます。<br><br>さらに、毎月面談をする機会があるので、疑問を一人で抱える心配はありません。不安な点・将来の方向性など何でも相談してください！<br><br>【調理も接客も経験し、多角的な成長を実現！】<br>キッチン業務からスタートしていただきますが<br>将来的にはホール業務にも携わっていただきます。<br>どちらの視点からもお店を見られるようになるので<br>総合的なマネジメント力を身につけられます！<br><br>【新規出店について】<br>2026年春に開業が予定されている大井町の再開発事業。<br>そこに建てられる商業施設への新規出店が決定しました！<br>これを皮切りに食を通した街づくりを行う<br>飲食企業として事業を拡大。<br>新規出店も見据えた大型プロジェクトを始動させます！<br><br>力をつけた後は、エリアマネージャー・店舗開発・<br>業態開発・人事などのキャリアチェンジも可能！<br>飲食業界でのキャリアを重ねるのにピッタリ！<br><br>第2期創業メンバーとなって<br>一緒に会社づくりを始めませんか！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00〜23:30（シフト制）<br><br>実働時間：1日あたり8時間、休憩：1時間<br>平均勤務日数：1ヶ月あたり23日</dd>
+
       <dt>休暇・休日</dt>
       <dd>◆31日の月……月8日以上<br>◆30日までの月……月7日以上<br><br>◆夏季休暇<br>◆年末年始休暇（※12月31日・1月1日は店休）<br>◆有給休暇（10日〜勤続年数に応じて最大20日）<br>◆慶弔休暇<br>◆バースデー休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◆社会保険完備<br>◆交通費全額支給<br>◆国内研修（畜産農家・工場・酒蔵などの見学ほか）<br>◆海外研修（韓国、台湾、シンガポールなどで繁盛店視察を実施）<br>◆扶養手当：月3000円（扶養家族1名毎）<br>◆役職手当<br>◆おいしい賄い<br>◆毎月29日（ニクの日）の営業終了後、焼肉食べ放題<br>◆レクリエーション<br>◆社員旅行<br>◆定期健康診断<br>◆制服貸与<br>◆髪型自由<br>◆ネイル・ピアス・ヒゲOK</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E4%BA%94%E5%8F%8D%E7%94%B0%E9%8A%AD%E5%A0%B4%E7%B2%BE%E8%82%89%E5%BA%97%EF%BC%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEZENIBA%EF%BC%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
