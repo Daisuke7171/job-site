@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>機械・機構設計・金型設計｜株式会社ラージック</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>★未経験歓迎★自動車部品設計ポジション｜2年目年収400万以上可｜初年度年休23日付与</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ラージック</dd>
+
       <dt>職種名</dt>
       <dd>機械・機構設計・金型設計</dd>
+
       <dt>勤務地</dt>
       <dd>愛知県豊田市下市場町</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>豊田市</dd>
+
       <dt>郵便番号</dt>
       <dd>4710875</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>日本が誇る大手自動車メーカーの車に欠かせない、様々な部品を設計する仕事です！<br><br>【Q】どんなものを設計するの？<br>自動車の内装や外装ボディ等の様々なパーツを、平面図（設計図）から立体的な図を設計するお仕事です。<br><br>【Q】何を使って設計する？<br>「CATIA（キャティア）-V5」という3次元CADソフトです。3次元CAD（キャド）とは、立体的なモノを設計する時に使用するソフトウェア。リアルな形状を画像で確認しながら設計でき、ニーズが伸びています。<br><br>【Ｑ】入社後の流れは？<br>未経験でも不安なくスタートできるよう、まずは2カ月の研修。ほとんどの先輩が未経験スタートですのでご安心を。自動車部品設計の基礎からの設計ソフトの使い方まで丁寧に教えます！<br><br>【Ｑ】未経験でも本当に大丈夫？<br>当社は約20年前に、3次元CADによる設計を学ぶ学校を開設。300人以上の技術者を育てた実績があります。その時のカリキュラムと講師を使って育成するので、知識ゼロの方でもしっかり育ちます。<br><br>【Ｑ】研修後の流れは？<br>先輩がいる設計チームに入り、アシスタント業務を通して段階的に実務を学習。今まで何人もの未経験者を育ててきた先輩が、自信がつくまで丁寧にレクチャーします！<br>　▼<br>慣れてきたら、あなたの適性に合う案件にアサイン。ひとり立ちした後もチャットツールでいつでも先輩や上司とつながっているので、悩みや不安もすぐに相談・解決できます！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00～18：00（本社勤務の場合）<br>※常駐先により変動<br>所定労働時間：8時間<br>休憩：60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日<br>121日<br>休日・休暇<br>■完全週休2日制<br>（土・日）※トヨタ関連の仕事の場合、祝日はトヨタカレンダーに準じます。<br>■年末年始休暇<br>└2024年度は9連休<br>■GW休暇<br>└2024年度は9連休<br>■夏季休暇<br>└2024年度は9連休<br>■慶弔休暇<br>■有給休暇<br>└初年度23日支給／消化率80％（詳細は下記参照）<br>■産前・産後休暇<br>└女性・男性社員取得実績あり<br>■育児休暇<br>└取得実績100％※<br>■介護休暇<br>■看護休暇<br>＜有給休暇について＞<br>入社初日から3日間付与、半年後にさらに20日間付与。初年度に23日の付与となります！</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>＜働く環境も充実！＞<br>■社会保険完備<br>■副業OK<br>■退職金制度<br>■オフィス内禁煙<br>■借り上げ社宅有（社内規定有）<br>■リファラル制度<br>└紹介してくれた方が採用決定した場合一時金として10万、紹介した方が在籍中に限り毎月1万支給！<br>＜豊富な成長支援！＞<br>★Udemy（Eラーニング講座を使い放題）<br>★勉強会（不定期開催・参加任意）<br>「この資格を取るための勉強がしたい」など、どんな勉強会を開いてほしいかの意見を出すこともできます。会社をあげてスキルアップをサポートします。<br>★資格取得支援<br>1級機械設計技術者・技術士、2級機械設計技術者、1級機械・プラント製図、2級機械・プラント製図などが対象。取得後には資格手当も支給しまう！</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%A9%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
