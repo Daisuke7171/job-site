@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>施工管理・設備・環境保全｜STA株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【転勤なし／地域密着型】月収30万円〜／施工管理／給与交渉可／年間休日120日以上</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>STA株式会社</dd>
+
       <dt>職種名</dt>
       <dd>施工管理・設備・環境保全</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市福島区福島1-4-4　セントラル70ビル2A</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5530003</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>大手ゼネコンから地域密着型の建設会社まで、幅広い取引先の現場での施工管理業務をお任せします。<br>マンションや商業施設、公共施設などや新築および改修工事など、多数の現場の中で、あなたの経験や希望に沿ったご提案が可能です。<br>地に足をつけて、スキルアップやキャリアを築いていきたい方、大歓迎です。<br><br>＜業務＞<br>・管理業務（工程・原価・安全・品質）<br>・書類の作成<br>・施工図面などのチェックや修正<br><br>「資格はないけど、過去に経験がある」<br>「こんな経験しかないけど良いのかな？」<br>など、そんな状態でも問題ございません！<br><br>経験豊富な担当者が、経験や希望、将来的も含めてヒアリングを行い、<br>最適なキャリア形成をお手伝いします。<br><br>【求める人物像】<br>完全人柄重視の採用です！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00<br>8:00〜17:00<br><br>所定労働時間8時間<br>休憩12:00〜13:00（1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休二日制（土日祝）<br>年末年始休暇<br>夏季休暇<br>産前・産後休暇<br>育児休暇<br>有給休暇（半年後に10日支給〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（健康／厚生年金／雇用／労災）<br>評価により昇給あり<br>交通費全額支給<br>職務手当　マネージャー職　50,000円／月<br>　　　　　リーダー職　　　20,000円／月<br>社内ベンチャー制度<br>当社運営民泊施設　社員割引<br>・totonohouse 一泊無料／年<br>・totonohouse付属テントサウナ　無料<br>当社運営飲食店舗 社員割引<br>・BARエルフ梅田店 3杯無料（月2回まで）<br>・BAR Red Canyon 1杯無料（月2回まで）<br>・coco shrimp（沖縄） 1杯無料<br>・鶏そばルカライフ（水戸） 1杯無料<br>住宅補助（条件あり）<br>資格取得支援制度<br>　・弊社支給教材費控除<br>　・試験料無料（同試験一回まで）<br>フリードリンク制度<br>弊社ブランドLF.OB　一着無料</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>建築・土木・建設</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=STA%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社ランドネット</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>＼未経験からでも年収1000万超／ITを駆使する不動産営業/月給30万円以上/賞与年3回/週休2日制</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ランドネット</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都豊島区南池袋1-16-15　ダイヤゲート池袋7階</dd>
+
       <dt>都道府県</dt>
       <dd>神奈川県</dd>
+
       <dt>市区町村</dt>
       <dd>豊島区</dd>
+
       <dt>郵便番号</dt>
       <dd>1710022</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 10000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■仕事内容<br>お任せするのは、投資用不動産（主に中古マンション）の売買仲介営業。簡単に言うと、「マンションを売りたい」というオーナー様と、「マンションを購入して、賃貸経営で収入を得たい」という方をつなぐ仕事です。<br><br>■投資用不動産とは？<br>マンションを部屋単位で購入。その部屋を借りたい人に貸すことで、継続的に賃貸収入を得られるというもの。お客様に「ずっとお金を生み出しつづける資産」を購入していただくことになります。<br><br><br>■担当していただく仕事<br>（1）売りたい不動産を仕入れる情報を集める。<br>（2）集めた情報をもとに不動産を仕入れる。<br>（3）物件を調査し、広告を企画する。<br>（4）交渉の中で、売買価格のすり合わせをする。<br>（5）売買契約書を作成する。<br>（6）ローンの申し込みをする。<br>（7）決済し所有権を移転する。<br><br>カンタンに説明すると、「投資用にふさわしい物件を見つけてきて、物件所有者と投資用としての売買契約を結び、投資用不動産を投資家の方にご案内し、売買のご契約をいただく」ということ。この一連の仕事を一人で担当するため覚えることは多いのですが、その分、市場価値の高い人材に成長できます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00〜19:00<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>【年間120日以上】<br>週休2日（毎週水曜日+月に4日シフト制）<br>※水曜日以外のお休みは好きなところで取得可能です！<br>■GW（4日）<br>■夏季休暇（7～8日）<br>■年末年始（6～7日程度）<br>■有給休暇（入社半年後10日〜勤続年数に応じて最大20日）<br>■産前産後、育児休暇<br>■慶弔休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： オフィスビルに喫煙ルームがあります</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備<br>■退職金制度<br>■社員持株会制度<br>■全社員でのバーベキュー・運動会などイベント多数　<br>■福利厚生・社内制度<br>■資格取得制度（資格合格時は登録費・講習費等全額会社負担）<br><br>育休、産休など実績あり。女性も多く活躍しています。<br><br>＊「実力主義」でも「家族」のようでありたいという希望から、従業員の絆を深めるイベントが多数あります。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%A9%E3%83%B3%E3%83%89%E3%83%8D%E3%83%83%E3%83%88" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜株式会社コマエンタープライズ(関西)</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>未経験OK・残業20h以下★リクルーティングアドバイザー</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社コマエンタープライズ(関西)</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市中央区久太郎町二丁目5‐28　久太郎町恒和ビル7階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5410056</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>いま、わたしたちは大阪営業所において業務量が増加し、人員増員及び補充をしたいと考えています。<br><br>【ポジション概要】<br>採用のトレンドはここ数年間で劇的に変化しました。<br>主流となっている掲載課金型のWEB広告も、昨今の労働人口の減少などの影響により、効果が得られにくくなっているのが現状です。<br>そこでユーザーが運用を行うクリック課金型の求人広告の出現や、企業口コミサイトの活用、ダイレクトソーシングなどなど、今後も採用市場は目まぐるしく進化していきます。そんな時代の流れに対して常にアンテナを張りつつ、今後共にビジネスを展開していける仲間を募集しています。<br><br>【ポジション詳細】<br>▼営業活動<br>人材でお困りの企業に対して、当社の人材サービスを提案します。募集に必要な情報を、クライアントにインタビューし、求人票を作成します。<br><br>▼求職者の集客・選考・採用（採用マーケティング）<br>まずは求人広告の制作からおまかせしていきます。どのようなキーワードが求職者に刺さるのか、出稿のタイミングはどの曜日・時間帯が効果的なのか、実務を通して実感できるタイミングが必ずあります。<br>その後は、チャネル選定 → 効果検証 → データ分析 → 企画といった採用におけるPDCAサイクルを回していきましょう。<br><br>▼就労手続き・研修・教育<br>▼スタッフフォローアップ<br><br>仕事の進め方は全て、OJTを通して教えます。形式的な研修プログラムではなく、実践的な教育を丁寧に行っていますので、ゼロからスタート可能です！<br>若く意欲のある方でしたら、業界・職務経験は問いませんのでお気軽にご応募ください！<br><br>人材派遣に留まらず、転職支援、採用コンサルティングなど横軸展開もしている当社。今後はこうした分野をさらに強化する計画です。あなたにも、意欲に応じて幅広い挑戦をしてもらいたいと考えています。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00~18:00（所定労働時間8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>休日・休暇： 完全週休二日制<br>(土・日/年に数回、土日出社が発生する可能性あり。その場合は振替休日を取得しています)<br>※有給休暇は年間休日に含まれません。<br>• 祝日<br>• GW休暇<br>• 夏季休暇（3日）<br>• 年末年始休暇（5日）<br>• 有給休暇（入社6ヶ月後、10日付与）<br>• 慶弔休暇<br>• 育休・産休（取得実績あり）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>• 昇給:年1回<br>• 交通費全額支給<br>• 社会保険完備（雇用・健康・労災・厚生年金）<br>• 時間外手当（超過分）<br>• 役職手当<br>• 通信手当（PC・スマートフォン支給）<br>• インセンティブ（成約実績に応じ、ポイント制にて支給）<br>• 社員旅行あり<br>• 独立支援制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B3%E3%83%9E%E3%82%A8%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%97%E3%83%A9%E3%82%A4%E3%82%BA(%E9%96%A2%E8%A5%BF)" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
