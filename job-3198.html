@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>インフラエンジニア｜株式会社フロンティアソリューション</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【人柄採用！】未経験から始めるインフラエンジニア</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社フロンティアソリューション</dd>
+
       <dt>職種名</dt>
       <dd>インフラエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>東京都文京区後楽2-3-28 K.I.S飯田橋ビル5F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>文京区</dd>
+
       <dt>郵便番号</dt>
       <dd>1120004</dd>
+
       <dt>雇用形態</dt>
       <dd>契約社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>顧客先のネットワーク・サーバーシステム全般を手がけます。<br>要件定義・設計・構築といわれる上流工程から、運用・保守・監視といった下流工程まで全て網羅しており、経験や適性に合わせてアサインをします。<br>難しく感じるかもしれませんが、弊社メンバーのほとんどが未経験からのスタート。<br>着実に成長することができる土台ができあがっていますので、安心してチャレンジできます。<br><br>また受託事業も増加しており、頑張り次第ではプリセールスから納品まで一貫して携わるような、重要なポジションに就く可能性も！<br><br>【これまでのプロジェクト例（一部）】  <br>・国内大規模イベントにおけるネットワーク環境の整備  <br>・大学機関のインフラ運用保守 および機器刷新<br>・生保系業務のネットワークシステムの運用保守  <br>・金融系サーバシステムの仮想化に伴う設計・構築　ほか</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00<br>所定労働時間：8時間、休憩1時間<br><br>※プロジェクト配属後はその顧客の就業時間に準じます。</dd>
+
       <dt>休暇・休日</dt>
       <dd>＜年間休日125日＞  <br>・完全週休2日制（土・日、シフト制）<br>・祝日  <br>・年末年始休暇（5日間）  <br>・夏季休暇（3日間）  <br>・有給休暇 （10日〜勤続年数に応じて最大20日） <br>・慶弔休暇  <br>・育児介護休暇制度</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 入居ビルおよび敷地内に喫煙所はございません。</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（雇用・労災・健康・厚生年金）  <br>・交通費全額支給  <br>・時間外手当支給（固定残業時間超過分）  <br>・退職金制度（勤続5年以上の方が対象）  <br>・資格手当（指定資格取得後に手当を支給）<br>・資格取得支援制度 （指定資格取得時に受験費用を全額支給）<br>・ベンチプレス手当（ベンチプレスを既定値をクリアしたら手当を支給）  <br>・健康診断『All Ａ』手当（健康診断で全項目Aの方に手当を支給）  <br>・定期健康診断  <br>・賃貸物件仲介手数料0円／マイホームの売買仲介手数料70%OFFサービス <br>・中古自動車の購入割引サービス<br>・社内トレーニングジム  <br>・個別トレーニング指導制度※無料（ジムでのトレーニング）  <br>・FS図書館  <br>・FSカフェ（ウォーターサーバー、マッサージチェア、全自動麻雀卓を利用可能）<br>・FSゲーミング（ゲーミングPC、Switchなど）<br>・社員旅行  <br>・月 1 回社内飲み会／ BAR会（FSカフェにて飲食無料提供）<br>・社内イベント（お花見、BBQ、ゲーム大会、麻雀リーグ戦　他）  <br>・社員サークル活動（トレーニング部※通称GORI部、麻雀部　他）  <br>・大日本プロレスの最前列スーパーシート観戦（メインスポンサー）<br>・アビスパ福岡のホーム戦観戦（シャレンパートナー）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%95%E3%83%AD%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2%E3%82%BD%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>教育・保育｜株式会社ニュートン</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【講師】未経験OK・人物重視採用★月給27.5万円～★年間休日117日程度</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ニュートン</dd>
+
       <dt>職種名</dt>
       <dd>教育・保育</dd>
+
       <dt>勤務地</dt>
       <dd>兵庫県川西市中央町３－２　川西北ビル３階</dd>
+
       <dt>都道府県</dt>
       <dd>兵庫県</dd>
+
       <dt>市区町村</dt>
       <dd>川西市</dd>
+
       <dt>郵便番号</dt>
       <dd>6660016</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 8500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>私たちは、“ひたむきに勉強と向き合う生徒たちに寄り添いたい”という想いで、大手塾で経験を持つ塾長が2016年に立ち上げた学習塾です。大手のノウハウと個人塾ならではの地域の小中学校の指導に合わせたカリキュラムとサポートで、生徒・保護者の方から多くの信頼を集めています。今回は、新教室の開設も視野に、当塾で活躍してくれる新たな仲間をお迎えすることにしました。<br><br>【具体的には……】<br>生徒や保護者に寄り添う存在として、小中学生向けの個別・集団指導や教室運営を担当していただきます。これまでの経験や得意分野が仕事に活かせます。<br><br>・カリキュラムに合わせた授業の運営<br>・生徒への学習フォロー<br>・保護者との面談実施<br>・教室内での事務作業<br>・入塾に関する問い合わせ対応<br><br>まずは、地元の公立小・中学校に通う生徒の学習指導をお任せします。校区に特化したカリキュラムでの授業を行います。<br><br>＜得意教科・科目をお任せします＞<br>理系が得意なら……<br>→ 小学校は算数、中学校は数学・理科<br>文系が得意なら……<br>→ 小学校は国語、中学校は英語・国語<br>など<br><br>あなたの得意に合わせた教科の指導から始めていきましょう。ゆくゆくは広く教えられるようになりますので、じっくりと時間をかけて技術を身に付けてください。<br><br>【1日の流れ例】<br>13：00　出勤・会議研修・各種教室作業<br>16：30　小学生への授業開始<br>19：00　中学生への授業開始<br>22：00　掃除、終礼<br>22：20　退社<br><br>午後からの勤務のため、午前中は自分の時間に使えます！満員電車のストレスとも無縁の環境。また、入社後の研修では教室長や他のスタッフが丁寧にお教えいたします。<br><br>【キャリアアップについて】<br>▼1年目<br>単元の教え方など基礎的な研修からスタート。授業や教室運営の基本を少しずつ学んでいきます。<br>▼2年目<br>授業も担当しながら、教室運営を上司のもとで学んでいきます。<br>▼3年目<br>引き続き授業も担当しながら教室長として運営していきます。<br>※もちろん、ずっと現場で講師をするというキャリアも可能です。<br><br>講師として入社した後、上を目指す方は教室長として活躍できます。また、それだけではなく、生徒としっかりと向き合いたい方はずっと講師という選択も可能です。あなたの希望のキャリアを一緒に築いていきましょう。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>13：00～22：00<br>1日の労働時間：8時間、休憩1時間<br>※1年単位の変型労働時間制（週平均40時間以内）</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制（シフト制）<br>GW（7日～9日）<br>お盆休暇（7日～9日）<br>年末年始休暇（5日）<br>有給休暇（10日～勤続年数に応じて最大20日）★取得を推奨</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 勤務中は休憩時間中も含めて全て禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>研修制度<br>昇給：年1回<br>賞与：年2回<br>交通費全額支給<br>残業手当（会議研修手当）<br>家族手当</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>教育</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%88%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
