@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜株式会社ブレイブ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>20代活躍中！未経験スタート７割マイナビグループ・年休122・土日祝休の人材コーディネーター★柏</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ブレイブ</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>千葉県柏市旭町1-12-2　エレル柏ビル6F</dd>
+
       <dt>都道府県</dt>
       <dd>沖縄県</dd>
+
       <dt>市区町村</dt>
       <dd>柏市</dd>
+
       <dt>郵便番号</dt>
       <dd>2770852</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>派遣会社で企業と派遣スタッフを繋ぐのお仕事！<br>看護師・介護士・保育士などのお仕事のご紹介をサポートしていただきます。<br><br>その希望に合った就業先を探し出し、<br>無事に勤務を開始するまでをサポートしていきます。<br><br><br>--【具体的な業務】--------------------------------<br>1. 登録者(以下スタッフ)の条件に合った仕事先を住所から探せる簡単なシステムから探します<br>2. スタッフさんにあった仕事先が見つかればお電話やメールで「こんなお仕事ありましたよ」とご紹介！<br>3.求人企業の開拓<br>スタッフさんの希望に合う求人がない場合、既存の取引先はもちろん、新規の企業も開拓し、アプローチの連絡をします。求人中の企業を探すイメージ。<br>4.人材と企業のマッチング<br>職場見学なども行ない、求職者と企業の双方が納得すれば、就業開始です。<br>ー★職場見学にも同行!!<br>良い就業先が見つかれば、スタッフさんに同行して<br>職場見学に向かいます。<br>不安なく就業できるようにサポートをお願いします。<br><br>ー★事務作業も担当。<br>夕方頃からは契約書の作成や電話連絡などの<br>事務作業をして一日の業務は終了。<br>19時過ぎには基本退社しています！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00<br>1日の労働時間：8時間、休憩1時間<br>1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下）</dd>
+
       <dt>休暇・休日</dt>
       <dd>■月9日休（週2日休み・基本土日祝休み）<br>※年間休日122日以上<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>■夏季休暇3日<br>■冬季休暇5日<br>■リフレッシュ休暇5日<br>■誕生日休暇<br>■慶弔休暇<br>■結婚休暇<br>■出産立会休暇<br>■産前産後休暇<br>■通院休暇<br>■生理休暇<br>■育児休暇<br>■介護休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■通勤手当（月額上限2万円）<br>■社保完備（労災・雇用・健保・厚生年金）<br>■資格取得支援制度<br>■社宅制度（会社が転勤を命じた場合）<br>■引っ越し補助金<br>■ブレ活制度(野球、フットサル、BBQ、スノーボード、忘年会、新年会等を全額会社負担)<br>■研修制度（入社時研修・職種別・階層別研修）<br>■インセンティブ制度<br>■チケット制度（スポーツ観戦や東京ガールズコレクションなども楽しめます！）<br>■マイナビ全社顕彰（マイナビグループ全体で年間を通して活躍した従業員・チームなどを表彰する制度）<br>賞金は最大30万円と海外旅行が贈られます。※キャリア新人賞・マネージャー賞・チーム賞の受賞実績あり<br>■人事フォロー面談（定期的に個人面談）<br>■定期健康診断<br>■ストレスチェック<br>■ノー残業DAY（毎月給与支給日は、定時終業）<br>◇ U・Iターン支援あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%96%E3%83%AC%E3%82%A4%E3%83%96" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
