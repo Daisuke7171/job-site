@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社アドラス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>求人広告の営業◆月給29万円～／残業月20h／年休125日／土日祝休み／研修・インセンティブ制度充実</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社アドラス</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都目黒区青葉台3-6-28 住友不動産青葉台タワー 18F</dd>
+
       <dt>都道府県</dt>
       <dd>兵庫県</dd>
+
       <dt>市区町村</dt>
       <dd>目黒区</dd>
+
       <dt>郵便番号</dt>
       <dd>1530042</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>求人広告の提案を通じて、クライアントの採用課題を解決へと導きます。<br>受注後もお客さまと併走し、効果分析や運用まで一貫してサポートします。<br>そのため新規開拓の営業力や既存顧客のサポートによるマーケティング力が身につく環境です！<br><br>≪仕事の流れ≫<br>【1】アポイントの取得<br>商談先となる企業に対して、電話にて広告掲載の提案・アポイントを取得。<br><br>【2】訪問・商談<br>お客さま先に訪問して、状況をヒアリング。<br>課題に合わせて最適なプランを提案します。商談方法は訪問またはオンライン対応です。<br><br>【3】受注・広告の作成依頼<br>ヒアリングした内容を制作チームに伝え、広告ページのベースを作成。<br><br>【4】運用・アフターサポート<br>掲載結果を振り返って、より効果を生み出すためのご提案や、改善点について話し合っていきます。<br><br>≪入社後は…≫<br>▼座学＋1週間程度の営業研修(ロープレなど)で営業の基礎を学びます。<br>▼慣れてきたら少しずつ業務を一人でやっていきます。<br>▼テレアポ～提案まで一人でできるようになれば独り立ちです。(1～3カ月程度)</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00～19:00<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休2日制（土・日）<br>・祝日休み<br>・年末年始休暇（5日以上）<br>・GW休暇<br>・夏季休暇（5日以上）<br>・慶弔休暇<br>・有給休暇（10日～勤続年数に応じて最大20日、半日単位での取得可能）<br>・介護休暇<br>★5日以上の連続休暇が取得可能です。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 喫煙目的室設置</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◇交通費支給（月2万5000円）<br>◇社会保険完備（雇用・労災・健康・厚生年金）<br>◇時間外手当（超過分）<br>◇役職手当<br>◇職能手当<br>◇資格手当<br>◇インセンティブ制度<br>◇社内イベント＆社員旅行あり<br>◇オフィス内分煙<br>◇飲料水・コーヒー無料<br>◇社用携帯＆PC貸与<br>◇Wi-Fi完備<br>◇オフィスカジュアル<br>◇オフィスコンビニ設置</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%83%89%E3%83%A9%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

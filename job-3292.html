@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜株式会社スポーツフィールド</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>急募エリア(名古屋・大阪・岡山・広島・福岡)スポーツ経験者（新卒採用/中途採用）人財コーディネーター</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社スポーツフィールド</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>岡山県岡山市北区幸町8-20. AQUAテラス幸町ビル 6F.</dd>
+
       <dt>都道府県</dt>
       <dd>福岡県</dd>
+
       <dt>市区町村</dt>
       <dd>岡山市</dd>
+
       <dt>郵便番号</dt>
       <dd>7000903</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【業務概要】<br>スポーツ人財のコーディネーター（法人営業／キャリアアドバイザー）として、法人・個人双方へのコンサルティング業務をお任せいたします。<br>クライアントが抱える問題に対し、多様なアプローチから企画・提案を行い、最適な解決方法をプランニングしてください。<br><br><br>【業務詳細】<br>（1）法人向け…新卒採用、中途採用を検討している企業に対し、スポーツ人財の素晴らしさを伝え、課題解決に向けて様々な商材を提案していただきます。<br>（2）個人向け…「スポナビ」、「スポナビキャリア」登録ユーザーや、転職活動を行うスポーツ人財にアプローチを行い、個人の夢や目標に寄り添った支援を通して、理想のキャリアを築けるようアドバイスをしていただきます。<br><br><br>【一日の流れの例】<br>08：50　<br>↓掃除、朝礼<br>09：05　<br>↓始業、企業営業（営業架電、訪問等）<br>12：00<br>↓昼休み<br>13：00<br>↓人財面談<br>18：00<br>↓日報記載<br>19：00<br>↓完全退社<br>21：00　<br>※水曜日は18：00、金曜日は20：00退社</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:50 - 18:00<br>（休憩70分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土・日）/祝日/年末年始休暇/有給休暇/慶弔休暇/出産・育児休暇/カフェテリア休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>資格取得奨励金制度/育児休暇制度/社員旅行/持ち株制度<br>月間、半期、年間個人・エリアMVP表彰/社内表彰（SFアワード）/記念日早帰り/社内カフェ・バースペース/社員誕生日お祝い制度/社外研修費用（年間10万円まで）社内プチ社食・オフィスコンビニ（拠点により）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

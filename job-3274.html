@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜シェアフル株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>エージェント事業部_キャリアドバイザー_未経験可【新規立ち上げ事業/人材紹介事業】</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>シェアフル株式会社</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区南青山1-15-5パーソル南青山ビル4階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1070062</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 5500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>仕事内容<br><br>キャリアチェンジ大歓迎のポジションです！<br><br>この度シェアフル事業をより拡大、グロースしていくための<br>新規ビジネスモデルの立ち上げとして若年層を中心とした人材紹介事業にチャレンジ中。<br><br>シェアフルとして1日単位のマッチングにおけるスキームを構築しサービスを伸ばしていますが<br>その中でも長期で働くニーズというのはまだまだ多くあります。<br>そこでシェアフルとしても『誰もの「はたらく」をひろげ、新しい「はたらく」をつくる』という<br>ミッションをより目指していくための新たな取り組みを実施していくことに決めました。<br><br>スキマバイトでご活躍されている若年層のシェアフルユーザーさんに対し、継続してスキマバイトを提供し続けるだけでなく、その方のキャリアの可能性をより拡げられるよう、様々な未来の選択肢をつくっていくけるよう、キャリアアドバイザー(CA)としてユーザーさんとのキャリア構築に携わっていただける方を探しております。<br><br>▼具体的な仕事内容<br><br>・長期就業を目指す若年層 / 未経験層のユーザーさんとの面談<br>・キャリア軸の整理<br>・ユーザーさんディレクション/折衝業務<br>・外部求人担当との折衝<br>・意思決定におけるサポート/折衝<br><br>など<br><br>※スキマバイト「シェアフル」サービスを基盤にサービス提供を行うため、キャリアアドバイザーの方は、掘り起こし架電や、スカウト送付の業務は一切行っておりません。<br><br>完全立ち上げのポジションになりますので上記のような業務を想定しつつも<br>事業を伸ばしていくために必要なことは役割の幅を超えても行っていく必要があります！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>■マンスリーフレックス制（コアタイムなし）<br>標準時間　10：00～19：00（所定労働8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土日）、国民の祝日、年末年始（12/30～1/3）、年次有給休暇（10日〜勤続年数に応じて最大20日）、夏季休暇（5日間）、その他特別休暇　※2023年度の年間休日122日</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（健康／労災／雇用／厚生年金）、グループ会社間転職(キャリアチャレンジ)、グループ会社間インターン(ジョブトライアル)、外部コーチング(マイカウンセラー)、介護休暇制度、産休・育児休暇制度、子の看護休暇、慶弔見舞金制度、社内研修制度、確定拠出年金（DC）、従業員持株会、リファラルインセンティブ(社員紹介制度)、オフィスカフェ、オフィスコンビニ</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%B7%E3%82%A7%E3%82%A2%E3%83%95%E3%83%AB%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

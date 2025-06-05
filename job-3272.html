@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜株式会社フルクラム</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>あと１名　仙台駅スグ【社内サポートセンタースタッフ】正社員　★残業少なめ</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社フルクラム</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>宮城県青葉区</dd>
+
       <dt>都道府県</dt>
       <dd>静岡県</dd>
+
       <dt>市区町村</dt>
       <dd>青葉区</dd>
+
       <dt>郵便番号</dt>
       <dd></dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 3000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>仙台駅スグ。<br>【具体的には……】<br>・当社が行っているオンサイトでのスマホ、PCサポートスタッフのサポートセンターの方からの社内向けの仕事です。<br>　品質をよくするために現場のサポートスタッフと共により良いサービスを構築する仕事です。<br>※一般の消費者からではなく当社の社員などからの問い合わせです。<br><br>★研修期間（座学／OJT）★<br>入社後は本人に合わせて研修を1週間〜1ヶ月ほど行います。個人情報の取扱いやツールの使い方、応対方法などを座学やロープレ を交えて学んでいきましょう。 集合研修もあるため、同期との繋がりも見つけられるかもしれません！研修後は簡単なお仕事からお任せしていく予定です。 ※プロジェクト先による<br><br>研修終了後もOJTを実施し、手厚くフォローいたしますので、安心してスタートできます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜19:00<br>所定労働時間8時間、休憩1時間<br>お休みはシフト制で平日中心のお休みです。<br>シフトやプロジェクトにより下記の時間帯もございます。<br>例<br>1、8:50〜18:00<br>2、9:50〜19:00<br>3、10:50〜20:00<br><br>※9:00〜18:00がメイン<br>※各プロジェクト先による<br>※休憩時間60分（各プロジェクト先による）</dd>
+
       <dt>休暇・休日</dt>
       <dd>【年間休日113日以上】<br>※実際は、プロジェクト先の9割以上は、年間休日120日の現場です。<br>シフト制（月9日〜12日休み／月3日の希望休含む）<br>年末年始休暇<br>有給休暇（10日～勤続年数に応じて最大20日）<br>慶弔休暇<br><br>★長期・連続休暇取得可能です</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（雇用・労災・健康・厚生年金）<br>交通費支給（上限1.5万円/月まで）<br>役職手当<br>資格手当<br>資格取得支援制度（指定資格の試験受験料を会社負担）<br>健康診断<br>昇給年1回（9月）<br>決算賞与（9月）※業績による<br>時間外手当（超過分）<br>職務給<br>報奨金<br>リファラル制度（1名採用につき5〜10万円支給※社内規定あり）<br>★リファラル制度では年間で5人紹介してくれて50万円得た社員もいます。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%95%E3%83%AB%E3%82%AF%E3%83%A9%E3%83%A0" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

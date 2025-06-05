@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社ケンツー</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>※長野※ケーブルテレビの営業★完全反響営業★</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ケンツー</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>長野県長野市南県町657</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>長野市</dd>
+
       <dt>郵便番号</dt>
       <dd>3800836</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>◆テレアポナシの完全反響営業<br>当社が取引している大手ケーブルテレビのプロモーションをサポートする業務をご担当頂きます。<br>主にはケーブルテレビの契約者様とやりとりをします。<br>契約者様より「このサービス追加したい」「このサービスの説明してほしい」などの要望にお応えします。<br><br>【仕事詳細】<br>◎契約者様宅への訪問<br>◎ケーブルテレビに関する不満点やニーズのヒアリング<br>◎顧客満足度向上につながるサービスの提案<br><br>◆1日の訪問件数<br>4~5件<br><br>＜商材＞<br>ケーブルテレビ会社の提供サービスおよび商品（テレビ、ネット、固定電話、スマホ、電気など）<br><br>＜営業手法＞<br>一戸建てへの新規営業、加入者様への追加営業、不動産管理会社様への<br>ケーブルテレビサービス導入提案など、幅広い営業手法を構えております。<br><br>「野球チャンネルが見たい」<br>「ネットの速度を上げたい」<br>「ケータイの料金を安くしたい」<br>などの生活インフラのお困り事をお伺いし、解決案を提案するお仕事です。<br><br>日常生活に既に取り入れられているものが商材のため、お客様の関心を得やすく未経験の方もスタートしやすい内容です。<br><br>将来的には様々な営業手法を経験し、幅広い営業スキルを身に着けていただけます。<br><br>＜目標の立て方＞<br>個人のスキルや経験に合わせて月ごとに設定いたします。<br>個人の目標設定はあるものの、チームで達成を目指すような体制を取っています。<br>目標を達成しないことにより厳しい指導を受けるということはない社風です。<br>社内の思考は「部下、後輩の”管理”」ではなく「部下、後輩の”支援”」というスタンスです。<br><br><br>【入社後の流れ】<br>まずは数日の座学研修を受けて頂き、ビジネスマナーや業務を行う上での基礎知識を学んで頂きます。<br>現場へ配属された後は、先輩社員の営業に同行しノウハウを学んで頂きます。<br>未経験の方でもスムーズにお仕事を始められますよ。<br><br>【キャリアステップ】<br>入社後、まずはお取引先様に常駐しケーブルテレビの営業職に携わっていただきます。<br>早い方ですと、2～3年目にはチームのリーダーとして部下を抱えることもございます。<br>また、新規プロジェクトの立ち上げに携わっていただくようなこともあり、<br>ご自身の理想とするキャリアについて入社後にご相談いただければと思います。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>定時　9:00～18:00<br>※所定労働時間は8時間です。（休憩60分）<br>※各事業所により勤務時間が異なる場合があります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>休日：週休2日（土日祝以外）<br>休暇制度：有給休暇、年末年始休暇、夏季休暇、慶弔休暇、産休・育休<br><br>補足：休日は配属先により異なる 完全週休2日制（火水休み）もしくはシフト制 <br>年次有給休暇（半年勤務後10日付与、勤続年数に応じて最大20日付与）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備・退職金制度・交通費全額支給・役職手当・住宅手当<br>・資格手当・家族手当・健康診断（全額会社負担）<br>・社内表彰制度 ・引越し交付⾦制度(規定有) ・キャリアアップ⽀援制度<br> ・研修制度 ・ジョブローテーション制度 ・時間外手当 ・転勤手当 <br>・出張手当 ・営業手当 ・結婚出産お祝⾦制度 <br>・オータムフェス（表彰、社員総会）<br> ・サークル活動 ・建通ファクトリー（社内ベンチャー制度）<br><br> 誕生日には会社よりプレゼントがあったり、ボーリング大会や野球大会、バーベキューなど社 員同士の交流の場がたくさんありますよ。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B1%E3%83%B3%E3%83%84%E3%83%BC" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

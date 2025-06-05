@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>カスタマーサポート・コールセンター運営｜株式会社HRC</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>女性向け通販事業CS(カスタマーサクセス/サポート）【株式会社HRC】</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社HRC</dd>
+
       <dt>職種名</dt>
       <dd>カスタマーサポート・コールセンター運営</dd>
+
       <dt>勤務地</dt>
       <dd>東京都豊島区高田３－１４－２９ＫＤＸ高田馬場ビル５階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>豊島区</dd>
+
       <dt>郵便番号</dt>
       <dd>1710033</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 5500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■各媒体ごと、ブランドごとの戦略・施策立案・実行（電話、LINE、SMS…）<br>例）電話：定期や購入枚数増へのアップセル施策、継続促進率(解約抑止率)向上施策<br>　　LINE：継続促進率(解約抑止率)向上施策、クチコミ募集施策、啓蒙施策、お客様とのコミュニケーション施策<br>■お客様のお声に対する改善施策：様々なご意見・ご要望に対してCSから他部署へ連携し、会社全体へ改善提案を行っていきます<br>例) 座談会・アンケート施策・１to１取材…<br>■既存顧客のロイヤリティ向上施策の企画、実行（現状の数値分析・改善施策）<br>例）取材発信、バースデー施策、座談会等のイベントの実施...<br>■業務委託をしているコールセンターの数値管理（継続率、アップセル、クロスセル、会員ランク向上など）・応対品質育成<br>※数値管理に関しては主に、お電話での継続促進率(解約抑止率)や定期引き上げ率の管理がメインです。<br>■業務委託をしているコールセンターからのエスカレーション対応<br>■ブランド別の施策企画・推進</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>【勤務時間】<br>9:30～18:30(実労働時間8時間、休憩1時間)</dd>
+
       <dt>休暇・休日</dt>
       <dd>【休日・休暇】<br>■完全週休2日制（土・日）、祝日<br>■GW休暇<br>■夏季休暇（5日）<br>■年末年始休暇（9日）<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>■慶弔休暇<br>■特別休暇<br><br>※産休・育休取得実績あり</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>＜柔軟な働き方をサポート＞<br>✔️ 申請制リモートワーク制度<br>  - 家族の病気や介護など、やむを得ない事由により出社が困難な方でも働けるよう、会社の許可した場合にリモートワークができる制度<br>✔️ 通院中抜け休暇制度<br>  - 通院による中抜けに対応し、健康管理をサポート<br><br>＜多様な休暇制度＞<br>✔️ Ms.（ミズ）休暇制度<br>  - 女性特有の健康管理に配慮した休暇制度<br>✔️ 家族看護休暇制度<br>  - 大切な家族の看護に必要な時間を確保<br>✔️ アニバーサリー休暇制度<br>  - 記念日や特別な日を大切にできる制度<br><br>✔️ ベビーシッター補助制度<br>  - 子育てと仕事の両立をサポート<br><br>＜生活支援制度＞<br>✔️ 住宅手当<br>  - 住宅手当（3.5万円／月）（条件：高田馬場駅より半径5km以内）<br>✔️ 引越し手当<br>  - 内定承諾後の引越しも対象（入社4ヶ月目以降に支給）<br>✔️ 自宅防災備品購入手当<br>  - 安心・安全な生活のためのサポート<br>✔️ 実家帰省手当<br>  - ご実家（実の親がお住まいの場所）への帰省を支援<br><br>＜女性の健康サポート＞<br>✔️ AMH検査（卵巣予備能検査）無料提供  <br>  - にしたんARTクリニックでの無償サービス<br>✔️ ピル代・婦人科受診費用補助  <br>  - 女性特有の健康管理をサポート<br><br>＜健康管理支援＞<br>✔️ 健康診断充実プラン<br>  - オプション検査費用補助<br>  - 再検査費用補助<br>✔️ 禁煙支援制度<br>  - 禁煙外来費用補助で健康的な生活を応援<br><br>★その他、基本的な福利厚生も整備されています<br><br>■各種社会保険完備 ( 雇用・健康・労災・厚生年金 )<br>■食事会（達成会・歓迎会・誕生日会など）<br>■各種イベント有り（忘年会、スポーツイベントなど）<br>■健康診断<br>■インフルエンザ予防接種<br>■交通費支給有り(限度額：月2万円)<br>※バス利用の場合は直線距離２km以上で支給対象になります。<br><br>私たちは、従業員一人ひとりの多様なライフスタイルを尊重し、働きやすい環境づくりに努めています。充実した休暇制度や柔軟な働き方に加え、日々のオフィスライフまで、きめ細やかにサポート。仕事とプライベートの充実した両立を実現できる環境を整えています。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEHRC" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

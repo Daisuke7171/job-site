@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>サービスエンジニア・サポートエンジニア｜デジタルデータソリューション株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>⑬【未経験可能】サポートエンジニア ★六本木ヒルズ勤務 ★年間休日126日 ★キャリアアップ可</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>デジタルデータソリューション株式会社</dd>
+
       <dt>職種名</dt>
       <dd>サービスエンジニア・サポートエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区六本木6丁目10番1号 六本木ヒルズ森タワー15階</dd>
+
       <dt>都道府県</dt>
       <dd>福岡県</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1060032</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>ー会社概要ー<br>「困った人を助け、困った人を生み出さず、世界中のデータトラブルを解決します」の企業理念のもとに、<br>六本木ヒルズに本社（ラボを含む）を構え、全国のITインフラのトラブルに関するソリューションを提供しています。<br>年間5万件超えのご相談実績があり、データ復旧専門業者14年連続データ復旧国内売り上げNO.1を維持し続けています。<br><br>ー募集職種ー<br>サポートエンジニアとして、ITセキュリティ部署での採用となります。<br>書類選考・面接の結果より、応募者様の職歴や適性に応じたポジションへの配属とさせていただきます。<br>※ご要望をお伺いし、ご了承を得た上で配属先を決定します。<br><br>■業務内容<br>・データ復旧作業のサポート<br>・機器の分解、組み立て<br>・ネットワーク機器の導入サポート<br>・セキュリティ製品のヘルプデスク対応（製品マニュアルを見て、操作方法などを案内）<br>・フォレンジック調査サポート（データコピー、簡易調査対応、レポーティングなど）<br>・機器の入出庫、管理手続き、キッティング<br><br>DDHBOXは全自動でハッカーへの不正通信を検知・遮断・通知するセキュリティ製品で、日本最高峰のセキュリティセンターリストを使用している競争力ある製品のため、高い成約率を誇ります。<br>エンドユーザー（代理店の顧客）への商談同席と製品説明が中心となります。<br><br>■配属先部署<br>・セキュリティ事業部：セキュリティ製品を購入いただいたお客様への導入サポート、在庫管理がメインとなります。開発へ携わることも可能です。<br>商品知識を活かし、エンジニアからセールスへ転向した事例もございます！<br><br>ー特長ー<br>■20代・30代が活躍ー業界経験を活かして躍進できる環境。<br>・社員の平均年齢は29歳。若手社員が多く、年齢や職歴を問わず活躍できる環境です。<br>・トレンドの移り変わりが激しいデータ領域において、エンジニアとしての実績を積む第一歩を踏み出すことが出来ます。<br><br>■企業拡大フェーズー株式上場・業界の成長に向けた組織拡大。<br>・業界の成長とともに、過去最高売上を更新中。拡大フェーズの組織下でチャレンジを重ねながら、失敗も糧にして成長できる環境です。<br>・株式上場に向けて、業務環境の整備も推進して取り組んでおります。違法労働やハラスメントには手厳しく対応を行っている管理体制です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>平日9:00～18:00<br>(所定労働時間：8時間　休憩1時間)</dd>
+
       <dt>休暇・休日</dt>
       <dd>土日祝日休み（年間休日126日）<br>GW、夏季休暇、年末年始休暇<br><br>■その他の休暇制度<br>・有給休暇（10日〜勤続年数に応じて最大20日）、慶弔休暇、結婚休暇、産前産後休暇、育児休暇など取得しやすい環境です。<br>※5⽇以上の連続休暇取得可能。<br>※育休・産休取得、男女問わず実績あり。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・交通費全額支給<br>・各社会保険完備<br>・私服勤務可<br>・オフィス内禁煙（六本木ヒルズ内に喫煙所有り）<br>・定期健康診断（年1回）<br>・インフルエンザ予防接種、コロナウイルス対策（除菌、検温、PCR検査キット、他）<br>・福利厚⽣アプリ加入<br>・iDeCoプラス加入<br>・持株会制度<br>・社外研修公募（ロジカルシンキング研修、MBA研修、他）<br>・ビジネス読書アプリ無料<br>・社内イベント（表彰式など）※既定の飲み会、懇親会などはありません。<br>・各種表彰制度（社長賞、永年勤続賞、顧客満足賞、他）<br>・キャリチャレ（立候補制の社内異動制度）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BD%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>労務｜レカム株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【東京】労務(給与社保)担当/福利厚生◎/経常利益160％成長</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>レカム株式会社</dd>
+
       <dt>職種名</dt>
       <dd>労務</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区代々木3-25-3　あいおいニッセイ同和損保新宿ビル12F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1510053</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■職務内容：<br>個人の業績をしっかり給与に反映させ、評価の基準については<br>全てオープンとなっており、昇給昇格のタイミングが個々に把握できます。<br>活躍した社員は学歴や年齢を問わず、すぐに昇進できる環境が整っています。社員一人ひとりが主役になれる会社です。<br><br>①契約と連携管理<br>　外部の給与計算委託業者、社会保険事務所との窓口としての機能<br>②データ提供と管理<br>　従業員データや契約情報を外部委託先に提供し、提供された結果を管理				<br>③品質管理<br>　提供された給与計算結果を品質管理し、精度を担保する				<br>④問い合わせ対応<br>　従業員からの給与に関する問い合わせに対応する				<br>⑤雇用契約管理<br>　従業員の各種申請書、情報の管理				<br>⑥採用プロセスサポート<br>　新規採用時入社手続き、退職手続きの運用管理を行う				<br>⑦勤怠管理<br>　従業員の勤怠情報を管理しそれに伴う給与計算を行う				<br>⑧法令順守<br>　労働法令の遵守、トラブルが発生時には対応し解決に向けた措置を講じる				<br><br>■やりがい：<br>当社は「社員満足度の高い優良企業」として、就活アワードで評価いただいた実績があります。その背景には充実した福利厚生があり、産休育休制度（取得実績有）や子供手当など制度面でのサポートが手厚いです。その制度活用時に重要となってくるポジションこそが労務であり、社員が働きがいを持って活躍していただくためにバックオフィスから会社を支えることができます。<br><br>■組織構成とキャリアパス：<br>40代男性1名、40代女性1名、20代女性1名の計3名です。<br>ご入社後は個人のスキルと経験に合わせて業務をお任せします。<br>ゆくゆくはマネジメントまで携われる社員への成長を期待しています。<br><br>■働き方：<br>月平均残業20Hです。19：00には退社するように全社的な意識づけがあり、<br>年間休日は120日で社員各々が効率的な働き方を自発的に工夫していることが背景にあります。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>・勤務時間帯：8:30～17:30（所定労働時間8時間、休憩60分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休2日（土日祝日）<br>・有給休暇（入社半年経過後10日～勤続年数に応じて最大20日）<br>・年末年始<br>・GW休暇<br>・有給慶弔<br>・バースデー休暇<br>・結婚記念休暇<br>※バースデー休暇・結婚記念休暇はいずれか一つ</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>【各種手当】<br>・通勤手当：有り（上限50,000円/月）<br>・子供手当（1人1万円/月、2人3万円/月、3人6万円/月）<br><br>【福利厚生】<br>・社会保険完備<br>・社員持株会<br>・ストックオプション<br>・独立支援制度<br>・提携保養施設<br>・社員旅行<br>・団体保険加入<br>・禁煙手当<br>・提携スポーツジム等</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%AC%E3%82%AB%E3%83%A0%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
