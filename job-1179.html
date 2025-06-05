@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>調理｜株式会社ポジティブドリームパーソンズ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【東京都・築地】キッチン調理スタッフ</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ポジティブドリームパーソンズ</dd>
+
       <dt>職種名</dt>
       <dd>調理</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区明石町８−１ 聖路加ガーデン 47階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1040044</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■結婚式・レストランにおける調理業務全般をお任せします。<br>【具体的には】<br>・調理や盛り付け<br>・メニュー開発<br>3ヶ月に1回のミーティングを開催。スタッフ全員で、新メニューやサービスのアイデアを発信し合います。お客様の声やアイデアなど、色々な観点から提案してください。<br><br>【あなたのキャリアを形成します】<br>売上げ管理等のマネジメントスキルはもちろんのこと、ひとつの施設を総合的にマネジメントすることで、経営者としての視点も獲得することが出来きます。<br>経験をお持ちの方は入社半年で料理長への昇格も目指せるなど、頑張りを評価する風土が根付いているのも魅力です。<br><br>また、経験やスキルと今後のキャリアパスに合わせた研修制度が<br>充実しているので、数値管理や、人材育成といったマネジメント業務を学んでいくことも可能です。<br>ゆくゆくは当社の別業態の店に異動して、さらに腕をみがくことも可能です。独立を目指すスタッフもおりますため、意欲次第で多彩なキャリアを描けます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>＜労働時間区分＞<br>1ヶ月単位の変形労働時間制<br>週平均労働時間：40時間00分<br>休憩時間：60分<br>時間外労働有無：有<br><br>＜標準的な勤務時間帯＞<br>7:30～23:30<br><br>＜その他就業時間補足＞<br>■所定労働時間8h/日※シフト制（1ヶ月単位の変形労働時間制）<br>■残業40h程※繁忙期、閑散期により異なる</dd>
+
       <dt>休暇・休日</dt>
       <dd>■月9日休 ※シフト制（2月のみ8日休）<br>■有給休暇<br>■産休・育休（取得実績100％）<br>■慶弔休暇<br>※夏季休暇や年末年始などで5日以上の長期連休取得も可能！</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◆昇給（半年の1回）※人事考課による<br>◆賞与年4回（5月・8月・11月・2月）<br>◆社会保険完備（雇用・労災・健康・厚生年金）<br>◆交通費（1か月の上限50，000円）<br>◆全国勤務手当（月8,000円～15,000円※対象者限定）<br>◆特殊技能手当/キッチン職（月30,000円～55,000円）<br>◆役職手当（55,000円～185,000円）<br>◆勤務地エリア限定制度あり<br>◆社員割引制度<br>（レストラン：利用額から20％OFF、ホテル宿泊：30％OFF、フラワー：20％OFFなど）<br>◆披露宴参加サポート制度（1回あたり5,000円）<br>◆ロングラン表彰制度<br>（勤続年数10年・15年・20年を迎えるメンバーへの祝い金/社員の場合：100,000円～300,000円）<br>◆感動グランプリ‼レストラングランプリ‼賞金（50,000円～300,000円）<br>◆ママズ制度<br>（子どもが小学校6年生の3月末まで時短勤務が可能。※現場職種限定）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%9D%E3%82%B8%E3%83%86%E3%82%A3%E3%83%96%E3%83%89%E3%83%AA%E3%83%BC%E3%83%A0%E3%83%91%E3%83%BC%E3%82%BD%E3%83%B3%E3%82%BA" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

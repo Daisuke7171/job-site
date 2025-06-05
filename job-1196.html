@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜三和ペイント株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【提案営業（業界未経験可）】住まいの塗装プランナー★高インセンティブ／1年目から年収600万以上続出</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>三和ペイント株式会社</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>兵庫県神戸市中央区磯辺通1-1-20 KOWA BLDG.502号室</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>神戸市</dd>
+
       <dt>郵便番号</dt>
       <dd>6510084</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>お客様のお住まいにおける、屋根や外壁などの塗り替えに関する提案営業をお任せします。<br><br>＜具体的な仕事内容＞<br>・顧客の開拓、アプローチ<br>・事前ヒアリング（電話）<br>事前にマイホームの屋根や外壁塗装に関するサービスのご案内<br>・アポイント取得<br>・訪問、提案<br>お客様宅へ訪問し、ヒアリングをもとに塗装についての提案<br>・見積もり、受注<br>・施工手配<br>施工パートナー企業へ引き継ぎ（施工中のお客様フォロー）<br>・引渡し<br>工事が終了したらお客様へ引渡し<br>・アフターフォロー<br>1年、5年、10年毎の定期点検にてアフターフォロー<br><br>＜営業手法＞<br>電話にて顧客にアプローチします。<br>目標の立て方：四半期ごとに支店責任者と面談し、自己目標を立てます。<br>そこから平均的な移行率・もしくは過去の自己実績から架電数やりサーチ件数などの基本行動の目標を立てます。<br><br>1日の架電件数目標：30件（土日は60件程度）<br>※アポ2件に1件は成約につながります。（アポイントからの成約率4割以上）<br><br>＜商材・サービス＞<br>当社のサービスは、マイホームの屋根や外壁の塗装です。<br><br>＜主な顧客＞<br>・一般家庭<br><br>【1日の流れ】<br>9:00　出社<br>▼<br>9:00～14:00　（担当エリアのお住まいを見て回る）この間に昼休憩可<br>▼<br>14:00～17:00　移動、休憩、トレーニングなど（時間は自由）<br>▼<br>17:00～18:00　電話番号検索<br>▼<br>18:00～20:30　架電<br>▼<br>20:30　退社<br><br>【入社後の流れ】<br>入社後は、丁寧な研修を通して、商品知識や営業のポイントなどについて学んでいただきます。<br><br>【キャリアステップ】<br>・入社1年で課長に昇格<br>・入社1年9ヶ月で支店責任者に昇格<br>・入社3年で支店長に昇格</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～20:30<br>1日の労働時間：8時間、休憩3時間30分<br>1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下）<br><br>※業務の進め方・時間の使い方などに決まりはありません。<br>効率よく働いて早めに帰るなどの働き方も可能です。</dd>
+
       <dt>休暇・休日</dt>
       <dd>・会社カレンダーに従い、月7〜10日<br>・年末年始休暇<br>・GW休暇<br>・夏季休暇<br>・慶弔休暇<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>※消化率100％<br>・産前産後休暇<br>・特別休暇<br><br>公休を含め、最大10日の長期休暇の取得が可能。（節目の休暇は全社で休みとなります）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・昇給年2回（6月、12月）<br>・決算賞与（12月　※業績連動型）<br>※昨年度は平均70万円／人<br>・インセンティブ制度<br>・交通費支給（上限2万円／月）<br>・住宅手当（弊社都合のみ）<br>・役職手当<br>・時間外手当（みなし残業の超過分）<br>・退職金制度（勤続3年以上）<br>・独身寮（弊社都合のみ）<br>・単身赴任手当<br>・初成約お祝い金（3万円）<br>・携帯電話貸与（支店責任者以上）<br>・営業車貸与<br>・制服貸与<br>・各種研修制度あり<br>・OJT支援DVD（営業編、マネジメント編、自己評価編の教育DVD）<br>・教育支援制度（社外研修、通信講座などの費用の半額を負担）<br>・ブラザーシスター制度（付きたい上司、先輩を指名可能）<br>・車通勤可能（支店によって可能・不可があります）<br>・勤続表彰（10年に一度、金一封を添える）<br>・誕生日お祝い（社員とその家族が対象。社長よりプレゼントと手紙を贈呈）<br>・結婚祝い金<br>・定期健康診断</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E4%B8%89%E5%92%8C%E3%83%9A%E3%82%A4%E3%83%B3%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
