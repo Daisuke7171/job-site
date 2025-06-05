@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>秘書｜東邦ゴム工業株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【役員秘書】幅広い業界との取引で 経営基盤安定！海外にも自社工場を持つ技術商社</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>東邦ゴム工業株式会社</dd>
+
       <dt>職種名</dt>
       <dd>秘書</dd>
+
       <dt>勤務地</dt>
       <dd>石川県白山市田中町315</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>白山市</dd>
+
       <dt>郵便番号</dt>
       <dd>9240801</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■仕事内容<br>社長・役員のパフォーマンスを最大化するための秘書業務(事務、移動支援など)<br>をご担当いただきます。<br><br>&lt;&lt;日常業務・事務業務&gt;&gt;<br>◎スケジュール調整　　　　　◎移動支援(出張手配、外出先調整など)<br>◎社内外関係者との折衝　　　◎書類発送の対応<br>◎顧客情報管理　　　　　　　◎電話・メール・来客対応<br>◎文書作成・経費精算・タスク管理　など<br><br>&lt;&lt;経営サポート業務&gt;&gt;<br>◎社内関係部署との接続、指示の伝達<br>◎各種会議における議事録や関係書類の作成</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>月～金：8:30〜17:15<br>土：8:30〜12:00<br>1日の労働時間：7時間45分、休憩1時間<br>※土曜日は5週に1回の交代制で月に0～1回の当番出勤となります。<br>1年単位の変形労働時間制（週の平均労働時間40時間以下）</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制（土日祝）<br>年次有給休暇（入社半年後に10日付与。次回以降は毎年3/21に勤務年数により11～20日の付与）<br>夏季休暇<br>年末年始休暇<br>慶弔休暇<br>産前産後休暇<br>育児休暇<br>介護休暇　等</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 会社敷地内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（雇用/労災/厚生/健康）<br>適宜研修<br>会員制リゾートホテル<br>英会話教室補助　等</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%9D%B1%E9%82%A6%E3%82%B4%E3%83%A0%E5%B7%A5%E6%A5%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
