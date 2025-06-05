@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Web・SNSマーケティング｜株式会社 榮太樓總本鋪</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【ECサイト運営スタッフ】伸び盛りのインターネットショッピング（ECサイト）、業務拡張のため大募集！</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社 榮太樓總本鋪</dd>
+
       <dt>職種名</dt>
       <dd>Web・SNSマーケティング</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区日本橋1-2-5　栄太楼ビル7F</dd>
+
       <dt>都道府県</dt>
       <dd>栃木県</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1030027</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>リアル店舗と同じくネット店舗（サイト）でお菓子を販売します。<br>サイトへの集客やサイトのページ制作、また商品管理や売上を伸ばすための商品企画や開発など、ご自身のアイディアも積極的に取り入れ、幅広い業務を担当していただきます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9時～18時（所定労働8時間、休憩60分）　<br>※1年単位の変形労働制（週平均40時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>◆週休2日制（年間カレンダーによる）<br>◆年末年始<br>◆慶弔休暇<br>◆有給休暇（10日〜20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 空気清浄機完備の喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◆社会保険完備（雇用保険、労働保険、健康保険、厚生保険）<br>◆社割制度あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%20%E6%A6%AE%E5%A4%AA%E6%A8%93%E7%B8%BD%E6%9C%AC%E9%8B%AA" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

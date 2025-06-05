@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>カスタマーサポート・コールセンター運営｜株式会社プレックス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【業界未経験歓迎】カスタマーサクセスtoC,toB双方の経験が積める</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社プレックス</dd>
+
       <dt>職種名</dt>
       <dd>カスタマーサポート・コールセンター運営</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区日本橋本石町3-2-4 共同ビル（日銀前）</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1030021</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■カスタマーサクセスの役割<br>弊社のカスタマーサクセスは、インフラ産業に特化したダイレクトリクルーティング事業で、採用したい企業様と仕事を探している求職者様をマッチングする役割を担当しています。<br><br>仕事を探している求職者様のキャリアプランや、現職での悩みなどをヒアリングし、セールスが契約した企業の中でマッチする求人を見つけ、求職者に求人を、企業に求職者の提案を行い、採用・入社までサポートします。<br><br>人材紹介事業との違いとしては、求職者様の流入及びそこに伴う顧客温度感です。<br>対応いただく求職者様は基本的にはスカウトに反応があった方になります。<br>そのため、通常の人材紹介よりは転職温度感は高い方々が多いです。<br><br>インフラ産業は市場規模100兆円を超えるスケールでありながら採用難が続いており、人材紹介の介在価値が非常に高い業界です。課題感の強い企業・求職者と直接やり取りして価値提供できるため、業界への貢献実感を強く感じることができます。<br><br>■カスタマーサクセスの業務全体の流れ<br>カスタマーサクセスが、1名の求職者の入社までに関わる業務の流れは下記になります。<br><br>1．初回面談<br>2．求職者に求人の提案<br>3．企業に求職者の打診<br>4．日程調整・選考対策<br>5．入社までのフォロー</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00~18:00（所定労働時間8時間、休憩60分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>休暇：120日<br>土日祝休み、夏季休暇・年末年始休暇<br>有給休暇(入社半年後に10日付与)</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険：通勤手当、健康保険、厚生年金保険、雇用保険、労災保険<br>チーム飲み会補助：チームで月次飲み会のための費用が出ます。ランチで利用も可<br>近住手当：オフィスから2km圏内の方に一定費用補助</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%97%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

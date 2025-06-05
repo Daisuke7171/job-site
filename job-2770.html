@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>施工管理・設備・環境保全｜株式会社アベルコ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【施工管理職　募集】神奈川エリア配属　未経験者優遇　年間休日120日　各種手当完備</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社アベルコ</dd>
+
       <dt>職種名</dt>
       <dd>施工管理・設備・環境保全</dd>
+
       <dt>勤務地</dt>
       <dd>神奈川県横浜市瀬谷区目黒町３３ー１１</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>横浜市</dd>
+
       <dt>郵便番号</dt>
       <dd>2460007</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■概要<br>弊社は総合建築会社であるハウスメーカー、地元工務店、大手ゼネコン、リフォーム店などを得意先に持ち、住宅設備機器(ユニットバス・キッチン)、外壁材(サイディング・タイル)の取り付け工事を行っている施工会社です。<br>弊社社が受注した工事の管理を行う【施工管理者】を募集致します。<br><br>■業務内容<br>・施工日に合わせた技能工(職人)の手配。<br>・工事現場や得意先での施工前打ち合わせ。(工程・収まり・仕様の確認)<br>・施工完了後の得意先との清算業務(追加・減額に際し、見積作成・金額交渉)<br>・施工現場の安全・施工品質管理<br><br>■各ツールを貸与し、行動効率の向上を目指しております。<br>貸与品<br>・専用営業車を貸与し通勤にも使用して頂き、直行・直帰を積極的に推奨。<br>　自宅駐車場の費 用も当然会社が負担致します!<br>・ノートPC・スマートフォン・タブレット端末を支給し、外出先での業務体制<br>　をサポート。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>平日8:30～17:30（所定労働時間8時間）　※休憩60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制　※但し、祝日の週は土曜日出勤になります	<br>年末年始休暇<br>夏季休暇<br>GW休暇<br>有給休暇：初年度10日〜勤続年数に応じて最大20日<br>慶弔休暇<br>特別休暇<br>お盆休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>制服貸与<br>社員共済会<br>従業員持株会<br>退職金制度　※確定給付企業年金(DB)と確定拠出年金(DC)<br>社宅制度<br>資格支援制度<br>報奨金<br>社有車・私有車通勤可	<br>社内表彰制度<br>福利厚生施設利用制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>建築・土木・建設</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%83%99%E3%83%AB%E3%82%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
