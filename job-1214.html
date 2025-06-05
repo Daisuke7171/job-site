@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>交通（鉄道・バス・タクシー）関連｜札幌交通株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【タクシードライバー】未経験OK★2種免許取得費用会社全額負担★入社後6ヶ月間の給与保証あり！</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>札幌交通株式会社</dd>
+
       <dt>職種名</dt>
       <dd>交通（鉄道・バス・タクシー）関連</dd>
+
       <dt>勤務地</dt>
       <dd>北海道北広島市虹ヶ丘８丁目１−６</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>北広島市</dd>
+
       <dt>郵便番号</dt>
       <dd>611103</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【エリアNo.1企業】<br>HKグループは北海道・宮城・東京に拠点があり、当社はなかでも地域の人たちの身近な足としてはもちろん、観光で訪れる方々の素敵な思い出作りの一役を担いたいという気持ちで日々営業しています。<br><br>エリアでは1社あたりの売上、保有台数ともに1位！<br><br>おかげさまで、日々多くのお客様から無線依頼があり一日5000本～7000本をいただいております。<br>そのため、わざわざお客様を見つける必要はなく営業の7割以上が無線なので安定した収入を実現できます☆<br><br>♦6ヶ月間の給与保障あり！(未経験の方)<br>北海道のなかでもトップクラスの好待遇！<br>タクシー業界の給料形態は歩合制がほとんどなので、未経験の方だと不安になる要素の一つだと思います。<br>札幌交通では、初乗務から最初の6ヶ月は売上に関係なく給与保障があるので焦らずゆっくりお仕事を覚えて頂けます！<br>もちろん売上が保障額を超えた分はその分しっかりお支払いしますので、ご安心ください◎<br>日勤：20万円<br>夜勤：25万円<br><br>♦研修中もしっかり日給を支給します！<br>研修期間中は日給7000円を支給いたします。<br>二種免許を取得するための教習所通い：8日～14日間<br>社内研修：5日間～10日間<br>二種免許の取得費用は全額会社が負担いたしますので、二種免許お持ちで無い方もお待ちしております☆(※規定あり)<br><br>♦お客さまへ安心と安全をご提供！<br>乗務員は朝礼時にアルコールチェックや免許証確認をおこない、運行管理者から当日のイベントや事故状況といった報告を受けます。<br>その後、乗車に必要なカギや乗務員証と車両の日常点検をおこなったうえで出発します。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>1年単位の変形労働時間制（週の平均労働時間40時間以下）<br><br>下記より勤務時間帯を選択可能です。<br><br>◎日勤<br>（1）7:00～16:00<br>（2）8:00～17:00<br>（3）9:00～18:00<br>実働時間7時間30分、休憩1時間30分<br>(拘束時間9時間)<br>または<br>6:00～20:00のうち9時間程度の勤務<br>休憩時間：90分<br><br>◎夜勤<br>（1）16:00～翌1:00<br>（2）17:00～翌2:00<br>（3）18:00～翌3:00<br>実働時間7時間30分、休憩時間1時間30分<br>(拘束時間9時間)<br>または<br>16:00～翌5:00のうち9時間程度の勤務<br>休憩時間：90分<br><br>◎隔日勤務<br>（1）7:00～翌1:00<br>（2）8:00～翌2:00<br>（3）9:00～翌3:00<br>実働15時間、休憩3時間<br>(拘束時間18時間勤務翌日は明公休)<br>または<br>7:00～翌4:00のうち18時間程度の勤務<br>休憩時間：180分</dd>
+
       <dt>休暇・休日</dt>
       <dd>シフト制：月7～8日休<br><br>有給休暇（6ヶ月勤務後10日付与〜最大20日）<br>育児休暇<br>看護休暇<br>介護休業<br><br>【1ヶ月の勤務例：日勤・夜勤】<br>日　　月　　火　　水　　木　　金　　土<br>公休　出番　出番　出番　出番　公休　出番<br>出番　出番　出番　公休　出番　出番　出番<br>出番　公休　出番　出番　出番　出番　公休<br>出番　出番　出番　出番　公休　出番　出番<br>出番　出番　公休<br><br>【1ヶ月の勤務例：隔日勤務】<br>日　　月　　火　　水　　木　　金　　土<br>出番　明休　出番　明休　公休　出番　明休<br>出番　明休　公休　出番　明休　出番　明休<br>公休　出番　明休　出番　明休　公休　出番<br>明休　出番　明休　公休　出番　明休　出番<br>明休　公休　出番</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 車内禁煙、屋内原則禁煙（喫煙専用室設置）、屋外原則禁煙（喫煙スペース有り）</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・各種社会保険完備<br>・制服貸与<br>・マイカー通勤可(駐車場代無料)<br>・慶弔見舞金制度<br>・再教育制度有<br>・免許取得支援制度あり（規定に応じ取得にかかる費用を全額負担）<br>・ホスピタリティードライバー養成制度有<br>・託児所・保育園の提携先有(子育て中の女性も実際に活用しています)<br>・運行管理者登用制度有<br>・自動車保険の団体割引有(グループ会社の保険代理店完備)<br>・定年後再雇用制度有</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%9C%AD%E5%B9%8C%E4%BA%A4%E9%80%9A%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Webサービス系エンジニア・プログラマ｜ボールドライト株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【WEBエンジニア】観光DX等の自社プロダクト〜受諾開発など案件多数／フレックス制度有</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>ボールドライト株式会社</dd>
+
       <dt>職種名</dt>
       <dd>Webサービス系エンジニア・プログラマ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿3-9-7 フロンティア新宿タワー4F</dd>
+
       <dt>都道府県</dt>
       <dd>神奈川県</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>◎観光DX業界のシェアNo1 ITベンチャーで、成長を続けるプロダクトの開発最前線に携われる<br>◎あなたが訪れる有名施設や観光地にも導入実績多数！<br>◎JAXA案件など超大型開発を経験した、優秀なCTO直下でのスキルアップ可能<br><br>【 業務内容 】<br>『プラチナマップ』をはじめとした、自社プロダクトの開発チームに参画していただきます。<br><br>『プラチナマップ』とは…<br>観光や購買に必要なあらゆる情報を集約したオリジナルデジタルマップを簡単に作成できる「デジタルマップ・プラットフォーム」です。<br>観光地にとどまらず、空港や大型スタジアム、大手ショッピングモールなどあらゆる場所に導入されており、2019年のリリース以降、圧倒的シェア率で業界トップを走るSaaSプロダクトです。<br><br>トップランナーであり続ける理由は、完全自社開発による高い開発レベルとスピードにあります。現在も毎月1度のペースでアップデートを続けており、生成AI統合による画像分析機能、国内初となる屋内測位システムの共同開発にも挑戦中です。<br><br>ジョインしていただく方には、具体的には<br>・自社サービスのパフォーマンス向上のための新機能開発<br>・クライアントの個別要件に対応するシステム設計・開発<br>をお任せします。<br>開発案件の幅は広く、お持ちのスキルやご経験に合わせ対応可能な範囲からお願いし、徐々にプロダクトのコアな部分に携わっていただくことを期待しています。<br>また将来的には新規事業の展開も計画しており、そちらのプロジェクトに参画いただくことも可能です。<br><br><br>■開発環境<br>開発スタイル：アジャイル<br>共通：HTML / CSS / JavaScript<br>フロントエンド：Vue.js / vuex / vue-router<br>バックエンド：C# / ASP.NET / ASP.NET Core<br>DB：Azure SQL Database<br>クラウド：Azure / AWS<br>コラボレーション:Slack / GitHub / Bitbucket / JIRA<br><br><br>■導入実績<br>全日本空輸様、森ビル様、三菱地所様、ホテルニューオータニ（東京）様、東急百貨店様、その他全国地方自治体及び観光協会様など</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>・フレックスタイム制（基本勤務時間は10:00〜19:00）<br>※試用期間中は原則として10:00〜19:00の勤務となります。<br>・コアタイムあり（11:30〜15:30）<br>・フリードリンク、お菓子食べ放題</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休2日制(土・日) <br>・祝日<br>・夏季休暇<br>・年末年始休暇<br>・年次有給休暇（10日〜20日）<br>・特別休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋外に喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>【保険】<br>・各種社会保険完備<br><br>【諸手当】<br>・交通費支給（月3万円まで）<br>・出張手当<br>・残業手当（超過分）<br>・休日出勤手当（支給規定あり）<br>・住宅手当（支給規定あり）<br><br>【福利厚生】<br>■資格取得支援制度（当社が取得必要と定めた資格について支援）<br>■U・Iターン支援制度（社内規定あり：地方からの引っ越し費用を一部負担）<br>■服装自由<br>■社員旅行あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%89%E3%83%A9%E3%82%A4%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

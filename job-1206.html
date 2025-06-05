@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社One’s Will</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>ケーブルテレビ会社の訪問営業・未経験OK（藤沢）</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社One’s Will</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>神奈川県藤沢市辻堂神台2-2-41</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>藤沢市</dd>
+
       <dt>郵便番号</dt>
       <dd>2510041</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>スポーツ、映画、音楽、アニメといった映像コンテンツと高速インターネットを楽しめるケーブルテレビサービスなどをご案内する仕事です。充実した教育体制とNetflixやDAZNとコラボした商品力があるので、成約率は高め。未経験からでも成果を出せる環境です。<br><br>＜ご案内するサービス＞<br>主に、「大手ケーブルテレビ局の多チャンネルTV」や「高速インターネットサービス」。その他、固定電話やスマートフォン、タブレットPC、電力切替のご提案なども案内しています。<br><br>営業手法　→戸建てに対しての飛び込み<br><br>●━…未経験でも「しっかり稼げる！」…━●<br>NetflixやDAZN、また多チャンネルを楽しめるケーブルテレビをはじめ、KDDI系列のおトクなサービスをラインナップ！<br>●━…月収100万円を超える営業も活躍中！…━●<br>お問合せをいただいたお客さまが興味のあるサービスをご案内するスタイルなので、成約率も業界屈指！実際に未経験入社1年目の平均年収は450万円以上です！<br>●━…効率的な営業スタイルで「きっちり休める！」…━●<br>残業は月平均5～10時間程度。毎週2日きっちり休めて、有休も奨励。リフレッシュもバッチリです！さらに土日休み等の営業ポジションも募集中です！<br><br>入社後の流れ<br>▼座学研修・ロープレ(2週間)<br>基礎的な研修からサービス内容や商材知識などを学べます<br>▼先輩同行(1～2カ月間)<br>先輩に同行し、ご案内の進め方を吸収。あなたの商談も先輩がフォローします<br>▼営業デビュー(3～4ヵ月目)<br>学んだ通り実践すれば大丈夫！先輩たちも1週目から成約を得ています※研修終了後も定期研修あり</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：30～18：30（所定労働8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>【休日】<br>火曜水曜　完全週休二日<br><br>【休暇】<br>年末年始休暇（6～8日）<br>夏季休暇（3～5日）<br>有給休暇（入社半年後10日〜勤続年数に応じて最大20日）<br>慶弔休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（雇用・労災・健康・厚生年金）<br>健康診断<br>結婚祝い金<br>出産祝い金<br>慶弔見舞金<br>各種レクリエーション（社員旅行・BBQ等）<br>紹介制度<br>ジョブローテーション<br>インフルエンザ予防接種補助・健康診断<br>資格取得支援制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEOne%E2%80%99s%20Will" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
