@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>インフラエンジニア｜アベールソリューションズ株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>インフラエンジニア【経験浅め枠】</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>アベールソリューションズ株式会社</dd>
+
       <dt>職種名</dt>
       <dd>インフラエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区銀座5-9-8　クロス銀座6</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1040061</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 12000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【当ポジションについて】<br>プロジェクトの成否を左右する上流工程を強味とし、本当に必要とされる高品質なシステム構築を担います。アプリケーションの器となるITインフラのシステム構想や要件定義、基本設計やシステムの安定稼働に向けた運用設計を中心に手掛けています。<br><br>【業務内容】<br>・IT基盤構想策定、クラウド化推進<br>・SLAガイドライン、セキュリティガイドライン策定<br>・IT基盤設計書作成、レビュー<br>・サーバ/DB/ネットワーク等の構成、キャパシティ管理<br>・ユーザ検収支援<br>・インシデント管理<br><br>★これから上流工程に挑戦する方は、まずは設計や要件定義補佐など、知識や経験を積むプロジェクトから携わって頂きます。その後、要件定義も手掛けるプロジェクトにステップアップし、無理のないスピードで着実に成長して頂きます。<br><br>【携わるシステム】<br>各業務システムと基幹システム（会計、販売、生産管理など）<br><br>【携わるプロジェクト】<br>担当業種は電機メーカーや、通信キャリア、金融機関などさまざまです。<br>有名企業の規模案件を中心に最上流から携わっているのが特徴です。<br>カジュアル面談／面接ではこれまでの経験されてきたことを軸に、今後携わってみたい業界やポジション開発環境など、遠慮なくおっしゃって頂ければと思います。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜17:45<br>所定労働時間：7時間45分（休憩1時間）<br>※就業時間はプロジェクト先により変動いたします。<br>★フレックスタイム制あり</dd>
+
       <dt>休暇・休日</dt>
       <dd>■年間休日127日<br>■完全週休2日制（土日）<br>■祝日休み<br>■年末年始休暇<br>■慶弔休暇<br>■有給休暇※初年度11日間<br>■産前・産後休暇※取得実績あり<br>■育児休暇※男性の取得実績もあり<br>■リフレッシュ休暇（年5日間）※有給休暇とは別途で付与される休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>【保険】<br>■各種社会保険完備<br>■退職金制度<br>■福利厚生リロクラブ加入<br><br>【諸手当】<br>■交通費全額支給<br>■テレワーク手当<br>■出張手当<br><br>【社内交流支援】<br>■懇親会費用全額負担（毎月1回）<br>■オンライン懇親会費用負担（毎月1回）<br>■サークル活動支援制度<br><br>【スキルアップ支援】<br>■研修費用全額負担<br>■図書購入費用全額負担<br>■資格受験費用全額負担<br>■資格取得一時金支給<br>■PMI日本支部加入（PMIの研修を受けられます）<br><br>【ライフワークバランス支援】<br>■スポーツクラブの費用全額支給<br>■時短勤務制度<br>■産休・育休制度（取得実績あり）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%A2%E3%83%99%E3%83%BC%E3%83%AB%E3%82%BD%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BA%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

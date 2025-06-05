@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>交通（鉄道・バス・タクシー）関連｜山三交通株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【タクシードライバー・未経験OK】社員寮あり・地方からの応募歓迎</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>山三交通株式会社</dd>
+
       <dt>職種名</dt>
       <dd>交通（鉄道・バス・タクシー）関連</dd>
+
       <dt>勤務地</dt>
       <dd>東京都江東区南砂1丁目23番15号</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>江東区</dd>
+
       <dt>郵便番号</dt>
       <dd>1360076</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>タクシードライバーとして、お客様を目的地まで安全・快適にお届けしていただきます。日常的に運転をされている方であれば、学歴・経験は一切問いません。一人前のタクシードライバーに育てる体制が整っていますので、ご安心ください！<br><br>【入社後の流れ】<br>入社後まずは業務に必要な2種免許の取得を目指していただきます。その後は車両や車内機器の使い方、接客方法などを研修した上で実際のお仕事をスタートしていただきます。具体的には以下のような流れで進めていきます。<br><br>▼地理試験対策（5日間）・受験（1日）<br>▼合宿で2種免許取得（10日程度）※費用会社負担<br>▼タクシーグループ（チェッカーキャブ）講習を受講（4日）<br>▼車両や車内機器（カーナビ、無線等）の使い方、接客などの研修（7日程度）<br>▼先輩社員の同乗指導（1日）<br>▼乗務開始！<br><br>【実際の業務について】<br>・複数名のチームで目標を追う体制です（個人ノルマ無し）。お客様を拾いやすい時間帯、場所を情報共有したり、接客のコツを教え合ったりすることで、一人前の稼げるドライバーを目指しています。また月1回「売上げ向上セミナー」も実施しています。<br>・勤務時間の使い方はある程度、自由に決められます。休憩時間は食事のほか仮眠を取ってもOKです。<br>・車両は24時間稼働の自社整備工場で1日1回点検を行っていますので、安心して運転業務に集中できます。<br><br><br>【社員へのサポート体制】<br>・売上に関わらず乗務開始後の3か月は月給30万円を保証します。<br>・地方出身者のための社員寮あり（規定あり）。月3万円台〜4万円台で家電付き、敷金礼金無し、最初の寮費3か月間は免除！満室の場合は借り上げアパートもあります。<br>・U/Iターン歓迎。地方からの入社される際は、上京の交通費支給します。<br>・女性ドライバーも活躍中。女性専用の休憩室も完備。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>ご自身のライフスタイル、目指す働き方に応じて選べます。<br><br>＜隔日勤務タイプ＞<br>・月に12乗務。<br>・1回の乗務で実働14時間（ローテーション制・別途休憩3時間）<br>※1ヶ月単位の変形労働時間制（1週間の平均労働時間40時間）<br>※出庫時間は7時開始、10時開始、13時開始、14時開始で選べます。<br><br>＜日勤タイプ＞<br>・月24乗務。<br>・7:30～19:00のうち実働8時間、休憩1時間<br><br>＜夜勤タイプ＞<br>・月24乗務）<br>・19:30～翌7:00のうち実働8時間、休憩1時間。</dd>
+
       <dt>休暇・休日</dt>
       <dd>■月7～9日（シフト制）<br>　※隔日勤務を選べば、明け休みを含めて月の半分はお休みです。<br>　※休日の希望もできるだけ通しています。<br>　※明け休みを含めると1週おきに3連休も取れます！<br>■年次有給休暇（入社半年後に11日付与。最大20日）<br>■慶弔休暇<br><br>【1カ月の勤務例】<br>月　　火　　水　　木　　金　　土　　日<br>公休　乗務　明休　乗務　明休　乗務　明休<br>公休　乗務　明休　乗務　明休　公休　公休<br>乗務　明休　乗務　明休　乗務　明休　公休<br>乗務　明休　乗務　明休　乗務　明休　公休<br>公休　乗務　明休<br>※乗務12乗務／月・明け休み11日／月・公休7～8日／月</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備<br>■制服貸与<br>■時間外手当<br>■車通勤可（駐車場無料）<br>■健康診断<br>■男女別休憩棟完備<br>■24時間自社LPGスタンド併設<br>■自動車整備工場併設（マイカーのメンテナンス可。社員割引あり）<br>■クラブ活動<br>■独立支援制度<br>■タクシー業界初、OFFICE DE YASAI導入<br>■社員寮有り、借上げアパート有り（いずれも規定あり）<br>■地方居住者の入社時上京交通費支給<br>■2種免許取得費用会社負担<br>■全車最新ナビ完備<br>■英語研修、観光タクシー研修<br>■女性専用休憩室あり<br>■産後育児休業取得実績あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E5%B1%B1%E4%B8%89%E4%BA%A4%E9%80%9A%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

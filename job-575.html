@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>福祉・介護｜株式会社Birthday</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【経験者枠／介護職】同一建物内のみの訪問介護</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Birthday</dd>
+
       <dt>職種名</dt>
       <dd>福祉・介護</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市平野区西５丁目９−２　グランドバイツ平野西５１２</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5470033</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>現在、私たちと一緒に働いてくださる介護スタッフを募集しています！<br><br>【業務内容】<br>◎利用者さんの日常生活の支援<br>・トイレ、入浴等の介護業務全般<br>・食事補助<br><br>利用者さんは自立されている方が大半で、重度の介護が必要なパターンはほぼなく、負担は少なめです。<br>また、事業所と訪問先が同じ場所のため、同じ建物内のみの移動となります！<br><br>【弊社の特徴】<br>・これまでに入社したスタッフからは「職場の雰囲気・利用者さんの雰囲気が良い」が長く働く決め手との声が多数です！<br>・「訪問先が集約されているため、移動が楽なので体力的にも安心」という声も！<br><br>当社は、一緒に働くスタッフを何よりも大事に考えます！<br>お互いの生活も大事にしながら、長く一緒に働ければと思っていますので<br>ご要望や質問など、なんでもお気軽にご相談ください♪<br>お子様がいらっしゃる社員もいます！<br><br>私たちと一緒に働くことを選んでくださった方々には、私たちもその想いにお応えして、全力でサポートいたします！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（シフト制）<br>　シフト制のため、調整しながらお休みを取っていただけます！<br>有給休暇（入社6ヶ月後10日間付与）<br>夏季休暇<br>冬季休暇<br>産前産後休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>健康保険・厚生年金・雇用保険・労災保険<br>時間外手当<br>通勤手当（実費支給）<br>昇給年一回（1,000〜5,000円）<br>＜役職手当＞<br>　現場リーダー　 2万円<br>　主任　　　　　 5万円<br>　課長　　　　　 8万円〜</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>医療・介護・保育</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEBirthday" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

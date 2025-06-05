@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>施工管理・設備・環境保全｜株式会社片山組</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【建築施工管理／微経験者枠・福岡】遠方出張なし★直行直帰可能★100％元請け案件★賞与3回</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社片山組</dd>
+
       <dt>職種名</dt>
       <dd>施工管理・設備・環境保全</dd>
+
       <dt>勤務地</dt>
       <dd>福岡県福岡市博多区住吉2-15-26</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>福岡市</dd>
+
       <dt>郵便番号</dt>
       <dd>8120018</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>65年以上の歴史を誇り、マンションやオフィスビル・病院施工などに強みを持つ当社。100％が元請であり、常に利益率の高い仕事を手掛けています。<br>今回は、開発からデザイン施工までトータルで「ものづくり」を追究する総合建設企業である当社の施工管理部にて、マンション、ビル等の建物施工管理業務をお任せ致します。<br><br>【具体的には……】<br>現場所長のもと、建築現場にて職人さんと連携しながら施工に関わる幅広い業務をして頂きます。土地の状態、周囲の環境、天候、建物の種類、働くメンバーなど同じ現場はふたつとなく、毎回がチャレンジ。その分面白さがある仕事です。付き合いの長い職人さんメインなので、スムーズなコミュニケーションの中、仕事を進めることができます。<br><br>・協力会社への指導・監督<br>・資材の発注<br>・行政申請のための書類作成<br>・労務管理、安全管理、施主様への対応<br>・近隣住民への対応<br>など<br><br>【担当案件・働き方について】<br>＜物件＞RCマンション7割、その他（小学校、美術館、保育園、ホテル、病院など）3割<br>＜工期＞1～2年（※現場により異なります）、新築工事がメイン<br>＜担当現場数＞1現場、原則かけ持ち無し<br>＜対応エリア＞基本的に博多周辺の案件が多いです。<br>＜出張＞なし</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8：00～17：00（所定労働時間8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制（日曜＋第2・3・4土曜）<br>祝日<br>GW休暇（昨年実績：10日間）<br>夏季休暇（昨年実績：8日間）<br>年末年始休暇（昨年実績：9日間）<br>有給休暇（10日～勤続年数に応じて最大20日）<br>産休育休取得・復帰実績あり</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（雇用・労災・健康・厚生年金）<br>交通費支給（月3万円まで）<br>時間外手当<br>出張手当<br>役職手当（主任：月1万円、所長：月6万円～9万円）<br>職能手当<br>家族手当（配偶者：月1万2000円、子1人：月8000円、子2人：月4000円）<br>現場手当（月1万1000円～3万3000円）<br>独身寮あり（通勤に2時間以上かかる方が対象／その他規定あり）<br>出産・育児支援制度あり<br>U・Iターン支援制度あり<br>資格取得支援制度<br>資格取得報奨金（1級建築士、1級施工管理技士：10万円、2級建築士、2級施工管理技士：3万円）<br>制服貸与<br>保養所<br>永年勤続賞</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>建築・土木・建設</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E7%89%87%E5%B1%B1%E7%B5%84" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
