@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>店長・SV（スーパーバイザー）｜株式会社ダイニングイノベーション</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【新業態店舗運営】新業態の創業期に関わるポジション、キャリアパス多数あり！</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ダイニングイノベーション</dd>
+
       <dt>職種名</dt>
       <dd>店長・SV（スーパーバイザー）</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区恵比寿南1丁目11番2号 　DININGINNOVATIONBLDG</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500022</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>複数の新しい業態を開発、展開するダイニングイノベーションにて、新業態の店舗運営、業態展開に向けたチームメンバーを募集します。<br><br>ミッションとしては、既存店のオペレーション改善ならびに新業態の出店時など、調理や接客、店舗内企画等の店舗運営関する業務を、店長やメンバーと一緒に携わっていただきながら、オペレーションの改善やメンバートレーニング、タイミングによってはメニュー企画などの分野でもサポートを行います。<br><br>将来的に、弊社、またはグループ業態のスーパーバイザーやトレーナー、商品開発などのバックオフィス業務にステップアップいただくことも想定しております。<br><br>【業務内容】<br>・新業態の既存店舗または新店舗の店舗運営<br>その他、<br>・調理や接客のオペレーション改善、マニュアル作成等<br>・数値管理（売上、原価、FL）、POS・PLの分析<br>・人材採用、教育・マネジメント<br>・スタッフ（社員、アルバイト）トレーニング　など<br><br>※創業期の業態もあるため、複数の店舗にまたがる形でさまざまな業務を分担しながら、幅広く進めていきます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～23：30　（業態により異なる）<br>上記時間の中で所定労働時間8時間、休憩1時間<br><br>24時以降の深夜営業はなし。<br>業態によりディナータイムの営業のみのブランドもあります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>原則として週2回ずつ　（シフトにより取得）<br><br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・季節休暇<br>・慶弔休暇などの特別休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内は禁煙です</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>バースデー祝<br>各種祝金あり<br>社内イベント　など</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%80%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%A4%E3%83%8E%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

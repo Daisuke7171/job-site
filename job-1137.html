@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Webサービス系エンジニア・プログラマ｜株式会社Onfleek</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【経験者エンジニア大募集】1年以上の経験で書類選考通過率アップ！昨年立ち上がったスタートアップ事業◎</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Onfleek</dd>
+
       <dt>職種名</dt>
       <dd>Webサービス系エンジニア・プログラマ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿7-5-2 西新宿ビジネスキューブ2階</dd>
+
       <dt>都道府県</dt>
       <dd>千葉県</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 10000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>システム開発やWebアプリケーション開発をお任せします。<br>上流工程から開発、運用、保守まで一気通貫して業務に携わることが可能です。<br>得意な分野・言語、キャリアプラン、就業環境、勤務地など、<br>ご希望を確認した上で適切なプロジェクトにアサインします。<br><br>■プロジェクト例<br>・プロダクト開発・業務系システム開発：通信インフラ系、官公庁系、金融系、生損保系 、他<br>・Web系開発：ECサイト、情報誌系サイト、会員管理システム、アプリ開発　ゲーム開発 他<br><br> ■開発環境例<br>Java(Spring)、JavaScript(Vue、React)、PHP(Laravel)、C#、.NET、Python、Ruby、Delphi、COBOL、Flutter、Android(TM)、Objective-C、Swift<br><br><br>インフラエンジニアとしては要件定義・設計・構築・検証・運用・監視業務などをご担当頂きます。<br>まずはネットワークエンジニア、サーバーエンジニアとしてご自身のご経験に沿った実務に就いていただき、<br>その後、ご希望やご経験、キャリアアップに合わせた業務に従事していただきます。<br><br>■担当システム：基幹業務システム、情報系システム、Web 他<br>■開発環境・OS：UNIX、Linux、Windows 他<br>■Server：WEB、Mail、DNS、Proxy 他<br>■Network：router、SW、Firewall製品 他<br>■クラウド：AWS、Azure、GCP</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00　(所定労働時間8時間、休憩1時間)<br>夜間勤務：状況に応じてある<br><br>勤務地は一都三県の各プロジェクト先に配属になります。【客先常駐勤務】</dd>
+
       <dt>休暇・休日</dt>
       <dd>■週休2日制(プロジェクトに準ずる)<br>■祝日休暇(プロジェクトに準ずる)<br>■年末年始休暇（プロジェクトに準ずる）<br>■GW休暇(プロジェクトに準ずる)<br>■夏季休暇(プロジェクトに準ずる)<br>■慶弔休暇 <br>■有給休暇（10日～勤続年数に応じて最大20日）<br>■産前・産後休暇<br>■育児休暇<br>■介護休暇<br>■特別休暇<br>■リフレッシュ休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備（雇用・労災・健康・厚生年金）<br>■交通費全額支給<br>■資格取得手当<br>■住宅手当(3年目以降〜)<br>■役職手当<br>■退職金<br>■定期健康診断<br>■私服勤務OK<br>■パソコン支給あり<br>■社員旅行（全額会社負担） <br>■各種社内イベントあり（BBQ、忘年会、新年会など）※自由参加<br>■リーダー研修<br>■管理職研修<br>■部活動（野球・ゴルフ・麻雀等）<br>■結婚お祝い金　一時的に支給<br>■配偶者手当　毎月支給<br>■子ども手当　毎月支給<br>■ランチ会（補助制度あり）<br>■読書手当制度<br>会社負担で月3冊まで購入可能（オフィスに保管）<br>■副業OK　申請必須<br>■夜ご飯ライス無料</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEOnfleek" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

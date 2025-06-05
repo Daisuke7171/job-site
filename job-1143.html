@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社トップライン</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【顧客折衝経験者歓迎】飛び込みなしのルート営業/インセンティブ制度あり</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社トップライン</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>新潟県長岡市干場1−7−9</dd>
+
       <dt>都道府県</dt>
       <dd>愛知県</dd>
+
       <dt>市区町村</dt>
       <dd>長岡市</dd>
+
       <dt>郵便番号</dt>
       <dd>9400032</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【この求人票を一言でいうと・・・】<br>ケーブルテレビのご契約を検討中のお客様に対して、アポイントが取れているお客様をご訪問しご提案～フォローまでをお任せします。<br><br>【株式会社トップラインとはこんな会社です！】<br>当社はKDDIをはじめとした大手通信会社や大手保険会社などのビジネスパートナーとして、確かな成長を遂げています。<br><br>【仕事内容】<br>訪問先は、既にケーブルテレビサービスをご利用いただいておりますお客様です。<br>社内にアポイント専門の担当がいるので、新規開拓や飛び込みはありません！<br>初めのうちはフォロー業務がメインになるので、すでにご契約いただいている方をご訪問し問題なく使えているかなどを確認していただきます。<br><br>＜営業手法＞<br>お客様のご自宅に訪問します。<br>1日の訪問件数：7〜8件（平均5件）<br>1件あたりの訪問時間：30分〜1時間<br><br>＜商材・サービス＞<br>ケーブルテレビの商材（TV・NET・TEL）<br><br>＜主な顧客＞<br>・一般家庭<br><br>【1日の流れ】<br>初めのうちはすでにご契約をいただいているお客様をご訪問し、ご挨拶とお困りごとなどを伺います。<br>慣れてきたら社内のアポインターが取得した訪問先を訪れ、サービスのご説明、ご提案を行い導入までのフォローを行います。<br><br>▼9:00　勤務開始　朝礼にて訪問件数の確認、メンバー間の共有を行います<br>↓<br>▼10:00　お客様先訪問　すでにご契約いただいているお客様をご訪問し、問題なく支えているかなどを確認します。<br>↓<br>▼11:00　お客様先訪問　アポインターが取得した訪問先をご訪問し、サービスのご説明を行います。<br>↓<br>▼12:00　休憩　出先にてお昼休憩を取ります。<br>↓<br>▼13:00 　お客様先訪問<br>↓<br>・<br>・<br>・<br>▼18:00　勤務終了　社内に戻り、業務報告や契約書周りの業務を済ませ終了！<br><br>【研修や育成について】<br>▼入社〜2日目<br>名刺の渡し方などのビジネスマナーや社内ツールの使い方などを学びます。<br>▼3日目〜3週間<br>配属先にて商品知識の研修や商談についてを学びます。<br><br>【将来のキャリアパス】<br>・入社3ヶ月で役職ポジションにに昇格<br>・入社7年後に取締役に就任<br><br>当社では、平均1年後にはチームリーダーなど、部下をマネジメントする立場に昇格するメンバーが多いです。<br><br>【この仕事の大変さ】<br>営業未経験の方には反響営業とはいえ、初めのうちはサービスのご説明やご提案の仕方に慣れない部分があるかもしれません。<br>そんな方でもご安心いただけるよう、営業の仕方を学ぶために先輩社員に同行するなど、実践的な教育も行なっています！<br>ノウハウの共有も活発に行なっており、社員がそれぞれの成功事例を共有するなど未経験からでも営業として成長できる環境が整っています。<br><br>【募集の背景】<br>現在、大手ケーブルテレビ会社の案件を積極的に手掛けており、新たに人材を採用することになりました。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00～18：00または10：00～19：00<br>所定労働時間：8時間、休憩1時間<br>※勤務地により異なる場合があります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>【休日について】<br>■月9日（シフト制、2月のみ月8日）<br>■年始休暇<br>■慶弔休暇<br>■育児休暇<br>■介護休暇<br><br>【有給休暇】<br>■年次有給休暇（初年度10日、最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■各種社会保険完備<br>■引越一時金<br>※入社後の会社指示による転居を伴う異動の場合は、引っ越し費用を負担<br>■慶弔見舞金<br>■退職金制度あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%88%E3%83%83%E3%83%97%E3%83%A9%E3%82%A4%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
