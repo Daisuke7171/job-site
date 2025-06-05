@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜株式会社ActAnyway</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>人材コーディネーター／経験不問／1年目で年収800万円も可能</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ActAnyway</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市北区南森町1丁目1番25号</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5300054</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>5000000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>人を採用したい法人様と、転職をしたい求職者様へのサポートを行います。<br>感謝の言葉をいただくことも多く、人のためになっていることを強く感じられる仕事です。<br><br>★お任せしたい仕事内容<br>───────────<br>■法人様（病院・福祉施設・保育施設）に対して<br>・人材ニーズをヒアリング<br>・意向に沿う求職者様をご紹介　など<br><br>■求職者様に対して<br>・面談（経験スキルや希望などをヒアリング）<br>・就業先のご案内<br>・面接日の設定や面接指導<br>・面接同席（顔合わせ）<br>・就業後のアフターフォロー　など<br><br>★未経験でも安心！手厚い教育体制<br>￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣<br>整った育成環境のもと、8割以上のメンバーが未経験から活躍しています！<br><br>▼1～2日目<br>座学研修で業界知識を学びます。<br><br>▼3日目～<br>実践研修＋実践テストなどを行います。<br>先輩の同行を通じて業務の流れを理解していきます。<br>※入社から約1カ月程での初契約を目指して、じっくりとサポートします！<br><br>▼3カ月～半年／独り立ち<br>ひとりで担当を持って業務を進めていきます。<br>もちろん、独り立ち後も適宜フォローします！<br><br>★中途入社のハンデは一切ナシ！<br>￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣<br>昇給やキャリアアップに、社歴や年齢は関係ありません。<br>入社半年～1年で役職につくメンバーも多く、中には入社7カ月でチーム長となった20代のメンバーも！<br><br>全国展開を視野に入れているため、新たな拠点でのポストも積極的にお任せする予定。拠点もチャンスも、どんどん拡大していきます！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:30～19:00（実働8時間・休憩90分）<br><br>＼休憩はたっぷり90分！／<br>お昼休憩を長めに取ってもよし、お昼休憩の他にこまめに取ってもよし。<br>休憩の取り方も時間帯も自由なので、リフレッシュしながら働けます♪</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制（土曜・日曜）<br><br>■産前・産後休暇<br>（取得実績あり）<br><br>■育児休暇<br>（取得実績あり）★男性社員も取得しています！<br><br>■祝日<br>■GW<br>■夏期休暇（6連休以上あり）<br>■年末年始休暇（6連休以上あり）<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>■慶弔休暇<br><br>＼最大9連休可能／<br>夏期休暇や年末年始休暇は最大9連休も可能！<br>休みを利用して旅行に行くメンバーも多く、プライベートも充実させられます。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備（雇用・労災・健康・厚生年金）<br>■交通費全額支給<br>■住宅手当（会社規定あり）<br>■U・Iターン支援あり（引越手当）<br>■役職手当<br>■スマホ、PC貸与<br>■お茶・水・コーヒー飲み放題<br>■受動喫煙対策（屋内喫煙可能場所あり）<br>■副業相談可能<br><br>これからも、社員の声を大切にしながら働きやすい制度やルールを充実させていきます！</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEActAnyway" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜株式会社リズミック</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【役員候補／幹部候補】人材系スタートアップの創業メンバー募集／リモートOK／土日祝休み</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社リズミック</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区恵比寿1-5-7　昭和えびすビル603号</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500013</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>5000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>創業期のメンバーとして代表と一緒に事業・組織拡大に携わっていただくことを期待しています。<br>現在は人材領域がメイン事業ですが、ある程度軌道にのれば他の事業領域にも新規事業として挑戦していく予定ですので、希望があれば新規をお任せしていくこともあります。<br><br>【主要業務】<br>企業の採用要件のヒアリングからコンサルティング、求職者様の初回面談から企業紹介、内定獲得と意思決定のサポートまで一気通貫して一つのビジネスを自分自身で完結できます。多岐にわたる業務のため大変な部分もございますが、その分やりがいもあり企業様、求職者様の双方に自分の力で価値を提供し、本当に喜んでもらえる難しくもやりがいのある仕事です。<br>成果次第では早々にマネジメントポジションもお任せし、プレイングマネージャーとしてのご活躍も期待しています！<br>今後は若手の新規メンバーの採用も強化していきますので、代表の右腕として拡大していく組織の中核を担っていただくことを期待します。<br><br>◇キャリアアドバイザー（求職者様対応）<br>　ーキャリア面談、求人案件のご紹介<br>　ー書類作成サポート、面接サポート<br>　ー意思決定のサポート、内定後のフォロー<br><br>◇リクルーティングアドバイザー（顧客法人様対応）<br>　ー新規求人案件開拓業務<br>　ー求人票の作成<br>　ー求職者様のご紹介<br>　ー採用手法のアドバイス、コンサルティング<br><br>◇採用コンサルタント<br>　ー既存企業の採用コンサルティング<br>　－採用戦略の策定<br>　ー採用手法の選定<br>　－人事代行（スカウト代行、面接・面談代行）</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:30〜18:30<br>所定労働時間8時間<br>※休憩時間は勤務時間内で60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>◇完全週休2日制<br>◇土日祝休み<br>◇年末年始休暇<br>◇年間休日120日以上<br>◇夏季休暇<br>◇有給休暇（入社半年後に10日付与）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◇ 雇用保険<br>◇ 健康保険<br>◇ 厚生年金<br>◇ 労災保険<br>◇ 交通費支給あり<br>◇ テレワーク・在宅OK（現在ハイブリッド勤務実施中）<br>◇ 服装自由</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AA%E3%82%BA%E3%83%9F%E3%83%83%E3%82%AF" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

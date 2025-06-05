@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜一心エステート株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【不動産売買仲介営業】反響多数！高級不動産を取り扱う仲介会社！</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>一心エステート株式会社</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区恵比寿南一丁目1番1号ヒューマックス恵比寿ビル8階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500022</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 12000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【主な仕事内容】<br>100％反響の不動産営業<br>お客様のマイホームをご紹介する営業としてご活躍ください！<br><br>【この仕事について】<br>◆お客様の良きパートナーを目指しています。<br>お客様が本当に求めているものは何かを丁寧にヒアリングし、親身になって対応しています。<br><br>◆内容<br>※購入※<br>マイホームの購入を考えている30・40代のお客様がメイン。<br>土地柄、5000万円～3億円の物件が主な対象ですが、10数億円超の高額物件の取り引きを行なうこともあります。<br>忙しいお客様も多いので、効率的で的確な対応が求められます。<br><br>※売却※<br>月間50件前後の売却相談がございます。（マンション・戸建・土地）<br>リースバック等も対応いたしますので、売却に向けて最善な提案を行ってください。<br><br>◆お客様のニーズをヒアリング<br>「土地だけ欲しい」「新築戸建だけ探している」と言った要望を伺いましょう。<br>お客様のお仕事や家族背景なども考慮し、最適なご提案を行なってください。<br><br>【当社の魅力】<br>①100％反響制<br>不動産・住宅に関するポータルサイトからの問い合わせのみ。<br>完全反響制なので、やみくもにテレアポすることはありません。<br>②圧倒的な反響数<br>購入・売却案件合わせて月間100件以上の反響数！<br>案件が多いため、稼げる環境が整っております。<br>③一気通貫での営業<br>将来的にはプロフェッショナルな人材に成長していただきたいので、ご提案から成約まで一通りの業務をお任せしています！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休二日制(火曜日・水曜日)<br>・夏季休暇<br>・年末年始休暇<br>・特別休暇（冠婚葬祭等）<br>・介護休暇<br>・育児休暇<br>・有給休暇（入社半年後10日付与）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋内禁煙（喫煙室あり）</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・通勤交通費全額支給<br>・各種保険完備（雇用、労災、健康、厚生年金）<br>・インセンティブ制度<br>・産前産後休暇<br>・育児休暇<br>・介護休暇<br>・資格取得支援制度（規定あり）<br>・住宅補助（仲介手数料割引）<br>・社内カフェ無料<br>・PC購入補助（半額負担）<br>・コミュニケーション活性化制度※<br>・遊び補助制度※<br><br>※費用は会社負担でみんなで美味しいものを食べに行ったり<br>休日はBBQなどを開催します！<br>もちろん断っても気まずくなったりすることはありません！笑<br><br>2021年設立のため、福利厚生が完璧というところまでは、もちろんいきませんが社員全員で整えていく予定です。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E4%B8%80%E5%BF%83%E3%82%A8%E3%82%B9%E3%83%86%E3%83%BC%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>交通（鉄道・バス・タクシー）関連｜大宝タクシー株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【タクシードライバー・未経験OK】高インセンティブあり</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>大宝タクシー株式会社</dd>
+
       <dt>職種名</dt>
       <dd>交通（鉄道・バス・タクシー）関連</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市住之江区北加賀屋5-5-28</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5590011</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>タクシードライバーとして、お客様の送迎の業務をお任せいたします。<br>・路上の流しでの営業<br>・タクシー乗り場での営業<br>・無線・アプリ等を受けての配車<br>・その他（車内の清掃、車両のチェック、売り上げ報告など）<br><br>【入社後の流れ】<br>まずは業務に必要な2種免許の資格を取得し、地理試験など道のプロとして必要なプロセスを歩みます。平均2週間程度で取得できます。その後は営業のやり方、システムの使い方、売上の方法、接客や防犯対策など様々な必要な研修を受けていただきます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>シフト制<br>【朝～夕の昼勤務】<br>5:00～15:00/6:00～16:00/7:00～17:00(実働8時間・休憩2時間以上) <br><br>【夜～朝の夜勤務】<br>18:00～4:00 (実働8時間・休憩2時間以上)<br><br>【月12日だけ働く隔日勤務】 <br>変形労働時間制 月平均労働156時間<br>8:00～翌2:00(休憩2～4時間)</dd>
+
       <dt>休暇・休日</dt>
       <dd>・毎週日曜＋自由に2〜3日変動休み<br>・祝日<br>※月のお休みは7〜8日ほどとなります<br>※休日に出勤して後でまとめて代休をとり旅行にいくなどもOK。<br><br>【1ヶ月の勤務例（日勤の場合）】<br>月　　火　　水　　木　　金　　土　　日<br>乗務　乗務　乗務　乗務　乗務　公休　公休<br>乗務　乗務　乗務　乗務　乗務　公休　公休<br>乗務　乗務　乗務　乗務　乗務　乗務　公休<br>乗務　乗務　乗務　乗務　乗務　公休　公休<br>乗務　乗務　乗務<br>※基本的には月曜から金曜が乗務。土曜は月1乗務です。<br>日祝は休みで、月22〜23日の出勤になります。ただし、平日のお休みOK。その場合、どこかの休日と振替えるなど、臨機応変に可能です。<br><br>◇年間休日120日以上<br>◇夏季休暇<br>◇ゴールデンウィーク<br>◇シルバーウィーク<br>◇年末年始休暇<br>◇有給休暇（入社半年後10日〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備：健康/厚生/雇用/労災<br>■退職金制度:あり(勤続3年以上) <br>■2種免許取得支援制度 <br>※入寮から資格取得に至るまで全て会社負担です<br>■制服貸与 <br>■単身寮完備 <br>■マイカー・バイク通勤可  <br>■保養施設 <br>■更衣室・仮眠室・休憩室・寮完備(男女) <br>■入院保険(日/3,000円)<br>◇ 資格取得支援・手当てあり<br>◇ 育児支援・託児所あり<br>◇ 寮・社宅・住宅手当あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E5%A4%A7%E5%AE%9D%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

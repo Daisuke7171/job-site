@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜ソーシャルシフト株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>総合職（営業・CS等）未経験・第二新卒歓迎／20代が活躍中！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>ソーシャルシフト株式会社</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>広島県広島市中区立町2-23 野村不動産広島ビル5F</dd>
+
       <dt>都道府県</dt>
       <dd>愛知県</dd>
+
       <dt>市区町村</dt>
       <dd>広島市</dd>
+
       <dt>郵便番号</dt>
       <dd>7300032</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>未経験からスキルを磨ける総合職として、入社後は未経験でも挑戦しやすい業務をしながら、弊社独自のリスキルプランという3年間の育成カリキュラムでスキルを習得していただきます。<br><br>スキルに応じて職種や業務内容も徐々にレベルUPさせていくので、やりがいやモチベーションを維持しながら業務を行うことができます！<br>リスキルプランが修了する3年後には、どの会社でも求められるような市場価値の高い人材へと成長できていることでしょう◎<br><br>＜リスキルプラン例＞<br>基礎：タイピング、資料作成<br>中級：マーケティング、ロジカルシンキング<br>専門スキル：DX、会計<br>など<br><br>‥‥‥‥‥‥<br>入社後の流れ<br>‥‥‥‥‥‥<br>▼充実した研修制度<br>入社して1ヶ月間はビジネスの基礎力を身に着ける為の研修や、業務を開始する為に必要なスキルを習得する為にグループワークやロープレをしていただきます。<br>『研修を受講⇒実務で実践』を繰り返し、着実にスキルアップができます。<br><br>▼未経験からでも始められる業務からスタート<br>toC営業、企画、某有名サイトの運営講師、学校のIT推進講師など、様々な職種の中から適性に応じて業務をお任せしていきます。<br><br>▼業務と並行し、収入を得ながら「リスキルプラン」を受講<br>《ビジネス》《デジタル》《ソーシャル》の3軸でスキルを学ぶカリキュラムです。<br>学習内容は資格取得の内容に基づいているので、3年後には履歴書には書ききれないほどの資格が手に入っていることも！<br>☆資格受験費用は合格時に全額会社負担<br>☆学習時間に応じた「リスキル手当」を支給<br>☆Smart Boardingというリモート＆アプリを活用した効率的な学習スタイル</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10：00～19：00（所定労働時間8時間、休憩1時間）<br>直行直帰OK！リスキリングの学習はリモートOK！<br>※原則出社での勤務となります。<br>※プロジェクト先によって変動があります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制<br>└土日祝相当　※クライアント先よって変動あり<br>■年末年始休暇　<br>■慶弔休暇　<br>■有給休暇（10日～勤続年数に応じて最大20日）<br>■産前・産後休暇<br>└グループ企業にて男女ともに取得実績あり<br>■育児休暇<br>└グループ企業にて男女ともに取得実績あり<br>■介護休暇<br>■看護休暇<br>■裁判員休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備<br>■昇給　年2回<br>■通勤手当（上限3万円/月）<br>■学習手当（上限3万円～5万5000円/月）<br>■資格手当（～3万円／資格取得状況によって半期毎に変動）<br>■スキルアップ支援・各種研修制度<br>└資格合格時の受験費用は全額会社負担<br>└オンライン研修「Smart Boarding」が無料<br>└勉強時間に応じた手当あり<br>■副業可（※申請制）<br>■敷地内全面禁煙</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%BD%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%B7%E3%83%95%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

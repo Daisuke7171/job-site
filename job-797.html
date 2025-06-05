@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜株式会社Lotus Link</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【一般事務】賃貸管理サポート ★業界経験不問・資格不問</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Lotus Link</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区月島1－22－1MIDTOWERGRAND1階</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1040052</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 5500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>2014年の設立以来、着実に会社基盤を強固にしてきた当社。<br>2022年8月には豊洲駅前店もオープン,<br>2024年4月には勝どきの人気新築タワーマンションにも店舗をOPEN。<br>今回採用する方には賃貸物件の管理・不動産契約に関わる事務作業や、退去立ち会いなどをおこなっていただきます。<br>周りにフォローしてくれるスタッフもいますので、安心して仕事を覚えていってください。<br><br>＞まずは「不動産管理」からスタート！<br>□家賃や更新料の入金チェック<br>□入居・退居の立ち会いやカギの受け渡し<br>□不動産情報サイトの情報更新　など<br><br><br>＞さらにレベルアップも可能！<br>オーナー様の代理として、不動産の “価値” を高めるプロパティ・マネジメントに携わることも可能。より専門的な相談にも対応していきましょう。<br><br>□不動産仲介業者の紹介<br>□価値を高める「リフォーム」の提案<br>□賃貸物件の空室チェック＆対策提案　など</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:30～18:30<br>・所定労働時間：8時間<br>・休憩時間：60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>■月7～8日休み（シフト制）<br>■GW休暇（3日）<br>■夏期休暇（3日）<br>■年末年始休暇（8日）<br>■有給休暇（入社半年後10日〜勤続年数に応じて20日）<br><br>5日以上連続休暇の取得可能</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険、労働保険完備<br>■資格手当<br>■役職手当<br>■交通費全額支給<br>■研修制度<br>■家族手当（配偶者・子供）<br>■住宅手当※条件有<br>■社用PC ・携帯貸与<br>■シェアカー利用<br>■四半期毎・1年毎に表彰有（11項目・各賞賞金）<br>■健康診断年1回（会社負担）<br>■社員旅行(実績：シンガポール・沖縄・熱海・箱根・伊豆・初島・館山)<br>■充実の社内イベント（毎月の飲み会、お花見、BBQなど）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BELotus%20Link" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
