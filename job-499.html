@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>人事｜株式会社安楽亭</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【採用企画担当】上場企業、退職金あり、転勤なし！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社安楽亭</dd>
+
       <dt>職種名</dt>
       <dd>人事</dd>
+
       <dt>勤務地</dt>
       <dd>埼玉県さいたま市中央区上落合2-3-5 アルーサB館4F</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>さいたま市</dd>
+
       <dt>郵便番号</dt>
       <dd>3380001</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>安楽亭は2020年に大型M&amp;Aにより株式会社アークミールを傘下に入れ、2030年までにグループのグローバル売上1000億円を目指して、国内外での積極的な事業展開、M&amp;A、新業態・新デザインの開発やDXなど、質的・量的な事業の成長に取り組んでいます。<br>ビジョンや価値観の共有によって、能力ある人材とつながる機会を最大化することも、今の当社の人事にとって重要なテーマです。新風を吹き込み、新たな試みを積極的にリードできる方のご応募をお待ちしております。 <br><br>■仕事内容<br>本社の間接部門、営業部門、連結子会社、新卒・中途、すべて携われます。様々な手法でターゲット人材へのアプローチ・獲得をしていきます。<br>採用プロセスの立案から実行まで、経験スキルに合わせて業務をお任せします　<br>【具体的に】<br>・採用戦略の企画・立案<br>・採用マーケティング、広報（手法や媒体の検討・企画を含む）<br>・新卒採用設計、面接、オンボーディング<br>・中途採用に関する募集部門の要望ヒアリングと人材要件の整理<br>・採用手法の選定・運用及び協力企業との折衝（人材紹介、媒体、イベント、リファラルなど）<br>・選考業務（応募者対応、書類審査、面接、選考課題の考案、データ管理）　<br>・候補者のクロージング、入社後のフォロー　等</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8：45～17：45</dd>
+
       <dt>休暇・休日</dt>
       <dd>・週休2日制 （基本は土日祝日休み。月1回から2回、面接等がある場合は土日祝も出勤の可能性あり）<br>・年間公休113日（毎月公休９日か１０日）<br>・有給休暇(入社後６ヶ月経過後)<br>・慶弔休暇<br>・介護休暇<br>・産前産後休暇・育児休暇（取得実績多数あり）<br>・年末年始や長期休暇も有給消化で積極的に取得しています。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・交通費規定支給<br>・車通勤可（無料駐車場有、ガソリン代規定支給）<br>・社員持株会制度<br>・財形貯蓄<br>・団体生保・団体損保<br>・社員割引制度（安楽亭直営店舗を20％割引で利用できます）<br>・退職金制度（規定有）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%AE%89%E6%A5%BD%E4%BA%AD" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

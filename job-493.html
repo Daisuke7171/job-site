@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Webサービス系エンジニア・プログラマ｜株式会社ジー・エフ・エル</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【システムエンジニア】業務システム開発～残業10h程度でワークライフバランス○/柔軟な環境～</h1>
     </div>
   </header>
@@ -146,46 +152,63 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ジー・エフ・エル</dd>
+
       <dt>職種名</dt>
       <dd>Webサービス系エンジニア・プログラマ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区新橋6-10-2　第2新洋ビル5F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1050004</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>◆具体的にお任せしたい業務<br>業務システムを中心とするWebシステム・アプリの開発に携わっている弊社にてリーダーや基本設計・詳細設計ができるSEとしてのご活躍を期待しております。<br>ご経験・スキルによってはPL・PMを担っていただきたいと考えております。<br><br>・システム運営立案/分析<br>・プラットフォーム立案<br>・開発計画/運営<br>・開発方針の策定<br>・進捗管理<br>・現行業務調査/分析<br>・見積り<br>・施策立案<br>・各種成果物レビュー<br>・チーム運営/チームメンバの開発フォロー<br>・開発（要件定義/基本設計/詳細設計/製造/単体試験/結合試験/リリース）<br>・保守運用<br>・他<br><br>◆体制<br>基本的に2～7名でチームを組み、お客様先に常駐してお仕事をしています。<br>※配属はスキル・志向性・メンバとの相性を考慮して決定します。<br><br>◆技術スタック<br>サーバサイド：Java/JavaScript/Python<br>データベース：MySQL/Oracle<br>モバイル：Swift/Kotlin</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00（所定労働時間：8時間、休憩1時間）<br><br>※参画いただくプロジェクトによって、勤務時間は異なる場合がございます。<br>・8:30～17:00<br>・9:30～18:00<br>・10:00～19:00　など</dd>
+
       <dt>休暇・休日</dt>
       <dd>★年間休日125日以上（前年度実績：128日）<br><br>◇完全週休2日制（土日）<br>◇祝日<br>◇夏季休暇（3～5日）<br>◇年末年始休暇<br>◇特別休暇（結婚/出産/慶弔/他）<br>◇有給休暇<br>◇産休・育休（取得実績100%）<br>◇他</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 対策は参画いただくプロジェクトによって異なりますが、
 禁煙スペース内での業務はございません。</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◇時間外手当<br>◇退職金制度<br>◇特別手当（結婚祝い金/出産祝い金/慶弔見舞金/他）<br>◇社会保険完備<br>◇交通費全額支給<br>◇資格支援制度<br>　・教材費（会社が全額負担）<br>　・試験料（合格した場合は会社が全額負担）<br>　・講習料<br>　・合格一時金（合格した場合支給）<br>◇書籍代補助<br>◇外部研修制度<br>◇定期健康診断<br>◇社員旅行・イベント（会社が全額負担）<br>◇健康診断<br>◇副業可<br>※申請いただければ、業務に支障が出ないことを条件に可。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B8%E3%83%BC%E3%83%BB%E3%82%A8%E3%83%95%E3%83%BB%E3%82%A8%E3%83%AB" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
