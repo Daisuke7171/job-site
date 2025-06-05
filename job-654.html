@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>サービスエンジニア・サポートエンジニア｜株式会社日本オフィスオートメーション</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【サービスエンジニア（未経験OK）】OA機器保守メンテナンス・機器修理★充実の研修あり</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社日本オフィスオートメーション</dd>
+
       <dt>職種名</dt>
       <dd>サービスエンジニア・サポートエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>東京都八王子市宮下町602-4</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>八王子市</dd>
+
       <dt>郵便番号</dt>
       <dd>1920005</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 3000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>当社のサービスエンジニアとして、コピー機などOA機器全般の修理・メンテナンスをお任せします。<br><br>＜具体的な仕事内容＞<br>・レンタルOA機器をお使いのお客様を訪問<br>・機器の定期メンテナンス、修理対応<br><br>※社用車を運転して、顧客先を訪問します。<br><br>＜1日の訪問件数＞<br>3～5件<br><br>【入社後の流れ】<br>入社後2〜3週間は機械に触れ、操作方法を覚えていただきます。 その後、約3ヶ月間は先輩と一緒に納品先を周り、設置のコツ・お客様への説明方法を1から教えます。 不明点はいつでもすぐに聞ける環境なので、未経験の方も安心して入社していただけます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:00～16:30（所定労働時間7時間15分、休憩75分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>・シフト制による週休2日制（4週8休）<br>・夏季休暇<br>・年末年始休暇<br>・GW休暇<br>・年次有給休暇（10日～勤続年数に応じて最大20日）<br>・慶弔休暇<br>・特別休暇<br>・産休育休</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・交通費支給（徒歩のみで通勤の方も月一律5,000円支給）<br>　※社員寮、準社員寮に入寮の方は対象外<br>・各種保険完備（雇用・健康・厚生・労災）<br>・昇給年1回<br>・賞与年2回　(8月、2月）<br>・引越しに伴う補助金制度（最大15万円）<br>・社員旅行（年1回）<br>※海外（会社負担）<br>・社内ゴルフコンペ<br>・全国の宿泊施設を補助金対象最大１万円、年4回まで　<br>・定年退職金制度<br>・社員表彰制度（年1回）<br>・社員寮完備（東京）、準社員寮制度あり（その他拠点）<br>・新卒新入社員研修<br>・フォローアップ研修<br>・入社年次研修<br>・昇格者研修<br>・役職者研修<br>・管理職研修<br>・契約研修機関にて各種セミナー受講可能<br>・自己啓発支援制度あり<br>※契約研修機関のセミナーの中から、自由に選択し自発的に参加していただけます。<br>・キャリアコンサルティング制度あり<br>※年に2回（上期／下期）キャリア面談実施</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%97%A5%E6%9C%AC%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%82%AA%E3%83%BC%E3%83%88%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

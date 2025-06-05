@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社C-mind</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【東京】導入社数6,000社以上の自社サービス「スリホ」のインサイドセールス責任者</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社C-mind</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区大久保2-5-23　新宿辻ビル10F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1690072</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>5000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>当社のSmart Office事業部では、<br>定額制プリンターの自社サービス「スリホ」を法人企業様向けに展開しています。<br>累計導入社数6,000社を超える「スリホ」のさらなる拡大に向け、<br>今回はインサイドセールスの責任者を募集します。<br>まだまだ立ち上げ段階のチームのため、裁量を持って働くことが可能です。<br><br>【スリホとは？】<br>企業様が使うプリンターは、印刷枚数に応じた従量課金制が一般的でした。<br>「スリホ」は国内初の定額制レンタルプリンターとして2013年にリリースし、インク代、トナー代、カウント料金は全て0円、レンタル料金のみの刷り放題サービスとしてこれまでに6,000社以上の企業様にご導入いただいているサービスとなります。<br><br>【仕事内容詳細】<br>・Web広告流入案件に対してのインサイドセールス<br>ファーストアプローチから受注まで、基本的には電話完結で行います。<br>（※Web商談のケースも稀にあり）<br>・インサイドセールスチームのマネジメント業務<br>営業戦略の立案、業務フローの改善（トークフローなど）、KPI設定・管理、メンバーの育成など</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00〜19:00<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>■年間休日120日以上<br>■完全週休2日制（土日祝）<br>■夏季休暇<br>■年末年始休暇<br>■年次有給休暇（10日〜勤続年数に応じて最大20日）<br><br>＜特別休暇＞<br>■結婚休暇<br>■新婚旅行休暇<br>■配偶者の出産休暇<br>■子供の予防接種、法定検診の際の休暇<br><br>＜休職・休業＞<br>■介護休業<br>■産前産後休暇<br>■育児休業（産後パパ育休含む）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備（雇用・労災・健康・厚生年金）<br>■定期健康診断<br>■企業型確定拠出年金制度<br>■昇給・昇格年2回<br>■私服勤務あり<br>■読書奨励金制度（書籍の購入費用を会社が負担）<br>■結婚祝い<br>■出産祝い<br>■給与前払い制度<br>■引越し支援制度<br>■Bリーグ横浜ビー・コルセアーズの試合無料観戦（当社が共同オーナーを務めています）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEC-mind" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

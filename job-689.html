@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>交通（鉄道・バス・タクシー）関連｜名鉄タクシーホールディングス株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>転職応援制度あり！入社祝金あり！名鉄タクシー　ドライバー職【未経験歓迎】</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>名鉄タクシーホールディングス株式会社</dd>
+
       <dt>職種名</dt>
       <dd>交通（鉄道・バス・タクシー）関連</dd>
+
       <dt>勤務地</dt>
       <dd>愛知県名古屋市瑞穂区浮島町5-1</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>名古屋市</dd>
+
       <dt>郵便番号</dt>
       <dd>4670854</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 10000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>★転職応援キャンペーン2024★<br>＜入社祝い金支給キャンペーン＞<br>合計20万円を支給（試用期間を経て本採用となった際の給料日に10万円、本採用から6ヵ月後の給料日に10万円を支給）<br>＜一年間給料最低保障＞未経験者対象<br>入社後12ヵ月間は日勤25万円、その他の勤務は27万円の給料最低保障<br>※名古屋交通圏外でのタクシー経験者は条件が異なる<br>＜寮費無料＞<br>入社後半年間寮費無料（通常25,000円程度）※共益費は自己負担<br>＜二種免許取得支援制度＞<br>二種免許取得に関する費用を全額会社負担<br>合宿免許の場合は、さらに名古屋駅からの交通費、食事代、宿泊費用も全額負担<br>自動車学校通学中1日あたり8,000円を支給<br>＜体験入社制度＞<br>タクシーの助手席に座ってしごと体験と運転体験（昼食つき）<br>※交通費、給料は発生しません<br>＜研修中の給与＞<br>1日8,000円を支給<br>＜応募年齢を拡大＞<br>定年は65歳であるが、二種免許所持者は69歳まで応募可能<br><br>※キャンペーン対象は令和6年9月末日までに面接を受け、令和6年12月末日までに正社員・嘱託社員として入社した方に限ります。<br>※いずれも諸条件あり。説明会にてご説明します。<br><br><br><br><br>●仕事内容●<br>名鉄タクシーのドライバーとして、<br>お客様を目的地まで安全・快適に輸送してください。<br><br>営業のやり方としては、<br>街中でお客さまを見つける他に、<br>電話での予約、最近では配車アプリからの注文も増えています。<br><br>配車注文の場合はお客さまの予約場所まで<br>カーナビに自動設定されるので<br>あまり難しく考えなくても大丈夫です！<br>未経験スタートが8割以上です！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>勤務時間は主に4つの勤務体系ごとに分かれております。<br>※勤務体系はお選びいただけます。<br>※勤務時間は一例です。営業所等によって若干変更になることがございます。<br><br>①隔日勤務　6:30～翌1:30、7:30～翌2:30、9:00～翌4:00<br>②夜勤務 18日制　15:00～翌 5:00、17:00～翌7:00 を交互に繰り返し<br>③夜勤務 22日制　17:00～翌5:00<br>④日勤 23日制　 7:00～18:00<br>⑤日勤18日制　6:00～20:00、8:00～22:00</dd>
+
       <dt>休暇・休日</dt>
       <dd>【休日】<br>①隔日勤務　　　　    6～9日（非番を含めると最大19日）<br>②夜勤務 18日制  12～13日<br>③夜勤務 22日制    8～9日<br>④日勤              6～9日<br><br>年間シフトが出ますので、予定が立てやすいです。<br>GW・お盆・年末年始等には連休があります。<br><br>・有給休暇<br>・慶弔休暇<br>・産前産後休業/育児休業/介護休業あり</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康保険、厚生年金保険、労災保険、雇用保険）<br>・車通勤可（無料駐車場あり）<br>・制服貸与<br>・退職金あり※<br>・定年後再雇用制度あり（最長75歳まで）<br>・慶弔見舞金<br>・健康診断（年2回）<br>・家具、家電つきの単身寮（25,000円～）←半年間無料<br>・浴室・仮眠室・社内食堂・格安理容店など（社内設備）<br>・車内・外防犯カメラ完備<br>・全車AT車・カーナビ・ETC搭載<br>・冬季期間中スタッドレスタイヤ装着（会社負担）<br>・表彰・報奨制度<br>・名鉄グループのサービスを格安で利用可<br>・クラブ活動（フットサル、野球、ソフトボール、囲碁・将棋、釣り、カラオケなど）<br>・二種免許取得支援制度<br>・タクシー利用料金の社員割引あり※<br>・インフルエンザ予防接種費用補助（自己負担1,000円）<br>※規定あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E5%90%8D%E9%89%84%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>回路・システム設計｜株式会社日立オートメーション</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【産業設備の電気設計】※マネージャー候補</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社日立オートメーション</dd>
+
       <dt>職種名</dt>
       <dd>回路・システム設計</dd>
+
       <dt>勤務地</dt>
       <dd>岐阜県各務原市テクノプラザ2-15</dd>
+
       <dt>都道府県</dt>
       <dd>岐阜県</dd>
+
       <dt>市区町村</dt>
       <dd>各務原市</dd>
+
       <dt>郵便番号</dt>
       <dd>5090109</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>8000000 ～ 9000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【具体的には……】<br>・自動車生産設備における電気設計<br>・ハード図設計<br>・ラダープログラム設計<br>・設備試運転対応<br>・仕入先への手配業務、日程管理業務、予実管理<br>・グループ内マネジメント<br><br><br>主な使用ツール<br>■PLC（シーケンサ）設計、ラダー設計<br>　＜使用ソフト＞<br>　・三菱電機（MELSEC）GX Works3、GX Works2<br>　・オムロン　CX-Programmer<br>　・シャープ　JW300SP<br>　・キーエンス　KV STUDIO<br>■タッチパネル設計<br>　＜使用ソフト＞<br>　・三菱電機（MELSEC）GT Designer3<br>　・オムロン　CX-Designer<br>　・シャープ　ZM-71S、ZM-72S<br>　・キーエンス　VT STUDIO<br>　・シュナイダー　GP-Pro EX<br>　・発紘電機　V-SFTV<br>■電気図面（回路）設計】<br>　＜使用ソフト＞<br>　・Autodesk　Autocad<br>　・進和電機　Unidraf<br><br><br>【当社について】<br>1981年の創業以来、ロボットシステムインテグレーション（SI）事業を手がけ、自動車を中心に、各種製造現場において、生産ラインの自動化をしています。生産ラインのシステム構築と設備構築に計画段階から携わり、初期打合せから、設計・製作・据付・メンテナンスに至る一貫したサービスを提供しています。特に、産業用ロボットを活用した溶接工程におけるロボットSI技術に強みを持っています。<br>創業以来40年以上に及ぶ”設備愛”で自動車設備産業をサポートしてきた当社。実績・ノウハウや、豊富なライン立上げ経験による対応力、豊富な設備と協力体制による高い生産能力を持っています。そして、設計から設置までのトータルサポート体制で、お客様の自動車生産ラインを支えています。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8：30～17：00 <br>所定労働時間7.75時間、休憩45分</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土・日）<br>※お客様の都合上土日出社が発生する場合がございますが、振休の取得が可能です。<br>フレックス制度あり</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋内全面禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>通勤手当（会社規定による）<br>家族手当（会社規定による）<br>住宅手当（会社規定による）<br>残業手当<br>OJT<br>団体保険制度<br>退職金制度<br>社員食堂<br>無料駐車場完備<br>安全衛生委員会活動（毎月1回産業医の先生をお招きし安全衛生委員会を開催）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%97%A5%E7%AB%8B%E3%82%AA%E3%83%BC%E3%83%88%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
