@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜株式会社ワールドワン</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【事務職希望大歓迎】【東京・神奈川】20代が活躍する一般事務</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ワールドワン</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区六本木7-12-2 R7ビルディング</dd>
+
       <dt>都道府県</dt>
       <dd>京都</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1060032</dd>
+
       <dt>雇用形態</dt>
       <dd>契約社員</dd>
+
       <dt>給与</dt>
       <dd>2000000 ～ 2500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>顧客先に配属の上での勤務となります。<br>主にIT通信に関わる企業様への配属先が多くITや通信インフラなどに関わる知識やスキルを身に着ける事が出来ます。<br><br>■資料作成（見積作成・契約書の査読など）<br>■配布文書の校閲<br>■会議体の管理（メンバーのスケジュール管理、会議室の手配など）<br>■会議の議事録作成<br>■電話・メール対応<br>■図面・報告書のチェック<br>■データ集計、更新<br><br>＊将来のキャリアパス＊<br>本社勤務（事務、広報、人事、総務、マーケティング、エンジニア、営業）など、幅広い業務に携われるチャンスがあります。<br>現在社員が兼任していますが近いうちに各部門の立ち上げも予定。<br>会社が成長フェーズにある今、頑張り次第で早期から希望ポジションに就けるチャンスがあります！！！<br>本社事務・人事・事業部長・人材コーディネーター・企画部など…将来の選択肢は豊富です。<br><br><br>【変更の範囲】<br>※事業や所属部門の状況の変化等により、会社の指示する職務内容（業務全般）へ変更することがある。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00(所定労働時間8時間、休憩1時間)<br> ※勤務地によっては異なる場合がございます。</dd>
+
       <dt>休暇・休日</dt>
       <dd>■週休2日制<br>土日休<br>祝日休<br>※稀に休日出勤を依頼する場合がございます。<br>GW、年末年始<br><br>有給休暇<br>※勤続6ヶ月以降10日付与。勤続年数に応じて最大20日</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>交通費支給<br>社会保険手当（雇用・労災・健康・厚生年金）<br>資格手当<br>研修制度<br>時間外手当（超過分）<br>社内分煙<br>副業OK<br>役職手当<br>昇給制度有り<br>インセンティブ制度<br>リファラル制度<br>友達を紹介して入社した場合、手当10万円支給</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%83%AF%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

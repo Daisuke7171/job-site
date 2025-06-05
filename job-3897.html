@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社ZEPE</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>☆反響型営業☆高還元のインセンで年収UP/独自の特別休暇でライフワークバランス◎/転勤なし</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ZEPE</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>埼玉県越谷市南越谷1丁目17-2</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>越谷市</dd>
+
       <dt>郵便番号</dt>
       <dd>3430845</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>お客様へケーブルテレビサービスのご提案していただきます。<br>ご提案する内容はアニメやドラマ専用のTVチャンネル、<br>インターネットやWi-Fiなど通信回線です！<br><br>皆様の生活に必要不可欠な商材ですので<br>テレワークや在宅ワークの普及によりニーズが急騰しています！<br>そのため、お客様へ提案がしやすいのが特徴で<br>営業スタッフも高い成約率をキープしています！<br><br>★テレアポ・飛び込みはなし！★<br>反響があったお客様へ訪問するので<br>「無数に電話をかけてアポを取る…」<br>といった苦労をすることはありません！<br><br>【営業の流れは・・・？】<br>1：チラシを配布し反響を待つ<br>　▼<br>2：反響があったお客様先へ訪問<br>　▼<br>3：映像コンテンツやネット回線などの提案<br>　▼<br>4：事務所へ戻って申込書を処理<br><br>【営業に専念できる環境です♪】<br>1日あたり5～7件のお客様へ訪問します。<br>見積もりや提案書作成など事務作業が少ないので、<br>ご自身の営業に専念することが出来ます！<br>多くの場数を踏むことができるからこそ、<br>営業スキルが身につくスピードも早いのが特徴です♪<br><br>【充実な研修制度】<br>入社後、1カ月間は”しっかり”と研修をしていただきます。<br>基礎的な知識を身に着けた後は実践を通して学んでいただきます。<br>見る・聞く・体験を通して成長をすること間違いなし♪<br><br>■研修内容<br>～入社後の2週間～<br>本社にて研修を実施します。<br>専任のトレーナーが商材や個人営業のマナーをお伝えします。<br><br>～3週目以降～<br>配属先にて研修を実施します。<br>先輩社員と同行して社内ルールと営業の流れを知っていただきます。<br><br>～入社1か月後/営業デビュー～<br>営業デビュー後もフォロー体制が整っています♪<br>先輩社員と同行やロープレが出来るだけでなく、<br>専任のトレーナーが皆さまが活躍できるまでフォローします！<br>実践を通してわかったポイントは振り返り次回に活かして行きましょう！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00（実働8時間/休憩60分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制（火曜・水曜）<br>　※休日出勤はありません。<br>■年末年始休暇（5日間） <br>■特別休暇（5日間）<br>リフレッシュ休暇、バースデー休暇、アニバーサリー休暇、ファミリー休暇、イベント休暇、美容Day、LOVE休暇、部活休暇、モチベーション休暇、コミュニケーション休暇<br>■有給休暇（初年度10日間）<br>■結婚休暇<br>■産前産後・育児休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備（健康保険/厚生年金保険/雇用保険/労災保険）<br>□社員旅行 <br>■研修制度 <br>□社外セミナー無料受講制度 <br>■再雇用制度<br>□社用車支給 <br>■車両費（車両持込の場合、3万円/月） <br>□引越手当　※規程あり<br>■住宅手当　※規程あり<br>□借り上げ社宅　※規程あり <br>■部活動（スノボ、サーフィン、バスケ、テニス、野球など） <br>□社内イベント（社員旅行・年2回BBQ・運動会・忘年会など） <br>■結婚祝い金（3万円） <br>□出産祝い金（2万円） <br>■弔慰金<br>□通勤手当実費支給</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEZEPE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

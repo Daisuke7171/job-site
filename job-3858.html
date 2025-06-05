@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜株式会社GRACE</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【安定企業で働きたい方】 楽器のリユース事業でキャリアアップ目指しませんか</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社GRACE</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>香川県高松市十川東町１４４−１</dd>
+
       <dt>都道府県</dt>
       <dd>奈良県</dd>
+
       <dt>市区町村</dt>
       <dd>高松市</dd>
+
       <dt>郵便番号</dt>
       <dd>7610434</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【当社がどんな会社なのか簡単に説明させて下さい！】<br>★10年以上連続150％の成長を遂げている波に乗った企業<br>★平均年齢28歳と若く勢いに乗っている企業<br>★楽器の買取から製造まで1ストップで行っている企業<br>★楽器の枠を飛び越えて多種多様な事業を展開している企業<br>★表彰や評価が目に見える企業<br><br>■お客様のご自宅に訪問し、商品の査定/交渉をし商品を買取させて頂くお仕事です。<br><br>■商品の査定とは？<br>商品を実際に見て、型番などを確認。その後、専用ツールを使って査定＆診断を行います！<br>なので・・・未経験でも安心して査定する事ができます！<br><br>■困った時は？<br>私達には『援助隊』と呼ばれる査定を援助してくれるプロフェッショナル集団がおりますので<br>困った時には連絡し随時サポートを受ける事ができます！<br><br><br>■具体的な1日の流れ※あくまで一例となります。<br>10：00　1件目のお客様のご自宅へ到着<br>11：00　1件目査定や商品の運びだし終了2件目へ向かう<br>11：30　2件目のご自宅へ到着<br>12：30　2件目終了、休憩を挟みながら3件目へ向かう<br>     |<br>18：30　6件目終了<br>19：00～19：30　倉庫到着、荷下ろしや清算を行い退勤</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10：00～19：00（実働8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制（月8〜9日休み）<br>※基本は毎週希望の固定曜日とそのほかの曜日1日が毎週休み<br><br>-説明-<br>・週1回の曜日固定休み<br>・固定休みにプラスして月4日のフリー休み(選択できる休み)※基本は週に1回利用<br>※固定休みの曜日が1ヵ月の中で5回ある時は月9日休みとなる<br><br>年間休日112日：52+48+3+3+3+3<br>年間52週間×1日休み＝52日<br>年間12ヵ月×月4回フリー休＝48日<br>年始休暇　3日（1/1~1/3）<br>＜セレクト可能＞※前提期中利用<br>年末休暇　3日（12月〜1月中）<br>GW休暇　 3日（5月）9月に使えるも要検討<br>お盆休暇　3日（7〜8月中）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・昇給年1回（11月）※入社2年目までは自動昇給！<br>・賞与年1回（12月）※※在籍3年経過後から支給<br>・時間外手当<br>・交通費全額支給<br>・社会保険完備（雇用・労災・健康・厚生年金）<br>・社宅あり<br>・出張手当<br>・海外出張<br>・社用車貸与<br>・社内研修制度<br>・引越費用支援制度<br>・書籍購入代補助あり<br>・資格取得支援制度（各種セミナー費用負担）<br>・社員割引あり<br>・髪型・服装自由（オシャレは全く問題ありません）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEGRACE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
