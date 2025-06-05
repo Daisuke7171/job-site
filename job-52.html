@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜アスベックス株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【ブランド品・雑貨等の鑑定士（エコリング鶴見店）】未経験歓迎★鶴見駅から徒歩5分（350ｍ）</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>アスベックス株式会社</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>神奈川県横浜市鶴見区豊岡町21-11</dd>
+
       <dt>都道府県</dt>
       <dd>神奈川県</dd>
+
       <dt>市区町村</dt>
       <dd>横浜市</dd>
+
       <dt>郵便番号</dt>
       <dd>2300062</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>リサイクル品の店頭買取業務をお任せします。販売はありません。お客様がお持ちになったブランド品・装飾品・雑貨まで、幅広い商品の査定・買取業務をお任せします。<br><br>【具体的には…】<br>・お客様対応<br>・持ち込まれた品の査定<br>・査定金額の提示、ご納得いただけたら買い取り<br>・データ入力作業（顧客情報・商品情報など）<br>・その他（店頭の清掃、バックヤード整理、POPの掲示など）<br>など<br><br>査定した商品の金額を提示し、お客様が価格に納得されたら買取が成立します。<br>適正な金額で買い取る能力が求められますが、研修も充実していますので安心してスタートすることが可能です。<br><br>【1日の流れ】<br>9:45　出社・開店準備：店舗内の掃除や立て看板の設置をして開店準備を進めます。<br>▼<br>11:00　店舗オープン：お客様が来店されたら最優先に対応していきます。それ以外の時間では、バックヤード整理や事務仕事などを行います。<br>▼<br>18:45　閉店、退社：閉店作業と明日の準備をして、退社します！<br><br>【入社後の流れ】<br>入社後は研修やOJTを通してマナーから業界、鑑定士スキルまでを学んでいただきます。少しずつ知識を増やし、独り立ちを目指していただきます。困った時も相談しやすい雰囲気がありますので、スキルアップしやすい環境です。<br><br>【キャリアステップ】<br>・未経験入社2年目の23歳で店長（ポジションなど）に就任<br><br>【未経験でも安心してスタートできる理由】<br>研修やサポート体制も充実。現時点では「ブランド品にはあまり詳しくない」「お客様と接する仕事は初めて」という方も心配ありません！未経験スタートの先輩社員が多数。ほとんどが未経験スタートだからこそ、鑑定士の育成施設があります。もちろん研修終了後も先輩がマンツーマンで指導していきますので、分からないことがあっても安心です。<br>※エコリング本部にて約1ヶ月の研修がございます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：45〜18：45（所定労働時間8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>月8日以上（水曜定休・シフト制）<br>有給休暇（入社半年後に10日付与。最大20日）<br>出産・育児休暇<br>GW休暇<br>夏季休暇<br>年末年始休暇<br>慶弔休暇<br>特別休暇<br><br>シフトは前月に提出いただいていますが、都合に併せて変更希望があった場合にはスタッフ間で協力し、臨機応変に対応していますのでご安心ください。<br>※例）親族の病気など突発的なシフト変更にも対応しています！</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>昇給あり<br>交通費支給（月3万円まで）<br>※車・バイク通勤の場合、駐車場代は本人負担となります<br>U・Iターン支援<br>資格取得支援<br>鑑定士手当（1万円／月）<br>社員割引<br>研修制度<br>バイクor車通勤OK<br>副業可</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%A2%E3%82%B9%E3%83%99%E3%83%83%E3%82%AF%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
