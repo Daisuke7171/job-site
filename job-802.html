@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>業務系アプリケーションエンジニア・プログラマ｜富士インフォックス・ネット株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>東京【システムエンジニア】Webシステム、業務アプリ開発／自社製品の開発★資格報奨金あり</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>富士インフォックス・ネット株式会社</dd>
+
       <dt>職種名</dt>
       <dd>業務系アプリケーションエンジニア・プログラマ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区芝5-13-15芝三田森ビル5F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1080014</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>自社製品プロジェクトまたはお客様プロジェクトで、<br>要件定義、基本設計、詳細設計、製作、テスト、移行、保守等を行います。<br><br>※入社後、経験に応じて担当範囲を決定し、プロジェクトに参画いただきます。<br>※将来的にはリーダーとして、プロジェクト管理・メンバー管理や顧客折衝等をお任せします。<br><br>変更の範囲：会社の定める業務（エンジニア業務全般）<br><br>＜自社製品＞ <br>スクールアシスト 昴 <br>・⽇本語学校、専⾨学校／⼤学（留学⽣向け）の管理システム <br>・Excelライクの操作性の⾼さで業務効率化でき 紛失やセキュリティ⾯のリスクも低いので問合せが増加中 <br>・学⽣の出欠、成績管理だけでなく今後は就活支援機能も追加予定。 <br>・⾔語：Java11<br>・フレームワーク︓Spring Boot<br><br>データ分析・業務効率化⽀援ツール『BI21』 <br>・データをクラウド上で管理し業務改善、レポート⾃動化、データ分析まで⼀括対応 <br>・Excelがベースのシステムで低コスト、使い勝⼿の良さからニーズが急拡⼤ <br>・ホテル、銀行、製薬会社等様々なお客様を中心とした導⼊実績あり <br>・⾔語：Excel/VBA、SQL、JSP、JavaScript <br><br>新規クラウドサービスの開発および保守 <br>・組織の心理的安全性を高めるコミュニケーションツール<br>・地方創生のためのDX施策提案<br>・特殊コードを活用した本人認証・個人情報の運用システム <br>・言語：Java、PHP、Dart、JavaScript <br>・フレームワーク：SpringBoot、Laravel、Flutter、VueJS<br><br>＜案件例＞<br>◎Webシステム開発(要件定義～運用)<br>・新聞社向けWebシステム開発<br>チーム15名(PM2名)、期間12ヶ月<br>言語：Java、Java Script、OS：Linux、DB：Oracle<br><br>・中古車リアルタイムオークションWebシステムの基本設計～運用<br>チーム26名(PM1名)、期間9ヶ月<br>言語：VC++、VB、ASP、OS：Windows、DB:Oracle<br><br>【身につくスキル】<br>Java、PHP、Perl、VBA/Excelなどでの開発<br>データベース設計<br>顧客折衝<br>プロジェクトマネジメント<br><br>【キャリアプラン例】<br>プログラマ<br>　　　　↓<br>システムエンジニア、プロジェクトリーダー<br>　　　　↓<br>スペシャリスト、プロジェクトマネージャー、セールスエンジニア<br>　　　　↓<br>分野に特化したコンサルタント(IT、CRM、人事、購買、財務等)、経営／企画／管理<br><br>【仕事とプライベートの調和のとれた働きやすい環境作りに注力】<br>2015年9月、弊社は「働きやすい職場環境づくり分野」「子育て支援分野」」で港区ワークライフバランス推進企業に認定されました。社員の勤務時間を毎月確認し、稼働が高い方がいた場合、その原因究明を実施し、原因を取り除けるよう活動しています。最近では男性の育児休暇取得実績もあり、推奨しています。今後も、社員のみなさんが仕事とプライベートのバランスがとりやすい、働きやすい環境づくりのために積極的に取り組んでいきます。<br><br>【インフラ事業が7割を占めるので、経営基盤が安定！】<br>創業以来サーバ・ネットワーク事業を展開しており、お客様からも技術力を評価されて長いお付き合いをさせていただいております。長年の信頼と実績から、プロジェクトの依頼をたくさんいただいておりますので経営基盤が安定しています。<br><br>【スキルアップ研修】<br>スキルレベルと配属プロジェクトにより、配属現場でOJT研修を実施します。基本的に先輩社員がいるチームに入りますので、わからないことはすぐに相談できる環境です。 また、配属後もオンライン研修が受け放題なので、場所を選ばずスキルを磨けます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00<br>所定労働時間：8時間、休憩1時間<br>※案件に応じて変更になるケースがございます。<br>※勤務間インターバル制度、フレキシブル出勤制度・リモートワーク制度あり</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制(土日祝)<br>年末年始休暇<br>リフレッシュ休暇<br>有給休暇<br>慶弔休暇<br>特別休暇<br>育児休暇(男性の取得実績あり)<br>産前産後休暇<br>介護休暇<br>ボランティア休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険制度完備<br>在宅勤務手当<br>出張手当<br>慶弔見舞金<br>結婚・出産祝金<br>資格取得報奨金<br>各種研修<br>・オンライン研修受け放題（ビジネスマナー、階層別、技術別、職種別等）<br>定期健康診断<br>健康保険組合提携施設利用等<br>リファラル採用報奨金制度／紹介料30万円</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E5%AF%8C%E5%A3%AB%E3%82%A4%E3%83%B3%E3%83%95%E3%82%A9%E3%83%83%E3%82%AF%E3%82%B9%E3%83%BB%E3%83%8D%E3%83%83%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

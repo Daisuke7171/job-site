@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>カスタマーサポート・コールセンター運営｜株式会社DOGETHERE</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>コールセンタースタッフ（アンケート回収業務）</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社DOGETHERE</dd>
+
       <dt>職種名</dt>
       <dd>カスタマーサポート・コールセンター運営</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市北区天神橋3丁目1-35南森町岡藤ビル7F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5300041</dd>
+
       <dt>雇用形態</dt>
       <dd>契約社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>業務拡大中につき、責任者候補となる正社員を募集！<br><br>■お仕事の流れ<br>当社では、不動産会社様から委託を受け、<br>接客アンケートの回収業務を行っております。<br>そこでお話させていただいたお客様の、<br>引越時の「困った」をサポートするお仕事をしています。<br>お約束しているお客様に電話でアンケート回収をさせていただき、<br>お客様のご希望に沿って、ライフラインのご案内を行ったり、<br>お客様からかかってきた電話でインターネットに関するご相談をお受けする業務となります。<br><br>【ライフライン詳細】<br>インターネット回線の手配<br>電気、ガスのお手続き<br>ウォーターサーバーのご案内<br><br>その他、業績好調につき、複数の仕事のオファーが殺到中です！<br>上記案内するオペレーターの管理を行っていただく仕事が責任者の仕事となります。<br>最初はオペレーター業務を行い、業務に慣れ、責任者へと成長していきませんか？<br><br>■こんな人歓迎しています！<br>インターネット回線事業、電気ガスの取次等でのコールセンター経験者<br>テレフォンアポインター経験者<br>未経験でもチャレンジしたい方、人と話すのが好きな方<br>将来様々な事業にチャレンジしたい方<br>将来独立を目指す方<br><br>当社はそんな方を全力で応援します！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>営業時間　10：00～20：00<br>※上記勤務時間内で所定労働時間8時間<br>※週5日勤務シフト制<br>※昼休憩1時間有り</dd>
+
       <dt>休暇・休日</dt>
       <dd>週5日勤務シフト制<br>年間休日120日<br>有給休暇（10日～勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 受動喫煙対策実施済</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>結婚祝い金あり：5万円（特別休暇も5日付与）<br>出産祝い金あり：第一子→3万円、第二子→5万円（各特別休暇3日付与）<br>お見舞金あり：区分により支給額変動（3万円～30万円）※特別休暇も3～5日付与<br>独立支援あり<br>退職金制度準備中（2023年施行予定）<br>転勤なし</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEDOGETHERE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

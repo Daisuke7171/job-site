@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>インフラエンジニア｜富士インフォックス・ネット株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>東京【ネットワークエンジニア】通信キャリア回線開通業務／エンジニアへキャリアチェンジしたい方歓迎</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>富士インフォックス・ネット株式会社</dd>
+
       <dt>職種名</dt>
       <dd>インフラエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区芝5-13-15芝三田森ビル5F</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1080014</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>「通信キャリア回線開通業務」をご担当いただきます。<br>【具体的な仕事内容】<br>■営業部門からの開通受付<br>■通信機器の手配<br>■通信キャリアへの工事手配・申請書の作成<br>■現地調査や工事の日程調整<br>■通信に必要なIPの設計<br>■通信トラブル時の一次切分　など<br><br>変更の範囲：会社の定める業務（エンジニア業務全般）<br><br>富士通など大手企業と直取引のため、大規模プロジェクトにも多数参画しており、ゆくゆくはプロジェクト導入支援、要件定義から設計・構築・運用に携わっていただきます。<br><br>【スキルアップ研修など】<br>スキルレベルと配属プロジェクトにより、研修（Linux、Cisco製品、AWS・Azureなど）を実施。配属現場ではOJT研修を実施。基本的に先輩社員がいるチームに入りますので、わからないことはすぐに相談できる環境です。 また、配属後もオンライン研修が受け放題なので、場所を選ばずスキルを磨けます。<br>また、入社後は定期的に面談を行い、あなたの技術力、マネジメント力など成長につながる中長期的なプランを一緒に計画します。将来的にチームリーダとして、社員だけでなく、協力会社への指揮や、お客様との折衝など、裁量を持って働くことも可能です。<br><br><br>【案件例】<br>■国内企業向けネットワーク構築、運用<br>VPNや広域ネットワークサービスを利用環境やトラフィックに合わせ構築<br>企業向けインターネットへの接続サービス運用も実施<br>＊NW機器：Ciscoルータ、Catalystスイッチ、Si-R、IPCOM<br>■機械メーカー向け調達システムAzure基盤設計<br>調達システムのインフラ基盤のDR環境としてAzureの設計、構築、テストまでを担当<br>＜環境＞OS：Windows／クラウド：Azure<br>＜工程＞設計～テスト<br>■教育・出版業グループ会社向けAWS基盤設計～運用<br>■情報サービス業向けプライベートクラウド基盤運用・保守<br><br>【この仕事で得られるもの】<br>・CCNAなど資格取得<br>・Cisco、ForiGate、Aruba、日立などの製品知識<br>・SD-WAN化の経験<br>・セキュリティ基盤（Firewall、VPN、認証基盤など）の設計、構築、運用経験<br>・企業内ネットワーク、WAN、インターネット環境などのネットワーク設計、構築、運用経験<br>・顧客折衝<br>・プロジェクトマネジメント<br>・Microsoftの各製品知識（Office 365、Azure、SharePoint、Active Directoryなど）<br>・仮想化技術（VMware、VMware Horizon Viewなど）<br>・監視ミドルウェア（Systemwalker、JP1など）<br>・セキュリティインシデント対応<br>・UTMおよびセキュリティアプライアンス製品の経験（Fortigate、Palo Alto）<br>・クラウド技術（AWS、Azureなど）<br><br><br>【キャリアプラン例】<br>①	技術を磨きたい<br>保守運用エンジニア　⇒　インフラ設計構築エンジニア　⇒　スペシャリスト<br><br>②	マネジメントをしたい<br>保守運用エンジニア　⇒　プロジェクトリーダー　⇒　プロジェクトマネージャー<br><br>【仕事とプライベートの調和のとれた働きやすい環境作りに注力】<br>2015年9月、弊社は「働きやすい職場環境づくり分野」「子育て支援分野」」で港区ワークライフバランス推進企業に認定されました。社員の勤務時間を毎月確認し、稼働が高い方がいた場合、その原因究明を実施し、原因を取り除けるよう活動しています。最近では男性の育児休暇取得実績もあり、推奨しています。今後も、社員のみなさんが仕事とプライベートのバランスがとりやすい、働きやすい環境づくりのために積極的に取り組んでいきます。<br><br>【インフラ事業が7割を占めるので、経営基盤が安定！】<br>創業以来サーバ・ネットワーク事業を展開しており、お客様からも技術力を評価されて長いお付き合いをさせていただいております。長年の信頼と実績から、プロジェクトの依頼をたくさんいただいておりますので経営基盤が安定しています。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00<br>所定労働時間：8時間、休憩1時間<br>※案件に応じて変更になるケースがございます。<br>※勤務間インターバル制度、フレキシブル出勤制度・リモートワーク制度あり</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土日祝）<br>年末年始休暇<br>リフレッシュ休暇<br>有給休暇（10日～勤続年数に応じて最大20日）<br>慶弔休暇<br>特別休暇<br>育児休暇（男性の取得実績あり）<br>産前産後休暇<br>介護休暇<br>ボランティア休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険制度完備<br>在宅勤務手当<br>出張手当<br>慶弔見舞金<br>結婚・出産祝金<br>資格取得報奨金<br>各種研修<br>オンライン研修受け放題（ビジネスマナー、階層別、技術別、職種別など）<br>定期健康診断<br>健康保険組合提携施設利用など<br>リファラル採用報奨金制度／紹介料30万円</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E5%AF%8C%E5%A3%AB%E3%82%A4%E3%83%B3%E3%83%95%E3%82%A9%E3%83%83%E3%82%AF%E3%82%B9%E3%83%BB%E3%83%8D%E3%83%83%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

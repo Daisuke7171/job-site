@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社FTG Company</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【マネージャー候補】加盟店開発営業／フレックス／『働きがいのある会社ランキング』4年連続認定企業</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社FTG Company</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都⽬⿊区中⽬⿊3-6-1 千陽アポロンビル4F</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>⽬⿊区</dd>
+
       <dt>郵便番号</dt>
       <dd>1530061</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【当社について】<br>2010年に設立した当社は、各種メディア、SNSで人気の『大阪焼肉・ホルモン　ふたご』を始めとした飲食店を7ブランド120店舗以上展開。<br>毎年20店舗以上の新規出店を計画しており、海外へも積極的に進出。グローバル外食企業へ向けて更なる飛躍を目指しています。<br>直近は外食ビジネスのみならず、FCビジネス、EC事業、海外事業、人財事業、投資事業など、幅広い事業展開を行い成長を続けております。<br><br>【業務内容】<br>加盟開発は今後出店を加速していく当社において、中核となる事業のひとつに据えています。今回はその加盟開発のマネージャー候補のポジションで、事業の推進に大きく貢献いただける仲間を新たに募集いたします。<br>当社業態の「大阪焼肉・ホルモン　ふたご」「大阪餃子専門店よしこ」等の加盟店開発をメインとして下記業務をお任せします。<br><br>【1】加盟店営業<br>・Webを利用したインバウンド営業<br>・FCイベント出展、ブースでの説明<br>・資料請求・問合せからのアプローチ<br><br>【2】マーケティング<br>・直営店等のデータを元にエリアリサーチ<br>・収支シミュレーション、各種資料の作成<br>・加盟店オープンに向けたオーナーへの説明や交渉<br><br>【3】加盟店管理<br>・売上データ管理<br>・本部業務担当者と打ち合わせを行い収益向上への各種取り組み<br>・その他FC加盟店のアフターフォロー</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>フレックスタイム制（1日の標準労働時間：8時間、休憩1時間）<br>コアタイム／10：00～16：00<br>フレキシブルタイム／7：00～10：00、16：00～19：00<br>※10：00～19：00の時間帯に勤務している社員が中心です。<br><br>■リモートワーク可</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制（土・日）<br>■年始休暇<br>■慶弔休暇<br>■有給休暇<br>（※10日〜勤続年数に応じて最大20日。積極的な取得を推奨）<br>■産前・産後休暇（※取得実績あり）<br>■育休（※取得実績あり）<br>■介護休暇<br><br>★5日以上の連続休暇の取得可</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備（雇用・労災・健康・厚生年金）<br>■交通費支給（月5万円まで）<br>■慶弔金制度<br>■深夜手当<br>■誕生日祝い（誕生月の社員が集まる食事会に招待）<br>■社員表彰制度<br>■社員旅行（セブ島・バリ島など毎年5種類の中から自由選択・参加は任意）<br>■副業OK<br>■社員割引（30％引き）<br>■ネイル・服装・髪型自由<br>■社内イベント（参加は任意です）<br><br>【 ステップUP支援 】<br>■資格手当<br>（衛生管理者、消防設備点検資格者など）<br>■NIGIRI制度<br>（店長職以上の社員が自身で目標＋達成時の報酬内容をプレゼンできる制度）<br>■独立支援制度<br>（マネージャー職以上かつ3年以上の勤務で独立資格を認定）<br>　→入社5年目社員の実現例あり！<br><br>【 当社独自の手当も充実 】<br>■配偶者誕生日手当<br>（配偶者に1万円相当の誕生日プレゼント）<br>■親孝行手当<br>（両親のために社員の誕生月に上限1万円のプレゼント代を支給）<br>■家族手当<br>（子ども1人目：月1万円、2人目以降：月5000円）※諸条件あり<br>■ふたご手当<br>（一卵性双生児が生まれた家庭には100万円を支給）<br>■社内結婚手当<br>（スタッフ同士の結婚で25万円支給）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEFTG%20Company" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

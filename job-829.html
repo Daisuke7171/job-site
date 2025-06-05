@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜株式会社エコリングソート</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【完全予約制の出張買取バイヤー】未経験OK★飛び込み・テレアポなし★残業少なめ</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社エコリングソート</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>兵庫県・関西倉庫　尼崎市道意町6丁目79番1GLP尼崎Ⅲ（D2C物流センター）4階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>・関西倉庫　尼崎市</dd>
+
       <dt>郵便番号</dt>
       <dd>6600083</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>出張買取のご予約をいただいたお客様のご自宅へ伺い、商品の鑑定査定・買取業務をお任せします。ご予約いただいたお客様宅のみの訪問ですので、無理な飛び込み営業やテレアポ業務は一切ありません！<br>※1日平均4件程度です。<br><br>【具体的な仕事内容】<br>＜1＞買取業務<br>出張買取の予約サポートデスクからスケジュールの共有を受け、お客様のご自宅に社用車で訪問（車で1時間程度の範囲が中心です）。<br><br>＜2＞お客様からご提示いただいた商品に鑑定・査定を行い買取価格を提示して、価格をつけた理由などを丁寧にご説明。<br>※査定時間は物量にもよりますが平均30分程度です。<br><br>＜3＞価格にご納得いただければ買取成立、代金のお支払い。<br><br>＜4＞買い取った商品を社用車へ積み込み、次の予約先へ移動。<br><br>1日平均4軒で、1軒あたり上記1～4を平均1時間程度で行います。<br>※査定30分、お客様とのお話10～15分、買取商品の積み込み作業10分<br><br>もちろんいきなりお任せするのではなく、上記全てのステップで最初は先輩が一緒に横について丁寧に教えます！そのため、未経験の方も安心してスタートすることが可能です。実際、昨年新卒入社した方も未経験から成長し、今では一人で対応しております！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:15〜18:15（休憩1時間、所定労働時間8時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>シフト制（月8～12日、水曜固定休）<br>年末年始休暇<br>年次有給休暇10〜20日<br>慶弔休暇<br>その他特別休暇取得可能</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>各種社会保険完備（雇用・労災・健康・厚生年金）<br>社外研修制度（外部研修を会社負担で受講可能）<br>社内割引販売制度<br>インフルエンザ予防接種代金の補助<br>交通費支給（上限3万円）※車通勤の場合、駐車場代は自費<br>昇給：年1回定期昇給（1月）※別途、職能評価に応じて年2回の昇給機会有り<br>賞与：年2回※業績連動による、賞与は正社員登用6ヶ月後からの支給<br>時間外手当<br>出張手当<br>役職手当</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%82%B3%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%BD%E3%83%BC%E3%83%88" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

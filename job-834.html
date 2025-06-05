@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社ミギナナメウエ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【未経験OK 】採用コンサルタント｜アシスタントからディレクションまで</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ミギナナメウエ</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区渋谷東1-22-11 東京セントラル渋谷5階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500011</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>成長中の企業の採用課題を解決する採用支援業務を行なっていただきます。<br>現在顧客満足度が非常に高く、口コミでお客様が増えているため、事業拡大に伴う増員を行っています。<br><br>【具体業務】<br><br>■採用マーケティング業務<br>・採用市場分析<br>・競合分析<br>・求人データの解析～改善案実行<br><br>■運用業務<br>・求人媒体運用<br>・スカウト媒体運用<br>・採用広報コンテンツの企画・制作 　<br>・選考のディレクション<br><br>■顧客折衝業務<br>・採用要件定義<br>・目標の設計<br>・定例<br>・業務オペレーション改善<br><br>参考記事：採用コンサルタントの仕事内容を解説！<br>https://www.wantedly.com/companies/miginanameue/post_articles/892529</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>・始業（10:00）<br>・終業（19:00）<br>・所定労働時間（8時間）<br>・休憩（勤務の途中に60分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休二日制（土日）<br>・祝日<br>・年末年始休暇<br>・夏季休暇<br>・慶弔休暇<br>・年次有給休暇（初年度10日〜勤続年数に応じて最大20日）<br>・育児休暇<br>・産前産後休暇<br>・就業3年で休暇3日付与（以降3年経過ごとに3日付与）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・昇給年2回<br>・決算賞与年1回（10月）<br>※会社業績、個人成果による<br>・役職手当<br>・交通費支給（上限月3万円）<br>・時間外手当（超過分を支給）<br>・服装自由</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%9F%E3%82%AE%E3%83%8A%E3%83%8A%E3%83%A1%E3%82%A6%E3%82%A8" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
