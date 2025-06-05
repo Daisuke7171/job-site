@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>インフラエンジニア｜株式会社アクシス・クリエイト</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>※webで完結【オンライン選考】未経験ITエンジニア（東京）充実研修でエンジニアデビュー！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社アクシス・クリエイト</dd>
+
       <dt>職種名</dt>
       <dd>インフラエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>東京都千代田区神田練塀町300　住友不動産秋葉原駅前ビル 10階</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>千代田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1010022</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 3000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>配属プロジェクト先にて、ITインフラエンジニア業務を幅広くお任せします。<br><br>＜具体的な仕事内容＞<br>・ITシステムを使用している企業からの問い合わせ対応<br>・マニュアルに沿って、システムに不具合が起きないようチェック<br>・エンジニアの打ち合わせに同席し、資料作りのサポート<br>・完成したシステムなどに誤りがないかチェック<br><br>＜ITインフラエンジニアとは？＞<br>サーバー・ネットワークといったITシステムの土台（インフラ）を設計＆構築および運用・監視するお仕事です。<br>さまざまなシステムが安定的に稼働するようなサーバーを作り上げたり、トラブルに強いネットワーク網を構築したりします。また、実際にトラブルやバグが発生した際には、その原因究明や解決にあたります。<br>ITの土台を影から支える、なくてはならない仕事です。<br><br>＜得られるスキル＞<br>・ヒューマンスキル、ビジネススキル<br>・ハードウェア基礎知識<br>・OS操作、コマンド操作（Windows、UNIX、Linux）<br>・運用監視ツールを扱うスキル<br>・構築・設計（キャパシティ・プランニング）<br><br>＜プロジェクト例＞<br>・金融<br>・官公庁<br>・通信　など<br><br>1つのプロジェクト期間は2～3ヶ月というケースもあります。<br><br>【入社後の流れ】<br>入社後は、当社の研修を通じて一人前のエンジニアを目指します。<br>◆1週目<br>同期と一緒に、挨拶・名刺交換・接客応対など、社会人としてのマナーを身につけていただきます。<br><br>◆2週目<br>座学と実践での確認を通して、ネットワークやサーバの基礎といった専門的な知識を習得します。自発的に行動できるよう、「人に伝える努力ができるか」「分からないことを質問できるか」などの課題に毎日向き合いっていただきます。<br>※グループごとにチームで学びます。<br><br>◆3～4週目<br>ご自身でネットワークを作り、サーバに接続できるところまで取り組んでいただきます。<br><br>◆エンジニアデビュー<br>お客様先にて、金融・官公庁・通信などのプロジェクトに参加します。できることからスタートし、徐々に仕事の幅を広げましょう。上司と相談の上、なりたい自分を目指せるプロジェクトに参加できるようにします。<br><br>【キャリアステップ】<br>定期的な上司との面談で、理想のキャリアプランを考えていけます。<br>最初はエンジニアスキルの土台となる、インフラ関係の仕事をお任せします。<br>ヘルプデスク系の簡単な業務から始め、技術が身についたら設計・構築などの、スキルが求められる業務に挑戦することも可能です。<br>また、営業・研修講師・人事など、バックオフィスへとキャリアチェンジする可能性もあります。<br><br>（変更の範囲）当社業務全般</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00<br>所定労働時間：8時間、休憩1時間<br><br>※プロジェクト先によりシフト勤務や夜勤となる場合があります<br>※新型コロナウイルス対策で時差出勤を行なっており、現在は10:00～19:00です</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休二日制（土日）※プロジェクトによって変動あり<br>・祝日<br>・年末年始休暇（5日間）<br>・産前産後、育児休暇（取得、復職実績あり）<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・交通費（月3万円までは全額支給。超過する場合は別途相談）<br>・時間外手当（全額支給）<br>・役職手当<br>・職能手当<br>・キャリアコンサルティング、教育訓練<br>・資格取得支援制度<br>・社員持株会制度<br>・退職金制度<br>・表彰制度（報奨金／年数回）※50万円の支給実績あり<br>・業績賞与<br>※直近3年連続支給実績あり。<br>個々の貢献度・評価により異なり、0～50万円程支給されております。<br>・テレワーク推奨<br>※新型コロナウイルス対策のため、プロジェクトによってはテレワークを推奨しています</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%82%AF%E3%82%B7%E3%82%B9%E3%83%BB%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%88" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
