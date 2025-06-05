@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>内勤営業・カウンターセールス｜株式会社アクセルファクター</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>インサイドセールス（営業サポート）人柄重視の採用・★年間120休日</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社アクセルファクター</dd>
+
       <dt>職種名</dt>
       <dd>内勤営業・カウンターセールス</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区高田馬場一丁目30番4号30山京ビル5階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1690075</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>お電話にてお客様のご要望を伺う事がメインの業務となります。<br>お客様との初回接点に関しては、WEB広告やお電話でのお問い合わせに対してアプローチをする形になりますので、ニーズの無いお客様への営業活動ではございません。<br><br>業務内容としてはお電話の対応のみではなく、営業社員のサポート業務も実施をしていただきます。<br>※営業事務のお仕事内容をイメージしてください<br><br>★新規で立ち上げていく組織のスタートメンバー募集になりますので、当事者意識をもって企画から運用推進を担っていただく事も期待しております。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：30～18：30（所定労働時間8時間）<br>※休憩60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制（土・日）、祝日<br>■年末年始休暇<br>■年次有給休暇（10日〜最大20日）　<br>■慶弔休暇<br>■特別休暇<br>■リフレッシュ休暇<br><br>※産休・育休取得実績あり</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋外喫煙スペース</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・各種社会保険完備 ( 雇用・健康・労災・厚生年金 )<br>・社外研修・セミナー費用全額負担（要審査）<br>・食事会（達成会・歓迎会・誕生日会など）<br>・各種イベント有り（お花見、忘年会、スポーツイベントなど）<br>・健康診断<br>・人間ドック<br>・婦人科健診<br>・インフルエンザ予防接種<br>・家族・扶養手当（配偶者：1万円、子1人：5000円／月）<br>・住宅手当（2万円／月）（条件：高田馬場駅より半径5キロ）<br>・食事補助有り<br>・育児支援制度有り<br>・交通費支給あり（上限2万）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%AB%E3%83%95%E3%82%A1%E3%82%AF%E3%82%BF%E3%83%BC" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

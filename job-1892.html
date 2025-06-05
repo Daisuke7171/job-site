@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜DSP株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【法人営業(大手商材の営業)】メディア、SaaS商材、ECサイトなどの提案/土日祝休み/未経験OK</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>DSP株式会社</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>福岡県福岡市博多区博多駅前2</dd>
+
       <dt>都道府県</dt>
       <dd>北海道</dd>
+
       <dt>市区町村</dt>
       <dd>福岡市</dd>
+
       <dt>郵便番号</dt>
       <dd>8120011</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■仕事内容<br>もっとお店を利用してほしい、もっとサービスを普及させたい・・・といった企業様の悩みを解決する提案を！<br>集客に悩みを抱える企業に対して、有名なメディア広告への掲載を提案したり、業務のDX化のご提案をしたりなど取り扱い商材を提案します。<br><br>【どんなお仕事？】<br>企業様に対して、有名なメディア広告やECサイトの案内、SaaSシステムなど、掲載やサービス利用を提案し、企業課題解決の支援をするお仕事です。<br><br>具体的には・・・<br>◇美容室やサロンを運営する企業の集客を支援するメディア広告の提案<br>◇商品販売を展開する企業様へECサイトへの出店の企画提案<br>◇業務効率化のためのシステム導入提案　<br><br>等をインサイドセールスを主として企業様へ提案していきます。<br>事業拡大に伴い、提案する商材も多岐にわたっております。<br><br>取り扱い商材はCMなどでもなじみのあるものや誰もが一度は利用したことがある有名なものばかり！企業様にも馴染みがある商材を提案する為、アポイントの取得もスムーズ！仕事のしやすさにつながっています。まずは商談アポイントの取得業務からスタート！<br><br>未経験からビジネスマナーを極めた営業マンに成長できる環境です。<br><br>現在活躍中の先輩達の多くが未経験からスタートしています。<br>⽇々の業務を通じて「ありがとう」という⾔葉をたくさんもらえる仕事のため、やりがいや充実感をしっかり実感しながら成⻑できます。<br>※適性・スキル・希望に応じた業務をお任せします。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>・10時00分～19時00分（休憩1時間）所定労働時間8時間<br>　※配属先により30分～60分前後する場合があります。<br>・裁量労働制：なし<br>・夜勤：なし</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休二日制（土日祝休み）<br>・有給休暇（入社6か月後10日間付与、勤続年数に応じて最大20日付与）<br>・慶弔休暇<br>・冬期休暇<br>・産前産後休暇<br>★年間休日数：120日（年間休日120日＋有給推奨日5日間あり）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 敷地内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■福利厚生<br>・健康保険 ・厚⽣年⾦ ・雇⽤保険 ・労災保険<br>・時間外⼿当 ・通勤⼿当（最⼤⽉3万円）<br>・健康診断(全額会社負担) ・福利厚⽣倶楽部制度(提携施設の優待割引等)<br>・引越し交付⾦制度(規定有) ・結婚出産お祝⾦制度 ・クリスマスプレゼント(規定有)<br>・キャリアアップ⽀援制度 ・ジョブローテーション制度 ・リフレッシュ休暇制度<br>・創⽴記念パーティー ・表彰制度 ・各種イベント(BBQ、⼥⼦会、達成会等)</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=DSP%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

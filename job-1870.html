@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>物流・貿易｜株式会社ナカノ商会</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>《キャリア形成実現》使える知識ノウハウが身に付く！（福岡県福岡市）</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ナカノ商会</dd>
+
       <dt>職種名</dt>
       <dd>物流・貿易</dd>
+
       <dt>勤務地</dt>
       <dd>福岡県福岡市東区みなと香椎4ー1ー1T-LOGI 福岡アイランドシティ 4階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>福岡市</dd>
+
       <dt>郵便番号</dt>
       <dd>8130019</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>&lt;キャリア形成を実現&gt;全国展開中!世界的ECサイトの物流を担う!通用する知識ノウハウが身に付く<br><br>■お任せするお仕事は...<br>【物流拠点での現場作業・管理業務】<br>・現場スタッフの管理(シフト作成・指導等) ・入出荷時の仕分けの管理・オペレーション<br>・積み替え・ラベル貼り<br>・作業全体の品質・安全管理...etc.<br>※メインとなる担当業務や配属は<br>経験や適性により振り分けられます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>シフト制<br><br>【シフトの決め方】<br>シフトサイクル:1ヶ月<br>外せない用事、お子様の学事日程など、希望日のお休みも可能です。<br>【勤務時間 補足】<br>24時間内で実働8時間(休憩1h)のシフト制<br>日勤(例)8:00or9:00開始<br>昼勤(例)11:00~13:00開始<br>夜勤(例)21:00~0:00の間に開始<br>※時間帯は基本的に固定となります</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日120日以上<br><br>完全週休2日制(シフト制)/年間休日122日<br>※シフトにより連休にならない場合あり<br>◎有給休暇(13日〜20日/うち3日は夏季休暇分として付与)<br>年末年始休暇(シフト制)、産前産後休暇、育児休暇、特別休暇(慶弔休暇・結婚)あり</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>【福利厚生】<br>*昇給あり<br>*賞与(昨年例夏冬2回)<br>*交通費支給(バス・電車全額支給、マイカー通勤一部支給)<br>*車・自転車通勤OK<br>*制服貸与<br>*社会保険完備<br>*退職金制度(規定)<br>*資格取得支援制度<br>*資格手当<br>===============<br>キャリアアップイメージ<br>▼倉庫管理・事務<br>▼主任<br>▼係長<br>▼課長代理<br>▼課長<br>▼センター長<br>▼支店長<br>成長度合いを見てどんどん任せていくため、<br>早い方は1年で係長、5年で課長、<br>10年で支店長...とステップアップも可能です!</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%8A%E3%82%AB%E3%83%8E%E5%95%86%E4%BC%9A" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社Ｅｎｊｉｎ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【営業総合職】業界未経験OK！営業や対人経験のある方活躍中！年収1000万円も目指せる★</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Ｅｎｊｉｎ</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区銀座5-13-16 ヒューリック銀座イーストビル8階（7F：スタジオ/受付）</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1040061</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【業務概要】<br>自社の魅力を伝えたい企業へ、PRプランニングサービスを提案します。経営者と1on1で、企業のビジョンや今後の展望をヒアリングし、実現に向けて適切なPR戦略をプランニングします。<br><br>国内外の様々な業種・業界の企業・医療機関に向けてサービスを展開している当社で、現在営業職を積極採用しています!以下の3事業から適性に応じたセールスポジションをご案内します。<br><br>【事業について】<br>■ストラテジックPRサービス：PRコンサルティングを通じたさまざまな情報発信を国内外にむけて行うサービス<br>■ダイレクトブランディングサービス：メディア露出を中心としたパッケージ型のブランディングサービス<br>■メディアプラットフォームサービス：クライアント企業等とメディアをつなぐプラットフォーム『メディチョク』等の運営<br><br>【具体的な業務】<br>■新規開拓営業<br>入社後は自分の案件や担当クライアントを獲得するために新規開拓営業をメインに行ないます。対象企業は北海道から沖縄までさまざまです。自分でアプローチ先を決めて連絡をします。繋がったら、取材の提案やブランディングに関する課題をヒアリングして商談のアポイントを獲得しましょう。<br><br>■商談<br>商談数は月に10件ほど。対面、オンラインどちらもあります。商談では、採用に関する悩みや、新商品のPR方法、自社の認知拡大など、お客様ごとの要望を詳しくヒアリングします。<br><br>■プランニング<br>商談で提案した内容をもとに、社内の制作担当と共有しながら取材の構成を考えます。<br><br>■制作進行管理<br>取材や原稿・映像などの制作物のチェック、全体の進行管理は営業が担当。媒体にもよりますが、取材は社内のディレクター、カメラマン、ライターと共に行ないます。取材時間は1～2時間程度。テレビの場合は半日～2日かかります。取材の場所は、クライアント先や当社内で行なうことも。納品までの期間は案件により異なります。<br><br>■クライアントリレーション<br>制作物の公開後の反響や効果をクライアントにヒアリング。効果検証を行ない、次の打ち手を提案します。<br><br>【仕事のポイント】<br>◎独自の事業モデルで目下拡大中！<br>創業以来17期連続で増収増益で成長しており、新規事業や、M&amp;A、パートナシップを進めており、能力とやる気次第で活躍頂けるフィールドが増えています。若手でも重要なポジションをお任せすることもあります。出世スピードが早いのと、人間関係の良さが強みです！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:30～18:30（所定労働時間8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土日）<br>有給休暇（入社半年後10日〜勤続年数に応じて最大20日）<br>慶弔休暇<br>年末年始休暇（5日）<br>夏季休暇（3日）<br>祝日<br>特別休暇<br>親孝行休暇制度（2日）<br>モアナイン（有給を5日連続で取得し、土日と併せて9連休できる制度）<br>産前産後休暇<br>育児休暇<br>産休育休の取得実績あり</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>交通費一部支給 (上限2万円／月)<br>賞与年2回<br>昇給年2回<br>各種社会保険完備<br><br>〈その他の補足事項〉<br>★近距離手当（会社が指定するエリアに居住の場合）<br>★時間外手当<br>★持株会<br><br>★社内制度がユニークで面白いと、社内外で評判です！★<br>・オフィスカフェ『CAFE OHANA』<br>　社員専用のカフェスペース<br>・社員部活動支援<br>　ジム部など<br>・オハナ旅制度<br>　有休を利用して社員同士で旅行する場合、最大年5万円支給<br>・親孝行休暇制度<br>　両親の誕生日または命日に特別休暇の取得及び帰省代を一部支給</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%EF%BC%A5%EF%BD%8E%EF%BD%8A%EF%BD%89%EF%BD%8E" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

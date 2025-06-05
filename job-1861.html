@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>総務・事務｜株式会社Colorful Life</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【事務・総務】広報・営業支援などポジション多数！面談時ご相談ください</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Colorful Life</dd>
+
       <dt>職種名</dt>
       <dd>総務・事務</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区南青山7丁目1-5 &amp;CALM minamiaoyama</dd>
+
       <dt>都道府県</dt>
       <dd>大分県</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1070062</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>弊社が展開している人材コンサルティングサービスを導入していただいている<br>取引先企業でのお仕事です。<br><br><br>＜就業先企業について＞<br><br>＊創業50年以上の安定総合商社<br>＊ライフワークバランスを重視した働き方が可能<br>＊ライフステージに合わせた柔軟な働き方が可能<br>＊17:30退勤で私生活も充実<br>＊残業少なめ・休日の呼び出しや対応は一切なし<br>＊先輩社員が多く、未経験でも安心<br>＊20〜30代が中心の職場<br><br><br>＜ポジション例＞<br><br>【総務人事部】<br>・勤務地：東京都内、埼玉県内<br>・業務内容：広報・営業支援<br>備品の発注や郵便物の手配などの庶務業務をはじめ、<br>資料の作成やHPの編集などの社外に向けた広報活動を担っていただきます。<br><br>【総務人事部　採用担当】<br>・勤務地：練馬（練馬区春日町）<br>・業務内容：採用業務<br>応募者への対応・入社までのフォローなどを行なっていただきます。<br>応募者様への対応につきましては、面接の日程調整を行なっていただく他、<br>人材紹介エージェントとの調整対応などをお任せいたします。<br>※応募条件：採用業務経験者、人事総務の経験者<br><br>【営業事務】<br>・勤務地：浜松町（港区湾岸）<br>・業務内容：営業事務・内勤事務<br>営業スタッフのアシスタント業務として、営業所全体をサポートしていただきます。<br>見積書の作成や発注/荷受け作業、電話対応などの業務を担っていただきます。<br><br>【法人営業】<br>・勤務地：世田谷（世田谷区桜上水）<br>・業務内容：電設資材の提案営業<br>電気や内装の工事会社向けに、照明機器やLANケーブル、配線器具等の、<br>電気工事を伴う設備材料をご提案いただきます。<br>※応募条件：営業経験をお持ちの方、自動車免許をお持ちの方<br><br>…etc<br><br>その他にも多数の企業様での様々なお仕事をご提案可能です！<br>気になる業務ややりたいことを面談時にお知らせください！<br><br><br>＜Colorful Lifeのキャリアパス＞<br><br>1ヶ月に一度の実施を推奨している1on1を通して、<br>従業員それぞれのキャリアパスを描いていきます。<br>ジョブディスクリプションを階層別に明確に提示しており、<br>頑張り次第では早期のキャリアアップが可能です！<br>実際に5ヶ月で昇格した社員もいます！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:30〜17:30<br>※業務の都合上就業時間を変更することがある<br>所定労働時間8時間、休憩1時間<br><br>フレックス制度：就業規則の定めるところによる</dd>
+
       <dt>休暇・休日</dt>
       <dd>■休日：土・日・祝（職種によって異なることがあります）<br>■有給休暇：10日～勤続年数に応じて最大20日<br>■その他休暇：年末年始休暇、慶弔休暇、産休・育休、有給休暇（10日〜勤続年数に応じて最大20日）、介護休暇、特別休暇、バースデー休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内全面禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■各種社会保険完備（健康保険、厚生年金、雇用保険、労災保険）<br>■交通費支給（上限2万円）<br>■残業手当（みなし手当含む）<br>■資格手当、資格取得支援制度<br>■バースデー休暇あり<br>■結婚祝金、出産祝金<br>■イベント補助金制度 <br><br>★リファラル制度★<br>社員紹介1人当たり最大20万円を支給します！<br><br>【教育制度】<br> 定期的な1on1でキャリアアップの手助けをしていきます。PDCAを素早く回し、短期間での成長を促す仕組みを作っています。<br>仮に成果が上がらなくても、人事による定期的な面談やフォローアップ研修などを通じてサポートしています。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEColorful%20Life" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

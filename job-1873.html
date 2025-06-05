@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社SANN</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>業界未経験OK!130％成長ベンチャー　デジタルマーケティング アカウントプランナー</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社SANN</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>愛知県名古屋市中村区名駅5-38-5名駅D-1ビル7階</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>名古屋市</dd>
+
       <dt>郵便番号</dt>
       <dd>4500002</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>創業20期を迎え、デジタルマーケティング事業部は会社の中心となる事業へ急成長中。<br>2025年は更なる飛躍の為、新しく参画いただく方がスピーディーに活躍できる体制を構築しています。<br><br>当社は、包括的なデジタルマーケティング支援をクライアントへ提供する企業目指しています。<br><br>大手企業のWEB広告アカウントプランナーは「Googleだけ」「リスティング広告だけ」等業務領域の分業化が進み、<br>個人が身に着けられるスキルセットの薄くなる傾向にあります。<br><br>当社は、インターネット広告領域においては、ほぼ全ての主要媒体を網羅し（Google（YouTube）/Yahoo!/LINE/X/Instagram/Facebook等）、<br>それらを複合的にプランニングすることで、クライアントの成果を最大化しています。<br><br>仕事内容としても<br>・顧客のリード獲得<br>・クライアントの課題分析<br>・広告戦略の設計<br>・メディアプランニング<br>・広告運用とパフォーマンス分析<br>・チーム連携<br>・新しい広告トレンドやツールの活用<br><br>等　デジタルマーケティングのアカウントプランナーとして幅広い経験を得る事ができます。<br>また、広告だけではなく、デジタル領域での総合的な支援ができるようにLPO/獲得等、マーケティング全体を担っていきます。<br><br>アカウントプランナーとしてスキルアップのための教育制度としても<br>・広告設計/クライアントの課題抽出<br>・各種媒体（Google等）の提案/運用<br>・広告に類似するLPO/SEO<br>等、毎月研修を行っております。<br><br>インターネットのデジタル領域にチャンレジし、会社と共に個人も成長していく意欲のある方をお待ちしております。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>時差勤務（コアタイム／10：30～17：30）<br>・所定労働時間8時間、休憩60分<br>・標準的な勤務時間帯：9:30～18:30</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日123日<br>週休2日制<br>有給休暇10日～20日(1時間単位で取得可能)<br>土曜、日曜、祝日（社内カレンダーにより）<br>GW<br>年末年始休暇(5日)<br>産休・育休(取得実績あり)<br>慶弔休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 本社（社内喫煙スペースあり）名古屋支社、大阪支社（社内喫煙スペースなし）</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>定期健康診断<br>スマイルキッズ制度<br>社内表彰制度<br>会員制リゾート宿泊施設<br>ノートPC、携帯電話、ポケットWifi、iPad貸与(営業のみ)<br>各種社内イベント:歓送迎会、BBQ、社員旅行(過去実績…軽井沢・沖縄)、フットサルなど<br>オフィス内禁煙・分煙</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BESANN" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

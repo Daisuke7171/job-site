@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜株式会社MMクリエイティブコネクト</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【携帯販売スタッフ（未経験OK）】ドコモショップ窓口で携帯販売をお任せ★賞与年2回</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社MMクリエイティブコネクト</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>神奈川県横須賀市根岸町1-9-9 久里浜スカイマンション1F</dd>
+
       <dt>都道府県</dt>
       <dd>神奈川県</dd>
+
       <dt>市区町村</dt>
       <dd>横須賀市</dd>
+
       <dt>郵便番号</dt>
       <dd>2390807</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>当社が運営する、ドコモショップ各店舗の窓口において、携帯販売のお仕事をお任せします。<br><br>＜具体的な仕事内容＞<br>◆新規のお客様に対する業務<br>・ご来店受付<br>・お客様のご希望をヒアリング<br>・端末、周辺機器のご案内<br>・最適な通信プランのご提案<br><br>◆取扱端末をご利用されているお客様に対する業務<br>・操作に関する質問への対応<br>・故障、破損などのトラブル対応<br>・修理受付<br>・代替機の貸与<br><br>◆店舗運営業務<br>・店舗レイアウトの考案<br>・店舗装飾<br>・イベントの企画、進行<br><br>三浦半島地域密着の企業として、ドコモショップ以外でも、スマホ教室やイベント（出張販売）を実施しています。<br><br>＜客層＞<br>個人顧客（老若男女問わず）<br><br>【入社後の流れ】<br>入社後、OJTや研修などを通じて、業界等について学んでいただきます。先輩社員が、できるようになるまできっちりと指導しますので、ご安心ください。<br><br>＜研修制度＞<br>・OJT研修<br>・ドコモ主催の各種研修<br>・新入社員研修<br>・ビジネスマナー研修<br>・スキルアップ研修<br>・マネジメント研修<br>・その他各種研修</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:20～18:30<br>所定労働時間：8時間、休憩70分</dd>
+
       <dt>休暇・休日</dt>
       <dd>・週休二日制（シフト制）<br>・年次有給休暇（入社半年後に10日付与〜勤続年数に応じて最大20日）<br>・長期リフレッシュ休暇制度（7日間）<br>・慶弔休暇<br>・育児介護休暇<br>・産前産後休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 店内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・昇給年1回（前年度実績：1ヶ月あたり3000円）<br>・賞与年2回（前年度実績：合計4ヶ月分）<br>・通勤手当（上限月5万円）<br>※公共交通機関を利用した場合に準じて支給あり。<br>・車通勤可（駐車場は自己確保）<br>・健康診断<br>・報奨金制度<br>・退職金制度（勤続3年以上）<br>・定年制（一律60歳）<br>・再雇用制度（上限65歳）<br>・制服貸与<br>・資格取得支援制度<br>・社内サークル活動（任意）<br>・バーベキュー、他懇親会</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEMM%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96%E3%82%B3%E3%83%8D%E3%82%AF%E3%83%88" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

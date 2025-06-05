@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜株式会社タイムレス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>＼バイセル子会社／【店舗販売】ラグジュアリーブランド に囲まれて働ける♪＃未経験OK＃年休127日</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社タイムレス</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>大分県大分市府内町2-1-4　本館3階</dd>
+
       <dt>都道府県</dt>
       <dd>茨城県</dd>
+
       <dt>市区町村</dt>
       <dd>大分市</dd>
+
       <dt>郵便番号</dt>
       <dd>8700021</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>ハイクオリティな接客が身につく☆<br>未経験OK！接客・販売経験者は優遇いたします♪<br><br>＜具体的な仕事内容＞<br>百貨店内での出店を中心として全国に展開する総合買取サロン「タイムレス」。そのタイムレスでの買取査定員として、各種業務をお任せいたします。<br><br>【1.お客様の来店対応】<br>タイムレス各店にご来店頂いたお客様の接客対応。百貨店を中心に出店しているため、富裕層のお客様がメインとなります。<br><br>【2.商品の査定・価格交渉】<br>お客様にお持ちいただいたお品物を、1点1点丁寧に査定します。商材は多岐に渡りますが、ブランド品、宝飾品、時計がメインとなります。また、査定は本部のスタッフとリモートで連携しながら行うため、初めての方でも安心して接客対応が可能です。<br><br>【3.商品管理/発送業務】<br>買取させていただいたお品物を、社内ルールにのっとり店舗で管理し、そののち本社へ発送します。<br><br>【4.店舗・スタッフ管理】<br>スキルに応じ店長として、店舗の数字管理とスタッフの教育管理までお任せします。<br>※今後のご経験次第では、店舗事業本部でより専門的な業務をご担当いただけます。<br><br><br>※業務の変更の範囲：当社業務全般<br>※事業や所属部門の状況の変化等により、就業場所を変更することがある。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>配属先に準ずる<br>例：9:30～18:30/10:30～19:30/11:30～20:30等<br>上記のうちで所定労働時間8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>◆完全週休二日制（シフトに準ずる）<br>◆夏季休暇<br>◆年末年始休暇<br>◆産前産後休暇<br>◆育児休暇　<br>◆介護休暇<br>◆有給休暇（入社半年後10日〜勤続年数に応じて最大20日）<br>◆慶弔休暇　など</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◆各種社会保険完備<br>・健康保険<br>・厚生年金<br>・雇用保険<br>・労災保険<br><br>◆各種福利厚生<br>・交通費全額給（会社規定あり）<br>・催事手当<br>・健康診断（年1回）<br>・インフルエンザ予防接種全額補助<br>・社用携帯電話<br>・結婚祝い金<br>・残業手当　など<br><br>・全社合同表彰式あり（年1回）<br>・入社後1ヶ月研修あり（東京）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%AC%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
