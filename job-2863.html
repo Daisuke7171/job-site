@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社　緑和堂</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【京都or大阪：正社員】骨董品の鑑定・接客スタッフ　※未経験歓迎</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社　緑和堂</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>京都府京都市上京区桝屋町370 丸太町東洋亭ビル1階</dd>
+
       <dt>都道府県</dt>
       <dd>福岡支店(福岡県</dd>
+
       <dt>市区町村</dt>
       <dd>府京都市</dd>
+
       <dt>郵便番号</dt>
       <dd>6020877</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>美術品・骨董品等の買取、査定、仕分けをご担当いただきます。<br>その他にも、お客様のもとへ出向く出張買取や、<br>オークションでの買い付けなどを行っていただきます。<br><br>店舗でのお客様対応・持ち込み品の鑑定のほか、<br>スーツを着てお客様の元に出向く「出張買取」や<br>美術品の「査定」、オークションでの「買い付け」などバイヤーや鑑定士のようなお仕事をして頂きます！<br><br>やることが多いように見えますが、<br>まず最初は「商品知識を学ぶこと」「先輩の仕入れ業務サポート」の２つからでOKです！<br>先輩方も異業種からの未経験入社ばかりなので、同じ目線に立って教えてくれます！<br><br>商品知識については、分かりやすい勉強用資料を用意していますのでご安心ください。<br>知識がしっかりと頭に入ったら、先輩とマンツーマンで買い取り業務にチャレンジできますよ！<br>一人立ちした後も、判断が難しい商品などは、<br>ＷＥＢカメラを使ってベテランスタッフが沿革で鑑定サポートするので心配はいりません！<br><br>【取り扱い商材】<br>骨董品、美術品類全般、絵画、宝飾品、ブランド品など様々！<br>「自分は武具を極めたい！」なども大歓迎ですよ！<br><br><br>まず最初は「商品知識を学ぶこと」「先輩の仕入れ業務サポート」からスタートし、<br>しっかりと学習・経験を重ねて、<br>適切な値段をつけられる鑑定士を目指していただくことを想定しています。<br><br>現在活躍している先輩⽅も異業種からの未経験⼊社ばかりなので、<br>未経験の方でも活躍し成長できる環境です。<br>経験を積みながら担当業務の幅を広げていきましょう！<br><br>＜取り扱い商材をご紹介します＞<br>⾻董品、美術品類全般、絵画、宝飾品、ブランド品など。<br><br>【入社後の流れ】<br>■1〜3ヶ⽉⽬<br>基礎的な商品知識、事務作業、仕分け作業を先輩社員指導のもと覚えていきます。<br><br>■3〜6ヶ⽉⽬<br>社内資格である鑑定⼠試験取得へ向けた勉強をしていきます。<br>試験合格後は、先輩社員⽴ち合いのもと、買取、販売業務の補助作業に挑戦していきます。<br><br>■6〜12ヶ⽉⽬<br>⼀連の業務を1⼈でこなせるように取り組んでいきます。<br>広告作成、数値管理など新しい業務へも挑戦していただきます。<br><br>【キャリアアップ】<br>入社1〜3年⽬には店舗責任者、役職者を⽬指して簡単なマネジメント・育成にも関わっていただきます。<br>この頃までに鑑定スキルが⾼まっていれば、⼀般のお客様だけではなく、業者間オークションや法⼈様での仕⼊も⾏っていきます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：45〜18：45<br>所定労働時間8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>【休⽇・休暇】<br>シフト制（毎週水曜は定休日）<br><br>・年末年始<br>・夏季<br>・慶弔休暇<br>・年次有給休暇（入社半年後10日〜勤続年数に応じて最大20日）<br>・出産・育児休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 敷地内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備 <br>・研修制度あり <br>・社員割引あり <br>・交通費⽀給 <br>・バイク・⾞通勤OK <br>・昇給あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%80%80%E7%B7%91%E5%92%8C%E5%A0%82" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

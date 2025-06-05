@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社ツクルバ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【未経験歓迎】不動産Tech/上場ベンチャー/リモート活用/100%反響/リノベ物件の売買仲介営業</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ツクルバ</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区恵比寿四丁目3番14号　恵比寿SSビル</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500013</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>・自社メディアよりお問合せを頂いたお客様のご対応（反響営業形式）<br>・物件のご案内（内見の現地対応）<br>・物件のご提案（対面やTEL/チャットでの追客）<br>・リノベーションのご提案<br>・条件交渉<br>・資金計画の立案、ローンのご案内<br>・契約締結（媒介契約書類や売買契約書などの書類作成〜締結）</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>フレックスタイム制（コアタイム11:00~16:00／標準労働時間8h・休憩1h）<br>10:00-19:00を中心に働くメンバーが多いです。</dd>
+
       <dt>休暇・休日</dt>
       <dd>休日：週休2日（火水）<br>年間休日：110日<br>休暇制度：年末年始休暇、特別休暇、慶弔休暇、産休・育休、有給休暇<br>■年末年始休暇 <br>■結婚休暇（5日) <br>■出産休暇（3日）<br>■忌引休暇（最長10日）<br>■有給休暇は入社日に入社月に応じた日数を最大10日付与。 <br>　以降毎年8月1日に在籍年数に応じた日数を付与。 <br>　↳営業職の年間平均有給取得日数：7日 　<br>　メリハリをつけ効率的に働くことを推奨しており、長期休暇の取得も可能です。 　　　　<br>　また、男性メンバーも含め希望者は育休を100%取得しています。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 建物内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（関東ITソフトウェア健康保険組合）<br>通勤交通費支給（⽉額上限3万円、新幹線・特急利⽤可）<br>営業交通費支給 <br>健康診断<br>役職手当<br>資格取得制度<br>■階層別研修や職種別研修など各種研修制度あり <br>■モチイエ制度 <br>■従業員持株会 <br>　毎⽉給与の⼀部を積み⽴て、奨励金と合わせて⾃社の株式の購⼊が可能 <br>■インフルエンザワクチン接種費用補助 <br>■リファラル制度<br>■PC/モニター貸与 <br>その他業務で使用するもの（携帯電話等）は、必要に応じて貸与 <br>■社内フード販売</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%84%E3%82%AF%E3%83%AB%E3%83%90" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

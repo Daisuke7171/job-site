@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜株式会社ブルートラスト</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【未経験OK】大手通信事業会社の通信販売コンサルティング★賞与年2回／年間休日120日</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ブルートラスト</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>宮城県仙台市、石巻市</dd>
+
       <dt>都道府県</dt>
       <dd>広島県</dd>
+
       <dt>市区町村</dt>
       <dd>仙台市</dd>
+
       <dt>郵便番号</dt>
       <dd></dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>家電量販店にご来店したお客様に対してそれぞれのライフスタイルに合わせた最適な商品やサービスの組み合わせをご提案頂きます。主にスマートフォン、光ブロードバンド、ネット回線等の提案販売となります。<br>【魅力】業務を通じてヒアリングから提案力、商品購入やプラン変更へ意思決定いただくクロージング力等様々なスキルを身に付きます。お客様はモバイルを購入される際ご自身の用途に最適なプランを十分に理解していないことが少なく、その為適切なヒアリングから商品・プラン提案が求められ、購入へのクロージング力が必要になります。<br>※変更の範囲:当社および出向（転籍）先の業務全般<br><br><br>【1日の流れ】※店舗稼働の場合<br>10:00　出社（稼働店舗）<br>▼<br>10:00　販売業務：来店されたお客様の対応・商材の訴求<br>▼<br>13:00　ランチ<br>▼<br>14:00　販売業務：来店されたお客様の対応・商材の訴求<br>▼<br>19:00　退社（直帰）<br><br>【入社後の流れ】<br>入社後は本社にて研修を行います。研修は2週間～4週間が座学研修で、それ以降3ヶ月までは現場でのOJT研修を行います。<br>座学研修ではビジネスマナー、営業の基礎テクニックを中心に行い、社会人、ビジネスマンの教養をゼロから学んでいきます。<br>お取引様が多い当社は「社外に出たら全員会社の代表」という考え方なので、ビジネスマナーは非常に重要視しております。<br>また研修は“ただ講師の話を聞くだけ”ではなくゲーム形式や参加型で行ってきます。「1ヶ月間で人は大きく成長できる」ということを体感できると思います。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00～19:00／11:00～20:00<br><br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>・週休二日制（シフト制）<br>・夏季休暇<br>・冬季休暇<br>・リフレッシュ休暇<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・賞与年2回<br>・交通費全額支給<br>・残業手当（超過分）<br>・資格手当<br>・各種貸与品<br>・慶弔見舞金<br>・出産祝い金<br>・結婚祝い金<br>・ベネフィットステーション/リロクラブ利用可<br>・四半期毎の決起会開催<br>・グループ会社内営業コンテストの開催</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%96%E3%83%AB%E3%83%BC%E3%83%88%E3%83%A9%E3%82%B9%E3%83%88" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

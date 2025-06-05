@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜株式会社空</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【ヘッドスパ専門店でのセラピスト】完全週休2日制★インセンティブあり★充実の研修制度</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社空</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区南青山5丁目11-2 SANWA南青山ビル6F</dd>
+
       <dt>都道府県</dt>
       <dd>福井県</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1070062</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>当社では、ヘッドスパ専門店「HEAD SPA KUU」のほか<br>シグネチャーマッサージサロン「SORA」を運営しております。<br><br>こちらのポジションは、ヘッドスパ専門店「HEAD SPA Kuu」でのセラピストとなります。<br><br>お客様とセラピストが共に『最高の癒し＆満足度』を共有したいと考えております。忙しい日常の疲れを癒すため、楽しみにご来店くださるお客様へ価格以上の癒しの感動をご提供し、また、お客様からの「ここに来てよかった！」「有難う！」といったお言葉でやり甲斐と励みを感じながら楽しく働くセラピストの双方にとっての憩いの場となるようなリラクゼーションサロンを目指しております。<br><br>【具体的には……】<br><br>未経験大歓迎！2〜3ヶ月間の研修があるから安心<br>★ベテラン講師による施術研修<br>各施術のやり方を、覚えやすいものから実技を交えながら丁寧にレクチャーしていきます。ヘッドスパの基礎から機材の知識や使用方法など、ワンランク上の技術と知識が身につきます。<br>そのほか、元ホテルスタッフ講師による接遇研修も3日間ほど開催。お客様への接し方や、気配りなど、上質な接遇スキルが習得できます。<br>体重を上手く使った、『疲れにくい施術』も伝授します。<br><br><br>★デビュー後<br>・ヘッドスパ施術<br>・フット／ハンドのボディマッサージ<br>・サロン内業務全般（電話対応・予約対応・顧客管理・在庫管理など）<br>・SNS更新<br>※指の力だけではなく、全身を上手く使って行うため身体への負担は少ないです。<br><br>リラックス効果の高い完全個室にて、カウンセリングからスタートし、オールハンドで施術を行っていきます。90分・120分・180分コースがあり、対応するお客様は1日当たり多くて4名ほど。無理なく働ける環境です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:30〜23:00<br>上記の間で、所定労働時間8時間、休憩1時間<br>シフト制（勤務時間は店舗によって異なります）</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土日以外の曜日シフト制）<br>有給休暇（勤務半年後10日～勤続年数に応じて最大20日）<br>夏季休暇<br>年末年始休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内完全禁煙※お客様も店内では禁煙です</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（雇用・労災・健康・厚生年金）<br>交通費全額支給<br>インセンティブあり/ノルマなし<br>皆勤手当（月1万円）<br>役職手当<br>社員旅行<br>健康診断<br>制服支給<br>毎月無料施術(系列店も可）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E7%A9%BA" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜株式会社RooT-A</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【回線サービスの契約サポート事務】未経験歓迎/充実した研修/転勤無</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社RooT-A</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿8-15-17 住友不動産西新宿ビル2号館4F</dd>
+
       <dt>都道府県</dt>
       <dd>京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>※会社説明資料です※<br>https://root-a.co.jp/assets/document/root-a_company_guide.pdf<br><br>営業2名とサポート職2名の4⼈1組でチームを組み、販売イベントにて回線サービスや通信機器のお申込み意思<br>が確認とれたお客様の契約作業、契約後のアフターフォロー(電話・対⾯)を⾏います。※商品提案は営業担当<br>が⾏います。<br>東⽇本エリアの商業施設・催事場等で（インターネットやモバイル）契約業務・イベント内集客(お声がけ)を実<br>施頂きます。<br>【お仕事の流れ】<br>現在の通信環境をヒアリングから商品の提案、契約意思の確認までを営業が⾏います。<br>①引き継ぎ情報の聴取［営業サポート］<br>②契約作業［営業サポート］<br>③切替作業のお⼿伝い［営業サポート］<br>※基本催事場での稼働の為、内勤事務ではございません。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>11：00～20：00<br>所定労働時間：8時間、休憩1時間<br>※イベント場所により異なる可能性有</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制（火・水休み）※時期・事業により変動有<br>夏季休暇<br>冬季休暇<br>リフレッシュ休暇<br>有給休暇（10日〜勤続年数に応じて最大20日）<br>※上記の年間休日に別途、法律で定められた、必須で取得すべき有給取得日数(5日)を含むと合計休日日数は120日となります。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 敷地内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>交通費（全額支給）<br>残業手当<br>資格手当<br>慶弔見舞金<br>出産祝い金<br>結婚祝い金<br>リロクラブ利用可<br>四半期毎の決起会開催<br>グループ会社内営業コンテストの開催</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BERooT-A" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

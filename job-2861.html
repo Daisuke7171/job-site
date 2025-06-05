@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社ツクルバ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>理想の暮らしを形にするリノベーションコーディネーター</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ツクルバ</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区恵比寿四丁目3番14号　恵比寿SSビル</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500013</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【具体的な業務内容】<br>本募集は、カウカモ事業部のリノベプランニングチームにて、物件購入を検討されているお客様に対し、「リノベーションのプロ」として、お客様の理想の住まいづくりをサポートします。<br><br>・カウカモエージェント（お客様担当営業）と連携し、住まい購入を検討中のお客様へのリノベーション提案<br>・カウカモオリジナルリノベーション商品の商品説明・プレゼン<br>・カウカモショールームの案内、常駐、接客<br>・顧客とのリノベーション内容の打合せ<br>・リノベーション資金計画<br>・見積書の作成<br>・最適なパートナー会社（施工会社、設計会社）の紹介<br>・工事進捗管理<br><br><br>業務に慣れてきた後は・・・<br>15-20名程度のカウカモエージェントの担当（20-30名/月の顧客数）としてお客様へリノベーションのご提案をします。例えば、お客様にリノベーションのイメージを持っていただくため、showroom（実際にリノベーションが施されている物件）で間取り図（手書きも併用）で説明＋必要に応じて資料の共有するような流れです。ラフプランニングまでがミッションのため、図面は描かず、3Dも作成しません。そのため、一物件で提案に入る機会はフルリノベーションの場合でも1,2回のイメージです。ご提案にはオンラインツールも活用する場合もあります。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>■フレックス制（コアタイム11:00~16:00／標準労働時間8h・休憩1h）<br>10:00～19:00で働くメンバーが多いです。</dd>
+
       <dt>休暇・休日</dt>
       <dd>休日：週休2日（火水）<br>年間休日：110日<br>休暇制度：年末年始休暇、特別休暇、慶弔休暇、産休・育休、有給休暇<br>■年末年始休暇 <br>■結婚休暇（5日) <br>■出産休暇（3日）<br>■忌引休暇（最長10日）<br>■有給休暇は入社日に入社月に応じた日数を最大10日付与。 <br>　以降毎年8月1日に在籍年数に応じた日数を法定に即して付与。 <br>　↳営業職の年間平均有給取得日数：7日 　<br>　メリハリをつけ効率的に働くことを推奨しており、長期休暇の取得も可能です。 　　　　<br>　また、男性メンバーも含め希望者は育休を100%取得しています。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内全面禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■従業員持株会<br>■モチイエ制度<br>■インフルエンザワクチン接種費用補助<br>■リファラル制度<br>■モチイエ制度<br>自社サービスを通じて家を購入した場合、購入金額に応じて一定期間ローン支払いを補助する手当を支給しています。<br>■従業員持株会<br>毎⽉給与の⼀部を積み⽴て、奨励金と合わせて⾃社の株式の購⼊が可能<br>■PC/モニター貸与<br>その他業務で使用するもの（携帯電話等）は、必要に応じて貸与します</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%84%E3%82%AF%E3%83%AB%E3%83%90" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

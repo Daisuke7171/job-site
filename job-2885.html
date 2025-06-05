@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ビジネスコンサルタント・シンクタンク｜株式会社ヴィレグループ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>★フルリモート★【社労士】業界未経験可/全国から勤務可★</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ヴィレグループ</dd>
+
       <dt>職種名</dt>
       <dd>ビジネスコンサルタント・シンクタンク</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区六本木７丁目１４−２３　ラウンドクロス六本木4F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1060032</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>「全ての起業家に夢を」理念に即した事業内容と仕事内容全般を行います<br><br>＜具体的な仕事内容＞<br>◆WEB集客<br>-WEBに悩むクライアント様へ最適なWEBプロモーションの納品及び運用まで行います。<br><br>LP/コーポレート/広告運用/SNS構築<br><br>◆DXパッケージ導入/システム開発<br>お客様にDXの導入を行います<br>-LINE自動化<br>-Hubspot/Sales force導入<br>-GoogleWorkSpace導入<br>-フルリモートコンサル導入<br><br>▪️案件受注方法<br>紹介問い合わせ95%<br>webからの集客5%<br>ほぼ100%インバウンドでの受注です。<br><br>＜使用ITツール＞<br>Slack（社内連絡ツール）<br>chatwork/LINE（社外連絡ツール）<br>freee ERP<br>MF ERP<br>Google ワークスぺース<br>LINE公式アカウント<br><br><br><br>◆主なお客様の業界<br>・貿易業界（ECビジネス、商社など）<br>・不動産業界<br>・医療・クリニック業界<br>・教育業界<br>・人材業界<br>・建設業界<br>・飲食業界（クレープ屋など）<br><br>◆主な制作物<br>・コーポレートサイト<br>・ランディングページ<br>・ECサイト<br>・検索機能システム開発<br>・予約機能システム開発<br>・決済機能開発<br>・民泊清掃管理システム開発<br>など<br><br>【入社後の流れ】<br>入社後、あなたのスキル・経験に基づいてできる範囲から業務をお任せしていきます。<br>培ってきたご経験を生かして、早期に戦力としてご活躍いただくことを想定しております。もちろん、不明点などはどんどんご質問ください！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>フレックスタイム制　<br>コアタイム：10:30-15:00<br>所定労働時間：8時間、休憩1時間<br><br>※9:30〜18:30で勤務する方が中心です。<br>※ライフスタイルに応じて、労働時間は相談可能です。</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休2日制（土日）<br>・祝日<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・夏季休暇<br>・年末年始休暇<br><br>その他「どうしても休みたい！」という日があれば、事前相談いただけたら、基本的にOKです</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・フルリモート、在宅勤務可<br>・社会保険完備（健康／労災／雇用／厚生年金）<br>・賞与あり<br>・交通費支給あり<br>・資格取得支援、手当あり<br>・カジュアル服装<br>・全国コワーキングスペース利用可<br>・フリードリンク制度<br>・産休育休取得OK</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%B4%E3%82%A3%E3%83%AC%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

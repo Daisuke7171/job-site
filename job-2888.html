@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>商品企画・商品開発｜生活協同組合コープさっぽろ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>食品の品質管理室　マネージャー候補</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>生活協同組合コープさっぽろ</dd>
+
       <dt>職種名</dt>
       <dd>商品企画・商品開発</dd>
+
       <dt>勤務地</dt>
       <dd>北海道札幌市西区発寒11条5丁目10-1</dd>
+
       <dt>都道府県</dt>
       <dd>北海道</dd>
+
       <dt>市区町村</dt>
       <dd>札幌市</dd>
+
       <dt>郵便番号</dt>
       <dd>630831</dd>
+
       <dt>雇用形態</dt>
       <dd>契約社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>コープさっぽろで取り扱っている、食品検査等の検体の受付・データ管理<br>管理チームのマネジメントをお任せします。<br>PCでのデータ処理、取引先へのメール・電話対応、クレーム処理<br>関連グループ会社の食品工場に車で移動、立ち入り検査<br>外部の検査機関と連携して検査を実施。<br><br>≪具体的には≫<br>■検査検体受付■検査受付データ処理■検査受付リスト作成■電話対応■クレーム対応■工場での品質検査<br><br>≪育成体制≫<br>入協時研修や階層別教育制度、分かりやすいマニュアルや2400本ほどの動画（日本で有数規模の動画数）を用意しており、新人教育に注力しており、しっかりフォローします。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>【勤務時間】<br>□9:00～18:00(休憩60分）<br>□週40時間の変形労働時間制</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休2日（土・日）　<br>・メモリアル休暇<br>・忌引、結婚休暇<br>・看護、介護休暇　等</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 敷地内禁煙・就業時間内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・有給休暇・交通費規定<br>・車通勤可（駐車場あり、駐車料自己負担）<br>・時間外手当・共済制度<br>・慶弔見舞金</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E7%94%9F%E6%B4%BB%E5%8D%94%E5%90%8C%E7%B5%84%E5%90%88%E3%82%B3%E3%83%BC%E3%83%97%E3%81%95%E3%81%A3%E3%81%BD%E3%82%8D" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
