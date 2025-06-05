@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>内勤営業・カウンターセールス｜ユニーズトランスポート株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【内勤営業】未経験OK★物流業界のスタートアップ企業★基本土日休み★残業月20h以内！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>ユニーズトランスポート株式会社</dd>
+
       <dt>職種名</dt>
       <dd>内勤営業・カウンターセールス</dd>
+
       <dt>勤務地</dt>
       <dd>神奈川県川崎市川崎区駅前本町23-2　楠ビル川崎駅前4F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>川崎市</dd>
+
       <dt>郵便番号</dt>
       <dd>2100007</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>当社は、配送トラックの「帰り便」を有効活用したい運送会社と、単発で急な配送を依頼したい「荷主」のニーズをつなぐ物流マッチングサービスを提供しています。<br>今回は、帰り便と荷主をマッチングする内勤営業を増員募集いたします！取引先とのやり取りは電話・FAX・メールで行い、外回り営業は一切ありません。<br><br>【具体的には……】<br>＜情報収集＞<br>取引先から配送希望の連絡が入ります。（例：「東京から宮城へ、明日〇時までに荷物を届けてほしい」など）<br>また、担当顧客にこちらから連絡を取り、配送ニーズをヒアリングすることもあります。<br>▼<br>＜マッチング＞<br>マッチング可能な配送トラックを探し、手配します。<br>▼<br>＜配送当日＞<br>荷受け場所をドライバーに連絡します。配送完了後、荷物の受領書を荷主宛てに送付して1案件終了となります。<br><br>・配送料は一定ではありません。そのため、例えば「急ぎなので通常より高めの料金で」など、マッチング成立へ向けて運送会社と交渉することもあります。<br>・日、月単位でマッチング件数や売上の目標を設定して業務に取り組みます。<br><br>【入社後の流れ】<br>先輩と一緒に実務を行いながら、仕事の進め方を覚えていきます。物流業界のことも入社後に学べるため、未経験の方でも安心してスタートできます！3ヶ月ほど経つと、全体の流れを掴めます。<br><br>【会社について】<br>配送トラックと荷主のマッチングサービスを提供する当社。代表は前職でも同事業を手がけており、「より理想の事業を創りたい」と2019年に当社を設立しました。物流業界ではドライバー不足が深刻化する一方、ネット通販の普及などにより物流ニーズが増加。すでにお取引先は2000社を超えており、「無駄のないトラック運用」と「迅速かつ細やかな配送サービス」の両方を叶えられる物流マッチングサービスは、今後より需要が高まる見通しです。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:30〜17:30<br>所定労働時間8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制（土・日）<br>※基本的に土日休み。月1回の土曜出社（12：00までの勤務）があります。<br>祝日<br>GW休暇（3日）<br>夏季休暇（3日）<br>年末年始休暇（7日）<br>有給休暇（10日～勤続年数に応じて最大20日）<br>産前・産後・育児休暇<br><br>※5日以上の連続休暇取得が可能です！</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（雇用・労災・健康・厚生年金）<br>昇給年1回（4月）<br>賞与年2回（6月・12月）<br>交通費（全額支給）<br>時間外手当（全額支給）<br>役職手当<br>職能手当<br>社内禁煙<br>私服可</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%A6%E3%83%8B%E3%83%BC%E3%82%BA%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

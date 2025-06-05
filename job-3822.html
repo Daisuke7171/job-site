@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社Azoop</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【法人営業：第二新卒】首都圏・関西！営業責任者は元リクルート最年少部長/インセンティブあり</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Azoop</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>愛知県名古屋市中区錦三丁目11番25号</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>名古屋市</dd>
+
       <dt>郵便番号</dt>
       <dd>4550843</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>創業8期目を迎え売上・社員数ともに昨年対比約200％と急成長・急拡大しているスタートアップ企業です。ここから更に事業拡大していくため、市場シェア拡大へ向けた【新規開拓営業】を募集致します。<br><br>■業務概要<br><br>全国に運送事業者様は約6.2万社近くいらっしゃる中で、当社市場シェアはまだ5%未満と、まだまだリーチできていない企業様が多くいらっしゃいます。 現状、アカウント営業による飛び込み営業をメインに顧客開拓をしており、おかげさまで取引社数は累計で2,000社を超えましたが、更なる市場のシェア拡大へ向けて新規開拓営業をお任せします。 1回の接点で終わりではなく、お客様と中長期的な関係を築きながら、お客様の経営課題に向き合い、継続的に支援をしていきます。新規開拓営業だけでなく、新規立ち上げ事業である人材事業など多様なサービスをかけあわせ、お客様の業務効率化へ向けてご支援をしていくため、課題解決型営業の力がつくポジションです。<br><br>【提供サービス】<br>・商用車流通のDXプラットフォーム「トラッカーズ」<br>・車両管理・運行管理をクラウドにて一元管理するSaas「トラッカーズマネジャー」<br>・新規事業人材紹介「トラッカーズジョブ」<br>・新規事業M＆A事業 ※サービスが複数あるため、お客様の課題解決へ向けた、取り組みを行います。<br><br>【顧客】<br>・コアターゲットは運送業を営む法人企業 　<br>※担当はエリア制となり、担当エリアの新規マーケット開拓をお任せします！<br><br>【具体的な１日の流れ】<br>・担当エリアのリスト一覧から訪問する企業をご自身でリストアップします。<br><br>・電車で最寄り駅まで移動し、カーシェアにて1日に15件前後の運送会社様を訪問、 名刺交換→お客様の状況をヒアリング→トラッカーズシリーズを中心にご紹介を行います。<br><br>・具体的な案件をいただけた際は、他部署と連携し、見積作成・クロージングへ取り組みます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9時00分～18時00分（所定労働8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>■休日<br>年間122日<br>(内訳)　完全週休二日制　土曜 日曜 祝日<br><br>■有給休暇<br>入社半年経過時点10日〜最大20日<br>※入社時に3日間の特別休暇付与<br><br>■特別休暇<br>・生理休暇　2日／年<br>・ファミリーケア休暇　2日／年<br>・記念日休暇　1日／年<br>・不妊治療休暇　2日／年</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備<br>・交通費支給（上限25,000円）<br>・業務用PC、携帯<br>・書籍購入補助制度：業務に役立つ書籍の購入費を全額負担します</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAzoop" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

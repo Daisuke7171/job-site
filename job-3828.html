@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>カスタマーサポート・コールセンター運営｜TDCX Japan株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>CMで話題！【Airbnb】のカスタマーサポート職★思い出の手助けをご一緒に★2月3日入社★在宅可</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>TDCX Japan株式会社</dd>
+
       <dt>職種名</dt>
       <dd>カスタマーサポート・コールセンター運営</dd>
+
       <dt>勤務地</dt>
       <dd>神奈川県横浜市神奈川区金港町1‐7　横浜ダイヤビル</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>横浜市</dd>
+
       <dt>郵便番号</dt>
       <dd>2210056</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>★横浜オフィス/大阪トレーニングセンターで研修合格後、在宅勤務可能★<br>★入社祝い金合計20万円★<br><br>業界大手【Airbnb】の民泊旅行サービスを利用するお客様に寄り添い、電話・メール・メッセージを使ってサポートしていきます。<br>宿の貸主（ホスト）と宿泊者（ゲスト）の仲介者やエスカレーション案件の二次受け対応なども含み、相対的なホスピタリティ提供をしていただきます。<br><br>業務の中で一部英語使用もございますが（メッセージ対応のみ、英語でのお電話対応はなし）、翻訳機を使っての対応が可能ですので、英語学習中の方やこれから英語を使って業務にチャレンジしたい方にも成長できるチャンスが多くある環境です。<br><br>具体的には<br>家を貸す「ホスト」と借りる「ゲスト」から寄せられるさまざまな問い合わせ内容を調査して、戦略的な解決策を提供。優先順位を決めて、効果的なフォローアップを行っていきます。<br><br>・予約やキャンセルなどの手続きサポートおよび確認<br>・ゲスト情報、サポート内容のデータ管理<br>・ホスト様からの掲載物件の相談対応　など</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>＜シフト制（1ヶ月単位）＞<br>8:00〜21:00<br>上記の中で所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日120日<br>・完全週休2日制　(土日祝を含むシフト制）<br>・祝日分は別途シフトにて休日付与<br>約1ヶ月前にシフト希望日を伺いシフトを決定します。<br>お休みは平日2連休となることもありますが、土日休みに比べてテーマパークやレジャー施設、ショッピングモール、市役所なども混んでおらず、充実した日を過ごせます。「ふらっと1泊の国内旅行に！」なんてことも可能です。<br>・有給休暇（取得率は高いです）<br>・慶弔休暇<br>・産後休暇<br>・育児休暇<br>・介護休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： ビル内に喫煙所あり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備<br>・健康診断<br>・産業医チャットサポート<br>・髪色／ネイル自由<br>・服装自由（カジュアル規定あり）<br>・フリードリンク完備<br>・休憩スペース完備<br>・交通費<br>上限を月5万円（定期代）とする（新幹線、特急、航路、高速バス除く）<br>・部署ごとに嬉しい特典あり<br>※詳しくは面接にてお伝えいたします。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=TDCX%20Japan%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
