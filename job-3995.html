@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社エンパワー</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>≪キャンペーン実施中★月収50万円スタート≫ 『買取大吉』出張買取・査定★賞与年2回／転勤なし</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社エンパワー</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市淀川区西中島6丁目1-15</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5320011</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 30000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>買取のお問い合わせをいただいたお客様のお宅に訪問し、商品の確認・査定をお任せします。<br><br>＜具体的な仕事内容＞<br>買取を問い合わせいただいたお客様・内勤営業担当が取得したアポイント・内勤営業と一緒に架電・過去にお取引のあるお客様への架電などをもとに、お客様先へ訪問し、買取査定を行います。事前に決められたスケジュールに沿って動いていくため、余裕を持って進められます。<br><br>※本ポジションは営業職のため、空いた時間に架電業務をお任せすることがございます。アポイント取得方法（架電業務）に関しては、その日のスケジュール等によって、臨機応変に対応していただきます。<br><br>＜取り扱い商品＞<br>ブランド品・宝石・酒・絵画・骨董品・切手・ホビー・雑貨類など、幅広い商品知識を身につけられます。<br>訪問は1日2～3 件程度で、査定する商品は1～20品ほど。査定にかかる時間は平均1時間です。 <br><br>【1日の流れ】※自宅から直行も可<br>9:00　出社（メール確認、査定準備を行い出発）※自宅から直行も可<br>▼<br>10:00　買取先を訪問（訪問数は1日2～3件程度）<br>▼<br>12:00　お昼休憩<br>▼<br>13:00　買取先を訪問<br>▼<br>17:00　荷卸（買い取った商品を倉庫へ卸します）<br>▼<br>18:00　退社（明日のスケジュールなどを確認し、帰宅）<br><br>※本ポジションは営業職のため、空いた時間に架電業務をお任せすることがございます。アポイント取得方法（架電業務）に関しては、その日のスケジュール等によって、臨機応変に対応していただきます。<br><br>【入社後の流れ】<br>入社初日から5日間の研修を行います。<br>研修終了後は、先輩社員の移動に同行し、実際の買取業務を見て学ぶことが出来ます。<br>その際は一緒に簡単な査定をしたり、金額をメモしたり、自然な流れで勉強できるよう、コーチングしてもらえます。<br>大体2週間ほどで独り立ちですが、早い人で1週間未満、ゆっくり勉強したい人は1ヶ月ほど同行することもあります。<br>個々に合わせてスケジューリングしますので、成長スピードも安心です。<br><br><br>【キャリアステップ】<br>当社は完全実力主義！頑張り次第で早期の昇格も可能です。<br>実際に、入社1年目での役職昇進実績も多数あります。また、今回配属となる部署は新設部署のため、管理職を目指しやすい環境です。ご自身のチャレンジを評価に繋げるので、ぜひ意欲的に仕事に取り組んでください。<br><br><br>★様々な手法で買取を実施<br>出張買取以外にも、店舗でのお買取や、ショッピングモールなどで買取を行う催事買取なども業績好調！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>・週休2日制（月8日〜12日／シフト制）<br>・年末年始休暇（4日）<br>・夏季休暇（3日）<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>※有給休暇を取得しやすい環境です。<br>・慶弔休暇<br>・産前産後休暇（取得実績あり）<br>★夏季休暇などと公休をあわせて5日以上の連続休暇も可！旅行を楽しむ社員もいます！</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 就業時間内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・賞与年2回<br>・インセンティブ制度　※面接時に詳細をお尋ねください。<br>・通勤交通費支給（上限月3万円）<br>・住宅手当（規定あり）<br>・各種手当<br>└結婚祝い金、出産祝い金、傷病見舞金、災害見舞金、死亡弔慰金、家族弔慰金<br>・ノートPC、スマホ貸与</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%83%B3%E3%83%91%E3%83%AF%E3%83%BC" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

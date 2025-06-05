@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>社内情報システム（社内SE）｜株式会社リツビ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【社内SE】システム導入～保守運用まで◎ / 専門商社・メーカー</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社リツビ</dd>
+
       <dt>職種名</dt>
       <dd>社内情報システム（社内SE）</dd>
+
       <dt>勤務地</dt>
       <dd>福岡県福岡市中央区警固1-15-6 KH22ビル</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>福岡市</dd>
+
       <dt>郵便番号</dt>
       <dd>8100023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【業務概要】<br>社内SEとして、以下の業務に携わっていただきます。<br><br>～自社製品及び海外から輸入した医療機器・美容機器・化粧品・美容健康サプリメントを取り扱う専門商社～<br>□システム運用…社内で使用するシステムの検討～提案、開発～保守運用まで、システムに関する業務を幅広く行います。<br>□社内サポート業務…社員が使用するPCやスマートフォン等の機器に関するサポートや、システムに関するサポートを行います。<br><br>【企業風土】<br>福岡本社に勤務となります。<br>福岡本社には社員11名が在籍しており、30代前半～半ばの方々が活躍しています。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:10～18:10 （所定労働時間8時間、休憩時間60分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制（土曜、日曜、祝日※年数回土曜出勤あり）<br>年次有給休暇（10日～20日）<br>年末年始休暇<br>慶弔休暇<br>育児休暇<br>介護休暇<br>リフレッシュ休暇（8連休）等<br>※祝日や暦に応じて毎年の年間休日は117日～122日となります。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>＜待遇・福利厚生補足＞<br>通勤手当：上限35,000円／月<br>家族手当<br>社会保険：各種社会保険完備<br>退職金制度：同社規定により支給（定年：60歳）<br><br>＜教育制度・資格補助補足＞<br>■入社後、OJT研修を予定しています。<br><br>＜その他補足＞<br>■各種制度：<br>研修制度、各種表彰制度、退職金制度、育児休業制度、介護休業制度、結婚祝い金、出産祝い金<br><br>■その他：<br>社員旅行、各種保養所</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AA%E3%83%84%E3%83%93" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>サービスエンジニア・サポートエンジニア｜株式会社リツビ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【東京】フィールドエンジニア</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社リツビ</dd>
+
       <dt>職種名</dt>
       <dd>サービスエンジニア・サポートエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>東京都江東区有明3-6-11東京ファッションタウンビル東館8階</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>江東区</dd>
+
       <dt>郵便番号</dt>
       <dd>1350063</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■業務内容<br>【リツビグループが取り扱う業務用美容機器の修理、メンテナンス、医療機器の品質管理業務】<br>・業務機器を導入いただいている店舗様からのお問い合わせの対応（訪問修理、お預かり修理）<br>・業務機器の動作検証と改善要求<br>・様々な業務のプロジェクト管理（業務委託、行動管理、業務改善）<br>・承認医療機器の品質の維持に伴う検査、情報収集活動<br><br>■出張の頻度<br>担当エリアによりますが、訪問修理・お預品修理が基本で遠方への出張もあります。<br>頻度は時期によりますが、業務上普通にあることです。<br>東日本エリア担当（東京オフィスから出張という形で一部ご対応いただきます）<br><br>■お客様先に出向く件数<br>約0～3件/日で、他の時間は社内修理や資料作成などもあります。<br>医療機器の取り扱いもスタートし、管理業務なども行っています。<br>少しずつ覚えていきながら、様々な業務にあたります。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:10～18:10 （所定労働時間8時間、休憩時間60分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>シフト制（土曜日や大型連休は交代で出勤）<br>有給休暇（10日〜勤続年数に応じて最大20日）<br><br>業務に慣れたら、交代で土曜出勤、日曜日の電話当番（スマホに転送）があります。<br>電話当番は、日曜日、祝日、年末を交代で担当します。※出勤はありません。<br>2名が電話当番（東日本・西日本に各1名）をしています。<br>例えば、電話当番①（東日本）が、フリーダイヤルの転送された電話を受けます。<br>訪問が必要になってくる場合、日程調整が必要なため、他のエリアの電話当番②（西日本）に連絡し、<br>日程調整の連絡をしてもらいます。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>＜待遇・福利厚生補足＞<br>通勤手当：上限3万5000円／月<br>家族手当<br>住居手当：企業規定による<br>社会保険：各種社会保険完備<br>退職金制度：同社規定により支給（定年：60歳）<br><br>＜教育制度・資格補助補足＞<br>■入社後、新人研修でしっかりと知識を習得していきます。その後、OJTを通じた実践で学んでいきます。<br><br>＜その他補足＞<br>■住居手当（東京･大阪勤務のみ対象）：最大49,000円支給。引っ越し費用も支給（独身者のみ）。<br><br>■各種制度：<br>研修制度、各種表彰制度、退職金制度、育児休業制度、介護休業制度、結婚祝い金、出産祝い金<br><br>■その他：<br>社員旅行、各種保養所</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AA%E3%83%84%E3%83%93" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
