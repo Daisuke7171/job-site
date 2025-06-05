@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ホールスタッフ｜チムニー株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【ホールスタッフ（店長候補）】上場企業・全国500店舗を展開する大手飲食企業</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>チムニー株式会社</dd>
+
       <dt>職種名</dt>
       <dd>ホールスタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都台東区雷門２－１８－７　井門雷門ビル４Ｆ</dd>
+
       <dt>都道府県</dt>
       <dd>群馬県</dd>
+
       <dt>市区町村</dt>
       <dd>台東区</dd>
+
       <dt>郵便番号</dt>
       <dd>1110034</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>弊社が運営する飲食店にて、ホール業務を中心とした各種業務をお任せいたします。<br><br>【仕事内容】<br>・接客、配膳、バッシング、レジ<br>・簡単な調理<br>・発注<br>・現金管理<br>・衛生管理<br>・スタッフシフト管理<br>・その他（清掃、採用面接）<br><br>入社後まずは接客や配膳など基本的な業務からお任せしていきます。業務に習熟していったら、調理や発注業務、現金管理などもお任せしていき、将来的には副店長、店長として店舗の全体管理を担っていただくことを想定しています。<br><br>【店舗について】<br>弊社の運営する飲食店はオーソドックスな居酒屋から焼き鳥店、すし居酒屋まで業態はさまざま。老若男女多くのお客さまが来店されるため、幅広い接客スキルを身につけることができます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>交替制（シフト制）<br>(1)10時 00分 〜 19時 00分<br>(2)15時 00分 〜 00時 00分<br>(3)19時 00分 〜 04時 00分<br><br>所定労働時間8時間、休憩60分<br>※左記はシフトの一例です。店舗の予約状況等により出勤が早まる場合があります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>・週休二日制（シフト制）<br>・有給休暇（6ヶ月経過後の年次有給休暇日数10日）<br>※月一度、閉店後に棚卸があります。<br><br>・育児休業（取得実績あり）<br>・介護休業（取得実績あり）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備<br>・退職金制度<br>・定年制あり（一律 60歳）<br>・再雇用制度あり（上限 65歳まで）<br>・入居可能住宅：単身用あり（会社都合の異動に伴う引越しの場合のみ利用）<br><br>【諸制度】<br>・インセンティブ制度<br>・優秀社員表彰<br>・評価基準公開制度<br>・単身手当<br>・結婚・出産祝い<br>・「ありがとう連鎖の会」<br>・社員持株制度等<br><br>【教育・研修】<br>・天ぷらマイスター<br>・寿司マイスター<br>・鮮魚マイスター<br>・活魚マイスター<br>・階層別社内セミナー<br>・社員教育制度「ABC アカデミー」での基礎・調理研修等<br><br>※マイカー通勤：応相談</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%81%E3%83%A0%E3%83%8B%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
