@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社EF</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【WEBコンテンツ営業】★未経験OK★月給28万円~★完全週休2日</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社EF</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市北区豊崎三丁目19‐3　ピアスタワー6F</dd>
+
       <dt>都道府県</dt>
       <dd>群馬県</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5310072</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【企業の広告戦略を担う！】「デジタルコミック広告」を駆使したWebマーケティングをお任せ。企業にWebサイトやSNS、YouTubeなどの広告を提案します。<br>具体的には<br>▼テレアポ　※リストあり<br>▼アポ獲得～お客様先へ訪問<br>▼ニーズを元に広告内容を提案<br>▼制作チームとの連携<br>▼納品・配信<br><br>《お客様は？》<br>建築、不動産、美容、接骨院、飲食店、自動車関連など<br>上記以外の業界開拓もOKです！<br><br>《メディアは？》<br>企業のWebサイトやLP、SNS広告、YouTubeの動画広告など<br>《コミック広告の強みは？》<br>文字中心の広告に比べ“つい読み込む”傾向が強く、<br>離脱率を抑えて成果を出しやすいメリットがあります。<br><br>《配属チームは？》<br>営業メンバーは現在約25名（男女比8：2）。<br>年齢は19歳～36歳で平均26歳！未経験スタートが8割以上を占めています。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:30（実働8時間／昼休憩50分＋10分休憩×4回あり）</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土日休み）<br>祝日<br>有給休暇（10日〜勤続年数に応じて最大20日）※平均6～7割消化しています<br>GW<br>夏季休暇<br>年末年始休暇<br>慶弔休暇<br>産前産後・育児休業制度<br>介護休業制度<br>裁判員休暇制度</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 別階に喫煙所あり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（雇用・労災・健康・厚生年金）<br>資格取得支援制度<br>スマホ、PC、Wi-Fiルーター支給<br>オフィスグリコ<br>報奨金<br>┗定期的なキャンペーンにて優秀者に賞金<br>MVS（月間MVPに年3回選ばれたら10万円分のプレゼントあり）<br>お祝い・感謝制度<br>┗出産・結婚や母の日・父の日などにプレゼントあり<br>社内イベント<br>┗最近では社員旅行に行き、大盛り上がりしました！<br>今後も社員が楽しめる、お花見、マリンスポーツ、表彰式といった、さまざまなイベントを実施予定です！<br>エンゲージメントストック<br>リフレッシュルーム併設<br>自販機・ウォーターサーバー設置</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEEF" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

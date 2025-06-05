@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>財務・経理｜株式会社DUALホールディングス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【経理】キャリアアップしたい方歓迎！／年休123日／賞与年2回／福利厚生充実</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社DUALホールディングス</dd>
+
       <dt>職種名</dt>
       <dd>財務・経理</dd>
+
       <dt>勤務地</dt>
       <dd>東京都品川区北品川1-8-11　Daiwa品川Northビル8F</dd>
+
       <dt>都道府県</dt>
       <dd>愛知県</dd>
+
       <dt>市区町村</dt>
       <dd>品川区</dd>
+
       <dt>郵便番号</dt>
       <dd>1400001</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>大手エネルギー会社のライフライン商材を数多く取扱う当社。<br>新入居者のでんき・ガスのお申込みを代行するサービス「ライフラインコンシェルジュ」や<br>EVインフラ事業「EV充電コンシェルジュ」など、無くない事業をコンセプトに<br>幅広く事業展開をしています。<br><br>そんな当社をバックオフィスから支える、経理業務をお任せいたします。<br><br>【主な仕事内容】<br>・仕訳入力<br>・月次、四半期、年次決算業務(会計ソフトはPCAです)<br>・監査法人、証券会社対応<br>・予実管理<br><br>【今後お任せしたいお仕事】<br>・資金管理<br>・銀行入出金業務(ネットバンキング、窓口）<br>・月次・年次などの決算業務(必須：月次決算が一人で取りまとめられる)<br>・取締役会報告書類の作成<br>・各種数値の取りまとめ、分析<br>・決算書類（計算書類・決算短信・有価証券報告書）作成補助　など</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>〈勤務時間〉<br>09:00〜18:00<br>所定労働時間：8時間、休憩1時間<br>夜間勤務：なし</dd>
+
       <dt>休暇・休日</dt>
       <dd>〈休日休暇〉<br>・土日祝休み<br>・年末年始休暇<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・結婚休暇<br>・産休・育休<br>・介護休暇<br>・慶弔休暇<br>・リカバリー休暇<br>・ボランティア休暇 <br><br>※各種、社内規程あり<br><br>補足情報：<br>【リカバリー休暇 補足】 新入社員が転職後に少しでも安心して就業頂けるようにできた制度です。 入社６カ月未満の新入社員が体調不良などでやむを得ないお休みを取った際、 利用することができる休暇制度（有給の前借ではありません）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： ビル外敷地内喫煙スペース有</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>〈福利厚生・諸手当〉<br>・社会保険完備（健康保険 ・厚生年金 ・雇用保険 ・労災保険 ）<br>・通勤交通費全額支給<br>・営業交通費全額支給<br>・時間外手当（固定残業代超過分）<br>・役職手当<br>・結婚祝い金 <br>・出産祝い金<br>・社員割引制度<br>・健康診断（年1回）<br>・インフルエンザ予防接費用一部負担 <br><br>・クローズドマート ：<br>SDGsに基づき、食品ロスや商品ロスの削減を推進する「職域販売サービス」 　賞味期限間近の食品や一般流通が難しい製品、型落ち商品などを 社内で安く販売しています。（例：化粧水、シャンプーなど93％OFFで購入することができます） <br><br>・vitalityアプリ ：<br>社員が楽しく健康的な生活を送れるように健康増進プログラムを提供しています。 1週間ごとに設定される目標歩数(ポイント)を達成すると、 スターバックスやコンビニドリンクと交換できるチケットが必ずもらえます。<br><br> ・ポスタルくらぶ会員サービス ：<br>└国内・海外旅行の割引 <br>└グルメ・エンタメ・テーマパーク <br>└災害見舞金等保険 その他保険 <br>など、様々なサービスを会員特典割引で利用することができます！ <br><br>※各種、社内規程あり<br><br>社内に広くて快適な休憩室あり<br> └自動販売機・レンジ・冷蔵庫など自由に利用可能！<br> └ドリンクサーバー完備（無料）<br> └水素水飲み放題！ <br>└就業後にみんなで飲めるお酒も用意してます！（無料）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEDUAL%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
