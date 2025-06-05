@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社OneLink</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>★九州★3~5月入社枠/内定率30%以上‼︎★年4回賞与★毎月インセンティブ★</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社OneLink</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>福岡県福岡市中央区天神1-4-1 西日本新聞館16F</dd>
+
       <dt>都道府県</dt>
       <dd>沖縄県</dd>
+
       <dt>市区町村</dt>
       <dd>福岡市</dd>
+
       <dt>郵便番号</dt>
       <dd>8100001</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 10000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>全国のイベント会場やショッピングモールで特設ブースを設置し、ウォーターサーバーのセールスプロモーション（ご案内・ご提案）をお任せいたします！<br><br>【業務詳細】<br>2〜5人のチームで全国各地のイベント会場やショッピングモールへ行き、お客様への商品のご案内から成約までを担当します！<br><br>▼現場でのブースの設置・レイアウト、お客様へお渡しする販促グッズの用意<br>▼お客様へのお声がけ、興味を持っていただいたら商品のご案内<br>▼契約手続きのご案内、必要な書類等の作成など<br><br>※福岡含め、近辺の都道府県に出張(4泊5日単位)、車移動、日帰りとなります。<br><br>【営業手法】<br>会場でお客様に販促グッズ（ポケットティッシュやお菓子等）をお配りしながら、「ウォーターサーバー」をご案内していきます。興味をお持ちいただいたお客様にはブース内で詳細を説明し、ご納得いただけたら契約（お申し込み書類等の作成）を行います。<br><br>お客様とは一期一会のチャンスになりますので、堅苦しい雰囲気よりも、笑顔や雑談も交えながら契約していくケースが多いです。1日あたり2〜7件の成約が平均的です。<br><br>【入社後の流れ】<br>入社後、まずは4日〜5日の社内研修で商品知識や成約までのトーク内容などを徹底的に学びます。その後は先輩社員と一緒に現場に配属されます。現場でのOJTや日々の成果の振り返りを通じてスキル・ノウハウを身につけていきます。<br><br>【キャリアパス】<br>3ヶ月単位で昇給・昇格があります。入社後最短3ヶ月で役職者になったメンバーもおり、入社年月、年齢に関係なくキャリアアップが可能です！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00〜20:00<br>・所定労働時間8時間<br>・休憩2時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>■週休2日制（シフト制）月火休み<br>■年末年始連続休暇<br>■商戦月後連続休暇<br>■慶弔休暇<br>■有給休暇（入社半年後10日〜勤続年数に応じて最大20日）<br>■産前・産後休暇<br>■育児休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■昇給あり<br>■特別賞与年4回<br>■交通費全額支給<br>■社会保険完備<br>■服装自由 <br>■残業手当（固定残業時間超過分）<br>■役職手当 <br>■社員表彰 <br>■タブレット端末貸与</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEOneLink" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

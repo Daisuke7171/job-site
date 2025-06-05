@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社リレーション</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【人材営業】1年で50万円昇給実績あり</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社リレーション</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区市谷本村町2-11　外濠スカイビルディング8F</dd>
+
       <dt>都道府県</dt>
       <dd>福岡県</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1620845</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>20代が中心の成長企業！建設現場のニーズと施工管理技術者をマッチングさせる人材営業<br><br>【具体的には】<br>好景気の建設業界へ<br>自社施工管理技術者を派遣する仕事です。<br><br>建設企業が求める技術者のニーズと、<br>自分の希望に合う案件を探している<br>当社の施工管理技術者を<br>マッチングしていきます。<br><br>建設業界は常に人手不足であり、<br>当社の力を必要としています。<br><br>「経験者がいい」「経験が浅くてもすぐほしい」など<br>現場ごとに異なるご要望に対して、<br>詳細をしっかりヒアリングしてください。<br><br>★最初は先輩が同行するので大丈夫。<br>OJTで徐々に仕事を覚えていってください。<br><br>【この仕事のやりがい】<br>個々の企業と技術者のニーズを<br>最適にマッチングできた時のやりがいや<br>達成感はとても大きいです。<br><br>【主な営業の流れ】<br>◎企業様へ電話連絡<br>↓<br>◎具体的なニーズをヒアリング<br>　（雑談なども交えながら、関係性を構築）<br>↓<br>◎建設現場の施工管理業務を受託<br>↓<br>◎当社の施工管理者と、<br>クライアントニーズとのマッチングを検討<br>↓<br>◎最適な人材を建設現場に派遣<br>↓<br>◎現場で働く人材のフォローをしながら、<br>クライアントともさらに良い関係を構築</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00（実働8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休二日制（土日）<br>祝日休み<br>年末年始休暇、慶弔休暇、有給休暇（10日〜勤続年数に応じて最大20日）、産前・産後休暇、育児休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>交通費支給<br>健康診断</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AA%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

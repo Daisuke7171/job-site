@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜株式会社BuySell Technologies</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>★未経験歓迎【店舗スタッフ】＃残業ほぼなし＃ハイブランド等の査定買取＃お客様に寄り添った接客</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社BuySell Technologies</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都墨田区江東橋4-27-14 錦糸町パルコ 5F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>墨田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1300022</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>～事業拡大に伴い、全国に買取・販売店の展開を進めております！～<br> <br>【業務内容】<br>扱う商材は、エルメスやシャネルなどの高級ブランド品や、骨董品、宝石、アクセサリーなど...<br>商材に見合ったハイクオリティ、かつホスピタリティ溢れる接客を身につけられます！<br><br>具体的には…<br>商業施設内の店舗での接客/受付、買取/販売をメインに、将来的には様々な企画もお任せいたします。<br>「お客様に寄り添いたい」「人と接することが好き」・・・そのようなホスポタリティを活かしてご活躍いただけます！<br><br>【バイセル店舗の特徴】<br>お客様に寄り添う「まごころ査定」により、平均成約率は80%以上！リピートも多数頂いております。リピーター向上に向けた施策なども積極的に実施中！<br>★新宿サブナード店 Googleの口コミ：4.8 ※652件の口コミ</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>＜シフト制＞<br>9:00～21:00<br>※所定労働時間：上記のうち8時間、休憩1時間<br>※店舗が入る商業施設の営業時間によって前後することもあります</dd>
+
       <dt>休暇・休日</dt>
       <dd>◆年間休日111日/週休2日制（シフト制／月7～10日休み）<br>◆夏季休暇<br>◆年末年始休暇<br>◆産前産後休暇<br>◆育児休暇<br>◆介護休暇<br>◆結婚休暇<br>◆有給休暇（10日～勤続年数に応じて最大20日）<br>◆慶弔休暇　など</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◆交通費全額支給<br>◆健康診断（年1回）<br>◆インフルエンザ予防接種全額補助<br>◆社用携帯電話<br>◆出産祝金<br>◆研修費用全額会社負担　など</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEBuySell%20Technologies" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

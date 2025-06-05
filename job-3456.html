@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜ＮＳＳホールディングス株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>急募！！バックオフィス職（未経験大歓迎）【事務職でも正当評価します】</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>ＮＳＳホールディングス株式会社</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿6-8-1　住友不動産新宿オークタワー21階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>・ご契約後の事務処理全般（請求書発行、データ入力）<br>・入金確認や提携先への支払処理業務<br>・社内申請業務<br>・売上集計表入力<br>・弊社営業担当のサポート業務<br><br>《★入社後の流れ★》<br>▼入社～3ヶ月<br>最初の1ヶ月はOJTを通じて、営業事務の一連の流れを理解していきます。<br>上司や先輩社員が基本的にしっかりサポートしてくれるので、新しいことにどんどんチャレンジできる環境です。<br><br>▼3ヶ月～6ヶ月<br>バックオフィス業務に関してはある程度1人で業務を担当出来るまでに成長できます。<br>一つの業務の責任者として仕事をしていただくので、責任感や達成感、充実感を持って働けます！<br><br>▼1年～<br>業務実績や能力により、チームリーダーに抜擢され、マネジメントに注力したりと、年齢や社歴に関係なくキャリアアップをすることが可能です◎<br>責任者のポストチャンスも豊富にご用意！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：30～19：00（所定労働時間8時間、休憩1.5時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制(土・日)<br>■GW<br>■夏季休暇<br>■年末年始休暇<br>■年次有給休暇（10日～勤続年数に応じて最大20日）<br>■ウェディング・アニバーサリー休暇<br>■バースデー休暇<br>■育休・産休制度</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： フロア内に完全分煙の喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■独立支援制度<br>■家賃補助（3万円～7万円／当社規定による）<br>■交通費支給<br>■各種社会保険完備（雇用、労災、健康、厚生年金）<br>■時間外手当<br>■家族手当（5000円／月）<br>■子供手当（一人当たり3000円／月）<br>■引越し一時金支援制度<br>■ウェディング・アニバーサリー休暇制度（休暇の他、結婚記念日にディナー券をプレゼント）<br>■バースデー休暇制度<br>■各種レクリエーション・イベント（フットサル、BBQ、忘年会など）<br>■健康診断<br>■社員優待制度（全国約20,000箇所の施設・サービスで社員優待が受けられる制度）<br><br><br>【家賃補助適用条件】<br>・条件①入社後半年経過の社員<br>・条件②弊社オフィスより半径２ｋｍ圏内の物件<br>適用金額については本人の役職に応じて決定されます。<br>　一般：3万/月<br>　アシスタントマネージャー：4万/月<br>　サブマネージャー：5万/月<br>　マネージャー：7万/月<br>※家賃補助適用中に役職が変わった場合、補助金額もそれに応じて変動いたします。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%EF%BC%AE%EF%BC%B3%EF%BC%B3%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
