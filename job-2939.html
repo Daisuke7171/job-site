@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社ZEPE</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>プロモーションスタッフ/興味のあるお客様へ提案/高還元のインセンで年収UP/転勤なし/未経験OK！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ZEPE</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>埼玉県富士見市東みずほ台二丁目8番3号</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>富士見市</dd>
+
       <dt>郵便番号</dt>
       <dd>3540015</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>大手携帯ショップ販売店へ常駐し、ケーブルテレビ商材に興味を持った<br>お客様へアニメや音楽などの映像コンテンツや<br>高速インターネットWifiをご提案していただきます！<br><br>テレビやCMでも誰もが見たこと、聞いたことのあるお馴染みのサービスで、<br>テレワーク、在宅ワークの普及により生活に必要不可欠な商材のため<br>ニーズが急騰していて、お客様へ提案がしやすいのが特徴で<br>営業スタッフも高い成約率をキープしています！<br><br>★テレアポ・飛び込みはなし！<br>携帯電話の料金見直し、機種変更などと合わせて<br>（※これらは携帯ショップのスタッフさんが対応）<br>ご提案していくので、営業未経験からでも提案しやすい環境です！<br><br>携帯ショップのスタッフさんにて映像コンテンツや<br>インターネットWifiに興味を持ったお客様のみ<br>その場でご紹介していただき、提案していくので<br>「無数に電話をかけてアポを取る…」<br>「飛び込み営業で提案できない」<br>といった苦労をすることはありません！<br><br>★お仕事の流れ<br>1：携帯ショップへ常駐し、簡単なお客様対応やご案内業務を行います。<br>    ▼<br>2：携帯ショップのスタッフさんにて<br>　  インターネット等に興味を持っていただいたお客様のみ<br>　   ご紹介していただきます。<br>　▼<br>3：ご紹介いただいたお客様へ映像コンテンツや<br>　  インターネットWifiのご提案をしていきます。<br>　▼<br>4：ご契約成立<br>　  携帯電話とインターネットWifiセットのご契約で<br>　  キャンペーン特典もついてくるので成約率80％の社員も在籍！<br><br>★1日の流れ<br>9:00　  出勤<br>　　　  チームミーティングや情報交換<br>10:00　担当の携帯ショップへ到着<br>11:00　提案/1契約目成立♪<br>12:00　お昼休憩<br>13:00　提案/2契約目成立♪<br>15:00　提案/成約にはならず。残念。<br>17:00　帰社し、チームで振り返り<br>　　　  その日の成約と失注の理由をもとに先輩社員よりフィードバック<br>17:30　明日の提案準備<br>18:00　お疲れ様でした♪<br><br>★充実な研修制度<br>入社後、1カ月間は”しっかり”と研修をしていただきます。<br>基礎的な知識を身に着けた後は実践を通して学んでいただきます。<br>見る・聞く・体験を通して成長をすること間違いなし♪<br><br>★具体的な研修内容は？<br>＜入社後の2週間＞<br>本社にて研修を実施します。<br>専任のトレーナーが商材や提案時のプレゼントークをお伝えします。<br><br>＜3週目以降＞<br>配属先にて研修を実施します。<br>先輩社員と同行して社内ルールやお仕事の流れをその場でレクチャー！<br><br>＜入社1カ月後/営業デビュー＞<br>営業デビュー後もフォロー体制が整っています♪<br>先輩社員と同行やロープレが出来るだけでなく、<br>専任の営業トレーナーが皆さまが活躍できるまでフォローします！<br>実践を通して分かったポイントは振り返りし、次に活かして行きましょう！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00（所定労働時間8時間/休憩60分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制（火曜・水曜）<br>　※休日出勤は一切ありません。<br>■年末年始休暇（5日間） <br>■特別休暇（5日間）<br>リフレッシュ休暇、バースデー休暇、アニバーサリー休暇、ファミリー休暇、イベント休暇、美容Day、LOVE休暇、部活休暇、モチベーション休暇、コミュニケーション休暇<br>■有給休暇（初年度10日間〜勤続年数に応じて最大20日）<br>■結婚休暇<br>■産前産後・育児休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備（健康保険/厚生年金保険/雇用保険/労災保険）<br>□社員旅行 <br>■研修制度 <br>□社外セミナー無料受講制度 <br>■再雇用制度<br>□社用車支給 <br>■車両費（車両持込の場合、3万円/月） <br>□引越手当　※規程あり<br>■住宅手当　※規程あり<br>□借り上げ社宅　※規程あり <br>■部活動（スノボ、サーフィン、バスケ、テニス、野球など） <br>□社内イベント（年2回BBQ・運動会・忘年会など） <br>■結婚祝い金（3万円） <br>□出産祝い金（2万円） <br>■弔慰金<br>□通勤手当実費支給</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEZEPE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

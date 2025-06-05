@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売促進・販促企画｜日本フェルスター株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>アプリケーションスペシャリスト</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>日本フェルスター株式会社</dd>
+
       <dt>職種名</dt>
       <dd>販売促進・販促企画</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市西淀川区御幣島 5-6-2</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5550012</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>１）試料測定の装置セットアップ・メンテナンスや実際の測定作業には、棒鋼や部品に人口傷を加え旋盤にセットし測定を行う等、大学では技官の方が行われる手作業も自ら行う事に抵抗感の無い方<br><br>２）磁性学会の大学や産業界のトレンドを理解し、効果的なコンサルティング型マーケティングを展開し、<br><br>３）当社製品の日本市場展開に必要な日本市場へのカスタマイゼーションを本社と英文メールで密に連絡を取り合うなど協力して行い、<br><br>４）当社装置で客先が持つ課題が解決出来て購入する価値があると認めさせるアプリケーションレポートを作成<br><br>５）ドイツ本社の英文技術情報和訳のProof readingなど本社が製造する装置を日本市場に販売促進する上での英文と日本語のgapを埋めるタスクの技術的な面も担当。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>フレックスタイム制（労働時間7.5時間）<br>基本は9：00～17：30<br>コアタイム　11：00～15：00<br>休憩時間　60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休二日制（土日祝）<br>年次有給休暇（10日〜勤続年数に応じて最大20日）<br>創立記念日<br>夏季休暇<br>慶弔休暇<br>年末年始休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋外にスペースがあります</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険（雇用/労災/厚生年金/健康保険）<br>育児・介護休業、慶弔見舞金、健康診断、再雇用制度、忘年会、永年勤続賞、TOEIC報奨金、英語教育費用</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%97%A5%E6%9C%AC%E3%83%95%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%BF%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

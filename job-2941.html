@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>社内情報システム（社内SE）｜株式会社エージェント</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>要望対応ではない社内・現場の困った解決に直接コミットする情シスメンバーを募集！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社エージェント</dd>
+
       <dt>職種名</dt>
       <dd>社内情報システム（社内SE）</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区道玄坂２丁目２５−１２ 道玄坂通 5階</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500043</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>2020年4月に「TOKYO PRO Market」に上場し、総合人材サービス会社として成長を遂げてきた当社。<br>「社会の困ったを解決する」というミッションのもと、個人のキャリア課題と企業のビジネス課題に向き合ってきました。時代と共に個人・企業が持つ課題は変化しており、当社では両者のニーズにお応えする時代に合ったサービスを提供しています。<br><br>■募集背景：<br>デジタル戦略室にて情報システム部門としての機能を担いつつ、次のステップとして積極的に社内の改革を推し進めることが可能な人材を募集します。<br>以下全てという訳ではありませんが、既存のメンバーとともに以下を実施いただけるようお願いしたく存じます。<br><br>■現状想定される具体的な業務内容：<br>以下すべてを実施するわけではなく、現状はインフラ関係を中心に見ていただきますが、キャリアパスに応じて相談させていただければと考えています。<br><br>・社内インフラ（拠点ネットワーク含む）の運用・保守<br>・ITソリューションの設計、開発、運用、保守<br>・責任者の指示に従った情報システムの開発・運営サポート業務<br>・全社が利用する基幹システム、SaaS、グループウェアの開発・導入・運用・保守・業務効率化<br>・全社の個人情報の管理、漏洩防止のための対策実施、トラブル発生時の対応などのサポート業務<br>・社内のIT資産管理・整備、従業者の業務効率向上施策の策定、実施<br>・社内ヘルプデスク<br>・社外ベンダーとの折衝、購買など外部管理に関わる業務<br>・その他情報システムに関する付随業務<br>・その他デジタル戦略室付随業務</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10：00～19：00（所定労働時間8時間、休憩1時間）<br>※原則出社での勤務となります。<br>フレックスタイム制（コアタイム10時～15時）<br>禁煙</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制（土・日）<br>■祝日<br>■年末年始休暇（12/30～1/3）<br>■年次有給休暇（初年度10日〜勤続年数に応じて最大20日）<br>■慶弔休暇<br>■出産・育児休暇（★男性社員の育児休暇取得実績もあり）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備(関東ITソフトウェア健康保険組合)<br>-健康診断<br>-病気や怪我の給付や出産育児付加金等が充実<br>-提携スポーツクラブ、旅行パック、人気テーマパークの割引制度<br>■ベネフィット・ステーション<br>-グルメ・レジャー・ショッピング・スポーツだけでなく、健康・引っ越しなどライフイベントに関わるものまで、140万件と幅広いメニューを完備<br>■研修制度<br>-Be Ambitious研修：全社員対象<br>社会の「困った」を解決することが使命である当社にとって、課題発見のスキルは必要不可欠です。課題発見力・スタートアップスキルを磨くため、ランダムで4～6名のチームを組み、半年単位で新規事業立案を行なっています。<br>■社内表彰制度（年に4回）<br>-表彰メンバーには手当あり<br>■e-learningサービス<br>-いつでも『Smart Borading』内の研修動画を視聴可能<br>■経営合宿・責任者合宿<br>■資格取得支援<br>■副業可（※申請許可制）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

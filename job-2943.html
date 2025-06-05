@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ルートセールス・代理店営業｜ROSCA株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【創業5期目】5期目に向けパートナーセールス募集※未経験歓迎</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>ROSCA株式会社</dd>
+
       <dt>職種名</dt>
       <dd>ルートセールス・代理店営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都千代田区東神田1丁目10-7　BIZCORE東神田　10階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>千代田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1010031</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>あなたには「パートナーセールスチーム」にてご勤務いただき、<br>様々な企業様とお取引のあるパートナー企業様と折衝をし、当社が抱えているエンジニアに最適な求人を提供します。<br><br>【具体的な仕事内容】<br>■パートナー企業様・エンジニアへの各種サポート・フォロー<br>┗電話やメール、オンラインツールを使用して行います。<br>■パートナー企業様と案件に関する折衝<br>■当社登録のエンジニアにあった案件探し<br>■運営サービスの改善<br>■新規サービスの立案　など<br><br>※商談はWeb商談が90％、要望に合わせて対面でも行います<br><br>＜入社後の流れ＞<br>＝＝＝＝＝＝＝＝＝＝<br>▼初日～3日間は座学で研修を行います！<br>▼その後はOJTにて業務を覚えていっていただきます。<br><br>＜身につくスキルや知識＞<br>＝＝＝＝＝＝＝＝＝＝＝＝<br>◎提案力などの営業スキル、エンジニアを紹介するポジションのため、エンジニアに関する知識や業界についての知見、エンジニア採用に特化した知識などが身につけられます。<br><br>＜私たちのミッションについて＞<br>＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>私たちのミッションは、「関わった人すべてを幸せにする」こと。<br><br>パートナー企業様、エンジニアはもちろんのこと、働く私たち自身も含め全員を幸せにするような仕事をすることを目標としています。<br>一人ひとりが幸せになる仕事をしたその先に、会社のさらなる繁栄があることを信じて日々の業務に取り組んでいます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00（所定労働時間8時間　休憩60分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日<br>125日以上<br><br>休日・休暇<br>■完全週休2日制<br>（土日）<br>■祝日休み<br>■年末年始休暇<br>■GW休暇<br>■夏季休暇<br>■慶弔休暇<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>■産前・産後休暇<br>■育児休暇<br>■介護休暇<br>■特別休暇<br>■入社時特別有給休暇（5日）<br>★5日以上の連休取得も可能です！</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■交通費支給（全額）<br>■時間外手当<br>■住宅手当（月2万円 ※2駅以内）<br>■食事手当<br>■社会保険完備（雇用・労災・健康・厚生年金）<br>■健康診断<br>■産休・育休制度<br>■服装自由（ネイルOK）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=ROSCA%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
