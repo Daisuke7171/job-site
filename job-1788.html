@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>警備・施設管理関連職｜ＡＬＳＯＫ東京株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【若手歓迎求人】都内大型施設のセキュリティスタッフ（正社員）</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>ＡＬＳＯＫ東京株式会社</dd>
+
       <dt>職種名</dt>
       <dd>警備・施設管理関連職</dd>
+
       <dt>勤務地</dt>
       <dd>東京都千代田区大手町１－３－１</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>千代田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1000004</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>都内大型施設のセキュリティスタッフとして活躍していただきます。<br>具体的なお仕事内容は<br>・館内外の巡回<br>・施設を利用する方の出入管理（入館証の確認、お声がけ）<br>・入出庫する車両の案内、周囲への安全喚起<br>・来館する方や、業者様への入館証発行・受付<br>業務に習熟してきましたら<br>・防災センターでのモニター監視、鍵や遺失物の取扱、など</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>変形労働時間制（週平均所定労働時間40h）<br><br>■当務／10：00～翌10：00（休憩8h）<br>■日勤／10：00～19：00（休憩1h）<br>■夜勤／19：00～翌10：00（休憩3h）<br>※時間外勤務別途あり<br><br>＜基本シフト例＞<br>月：当務<br>火：明け休み<br>水：当務<br>木：明け休み<br>金：日勤<br>土：休日<br>日：休日</dd>
+
       <dt>休暇・休日</dt>
       <dd>■4週8休制（シフト制、週一日は必ず休日があります）<br>■有給休暇（入社半年後に10日付与、最大年間20日付与）★取得率は7割以上<br>■特別休暇（慶弔休暇）<br>■介護休暇<br>■産前産後休暇・育児休暇<br>■プレミアムホリデー制度</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋外に喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■昇給年1回（4月）<br>■賞与年2回（6・12月）※入社2年目見込3.3ヶ月分<br>■社会保険完備<br>■交通費支給（月5万円まで）<br>■ALSOKグループ企業年金（DB）※入社3年経つと会社負担で自動加入<br>■資格手当<br>└TOEIC、英検、秘書検定、自衛消防技術認定証、施設警備業務検定等<br>■扶養手当<br>└扶養する60歳以上の両親：1人月2000円／配偶者：月1万8000円／子1人：月5000円<br>■役職手当<br>■退職金<br>■財形貯蓄<br>■社員持株<br>■確定拠出年金（賞与DC）<br>■住宅取得支援<br>■財産形成支援<br>■ライフサポート倶楽部<br>■保養施設（那須／１泊2000円）<br>■ALSOK通信教育講座（英会話、マネジメントスキル等）<br>■資格取得支援（会社指定の場合は費用補助や社内研修あり）<br>■制服貸与<br>■再雇用制度（最長75歳）<br>■育児のための短時間勤務（10歳未満の子を持つ社員）<br>★女性活躍推進法に基づく「えるぼし（二つ星）」認定取得</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%EF%BC%A1%EF%BC%AC%EF%BC%B3%EF%BC%AF%EF%BC%AB%E6%9D%B1%E4%BA%AC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

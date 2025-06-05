@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>サービスエンジニア・サポートエンジニア｜株式会社日本技術センター</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【プライベートを大事にしながら手に技術力を付ける】／時間外10H～30H/賞与年3回</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社日本技術センター</dd>
+
       <dt>職種名</dt>
       <dd>サービスエンジニア・サポートエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府東大阪市長堂1-3-14 トクヤスビル3F</dd>
+
       <dt>都道府県</dt>
       <dd>兵庫県</dd>
+
       <dt>市区町村</dt>
       <dd>東大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5770056</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>大手電機メーカー、重工メーカーの生産施設への配属を中心に<br>技術系総合職として生産技術・製造技術・開発評価・設計・メンテナンスなどを行っていただきます。<br>※職種・職場変更も可能。<br><br>◎保守・メンテナンス<br>製造設備などが問題なく稼働しているかどうか、チェックシートを元に点検します。<br>異常があった際は、自身で対応できるものは対応し、難しい修理が必要な場合は製造メーカーに依頼。また、製造物に合わせた動作速度などの確認・調整も行います。<br><br>◎生産技術<br>製造の効率化・生産性の向上に向けて、オペレーションの見直しやマニュアルの改善などを担当。<br>新規立ち上げの現場の場合は、設備の組立や部品の加工、試運転、検査なども行います。<br><br>◎評価・検査・分析<br>マニュアルに沿って、素材の成分分析や耐久性、完成品の色ムラやキズ、耐久性の確認などを行い、それぞれのデータをシステムに入力します。<br><br>◎品質保証<br>製品に不良品が出てしまった場合は、原因を究明するための調査を行います。<br>例えば製品にキズがついている場合、どこで、何故ついたのかを調べ、リスクが減るよう改善していきます。<br><br>◎設計・設計補助<br>搬送機の部品詳細設計や化学プラントのシステム設計に取り組みます。<br><br>【キャリアプラン】<br>希望の働き方に応えられるよう、さまざまなキャリアプランをご用意。将来的にマネジメントポストにつくという選択肢だけではなく、技術者のスペシャリストとして現場で働きたいという方も大歓迎です。<br>配属先の大手メーカーへの転籍や、設計などにキャリアチェンジも可能。また、自社工場で新たな知識やスキルを学ぶといったこともできます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:30〜17:30<br>所定労働時間8時間、休憩1時間<br><br>※メンテナンスの業務上、生産が止まっているタイミング（夜間や土日祝）に勤務が発生する可能性がございます（夜勤不可等の場合はその業務にアサインすることはありません）。</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日117日＋有給奨励日5日＝122日が休みとなります。<br>土日祝休み <br>　※会社カレンダーによる（年に数日、土曜出勤があり）<br>夏季休暇<br>年末年始休暇<br>有給休暇（入社6ヶ月経過後に10日間付与／取得率83％）<br>GW休暇<br>慶弔休暇<br>産休・育休<br>介護休暇<br>看護休暇<br>結婚休暇<br><br>※メンテナンスの業務上、生産が止まっているタイミング（夜間や土日祝）に勤務が発生する可能性がございます（夜勤不可等の場合はその業務にアサインすることはありません）。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋外喫煙スペースにて喫煙可能</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>交通費支給<br>資格受験料支給 <br>資格取得祝金支給 <br>退職金制度（確定拠出年金／費用は会社が全額負担）<br>持株会制度<br>住宅手当、家賃補助（規定あり） <br>財形貯蓄制度<br>各種研修制度（入社時の基礎研修（座学）など） <br>結婚、出産祝金<br>入院・弔慰見舞金</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%97%A5%E6%9C%AC%E6%8A%80%E8%A1%93%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

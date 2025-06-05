@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Web・SNSマーケティング｜株式会社セキュア</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>Webマーケティング担当</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社セキュア</dd>
+
       <dt>職種名</dt>
       <dd>Web・SNSマーケティング</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿２丁目６−１ 新宿住友ビル ２０階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>▼ ミッション<br>・当社プロダクトの魅力を多くの人に届ける<br><br>▼ 業務内容<br>・当社のプロダクト（入退管理、監視カメラ、混雑予測、無人店舗ソリューションなど）のリード獲得とエンゲージメント向上を目指したマーケティング戦略の立案・実行<br>・SEOを中心としたWEBマーケティング施策の実施・最適化<br>・データ分析に基づく施策の改善と成果最大化<br><br>▼ 具体的な業務<br>（WEBマーケティング戦略の策定）<br>・各プロダクトのターゲット市場と顧客ニーズに基づき、オンラインマーケティング戦略を設計<br>・ペルソナ設定や顧客ジャーニーの分析・最適化<br><br>（SEO施策の実施・管理）<br>・キーワードリサーチ、競合分析、コンテンツ最適化<br>・内部・外部リンクの戦略的構築<br><br>（コンテンツマーケティング）<br>・ブログ記事、ホワイトペーパー、ケーススタディなどの作成・監修<br>・コンテンツパフォーマンスの分析と改善提案<br><br>（データ分析とレポート）<br>・Google Analyticsやその他のツールを用いたサイトパフォーマンス分析<br>・マーケティング施策のKPI管理とレポート作成<br><br>（広告運用）<br>・Google Ads、SNS広告（Facebook、Xなど）の運用・効果測定</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>始業：9:00<br>終業：18:00<br>所定労働時間8時間、休憩1時間（12:00 - 13:00）</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休２日制（土、日）祝<br>・慶弔休暇<br>・年末年始<br>・夏季休暇※7~9月の間に3日間自由に取得可能<br>・GW休暇<br>・有給休暇（10日〜勤続年数に応じて最大20日）（時間単位での有休取得が可能）<br>・産前産後休暇・育児休暇　<br>※5日以上の連続休暇の取得が可能です。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・表彰制度<br>・インセンティブ制度<br>・役職手当<br>・出張手当<br>・従業員紹介制度<br>・各種社会保険完備</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%BB%E3%82%AD%E3%83%A5%E3%82%A2" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
