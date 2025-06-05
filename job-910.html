@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>インフラエンジニア｜株式会社グローヘッド</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>《未経験OK》インフラエンジニア職｜教育注力 / 他社にないキャリアの選択肢！</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社グローヘッド</dd>
+
       <dt>職種名</dt>
       <dd>インフラエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>東京都品川区西五反田8-3-13　フルオカビル7F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>品川区</dd>
+
       <dt>郵便番号</dt>
       <dd>1410031</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>インフラエンジニアとしてIT基盤システムの運用・保守から構築・設計まで一連の業務を幅広く担当していただきます。<br><br>【担当イメージ:入社直後 ~ エンジニア歴3年程度の方】<br>・システム監視：インフラ機器のリアルタイム監視、障害発生時のアラート対応や初期対応、監視ツール(Zabbix、Nagios、Prometheusなど)の設定&amp;運用 など<br><br>・障害対応：障害の切り分け、原因調査、復旧作業、障害対応プロセスのドキュメント化、障害発生時のインシデントレポートの作成および報告 など<br><br>・パフォーマンス管理:システムのパフォーマンス監視、チューニング、キャパシティプランニングとリソース管理、定期的なパフォーマンスレビューと改善提案 など<br><br>・バックアップ管理：データの定期バックアップとリストアテスト、バックアップポリシーの策定と運用、災害対策の計画および実行 など<br><br>・定期メンテナンス：インフラ機器の定期的なメンテナンス、OSやミドルウェアのアップデート、パッチ適用、ハードウェアの状態確認や保守 など<br><br>・ドキュメント管理：運用マニュアルや手順書の作成や更新、システム構成図やネットワーク構成図の維持管理、設定変更やインシデント記録と管理 など<br><br>・セキュリティ管理：セキュリティパッチの適用と管理、ログ監視と異常検知システムの設定や運用、セキュリティポリシーの見直し など<br><br>・ユーザーサポート：社内外ユーザーからの問い合わせ対応、権利管理やアクセス制御、問題解決に向けた技術サポートの提供 など<br><br>・協力およびコミュニケーション：他部門やベンダーとの連携及び調整、運用チーム内での知識共有とトレーニング、定例ミーティングへの参加と報告 など<br><br>【担当イメージ:エンジニア歴4年以上の方】<br>・要件定義：クライアントや社内関係者へのヒアリング、システム要件及び機能要件の整理、要件定義書の作成と合意形成 など<br><br>・基本設計：システム全体の構造設計、ネットワーク構成図やサーバー構成図の作成、セキュリティ設計 など<br><br>・詳細設計：各構成の詳細な設計書の作成、ミドルウェアやソフトウェアの選定と設定、ストレージ設計及びバックアップ設計 など<br><br>・構築：インフラ機器のセットアップ、OS及びミドルウェアのインストール設定、仮想化環境やクラウド環境の構築 など<br><br>・テスト&amp;検証：構築後の各種テストの計画と実行、テスト結果の分析と報告、不具合修正と再テストの実施 など<br><br>・プロジェクト管理：スケジュールの作成と進捗管理、リソース管理、チームメンバーの調整、定例ミーティングの開催やお客様への報告 など<br><br>・セキュリティ対策：セキュリティポリシーの策定と実施、ファイアウォール、IDS/IPSの設定と管理、セキュリティ監査 など<br><br>・移行計画：既存システムから新システムへの意向計画、データ移行と検証 など<br><br>・協力およびコミュニケーション：開発チームや運用チームとの密な連携、お客様やベンダーとの調整や交渉 など</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>始業 = 10:00~19:00<br>1日の労働時間：8時間、休憩1時間<br>1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下）</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休二日制（休みの曜日は配属プロジェクトにより異なります）<br>※年間休日数は、配属プロジェクトにより休日数が前後する場合があります。<br><br>【休暇】<br>年次有給休暇<br>慶弔休暇<br>リフレッシュ休暇（3日）<br>特別休暇<br>産休・育休 など<br><br>【働き方】<br># 配属プロジェクトにより、夜間帯の業務あり<br># 在宅勤務あり（一部）※配属先プロジェクトにより異なる<br># 転職や独立への支援あり<br># 副業可能</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 室内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>リフレッシュ休暇<br>IT資格取得奨励：受験費用の補助 など<br>トレーニングマネージャー制度<br>転職支援「Grow転職」<br>独立支援「ヘッドースタート」<br>食事補助<br>健康診断・ストレスチェック<br>副業OK</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%98%E3%83%83%E3%83%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

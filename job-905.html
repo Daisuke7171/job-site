@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜エヌエス・テック株式会社（営業・労務管理）</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【創業51周年】人材派遣企業での人材コーディネーター◆未経験OK◆賞与年3回◆／横浜本社</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>エヌエス・テック株式会社（営業・労務管理）</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>神奈川県 / 〒230-0051 / 神奈川県横浜市鶴見区鶴見中央4-14-14</dd>
+
       <dt>都道府県</dt>
       <dd>香川県</dd>
+
       <dt>市区町村</dt>
       <dd> / 〒230-0051 / 神奈川県横浜市</dd>
+
       <dt>郵便番号</dt>
       <dd>2300051</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 3000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>製造業での就業を希望する求職者様と、<br>人材を欲している企業様をマッチングさせるお仕事です！<br><br>・求職者対応<br>応募があった方へ架電し、希望条件のヒアリング・面談日程調整<br><br>・面談対応<br>感染症対策として、電話もしくはWEBにて面接<br><br>・登録スタッフへのお仕事紹介<br>過去に登録のあったスタッフへ架電し、希望条件に合うお仕事を紹介<br><br>クライアント・求職者双方のニーズに答えていくことが必要なため、<br>「もっとこうした方がいいのでは？」といったアイデアを<br>チームで出し合いながらお仕事を進めていただきます。<br><br>■エヌエス・テックの特徴<br>製造業のアウトソーシング事業に特化して今年で創業50周年！<br>安定した経営基盤のある会社です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>★就業時間はシフト制★<br>早番　8:30～17:30<br>遅番　11:00～20:00<br>所定労働時間8時間／休憩60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制（土日） ※土曜日出勤あり・翌週の平日に振替休日あり<br>年末年始・GW、夏季大型連休あり　<br>(その他慶弔休暇、産前・産後休暇、育児休暇、介護休暇)<br>有給休暇（入社6ヶ月後に10日付与〜勤続年数に応じて最大20日）<br>年間休日120日（有給促進日5日含む）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>各種手当(残業・休日)<br>通勤交通費(5万円まで/月))<br>各種保険完備（健康・労災・雇用・厚生年金）<br>昇格あり(就業規則に則る)<br>定年(60歳)<br>定年再雇用制度あり<br>退職金制度あり(就業規則に則る)</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%A8%E3%83%8C%E3%82%A8%E3%82%B9%E3%83%BB%E3%83%86%E3%83%83%E3%82%AF%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%EF%BC%88%E5%96%B6%E6%A5%AD%E3%83%BB%E5%8A%B4%E5%8B%99%E7%AE%A1%E7%90%86%EF%BC%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
