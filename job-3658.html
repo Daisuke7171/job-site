@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社コプロコンストラクション</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【人材営業】★早期キャリアアップ可能★未経験歓迎</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社コプロコンストラクション</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>宮城県仙台市青葉区中央一丁目2番3号 仙台マークワン14F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>仙台市</dd>
+
       <dt>郵便番号</dt>
       <dd>9800021</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>・企業の人財ニーズを把握／情報収集<br>・エンジニアの紹介<br>・契約内容の交渉や整理<br>・派遣スタッフのフォロー<br><br>＜メンバーの特徴＞<br>・20代の若手メンバーが重心に活躍中<br>・業界未経験の社員多数<br>・チャレンジ精神を大切にしており、成長意欲が高い</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休⽇：125⽇<br><br>・完全週休2日制（土日休み）<br>・有給休暇（10日～勤続年数に応じて最大20日）<br>・年末年始休暇<br>・慶弔休暇<br>・夏季休暇<br>・GW休暇<br>・特別休暇<br>・育児休暇<br>・産前産後休暇<br>・介護休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・昇給査定年2回<br>・通勤手当（全額支給）<br>・社会保険完備（雇用・労災・健康・厚生年金）<br>・家賃補助（※社内規定あり）<br>・福利厚生倶楽部（社内ポイント制度）<br>※毎月のポイント付与あり（アマゾンポイントへ変換可能）<br>・旅行／グルメ／フィットネス／レジャーなどの余暇支援割引<br>・育児や介護におけるサービス<br>※人気ランキング上位は「映画やカラオケ料金の割引」「食事券」など<br>・定期健診／ストレスチェック／産業医面談<br>・結婚祝金（最大5万円）<br>・出産祝金（一律1万円）<br>・慶弔金／見舞金あり<br>・キャリアチャレンジ制度<br>・インフルエンザ予防接種共用補助<br>・従業員持株会制度（奨励金あり）<br>※社内受動喫煙の可能性はありません</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B3%E3%83%97%E3%83%AD%E3%82%B3%E3%83%B3%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

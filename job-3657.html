@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>人事｜マスターピース・グループ株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【リモート制度有／人事担当者】組織の戦略立案フェーズをCOO直下で担う【フレックス】</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>マスターピース・グループ株式会社</dd>
+
       <dt>職種名</dt>
       <dd>人事</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区西麻布1-8-12 MPG西麻布ビル</dd>
+
       <dt>都道府県</dt>
       <dd>愛知県</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1060031</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■業務内容<br>・新卒採用業務<br>└グローバル志向を持つ学生の採用（2025年度新卒：13名入社予定）<br>└適切な採用チャネルの選定<br>└採用PR動画のディレクション<br>└KPI管理<br>└面接対応（説明会や１次面接は別メンバーが対応予定）<br>└内定者フォロー企画、実行<br>※主に新卒採用における全体計画のディレクションを行っていただきます。<br><br>・中途採用業務<br>└経営陣との採用要件すり合わせ<br>└適切な採用チャネルの選定<br>└スカウト媒体ディレクション（配信業務はRPO提携企業に委託）<br>└KPI管理<br>└面接対応（主に１次面接やカジュアル面談を担当）<br>└アトラクト戦略立案、実行<br>※計画立案から実行まで一連の流れをお任せいたします。<br><br>・リテンション施策の実施<br>└社員面談（入社後、評価時など）<br><br>・評価制度運用、改善<br>└人事評価制度のメンテナンス<br>└経営陣への改善提案<br><br>・MVV浸透施策<br>└行動指針（クレド）の浸透<br>└評価制度への連動設計<br><br>・教育研修フローの確立<br>└スキルマップ策定<br>└教育方針の決定<br>└研修プログラムの設計<br>└研修ベンダー会社との調整業務<br><br>※職務内容補足<br>雇入れ直後：上記参照<br>変更の範囲：当社における各種業務全般<br><br>■人事チーム<br>部長1名（取締役）、メンバー2名（20代）、パートナー企業（戦略立案、応募者対応、スカウト実務実行、採用広報記事作成など）<br>※入社後は取締役およびパートナー企業と連携しながら業務遂行していただきます。<br><br>■入社後の流れ<br>オンボーディングのために数日～1週間、本社で研修やオリエンテーションに参加していただきます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>フレックスタイム制　標準労働時間1日8時間（コアタイムは10時～15時）<br>休憩時間：60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（休日は土日祝日）<br>年末年始休暇<br>年次有給休暇（10日～20日※消化率80％以上）<br>産前産後休暇、育児休暇（育休後復帰率100%）<br>年間休日日数120日</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>通勤手当<br>社会保険完備（健康保険、厚生年金保険、雇用保険、労災保険）<br>退職金制度（5年以上の勤務者が対象）<br>育児支援制度<br>フレックスタイム制（コアタイム10時〜16時）<br>中堅社員研修（内部、外部）<br>資格取得支援制度<br>在宅勤務制度（相談可＜週1~リモート＞）<br>社員割引制度（輸入食材）<br>時短勤務制度（10：00～16：00等）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%94%E3%83%BC%E3%82%B9%E3%83%BB%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
