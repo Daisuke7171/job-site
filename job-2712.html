@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>サービスエンジニア・サポートエンジニア｜吉福エンジニアリング株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【サービスエンジニア・未経験OK】関西トップクラスのシェア★専門技術が身に付く！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>吉福エンジニアリング株式会社</dd>
+
       <dt>職種名</dt>
       <dd>サービスエンジニア・サポートエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>京都府京都市南区上鳥羽金仏町56番地</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>府京都市</dd>
+
       <dt>郵便番号</dt>
       <dd>6018175</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>当社は、機械式立体駐車場メンテナンスサービスを展開する会社。駐車場メーカーのパートナーとして高い信頼を得ており、保守・点検・修理までをトータルに手がけています。<br><br>【仕事内容】<br>サービスエンジニアとして、立体駐車場の保守点検・故障修理、付随する各種業務をお任せいたします。<br><br>◎ボルトの緩みやパレットの傾きなど細部の点検<br>◎摩耗した箇所の測定および補修<br>◎オイル・グリスなどの塗布<br>◎制御盤内および全体の点検・動作確認<br>◎点検後のオーナー様への報告、報告書作成<br>◎オーナー様への部品の交換や修理の提案、ほか<br><br>現場では通常2～5名のチーム制で、1日に2～3現場を回ります。目に留まる部分から制御盤の内部にいたるまで、さまざな不具合を想定したメンテナンス業務と故障した際の復旧が私たちのミッションです。<br><br>【入社後の流れ】<br>入社後、まずは立体駐車場（機械式駐車場）の安全について、基礎からお教えします。事故事例の説明や点検作業の種類、部品知識などを通して「なぜこの作業が必要か」を意識して学んでいただきます。その後、現場に先輩と同行し、実際に機械のメンテナンスや修繕工事の方法を学びます。<br>現場には通常2～3名（先輩2人：新人1人）で行くので、いきなり業務を丸投げされることはありません。わからないことはどんどん質問していただきつつ、着実にノウハウを身につけていってください。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:30～18:00<br>所定労働時間8時間、休憩90分</dd>
+
       <dt>休暇・休日</dt>
       <dd>・週休2日制（土曜日、日曜日、祝日）<br>・年末年始休暇<br>・GW休暇<br>・有給休暇（入社半年後10日〜勤続年数に応じて最大20日）<br>・慶弔休暇<br>※月1回土曜出勤あり（会社カレンダーによる）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>【各種手当】<br>家族手当、待機手当、時間外手当、資格手当、通勤費（公共交通機関使用で上限3万円）<br><br>【福利厚生】<br>・社会保険完備（雇用保険/労災保険/健康保険/厚生年金保険）<br>・退職金あり<br>・契約保養施設（エクシブ）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E5%90%89%E7%A6%8F%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
