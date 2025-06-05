@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社赤阪鐵工所</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【焼津市】法人営業職　残業月10時間以下／17時～18時帰宅／家族との時間を優先したい方へ</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社赤阪鐵工所</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>静岡県焼津市柳新屋670-6</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>焼津市</dd>
+
       <dt>郵便番号</dt>
       <dd>4250074</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■業務内容:<br>船舶用エンジンの製造を行っている同社にて、船舶用エンジンで培った同社の鋳造・機械加工及び設計の技術力を活かした、鋳造品・機械加工品等の法人営業を担当頂きます。<br><br>■製品例：<br>免震装置／グラビア印刷機のフレーム／クランクシャフト／順天頂衛星用アンテナ／医療機器　等<br><br>■業務詳細：<br>・関東／東海エリアをメインに、既にお取引のある企業に対して営業活動を行います。（外泊は殆どなく、大半が日帰りです）<br>・お客様から求める製品のニーズをお聞きするとともに、同社の製造実績や製造設備をお伝えし、受注から納品まで対応頂きます。受注からの納品までは3カ月から6か月程度です。<br>・10社~20社程度担当し、1日1，2社程商談を行っております。一部新規開拓もありますが、既存のお客様がメインです。<br>・予算は年間での目標があり、月別で計画を行い進めていきます。目標の達成は、評価制度により昇給・賞与に反映はされますが、メンバー同士大幅な差はなく、安定的な収入が望めます。<br><br>■働き方：<br>営業職では珍しく、残業は月10時間程度。営業担当には、訪問をメインに行って頂き、見積書・提案書の作成は担当の方が行うなどの工夫を行っています。製造工場も大半の部署は夜勤がないため、社内の打ち合わせは稼動している日中に行なうことが多いです。<br><br>■組織体制：<br>プラント営業としての営業活動を行っている担当者は3名おり、他、設計2名、事務1名、管理者2名です。<br>・入社後の流れ／訪問には上司や先輩も同席しますので、ご安心ください。機械加工等に関する知識も必要ですが、課長の方が教育していきます。クレーンや玉掛、フォークリフト免許の免許も取得頂きますが、講習費用は会社負担です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>08:00～16:50<br>所定労働時間8時間、休憩50分</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休二日制<br>土曜 日曜 祝日<br>その他（GW/夏期/年末年始/誕生日/メモリアル休暇）<br>有給休暇：入社半年経過時点10日 最高付与日数20日</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>各種社会保険完備（健康保険：有 厚生年金：有 雇用保険：有 労災保険：有）<br>財形貯蓄、従業員持株会、資金貸出制度(住宅基金/厚生資金/教育資金)、永年勤続表彰、育児・介護休業制度<br>借り上げ社宅:自己負担5,000円～(独身者・最長8年入居可（条件による））<br><br>退職金：有</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E8%B5%A4%E9%98%AA%E9%90%B5%E5%B7%A5%E6%89%80" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

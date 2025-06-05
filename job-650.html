@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>交通（鉄道・バス・タクシー）関連｜日交ひかり株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【アプリドライバー】★予約制でお客様を探す必要ナシ！★入社後1年間は最大40万円給与保証あり</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>日交ひかり株式会社</dd>
+
       <dt>職種名</dt>
       <dd>交通（鉄道・バス・タクシー）関連</dd>
+
       <dt>勤務地</dt>
       <dd>東京都大田区南蒲田１－１３－２２</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>大田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1440035</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>東京23区を中心に、タクシー運行を行っていただきます。普通1種免許しかお持ちでない方でも、当社の教育システムによる短期養成で2種免許が最短9日間で取得できます。<br><br>【入社後の流れ】<br>1、自動車二種免許の取得<br>・試験合格率100％！<br>・免許取得費用は会社が全額負担！<br>・教習期間中も、給与はきちんとお支払いします。※日給1万円<br><br>2、研修（乗務の専門知識）<br>・10日間ほどの研修<br>・研修中も給与はきちんとお支払いします。※日給1万円<br><br>3、実務スタート<br>ベテラン社員が助手席に同乗してお客さまを送迎しますので、安心です。<br><br>4、タクシードライバーとして独り立ち<br>独り立ち後も、研修やミーティングがありますので分からないことがあれば気軽に聞くことができます！<br><br>★働き方や当社の魅力については以下動画をご覧ください<br>https://youtu.be/rpndFUk3Jxc<br><br>【車両について】<br> 全車オートマチックで、全車次世代タクシー車両（JPN TAXI）<br>また、日本交通仕様の車両には、全車にカーナビ、クレジットカード決済機、ETC、デジタル無線、車内防犯カメラ、ドライブレコーダーを標準装備しています。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>【隔日勤務】<br>14:00～翌日10:00（午後出社）<br>※その他の時間も相談可能です。<br>・月間12～13回乗務<br>・1乗務14時間30分～18時間（別途休憩3時間、週40時間制）<br>※法定外の残業はありません<br><br>【隔日勤務とは？】<br>当社のタクシーは隔日勤務になります。 隔日勤務とは、1回の乗務で2回分働いてまとめて2日分休息するという勤務シフトです。 1乗務の労働時間や月間の労働時間の上限は法律で厳しく定められており、それ以上の労働はありません！ 体が慣れるまでは大変ですが、慣れれば時間を有効に使え充実した余暇を過ごせます。</dd>
+
       <dt>休暇・休日</dt>
       <dd>月6～8日　※乗務翌日は明け番（休み）になるため実質・月休18日程度<br>慶弔休暇<br>有給休暇（入社半年後に10日付与。最大20日）<br>特別休暇<br><br>【1ヶ月の勤務例】<br>月　　火　　水　　木　　金　　土　　日<br>公休　乗務　明休　乗務　明休　乗務　明休<br>公休　乗務　明休　乗務　明休　公休　公休<br>乗務　明休　乗務　明休　乗務　明休　公休<br>乗務　明休　乗務　明休　乗務　明休　公休<br>公休　乗務　明休<br>※乗務12日、明け休み12日、公休7日での勤務例</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 車内禁煙、事業所敷地内に喫煙所あり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（雇用・労災・健康・厚生年金）<br>面接交通費を2000円支給<br>二種免許の取得費用を会社が全額負担（2年以上勤務の方対象）<br>資格取得支援制度（介護職員初任者研修・東京シティガイド検定などの受検費用の負担）<br>全車AT車（カーナビ付き）<br>制服貸与<br>ロッカールーム・休憩室完備</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%97%A5%E4%BA%A4%E3%81%B2%E3%81%8B%E3%82%8A%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

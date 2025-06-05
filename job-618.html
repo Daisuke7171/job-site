@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>交通（鉄道・バス・タクシー）関連｜改進タクシー株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【タクシードライバー（未経験OK）】日本交通グループ★初年度435万給与保証！アプリで稼げる！</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>改進タクシー株式会社</dd>
+
       <dt>職種名</dt>
       <dd>交通（鉄道・バス・タクシー）関連</dd>
+
       <dt>勤務地</dt>
       <dd>東京都足立区中央本町4-13-24</dd>
+
       <dt>都道府県</dt>
       <dd>京都</dd>
+
       <dt>市区町村</dt>
       <dd>足立区</dd>
+
       <dt>郵便番号</dt>
       <dd>1210011</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>ジャパンタクシードライバーとしてお客様の送迎をお任せします。<br>1500万ダウンロード突破のタクシーアプリ【GO】で効率よくお客様にご乗車していただき、売り上げも好調！未経験の方でも安心して仕事が出来ます。<br><br>＜具体的な仕事内容＞<br>・一般の流しの営業<br>・日本交通専用乗り場での営業<br>・【GO】アプリ配車のご依頼、日本交通独自無線のご依頼での送迎<br>・その他（車内の清掃、車両のチェック、売り上げ報告など）<br><br>【入社後の流れ】<br>入社後、まずは日本交通の研修センターに通っていただきます。<br>研修センターから指定の教習所に行き、2種免許→地理試験→その他法令研修となります。（25日程度）<br>その後、営業所で同乗研修です。<br>※研修中は交通費実費支給（上限2100円）</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>シフト制（週の所定労働時間：40時間）<br><br>以下の①②を選択可能<br>①早番<br>5：30～8：30（1時間おきに点呼）<br><br>②遅番<br>13：00～15：00（1時間おきに点呼）</dd>
+
       <dt>休暇・休日</dt>
       <dd>・月6～7日（日曜定休制＋他シフト1日）<br>・慶弔休暇<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・産前産後休暇<br>・介護休暇<br><br>【1ヶ月の勤務例】<br>日　　月　　火　　水　　木　　金　　土<br>　　　　　　明休　乗務　公休　乗務　明休<br>公休　乗務　明休　乗務　明休　乗務　明休<br>公休　乗務　明休　乗務　明休　乗務　明休<br>公休　乗務　明休　乗務　公休　乗務　明休<br>公休　乗務　明休　公休<br><br>※乗務12日、明け休み11日、公休7日での勤務例</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 社内禁煙、事業所敷地内に喫煙所あり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・賞年3回<br>・制服貸与<br>・マイカー通勤可<br>・2種免許取得費用サポート（全額会社負担）<br>・日本交通グループ独自の研修施設<br>・全車AT車<br>・定年後雇用制度<br>・無事故表彰、永年勤務表彰<br>・慶弔見舞い<br>・仮眠室、休憩室、シャワー室完備<br>・希望者自由参加のサークル活動</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%94%B9%E9%80%B2%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
