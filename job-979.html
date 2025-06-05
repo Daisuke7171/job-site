@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜日本PCサービス株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【大阪(吹田)／PCサポートスタッフ】上場企業・2か月の研修期間で安心/toC業務がメイン</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>日本PCサービス株式会社</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府吹田市広芝町9-33 プレシデントビル1F</dd>
+
       <dt>都道府県</dt>
       <dd>千葉県</dd>
+
       <dt>市区町村</dt>
       <dd>吹田市</dd>
+
       <dt>郵便番号</dt>
       <dd>5640052</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>私たちは、パソコン・デジタル家電・その他IoT製品に関するトラブルを、訪問やリモートでサポートする事業を行っています。<br><br>【仕事内容】<br>PCやデジタル家電に関する問い合わせを受け、個人のお客様や企業様先を訪問し、トラブルを解決します。状況に応じて追加で修理やセットアップ、サービスの提案を行うことも。入社後は研修がありますので「IT機器は苦手」という方も安心です。<br><br>＜具体的な仕事内容＞<br>・問い合わせ内容の確認<br>コールセンターから案件が割り振られます。その案件について、お客様の氏名・住所・問い合わせ内容（液晶が映らなくなった、キーボードが動かない等）などを確認していきます。<br>・お客様先へ訪問<br>トラブルの場合、内容は「パソコンが起動しない」「ウイルスに感染したかも」といったものがほとんど。機器に表示されているエラーメッセージなどを確認し、対応します。<br>※リモート勤務不可。<br><br>＜商材・サービス＞<br>当社のサービスはお客様のデジタル製品に関するお困りごとをサポート・解決するサービスです。<br><br>＜主な顧客＞<br>年齢層の幅広くお客様がいらっしゃいます<br><br>【1日の流れ（例）】<br>9:00 出社・朝礼<br>10:00～12:30　1件目訪問<br>12:30～13:30　休憩（日によって時間は異なります）<br>14:00～15:30　2件目訪問<br>16:00～16:30　3件目訪問<br>17:00～18:00　4件目訪問　※終了次第、退社<br><br>・基本、1日に3～4件程度訪問いただきます。<br>・1件あたりの作業時間は1時間半ほどです。<br><br>【入社後の流れ】<br>入社後は研修や勉強会などを通してITに関して学んでいただきます。そのため、「IT機器に馴染みがない」という方でも安心。アポイントを取得してくれるコールセンタースタッフは、ヒアリングの際に提案できそうなポイントを探ったり、情報を聞いておいてくれます！また、先輩たちも「こういう時は、これも持っていくといいよ！」とアドバイスをくれてフォロー体制もバッチリです。<br><br>★こんな教育制度があります★<br>・技術勉強会：最新の技術やサポート手法共有のため、定期的に勉強会を開催<br>・同行研修：全スタッフがフィールドプランナーの同行研修を経験。当社のメインサービスであるお客様対応を間近に見て、サービス内容や接客対応を学んでいきます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00～18：00（所定労働時間8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>上記の休暇とは別で5日間の休暇があります。<br>■夏季休暇（6～8月の間に取得）：2日<br>■年末年始休暇（12～2月の間に取得）：3日<br>■週休2日制（月8～11日／シフト制）<br>■有給休暇（初年度年間10日間〜勤続年数に応じて最大20日）<br>■慶弔休暇<br>■育児休暇<br>■フレキシブル休暇5日（2023年9月～）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■昇給：年2回（5月・11月）<br>■賞与：年2回（6月・12月）※業績による<br>■各種社会保険完備<br>■健康診断<br>■交通費全額支給<br>■地域手当（エリアによる）<br>■出張手当<br>■社内部活動支援<br>└フットサル、写真、インドア、ゴルフ、映画など、ユニークな部活が活動中！<br>■社員紹介制度<br>■資格取得支援制度<br>■iPad貸与<br>■慶弔見舞金<br>■近隣引越支援（※規定あり）<br>■当社サービス割引<br>■従業員持株会<br>■事業報告会</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%97%A5%E6%9C%ACPC%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

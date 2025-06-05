@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>施工管理・設備・環境保全｜株式会社And Doホールディングス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【施工管理】現場に一番近い立場として、最後までカタチにしていくことにこだわる、影のリーダー。</h1>
     </div>
   </header>
@@ -146,46 +152,63 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社And Doホールディングス</dd>
+
       <dt>職種名</dt>
       <dd>施工管理・設備・環境保全</dd>
+
       <dt>勤務地</dt>
       <dd>埼玉県草加市旭町3丁目5-3 　小山ビル２階</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>草加市</dd>
+
       <dt>郵便番号</dt>
       <dd>3400053</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>5000000 ～ 7500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【具体的には】<br>＜施工管理業務＞<br>◎1人当たり5～20件程度の案件を担当。<br>基本的には工事監理をメインに担います。<br>※エリアによって担当案件数は異なります。<br><br>営業が仕入れた物件に対して、<br>付加価値を付けていく建築工事の統括をする仕事です。<br>工事では、発注者側として「協力会社に現場監督から施工までを一括でお任せする」方法で効率化を図り、不動産仕入れの段階から、工事のプロとして打合せに参加することでプロジェクトに一貫して携わります。 <br><br>戸建住宅（RC・木造）の新築から土地の造成、建物の解体、<br>マンションのリフォームまで幅広く経験を積むことができます。<br><br>＜成果に応じて昇給・昇格＞<br>年2回、あなたの頑張りをしっかり評価し、給与や役職に反映。<br>頑張りが正当に評価されるため、モチベーション高く仕事に取り組めます。<br><br>＜万全のフォロー体制＞<br>◎上司や先輩が丁寧にフォロー。<br>解体後の打ち合わせや、建材の打ち合わせなどにも同行し<br>アドバイスをするようにしています。<br><br>◎勉強会を定期的に開催しています。<br>施工の仕方から法規的なことまで<br>業務に必要な知識を身につけることができます。<br><br>＜最先端の住まいづくり＞<br>スマートホーム化を実現する「SMART DO HOME」など<br>最先端のテクノロジーを駆使した新サービスの提供も行っています。<br>以下はVRオープンハウス<br>https://spacely.co.jp/collaborate_test2/sample_test<br><br>【業務内容変更の範囲】<br>変更の範囲：会社の定める業務<br>（但し、本人の希望・適性を考慮するものとする）</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>勤務時間：9:00～17:30<br>所定労働時間：7時間30分／休憩60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休二日制（水・日）<br>■GW公休<br>■夏季公休<br>■年末年始公休<br>■慶弔休暇<br>■育児休業<br>■産前・産後休業<br>■介護休業／介護休暇<br>■看護休暇<br>■生理休暇<br>■災害休暇<br>■ライフサポート休暇<br>■社会貢献休暇（ドナー休暇／裁判員休暇）<br>■有給休暇（10日～勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 【受動喫煙体制】
 ・屋内全面禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>【保険制度】<br>・健康保険<br>・厚生年金<br>・雇用保険<br>・労災保険<br>・社内慶弔見舞金支援制度<br>・社員持株会<br>・確定拠出年金制度<br>・ワークライフバランス制度（時短勤務制度）<br>・従業員割引<br>・資格受験費用負担制度あり（社内規定あり）<br>・宅地建物取引士、合格後にお祝い金支給<br>・会社イベント<br>・健康診断（年１回）<br>・社員紹介報酬制度<br>・公募制度<br>・ウェルカムランチ<br><br>＜研修制度＞<br>・OJT制度<br>・eラーニング<br>・キャリア入社式<br>・入社半年後研修<br>・階層別研修<br>・事業部内研修<br><br>【就業場所】<br>原則、変更無し<br>（但し、本人の希望・適性を考慮した人事異動はあり得るものとする）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>建築・土木・建設</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAnd%20Do%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>交通（鉄道・バス・タクシー）関連｜コンドルタクシー株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【タクシードライバー・未経験OK】資格取得支援各種有り！！</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>コンドルタクシー株式会社</dd>
+
       <dt>職種名</dt>
       <dd>交通（鉄道・バス・タクシー）関連</dd>
+
       <dt>勤務地</dt>
       <dd>東京都練馬区桜台3-10-8</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>練馬区</dd>
+
       <dt>郵便番号</dt>
       <dd>1760002</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>タクシードライバーとしてお客様を目的地まで安全・快適にお送りしていただきます。<br><br>【入社後の資格取得支援・支援】<br>「普通第二種免許」の取得教習や地理試験の講習を受けていただきます。必要な資格取得や試験合格を経たのち、研修をスタート。座学にて接客・接遇など基本研修、専門講師による実践的な「稼ぎ方講座」をお伝えします。<br><br>タクシー運転手に必須となる２種免許は、当社指定教習所を活用して短期間で取得可能。合格率は100％です！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>1ヶ月単位の変形時間労働制（1ヶ月を通じた週平均実働40時間）<br><br>【隔日勤務】<br>・実働15.5時間（休憩3時間）/　月11～13回乗務<br>・勤務例：8時～翌4時など<br><br>【1ヶ月の勤務体系】2出公（2回出番、1日公休）<br>月曜　火曜　水曜　木曜　金曜　土曜　日曜<br>出番　明休　出番　明休　公休　出番　明休<br>の繰り返しです。</dd>
+
       <dt>休暇・休日</dt>
       <dd>■月7～8日（シフト）<br>■乗務明け休み（連休あり）<br>■有給休暇（入社半年後10日〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： タクシー車内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■各種社会保険完備<br>■家賃補助<br>└2年間、1ヶ月に3万円を支給。※遠方から転居する方に適用。規定あり<br>■全車カーナビ・無線機・ETC完備<br><br>★2種免許の取得を支援！<br>タクシー運転手に必須となる2種免許を、当社指定教習所を活用して短期間で取得可能。合格率は100％です！</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%B3%E3%83%B3%E3%83%89%E3%83%AB%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

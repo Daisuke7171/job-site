@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>機械・機構設計・金型設計｜タイジ株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>完成品メーカーの開発・設計 技術者 / 業務用電気サービス機器</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>タイジ株式会社</dd>
+
       <dt>職種名</dt>
       <dd>機械・機構設計・金型設計</dd>
+
       <dt>勤務地</dt>
       <dd>神奈川県川崎市川崎区大川町８－２</dd>
+
       <dt>都道府県</dt>
       <dd>兵庫県</dd>
+
       <dt>市区町村</dt>
       <dd>川崎市</dd>
+
       <dt>郵便番号</dt>
       <dd>2100858</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>★自社ブランド商品の開発<br>レストランや病院など幅広い業界向けの業務用電気機器製品の<br>デザイン及び設計開発業務。製品の企画段階から参加し、<br>3DCAD(Solidworks)を使ったデザイン・設計から、<br>機構設計や簡単な電気設計、各種工具を使っての簡易試作の作成や試験、<br>イラストレータやフォトショップなどを使った<br>取扱説明書やラベルのデザイン等々、<br>製品の開発に関わるすべての業務に携わっていただきます。<br><br>・３ＤＣＡＤ(Solidworks)を使った自社製品のデザイン・設計開発<br>・機構設計、簡単な電気設計、制御仕様設計など製品の開発に関わる業務<br>・各種ソフトウェア(イラストレータ、フォトショップなど)を使った<br>　取扱説明書やラベルなどのデザイン<br>・卓上ボール盤や各種工具を使った簡易試作の作成や組立<br>・専用の測定器やソフトウェアを使った性能を確認するための各種試験<br>・製品の仕様を電気用品安全法をはじめとする各種法規に適合させるための業務<br>・輸入製品の仕様を日本国内向けに見直したり、日本向けの製品を輸出向けに見　<br>　直したりする業務<br>・営業やお客様と打ち合わせをして製品の仕様をまとめる業務</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～17:00（所定労働時間7時間、休憩1時間※12:00～13:00）</dd>
+
       <dt>休暇・休日</dt>
       <dd>・土曜日、日曜日、祝日<br>（但し、四半期に1度、第1土曜出勤）<br>・年末年始休暇（7日間）<br>・有給休暇（10日〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・各種社会保険完備（雇用、労災、健康、厚生年金）<br>・退職金制<br>・社員持株制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%BF%E3%82%A4%E3%82%B8%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

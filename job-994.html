@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社コンフィデンス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【営業コンサルティング／マネージャー候補】「0→1」で新規事業立ち上げを行うマネジメント</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社コンフィデンス</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区赤坂4-1-30　AKABISHI-2ビル6階</dd>
+
       <dt>都道府県</dt>
       <dd>岡山県</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1070052</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>5500000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>★新規事業立ち上げを代行する会社のプロジェクトマネージャーの募集です。<br><br>＜具体的業務＞<br>パートナーが獲得した新規事業立上げ代行や営業アウトソーシングのプロジェクトのマネジメントを担当していただきます。<br><br>・その商材を分析（SWOT、クロス、等）し営業戦略の立案<br>・営業戦術の策定を行い、営業のたたき台を作成<br>・たたき台に沿った営業を行うメンバーのマネジメント<br>・営業結果を分析。課題の解決案を検討し実行<br>・上記のPDCAサイクルを回していき事業の立上げを行っていきます。<br><br>またメンバーの育成、支援も重要な業務となります。<br><br>※プロジェクトを複数（４程度）兼務して頂きます。<br>※実際の営業活動はメンバーが行います。<br>　（立上げ当初は一部営業活動に参加することもあります）<br><br>〈ご入社後〉<br>課題解決型営業や新規事業立ち上げにおけるマネジメントなど独自のメソッドをもっており、<br>入社前に研修・業務含めてどれくらいでマネージャーになるかのシナリオをお互いに共有したうえで<br>入社後はまずはメンバーとして業務を担当しながらこのメソッドを身につけていただき、<br>複数のプロジェクトのマネジメントを担当していただきます。<br><br>＜プロジェクトについて＞<br>ベンチャー~大手企業まで、様々な企業から依頼があります。<br>・営業ターゲット：B to B　100％<br>・業界：業界の特定はなし（あくまで結果としてIT・WEB46％、製造21％、サービス20％、その他）<br>・商材：無形商材66%<br>・新規事業・新商品62％<br><br>＜評価制度＞<br>マネージャーは、<br>・プロジェクトの成功、継続、社員の育成　などの観点での評価となります。<br>・等級に基づいた人事制度があります。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>・9:30~18:30(昼休憩12:00~13:00)</dd>
+
       <dt>休暇・休日</dt>
       <dd>休日：土日祝休み<br>休暇制度：年末年始休暇、慶弔休暇、夏季休暇、GW休暇、リフレッシュ休暇、有給休暇（入社半年後10日〜勤続年数に応じて最大20日）、介護休暇<br>補足情報：◆有給休暇の計画付与 （円滑に取得できるように四半期に一度のリフレッシュ休暇、バースディ休暇、大切な人休暇を設定） ◆勤続3年ごとの特別リフレッシュ休暇（7日間）<br>◆結婚休暇（5日間） ◆産休（産前6週間、産後8週間） ◆育休（育休介護休業法に準ずる） ◆生理休暇 ◆時短社員移行制度</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◆結婚祝い金（5万円） ◆出産祝い金（3万円） <br><br>・社会保険完備（健康保険／厚生年金／雇用保険／労災保険）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B3%E3%83%B3%E3%83%95%E3%82%A3%E3%83%87%E3%83%B3%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
