@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜株式会社SN JAPAN</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【キャリアアドバイザー】初年度1000万可*毎月インセン*人柄採用</h1>
     </div>
   </header>
@@ -146,46 +152,63 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社SN JAPAN</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿六丁目11-3 WeWorkDタワー西新宿16F</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 10000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>《社員全員20代！》求職者の未来を描くキャリアアドバイザーをお任せします！<br>#未経験でも早期活躍！#豊富なキャリアパス  #異業種出身者が多数！<br><br>具体的には<br>▼まずは求職者とオンラインでカジュアルに面談！<br>▼希望のお仕事をご紹介！<br>▼面接の準備<br>▼入社後のフォロー　他<br><br>求職者が大きな選択をする、その背中を押してあげることのできるとてもやりがいのあるお仕事です。<br>「〇〇さんに出会えてよかった！」そんな感謝の声をもらえる最高の瞬間が醍醐味です！！<br><br>入社後の流れ<br>■未経験でもしっかりとスキルを身につけられるよう圧倒的な成長ができる導入研修を用意！業界の概要から実務面までを約1ヶ月間かけて丁寧に教えていきます！<br><br>■スキルアップの一環で、外部セミナーへの参加も実施中。幅広い専門知識を“インプット→アウトプット”することで、成長に結びつけます。<br><br>将来のキャリアパス<br>＼実力＝昇進／<br>柔軟なキャリアはもとより、スピーディな昇進も可能！実際、入社2年で統括事業部長に抜擢された社員もおり、魅力的なロールモデルがあふれています。<br><br>＼豊富なキャリアパス／<br>裁量のあるベンチャー企業だからこそやりたいことを実現可能。<br>人事や広報、マーケティングなど幅広い挑戦ができます！<br>手厚いインセンティブあり。月100万円以上の社員も！<br>頑張りに報いるため、当社では充実したインセンティブを完備しています。業界トップクラスの還元率を実現しており、過去には1ヶ月で100万円以上稼いだメンバーも！「固定給+月間インセンティブ+業績賞与（上半期・下半期）」が組み合わされることで、業界経験の有無にかかわらず、大きな年収アップを目指せます。<br><br>ワークライフバランスも良く、プライベートも充実！<br>■年間休日125日<br>■完全週休2日制（土日祝）<br>■月残業20時間以下<br>■ドリンク・ビール飲み放題<br>■モダンで落ち着いた雰囲気のシェアオフィス（WeWork ）他<br><br>自己成長やキャリアを実現するには、ワークライフバランスも欠かせません。ON・OFFをしっかり切り替えながら頑張れるよう、働きやすい環境を用意しています。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00-19:00<br>所定労働時間：8時間、休憩：1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>●休日：土日祝休み<br>●年間休日：125日（カレンダー通り＋会社が定める休日）<br>●休暇制度：有給休暇（10日〜勤続年数に応じて最大20日）、夏季休暇、GW休暇、特別休暇、年末年始休暇<br>●補足情報：忌引休暇、代休制度（休日に出社した場合に、振替として休みを取得できます）、社長が決める休日（特例ですが、たまにあります）<br><br>※フレックス制度（代休制度）を取り入れています。<br>※休憩時間は上長に報告の上、各自で取っていただきます。<br>※有給取得実績あり。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 受動喫煙対策の有無 : 対策あり
 受動喫煙対策について : 喫煙室あり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>健康診断<br>社員旅行<br>健康診断<br>交通費<br>月1回全体締め会 etc...</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BESN%20JAPAN" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

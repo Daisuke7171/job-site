@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>施工管理・設備・環境保全｜三和ペイント株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【顧客サポート(工事管理課)】成長中のベンチャー企業でお客様の未来を守るお仕事です！未経験大歓迎！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>三和ペイント株式会社</dd>
+
       <dt>職種名</dt>
       <dd>施工管理・設備・環境保全</dd>
+
       <dt>勤務地</dt>
       <dd>千葉県千葉市中央区新田町36-15 オカバ千葉テックビル5階</dd>
+
       <dt>都道府県</dt>
       <dd>石川県</dd>
+
       <dt>市区町村</dt>
       <dd>千葉市</dd>
+
       <dt>郵便番号</dt>
       <dd>2600027</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>外壁塗装事業を通じ、顧客満足度90%以上の実績を誇る当社の工事管理課として<br>顧客サポートをお任せします。<br><br>顧客と営業が契約時に約束を交わした施工管理/完工検査を行い、<br>契約時の約束が果たされているのか？品質基準にあった工事が行われているのか？を管理しながら<br>顧客の求める状態へと工事を導き、大切なお住まいをお引渡しします。<br><br>また、1年5年10年のアフターフォローではドローンを使用し、徹底的なチェックを行います。<br>その際に、不具合があれば施工パートナーへ指示を出して頂きます。<br>軽微な不具合であれば、自身で手直しすることもあります。<br><br>ゆくゆくは、ご契約頂いた顧客へ2次商材のご案内もします。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～20:30<br>1日の労働時間：8時間、休憩3時間30分<br>1ヶ月単位の変形労働時間制（週の平均労働時間30時間以下）<br><br>※業務の進め方・時間の使い方などに決まりはありません。<br>効率よく働いて早めに帰るなどの働き方も可能です。</dd>
+
       <dt>休暇・休日</dt>
       <dd>・会社カレンダーに従い、月7～10日<br>・年末年始休暇<br>・GW休暇<br>・夏季休暇<br>・慶弔休暇<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>※消化率100％<br>・産前産後休暇<br>・特別休暇<br><br>公休を含め、最大10日の長期休暇の取得が可能。（節目の休暇は全社で休みとなります）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・昇給年2回（6月、12月）<br>・決算賞与（12月　※業績連動型）<br>※昨年度は平均70万円／人<br>・交通費支給（上限3万円／月）<br>・住宅手当（諸条件あり）<br>・役職手当<br>・時間外手当（みなし残業の超過分）<br>・退職金制度（勤続3年以上）<br>・独身寮（諸条件あり）<br>・単身赴任手当<br>・社用携帯貸与<br>・社用PC貸与<br>・営業車貸与<br>・制服貸与<br>・各種研修制度あり<br>・教育支援制度（社外研修、通信講座などの費用の半額を負担）<br>・車通勤可能（要相談）<br>・勤続表彰（10年に一度、金一封を添える）<br>・誕生日お祝い（社員とその家族が対象。社長よりプレゼントと手紙を贈呈）<br>・結婚祝い金<br>・定期健康診断</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>建築・土木・建設</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E4%B8%89%E5%92%8C%E3%83%9A%E3%82%A4%E3%83%B3%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

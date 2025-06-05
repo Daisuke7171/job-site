@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社プロセルトラクション</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【ソリューション営業】有名企業の新規事業立ち上げ★インセンティブあり</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社プロセルトラクション</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区恵比寿西2-2-6 恵比寿ファイブビル4階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500021</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>新規事業を立ち上げているクライアント先にて、営業活動をお任せします。<br><br>＜具体的な仕事内容＞<br>◆依頼がきたら、3～4名のメンバーで営業活動を開始 <br>営業手法は、最先端のWeb商談（インサイドセールス）や訪問セールスなど、プロジェクトによって異なります。 <br><br>◆マーケットの分析・営業戦略の立案<br>マーケットを分析し、営業手法やセールストークの改良など、 クライアントに商品やサービスの改善提案を行います。 <br><br>◆営業成績が出ない場合<br>結果を徹底的に振り返ります。 この繰り返しがクライアントへの提供価値につながります。 <br><br>【入社後の流れ】<br>入社後は、当社のビジネスモデル・組織体制・基本的な仕事の進め方・仕事において大事な考え方などを習得していただきます。<br>最初の1週間は座学研修も含め、経験豊富な先輩営業や事業責任者に付いて、仕事を学びます。その後は、できる範囲で少しずつ実務をお任せします。入社1ヶ月ほどで独り立ちするイメージです。<br><br>【代表の経歴について】<br>当社代表は、株式会社リクルートにて、中小企業への新規開拓営業から大手企業に対するソリューション営業まで、多様なセールス業務を経験。年間表彰やベストナレッジ賞を多数受賞しました。<br>その後、新規事業の責任者として、事業戦略立案・推進および新規事業横断のセールス統括として、複数事業のセールス組織およびカスタマーサクセスチームの立ち上げ・営業戦略立案・組織マネジメントを担当。複数の営業代行会社のマネジメントも経験しました。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:30～18:30or10:00～19:00<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休二日制（土日）<br>・祝日 <br>・GW休暇 <br>・夏季休暇 <br>・年末年始休暇 <br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・慶弔休暇 <br>・記念日休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： オフィス内分煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・昇給年2回（4月、10月）<br>・交通費支給（上限月3万円）<br>・時間外手当（超過分）<br>・家族手当<br>・報奨金<br>・育児サポート<br>・出産、育児支援制度<br>・副業可<br>・時短勤務可<br>・保育園、幼稚園費用負担制度<br>・出産お祝い金<br>・記念日休暇サポート<br>・ジム、マッサージ手当<br>・リモートワークサポート<br>・スキルアップサポート<br>・独立支援制度<br>・新規事業への挑戦支援</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%97%E3%83%AD%E3%82%BB%E3%83%AB%E3%83%88%E3%83%A9%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

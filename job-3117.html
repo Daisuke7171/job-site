@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>総務・事務｜株式会社ワールドフェイマス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【名古屋】完全未経験から事務のスペシャリストへ【あなたのチャレンジを応援!!】</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ワールドフェイマス</dd>
+
       <dt>職種名</dt>
       <dd>総務・事務</dd>
+
       <dt>勤務地</dt>
       <dd>愛知県名古屋市内が勤務地となります。</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>名古屋市</dd>
+
       <dt>郵便番号</dt>
       <dd></dd>
+
       <dt>雇用形態</dt>
       <dd>契約社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>大手通信企業や自動車企業などを中心に、お客様先のプロジェクトに携わっていただきます。<br>最初は事務的なお仕事をメインにスタートしていただきますが、将来はIT系技術職（ネットワークエンジニアなど）やPMOとしてのキャリアアップを目指していくポジションです。<br><br>＜入社1年目の業務例＞<br>・各種資料の作成<br>・会議セッティング<br>・データ入力<br>・お問合せ対応<br>・ドキュメントチェック、修正<br>・簡単なキッティング作業<br>など<br><br>そこからスキルアップをするべく資格取得講座やスクール制度なども社内で設けております。<br>また、他では中々受けられないような独自の研修をご用意しております!</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00（所定労働時間8時間、休憩1時間）<br>※勤務地によっては異なる場合がございます。</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土日祝）<br>年末年始休暇<br>GW休暇<br>年次有給休暇（入社6ヶ月後に10日付与、最大20日分）<br>特別休暇（慶弔など）<br>産前・産後休暇<br>育児休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（雇用保険、労災保険、健康保険、厚生年金保険）<br>定期健康診断・インフルエンザ予防接種補助<br>バースデー休暇有</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%83%95%E3%82%A7%E3%82%A4%E3%83%9E%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

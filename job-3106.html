@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>カスタマーサポート・コールセンター運営｜株式会社Ｅｎｊｉｎ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>未経験可！業界注目の｜メディアマッチングプラットフォーム｜でカスタマーサクセスを募集</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Ｅｎｊｉｎ</dd>
+
       <dt>職種名</dt>
       <dd>カスタマーサポート・コールセンター運営</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区銀座5-13-16 ヒューリック銀座イーストビル8階（7F：スタジオ/受付）</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1040061</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>株式会社Enjinは、PR会社として18期を迎える企業です。<br>2021年6月には東証グロース市場に上場を果たし、<br>更なる価値提供に向けて組織の拡大/強化を進めているフェーズのため<br>カスタマーサポートチームメンバーを募集します！！！<br><br>【メディアマッチングサービス「メディチョク」について】<br>新聞・テレビ・雑誌・WEBなどで発信する情報を探す<br>メディア・報道関係者と、企業を直接つなぎ、<br>低コストで企業の広報活動をサポートするプラットフォームです。<br><br>《メディア関係者》<br>　・ネタ募集<br>　・メディア出演依頼<br>　⇅<br>《広報担当者》<br>　・プレスリリース<br>　・情報提供<br><br>一般的な広報・PR会社と契約した場合に比べ、<br>コストを大幅に削減しながらメディア露出を実現でき、<br>圧倒的な低コスト・高効率な広報・PR活動を実現します。<br><br>【業務内容】<br>・クライアントにレポート提出（テンプレはありますが、オリジナル要素もあります）<br>・ナーチャリング資料作成<br>・クライアントとMTG（オンライン）<br>・クライアントとオンボーディングMTG（使い方をお伝えするMTG）<br><br>【1日の流れ】<br>〇午前中<br>・メディチョク管理画面をチェックしてクライアントのアクティブ状況確認<br>・メディア側の提案や募集内容を確認<br>・メール対応<br><br>〇午後<br>・クライアントと初回MTG<br>・資料作り<br>・管理画面チェック<br>・クライアントに企画提案</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:30～18:30（所定労働時間8時間、休憩1時間）<br><br>◎毎週月曜日は9:30-11:00まで自己研鑽時間<br>⇒Enjin Way勉強会といって各自、知識や<br>スキルをアップするための勉強時間としています。<br>(月曜日が祝日の場合は火曜日)</dd>
+
       <dt>休暇・休日</dt>
       <dd>《★年間休日124日》<br>■完全週休2日制(土日)<br>■祝日<br>■年末年始休暇(5日)<br>■夏季休暇(3日)<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>■慶弔休暇<br>■介護休暇<br>■親孝行休暇（2日）<br>⇒帰省費も一部会社負担☆<br>■産前・産後・育児休暇（取得実績あり）<br>◎モアナイン制度<br>⇒有給を5日連続で取得し、土日と併せて9連休も可！</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備<br>■オフィスカフェ<br>…CAFE OHANA<br>■社員部活動支援<br>…ジム部など<br>■オハナ旅<br>…有休を利用して社員同士で旅行する場合、最大年5万円支給<br>■親孝行休暇<br>…両親の誕生日（もしくは命日）は特別休暇となり、帰省費を一部支給<br>■持ち株会制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%EF%BC%A5%EF%BD%8E%EF%BD%8A%EF%BD%89%EF%BD%8E" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>人事｜株式会社神田キャリア</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【横浜】■人事/採用担当 ■障がい児施設で働く方向けの人材紹介 ■働き方◎</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社神田キャリア</dd>
+
       <dt>職種名</dt>
       <dd>人事</dd>
+
       <dt>勤務地</dt>
       <dd>神奈川県横浜市神奈川区鶴屋町2-21-1　ダイヤビル305</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>横浜市</dd>
+
       <dt>郵便番号</dt>
       <dd>2210835</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>療育bizを通じ、「児童発達支援管理責任者・サービス管理責任者の有資格者」を児童発達支援施設、放課後等デイサービス施設向けに紹介する人材紹介事業を展開する当社にて、主に採用等の人事業務をお任せします。<br>■採用分析<br>■面接日程調整・面接対応<br>■エージェントとの折衝<br>■スカウト型サービスのスカウト送付対応<br>■求人票の作成、修正<br>■サーベイ設定、サーベイ資料依頼　等</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:30〜18:30<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>【年間休日125日】<br>・完全週休2日制（土日）<br>・祝日<br>・有給休暇（入社半年後10日付与〜勤続年数に応じて最大20日）<br>・夏季休暇（3日）<br>・年末年始休暇（6日）<br>・GW休暇（5日）<br>・慶弔休暇<br>・産前・産後休暇<br>・育児休暇<br>・介護休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 喫煙所あり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・各種社会保険完備<br>・年間MVP賞<br>（総売上げ上位数名の方に金一封）<br>・営業補佐サポート制度<br>・非喫煙者手当（5000円）<br>・服装自由<br>・定期健康診断<br>・社用携帯貸与<br>・敷地内全面禁煙(屋外に喫煙場所設置)<br>・各種お茶・ミネラルウォーター・・炭酸水飲み放題<br>・外部研修制度あり<br>・スポーツジム会費（会社半額負担）ジム指定なし、上限額あり<br>・住宅手当（住宅補助制度）：事務所から3駅以内or3㎞圏内に住居がある場合、家賃の25％を補助（上限・規定あり）<br>・引越費用補助手当：引越業者に支払う費用、賃貸住宅の礼金、仲介手数料の半額支給（上限・規定あり）<br>食事補助制度（規定あり）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E7%A5%9E%E7%94%B0%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
