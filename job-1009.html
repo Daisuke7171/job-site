@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ルートセールス・代理店営業｜株式会社協同制作</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【看板資材ルート営業】業界未経験歓迎★完全週休2日制（土・日）祝日休み★長期的な関係構築★転勤なし</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社協同制作</dd>
+
       <dt>職種名</dt>
       <dd>ルートセールス・代理店営業</dd>
+
       <dt>勤務地</dt>
       <dd>神奈川県横浜市神奈川区菅田町1711</dd>
+
       <dt>都道府県</dt>
       <dd>京都</dd>
+
       <dt>市区町村</dt>
       <dd>横浜市</dd>
+
       <dt>郵便番号</dt>
       <dd>2210864</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>1970年創業の当社。自動販売機の見本缶から、全国展開をしている店舗の看板、タンクローリーのカラーリングまで「特殊印刷の技術」を活かした商品を中心にサービスを提供しています。特殊印刷物の商品だけでなく、セールスプロモーションの企画提案から企業ブランディングまで幅広いサービスを展開しています。<br><br>今回はそんな当社でルート営業スタッフを増員募集。看板資材の販売をお任せします。<br><br>【具体的には……】<br>看板業者や内装業者等に対し看板資材などを販売します。 ほぼ100％既存顧客のルート営業。個人経営や家族経営のお客様が多く、個人営業の経験が生かせます。<br><br>＜営業スタイル＞<br>1日10〜15件くらい車でお客様を訪問します。商談時間は5分～30分程度。納品や新商品の紹介をします。<br><br>＜担当社数＞<br>50社程度（取引が活発なお客様は15社程度）を担当して頂きます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00～17：30<br>所定労働時間：7.5時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土・日）<br>祝日<br>夏季休暇（3日）<br>年末年始休暇（6日）<br>慶弔休暇<br>リフレッシュ休暇<br>有給休暇（10日～40日）<br>育児・介護休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>昇給：年1回（6月）<br>賞与：年2回（7、12月）<br>通勤手当（定期代を全額支給）<br>退職金あり<br>持株会<br>財形貯蓄<br>永年勤続表彰　他</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%8D%94%E5%90%8C%E5%88%B6%E4%BD%9C" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

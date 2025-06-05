@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Webデザイナー｜株式会社And Doホールディングス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>◎DTPデザイナー/京都◎不動産テックを加速させるDTPデザイナーの募集！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社And Doホールディングス</dd>
+
       <dt>職種名</dt>
       <dd>Webデザイナー</dd>
+
       <dt>勤務地</dt>
       <dd>京都府京都市中京区烏丸通錦小路上ル手洗水町670 京都フクトクビル5F</dd>
+
       <dt>都道府県</dt>
       <dd>福岡県</dd>
+
       <dt>市区町村</dt>
       <dd>府京都市</dd>
+
       <dt>郵便番号</dt>
       <dd>6048152</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>仕事内容<br>■仕事内容<br>社内のディレクターやデザイナーと連携しながら<br>自社サービスのDTP（広告・パンフレット・販促ツール等）の制作業務をお任せします。<br><br>【将来的に】<br>デザイン（制作）担当→ディレクター→プロデューサーというステップで<br>プロモーションに関する役割を担う人材を目指して頂きます。<br><br>【仕事の魅力】<br>・制作のみではなく、企画・改善まで携わることが可能<br>・社歴に関係なく、積極的にチャレンジできます<br>・BtoB向け、BtoC向けの広告・プロモーションに関する幅広い知識・経験を身に付けていただけます<br>・グループ各部門と連携し、サービスのプロモーションにも関わっていただけます</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>就業時間：9:00 ～ 17:30（所定労働時間：7時間30分／休憩60分）<br>残業：有</dd>
+
       <dt>休暇・休日</dt>
       <dd>土日休み（完全週休2日制）<br>★年間休日115日<br><br>■休暇制度<br>・GW公休／夏季公休／年末年始公休<br>・産前・産後休暇／育児休暇<br>・介護休暇<br>・慶弔休暇<br>・生理休暇<br>・災害休暇<br>・有給休暇（10日〜勤続年数に応じて最大20日）<br>・ライフサポート休暇<br>・社会貢献休暇（ドナー休暇／裁判員休暇）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備<br>・社内慶弔見舞金支援制度<br>・各種表彰制度<br>・社員持株会<br>・確定拠出年金制度<br>・ワークライフバランス制度（時短勤務制度）<br>・従業員割引<br>・資格受験費用負担制度あり（社内規定あり）<br>・食事会<br>・会社イベント<br>・健康診断<br>・研修制度<br>・OJT制度／eラーニング／入社式／入社半年後研修／階層別研修／事業部内研修</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAnd%20Do%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

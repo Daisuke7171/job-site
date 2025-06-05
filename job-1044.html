@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜スパイラル株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【未経験歓迎:2025/01/01または2025/04/01入社の法人営業職】研修充実/土日祝休み</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>スパイラル株式会社</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区赤坂二丁目 9番11号 オリックス赤坂 2丁目ビル</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1070052</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>「単純なモノ売り」や「決まったルーチンワーク」ではなく、顧客目線で裁量権を発揮できる当社の環境で、貴方の市場価値を高めるキャリア形成をしませんか？<br><br>【仕事概要】<br>当社では、何を提案するかは決まっておりません。<br>何故ならお客様ごとに抱えていらっしゃる問題点や課題は様々であり、またその多くは顕在化しておりません。<br>私たちは、まずはその問題点や課題をヒアリング（抽出および整理）するところから始めるべきと考えます。<br>自社プロダクト（SPIRAL）を武器として裁量権を持って深く柔軟に提案や開発して、お客様の問題点や課題を真の意味で解決していきますが、それは非常に難しいと同時に、大きな醍醐味を感じることになります。<br>当社には多岐に渡る業界のお客様がいらっしゃいますので、一例とはなりますが、直近の社会的貢献性の高いプロジェクト例を挙げると「ワクチンの予約システム」や「給付金の支給システム」などにも携わっております。<br><br>【仕事詳細】<br>1)アポイント<br>2)ヒアリング(課題の背景理解と課題整理)<br>3)ソリューション提案(最適な解決策提示)<br>4)契約<br>5)要件定義・基本設計(エンジニアと二人三脚で対応)<br>6)開発(エンジニアが対応)<br>7)納品<br>8)納品後の継続フォロー（カスタマーサクセスの推進）<br><br>【当社の特徴】<br>・未経験歓迎<br>・3ヶ月の充実した研修<br>・自社開発<br>・客先常駐なし<br>・土日祝休み<br>・年間休日120日以上<br>・残業少なめ<br>・離職率低め<br>・インバウンド多め<br>・既存顧客多め<br>・顧客との長期関係性</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>1カ月単位の変形労働時間制（週平均40時間以内　月間所定労働時間160～177時間）<br>※原則　9:00～18:00　内休憩時間1時間<br>※時短勤務制度あり<br>※平均残業時間20時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>休日：土日祝休み<br>年間休日：125日<br>休暇制度：年末年始休暇、有給休暇、特別休暇、介護休暇、慶弔休暇、産休・育休、GW休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： ・オフィス（事業所内）は禁煙（別途ビルに喫煙専用室あり）</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備、交通費支給、健康診断、家族手当、役職手当<br>補足情報：・勤務地調整手当(東京:月3万円/大阪・京都・名古屋:1万円) ・各種手当(超過時間、深夜勤務、休日出勤、育児、委員会、通勤手当) ・社会保険(健康保険、厚生年金、雇用保険、労災保険) ・関東ITソフトウェア健康保険組合加入の福利厚生利用可 ・ライフイベント支援(産前産後休暇、介護休暇、子の看護休暇、時短勤務)、助成制度(PC購入助成金) ・オフィス(事業所内)は禁煙(別途ビルに喫煙専用室あり)</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%B9%E3%83%91%E3%82%A4%E3%83%A9%E3%83%AB%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
