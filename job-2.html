@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜株式会社日本みらいケア</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【派遣営業】介護業界に特化★年間休日125日・完全週休二日</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社日本みらいケア</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>東京都武蔵野市吉祥寺本町1-14-5 日本生命吉祥寺本町ビル4F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>武蔵野市</dd>
+
       <dt>郵便番号</dt>
       <dd>1800004</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>派遣営業担当として、企業と候補者双方の窓口となり、下記の業務を担当していただきます。<br><br>■クライアント(企業)に対する業務 <br>・求人獲得の営業(基本は内勤)<br>※取扱案件は一都三県です。<br>※担当顧客数:10〜20人程度（トッププレイヤーは50名ほど）<br><br>■派遣登録応募者に対する業務<br>・出張面談によるアプローチ<br>・求人紹介<br><br>■派遣先企業へのマッチング<br>・派遣スタッフの紹介<br>・施設見学の設定<br>・施設見学実施（スタッフ同行）<br>・出勤同行の実施<br>・フォロー面談の実施(就業後や休日)<br><br>介護業界の特性上、派遣就業者の方のお休みは平日のため、土日出勤は基本的に発生しません。<br><br><br>【入社後の流れ、研修について】<br>入社日から１～2日は座学にて基礎知識を身につけていただきます。それ以降、1ヵ月程度は先輩社員とのOJTで、実践形式で業務を覚えていただきながら、遅くとも3ヵ月目には一人立ちしていただくことを想定しています。<br><br>【キャリアアップ】<br>設立5年目の若い会社であるため、キャリアアップの制度や取り決めは現在ございません。逆を言えば、年齢や入社年数にかかわらず、個々人の実績によって早期のキャリアアップも可能です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>事業場外みなし労働制 <br>【みなし労働時間】9時間/日<br>※9:00〜18:00の時間帯に勤務している社員が中心です。</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制(土・日)<br>■祝日<br>■有給休暇(入社半年後10日〜勤続年数に応じて最大20日)</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■残業手当（固定残業代超過分）<br>■交通費(全額支給)<br>■社会保険完備（雇用保険、厚生年金保険、労災保険、健康保険）<br>■ベネフィット・ワン<br>■定期健診<br>■昇給（年1回）※実績による<br>■決算賞与※実績による</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%97%A5%E6%9C%AC%E3%81%BF%E3%82%89%E3%81%84%E3%82%B1%E3%82%A2" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

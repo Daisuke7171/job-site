@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社ジョリーグッド</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>リーダー候補：ビジネスプロデューサー（企画提案営業/事業開発）</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ジョリーグッド</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区日本橋富沢町10-13 WORK EDITION NIHONBASHI 701</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1030006</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>5500000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>自社VRの技術を活かし、大学病院や医療機器メーカー等のクライアントが抱える課題を解決に導く企画提案を仕掛け、新しいサービスを立ち上げていくビジネスプロデューサーを募集します。医療従事者の技能向上はもちろん、多忙な医師たちの働き方向上にもつながるソリューションを生み出す社会貢献性の高いポジションです。<br><br>■企画業務<br>・マーケティング・営業戦略/戦術の立案<br>・営業視点からのサービスグロースに向けた意見だし<br>■セールス業務<br>・法人、官公庁へ向けたソリューション営業・進行管理（PM業務）<br>※昨今特に医療・福祉業界からの引き合いも多く、ありがたいことに多くのお問合せをいただいています。<br>※ご経験によって新規開拓（リードジェネレーション～ナーチャリングを含む）をお任せする場合もあります。<br><br>《担当プロダクト》<br>医療教育プラットフォーム「オペクラウドVR」を中心に、医療機関や教育機関らとの共同プロジェクトの他、安全教育や技能伝承などクライアントの課題解決のためのVRプロダクトを担当していただきます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00〜19:00<br>所定労働時間：8時間、休憩1時間<br><br>※時差出社（9:00〜11:00出社）可能</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土日祝日休み）<br>年間休日125日以上<br>有給休暇<br>年末年始休暇（5日程度）<br>夏季休暇（3日）<br>慶弔休暇<br>リフレッシュ休暇<br>産前・産後休暇<br>インフルエンザ特別休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋内全面禁煙　※屋外喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■時差出勤（9時〜11時出社）可能<br>■各種社会保険完備<br>■手当<br>・通勤交通費（上限3万）<br>・住宅補助（3駅圏内・月3万円）、引越し補助（初回のみ10万円）<br>・出張手当<br>■その他<br>・Enjoy10%制度（1週間のうち業務時間の10％を“インプットを楽しむ”時間に当てて良い制度）<br>・メンターご飯サポート制度（新入社員と先輩の外食代を毎月最大3万円、入社後6ヶ月間補助）<br>・社内表彰制度<br>・外部セミナーやイベント参加費・書籍購入費補助<br>・もぐもぐランチ制度（週に1回会社支給でみんなでランチ）<br>・フリードリンク（コーヒー類、お茶、炭酸飲料）<br>・ゲーミングルーム</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B8%E3%83%A7%E3%83%AA%E3%83%BC%E3%82%B0%E3%83%83%E3%83%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
