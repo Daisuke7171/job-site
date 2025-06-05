@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>人事｜株式会社ツクルバ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【採用担当者】より良い採用を通じて組織力を強化し、事業成長を実現できるメンバー募集</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ツクルバ</dd>
+
       <dt>職種名</dt>
       <dd>人事</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区恵比寿四丁目3番14号　恵比寿SSビル</dd>
+
       <dt>都道府県</dt>
       <dd>兵庫県</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500013</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>株式会社ツクルバは「住まいの『もつ』を自由に。『かえる』を何度でも。」をビジョンとして掲げ、様々な事業/サービスを通じて、住まいの「買う」「暮らす」「売る」を、より一層自由に何度も実現することができる社会を作りたいと考えているリノベーションマンションを扱う不動産ベンチャー企業です。<br><br>現在、業務拡大に伴い会社の発展に不可欠な人財を獲得していく採用業務メンバーを募集しています（増員）。<br><br>【具体的な業務内容】<br>新卒採用または中途採用における、母集団形成から入社後のオンボーディングまで一貫して携わります。<br><br>・各ポジションのターゲット設定<br>・採用計画/戦略の立案（採用マーケ戦略、チャネル選定、選考体験設計 等）<br>・ダイレクトリクルーティングの実行<br>・人材紹介エージェントとのリレーション構築<br>・面接対応<br>・候補者対応<br>・内定後入社までのアトラクト施策<br>・入社後のオンボーディング支援、研修など</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>フレックスタイム制（コアタイム：11:00～16:00／標準労働時間8時間　休憩1時間）<br>週2~3回程度ご出社いただくことを想定しています（フルリモート不可）</dd>
+
       <dt>休暇・休日</dt>
       <dd>■休日：完全週休2日制（土日祝日休み）<br>■年間休日123日<br>■有給休暇<br>　入社日に、入社月に応じた日数を最大10日付与。以降毎年8月1日に在籍年数に応じた日数を付与。最大20日。<br>■年末年始休暇<br>■結婚休暇（５日)<br>■出産休暇（3日）<br>■忌引休暇（最長10日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内全面禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■モチイエ制度<br>　⾃社サービスを通じて自宅を購⼊した場合、手数料の減額と購⼊⾦額に応じて月額手当を最長5年間支給<br>■従業員持株会<br>　毎⽉給与の⼀部を積み⽴て、奨励金と合わせて⾃社の株式の購⼊が可能<br>■PC/モニター貸与<br>　その他業務で使用するもの（携帯電話等）は、必要に応じて貸与<br>■インフルエンザワクチン接種費用補助<br>■リファラル制度<br>■社内フード販売<br>■健康保険（関東ITソフトウェア健康保険組合）、雇用保険、厚生年金、労災保険</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%84%E3%82%AF%E3%83%AB%E3%83%90" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

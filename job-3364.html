@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>財務・経理｜株式会社エコリング</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>成長企業の経理職！地元で理想のキャリアを築きませんか？</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社エコリング</dd>
+
       <dt>職種名</dt>
       <dd>財務・経理</dd>
+
       <dt>勤務地</dt>
       <dd>兵庫県姫路市南畝町2丁目1番 ファース姫路ビル4階</dd>
+
       <dt>都道府県</dt>
       <dd>兵庫県</dd>
+
       <dt>市区町村</dt>
       <dd>姫路市</dd>
+
       <dt>郵便番号</dt>
       <dd>6700961</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>「自分の意見や提案を聞いてもらえる環境で成長したい」<br>「持っている力を最大限に発揮して、新しいことにチャレンジしたい」<br>「地元に腰を据えて働きたい。地元企業を盛り上げたい」<br><br>そんな夢や目標を持っている方はぜひとも一緒に働きませんか？<br><br>リユース業界の草分け的として<br>現在も企業成長を続けるエコリング。<br>モノを「所有」する時代から「共有」する時代へと<br>移り変わる中、リユース事業は次世代の<br>ビジネスモデルとして大きな注目を集めています。<br><br>そんな未来へ向けて進化を続けるエコリングは<br>これからの事業発展に向けて経理部門の<br>さらなる強化を一緒に進めてくださる仲間を<br>募集いたします。<br><br>【主な業務内容】<br>■日次業務（振込申請対応・弥生会計を用いて日次仕訳の入力）<br>■月次業務（弊社基幹システムと会計データの突合・エクセルを用いて未払計上）<br>■出納業務（ネットバンキングを使用しての支払処理・小口精算・請求書処理・預金管理）<br>■債権債務管理(売掛金や買掛金)<br>■各店舗の日報のチェック<br>※弊社経理部では請求書の発行・発送業務はございません。<br><br>経理業務全般を担っていただきますので、<br>初めは覚えることが多いかもしれません。<br>ですが常に近くに先輩社員がいますので<br>分からないことはすぐに聞けます。<br>先輩たちも丁寧に業務を伝えてくれるので<br>遠慮なく質問してどんどん業務を覚えていきましょう！<br><br>エコリング社では<br>ダイバーシティ・公平性・インクルージョン<br>の取り組みを日々進めています。<br>多様な人財を採用・育成することで<br>社内で多様性を保つことは<br>マーケットシェアを獲得し、組織として成功するためには<br>必要不可欠であると考えています。<br>弊社で是非活躍したい！と感じた方はご応募ください。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00～18：00（所定労働時間8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>基本、土日祝日休み<br>（会社カレンダーにより土曜日出勤の可能性あり）<br><br>休日・休暇：<br>◎年間休日117日（2024年度）<br>　2023年度より毎年公休日数前年度+3日増加チャレンジスタート<br><br>有給休暇<br>時間単位有休<br>夏季休暇<br>年末年始休暇<br>慶弔休暇<br>介護休暇<br>産前産後休暇<br>育児休暇※男性も積極取得<br>子の看護休暇<br>配偶者出産休暇<br>生理休暇<br>ボランティア休暇<br><br>有給休暇積極消化中<br>１人あたり15.4日（2022年度）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>企業型確定拠出年金制度<br>企業型確定給付年金制度<br>有給休暇(法定通り)<br>有給休暇の時間単位の取得<br>メンタルヘルスチェック年2回<br>インフルエンザ予防接種代金補助<br>車通勤可(駐車場代自己負担)<br>保育手当　※規定あり<br>社員短時間労働制度　※最長12年<br>自主学習制度(最大10万円)<br>（ソムリエ、メンタルヘルスマネジメントなど<br>学びたいものを会社に申請して受理されると<br>セミナー代や通信教育費などが<br>最大10万円まで補助される制度です）<br>禁煙サポート<br>eラーニング（教材数：1500種類以上）<br>社外研修制度（外部研修などを会社負担で受講可能）<br>海外研修（タイ）<br>社員購入制度<br>プロフェッショナル制度<br>ワクチン接種支援制度<br>新規事業提案<br>のれん分け制度（※社員の独立支援を応援しています）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%82%B3%E3%83%AA%E3%83%B3%E3%82%B0" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
