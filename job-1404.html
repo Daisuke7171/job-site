@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜ヒトツメ株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【代表直下】急成長HRベンチャーのHRコンサルタント</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>ヒトツメ株式会社</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿1-25-1　 新宿センタービル49階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 8500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>▍ミッション<br>￣￣￣￣￣￣￣￣￣￣<br>クライアント企業の採用の戦略～実行まで、一気通貫で担当し、採用成功させることです。<br>クライアントの外部人事に近い立ち位置で、クライアントよりも事業戦略の理解を深めた上で、あらゆるソリューション提案を行います。<br>1つのHRソリューションのみならず、複数のHRソリューションを組み合わせながら、本質的な価値提供をおこないます。<br><br>▍業務内容<br>￣￣￣￣￣￣￣￣￣￣<br>採用支援サービスを展開する当社にて、ご経験に合わせて以下いずれかの業務をお任せします。<br>・RA業務：企業様への採用支援の企画／提案／採用コンサルティングサービス導入<br>採用課題の分析、課題に合わせた採用戦略から採用手法まで提案します。当社サービスに拘らず、<br>厳選した各種特徴のある提携パートナー（広告・ダイレクトスカウト、イベント、採用・人事管理システム、適正検査、動画制作等）のサービスを組み合わせ「自社らしさ」を追求した課題に合った解決策を提示します。<br>・CA業務：求職者様へ一人ひとりに沿った新たな選択肢の提示や、安心してチャレンジできる場を提案します。<br>※上記以外にも、希望すれば採用担当、インサイドセールスチームの立上、その他部署の立上等も兼務いただく事が可能です<br><br>採用に関わる業務に一貫して携われることはもちろん、<br>厳選した人材会社と提携をしており、60を超える数の商材を取り扱うことができるため、クライアントのどんな課題に対しても解決策を提示することが可能です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00～19:00 （所定労働時間：8時間0分）<br>休憩時間：60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休2日制（休日は土日祝日）<br>・年間有給休暇10日～（下限日数は、入社半年経過後の付与日数となります）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内全面禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・住宅手当（2万円／月※賃貸契約世帯主）<br>・通勤手当（3万円まで／月）<br>・書籍購入補助（1万円まで／月）<br>・勤続手当<br>・健康保険、厚生年金保険、雇用保険、労災保険、厚生年金基金<br>・リゾートホテル割引サービス</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%92%E3%83%88%E3%83%84%E3%83%A1%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

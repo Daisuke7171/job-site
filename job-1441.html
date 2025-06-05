@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜アスクプロ株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【コンサル営業・未経験OK】成果主義！急成長中のサービスで専門知識を磨ける</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>アスクプロ株式会社</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区四谷三丁目5番4階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600004</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>私たちアスクプロ（旧社名：日本法規情報株式会社）は。「どこに相談したら良いか“わからない”を“わかる”に変える」を企業理念に掲げる会社です。弁護士・税理士・司法書士等の相談窓口検索サイト「相談サポート」の運営等を通じて、個人・経営者の方々がと専門家とをマッチングさせています。<br><br>【仕事内容】<br>相談窓口検索サイト「相談サポート」は、相続や離婚などの悩み事を持つ個人、および会社設立や節税などの課題を持つ企業経営者と、士業・専門家（弁護士・税理士等）をマッチングさせるWebサービスです。個人・経営者の方にとっては相談先を検索できるサービスであり、専門家の方々にとっては相談者を集客するプラットフォームとなるサービスです。<br><br>この「相談サポート」において、専門家の方々に対する【サービス利用の提案営業】を行っていただきます。<br>・アポ獲得、商談設定<br>・集客課題のヒアリング、サービスの提案（有料掲載の提案）<br>・受注、契約<br>・利用後のアフターフォロー、その他<br><br>集客に悩む弁護士・税理士・司法書士等の方々に、サイトの特徴・強みをアピールしつつ、どのようにして集客すればいいか、具体的なサイトの利用例などを説明してください。受注に結びつけば、その後の契約等を行います。<br><br>【1日の流れ】<br>9:45　出社<br>▼<br>アポイントメントor訪問<br>▼<br>13:00　ランチ<br>▼<br>アポイントメントor訪問<br>▼<br>19:00　退社<br><br>【営業手法】<br>・テレアポにて顧客にアプローチし、訪問します。<br>・目標は毎月設定します。<br>・1日60～100件架電、アポ取得件数目標：1～2件<br><br>【入社後の流れ】<br>一週間の業界研究を座学で行った後は、先輩社員と同行営業しながらOJTで営業スキルを身につけていただきます。応募時点で法律などの専門知識は必要ありません。弁護士や税理士など、士業の方々を相手にしますので、一般的なBtoBの営業スタイルが通用しないケースもあります。現場で様々なノウハウを学びながら、半年後を目安に独り立ちを目指していただきます。<br><br>【キャリアステップ】<br>・未経験入社2年目の26歳で営業主任（ポジションなど）に就任</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00～19:00<br>所定労働時間8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>■週休2日制（土日祝日休み）<br>■年次有給休暇（入社半年後に10日付与。最大20日）<br>■夏季休暇<br>■年末年始休暇<br>■慶弔休暇<br>■産休育休（実績あり）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 喫煙ルーム別所あり。</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■交通費支給（上限あり） <br>■社会保険完備<br>■住宅手当<br>■研修あり<br>■資格取得支援制度<br>■福利厚生サービス加入<br>　ホテル・旅館・映画館などの様々なサービスの割引優待</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%A2%E3%82%B9%E3%82%AF%E3%83%97%E3%83%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

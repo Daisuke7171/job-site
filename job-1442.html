@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>財務・経理｜大洋金物株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【経理 総務部門の募集】創業74年の老舗★インテリア・建具の専門商社</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>大洋金物株式会社</dd>
+
       <dt>職種名</dt>
       <dd>財務・経理</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市中央区高津3-15-34</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5420072</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>私たち大洋金物株式会社は、建築・住宅・インテリア関連製品の卸売会社です。おもに鍵や錠前、ドアノブやレバーハンドルなどの建築金物の卸売と、洗面器や手洗器、バスタブ、トイレなどの衛生機器・家具などの輸入販売の二つの事業を行っています。<br><br>今回、会社の経理・総務部門の担当者を募集いたします。<br>バックオフィス担当者（責任者）として、幅広い業務を担当していただきます。<br><br>【仕事内容】<br>□　経理<br>・財務会計（会計ソフト処理、現預金管理、納税）<br>・給与計算（給与計算ソフト処理、勤怠管理）<br>・固定資産、備品管理（購入～台帳管理）<br>・金融機関対応　<br>・生保、損保管理<br>□総務<br>・人事（求人、面接、入退社手続き等）<br>・社会保険（資格取得、資格喪失、その他各種届出書作成等）<br>・確定拠出年金（加入、喪失処理、掛金管理等）<br>・社内インフラ管理<br>・その他</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:45〜17:15<br>所定労働時間：7時間30分、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>■週休2日制（土日）、祝日<br>■年次有給休暇（10日〜勤続年数に応じて最大20日）<br>■夏季休暇（4日）<br>■年末年始休暇（7日）<br>■慶弔休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■住宅手当<br>■役職手当<br>■残業手当<br>■職務手当<br>■社会保険完備<br>■昇給：年1回<br>■賞与：年2回（平均3ヶ月分）<br>■交通費：月18,000円まで（入社3年未満）<br>■確定拠出年金<br>■退職金</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E5%A4%A7%E6%B4%8B%E9%87%91%E7%89%A9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

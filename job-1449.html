@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社AddFlow</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【成果主義】SNS広告のソリューション営業【20代前半で管理職へ】</h1>
     </div>
   </header>
@@ -146,46 +152,63 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社AddFlow</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区渋谷2-11-13松田渋谷ビルディング 5F</dd>
+
       <dt>都道府県</dt>
       <dd>愛知県</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500002</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■業務概要<br>法人企業に対し、YouTubeやX.LINEの広告枠を使用した動画広告の提案営業を行っていただきます。<br><br>■提案営業の流れ：<br>＜1＞見込みのある企業のリストアップとアプローチ…さまざまな業界の企業をリストアップし、電話でSNS広告についてヒアリング。アポイント取得までつなげます。<br>＜2＞提案用資料の作成…アポイントが取れたお客様に合わせて資料を作成。<br>＜3＞提案・商談…作成資料をもとに広告を提案。<br>＜4＞受注・打合せ・納品…受注<br><br>■入社後の流れ：OJTで学んでいただきます。1名に対して上長1名が担当として指導を行っており、フォロー体制も充分です。YouTubeチームとSNSチームのどちらかに配属されます。<br>■キャリアパス：設立以降、急成長を遂げている同社ではまだまだポストが空いている状況です。昇格のチャンスは毎月ありますので、誰もがそのポストを狙える環境です！過去には、最短<br>2ヶ月で昇給昇格、入社6か月で新オフィス支店長といった例がございまいます。<br>■魅力：<br>◎インセンティブ制度（目標が達成した月に4万円～20万円以上）社長賞（5万円/月）<br>◎年齢に関係なく、スキルや実績を考慮した評価を行っており、自身が頑張った分だけ評価されます。また、社内の平均年齢は20代後半と若く活気があり、今後スピード感をもってスキルア<br>ップをしていきたい方にはぴったりな環境です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:30～19:00 <br>所定労働時間：8時間<br>休憩時間：90分</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制（休日は土日祝日）<br>年間有給休暇10日～20日（下限日数は、入社半年経過後の付与日数となります）<br>年間休日日数120日以上<br>GW、夏季休暇、年末年始、年次有給休暇 他</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 対策あり
 敷地内喫煙可能場所あり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保障完備<br><br>＜各手当・制度補足＞<br>■通勤手当：上限25,000円／月<br>■住宅手当：～20,000円／月 ※規定有<br><br>＜教育制度・資格補助補足＞<br>■研修は基本的にOJT研修となります。<br><br>＜その他補足＞<br>■月間インセンティブ制度<br>■月間社長賞<br>■昇給昇格査定（毎月）<br>■営業交通費（実費）<br>■ウォーターサーバーあり<br>■PC・業務端末貸与<br>■早上がり制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAddFlow" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
