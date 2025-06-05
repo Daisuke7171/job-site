@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ホールスタッフ｜株式会社イデア（関西採用）</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【店長候補／関西】未経験OK★深夜勤務なし★充実の手当</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社イデア（関西採用）</dd>
+
       <dt>職種名</dt>
       <dd>ホールスタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府・京都府・奈良県の各店舗（希望あれば別関西圏各店舗）への配属となります。</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>#N/A</dd>
+
       <dt>郵便番号</dt>
       <dd></dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>「鶴橋風月（つるはしふうげつ）」各店舗の店長候補としてホール・調理業務から携わります。まずはホールや調理の仕事からスタートしますが、いずれは店長として店舗を運営するために、 数字管理やスタッフのマネジメントといった経営に関する知識・技術も身につけていただきます。<br><br>【具体的には……】<br>＜ホール＞<br>・オーダーを聞く<br>・お料理、ドリンクを運ぶ<br>・お好み焼きを焼き上げる<br>・お会計<br>など、基本的な接客<br>※基本的には5テーブルほど担当します<br><br>＜調理＞<br>・食材のキャベツを刻む<br>・粉を混ぜる<br>・サイドメニューを作る<br>など、基本的な調理<br><br>＜慣れてきたら＞<br>・アルバイトの育成<br>・発注<br>・締め作業<br>・店舗運営<br>など<br><br>【勤務時の服装】<br>男女共にワイシャツ、ズボン、バンダナ、エプロンでの勤務となります。<br><br>【1日の業務の流れ】<br>開店準備<br>●両替<br>●納品物収納<br>●ホール及びキッチンのオープン準備<br>●キッチンにて仕込み作業<br>●ランチ営業<br>●発注業務<br>●休憩<br>●ディナータイム営業<br><br>閉店業務<br>●片付け・清掃<br>●レジ閉め・入金・日報作成<br><br>【入社後の流れ】<br>OJTにて店舗での研修を受けていただきます。まずはホール業務からスタートし、お好み焼きのおいしい焼き方を学んで頂きます！時間をかけてしっかりとマネジメント候補として成長いただく予定です。顧客が満足できるような焼き方を身に付けることができるため、飲食業界・お好み焼き店が初めての方でも問題ありません。ゼロからのスタートでも大体2～6ヶ月でホール業務・調理業務を一通り覚えることができます。<br>順を追って着実に経験を重ねていけるよう配置していきますので未経験でも安心です。活躍している先輩は飲食業界未経験の人も少なくありません。<br><br>【キャリアステップ】<br>＜店長になるまで＞<br>入社→副主任→主任→店長代理→副店長→正店長<br>入社後まずはホール業務を中心に経験を積みます。入社後およそ1年で副主任試験を受けていただいています。その後昇格してから毎年1回昇格試験を受けることができます。<br><br>＜店長になった後＞<br>店長から先には複数店舗を統括するスーパーバイザーや、新規出店の企画運営に携わる開発スタッフという道もあります。店舗の最前線で経験を積むことで、将来は本部で活躍できる可能性もあります。また現在海外への店舗展開も力を入れており、ご自身の興味次第で手をあげ挑戦することも可能です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>1ヶ月単位の変形労働時間制（年間平均で1ヶ月173.75時間）<br>休憩1時間<br><br>＜標準的な勤務時間帯＞<br>10:00～19:00</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制（休日は会社カレンダーによる、月9日）<br>年間有給休暇10日～20日（下限日数は、入社半年経過後の付与日数となります）<br>夏季休暇<br>冬季休暇<br>慶弔休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内全面禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>通勤手当：全額支給<br>退職金制度：3年以上の勤務<br>寮社宅：借り上げ家賃の50％※地方転勤・地方採用の場合<br>食事補助<br>社員旅行<br>社員持株制度及び奨励金制度<br>総合福祉団体定期保険制度<br>慶弔見舞制度、休業補償制度<br>各種手当（地域・残業・休日出勤・深夜労働）<br>住宅手当：月1万円<br>家族手当：月1万円＋更に子1人5000円※上限3人<br>役職手当：副主任月5000円、主任月1万円、店長代理月1万5000円、副店長2万円、正店長月10万円、マネージャー月13万円<br>※店長代理又は副店長で、店舗の責任者（トップ）になった場合、別途手当1万円<br>※正店長については、管理職の為残業手当は支給致しません。（休日出勤手当は支給）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A4%E3%83%87%E3%82%A2%EF%BC%88%E9%96%A2%E8%A5%BF%E6%8E%A1%E7%94%A8%EF%BC%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

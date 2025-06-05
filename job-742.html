@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ホールスタッフ｜株式会社スティルフーズ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【川崎】鉄板料理をもっと身近にカジュアルに◆接客が好きなら活躍できるホールスタッフ</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社スティルフーズ</dd>
+
       <dt>職種名</dt>
       <dd>ホールスタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>神奈川県川崎市幸区南幸町2-72-1 ラゾーナ 川崎 プラザ 4F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>川崎市</dd>
+
       <dt>郵便番号</dt>
       <dd>2120016</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>・ホール業務全般<br>・飲料の管理<br>・スタッフの労務管理<br>・スタッフOJT<br>・売り上げ管理<br>・販促施策考案　など<br><br>『鉄板焼S』とはーーーーー<br>『鉄板焼S』は「気軽に本格の鉄板焼きを楽しんでもらいたい。」が<br>コンセプトです。<br>厳選した極上の国産牛や旬の食材を、<br>料理人が目の前で調理してご提供しています。<br>ラゾーナ川崎のシンボルレストランとして、<br>お誕生日・結婚記念日・接待など大切な日に選ばれています。<br>お客様のお腹も心も満たすひとときを、<br>あなたも一緒にお届けしてみませんか？<br><br>ランチタイムはカジュアルに、<br>ディナーはフォーマルな雰囲気を持つレストランです。<br>スタイリッシュでありながら堅苦しさのない空間をご用意しております！<br>鉄板焼きならではの、サービススキルや鉄板調理ノウハウを<br>ぜひ身につけてください！今よりさらに成長した自分になれるはずです。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00〜23:00（休憩あり・シフト制）<br>そのうち所定労働時間8時間、休憩1時間～1時間30分</dd>
+
       <dt>休暇・休日</dt>
       <dd>月8〜9日（シフト制）<br>慶弔休暇<br>有給休暇（10日〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>昇給年2回<br>交通費支給<br>社会保険完備<br>食事手当<br>制服貸与<br>役職手当</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B9%E3%83%86%E3%82%A3%E3%83%AB%E3%83%95%E3%83%BC%E3%82%BA" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

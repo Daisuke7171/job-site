@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>宿泊施設・ホテル｜株式会社Ｅｄｅｙａｎｓ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【客室清掃×デジタル】業界の変革に挑むホテルの客室清掃現場の東京エリアマネージャー</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Ｅｄｅｙａｎｓ</dd>
+
       <dt>職種名</dt>
       <dd>宿泊施設・ホテル</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区銀座8-14-9デュープレックス銀座タワー8/14 302</dd>
+
       <dt>都道府県</dt>
       <dd>兵庫県</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1040061</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>各ホテルの現場責任者と連携して、担当エリアの収支の管理、よりクオリティ高い客室清掃品質の提供、よりスタッフが働きやすくモチベーションの高いチーム作りをお任せします！<br><br>● 各ホテルの現場責任者のマネジメント<br>└ スタッフにやりがいを持って気持ちよく働いてもらえる環境づくりをお願いします。<br>● 各施設の売上、原価 および 予算管理<br>● 清掃パートナー企業のマネジメント<br>● より効率化、働きやすい環境をつくるためのルール整備<br>● 清掃オペレーション／品質管理<br>└ ただし清掃業務ではなく、マネジメント業務がメインです。<br>● 採用面接<br>└ 担当エリアで働いていただくアルバイトの面接をお願いします</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>フレックスタイム勤務制（5:00～22:00の間で適応）<br>1ヶ月の標準労働時間：165時間（コアタイムなし）<br><br>実際の勤務時間の例<br>①　08:00〜17:00、休憩60分<br>②　09:00〜18:00、休憩60分<br>③　10:00〜19:00、休憩60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>■月の休日：10日 ※2月・8月は9日<br>└ 年間休日118日<br>■有給休暇<br>└ 入社半年経過時点で10日付与</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■各種社会保険完備（健康・厚生年金・労災・雇用）<br>■交通費支給</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%EF%BC%A5%EF%BD%84%EF%BD%85%EF%BD%99%EF%BD%81%EF%BD%8E%EF%BD%93" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

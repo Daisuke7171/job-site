@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社Lifeplay</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【webマーケ×広告業界】ASP事業の法人営業募集！★土日祝休み★インセンティブ★ランチ補助</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Lifeplay</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区桜丘町31-14 岡三桜丘ビル SLACK SHIBUYA 201</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500031</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【法人向け】不動産に特化した成果型インターネット広告の提案/運用<br>座学・OJT研修も実施するので業界未経験でも安心して飛び込んでください！<br><br>具体的に担当していただく業務は<br>■広告主向け営業<br>「資料請求」「口座開設」「会員登録」などインターネット上で<br>プロモーションを実施する広告主に対し、アフィリエイトプログラム等を提案。<br>■媒体向け営業<br>インターネットメディア各社に対し、「プロモーション」「タイアップ」<br>「キャンペーン」など様々な企画を提案。<br>■広告運営・カスタマーサクセス<br>広告主からヒアリングした情報をシステムに連携。<br>運用状況を見ながら改善策を考えたり、新たな施策を提案するなど継続的にサポート。<br>■顧客リストの作成<br>ASP事業部はまだスタートしたばかり。<br>すでにお取り引きがあるお客様や新規開拓のチャンスがあるお客様など、<br>リストづくりも少しずつ進めてください。<br>■営業事務/企画<br>営業活動をしていくうえで発生する事務的な作業（資料作成、契約書/請求書の発行、メールでのやり取りなど）もお願いします。<br>また、商談相手の応じて、事前に広告の企画を一緒に練り上げ、企画書に落とし込む作業も発生することがあります。<br><br>■入社後の流れ■<br>入社直後はASPの専門知識などについて学ぶ座学研修を実施。<br>★業界未経験でも安心してスタートできます★<br>その後、代表や業務委託の経験者とともに実務に携わりながら、<br>疑問点を1つ1つクリアして行くOJT研修を実施。<br>独り立ちできると分かった時点で、提案も運用もどんどんお任せして行きます。<br><br>■将来のキャリアパス■<br>これまで社内で手分けして動かしていたASP事業をあなたの手元に集約。<br>今後さらにメンバーを増やし、事業規模を拡大して行く方針です。<br>将来的にマネジメント人材として、他のメンバーを率いていただく可能性もあります。<br>★スキルアップのための研修参加や書籍購入の費用は、全額支給します★</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00~18:00（労働時間8時間）<br>※休憩１時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休二日制（土日祝）<br>年末年始休暇<br>有給休暇（10日〜勤続年数に応じて最大20日）<br>産休・育休</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備<br>■月1回の定例ランチ会（会社負担）<br>■書籍や研修関連の費用サポート<br>■ランチ補助（6時間以上勤務した日に1日500円支給）<br>■業務中のお菓子<br>■ドリンク（コーヒー、紅茶、お茶など）飲み放題<br>■アルコールOK（定時終了後、会社負担で飲めます）<br>■人間ドック代支給（年1回、5万円まで）<br>■家賃補助5万円（※渋谷駅から3駅以内のエリアに新しく引っ越した場合）<br>これからも福利厚生を増やしていく予定なので、 「こんな福利厚生あれば良いな」という意見があれば どんどん案を出してください！</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BELifeplay" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

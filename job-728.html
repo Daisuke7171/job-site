@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社キャスティングロード</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>新潟支店限定採用【提案営業】人材サービスの提案・キャスト管理★賞与年2回／年間休日125日</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社キャスティングロード</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>新潟県新潟市中央区万代1-4-33　損保ジャパン・新潟セントラルビル5階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新潟市</dd>
+
       <dt>郵便番号</dt>
       <dd>9500088</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>人材で悩む企業と当社キャストの架け橋になるべく、当社人材サービスの提案、キャスト管理などをお任せします。<br>※当社では派遣社員をキャストとお呼びしています。<br><br>＜具体的な仕事内容＞<br>■人材派遣サービスの提案<br>コールセンター業界がメインですが、他にも事務案件など、クライアントのご要望に合わせ提案します。<br><br>■希望人材ニーズをヒアリング<br>人数やスキル、経験などを細かくヒアリングし、社内で共有します。<br><br>■新規クライアント開拓<br>業界問わず人材募集をしている企業へ、テレアポにて新規開拓をします。<br><br>■派遣スタッフの勤怠管理<br>出勤確認からシフトでの労働時間を管理します。また、営業担当として派遣キャスト1名をフォローします。<br><br>＜サービス＞<br>当社のサービスは、コールセンター業界を中心とした人材派遣です。<br><br>【1日の流れ】<br>9:00　出社<br>▼<br>9:30　メール対応などの事務作業<br>▼<br>11:00　電話・メールで新規顧客へアプローチ<br>▼<br>12:00　ランチ<br>▼<br>13:00　既存顧客への定期訪問<br>▼<br>17:00　オフィスに戻り事務作業<br>▼<br>18:00　退社<br><br>【入社後の流れ】<br>入社後、まずは当社のサービス特徴などを学びます。派遣法など、基礎の部分もしっかりレクチャーいたします。その後は、先輩とのOJTでキャストや企業をどうフォローしていくかなど、実践的なノウハウを覚えていきます。<br>1ヶ月を目途に、先輩からキャストと派遣先の企業を引き継ぎます。<br><br>【キャリアステップ】<br>受注の成果だけではなく、「●件以上電話をかけた」といったプロセスも皆で賞賛します。表彰式も毎月実施しているため、モチベーション高く活躍できる環境です！<br>頑張りは公正に評価し、中には中途入社5年で支店長に昇進した先輩もいます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休二日制（土日）<br>・祝日<br>・ゴールデンウィーク<br>・夏季休暇<br>・年末年始休暇<br>・有給休暇（10日〜勤続年数に応じて最大20日）<br>・慶弔休暇<br>・特別休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 施設内喫煙所完備</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・昇給年2回（5月、11月）<br>・昇格年1回（10月）<br>・賞与年2回（6月、12月）<br>※別途インセンティブあり<br>・通勤手当支給（上限月3万円）<br>・時間外手当（追加分全額）<br>・深夜勤務手当<br>・住宅手当（家賃に対して20％分を支給　上限月1万5000円）<br>・子ども扶養手当（1人につき5000円）<br>・産休育休制度<br>※男女問わず復帰した社員も多くおります。<br>・定期健康診断</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

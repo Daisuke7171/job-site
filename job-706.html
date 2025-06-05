@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜株式会社アスウイッツ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>未経験からプロのエステティシャンに♪美容が大好き/自分自身も綺麗になりたい方！充実した研修制度あり！</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社アスウイッツ</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>千葉県習志野市東習志野７丁目１−２２</dd>
+
       <dt>都道府県</dt>
       <dd>神奈川県</dd>
+
       <dt>市区町村</dt>
       <dd>習志野市</dd>
+
       <dt>郵便番号</dt>
       <dd>2750001</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 3000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>◆充実した研修制度で未経験からエステティシャンに！未経験8割/美容の知識が身につく/美容が大好き！手に職をつけたい方大募集♪入社後は先輩たちがしっかりサポートします♪<br><br>フィットネスクラブ内にて、当社独自のセラピーを活かし<br>お客様の『美』をプロデュースします。<br><br>*:━━━━━━━━━━:*<br>　　  具体的には？<br>*:━━━━━━━━━━:*<br>『ボディエステ』や『ボディケア』『フェイシャル』などの施術を行います。<br>お客様一人ひとりが理想としている美をヒアリングし<br>理想に沿ったプランをご提案。<br>お客様の美意識を高めるサポートができる仕事です♪<br><br>*:━━━━━━━━━━:*<br>  こんな仕事もおまかせ<br>*:━━━━━━━━━━:*<br>◇カウンセリング<br>◇マシーンやハンドでの施術<br>◇予算や期間など施術内容のプランニング、ご提案<br>◇コスメやサプリメントのご提案<br>◇『キネスティックセラピー』を用いたボディケア<br>◇血流改善やデトックス効果のある『ゲルマニウム温浴』のご案内　など<br><br>◆『キネスティックセラピー』とは？<br>‘‘背骨の可動域を正常化させること‘‘を目的とした当社独自の施術です。<br><br>身体に想像以上の負担が掛かる<br>立ちっぱなしや座りっぱなしの姿勢。<br>そこから起こる体のむくみや姿勢の悪さ、慢性疲労、肩こり、腰痛など…<br>体調改善がしたい方や運動の効率を上げダイエットに繋げたい方など、<br>さまざまな方から好評をいただいています！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>シフト制（店舗により時間は異なる）<br>例10:00～21:00、11:00～20:00<br>1日の労働時間：8時間、休憩1時間<br>1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下）<br><br>基本的には月8日休み<br>希望により月6～10日休み（シフト制による）も相談可能です</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日110日相当<br>※詳細は面接時にお伝えします<br><br>■基本的には月8日休み（シフト制）<br>※希望により月6日～10日休み（シフト制による）相談可能です<br>■夏季休暇<br>■年末年始休暇<br>■誕生日休暇<br>■育児休暇あり<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>待遇・福利厚生・その他</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： サロン内になければ外の喫煙所でお願いしております。</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■賞与あり（実績による）<br>■昇給随時（実績による）<br>■インセンティブあり（実績による）<br>■月次ボーナスあり（実績による）<br>■社会保険完備<br>■交通費支給<br>■役職手当<br>■社内表彰制度<br>■育児支援制度<br>■健康診断<br>■社員旅行<br>■保養所あり（エクシブリゾート）<br>■社員割引<br>■再雇用制度<br>■制服あり<br>■独立・開業支援<br>■研修制度あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%82%B9%E3%82%A6%E3%82%A4%E3%83%83%E3%83%84" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
