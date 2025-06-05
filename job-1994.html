@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>インフラエンジニア｜株式会社プロトシステム</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>★増員枠拡大★クラウド（AWS）環境での実務経験者を優遇【インフラエンジニア（クラウドエンジニア）】</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社プロトシステム</dd>
+
       <dt>職種名</dt>
       <dd>インフラエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>【本社所在地】 東京都千代田区二番町12-3 グレイス麹町6階</dd>
+
       <dt>都道府県</dt>
       <dd>【本社所在地】 東京都</dd>
+
       <dt>市区町村</dt>
       <dd>千代田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1020084</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>インフラエンジニアとして、ITインフラおよびクラウド環境設計構築、運用保守業務をお任せします。<br><br>※経験や各種クラウドサービス（AWS、Azure等）の知識、各種製品知識、業務知識などを総合判断の上、相応しい業務をお任せします。<br><br>▼プロジェクト例<br>金融機関向けクラウド環境構築～運用保守<br>マルチベンダー向けクラウド環境設計構築～運用支援<br>公共系ITインフラ次期システム設計構築～保守<br>製薬、製造業向けクラウド環境構築～運用支援　…等<br><br>▼技術環境<br>クラウド：AWS/Azue/Enterprise Cloud<br>※AWSの各種サービスを中心に様々な製品を使用します。<br>仮想化：VM-Ware ESXi/Hyper-V/Nutanix/Citrix<br>OS：Linux（CentOS、RHEL）/Windows Server<br>ミドルウェア：Oracle/PostgreSQL/MySQL/Zabbix/IIS/JP1<br>セキュリティ：McAfee/Trend Micro/Symantec/Cisco<br>※プロジェクト毎に用いられる製品や技術は変わります。<br><br>▼業務内容<br>1：保守、運用<br>バックアップ、設定変更、保守作業、手順書作成、レポート作成、更新作業、コンフィグ作成および設定、パッチ適用等の業務<br><br>2：構築、設計<br>要件定義、設計書作成、顧客向け資料作成、構成図作成、テスト環境構築、検証環境構築、本番環境構築、開発環境構築等の業務<br><br>※保有スキル、製品知識、経験した業務、業務知識等を総合判断の上、ご経験に相応しい業務をお任せします。<br><br>▼求められるスキル、経験<br>ネットワーク、サーバなどインフラエンジニアとしての業務経験<br>クラウド環境での運用保守経験<br>CCNA以上、LinuCレベル2以上の知識<br>AWS認定　Solutions Architect程度の知識</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00～18：00（実働8時間）<br>※プロジェクトにより変動します。<br><br>基本的には、9：00～18：00の実働8時間ですが、時差出勤や在宅勤務になる場合もあります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>◇年間休日125日以上<br>◇完全週休2日制（土日）<br>◇祝日休み<br>◇年末年始休暇<br>◇GW休暇<br>◇夏季休暇<br>◇慶弔休暇<br>◇有給休暇<br>※平均の取得日数は11.4日と有給を取りやすい環境です<br>◇産前・産後休暇<br>◇育児休暇<br>◇介護休暇<br>◇特別休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 主要顧客先は敷地内全面禁煙だが、顧客先により異なる。</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>〈福利厚⽣・諸手当〉<br>社会保険完備、交通費支給、健康診断、役職手当、資格取得制度<br><br>補足情報：<br>◇賞与有：年2回/7月・12月<br>◇昇給年1回（4月）<br>◇交通費全額支給（規定あり）<br>◇社会保険完備（雇用・労災・健康・厚⽣年金）<br>◇時間外手当（超過分）<br>◇出張手当<br>◇役職手当<br>◇調整手当<br>◇報奨金制度<br>◇資格取得奨励金制度（書籍代・受験費用・一時金支給。一時金は最大15万円／社内規定有）<br>◇退職金制度<br>◇オフィス内禁煙<br>◇各種勉強会<br>◇定期健康診断<br>◇リファラル採用制度<br>◇関東ITソフトウェア健康保険組合加入（各種イベント・保養施設あり）<br><br>▼資格取得奨励金制度とは？<br>資格取得の為に必要な「教材費」「受験費用」を全額会社が負担します。<br>また、資格取得された方には「一時金」を支給しております。（最大15万円／社内規定有）<br>※継続的に学習しやすい環境の用意と努力に応じた還元をしています。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%97%E3%83%AD%E3%83%88%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

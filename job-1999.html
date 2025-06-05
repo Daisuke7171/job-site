@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ITヘルプデスク・カスタマーサポート｜株式会社プロトシステム</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>未経験OK【クラウド・ITインフラサポート】女性活躍中・産休育休実績あり★年休125日・残業ほぼなし</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社プロトシステム</dd>
+
       <dt>職種名</dt>
       <dd>ITヘルプデスク・カスタマーサポート</dd>
+
       <dt>勤務地</dt>
       <dd>【本社所在地】 東京都千代田区二番町12-3 グレイス麹町6階</dd>
+
       <dt>都道府県</dt>
       <dd>【本社所在地】 東京都</dd>
+
       <dt>市区町村</dt>
       <dd>千代田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1020084</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>クラウド・ITインフラサポートをお任せします。<br>段階的に習熟していきステップアップしていけるポジションの募集です。<br><br>※これからITエンジニアとしてキャリアスタートしていきたい方や、チャレンジしやすい内容から徐々にステップアップしていきたい方にお勧めです。<br><br>ｰｰｰクラウド・ITインフラサポートとはｰｰｰｰｰｰｰｰｰｰ<br>AWSやAzure、microsoftのM365等が代表例ですが、企業や世界で活用されている”ITインフラやITサービス”に関して支援業務やサポートを行い、最適な状態を維持していく仕事です。<br><br>ｰｰｰキャリアスタート・ステップアップの仕方ｰｰｰｰｰｰｰｰｰｰ<br>障壁の高いキャリアを目指し最初の段階から取り組むと、何事もうまくいかないことが多いです。ですので、最初のステップはITサポート・IT支援業務からスタートし、その実務を通じて習熟したことや、身に着けたスキルを自身の資産として、次のステップへと段階的にキャリアアップしていけます。<br><br>★自分のペースを保ちつつ、堅実なキャリアを考える方には適していると思います。<br><br>▼ご入社後の業務内容<br>・クラウドサービス環境運用支援（AWS/Azure/M365）<br>・ITインフラサポート（VMware/Windows/RHEL）etc<br>手順書を元に指示をもらいつつ作業したり、先輩のフォローをもらいつつ担当業務を行います。<br>実務を通じて製品知識やスキルを身に着け、基本となる業務を覚えて下さい。<br><br>スキルがつくと以下のような案件に参画できます。<br>▼プロトジェクト例（技術環境）<br>・クラウド環境構築～設計（AWS・Azure・OCI）<br>・インフラシステム設計～構築（CISCO・VMware・Windows・RHEL）<br>・データベース/インフラシステム開発～構築（AWS・SnowFlake・python）etc<br>習熟した内容や身に着けたスキルや技術、知識を活かして、ステップアップ、キャリアップも可能です。<br><br>▼以下のような方を求めてます。<br>・向上心がある<br>・ITサービス、データ等を扱う仕事に興味がある<br>・コミュニケーション力がある<br>・キャッチアップが早い<br><br>1年目は”できることを増やす”を目標に、一緒に頑張ってくれると嬉しいです。<br><br>フォローは行いますので大丈夫です。<br>できることからはじめて、段階的に習熟していきましょう。<br><br>”技術を学び、仕事をしながら技術を磨いていく”<br>この働き方に共感できる方と、一緒に働きたいと考えています。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00～18：00（所定労働時間8時間、休憩1時間）<br>※プロジェクトにより勤務体制が変更する場合があります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>◇完全週休2日制（土日）<br>◇祝日休み<br>◇年末年始休暇<br>◇GW休暇<br>◇夏季休暇<br>◇慶弔休暇<br>◇年次有給休暇（10日〜勤続年数に応じて最大20日）<br>※平均の取得日数は11.4日と有給を取りやすい環境です<br>◇産前・産後休暇<br>◇育児休暇<br>◇介護休暇<br>◇特別休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 主要顧客先は敷地内全面禁煙だが、顧客先により異なる。</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>〈福利厚⽣・諸手当〉<br>社会保険完備、交通費支給、健康診断、役職手当、退職金制度、資格取得制度<br><br>補足情報：<br>◇賞与有（給与欄参照）<br>◇昇給年1回（4月）<br>◇交通費全額支給（規定あり）<br>◇社会保険完備（雇用・労災・健康・厚⽣年金）<br>◇時間外手当（超過分）<br>◇出張手当<br>◇役職手当<br>◇報奨金制度<br>◇資格取得奨励金制度（書籍代・受験費用・一時金支給。一時金は最大15万円／社内規定有）<br>◇退職金制度<br>◇オフィス内禁煙<br>◇各種勉強会<br>◇定期健康診断<br>◇リファラル採用制度<br>◇関東ITソフトウェア健康保険組合加入（各種イベント・保養施設あり）<br><br>▼資格取得奨励金制度とは？<br>資格取得の為に必要な「教材費」「受験費用」を全額会社が負担します。<br>また、資格取得された方には「一時金」を支給しております。（最大15万円／社内規定有）<br>※継続的に学習しやすい環境の用意と努力に応じた還元をしています</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%97%E3%83%AD%E3%83%88%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

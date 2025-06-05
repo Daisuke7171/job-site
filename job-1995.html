@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>業務系アプリケーションエンジニア・プログラマ｜株式会社プロトシステム</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>＜組込みエンジニア＞C言語を使用した組込み系開発</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社プロトシステム</dd>
+
       <dt>職種名</dt>
       <dd>業務系アプリケーションエンジニア・プログラマ</dd>
+
       <dt>勤務地</dt>
       <dd>【本社所在地】 東京都千代田区二番町12-3 グレイス麹町6階</dd>
+
       <dt>都道府県</dt>
       <dd>【本社所在地】 東京都</dd>
+
       <dt>市区町村</dt>
       <dd>千代田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1020084</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>組み込みエンジニアとして業務をお任せ致します。<br>※スキルや経験、習熟度に応じて各プロジェクトに割り振ります。<br><br>ｰｰｰ組み込みエンジニアとはｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ<br>自動車や産業用ロボット、デジタル家電を制御するソフトウェアをCやC++を使用して開発する仕事です。<br><br>▼未経験の方の作業例<br>・テスト設計/テスト実施<br>・設計書に基づきコード実装<br>・ドキュメント（設計書、手順書等）の作成/改訂<br><br>スキルがつくと以下のような案件に参画できます。<br>▼プロジェクト例/言語<br>・ゲーム機器の開発／C、C++、C#、JavaScript<br>・車載ソフトウェア関連の開発／C、C++、Ruby …等<br>※プロジェクト毎に用いられる技術は変わります。<br><br>▼以下のような方を求めてます。<br>・向上心がある<br>・モノづくりに興味がある<br>・コツコツ物事に取り組める<br>・コミュニケーション力がある<br>1年目は”できることを増やす”を目標に、一緒に頑張ってくれると嬉しいです。<br>フォローは行いますので大丈夫です。<br>できることからはじめて、段階的に習熟していきましょう。<br><br>”技術を学び、仕事をしながら技術を磨いていく”<br>この働き方に共感できる方と、一緒に働きたいと考えています。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00～18：00（実働8時間）<br>※プロジェクトにより変動します。<br><br>基本的には、9：00～18：00の実働8時間ですが、時差出勤や在宅勤務になる場合もあります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>◇完全週休2日制（土日）<br>◇祝日休み<br>◇年末年始休暇<br>◇GW休暇<br>◇夏季休暇<br>◇慶弔休暇<br>◇年次有給休暇（10日〜勤続年数に応じて最大20日）<br>※平均の取得日数は11.4日と有給を取りやすい環境です<br>◇産前・産後休暇<br>◇育児休暇<br>◇介護休暇<br>◇特別休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 主要顧客先は敷地内全面禁煙だが、顧客先により異なる。</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>〈福利厚⽣・諸手当〉<br>社会保険完備、交通費支給、健康診断、役職手当、資格取得制度<br><br>補足情報：<br>◇賞与有：年2回/7月・12月<br>◇昇給年1回（4月）<br>◇交通費全額支給（規定あり）<br>◇社会保険完備（雇用・労災・健康・厚⽣年金）<br>◇時間外手当（超過分）<br>◇出張手当<br>◇役職手当<br>◇調整手当<br>◇報奨金制度<br>◇資格取得奨励金制度（書籍代・受験費用・一時金支給。一時金は最大15万円／社内規定有）<br>◇退職金制度<br>◇オフィス内禁煙<br>◇各種勉強会<br>◇定期健康診断<br>◇リファラル採用制度<br>◇関東ITソフトウェア健康保険組合加入（各種イベント・保養施設あり）<br><br>▼資格取得奨励金制度とは？<br>資格取得の為に必要な「教材費」「受験費用」を全額会社が負担します。<br>また、資格取得された方には「一時金」を支給しております。（最大15万円／社内規定有）<br>※継続的に学習しやすい環境の用意と努力に応じた還元をしています。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%97%E3%83%AD%E3%83%88%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Web・SNSマーケティング｜株式会社HRC</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>急成長企業でCRMに挑戦！あなたのサポートで理想の未来を叶える</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社HRC</dd>
+
       <dt>職種名</dt>
       <dd>Web・SNSマーケティング</dd>
+
       <dt>勤務地</dt>
       <dd>東京都豊島区高田３－１４－２９ＫＤＸ高田馬場ビル５階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>豊島区</dd>
+
       <dt>郵便番号</dt>
       <dd>1710033</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>CRMは、商品を購入されたお客様に対して、各種ツールを使って最適なタイミングで最適な商品をご案内し、お客様のお悩みの解消、さらにお客様の理想を叶えるサポートをしています。<br>また、商品のご案内だけでなく、お客様に満足いただけるサービスの構築、SNSを通じての情報発信など、多岐にわたる業務内容です。<br><br>【具体的な業務内容は以下の通りです】<br><br>1)リピート戦略の立案と実行<br>・過去の購買データや顧客行動データを分析し、顧客の購買パターンを把握。<br>・リピート購入を促進する戦略を立案・実行。<br><br>2)数値管理・分析を通じた戦略の改善<br>・効果測定に基づいて、戦略の改善案を提案・実施。<br><br>3)メールマガジン/LINE＠の設計・配信<br>・顧客セグメントごとに最適化されたメールやLINEメッセージを設計。<br>・配信スケジュールを管理し、フォローアップやクロスセル施策を実行。<br><br>4)自社ECサイトの顧客情報収集と分析<br>・顧客の購買履歴やサイト内行動データを収集し、分析。<br>・分析結果をもとに、顧客体験の向上施策を提案・実施。<br><br>5)既存顧客向けキャンペーンの企画運営<br>・顧客ロイヤルティを高めるためのキャンペーンを企画。<br>・キャンペーンの運営を管理し、効果測定を行い改善策を実施。<br><br>6)制作物のディレクション<br>・配信バナー、LP、同梱物などの制作をディレクション。<br>・制作物の品質管理と納期管理を行い、効果的なマーケティングを実現。<br><br>■CRMのミッション<br>・顧客育成（購入後のフォローアップ、販促）<br>・LTV・リピート率向上<br>・継続率を上げるための施策展開</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>始業9：30<br>終業18：30<br>所定労働時間：8時間<br>休憩：60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制（土・日）、祝日<br>■GW休暇<br>■夏季休暇（5日）<br>■年末年始休暇（9日）<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>■慶弔休暇<br>■特別休暇<br><br>※産休・育休取得実績あり</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋外喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■各種社会保険完備 ( 雇用・健康・労災・厚生年金 )<br>■社外研修・セミナー費用全額負担（要審査）<br>■食事会（達成会・歓迎会・誕生日会など）<br>■各種イベント有り（忘年会、スポーツイベントなど）<br>■健康診断<br>■人間ドック<br>■婦人科健診<br>■インフルエンザ予防接種<br>■家族・扶養手当（配偶者：1万円、子1人：5000円／月）<br>■住宅手当（3.5万円／月）（条件：高田馬場駅より半径5km以内）<br>■育児支援制度有り<br>■交通費支給有り(限度額：月2万円)<br>※バス利用の場合は直線距離2km以上で支給対象になります。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEHRC" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

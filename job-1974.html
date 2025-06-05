@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社サンワシステム</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【経験不問・反響営業】太陽光パネル設置の用地仕入れ提案</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社サンワシステム</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都品川区東品川4-12-6　品川シーサイドキャナルタワー14F</dd>
+
       <dt>都道府県</dt>
       <dd>沖縄県</dd>
+
       <dt>市区町村</dt>
       <dd>品川区</dd>
+
       <dt>郵便番号</dt>
       <dd>1400002</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>太陽光パネルを設置するための土地を仕入れる、提案営業をお任せします。<br><br>「相続した土地の管理が大変」「税金がかかって困っている」「しばらく土地を活用していない」といったお悩みを持つ土地のオーナー様へ、太陽光発電に活用するための土地買取やお借りをする提案営業です。<br><br>【具体的な業務】<br>　￣￣￣￣￣￣<br>＜①アプローチ＞<br>太陽光パネルの設置についてすでに申請しており、土地活用にご興味を持たれているオーナー様に、「申請の許可が下りたので土地の買取を進めたい」と電話で連絡を行います。また、太陽光パネルの設置に適している土地をピックアップし調査した後、オーナー様に土地を買取もしくはお借りできないかアプローチを進めていくケースもあります。<br><br>＜②商談＞<br>買取金額の説明と、決済までの流れを説明し、商談を進めていきます。自分の土地の活用に悩みを抱えているお客様が対象となるので興味をもってお話を聞いていただけることが多く、「土地を売る」のではなく「土地を買う」営業のため、高い契約率を誇ります！契約までは1～2カ月程度です。<br><br>＜③受注＞<br>商談が成立したら、受注の手続きを行います。社員1名あたり月3～4件ほど契約しており、その場合は月10万円ほどのインセンティブが支給されるイメージです！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00（休憩60分、実働8時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>休日：土日祝休み<br>年間休日：120日<br>休暇制度：年末年始休暇、夏季休暇、GW休暇、慶弔休暇、産休・育休、有給休暇（10日〜勤続年数に応じて最大20日）、介護休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備（雇用・労災・健康・厚生年金） <br>■交通費支給（月5万円まで） <br>■社員旅行  <br>■ウェルフェアステーション加入 <br>■退職金</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B5%E3%83%B3%E3%83%AF%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
