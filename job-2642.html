@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜富士インフォックス・ネット株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【九州支店】事務職★採用・営業事務・総務業務のお仕事です★</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>富士インフォックス・ネット株式会社</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>福岡県福岡市博多区祇園町4－2 博多祇園ビル 8階</dd>
+
       <dt>都道府県</dt>
       <dd>神奈川県</dd>
+
       <dt>市区町村</dt>
       <dd>福岡市</dd>
+
       <dt>郵便番号</dt>
       <dd>8120038</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>九州支店管理部門のメンバーとして、下記業務をお任せします。<br>・新卒採用・中途採用業務<br>・契約管理<br>・受発注業務<br>・見積書・請求書・納品書・社内申請書類の作成<br>・データ入力<br>・勤怠管理<br>・備品管理<br>・入退社手続き<br>・庶務<br><br>※変更の範囲：会社の定める業務（管理部門業務全般）<br><br>ご経験により下記業務もお任せします。<br>・教育・研修等<br>・社内行事の企画・運営<br><br>将来的には、支店の管理部門の業務全般に携わっていただき、<br>支店運営に関わるポジションも目指せます。<br><br>少人数で業務を行いますので、能動的に動いてスピーディに処理ができる方、<br>また他部署との連携も多くありますので、チームワークを大切にできる方を歓迎します。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00<br>所定労働時間：8時間、休憩1時間<br>※勤務間インターバル制度、フレキシブル出勤制度あり<br><br>フレキシブル出勤制度：<br>1日ごとに出社時間を8：00～10：00の間で選べます。<br>例）8：30～17：30、10：00～19：00など<br><br>時短勤務：<br>正社員と同様の待遇で1日5時間～勤務可能です。</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制（土日）<br>■祝日<br>■リフレッシュ休暇<br>■年末年始休暇<br>■慶弔休暇<br>■産前・産後休暇<br>■育児休暇（男性の取得実績あり）<br>■特別休暇<br>■ボランティア休暇<br>■年次有給休暇（10日～勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■各種社会保険完備<br>■在宅勤務手当<br>■出張手当<br>■慶弔見舞金<br>■結婚・出産祝金<br>■ジョブローテーション<br>■資格取得報奨金<br>■各種研修<br>　・オンライン研修受け放題（ビジネスマナー、階層別、技術別、職種別等）<br>■定期健康診断<br>■健康保険組合提携施設利用等<br>■社員紹介制度／紹介料30万円</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E5%AF%8C%E5%A3%AB%E3%82%A4%E3%83%B3%E3%83%95%E3%82%A9%E3%83%83%E3%82%AF%E3%82%B9%E3%83%BB%E3%83%8D%E3%83%83%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
