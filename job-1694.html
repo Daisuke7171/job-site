@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社RERISE</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【不動産営業/東京】学歴不問・未経験歓迎/月給43万スタート/常に最高売上を更新中！</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社RERISE</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿２－６－１　新宿住友ビル３７階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>5000000 ～ 30000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>当社がターゲットとしたエリアでの個人向けの不動産の販売営業をお任せします。（新築一戸建）未経験でも現社員のサポートを受けながら着実に業務に取り組んでいただくことが出来ます。<br><br>【業務内容】<br>主に北関東（茨城、栃木、群馬）、愛知県エリアを中心として、個人のお客様へと訪問、住宅ニーズをヒアリングし、お住まいの購入提案営業をお任せします。提案する物件は地場の不動産会社の物件を始め、市場に流通している物件から顧客のニーズに合う物件を提案、購入を頂くことが出来ます。（物件情報サイトにある物件や、地域の不動産会社、ハウスメーカーの扱う物件どれも可能です）</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>平日：12:00～21:00<br>（8時間00分 休憩60分）<br>土日祝：10:00～21:00<br>（8時間00分 休憩180分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>(内訳)<br>完全週休二日制（火曜、水曜）年間120日<br>有給休暇（法定に基づき入社半年後後10日〜最大20日付与）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内禁煙（屋内喫煙可能場所あり）</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■給与改定（毎月）　<br>■役職手当<br>■通勤交通費全額支給<br>■資格手当（宅地建物取引士など）<br>■慶弔手当<br>■出産祝い金<br>■結婚祝い金<br>■車両手当<br>■家賃手当（最大月3万5千円）<br>■寮、社宅について<br>家賃：3万5千円/月～5万円/月でご用意。<br>※初期費用はかかりません。家具家電完備。<br>入社に伴う転居がすぐにはできないという方でも、入寮制度を設けておりますので、安心してお仕事と向き合えます。<br>※満室の場合がございますので、ご相談ください。<br>「ベストベンチャー100」とは、これから成長が期待されるベンチャー企業100社限定のサイトで、ベンチャー通信を運営するイシン株式会社が提供する法人向け有料会員制サービスになります。イシン株式会社にエントリーした企業の中から、イシン株式会社が厳正な審査のもと選出したベンチャー企業100社が「ベストベンチャー100」として紹介されます。<br>サービス概要や審査内容については下記をご参照ください。 https://best100.v-tsushin.jp/about/</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BERERISE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>業務系アプリケーションエンジニア・プログラマ｜株式会社ジェネシスインフォメーションテクノロジ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【SE/PG】経験半年の方もOK★完全週休2日</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ジェネシスインフォメーションテクノロジ</dd>
+
       <dt>職種名</dt>
       <dd>業務系アプリケーションエンジニア・プログラマ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区百人町2-26-5 マイルドビル 5F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1690073</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2000000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>客先常駐の上でシステムエンジニア、プログラマとして開発業務に取り組んでいただきます。<br>・企画、要件定義<br>・基本設計<br>・詳細設計<br>・開発（コーディング）<br>・単体テスト、結合テスト<br>・運用、保守、ほか<br><br>実際の開発プロジェクトとしては銀行トレーディングシステムや物流システムパッケージ、旅行会社ECサイトなどさまざま。スキルや経験、適性に応じて、最適な工程、および最適なプロジェクトにアサインいたします。<br>経験豊富な方は、早期にPM/PLとして上流工程の業務をお任せすることも可能です。<br><br>【開発事例】<br>＜金融系＞<br>・銀行トレーディングシステム<br>・新BIS対応自己資本比率算出<br>・ALM管理システム<br>・信託銀行年金運用支援システム<br>・銀行業務EUC・RPA<br>・リース会社向け収益予測管理<br><br>＜物流・小売系＞<br>・物流システムパッケージ<br>・カード決済システム<br><br>＜通信販売系＞<br>・販売支援システム<br>・製品情報検索システム<br><br>＜インフラ系＞<br>・旅行会社 販売システムのDB基盤移行 設計・開発・運用・保守<br>・銀行 社内システムのDB基盤 運用・保守<br>・自動車製造会社 販売システムのDB基盤 運用・保守<br>・ITベンダーの企業向けDB基盤運用のサポート</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00～18:30<br>所定労働時間：7.5時間、休憩1時間<br>※配属先により勤務時間、勤務時間帯が変わる場合があります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制（土・日）<br>■祝祭日<br>■年末年始休暇（12/30～1/3）<br>■年次有給休暇（入社半年後10日付与。勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■各種社会保険完備（健康・厚生年金・労災・雇用）」<br>■副業可</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B8%E3%82%A7%E3%83%8D%E3%82%B7%E3%82%B9%E3%82%A4%E3%83%B3%E3%83%95%E3%82%A9%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

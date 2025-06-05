@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社アローリンク</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【営業職】東京・兵庫から選べる勤務地／土日祝休&amp;長期休暇／駅チカ／交通費全額支給／転勤なし</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社アローリンク</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>兵庫県神戸市中央区雲井通4-2-2マークラー神戸ビル4F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>神戸市</dd>
+
       <dt>郵便番号</dt>
       <dd>6510096</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>商材①：LINE運用ツール「Liny」<br>あの有名な女優さんを起用したCMを公開中！（https://line-sm.com/special/）<br>LINE公式アカウントと接続することでより自由度の高い仕組みを簡単にカスタマイズできるサービスです♪<br><br>商材②：持ち運べる役所<br>役所での行政手続き、支払い、ご相談などをスマホでいつでもどこからでも出来るスマートシティを実現します！<br><br>導入実績：<br>顧客は行政です！<br>全国35都道府県、100以上の市区町村、厚生労働省、経済産業省、文化庁、文部科学省、消費者庁、金融庁などで導入いただいております◎<br>コロナウイルスまん延時にはワクチン予約システムを提供していました♪<br><br>★★★主な仕事内容★★★<br>・セミナーや問い合わせなどの反響営業<br>・エリアなどのターゲットを絞ったアウトバウンドの営業活動<br><br>Di事業本部立ち上げの背景には全世界に蔓延した新型コロナウイルスがあります。<br>国内で初めて新型 コロナウイルスの感染者が出た際に非接触の中で行政から国民へ一早く情報提供を行うことが求められました。<br>そこで当社は提携企業と共同開発したLINEシステムを駆使し、円滑な情報提供をサポートすることで国難に貢献できると考え、30以上の都道府県にLINEシステムの提供。<br>結果的にこの仕事が Di事業本部の礎となっています。<br><br>わたしたちは顧客との強固なパートナーシップを通じ、新たな価値を創造します。<br>顧客がまだ気づいていない本質的な課題を見つけ、既存ツールに拘らず最適な解決策を提案します。そして成果が出るまで顧客と共に走り続け、常に顧客の未来に向き合います。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>・有給休暇制度(入社半年後に10日付与<br>　※勤続年数に応じて毎年付与日数がUPし7年目で最大の20日付与となります！<br>　※ご入社から半年間、有給の前借りは柔軟に対応しております◎<br>・各種長期休暇あり（年末年始/GW/お盆など）<br>・産休/育休あり（男女ともに取得率100％）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： ビル内のルールに従う</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■福利厚生<br>・通勤交通費全額支給<br>・扶養手当<br>・各種社会保険完備<br>・退職金制度<br>・住宅手当制度（3万5千円〜　※条件あり/エリアによって支給額が異なります）<br>・ジョブエントリー制度<br>・バースデープレゼント制度（会員制リゾートホテル宿泊券+一部費用負担）<br>・健康診断（年に1回は会社負担）<br>・口腔ケア、インフルエンザ予防接種（全額会社負担）<br>・育児休業給付金（130万円　※この金額は一例です）<br>・出産手当金（56万円　※この金額は一例です）<br>・出産育児一時金（42万円　※この金額は一例です）<br>・フレキシブル社員移行制度（時短社員、在宅社員への移行）<br><br>■研修制度<br>・新入社員研修<br>・営業研修<br>・トレーナー育成研修<br>・フォローアップ研修<br>・メンタルケア研修<br>・キャリア別研修<br>・部門別研修<br>・テーマ別研修<br>・リーダー研修<br>・マネジメント研修<br>・DX研修<br>・マーケティング研修<br>・プレゼンテーション研修<br><br>■社員旅行<br>2017年度　ハワイ<br>2018年度　ハワイ・オーストラリア・沖縄<br>2019年度　ハワイ・台湾<br>2020年度　コロナウイルスにより実施なし<br>2021年度　コロナウイルスにより実施なし<br>2022年度　沖縄・ディズニーランド・城崎温泉<br>2023年度　沖縄（石垣島）<br>2024年度　韓国・沖縄・北海道<br><br>■社内イベント<br>・全社表彰式 innovation ceremony<br>・バーベキュー<br>・クリスマス会（関西はご家族様の参加もOK◎）<br>・ゴルフコンペ</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%83%AD%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%AF" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

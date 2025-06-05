@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ITヘルプデスク・カスタマーサポート｜株式会社リーディング・エッジ社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【ヘルプデスク/テクニカルサポート（リーダー）】上場企業Gの安定性＆書籍購入・資格取得制度あり！</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社リーディング・エッジ社</dd>
+
       <dt>職種名</dt>
       <dd>ITヘルプデスク・カスタマーサポート</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区新橋四丁目1番1号 新虎通りCORE 13階</dd>
+
       <dt>都道府県</dt>
       <dd>静岡県</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1050004</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>システム開発支援を長年行ってきた当社ですが、新規事業として開発周りのサポート業務や、企業内のシステムサポートを行う「ITサポート職」の事業を立ち上げました。<br>開発支援と合わせてITに関連する業務を広く展開し、事業拡大を目指しています。<br><br>＜ヘルプデスク＞<br>・顧客との窓口対応（一次、二次）<br>・サーバ・ネットワーク等の運用・保守・監視<br>・PC・ネットワーク等の問い合わせ対応・トラブルシューティング<br>・PCキッティング<br>・社内システムのアカウント管理<br><br>＜チームビルディング＞<br>・メンバーのトレーニング・OJT<br>・メンバーとの定期的なミーティング<br>・進捗管理とタスク分散<br><br>＜業務内容変更の範囲＞<br>会社の定める業務</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00 <br>所定労働時間：8時間、休憩1時間<br>※プロジェクトにより勤務時間帯が異なることがございます。</dd>
+
       <dt>休暇・休日</dt>
       <dd>【年間休日120日以上】<br>◆完全週休2日制（土日）　※PJによります<br>※シフト制の場合あり<br>◆祝日<br><br>【休暇制度】<br>◆有給休暇（3か月後5日、半年後5日付与。法定に即して付与）<br>◆子の看護休暇（有給）<br>◆介護休暇（有給）<br>◆母性健康管理のための休暇（有給）<br>◆生理休暇（有給）<br>◆GW休暇<br>◆夏季休暇<br>◆年末年始休暇<br>◆慶弔休暇<br>◆産前・産後休暇<br>◆育児休暇<br>◆特別休暇<br>◆振替休暇<br>※男性の育児休暇取得実績あり<br>※各種有給休暇は規定あり</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋内の受動喫煙対策あり(喫煙室あり)</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◆昇給（年1回）<br>◆賞与（年2回　6月/12月。※賞与支給は正社員のみ）<br>◆各種保険完備<br>◆役職手当<br>◆在宅手当（規定あり）<br>◆交通費支給（月4万円迄）<br>◆屋内全面禁煙（プロジェクトによって異なる）<br>◆技術書籍購入支援制度（5000円/月）<br>　※オンライン講座の購入も可能<br>◆資格取得支援制度（Microsoft Office Specialist認定資格、ITパスポート資格等）<br>　※他30種類以上の対象資格あり<br>◆外部セミナーへの参加支援<br>◆確定拠出年金<br>◆インフルエンザ予防接種手当<br>◆旅行・グルメ・スポーツなどに使える割引あり（福利厚生倶楽部加入特典）<br>◆引越支援制度（規定あり）<br>◆社員持ち株会<br>◆外部相談員制度（キャリアコンサルタント）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%A8%E3%83%83%E3%82%B8%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
