@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社ASUIRO</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【大阪】事業開発／事業企画／年間休日123日＋3ヶ月毎にパワーチャージ連休／新オフィスOPEN！</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ASUIRO</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市中央区備後町3-1-6 船場アルファビル 8F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5410051</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>MIKOMI-LOGIという事業を通して、「自社製品メーカー」を消費者と定義した際の、<br>【　サプライチェーンを最適化していきたい　】と考えています。<br>”調達→生産→物流”というサプライヤーの領域に限定して事業を展開し、各領域において、技術や生産能力、加工能力、物流能力を武器に、世の中に付加価値を届けるサプライヤーと各製品メーカーとをつなぎ、需要と供給をぶつけていきたい。<br>各メーカーは優良なサプライヤーや部品メーカーを探していると確信しています。<br>まずは2030年までに1000社のクライアントをつくり、新たな経済圏を創出します！<br><br>【職務内容】<br>・全国の中堅中小企業の経営者に向けた無形商材の新規開拓営業をお任せ致します。<br>・これまでのご経験を活かし事業開発・サービスアップデートにもお力添えいただきたいです。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休二日制（土日祝）<br>・夏季休暇<br>・年末年始休休暇<br>・パワーチャージ休暇制度（3ヶ月毎に3連休）<br>・有給休暇（10日〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 喫煙者はお断りをしております。</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>【福利厚生】<br>・各種保険完備<br>・パワーチャージ休暇制度（3ヶ月毎に3連休）<br>・達成報奨制度（2023年5月：カヌチャリゾート沖縄）<br>・アワード（表彰式）：6ヶ月毎に実施<br><br>【昇給・賞与】<br>・査定（昇給・昇級・昇格）年4回（3月、6月、9月、12月）<br>・賞与年2回（10月、3月）※年度によって決算賞与も有</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEASUIRO" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
