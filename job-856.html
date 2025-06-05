@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>技能工（整備・工場生産・製造・工事）｜日本マニュファクチャリングサービス株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【組み立て（未経験OK）】自動車車体組立・塗装・車軸業務★寮費無料（1kan210525）</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>日本マニュファクチャリングサービス株式会社</dd>
+
       <dt>職種名</dt>
       <dd>技能工（整備・工場生産・製造・工事）</dd>
+
       <dt>勤務地</dt>
       <dd>栃木県河内郡上三川町</dd>
+
       <dt>都道府県</dt>
       <dd>千葉県</dd>
+
       <dt>市区町村</dt>
       <dd>河内郡上三川町</dd>
+
       <dt>郵便番号</dt>
       <dd></dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2000000 ～ 3000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>プロジェクト先にて、自動車車体の車軸部分の組立をお任せします。<br><br>＜具体的な仕事内容＞<br>・電気自動車のシャシー<br>・発電装置<br>・蓄電装置等の組立作業</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>2交替勤務<br>日勤　8:00～17:00<br>（17:30、18:00終了の場合もあり。定時後20時まで固定残業あり）<br>夜勤　20:00～5:00<br><br>所定労働時間8時間、休憩60分（日勤12:30～13:30、夜勤0:30～1:30）</dd>
+
       <dt>休暇・休日</dt>
       <dd>・5勤2休（土日休み）※祝日は基本出勤<br>・有給休暇（10日〜勤続年数に応じて最大20日）<br>・長期連休（GW、夏季、年末年始）あり</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 工場構内全面禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・交通費（上限1万3000円）<br>・車、自転車通勤可<br>・自転車貸出あり<br>・寮費無料<br>・週払い制度<br>・寮備品レンタル（布団・駐車場以外負担なし）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%97%A5%E6%9C%AC%E3%83%9E%E3%83%8B%E3%83%A5%E3%83%95%E3%82%A1%E3%82%AF%E3%83%81%E3%83%A3%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

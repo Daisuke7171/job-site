@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社ケンツー</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>関西急募【完全未経験OK！】しっかりとした研修があるので安心！ケーブルテレビの営業を募集！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ケンツー</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府堺市北区長曾根町3074-1</dd>
+
       <dt>都道府県</dt>
       <dd>和歌山県</dd>
+
       <dt>市区町村</dt>
       <dd>堺市</dd>
+
       <dt>郵便番号</dt>
       <dd>5918035</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事概要】<br>◆お客様宅に訪問していただく営業職<br>当社が取引している大手ケーブルテレビのプロモーションをサポートする業務をご担当頂きます。<br>主にはケーブルテレビの新規ご加入者様とやりとりをしますが、アポイントは専任の営業職員が取るので、テレアポ営業は基本的にありません。<br><br>【仕事詳細】<br>◎現在の通信環境などの不満点やニーズのヒアリング<br>◎顧客満足度向上につながるサービスの新規提案<br><br>昨今、ご自宅にインターネットを引いているご家庭がほとんどです。<br>どちらのサービスを使われていて、いくらぐらいかかっているのか。<br>不満はないかなど、しっかりとヒアリングし、仲良くなっていただきながら、<br>通信環境の切り替えをご提案させて頂くお仕事です。<br><br>ネットスピードは遅いより早いほうがいいですよね？<br>毎月のお支払いなので値段は安いほうがいいですよね？<br><br>営業としての難易度は低く、すぐに契約をとる喜びが感じて頂けると思います！<br><br>◆入社後の流れ<br>まずは数日の座学研修を受けて頂き、ビジネスマナーや業務を行う上での基礎知識を学んで頂きます。現場へ配属された後は、先輩社員の営業に同行しノウハウを学んで頂きます。業界未経験の方でもスムーズにお仕事を始められますよ。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>定時　9:00～18:00　休憩60分<br>※所定労働時間は8時間です。</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（火・水曜メインの平日休み）<br>年末年始休暇<br>年次有給休暇（10〜20日）<br>慶弔休暇<br>夏期休暇<br>産前産後休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険制度完備<br>退職金<br>確定拠出年金<br>研修あり<br>社内表彰制度<br>サークル活動<br><br>ボーリング大会や野球大会、バーベキューなど社員同士の交流の場がたくさんありますよ。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B1%E3%83%B3%E3%83%84%E3%83%BC" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

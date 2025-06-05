@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社マクサス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>東京求人｜最短2日で内定【FCコンサル候補】未経験歓迎★リユース×IT★100%反響営業</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社マクサス</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都品川区東五反田1-9-2 ダイアパレス五反田1F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>品川区</dd>
+
       <dt>郵便番号</dt>
       <dd>1410022</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 12000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd> =====================<br>動画で弊社事業について知りたい方はコチラ↓<br><br>せきえもんの買取大学<br>https://youtu.be/yNl1GoTnp1Q<br>=====================<br><br>「自分の明日は、自分で創る！」を理念に、「リユース×IT」で確実に業績を上げています。<br><br>今回はフランチャイズ事業好調に伴い、FCコンサル候補を新しく募集します。<br>業績・スキルに応じて最短1年でFCコンサルになることが可能です！<br><br>＜仕事内容＞<br>■WEBから問合せ頂いたお客様への対応<br>※100%反響営業！電話、チャットやビデオ査定等を使って、訪問のアポイント調整します。<br><br>■訪問によるフィールドセールス<br>※その場で査定、見積をします。成約率は7～8割と高いです！<br><br>■顧客情報や契約内容を社内システムに入力します。<br>※1日平均4件程度の訪問数。営業範囲は都内～首都圏が中心です。<br><br>★取り扱いアイテム<br>家具、家電、PC、スマホ、自転車、楽器、お酒、アパレル、ブランド品、コスメ、食器、アクセサリー…など。実にさまざまなアイテムを扱います。<br><br>＜組織体制＞<br>20代～30代中心に現在15名のスタッフが在籍しています。（平均年齢：28歳）<br>バイヤー（営業）他、リユース（販売）チームにアルバイトスタッフ、マーケティングやシステム関連にインターン生などが十数名ほど関わっています。<br><br>＜キャリアステップ＞<br>◎入社時　基礎的な買取の業務、営業スキルを習得。<br>動画コンテンツが計40本あり、ノウハウをインプットすることができますし、<br>先輩に同行しながらOJTでも行いますので経験がなくても安心してスタートできます！<br>↓<br>◎～6か月　一人で案件に対応できるようになります。<br>※その後も特殊な案件などは先輩や上司に相談することができます。<br>↓<br>◎1年～3年　リーダー（新人教育）、拠点のマネージャーへとステップアップ<br>↓<br>◎3年～5年　新規拠点立ち上げなどの経験を積みながら、<br>その後は、複数拠点統括や、FCオーナーのコンサルティング、<br>はたまたFCオーナーとしての独立など幅広い夢やビジョンを実現していただける環境です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>【勤務時間の目安】<br>10：00～19：00（所定労働時間8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>■シフト制（月8～9日）<br>※仕事とプライベートとのメリハリをつけて生産性高く働ける環境です<br>・年末年始休暇<br>・有給休暇（10日～勤続年数に応じて最大20日）<br>・産前産後休暇<br>・育児休暇<br>・介護休暇<br>・慶弔休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・営業手当 ※3半期ごとに実績に応じたインセンティブを支給！<br>・リーダー手当<br>・管理者手当<br>・FCコンサル手当<br><br>・社保完備<br>・PC、社有車支給<br>・駐車場代などの経費申請可<br>・副業、Wワーク可<br>・一部在宅ワーク可<br>・独立支援</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%9E%E3%82%AF%E3%82%B5%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

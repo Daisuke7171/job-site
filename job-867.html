@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>施工管理・設備・環境保全｜テクノガード株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【東京/部門責任者/幹部候補】冷凍冷蔵設備メンテナンス◆年休123日/転勤なし/退職金有◎</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>テクノガード株式会社</dd>
+
       <dt>職種名</dt>
       <dd>施工管理・設備・環境保全</dd>
+
       <dt>勤務地</dt>
       <dd>東京都千代田区内神田3-16-9　松浦ビル6F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>千代田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1010047</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>6000000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【将来的な取締役など経営ポジション前提の採用！／完全週休二日制／大手企業との取引多数／退職金制度あり◎／業績安定◎／キャリアアップ可！】<br><br>■業務内容：<br>冷凍・冷蔵設備工事及び修理保守契約をはじめ、店舗内装や電気設備全般修理等を行う当社にて、保守メンテナンス部門の責任者をご担当いただきます。将来的には取締<br>役など、経営サイドの一員としてご活躍いただきたいと考えております。【変更の範囲：会社の定める業務】<br>＜業務の詳細＞<br>【メンテナンス管理業務】<br>・人員管理：社内外のスタッフ管理<br>・品質管理：品質バラつきなくすためのメンテ専用のチェックリスト作成等<br>・工程管理：人員×1作業時間の組み合わせで最適な工程・人員管理を検討<br>・予算管理：各現場の見積管理と原価管理　など<br><br>【メンテナンス業務】<br>顧客からの依頼を受けて冷凍・冷蔵設備機器の点検や修理を行っていただきます。業務終了後は 社用携帯を通じて報告を行い、見積書作成及び顧客へ提出<br><br>■組織体制：<br>当社は全社員10名程度の総合エンジニアリング会社です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>就業時間：9:00～18:00(所定労働時間：8時間0分、休憩60分)<br>・原則9:00～18:00となります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>・休日休暇形態：完全週休2日制・会社カレンダーによる<br>・年間有給休暇：10日～日（下限日数は、入社半年経過後の付与日数と<br>なります）<br>・年に数回程度、休日のご出社をお願いすることはございますが、振休等で調整させていただきます。<br>・夏季休暇（3日）<br>・年末年始休暇（6日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>健康保険：有 <br>厚生年金：有<br>雇用保険：有 <br>労災保険：有</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>建築・土木・建設</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%86%E3%82%AF%E3%83%8E%E3%82%AC%E3%83%BC%E3%83%89%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

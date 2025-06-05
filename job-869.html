@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>プランニング・測量・設計・積算｜株式会社東京建築</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【経験者募集】意匠設計技術者</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社東京建築</dd>
+
       <dt>職種名</dt>
       <dd>プランニング・測量・設計・積算</dd>
+
       <dt>勤務地</dt>
       <dd>東京都千代田区岩本町2-5-12　ユニゾ岩本町ビル6F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>千代田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1010032</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>◆商業施設や共同住宅・個人住宅における建築意匠設計業務をお任せします。<br><br>【具体的には…】<br>・プランニング・顧客打合せ業務<br>・計画、設計、工事監理<br>・建築会社との協議や調整<br><br>改修設計からインテリア系の依頼まで引き合いを多くいただいておりますので<br>あなたのご希望があればどんどん言ってください。<br>実現できるような環境をご提供いたします。<br><br>入社後は、あなたのスキルや適性に応じて仕事をお任せしていきます。<br>すぐに担当をお任せしながら、当社の業務に慣れていただきますが、<br>打ち合わせ段階から入って業務を進めることができます。<br><br>◆業務スケジュールはあなたにお任せします！<br>業務のプロフェッショナルとして、<br>あなたの働きやすいやり方で進めることができます。<br>当社は、納期を守ること前提に時間の使い方は一任しています。<br>また、クライアントとの打ち合わせや残業が長引いて遅くなった翌日は、<br>遅めに出社していただくことも可能です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00（休憩1時間、実働8時間）<br><br>※業務スケジュールが調整可能なため、残業で遅くなった翌日は少し遅く出勤できます。</dd>
+
       <dt>休暇・休日</dt>
       <dd>◆土日祝日休み<br>◆夏季休暇<br>◆年末年始休暇<br>◆年次有給休暇（10日〜勤続年数に応じて最大20日）<br>◆慶弔休暇<br>◆産前・産後・育児休暇制度<br><br>☆育休取得実績有り！ワークライフバランスも大切にしながら働けます。<br>※ 年間休日120日</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◆社会保険完備<br>◆交通費全額支給<br>◆残業手当<br>◆役職手当<br>◆住宅手当<br>◆資格手当<br>◆家族手当 等</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>建築・土木・建設</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%9D%B1%E4%BA%AC%E5%BB%BA%E7%AF%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

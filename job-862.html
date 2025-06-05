@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社セラクビジネスソリューションズ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>営業総合職（セラクグループ商材：自社人材系・自社サービス系・お客様常駐系）</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社セラクビジネスソリューションズ</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿7-5-25 西新宿プライムスクエア6F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>下記①②③いずれかをお任せします。<br><br>①親会社である株式会社セラクが展開している法人向けChatGPTサービス「NewtonX（ニュートンエックス）」の<br>　新規顧客獲得に向けた法人企業向けの有形提案営業をお任せします。<br>　・お客様へのヒヤリング<br>　・商材説明～提案（メール・電話・Web会議・訪問）<br>　・クロージング<br>　★「NewtonX」とは？<br>　　どのような企業でも安心安全に生成・対話型AIを本格的に利用できるよう、<br>　「ChatGPT」の課題とされるセキュリティの確保やコンプライアンス遵守、御解答抑制の機能が標準で搭載されています。<br><br>②自社人材提案型営業（当社 or 親会社セラク）<br>　自社：大手企業様への深耕営業を主とし、中長期的な目線で組織的な協業関係の構築を行い、<br>　　　　お客様のビジネスに寄り添うリソース提案をお任せします。<br>　親会社：セラクgroupに協力頂くパートナー企業様の開拓・人材提案<br><br>③お客様常駐型ソリューション営業（当社顧客の営業部門へ配属）<br>　大手企業様への深耕営業を主とし、中長期的な目線で組織的な協業関係の構築を行い、お客様のビジネスに寄り添うリソース提案をお任せします。<br><br>　[業務内容]<br>・顧客の課題ヒアリング（当社お客様の営業部門で担いでいるサービスの提案）＊客先営業部門常駐型<br>・各種サービス提案（主にソリューション提案）<br>・契約、受注<br>・既存顧客への深耕営業（関係性強化、取引拡大）<br>・当社との協業関係を保ち、業務を拡大させる</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00<br>所定労働時間8時間、休憩時間1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日120日<br>休日・休暇：週休2日制（土日）＋祝日<br><br>有給休暇（10日〜勤続年数に応じて最大20日）<br>年末年始休暇<br>慶弔休暇<br>産前産後・育児休暇 ★取得実績あり<br>特別休暇（結婚休暇5日間など）<br>コロナ休暇<br>生理休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋外喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>健康診断<br>定期開催の全社MTG、スキルアップ研修等<br>無料で使える社内e-learning<br>資格取得推奨制度（詳細は下記に記載）<br>カフェテリアプラン<br>社員住宅サポート制度<br>交流イベント多数<br>退職金制度<br>社員持株会（関連会社である株式会社セラクの株）<br>職場つみたてNISA<br><br>【資格取得支援制度】<br>会社推奨の資格試験費用は会社負担。<br>プラス国家資格など上位レベルの資格を取得すれば、指定資格について報奨金の支給もあります。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%BB%E3%83%A9%E3%82%AF%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%82%BD%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BA" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
