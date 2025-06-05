@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ホールスタッフ｜株式会社エー・ピーホールディングス</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>☆未経験歓迎☆【炭火焼鳥 塚田農場】ホールスタッフ　40以上のブランドを展開する上場企業で働こう！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社エー・ピーホールディングス</dd>
+
       <dt>職種名</dt>
       <dd>ホールスタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都豊島区南池袋2-16-8　鈴和ビル 1階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>豊島区</dd>
+
       <dt>郵便番号</dt>
       <dd>1710022</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>当社が運営する炭火焼鳥 塚田農場にて、接客スタッフとしてさまざまな業務をお任せします。接客・ホールが未経験で入社された方も多数活躍しています！<br><br>＜具体的な仕事内容＞<br>経験に合わせて以下の業務をお任せいたします。<br>・オーダー<br>・お料理のご説明、ご提供<br>・ドリンク類のご提供<br>・お会計<br>・レジ管理<br><br>慣れてきた方には下記の業務もお任せいたします。<br>・アルバイトの教育、採用、マネジメント<br>・売上管理<br>・販促企画　など<br><br>＜勤務時の服装＞<br>男性＆女性：Tシャツ＆黒ズボン<br><br>【1日の流れ（例）】<br>13:00：出勤<br>▼<br>13:00〜：売り上げ入金、予約確認、検品・納品・発注、開店準備、PC業務　　　　　　　<br>▼<br>15:30〜：休憩＆まかない<br>▼<br>16:30〜：朝礼<br>▼<br>17:00〜：営業開始<br>▼<br>23:00～：閉店、閉め作業、洗い作業<br>▼<br>23:30～：退勤<br><br>【入社後の流れ】<br>＜スキルアップできる環境です＞<br>未経験で不安という方もいらっしゃると思いますが、当社は育成に力を入れております。充実した研修制度に沿って段階的な教育を行いますので安心してください！<br><br>＜育成環境が充実！＞<br>当社では店舗ごとに先輩社員や店⻑がしっかりと指導をいたしますので、未経験の方もプロフェッショナルなスキルを身につけられます。人材の成⻑に合わせて、新規のブランドを続々と立ち上げる予定です！未経験から短期間で技術を取得して、プロの料理人や将来は独立を目指しませんか？<br><br>【キャリアステップ】<br>＜店長を目指せる！＞<br>まずは現場でお仕事をしていただき、一人ひとりの習得スピードにより異なりますが、適性・希望に応じて店⻑になるためのキャリアプランをご用意しています。<br><br>＜豊富なキャリア形成！＞<br>店舗運営の経験を積んだ上で、エリアマネージャーへのキャリアアップや商品開発、営業企画や人事・採用など本部ポジションへのキャリアも目指せます。店⻑・料理⻑の先は決められたキャリアを目指すのではなく、自分次第で将来を切り開いていく「自律モデル」を展開しています。 グループ会社社⻑・ローリスクな社内独立・海外進出など可能性は無限大です。各個人がひとつのブランドとなり、やりたいことを実現できます。個性や強みを発揮できる多種多様なブランドや事業に携わり、自分らしいキャリアを歩んでください。<br><br>＜SNSを利用したコミュニケーション制度＞<br>当社では正社員からアルバイトまで、社内SNSのアカウントを配布しています。今までは店長経由でしか本部に届かなかった現場の好事例が、スタッフに直接共有されるようになり、そこにたくさんの「いいね！」がつくようになりました。ノウハウのシェアだけでなく、他の人からの評価がモチベーション向上にもつながります。社内SNSの活用によって革命的な効果が生まれています！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>＜シフト制＞<br>例）<br>13:00〜23:00<br>14:00〜24:00<br>上記時間の中で所定労働時間：7時間40分、休憩1時間<br>※終電など考慮いたします。</dd>
+
       <dt>休暇・休日</dt>
       <dd>・週休2日制（月8日）<br>・有給休暇（10日～勤続年数に応じて最大20日）<br>・慶弔休暇<br>・産前産後休暇<br>・育児休暇（男性の育児休業取得者20名以上実績あり）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・各種社会保険完備<br>・交通費支給（上限5万円まで）<br>・時間外手当<br>・深夜手当<br>・制服貸与<br>・まかないあり<br>・研修制度あり<br>・従業員持ち株会<br>・社内表彰制度あり<br>・扶養手当あり（5000円：月3名まで）<br>・社員割引制度あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%83%BC%E3%83%BB%E3%83%94%E3%83%BC%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B9" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
