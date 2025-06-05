@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜株式会社ヘイフィールド</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【営業未経験OK】人材コンサルティング営業（領域No1事業を展開する急成長中ベンチャー）</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ヘイフィールド</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区恵比寿1-23-23恵比寿スクエア5階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500013</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>このポジションでは弊社のメイン事業である、不動産業界専門の転職支援サービス「宅建Jobエージェント：（ https://takken-job.com/ ）」の人材コンサルティング営業（キャリアアドバイザー業務メイン）として、求職者様の不動産業界での転職をサポートしていただきます。<br><br>この仕事は、転職候補者に対して機会をつくり、人生をもっとプラスに変えることができる、そして目の前の顧客から直接的に感謝されるとてもやりがいのある仕事です。<br><br>■具体的な仕事内容<br>▽求職者様向けの転職支援<br>・初回面談：転職希望者（求職者様）と電話・Web・対面での面談<br>・求人紹介：求職者様の経験やスキル、希望などを考慮し、求人をご紹介<br>・選考対策：書類の添削や面接対策をし、選考通過率の向上をサポート<br>・サポート：面接フォローや入社までのサポート<br><br>▽企業様向けの採用支援<br>・募集要件に合う人材のご紹介<br>・面接の調整や入社までのサポート</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>就業時間 10:00〜19:00<br>休憩時間 60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休2日制（土／日）<br>・祝日<br>・年末年始休暇<br>・GW休暇<br>・夏季休暇<br>・有給休暇（入社半年後10日〜勤続年数に応じて最大20日）<br>・産前産後・育児休業制度</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： オフィス内禁煙／分煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>昇給 年2回（4月・10月）<br>インセンティブ制度<br>役職手当<br>社会保険完備（雇用・労災・健康・厚生年金）<br>交通費支給<br>産前産後・育児休業制度<br>私服勤務<br>オフィス内禁煙・分煙<br>社員総会・表彰制度（半期に1度開催）<br>360度バリュー評価<br>転勤なし<br>書籍代補助<br>健康診断<br>PC・ディスプレイ支給<br>Office Oasis（社内自動販売機）<br>フリースナック配布<br>新入社員ウェルカムランチ制度<br>社内コンベンション・忘年会補助<br>1on1制度<br>MVP会食<br>抜擢人事異動<br>チーム達成食事会<br>チーム飲み会補助<br>勉強会（部署ごと実施）<br>ロールプレイング・録音・録画のFB<br>CA教科書・新メンバー向け15ステップシート<br>面接対策・面談同席</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%98%E3%82%A4%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

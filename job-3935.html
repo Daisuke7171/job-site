@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜医療法人社団THECLINIC Institute</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【2月入社歓迎★東京：積極募集】美容クリニックでのコンシェルジュ職</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>医療法人社団THECLINIC Institute</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区西麻布 3-16-23</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1060031</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>・来院されたゲストのカウンセリング<br>・フロント業務 <br>・施術プランの作成・提案<br>・各種ケア<br>などをお任せしていきます。<br><br>初診・再診時のプレカウンセリングをはじめ、フロントでの受付業務や 予約管理、施術プランの作成・提案など、ゲスト対応全般を幅広くお任せします。<br>ゲストへのカウンセリング対応は1日3〜4件ほどとなります。<br><br>■フロント対応 <br>ご来院されたゲストの受付・会計業務のほか、 電話やメールでのお問い合わせ対応や予約管理を行います。<br><br>■プレカウンセリング <br>ドクターカウンセリングの前に、コンシェルジュによる プレカウンセリングを実施します。ゲストの「こう変わりたい！」という 理想をヒアリングし、そのゴールに向けて予算や時期といった課題を一つ一つクリアにしながら、解決策をご提案します。<br><br>■施術プランの作成・提案 <br>ドクターによるカウンセリングが終了したら、 その内容を基に具体的な施術プランを作成します。<br>国内最高クラスの技術・サービスを提供していることもあり、 当院の施術費用は決して安価とは言えません。 だからこそ不明点や心配を取り除き、納得して前向きに 施術日を迎えていただけるよう努めています。<br><br>■施術日のサポート <br>ゲストのご要望に合わせて施術日のスケジュールを設定します。 施術当日は各種手続きのサポートを行うほか、ゲストに寄り添い 緊張されている気持ちを和らげてあげてください。 施術終了後の通院までしっかりとフォローします。<br><br>2時間のカウンセリング後にローンを組んででも数百万円の施術を選ぶゲストがいる。その理由は「人生を賭けてみたくなる提案力」にあります。<br>受付コンシェルジュはゲストの心に寄り添うだけではなく、営業的要素も求められ、本当にゲストが喜んでいただける未来は何かを追求し続ける姿勢が求められます。<br>※今後動画撮影において、顔出しをお願いする場合がございます。予めご了承ください。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10：00〜19：00（所定労働時間8時間、休憩60分）<br>※早番・遅番あり <br>※超過分は別途支給します。</dd>
+
       <dt>休暇・休日</dt>
       <dd>【年間休日】<br>116日<br><br>【休日・休暇】<br>■年次有給休暇（入社半年で10日付与）<br>■シフト制・月9日<br>■年始休暇（１/1～1/3）<br>■慶弔休暇<br>■有給休暇<br>■産前・産後休暇<br>※取得実績あり<br>■育児休暇<br>※取得実績あり<br>■リフレッシュ休暇(年5日) 有給とは別に年5日の休暇をとることができます!<br>※1/1時点で入職後6か月経過している場合に支給<br>◇希望休は月3日取得可能ですが、土日祝やGW、年末年始の繁忙期にはご調整いただく場合がございます。<br>予めご了承のほどよろしくお願いします。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■各種社会保険完備 <br>■交通費支給（上限月3万円） <br>■時間外手当<br>■役職手当<br>■住宅手当（規定あり※東京院のみ） <br>■カウンセラー手当<br>■インセンティブ制度 <br>■研修無料 <br>■健康診断 <br>■インフルエンザ予防接種 <br>■社員旅行<br>■各種懇親会 <br>■制服・ユニフォーム</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E7%A4%BE%E5%9B%A3THECLINIC%20Institute" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

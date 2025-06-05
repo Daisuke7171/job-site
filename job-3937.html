@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>映像・動画関連｜医療法人社団THECLINIC Institute</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【広島・2月入社歓迎！】美容クリニックのSNS運用担当　募集◎広島</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>医療法人社団THECLINIC Institute</dd>
+
       <dt>職種名</dt>
       <dd>映像・動画関連</dd>
+
       <dt>勤務地</dt>
       <dd>広島県広島市中区立町2-4 サンタックビル２階</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>広島市</dd>
+
       <dt>郵便番号</dt>
       <dd>7300032</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>美容クリニック『THE CLINIC』のSNS運用を通して、来院数増加に貢献。美しくなりたいゲストの背中を後押しします。<br><br>――SNSについて――<br>InstagramやX（旧Twitter）、YouTubeで、「施術事例の紹介」「ドクター個人」「各院」など複数種類のアカウントを展開中。ドクター個人・各院のInstagramをメインに、SNSの運用をお任せします。<br><br>――仕事の流れ――<br>▼施術事例・その他情報発信<br>週2回ほど、Instagramに施術事例を投稿します。Instagramのストーリー、Xなどは毎日投稿。ライブ配信は週1回ほど行ないます。週1回のミーティングで、協力会社のマーケティング担当者と相談しながら、ドクターの人柄を伝えてブランディングを考えたり、ドクターからの要望を提案したりします。<br><br>▼撮影準備<br>ドクターの施術や、ゲストのモニター撮影をスマホで実施。モニター撮影では、協力会社のマーケティング担当者からの「カメラを○台使って、複数の角度から撮影をお願いします」といった指示通りにセッティングします。<br><br>▼撮影対応<br>1件あたりの撮影時間は10～20分。「施術を受けようと思ったきっかけ」「当クリニックを選んでいただいた理由」などをインタビューします。撮影後はネットワークドライブにゲストの情報と共に格納しましょう。<br><br>▼コンテンツの編集・管理<br>デザインソフト『Canva』を使って画像素材などを編集し、SNSに投稿します。フォーマットがあるので、編集経験のない方もご安心ください。<br><br>※学会の撮影、YouTubeのコラボ撮影などで外に出たり、動画に顔出しで出演することもあります。予めご了承ください。<br>※動画は協力会社のマーケティング担当者が作成します。また、撮影台本も作成してもらえるため安心です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10：00〜19：00（所定労働時間8時間、休憩60分）<br>※超過分は別途支給します。</dd>
+
       <dt>休暇・休日</dt>
       <dd>【年間休日】<br>116日<br><br>【休日・休暇】<br>■年次有給休暇（入社半年で10日付与）<br>■シフト制・月9日<br>■年始休暇（１/1～1/3）<br>■慶弔休暇<br>■有給休暇<br>■産前・産後休暇<br>※取得実績あり<br>■育児休暇<br>※取得実績あり<br>■リフレッシュ休暇(年5日) 有給とは別に年5日の休暇をとることができます!<br>※1/1時点で入職後6か月経過している場合に支給<br>◇希望休は月3日取得可能ですが、土日祝やGW、年末年始の繁忙期にはご調整いただく場合がございます。<br>予めご了承のほどよろしくお願いします。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■各種社会保険完備<br>■交通費支給（上限月3万円）<br>■時間外手当<br>■健康診断<br>■インフルエンザ予防接種<br>■社員旅行<br>■各種懇親会<br>■制服・ユニフォーム</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E7%A4%BE%E5%9B%A3THECLINIC%20Institute" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
