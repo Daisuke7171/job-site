@@ -12,7 +12,7 @@
   "@type": "JobPosting",
   "title": "法人営業",
   "description": "【広告PR】Instagram/Twitterシステム営業",
-  "datePosted": "2025-06-04",
+  "datePosted": "2025-06-05",
   "validThrough": "",
   "employmentType": "正社員",
   "hiringOrganization": {
@@ -63,18 +63,12 @@
       align-items: center;
       justify-content: center;
     }
-    /* もし GitHub にある握手マークのロゴを表示したい場合は、下記の src をご自分の raw URL に置き換えてください */
     .banner__icon {
       width: 48px;
       height: 48px;
       margin-right: 1em;
       flex-shrink: 0;
     }
-    /* 例： GitHub raw の URL を使う場合
-    <img class="banner__icon"
-         src="assets/handshake-icon.svg"
-         alt="握手マーク ロゴ">
-    */
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
@@ -110,8 +104,6 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
-
-    /* 応募ボタン */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -125,8 +117,6 @@
     .apply-button:hover {
       background: #005f8d;
     }
-
-    /* モバイル調整 */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -145,12 +135,10 @@
 <body>
   <header>
     <div class="banner">
-      <!-- ロゴを表示したい場合、下記の <img> タグを有効化して、src に正しい URL を指定してください -->
-      <!--
+      <!-- GitHub の raw URL を指定してアイコンを表示 -->
       <img class="banner__icon"
-           src="assets/handshake-icon.svg"
+           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
            alt="握手マーク ロゴ">
-      -->
       <h1>【広告PR】Instagram/Twitterシステム営業</h1>
     </div>
   </header>
@@ -158,56 +146,44 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
+      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Tailor App</dd>
-
       <dt>職種名</dt>
       <dd>法人営業</dd>
-
       <dt>勤務地</dt>
       <dd>東京都渋谷区千駄ケ谷5-27-5 リンクスクエア16F</dd>
-
       <dt>都道府県</dt>
       <dd>東京都</dd>
-
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
-
       <dt>郵便番号</dt>
       <dd>1510051</dd>
-
       <dt>雇用形態</dt>
       <dd>正社員</dd>
-
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
-
       <dt>仕事内容</dt>
       <dd>ライブコマースコンサルティングサービス「LIVURU（ライブル）」（https://livuru.jp/） を中心に、SNS PR事業を展開している当社にてMETA社、Twitter社と共同開発したシステム「Live Commerce Force」の営業活動を行います。<br><br>・新規法人顧客開拓<br>・顧客折衝（課題ヒアリング等）および契約締結<br>・顧客のフォローアップ<br>・ライブ配信の現場ディレクションのサポート<br>・インフルエンサーキャスティングのサポート<br><br>※Live Commerce Forceとは<br>META社とTwitter社から開発サポートを受けている、テイラーアップが独自開発した、世界初のInstagramライブ分析・DM自動送信SaaSです。1分毎の視聴者数推移やコメントデータを取得でき、視聴者の反響や感情を可視化することで、定量・定性面での分析を可能にします。さらに、コメントをトリガーとして視聴者にDMを自動送信し、購買導線を構築します。</dd>
-
       <dt>勤務時間・曜日</dt>
       <dd>10:00～19:00<br>所定労働時間8時間、休憩1時間</dd>
-
       <dt>休暇・休日</dt>
       <dd>■完全週休2日（土曜、日曜）<br>■祝日<br>■年末年始休暇5日<br>■有給休暇（入社半年後10日〜勤続年数に応じて最大20日）</dd>
-
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
-
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備</dd>
-
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
       <!-- 掲載画像があれば表示 -->
       
 
-      <!-- 「応募」リンクがあればボタンを表示 -->
+      <!-- 「応募」リンクがあれば表示 -->
       
     </dl>
 
-    <!-- 求人一覧へ戻るリンク -->
+    <!-- 求人一覧へのリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

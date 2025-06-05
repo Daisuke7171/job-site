@@ -12,7 +12,7 @@
   "@type": "JobPosting",
   "title": "IT・システムコンサルタント",
   "description": "《リモート併用可》ネットワークコンサルタント",
-  "datePosted": "2025-06-04",
+  "datePosted": "2025-06-05",
   "validThrough": "",
   "employmentType": "正社員",
   "hiringOrganization": {
@@ -63,18 +63,12 @@
       align-items: center;
       justify-content: center;
     }
-    /* もし GitHub にある握手マークのロゴを表示したい場合は、下記の src をご自分の raw URL に置き換えてください */
     .banner__icon {
       width: 48px;
       height: 48px;
       margin-right: 1em;
       flex-shrink: 0;
     }
-    /* 例： GitHub raw の URL を使う場合
-    <img class="banner__icon"
-         src="assets/handshake-icon.svg"
-         alt="握手マーク ロゴ">
-    */
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
@@ -110,8 +104,6 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
-
-    /* 応募ボタン */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -125,8 +117,6 @@
     .apply-button:hover {
       background: #005f8d;
     }
-
-    /* モバイル調整 */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -145,12 +135,10 @@
 <body>
   <header>
     <div class="banner">
-      <!-- ロゴを表示したい場合、下記の <img> タグを有効化して、src に正しい URL を指定してください -->
-      <!--
+      <!-- GitHub の raw URL を指定してアイコンを表示 -->
       <img class="banner__icon"
-           src="assets/handshake-icon.svg"
+           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
            alt="握手マーク ロゴ">
-      -->
       <h1>《リモート併用可》ネットワークコンサルタント</h1>
     </div>
   </header>
@@ -158,56 +146,44 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
+      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>アイビーシー株式会社</dd>
-
       <dt>職種名</dt>
       <dd>IT・システムコンサルタント</dd>
-
       <dt>勤務地</dt>
       <dd>東京都中央区新川一丁目8番8号　アクロス新川ビル</dd>
-
       <dt>都道府県</dt>
       <dd>東京都</dd>
-
       <dt>市区町村</dt>
       <dd>中央区</dd>
-
       <dt>郵便番号</dt>
       <dd>1040033</dd>
-
       <dt>雇用形態</dt>
       <dd>正社員</dd>
-
       <dt>給与</dt>
       <dd>5500000 ～ 7000000 (年収)</dd>
-
       <dt>仕事内容</dt>
       <dd>ITインフラに特化したコンサルタントとしてお客様に寄り添い、課題の抽出・提案・要件定義を各案件ごとに営業や設計構築担当と連携しながら推進します。<br>※基本的にはエンドユーザーと直接折衝いただきます。<br>既にお付き合いのあるお客様に対しても、担当コンサルタントとして定期的なレポーティングやさらなる改善提案・トレーニングを行います。<br>提案内容としてはネットワークをはじめとするインテグレーション、自社開発の性能監視ツールやMSPサービス、、セキュリティ系の外販品に至るまで幅が広く、こ不安に思われるかもしれませんが、まずはメンバーサポートのもと得意な領域からスタートして始めていただきますので面接時にお話しを聞かせてください。</dd>
-
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜17:45<br>所定労働時間：7時間45分、休憩1時間<br>※1日の中で所定労働時間を満たす時差出勤可能</dd>
-
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土日祝）<br>夏季休暇（3日）、年末年始休暇、リフレッシュ休暇、アニバーサリー休暇、<br>有給休暇（試用期間満了後入社日に応じて付与、半日・1時間単位での有給取得可能）など</dd>
-
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
-
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険：各種社会保険完備（労災・雇用・健康・厚生年金）<br>・福利厚生：在宅勤務制度、通勤費全額支給、産休・育休制度、時短制度、表彰制度、持株会制度、iPhone・ノートPC貸与など</dd>
-
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
       <!-- 掲載画像があれば表示 -->
       
 
-      <!-- 「応募」リンクがあればボタンを表示 -->
+      <!-- 「応募」リンクがあれば表示 -->
       
     </dl>
 
-    <!-- 求人一覧へ戻るリンク -->
+    <!-- 求人一覧へのリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

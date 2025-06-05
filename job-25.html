@@ -12,7 +12,7 @@
   "@type": "JobPosting",
   "title": "個人営業",
   "description": "≪規模拡大に伴う募集！≫ハウスエージェント◆2022年度新人王獲得！未経験でも狙えます！",
-  "datePosted": "2025-06-04",
+  "datePosted": "2025-06-05",
   "validThrough": "",
   "employmentType": "正社員",
   "hiringOrganization": {
@@ -63,18 +63,12 @@
       align-items: center;
       justify-content: center;
     }
-    /* もし GitHub にある握手マークのロゴを表示したい場合は、下記の src をご自分の raw URL に置き換えてください */
     .banner__icon {
       width: 48px;
       height: 48px;
       margin-right: 1em;
       flex-shrink: 0;
     }
-    /* 例： GitHub raw の URL を使う場合
-    <img class="banner__icon"
-         src="assets/handshake-icon.svg"
-         alt="握手マーク ロゴ">
-    */
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
@@ -110,8 +104,6 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
-
-    /* 応募ボタン */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -125,8 +117,6 @@
     .apply-button:hover {
       background: #005f8d;
     }
-
-    /* モバイル調整 */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -145,12 +135,10 @@
 <body>
   <header>
     <div class="banner">
-      <!-- ロゴを表示したい場合、下記の <img> タグを有効化して、src に正しい URL を指定してください -->
-      <!--
+      <!-- GitHub の raw URL を指定してアイコンを表示 -->
       <img class="banner__icon"
-           src="assets/handshake-icon.svg"
+           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
            alt="握手マーク ロゴ">
-      -->
       <h1>≪規模拡大に伴う募集！≫ハウスエージェント◆2022年度新人王獲得！未経験でも狙えます！</h1>
     </div>
   </header>
@@ -158,57 +146,45 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
+      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Forest field</dd>
-
       <dt>職種名</dt>
       <dd>個人営業</dd>
-
       <dt>勤務地</dt>
       <dd>神奈川県小田原市久野71番地4プリムローズ21　3階</dd>
-
       <dt>都道府県</dt>
       <dd>岡山県</dd>
-
       <dt>市区町村</dt>
       <dd>小田原市</dd>
-
       <dt>郵便番号</dt>
       <dd>2500055</dd>
-
       <dt>雇用形態</dt>
       <dd>正社員</dd>
-
       <dt>給与</dt>
       <dd>3500000 ～ 8000000 (年収)</dd>
-
       <dt>仕事内容</dt>
       <dd>【お客様対応】<br>・物件ツアーなどお客様のご案内等の接客<br>・アポイント獲得のための営業活動<br>・契約やお引渡しまでの内容などの各種調整<br>・新規営業活動に関わる企画立案<br>などなど<br><br>弊社は分業制ですので、営業活動に専念できる環境が整っております。</dd>
-
       <dt>勤務時間・曜日</dt>
       <dd>平日9:00～19:00　/　土日祝9:00～18:00（所定労働時間8時間、休憩60分）</dd>
-
       <dt>休暇・休日</dt>
       <dd>完全週休二日制（火曜日・水曜日）<br>夏季休暇<br>年末年始休暇<br>慶弔休暇<br>有給休暇（10日～勤続年数に応じて最大20日）<br>半日休暇など</dd>
-
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋外に所定の喫煙所あり。</dd>
-
       <dt>待遇・福利厚生</dt>
       <dd>◆社会保険完備<br>◆定期健康診断<br>◆外部研修<br>など</dd>
-
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
       <!-- 掲載画像があれば表示 -->
       
 
-      <!-- 「応募」リンクがあればボタンを表示 -->
+      <!-- 「応募」リンクがあれば表示 -->
       
     </dl>
 
-    <!-- 求人一覧へ戻るリンク -->
+    <!-- 求人一覧へのリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
