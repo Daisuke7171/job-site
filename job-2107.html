@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>店長・SV（スーパーバイザー）｜株式会社FTG Company</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>★未経験歓迎★【店長候補】面接１回！「働きがいのある会社」4年連続認定！</h1>
     </div>
   </header>
@@ -146,46 +152,63 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社FTG Company</dd>
+
       <dt>職種名</dt>
       <dd>店長・SV（スーパーバイザー）</dd>
+
       <dt>勤務地</dt>
       <dd>東京都千代田区富士見２丁目１１－１０ 西條ビル１</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>千代田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1020071</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>『大阪餃子専門店よしこ』の店舗キャストとしてホール、調理業務をお任せします。<br><br>・入社後の本部研修後、OJTで基本の接客、調理、店舗オペレーションを学んでいただきます。<br>・OJT研修後は店長昇格に向けて、業務と並行して必要な知識習得、マネジメントスキルを磨いていきます。<br>・未経験でも入社半年～1年を目途に店長に抜擢されるケースもあり、成果を残せばいち早く昇格することが可能です。<br><br>【仕事詳細】<br>■接客<br>■調理<br>■スタッフ教育<br>■店舗運営業務<br>※セントラルキッチンがあるため、難しい調理業務はありません。<br><br>【『大阪餃子専門店よしこ』について】<br>13年連続増収増益を続ける当社が2021年2月にオープンした新業態『大阪餃子専門店よしこ』<br>100％国産野菜を使用した薄皮・小粒の大阪餃子、下町中華らしい店内、人情味溢れる接客で、今後首都圏を中心に店舗拡大を予定しております。<br><br>【キャリアアップに関して】<br>店舗社員は将来的に様々なキャリアを進んでいくことができる会社です。入社後はまず各店舗キャストからスタート。その後、ストアマネージャーへと昇格していきます。マネージャーを経験したら、将来的には本部職へのキャリアチェンジも可能です。エリアマネージャー、商品企画・開発、マーケティング、教育、採用、新事業開発など、キャリアパスは豊富です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>シフト制／15:00～24:00の間<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>■週休2日制（月8～10日休み）<br>（シフト制／土日の休みも柔軟に対応いたします！）<br>■年始休暇<br>■慶弔休暇<br>■有給休暇<br>（※10日〜勤続年数に応じて最大20日。積極的な取得を推奨）<br>■産前・産後休暇（※取得実績あり）<br>■育休（※取得実績あり）<br>■介護休暇<br><br>★連続休暇の取得も可</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 営業時間は店内禁煙、各店舗近くの喫煙所でお願いします。
 営業後は喫煙可です。</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・慶弔金制度<br>・まかない無料<br>・誕生日ディナー交流会（誕生月の社員が集まる食事会に招待）<br>・社員表彰制度（賞金50～10万＋副賞）<br>・社員旅行（韓国・北海道、石垣島など海外含む5種類の中から自由選択）<br>・副業OK<br>・社員割引（30％引き）<br>・髪色、髪型自由（社内規定あり）<br>・社内イベント（自由参加）<br>・資格取得費用補助（衛生管理者、防火防災管理者など）<br><br>【当社独自制度】<br>・社内公募制度（本部・店舗責任者の各ポジションの新規募集時は公募をかけ、誰でもエントリーできる）<br>・NIGIRI制度（店長職以上の社員が自身で目標＋達成時の報酬内容をプレゼンできる制度）<br>・独立支援制度（マネージャー職以上かつ3年以上の勤務で独立資格を認定）→入社3年目社員の実現例あり！<br>・親孝行手当（社員の誕生月に、両親へ贈るプレゼント代（上限1万円）を支給）<br>・配偶者誕生日手当（配偶者に1万円相当の誕生日プレゼント）<br>・社内結婚手当（スタッフ同士の結婚で25万円支給）<br>・能力開発研修（BDP研修・瞑想研修・人生哲学塾など）<br>・F-POINT支給（当社の飲食店で使用できる公式アプリポイントを定期的に支給）<br>・ふたご手当（一卵性双生児が生まれた家庭には100万円を支給）<br>・10年勤続表彰（賞金60万円＋特別休暇＋旅行費を支給）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEFTG%20Company" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

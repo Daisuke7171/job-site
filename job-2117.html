@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜株式会社C３</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>営業・販売経験者優遇◎新卒人材紹介・キャリアアドバイザー♪</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社C３</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>東京都豊島区東池袋1-32-7　大樹生命池袋ビル2F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>豊島区</dd>
+
       <dt>郵便番号</dt>
       <dd>1700013</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【具体的には】<br>自社の就活生サービス『0円就活』を通じ、<br>学生のキャリア支援や企業への学生紹介を行います。<br>学生一人ひとりに向き合い、企業が抱える課題をも解決していくお仕事です。<br>そんなポジションだからこそ、寄せられる感謝も大きいです。<br><br>【0円就活とは】<br>就活を行う学生向けのサービスです。<br>利用者となる学生は、面接の際の交通費やスーツのレンタル代、<br>人気美容室の利用費などが0円に。<br>また、キャリアアドバイザーが、自己分析のサポートや企業紹介、<br>エントリーシートの添削、面接指導などのサポートまで行います。<br><br>利用者数はここ数年で右肩上がりに増加中。<br>取引企業も誰もが知る大企業からベンチャーまで1000社以上。<br>いま業界でも注目を集めるサービスです。<br><br>【キャリアアドバイザーの仕事とは】<br>・学生との面談<br>0円就活の利用者である学生の自己分析や、面接対策を行います。<br>「どんな仕事をしたいのか」といった洗い出しや、エントリーする企業の決定、<br>履歴書の添削などを手掛けます。<br>学生の希望や適性に合わせて、取引先企業を紹介します。<br>ただ入社を薦めるのではなく、<br>きちんと活躍できるかどうかを見据えた紹介が大切です。<br>担当する学生の数は、キャリアアドバイザーひとりにつき、およそ200名。<br>1日4～5名の学生さんと面談いただき、たくさんの学生から頼られます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>〈勤務時間〉<br>09:00~19:00(所定労働時間8時間、休憩120分)<br>↳見込み残業時間：20時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>休日：土日祝休み<br><br>■週休2日制（土日祝）<br>↳日祝完全休み　※社内カレンダーにより月1回～2回の土曜出社あり<br>■夏季休暇（1週間程度）<br>■年末年始休暇（1週間程度）<br>■GW（1週間程度） <br>■年次有給休暇（入社半年後に10日付与。最大20日）<br>■慶弔休暇 <br>■産休・育休</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>各種社会保険完備 <br>昇給　年4回 <br>賞与　年2回 <br><br>■通勤交通費（上限５万円／月）<br>■住宅手当（上限３万円／月）<br>※支給対象地域：豊島区内 <br>※独身者のみ <br>※住宅手当を支給する際、通勤交通費は支給しない<br>■営業交通費支給（全額）<br>■ビューティー手当(5000円／月) <br>■SNSインセンティブ <br>■役職手当（月1万円～5万円） <br>■家族手当（扶養者1人につき：月1万円） <br>■結婚祝い金（3万円～ ※規定あり） <br>■事業部手当 <br>■新規事業公募制度 <br>■資格取得支援制度 <br>■全社研修（全国から同期が集まります！） <br>■階層別研修 <br>■社内イベント（表彰式・BBQなど）※自由参加 <br>■サークル活動<br>（ゴルフ、フットサル、野球、ボウリング、軽音楽など／活動費50％負担） <br>└社内イベント・サークル活動は自由参加ですが、<br>　多くの社員が参加しています！社員の仲が良いのも当社の特徴です！</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEC%EF%BC%93" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

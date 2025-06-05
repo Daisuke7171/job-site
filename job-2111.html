@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜株式会社キッカケクリエイション</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【キャリアアドバイザー(CA)】未経験歓迎/IT専門転職エージェント/スキルUP</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社キッカケクリエイション</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区桜丘町22番14号　N.E.Sビル N棟３階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500031</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>DX推進する上場企業を中心に1,000社以上の取引実績を持つ当社において、ITエンジニア領域専門のキャリアアドバイザーを担って頂きます。<br>求職者様の一番近くで支え、キャリアプラン実現に向け伴走するやりがいの大きいお仕事です！<br><br>【具体的には】<br>SLACK,LINE,電話,オンラインMTGツールを含む様々なツールを駆使し、求職者様の望むキャリアを共に描き、希望が叶う職場をご紹介いただきます。<br>初回面談後、RAと連携しながら求人提案・選考対策を進めます！<br><br>★希望者については、重点施策に基づいた業務改善や売上向上を目的としたプロジェクトの創出/推進、予算付与、外注パートナーの選定/管理まで一気通貫で対応する「プロジェクトリーダー」に1年目から兼務。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>■所定労働時間<br>08時間00分、休憩60分<br>	<br>■勤務時間<br>09:30～18:30</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休二日制、土曜 日曜 祝日 <br>※月に1、2回土曜日出勤可能性あり（発生した場合は振替など取得可）<br>・入社半年経過時点に有給休暇10日付与（最高付与日数40日）<br>・その他（慶弔/産前・産後/育児/介護）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br><br>【その他制度/福利厚生】<br>■オフィスおかん食べ放題（お惣菜や白米、レトルト、パンなど無料で食べ放題となっております！）<br>■書籍購入補助制度<br>■事業部間交換留学制度<br>■社内研修制度（経営・会計・マーケティング・他社情報）<br>■業界・職種研修（オリジナル研修動画20時間分）<br>■ウォーターサーバー<br>■引っ越し手当有<br>■達成時の打ち上げ費用支援（1人あたり10000円）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%AD%E3%83%83%E3%82%AB%E3%82%B1%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
