@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜デジタルデータソリューション株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【オープン】オープンセールス</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>デジタルデータソリューション株式会社</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区六本木6丁目10番1号 六本木ヒルズ森タワー15階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1060032</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>ー募集職種ー<br>オープンポジションでのセールス（営業職）採用になります。<br>書類選考・面接の結果より、応募者様の職歴や適性に応じたポジションへの配属とさせていただきます。<br>※ご要望をお伺いし、ご了承を得た上で配属先を決定いたします。<br><br>■配属先部署<br>・データリカバリー事業部：データ復旧でお問合せいただいたお客様への営業対応をお任せします。外回りや飛び込みなし、電話中心の完全反響営業です。<br>・フォレンジクス事業部：サイバー攻撃被害や従業員の不正調査でご相談いただいたお客様へ「フォレンジック調査」の提案営業をお任せします。プロジェクト型、コンサル寄りの営業です。<br><br>（入社時）　　　セールス<br>（変更の範囲）　全ての事業部における業務</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>■9:00～18:00／12:00～21:00のシフト制(所定労働時間：8時間0分)<br>※9:00出社の割合が8割です。</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制(土日祝)、またはシフト制週休2日（配属先による）<br>上記に加え、特別休暇が夏季・年末年始に各3日ずつ付与されます。<br>その他、有給休暇、慶弔休暇、結婚休暇、産前産後休暇、育児休暇、特別休暇<br><br>◎年間休日126日。5日以上の連続休暇の取得が可能です。<br>◎産休・育休取得実績あり。男女とも積極的に取得しています。<br>◎夏季、年末年始にはそれぞれ3日間の特別休暇を取得可能！有休も取りやすく、シフトと調整して旅行などを楽しむ社員も多いです。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■交通費全額支給（社内規定あり）<br>■各社会保険完備<br>■年間休日126日<br>■昇給：年2回（3月／9月）<br>■インセンティブ制度<br>（月間営業インセンティブ・年間最優秀セールス賞・キャリア新人賞・ニューレコード賞・他）<br>■私服勤務可能<br>■オフィス内禁煙<br>■産前・産後・育児休業制度<br>■定期健康診断（年1回）<br>■インフルエンザ予防接種<br>■福利厚⽣アプリ加入<br>■iDeCoプラス加入<br>■持株会制度<br>■社外研修自由参加（ロジカルシンキング研修・MBA研修・他）<br>■読書アプリ無料<br>■社内イベント（表彰式、サークル）<br>■キャリアチャレンジ制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BD%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
