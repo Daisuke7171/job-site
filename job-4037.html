@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>財務・経理｜シティネットホールディングス株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>経理・会計(グループ全体の会計)</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>シティネットホールディングス株式会社</dd>
+
       <dt>職種名</dt>
       <dd>財務・経理</dd>
+
       <dt>勤務地</dt>
       <dd>兵庫県神戸市中央区加納町4-3-5 三宮御幸ビル4F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>神戸市</dd>
+
       <dt>郵便番号</dt>
       <dd>6500001</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>グループ会社含む、会社本体の経理業務全般をお任せします。<br><br>【入社後お任せする仕事内容】<br>・会計システムへの入力(弥生会計、JDL)<br>・経費精算、請求書処理など一般的な経理業務全般<br>・書類整理、管理(ファイリング)<br><br>【将来的な仕事内容】<br>・売掛金、買掛金の管理<br>・収支表の作成、管理<br>・決算業務<br>・経理フローの見直し、最適化<br>・新店オープンに伴う資金移動<br>・財務補助<br>など<br><br>各事業会社の経理・会計業務を少しづつお任せしていきます！<br>基本的には上長がマンツーマンで教えていきますので、安心して業務に慣れていける環境です。<br><br>経理メンバーは上長含め6名在籍♪<br>分からないことや対応に困った際はフォローを受けやすい体制です！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00～18：00(休憩60分、実働8時間)</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制(土・日・祝日)<br>■GW休暇<br>■夏季休暇(3日)<br>■年末年始休暇(8.5日)<br>■有給休暇（法定通り）<br>■慶弔休暇<br>■特別休暇<br>■産休、育児休業<br><br>※年間休日：128日</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： ビル内禁煙(屋外で喫煙可能)</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■各種社会保険<br>■確定給付企業年金<br>■健康診断<br>■外部研修費(会社負担)<br>■書籍購入費補助</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%B7%E3%83%86%E3%82%A3%E3%83%8D%E3%83%83%E3%83%88%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

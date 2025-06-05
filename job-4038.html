@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>不動産・プロパティマネジメント系専門職｜プロパティエージェント株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【用地仕入（マネージャー候補） 】自社ブランドマンションの⽤地仕⼊を牽引しませんか？</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>プロパティエージェント株式会社</dd>
+
       <dt>職種名</dt>
       <dd>不動産・プロパティマネジメント系専門職</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿6-5-1新宿アイランドタワー41F</dd>
+
       <dt>都道府県</dt>
       <dd>兵庫県</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1631390</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>7000000 ～ 10000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>東京23区内を中心にRC／1Rマンション、コンパクトマンション、アパートの用地仕入を担当します。具体的な業務は以下の通りです。<br>・用地仕入…物件情報収集、査定、購入<br>・商品企画…仕入れた用地の立地や環境を考慮し、設計担当（1級建築士）の者を中心に建築するマンションの企画</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>平日：9:30～18:30（所定労働時間8時間、休憩60分）<br>※残業は月30時間程度を想定</dd>
+
       <dt>休暇・休日</dt>
       <dd>・日曜日、祝日、土曜日<br>・年末年始、会社が指定する日<br>・各大型休暇2022年度実績有、有給（入社半年後より10日付与〜勤続年数に応じて最大20日）、慶弔等 <br>・取得義務有給5日を含むと年間129日の休日<br>・GW前に有給を組み合わせて10日以上の連休を取得した社員実績あり<br>（2023年度5月）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋内禁煙・オフィスビルに喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・都市圏から3時間以内の各所に社員利用可能な会員制の保養所施設有<br>・定期健康診断<br>・産前産後休暇、育児休暇<br>・PA STYLE Benefits（約100万点以上の豊富なサービスの優待を、従業員・そのご家族が利用できる制度）<br>・宅建手当<br>・各種社会保険完備（雇用・労災・健康・厚生年金）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

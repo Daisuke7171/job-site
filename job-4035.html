@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>カスタマーサポート・コールセンター運営｜Guidy株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>営業事務・カスタマーサポート</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>Guidy株式会社</dd>
+
       <dt>職種名</dt>
       <dd>カスタマーサポート・コールセンター運営</dd>
+
       <dt>勤務地</dt>
       <dd>東京都品川区西五反田一丁目26番2号五反田サンハイツ911</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>品川区</dd>
+
       <dt>郵便番号</dt>
       <dd>1410031</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>★財務・経理・IT・マーケティングなど幅広い知識をゲット<br><br>★女性管理職在籍<br><br>★20～30代の女性社員活躍中！子育てと両立<br><br>★半日単位の有給取得OK<br><br>★業務は全てオンラインで完結<br><br>補助金導入を検討するベンチャー企業に対して、<br><br>補助金の申請・入金までのサポートをお任せします！<br><br>～* 具体的なお仕事内容 *～<br><br>◇申請内容の確認・提案<br><br>◇申請資料の作成～入金までのサポート<br><br>◇問い合わせ対応<br><br>～* ご提案する補助金の一例 *～<br><br>当社ではIT企業をはじめ多種多様なクライアントに対して補助金支援を行っています。<br><br>「ものづくり補助金」や「テレワーク補助金」など<br><br>ベストな補助金をご提案し、クライアント企業のビジネス促進に貢献できるやりがいを実感できます◎</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>フレックスタイム制（1日の標準労働時間：8時間、休憩1時間）<br>コアタイム：10:00〜16:00<br>フレキシブルタイム：5:00〜22:00<br><br>～*リモートワークについて* ～<br>入社3ヶ月後より、<br>週2～3日のリモートワークが可能です！　※フルリモート不可</dd>
+
       <dt>休暇・休日</dt>
       <dd>＊＊＊年間休日120日以上＊＊＊<br><br>◇完全週休2日制（土日）<br><br>◇祝日<br><br>◇有給休暇（10日〜勤続年数に応じて最大20日） ☆有給取得率100％<br><br>◇年末年始休暇<br><br>◇産前・産後休暇<br><br>◇育児休暇　★グループ内での取得実績あり<br><br>◇勤続年数休暇（勤続年数により付与）<br><br>◇慶弔休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◇昇給年2回（1月・7月）<br><br>◇賞与年2回（業績連動）<br><br>◇各種社会保険完備<br><br>◇交通費支給（上限2万円/月）<br><br>◇住宅手当支給（3万円/月）<br><br>※オフィス半径3km以内に住宅がある場合・交通費と選択<br><br>◇引っ越し支援制度<br><br>（通勤に際して、転居を伴う引越しが必要な際に支給）※支給条件有り<br><br>◇食事手当（※親睦ランチ補助／2人以上で月1回、1人1500円支給）<br><br>◇フリードリンク（オフィスドリンク飲み放題）<br><br>◇ノートPC・社用スマートフォン貸与<br><br>◇リファラル報奨金制度<br><br>◇書籍購入支援制度<br><br>◇服装自由<br><br>◇ネイルOK<br><br>◇髪色自由<br><br>◇屋内禁煙</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=Guidy%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

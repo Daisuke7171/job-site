@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>総務・事務｜株式会社BEYOND BORDERS</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【総務メンバー】グローバル事業会社でキャリアアップも目指せる/年間休日125日/プライム上場子会社</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社BEYOND BORDERS</dd>
+
       <dt>職種名</dt>
       <dd>総務・事務</dd>
+
       <dt>勤務地</dt>
       <dd>東京都目黒区青葉台３丁目１−１８ ANNEX4階 青葉台タワー</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>目黒区</dd>
+
       <dt>郵便番号</dt>
       <dd>1530042</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>◆業務内容<br>東京オフィスにて、会社を裏から支える、管理部のスタッフを募集いたします。<br>主に総務・庶務業務、人事事務・経理業務など事務業務に携わっていただきます。<br><br>◆業務詳細　<br>・オフィス環境整備（清掃、整備/備品の発注・管理）<br>・郵便物、宅配の仕分け・発送業務<br>・電話・来客対応<br>・貸与機材（PC、スマホなど）の発注、管理・設定<br>・支払い処理<br>・契約書等、書類管理<br>・許認可の更新<br>・入退社手続き<br>・全社会議やオリエンテーションの準備・運営<br>・コーポレートサイト情報更新依頼<br>・社内イベントの企画実施<br>・社員の健康管理・安全衛生面などの補助<br>（Visa更新・健康診断等会社手続き関係の共有）</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>就業時間：9:00 - 18:00<br>休憩時間：60分<br>※労働時間8時間（20:30完全退社）</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制<br>土曜日・日曜日・祝日<br>有給休暇（10日～勤続年数に応じて最大20日）<br>産休育児休暇<br>慶弔休暇<br> ※夏休み、年末年始休暇はそれぞれ連休7日以上取得可</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◆各種社会保険完備<br>◆クロスボーダーワーク：国内外、好きな場所で働ける制度<br>◆クロスボーダーバケーション：国内外（自社商圏）の旅費の一部を補助する制度 <br>◆不動産購入手当：仲介手数料割引<br>◆社内カフェ：オフィスグリコ有（ウォーターサーバー・紅茶・コーヒー無料）<br>◆中抜け制度：1日3時間まで私用の用事や予定のために業務を離れ、前後の時間で補填することができる制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEBEYOND%20BORDERS" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

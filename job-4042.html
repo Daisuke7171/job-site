@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>不動産・プロパティマネジメント系専門職｜プロパティエージェント株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【プロパティマネジメント職/賃貸管理】(審査・申込、契約ポジション)</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>プロパティエージェント株式会社</dd>
+
       <dt>職種名</dt>
       <dd>不動産・プロパティマネジメント系専門職</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿6-5-1新宿アイランドタワー41F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1631390</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■仕事概要<br>弊社は、マンションの企画・開発から販売・管理・アフターサービスまでワンストップでビジネスを展開しています。<br>今回の募集では、マンションの賃貸管理部門、<br>中でも申込審査・契約手続き業務チームの業務をご担当頂ける方を採用したいと考えております。<br>（将来的には部署内でローテーションも検討中）<br>--------------------------------------------------------------------------------------------------------------------------------<br>■PM部チーム体制<br>・申込審査・契約手続き業務チーム　←ここ！<br>・更新手続き業務チーム<br>・解約・原状回復の手続き対応チーム　<br>・中古物件の管理移行手続きチーム<br>--------------------------------------------------------------------------------------------------------------------------------<br>■申込審査・契約手続き業務詳細例<br>▼入居審査：申込内容に不備・不自然な点がないか確認し、問題なければ保証会社審査～社内審査を進め、承認が下りたらオーナー様へご報告<br>・申込受付確認<br>・社内審査<br>・家主最終審査<br>・契約条件折衝<br>▼契約手続き：オーナー様の承認がおりたら契約手続きを行う。（書類作成・送付、契約金入金・契約締結管理、問い合わせ対応）<br>・電子契約手続き・督促<br>・契約書控え送付</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>・シフト制<br>・10：00～19：00（所定労働時間8時間、休憩60分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>シフト制<br>各大型休暇2019年度実績有<br>有給休暇（入社半年後より10日付与～勤続年数に応じて最大20日）<br>慶弔休暇　等</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内全面禁煙(敷地内に屋外の喫煙場所有)</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備<br>・在宅勤務制度<br>・会員制の保養所施設（都市圏から3時間以内の各所）<br>・定期健康診断<br>・産休育休制度・時短勤務制度（小学校4年生まで）<br>・研修（ビジネスマナー、コンプライアンス、IT研修、事例研修、年次別各種OJT）<br>・表彰年2回（都内ホテルにて社員総会を開催）<br>・PA STYLE Benefits(約1万点以上の豊富なサービスの優待を、従業員・そのご家族が利用できる制度)</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
