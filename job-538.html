@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜アールビィシィ株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【未経験可！システム・セールスエンジニア】自社パッケージ開発/建機/仮設レンタルシステムに特化</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>アールビィシィ株式会社</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区日本橋小網町19-8　IW日本橋ビル2階</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1030016</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>アールビィシィ株式会社は、建設機械レンタル業者様や仮設資材レンタル業者様、クサビ足場工事業者様向けに特化した業務システムを開発・販売しているIT企業です。システム開発・パッケージソフト開発を行うデータウェアネットワーク株式会社のグループ会社として、着実に成長を続けています。<br><br>＜仕事内容＞<br>自社パッケージシステムの営業販売や一部保守等をご担当いただきます。スキル・ご経験を考慮しながら、最適な業務からアサインいたします。<br>1. 顧客との関係構築、ヒアリングによりニーズを明確化して提案からクローズまで<br>2. 一部の顧客に導入済みの保守<br><br>顧客への導入提案（カスタマイズ等）がメインですが、スキル等に応じてパッケージそのものの保守等にもに取り組んでいただきます。<br><br>＜入社後について＞<br>今後、既存パッケージだけでなく、Web系関連システムの開発・運用・保守の業務にも展開していく予定です。意欲のある方ほど幅広いキャリアパスにチャレンジできる環境です。<br><br>＜自社パッケージについて＞<br>●TEAM-PartⅡ<br>建設機械レンタル会社、および仮設資材レンタル向けの業務管理パッケージシステムです。建設機械や仮設資材の出入庫管理・在庫管理や、請求・売掛管理（経理業務）、仮設資材の入庫検収（滅失・修理内容）情報をリアルタイムで一元管理することが可能です。建設機械業界・仮設資材レンタル業界において、数多くの導入実績を誇ります。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>■9時00分～17時30分　※昼食休憩：45分、所定労働時間：7時間45分</dd>
+
       <dt>休暇・休日</dt>
       <dd>1. 完全週休2日制（土曜・日曜）<br>2. 国民の祝日<br>3. 年次有給休暇：入社6ヶ月後から10日付与、最大20日、半日有給休暇制度有</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： ■施設のルールに準じる</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■各種社会保険（雇用保険/健康保険/厚生年金保険/労災保険）完備</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%A2%E3%83%BC%E3%83%AB%E3%83%93%E3%82%A3%E3%82%B7%E3%82%A3%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

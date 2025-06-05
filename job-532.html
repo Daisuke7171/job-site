@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Webサービス系エンジニア・プログラマ｜株式会社エス・ケイ通信</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>社内システムエンジニアを募集します！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社エス・ケイ通信</dd>
+
       <dt>職種名</dt>
       <dd>Webサービス系エンジニア・プログラマ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿4-15-3　住友不動産西新宿ビル3号館3F・4F</dd>
+
       <dt>都道府県</dt>
       <dd>福岡県</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>日本の中小企業活性化を目的に事業展開を行う当社。<br>飲食店、美容室、マッサージ店、アパレルなど街中にある店舗の経営者に対して、自社で企画・開発を行っているシステムによる集客アップやコストカットを提案しています。<br><br>社内のユーザー管理に伴うシステム構築に携わっていただきます。システムの保守や運用も併せてお任せする予定です。ヘルプデスク周りは行わず、あくまでも企画や要件定義含め構築業務メインでお任せしたいと考えております。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00～18：00</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制（土・日）※会社カレンダーにより土曜出社あり<br>祝日<br>GW<br>夏季休暇（前期実績7連休）<br>年末年始（今期8連休予定）<br>有給休暇<br>慶弔休暇<br>育児介護休暇<br>産休育休<br>特別休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>交通費支給(月2万円迄)<br>出張手当<br>役職手当<br>子ども手当<br>大家族制度／在籍期間に応じて下記を支給<br>住宅手当（賃貸・持家・社宅問わず一部費用を負担・入社5年目以降支給）<br>年齢手当（32歳以上の方対象）<br>在籍手当（在籍期間に応じて支給）<br>社会保険完備 <br>報奨制度（月間MVP賞、年間MVP賞、社長賞など）<br>食事会/月1回 <br>各種レクリエーション(BBQ、運動会など)<br>確定拠出年金（401K）<br>借上社宅（規定あり／敷金・礼金・引越代金は会社負担！ 遠方より引越する場合もご相談を）<br>※勤務地から30分圏内をご案内します。<br>NAKAMAメシ（昼食を従業員にふるまう制度）<br>結婚記念日は幸せいっぱい制度<br>マイバースデー制度（ご家族の誕生日をお祝いします）<br>前借り、社内貸付制度（困った時はお気軽に）<br>退職金制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%82%B9%E3%83%BB%E3%82%B1%E3%82%A4%E9%80%9A%E4%BF%A1" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

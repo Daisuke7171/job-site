@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Webサービス系エンジニア・プログラマ｜日本フロンティアシステムズ株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【SE・PG（経験者枠）】賞与年3回★年間休日129日★福利厚生充実</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>日本フロンティアシステムズ株式会社</dd>
+
       <dt>職種名</dt>
       <dd>Webサービス系エンジニア・プログラマ</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市北区曾根崎新地2-3 若杉大阪駅前ビル16F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5300002</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>客先常駐にて各種システム開発プロジェクトに参画していただきます。金融・通信・医療・流通・製造業・官公庁など、プライム企業、上場企業との取引がある当社では、要件定義から保守・運用まで幅広く携わることができます。今までの経験を活かして、よりスキルアップしながら、あなたの望む働き方を見つけてください。<br><br>【開発プロジェクト例】<br>＜システム・コンテンツ開発＞<br>・経路案内や店舗・交通情報などを提供するシステム<br>・地図情報サイトWebコンテンツ<br>・新規施行法令に準拠する公共システム<br>・製造業の社内の勤怠などを管理する人事システム<br>・広告業向けの放送予定や商品販売などを管理するシステム<br><br>＜開発・運用保守＞<br>・ECサイトに決済機能を提供する決済代行システムの開発・運用保守<br>・医療業向け栄養管理システムの開発・運用保守<br>・防衛関係システム開発・保守<br><br>＜新機能追加など＞<br>・金融業界向けシステム統合に伴う新機能追加、機能修正<br><br>【入社後について】<br>各プロジェクトの中から、スキル・適性・ご希望に添ったプロジェクトをお任せします。大手エンドユーザーやSIerとのネットワークを背景に、常時数百件という潤沢な案件がありますので、「こういうスキルを伸ばしたい」「この分野でノウハウを発揮したい」などあれば、ぜひお聞かせください！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00（所定労働時間8時間、休憩1時間）<br>※プロジェクトにより変動あり。</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制（土、日）<br>■祝日<br>■GW<br>■夏季休暇<br>■年末年始休暇<br>■有給休暇（入社半年後10日〜勤続年数に応じて最大20日）<br>■慶弔休暇<br>■特別休暇<br>■介護休暇<br>■子の看護休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■交通費全額支給<br>■各種社会保険完備（雇用、労災、健康、厚生年金）<br>■家族手当（配偶者：1万円／月、子：4000円／月、2人目以降：2000円／月）<br>■住宅手当<br>■出張手当<br>■役職手当<br>■退職金<br>■資格取得報奨金<br>■慶弔金制度<br>■災害一時援助金<br>■ランチミーティング<br>■サークル活動支援費<br>■エンジニア紹介制度<br>■書籍購入補助（全額）<br>■社内書籍貸出制度<br>■一眼レフカメラ貸し出し制度<br>■インフルエンザ予防接種補助<br>■花粉症外来補助<br>■電子書籍読み放題制度<br>■ベネフィットステーション<br>■女性向け健康診断補助<br>■マッサージ手当<br>■PC・周辺機器購入補助<br>※福利厚生は社員からの意見を反映させ、今後もより充実させていきます。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%97%A5%E6%9C%AC%E3%83%95%E3%83%AD%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%BA%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

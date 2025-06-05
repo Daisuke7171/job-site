@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>商品企画・商品開発｜株式会社安楽亭</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【商品開発担当‐和食・洋食・韓国料理・デザート】東証スタンダード上場／転勤なし／退職金あり</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社安楽亭</dd>
+
       <dt>職種名</dt>
       <dd>商品企画・商品開発</dd>
+
       <dt>勤務地</dt>
       <dd>埼玉県さいたま市中央区上落合2-3-5 アルーサB館4F</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>さいたま市</dd>
+
       <dt>郵便番号</dt>
       <dd>3380001</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>安楽亭では2030年までにグループのグローバル売上1000億円の目標を掲げております。実現に向けて、国内外への積極的な出店・M＆A・新規業態開発を進めています。株式会社アークミールを傘下に収め、既存の「安楽亭」、「七輪房」などの業態に「フォルクス」、「ステーキのどん」、「どん亭」が加わりました。多業態の商品力を強化し、より魅力的で高品質の商品でさらにお客様の満足度を高めていくために、商品開発担当を募集します。<br><br>食の専門知識を活かして、商品の企画開発、調理レシピの開発、工場や店舗の製造・調理工程の規定など、安楽亭グループの商品開発から現場オペレーションのフィッティングまで一連のトータルマネジメントを担っていただきます。当社はSCMを自社グループで保持しているため、工場生産、輸入、食肉生産バランスなど、担当部門と協業し、SCM全体に関する理解と連携が求められます。<br>和食・洋食・韓国料理・デザート、強みを活かした特徴ある商品開発を行い、300店舗を越える当社グループの商品価値の水準を保つ重要な役割です。<br><br>＜主な業務内容＞<br>・営業企画と連携し、消費者市場分析（ニーズ、地域、流行、ターゲットなど）<br>・各業態の「食」の方向性を指示<br>・料理、味の専門知識を活かして商品・商材・資材・器具の選定、開発<br>・出庫分析、売上分析、客単価分析に基づく商品判断、既存商品のブラッシュアップ<br>・社内人材、または外部の専門家を活用した商品開発及び開発業務のサポート<br>・現場の商品開発担当の特性を把握し、商品開発、レシピ作成全般のマネジメント<br>・調理オペレーションの設計、規定及び教育部と連携した店舗の技術指導<br>・商品フェアやイベントの企画参加</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8：45～17：45（所定労働時間8時間、休憩60分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>シフト制（※月9～10日休み）<br>有給休暇（10日～勤続年数に応じて最大20日）<br>慶弔休暇<br>介護休暇<br>産前産後休暇<br>育児休暇（取得実績多数あり）<br>年末年始や長期休暇も有給消化で積極的に任意取得しています。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： 屋内の受動喫煙対策：有（禁煙）</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>交通費規定支給<br>車通勤可（無料駐車場有、ガソリン代規定支給）<br>社員持株制度<br>財形貯蓄<br>社員割引（安楽亭直営店舗を20％割引で利用できます）<br>退職金制度（規定有）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%AE%89%E6%A5%BD%E4%BA%AD" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

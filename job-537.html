@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>施工管理・設備・環境保全｜株式会社ナンセイ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【⼤阪/職種未経験歓迎】施⼯管理職(テナントの内装解体)〜転勤無し・設⽴30年の安定企業</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ナンセイ</dd>
+
       <dt>職種名</dt>
       <dd>施工管理・設備・環境保全</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府⼤阪府⼤阪市中央区⼤⼿通り3-1-2</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>⼤阪府⼤阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5400021</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>◇未経験歓迎<br>◇定期的に需要があるサービスで安定した事業を展開<br>◇鉄・⾮鉄⾦属を扱うスクラップ業界で最も勢いのある会社です<br>◇ワークライフバランス重視の職場<br><br>【仕事概要】<br>■担当業務：主に⻄⽇本エリアを中⼼にテナント等の内装解体における施⼯管理業務をお任せします。<br>・打ち合わせ<br>・予算管理/進捗管理/⼯程管理/スケジュール管理<br>・積算/⾒積もり/作業計画書作成<br><br>■現場スタッフの⼈員配置・サポート<br>《スケジュール例》<br>・商業施設の閉店後、商品養⽣・通路養⽣ →内装解体開始  →廃棄品の搬出 →養⽣撤去・清掃 →帰社後、⽇報作成 →退社<br><br>■働き⽅:業務特性上、深夜の対応が多く発⽣いたします(別途深夜⼿当⽀給)。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00〜18:00(所定労働時間：8時間0分)<br>休憩時間：60分<br><br>転勤：無<br>フレックス：無</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2⽇制（隔週土曜日、日曜日、祝日）<br>年次有給休暇（10〜20日）<br>夏季休暇<br>年末年始<br>慶弔休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>教育制度/資格補助：⼊社後はOJTが中⼼となります<br>各種社会保険完備：健康/厚生/雇用/労災<br>厚生年金 基金：無<br>寮社宅：有 寮費約35,300円<br>退職金：無 再雇⽤有 定年：65歳<br>資格取得⽀援制度あり<br>社員旅⾏あり<br>ゴルフ部、野球部等部活あり<br>コンペ年数回実施</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>建築・土木・建設</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%8A%E3%83%B3%E3%82%BB%E3%82%A4" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
