@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社Good Work Japan</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>20代で年収500万も可能！人材業界で夢を叶えよう</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Good Work Japan</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区芝大門２－１－１７　朝川ビル３階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1050012</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>求職者と企業のマッチングに関わる各種業務をお任せします。人材を求める企業と求職者を繋ぐ架け橋になれる、やりがいの大きなお仕事です！<br><br>＜具体的な業務内容＞<br>◆既存営業(顧客拡大)<br>既存顧客の現在のニーズを確認し、同じ派遣先での人員拡大を目指します。関連企業のご紹介などを頂けるようになれば最高です♪<br><br>◆新規営業(顧客開拓)<br>新しいビジネスパートナーの獲得のため、エリアや業種を打合せした上で架電業務を実施。戦略的に案件獲得を目指します。アポイント獲得後は企業様へ訪問し、ニーズをヒアリングします。<br><br>◆スタッフマッチング<br>獲得した案件に対し、条件の合うスタッフを探します。面談を実施し、求職者の条件をヒアリング後、案件の内容を共有。求職者の求める条件、企業の求める条件を比較し、双方へ提案します。面談は1日3～4件程度となります。<br><br>◆お仕事開始の調整<br>求職者・企業双方に確認を取り、お仕事の開始日を調整します。<br><br>◆マネジメント<br>お仕事開始後のスタッフヒアリングを行ない、職場環境や仕事内容に関しての状況を確認。適宜フォローを行なっていきます。<br><br>＜仕事のポイント＞<br>★今までのお仕事の経験によって、BtoCが得意な方、BtoBが得意な方に分かれると思います。まずは、あなたの特性を活かして得意な方から携わっていただく予定です。ゆくゆくはそれぞれの業務を一人でできるようになることが目標となります。<br><br>★現在は介護／物流／製造／事務／コールセンター系を筆頭に、幅広く事業を展開＆拡大しております。「この業界でやってみたい」という意見があればどんどん提案してください♪<br><br>★個人ノルマはありません！チームでの売上目標を設定し、みんなで達成を目指しながら業務に取り組んでいます。<br><br>担当エリアの企業を訪問することが多いため、普通自動車免許が必要です（AT限定可）。移動の多い営業職として、効率的にクライアントを訪問できることが求められます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00〜18：00<br>所定労働時間：8時間、休憩1時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休二日制（土日祝）<br>・年次有給休暇（10日～勤続年数に応じて最大20日）<br>・夏季休暇<br>・年末年始休暇<br>・慶弔休暇<br>・産前産後休暇<br>・育児・介護休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋外喫煙可、喫煙目的場所設置</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>導入研修（座学・OJT）<br>スキルアップ研修（外部研修）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEGood%20Work%20Japan" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

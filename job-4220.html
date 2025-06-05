@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>内勤営業・カウンターセールス｜株式会社ワールドワン</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>〈インセンティブ〉【未経験OK】インサイドセールス／営業経験を積んで自分に合った仕事を見つけたい方！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ワールドワン</dd>
+
       <dt>職種名</dt>
       <dd>内勤営業・カウンターセールス</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区六本木7−12−2</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1060032</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>顧客先に配属の上で、主に中小企業をターゲットに<br>企業の悩みを解決する提案（テレアポ）を行います！<br><br>具体的には・・・<br>◇後継者不在などの悩みを抱える企業へのM＆Aマッチング支援<br>◇美容室やサロンを運営する企業の集客を支援する広告の提案<br>◇カフェやレストランを展開する企業への集客数アップの企画提案<br>等です。<br>そのほか取り扱い商材順次拡大中！<br><br>現在活躍中の先輩達の多くが未経験からスタートしています。<br>※適性・スキル・希望に応じた業務をお任せします。<br><br>そして営業力を身につけた半年〜1年を目途に、今後のキャリアビジョンをヒアリングする面談を実施。<br>希望や適性を考慮の上、常駐先の部署やポジションを決めていきます。<br><br>将来のキャリアパス<br>CA、RA、広報、人事、事務、エンジニアなど、幅広い業務に携われるチャンスがあります。現在は各ポジションを社員が兼任で担当している状態ですが、近いうちに各部門の立ち上げも予定。<br>会社が成長フェーズにある今のタイミングでご入社いただければ、早期から希望のポジションに就ける可能性が高まります！<br><br>【具体的なポジション例】<br>《人材紹介事業》<br>CA（キャリアアドバイザー）<br>担当企業に求職者を直接ご紹介します。<br>希望する仕事や条件などをヒアリング（1日平均3名以上）。<br>選考から面接、内定、入社後のフォローまでを一貫して伴走します。<br>※高インセンティブ<br><br>《営業支援事業》<br>蓄電池やEV充電器などの商材を扱っております。<br>※高インセンティブ<br><br>《SES事業》<br>IT事・エンジニアとして大手通信企業でのお仕事。<br>「知識はあるけどエンジニアとしての実務経験がない」という方にも最適な環境。<br><br><br><br>【その他】<br>￣￣￣￣￣<br>本社事務・人事・事業部長・人材コーディネーターなど…将来の選択肢は豊富です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>基本9:00〜18:00(所定労働時間8時間・休憩1時間)<br>※常駐先により30分～60分前後する場合があります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>■完全週休2日制（土・日）<br>※会社カレンダーにより土曜出社あり<br>■祝日休み <br>■年末年始休暇<br>■GW休暇<br>■夏季休暇<br>■慶弔休暇<br>■有給休暇（10日〜勤続年数に応じて最大20日）<br>■産前・産後休暇<br>■育児休暇<br>■特別休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◇昇給(随時)<br>◇インセンティブ<br>◇各種社会保険完備<br>◇交通費支給 <br>◇残業手当<br>◇資格取得支援制度<br>◇内部研修制度<br>◇人事評価制度<br>◇時短勤務制度<br>◇リファラル採用制<br>◇スポーツ活動 ◇社内交流会(BBQ・忘年会・社内交流会) <br>◇健康診断<br>◇帰社会</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%83%AF%E3%83%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

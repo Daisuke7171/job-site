@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社スマイルハートライフ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【原則90％即日内定】最低保障23万＃95％が営業未経験＃新規テレアポ飛び込み縁故販売なし/新潟</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社スマイルハートライフ</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>新潟県新潟市中央区東大通1-3-1　INPEX　新潟ビルディング6階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>新潟市</dd>
+
       <dt>郵便番号</dt>
       <dd>9500087</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>≪ 仕事内容≫<br>保険会社（メーカー）の代わりに、保険会社の商品を個人のお客様に販売するお仕事です。　<br><br>様々な保険の種類がある中で、当社は万が一入院した時に備える入院保険<br>の販売に特化。保険といっても覚える範囲は僅かなので安心してください。<br><br>『営業職でチャレンジしたい』『稼ぎたい』『認められたい！』その気持ちさえあれば学歴問わず、フリーターの方、営業未経験の方でも素晴らしい活躍をされている方がたくさんいます！！<br>未経験で始めた方でも、１年後の給与は1.5倍になっています！<br><br>やることは下記①～③だけ、業務もシンプルで分かりやすい！<br>　　　　　　　　　　　　　　　　　　<br>①電話で保険パンフレットの送付　<br>②後日パンフレット到着後、電話で内容説明しアポイント取得　<br>③お客様宅に訪問し、書類の記入を頂き契約締結。<br>　<br>【1日の流れ】<br><br>▼  9:00　勤務開始　<br>↓<br>▼  9:30　朝礼、ロープレ<br>↓<br>▼11:00　社内業務　資料送付、アポイント取得、訪問等を行います。　　　　　  　　　　　<br>↓<br>▼12:00　お昼休憩　<br>↓<br>▼13:00　休憩終了　<br>↓<br>▼15:00　社内業務　資料送付、アポイント取得、訪問等を行います。<br>↓<br>▼18:00～勤務終了 1日の振り返りをして勤務終了です。<br><br>【将来のキャリアパス】<br>▼一般社員（電話、訪問営業）<br>↓<br>▼課長（4～8名の部署のマネジメント業務）<br>↓<br>▼部長（3～4部署のマネジメント業務）<br>↓<br>人事制度に基づき、どんどん新しいことに活躍していける環境です！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00〜18：00<br>・所定労働時間8時間<br>・12：30～13：30まで60分休憩</dd>
+
       <dt>休暇・休日</dt>
       <dd>【休日】<br>月間9日程度休み（日曜固定休+他シフト制で4日間前後休み）<br>※シフト制のため、ご自身の希望日にお休みできます！<br>　<br>【休暇】<br>■年末年始<br>■ゴールデンウィーク<br>■夏季休暇<br>■慶弔休暇<br>■有給休暇<br>■産前産後休暇<br>■育児・介護休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋外喫煙可</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・インセンティブ 6,000円～356,250円　<br>・キャンペーン 5,000円～60,000円<br>・社長賞 10,000円～50,000円　　 　　　　　<br>・住宅手当 10,000円<br>　※転勤可能な方は、転勤手当として10,000円<br>・勤続手当 10,000円～勤続年数8年で最高40,000円まで<br>・家族手当 5,000円（配偶者）、5,000円（子供 1人につき）<br>・近所手当 5,000円<br>・資格手当 5,000円(FP1級)、3,000円(FP2級)<br>・通勤交通費 20,000円まで<br>・営業交通費 全額支給<br>・営業経費 全額支給（お客様との飲食代等）<br>・従業員割引・優待サービス（旅行・グルメ・フィットネス割引等）<br>・各種社会保険完備（厚生年金、健康保険、労災保険、雇用保険）<br>・定期健康診断<br>・インフルエンザ予防接種<br>・資格取得支援制度<br>・インセンティブ授与式<br>・キャンペーン企画あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB%E3%83%8F%E3%83%BC%E3%83%88%E3%83%A9%E3%82%A4%E3%83%95" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
