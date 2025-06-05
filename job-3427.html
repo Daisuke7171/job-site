@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>店長・SV（スーパーバイザー）｜株式会社サリックストラベル</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【中華新ブランド／オープニング　キッチンチーフ(候補)】</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社サリックストラベル</dd>
+
       <dt>職種名</dt>
       <dd>店長・SV（スーパーバイザー）</dd>
+
       <dt>勤務地</dt>
       <dd>埼玉県吉川市保1丁目30-7</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>吉川市</dd>
+
       <dt>郵便番号</dt>
       <dd>3420041</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 5500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>100年の歴史を持つ格式ある中華レストランで20年の経験を積み上げたY氏がメニューを考案。<br>日本最高峰の中華をリーズナブルに楽しめるお店を生み出す一大プロジェクトが始動！<br>2024年10月に1店舗目をオープンし、現在好調に運営中です。<br>今後の増店に向けて、店長を目指す方のご入社をお待ちしております！<br><br>あなたの任務は、お客様がいつ来店されても最高の料理を楽しめるようにすること。より美味しい料理になるような調理をすることはもちろん、食シーンとして楽しめるような演出も企画します。また、ご自身で調理や食材の管理をするだけでなく、いつでも最高のクオリティが発揮できるようにスタッフトレーニングをお願いします。<br><br>＜基本業務＞<br>□調理、発注、食材・衛生管理<br>□アルバイト採用、人材育成、シフト作成など人材マネジメント<br>□売上、及び、人件費や食材費などの数値管理<br>□厨房、及び、店舗設備管理、修繕依頼<br>□商品演出や新メニュー開発などの売上向上策の提案、実施<br><br>＜出店業務＞<br>□業態のテーマ、地域にニーズに合わせた商品設計・改善<br>□お客様により付加価値を感じていただくための演出企画・実施<br>□社員及びアルバイトのサービストレーニング・組織作り</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00〜23:00<br>上記時間の中から所定労働時間：8時間、休憩1時間<br>※店舗により営業時間が異なります。<br><br>シフト例 <br>・10:00~17:00<br>・12:00~21:00<br>・17:00~23:00<br>※営業時間は店舗により異なります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>・年間休日113日<br>・シフト制（月9～10日休み）<br>・有給休暇（半年経過後から付与。10日〜勤続年数に応じて最大20日）<br>・慶弔休暇<br>・介護休暇<br>・産前産後休暇<br>・育児休暇（男女ともに取得実績多数あり）<br>・結婚休暇（5日付与）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・給与改定年4回（四半期ごとに評価）<br>・賞与年2回（7月・12月）※前年実績1.2ヵ月分<br>・社会保険完備（雇用・労災・健康・厚生年金）<br>・まかない制度<br>・定期健康診断<br>・交通費全額支給<br>・マイカー通勤OK（駐車場完備）<br>・退職金制度（勤続3年以上）<br>・ 雇用保険<br>・ 厚生年金<br>・ 健康保険<br>・ 労災保険<br>・育休取得実績あり<br>・入社時引越し費用補助（規定あり）<br>・社員寮（借上げアパート）あり</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B5%E3%83%AA%E3%83%83%E3%82%AF%E3%82%B9%E3%83%88%E3%83%A9%E3%83%99%E3%83%AB" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

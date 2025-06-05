@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Web・SNSマーケティング｜ナウビレッジ株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【Webマーケター（未経験者可）】創業5期目で支援顧客数250社突破！多様なマーケティングをお任せ</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>ナウビレッジ株式会社</dd>
+
       <dt>職種名</dt>
       <dd>Web・SNSマーケティング</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区赤坂二丁目10番5号 赤坂日ノ樹ビル2F</dd>
+
       <dt>都道府県</dt>
       <dd>鹿児島県</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1070052</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>ナウビレッジは、デジタルマーケティング戦略の策定から実行、内製化支援まで一貫したマーケティングサービスを提供しており、創業4年で250社以上の支援実績を持ち、人材業界を中心に、メーカー、金融、商業施設、サービス業など、多岐にわたる業界・事業の支援を行っています。<br><br>当社のマーケターは、顧客折衝から戦略立案、実行までを一気通貫で担い、「数あるマーケティング手法の中から何を選んで事業を伸ばすべきか？」を常に考え、経営戦略や事業戦略にも踏み込んだ提案を行うなど、顧客に最適な解決策を提供することを大切にしています。<br>社内にはセールス、コンサルタント、エンジニアなど、さまざまなバックグラウンドを持つマーケターが在籍しており、定期的な社内勉強会や知識共有の場を設けることで、社員のスキルや技術の向上にも力を入れています。<br><br>一般的な広告代理店では、実は「営業しかしない」となったり、マーケティング会社でも「リスティング広告しかしない」など偏りがあります。<br><br>今回のポジションでは、特定の領域だけをお任せするのではなく、幅広い業界・事業におけるマーケティングコンサルティング、幅広い広告媒体の運用、CRM導入支援などをお任せします。顧客の経営課題・事業課題をマーケティングの側面から解決することがミッションです。当社で5年間勤務すれば、「デジタルマーケティングは一通り理解した」と言えるでしょう。<br><br>《具体的な業務内容》<br>①マーケティングコンサルティング業務<br>クライアントとのヒアリングを通じて課題を抽出し、最適な戦略を立案・実行<br>②広告運用業務<br>Google広告、Yahoo!広告、Meta広告などの運用とパフォーマンスレポートの作成<br>③Webサイト・LPディレクション業務<br>競合調査・キーワード調査をもとにしたWebサイトの制作ディレクション<br>④SEO支援業務<br>SEO記事の改善施策の考案、記事制作、ディレクション<br>⑤CRM導入・運用支援業務<br>HubSpotの導入、運用支援および改善案の提案・実行<br><br>【入社後のイメージ】<br>・基礎的なノウハウを社内資料で学習いただいた後、早い段階で実務の一部を実際に経験していただきます。<br>・各案件に対して、メイン担当とサブ担当の2名をつける体制になっており、まずはサブ担当としてメイン担当の補佐をしていただきます。<br>・入社半年ほどの期間で、実際にお客様に対しての戦略提案も合わせて行っていただきます。<br><br>《支援顧客例》<br>・上場企業含む、様々な会社規模の人材紹介会社<br>・SaaSツールを扱うITベンチャー企業<br>・サステイナブル食品の店舗・D2C事業を行う小売企業<br>・地元の観光を盛り上げたいと考える地方自治体<br>・SNSリテラシーを上げたいと考える地方金融機関<br>・有名国公立大学の研究室</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：00～18：00（所定労働時間8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休二日制（土日祝日休み）<br>※年間休日実績125日（2024年）<br><br>・有給休暇（入社半年後に10日付与）<br>・夏季休暇（3日）<br>・年末年始休暇（4日）※2024年は12月26日〜1月5日まで休暇<br>・産休・育休<br>・慶弔休暇<br>・特別休暇<br>　2024年11月に2日間の戦略的休暇、3日間の年末年始前倒し休暇を付与<br>　※2025年は内容検討中。</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備<br>・交通費全額支給<br>・健康診断（年1回）<br>・住宅手当一律2万円（実家住まいを除く）<br>・社用PC、社用携帯の貸与<br>・リモートワーク制度（最大週3日※条件有）<br>・社員旅行（国内/国外：各1回想定）<br>実績）2022年10月にグアムへ2泊3日、2023年9月はセブへ2泊3日</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%8A%E3%82%A6%E3%83%93%E3%83%AC%E3%83%83%E3%82%B8%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

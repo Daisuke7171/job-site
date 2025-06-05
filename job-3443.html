@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Web・SNSマーケティング｜株式会社ヴィレグループ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>★フルリモートOK【オタクマーケター募集】フレックスタイムと納得のいく仕事と自由とやりがいをキミに。</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ヴィレグループ</dd>
+
       <dt>職種名</dt>
       <dd>Web・SNSマーケティング</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区六本木７丁目１４ー２３ ラウンドクロス六本木４階</dd>
+
       <dt>都道府県</dt>
       <dd>福岡県</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1060032</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>・仕事内容：マーケティング<br>WEBのスペシャリスト：WEBプロモーションの企画・運用をサポート。<br>フレックス・年間休日127日・若手中心に活躍<br><br><br>クリエイターが生み出すコンテンツの特徴を活かしながら、クライアントである企業の課題を解決するプロモーション案件の制作進行管理をお任せします。<br>営業が受注したプロモーションの施策に対し、納品に至るまでの全ての過程に携わっていただきます。<br><br>企業のコンテンツ制作における一連の制作の管理をしていただきます。<br>美容・メーカー・医療・サービスなど幅広い業種のプロモーションに携わっていただきます。<br>受注後デザイン制作・動画制作・編集ディレクション/納品までは広告制作進行管理が担う形で分業しております。<br>撮影前の準備から当日の立ち会い、動画公開に到るまですべての進行管理をお任せします。<br><br>自身の携わった案件が世の中に出ることにより、大きな反響を生みやりがいを感じることができるようなポジションです。<br><br>他にも、クリエイターを巻き込んだ企画考案や社内すべてのプロダクトの進行管理に関わっていただくことがございます。<br><br>【具体的な業務内容】<br>・プロモーション案件の制作進行管理<br>・プロモーション案件進行における社内調整業務<br>・外部との折衝業務<br>・クライアント/クリエイターとのミーティング<br>・撮影場所のリサーチ、許諾申請<br>・撮影当日のディレクション・立ち合い<br><br>・使用ツール<br>Slack：社内コミュニケーション<br>Chatwork/LINE：社外コミュニケーション<br>GPT<br><br>・主なお客様の業界<br>貿易<br>不動産<br>医療・クリニック<br>教育<br>人材<br><br>・入社後のステップアップ<br>早期戦力化：スキルや経験に合わせて早期から業務に参加。不明点はどんどん質問OK！<br><br>・こんなあなたにピッタリ<br>成長意欲を高く持って取り組める<br>コミュニケーションを取りながら働ける<br>「面白い社長さん」にインスパイアされたい<br><br>もっと成長したい、もっとやりがいのある仕事をやりたい！そんなあなたを、私たちは待っています。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>契約社員からのスタートですが、<br>試用期間1ヶ月、契約期間6ヶ月<br><br>フレックスタイム制<br>コアタイム：10:30〜15:00<br>所定労働時間：8時間、休憩1時間<br><br>※ライフスタイルに応じて、労働時間は相談可能です。<br>※固定残業時間45h込み</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休2日制（土日）<br>・祝日<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・夏季休暇<br>・年末年始休暇<br><br>その他「どうしても休みたい！」という日があれば、事前相談休暇申請いただけたら、認可されたらOKです</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・フルリモート、在宅勤務可<br>・社会保険完備（健康／労災／雇用／厚生年金）<br>・交通費支給あり<br>・資格取得支援、手当あり<br>・服装自由<br>・時短勤務制度あり<br>・ネイルOK</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%B4%E3%82%A3%E3%83%AC%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

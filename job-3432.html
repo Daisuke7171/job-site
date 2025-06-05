@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社ZEPE</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>◆提案営業◆残業/転勤なし／未経験OK／目指せ年収1000万プレーヤー／書類選考無し</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ZEPE</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都墨田区東墨田2-13-29</dd>
+
       <dt>都道府県</dt>
       <dd>愛知県</dd>
+
       <dt>市区町村</dt>
       <dd>墨田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1310042</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 10000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>既存サービスの加入者様やイベントに来場されたお客様に対して、太陽光パネルの提案営業をしていただきます。<br>太陽光は電気代の削減や、災害時も使用できるなど、お客様に対するメリットが多くございます。<br>そのため、年々需要が増えてきています！<br>お客様と長期的な交流を取っていくお仕事なので、最後までしっかりと寄り添うことができます！<br>また、弊社は皆様が知っているような大手企業と提携を取っているため、はじめましてのお客様からもご理解いただけるケースがほとんどです。<br><br>【具体的な仕事内容は…】<br>●アポイント取得<br>１．既存のお客様に対して架電でアポイント取得→1日あたり100件ほど）<br>２．商業施設内のイベントで商材に興味を持ったお客様からの問い合わせ<br><br>●お客様へのご提案<br>お客様のご自宅にお伺いして太陽光をご提案していただきます。<br>その他にご自宅に太陽光が設置できるかの確認や、設置後の料金などをしっかりと説明していただきます。<br>商材が多くないため、一つのことを集中して覚えたい方にピッタリです！<br><br>●契約や設置手続き<br>ご契約をいただいたお客様と工事日の調整をしていただきます。<br>また、太陽光設置に必要な商材の発注や、申請作業など各種事務作業が発生します。<br><br>●お客様のサポート<br>契約して終わりではなく、契約後に満足をしていただくためのサポートをしていただきます。<br>行政への申請をお手伝いしたり、問い合わせ対応をしていただきます。<br><br>【一日のスケジュール】<br>★平日の流れ（営業活動）<br>09:00～　出社/チームmtg<br>10:00～　顧客リストをもとに架電(50件～100件)<br>12:00～　昼休憩<br>13:00～　エリアへ移動しアポイント先へ訪問<br>17:00～　帰社し、アポイント取得や各種事務作業<br>18:00～　退社<br><br>★土日の流れ（イベント参加）<br>09:00～　イベントの準備設営<br>10:00～　イベント(午前の部)開始<br>12:00～　昼休憩<br>13:00～　イベント(午後の部)開始<br>18:00～　退社<br><br>【入社後の流れ】<br>ＯＪＴ研修を通して学んでいただきます。<br>まずは商材の知識を覚えながら、先輩社員と一緒に同行やイベント参加をしていただきます。<br>その後、各種申請など実務的なことを覚えていただき徐々に一人前になっていきます。<br>未経験入社の研修期間は2ヵ月～6ヶ月ほど、そして経験者の方は即日または1カ月程で営業デビューをしていきます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00(実働8時間/休憩1時間)</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休2日制（火曜・水曜）　※休日出勤は一切ありません。<br>・年末年始休暇（5日間）<br>・特別休暇（5日間）<br>　リフレッシュ休暇、バースデー休暇、アニバーサリー休暇<br>　ファミリー休暇、イベント休暇、美容Day、部活休暇<br>　LOVE休暇、モチベーション休暇、コミュニケーション休暇<br>・結婚、出産休暇<br>※別途、年次有給休暇（初年度10日間〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋外喫煙スペース有</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険完備（健康保険/厚生年金保険/雇用保険/労災保険）<br>□社員旅行<br>■研修制度<br>□社外セミナー無料受講制度<br>■再雇用制度<br>□社用車支給<br>□借り上げ社宅　※規程あり<br>■部活動（スノボ、サーフィン、バスケ、テニス、野球など）<br>□社内イベント（年2回BBQ・運動会・忘年会など）<br>■結婚祝い金（3万円）<br>□出産祝い金（2万円）<br>■弔慰金</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEZEPE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

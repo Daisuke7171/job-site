@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社ダイブ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>大阪勤務｜ホテル・旅館など観光施設さまの人材課題へコンサル営業｜観光×人材サービス｜未経験歓迎</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ダイブ</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市浪速区難波中1-12-5 難波室町ビル8階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5560011</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 5500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>◆2024年3月末に東証グロースに上場したばかりの注目ベンチャー！<br>◆新たな出逢いや挑戦を支え、人生の転機に寄り添う仕事です。<br><br>【職種】ホテル・旅館などリゾート施設特化の人材営業の仲間を募集しています！<br><br>日本国内のホテル・旅館・スキー場・テーマパークなどの『観光施設』に特化した『移動体験』を提供する、当社のリゾート人材サービス。<br><br>地方の人口減少が深刻化し人材不足に悩む観光施設様と、リゾート地で働きたい方々とを繋げる架け橋となるシゴトです。<br><br>新しい環境に飛び込み挑戦されるスタッフさんの「良きお兄さん、お姉さん」として、人生の転機に寄り添う責任や感動を一緒に実感しませんか。<br><br>【主な仕事内容】<br><br>弊社人材営業はToB/ToC双方の担当をしていきます。<br><br>■観光施設様への人材提案営業<br>リゾート地にあるホテルや旅館、スキー場、テーマパーク等にアプローチ。観光施設の支配人や女将さん、人事担当の方と商談を行ない、人材の悩みをヒアリング。適切な人材をスピーディに派遣するのがミッションです。<br><br>■登録スタッフさんへの仕事紹介<br>「地元を出て新しい環境で挑戦したい」「いろんな地域に行きながら働きたい」など、スタッフさんの志望動機はさまざま。希望勤務エリアや職種などをヒアリングし、希望に添った求人を提案、スピーディにお仕事決定できるよう対応します。<br><br>■就業中スタッフさんの挑戦へ伴走<br>お仕事決定がゴールではなく、ここからがスタート！<br>「現地で困っていることはないか」不安や葛藤・悩みなどの感情や場面に向き合い、柔軟に対応していきます。電話やLINEで定期的に連絡をとったり、月に数回リゾート地に赴いたり。スタッフさんの「良きお兄さん、お姉さん」として、新しい挑戦に、伴走していきます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>平日9：30～18：30<br>（内休憩1時間、所定労働時間8時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>■土日祝休み<br>■年間休日120日以上<br>■完全週休二日制<br>※6月の繫忙期のみ週1日休み（土日どちらか時短出勤）<br>※6月以外は完全週休二日制<br>■有給休暇（半休制度あり）<br>■リフレッシュ休暇（夏季･年末年始等）<br>■ハネムーン休暇<br>■慶弔休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■社会保険各種完備<br>■住宅手当（実家暮らしではなく家賃が実際に発生する方対象）<br>■子供手当（1子につき月1万円）<br>■社内ベンチャー制度【新規事業立案：New-1グランプリ】<br>■社内ベンチャー制度【新企画立案：ワンテングランプリ】<br>■社内自己啓発セミナー【ダイブカレッジ】<br>■オフィスカジュアル<br>■研修費・書籍購入費補助<br>■TEAMビルド費用補助<br>■おもてな費（スタッフさんフォロー費の補助）<br>■新人お誘いランチ<br>■新入社員歓迎会費<br>■弊社グランピング施設の宿泊割引（規定あり）<br>■持株会</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%80%E3%82%A4%E3%83%96" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

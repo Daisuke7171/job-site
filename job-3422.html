@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社M.m</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【不動産/買取再販/仕入営業】年収3000万可能！？/最速でキャリアアップ</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社M.m</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都新宿区西新宿3-1-5　新宿嘉泉ビル10階</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>新宿区</dd>
+
       <dt>郵便番号</dt>
       <dd>1600023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 10000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>《中古マンションの情報収集・仕入れ》<br>売買仲介会社へ電話・訪問し、仕入れ先を検討。紹介いただいた後は物件の査定を行います。<br>　▼<br>《リノベーションの企画》<br>付加価値を高めるためのリノベーションを企画。自社でリフォーム事業を手掛けており、物件や内装デザインに携わることもできます。<br>　▼<br>《お客様への提案～販売》<br>情報サイトからの反響、オープンルームへのご来客、仲介業者からの紹介等を経て、お客様へ物件の提案～販売を行います。<br><br>【担当エリアや、取り扱い物件は…】<br>営業エリアは東京都内を中心とした一都三県。主に中古の戸建てやファミリータイプの中古区分マンションを扱います。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>完全週休２日制<br>＜休日＞<br>火曜、水曜<br><br>【勤務時間】<br>10時～19時（所定労働時間8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>・週休2日制（毎週水曜固定　第一、第三火曜隔週)<br>・年末年始休暇<br>・夏季休暇<br>・GW休暇<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 社内分煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・交通費全額支給<br>・社会保険（雇用・労災・健康・厚生年金）<br>・社員旅行あり<br>・社内分煙<br>・アチーブメント制度（外部研修制度）<br>・企業積立制度（退職金制度）※入社5年目以降から加入<br>・OJT制度<br>・メンター制度<br>・住宅手当<br>・介護休暇制度<br>・リフレッシュ休暇1日<br>・アニバーサリー休暇年1回（家族やプライベートごとの記念日）<br>・慶弔（結婚・出産5000円等）<br>・結婚休暇1日<br>・社員寮<br>・住宅購入手当<br>・直行直帰可能<br>・社内表彰（年末一回）<br>・フレックスタイム制度<br>・資格取得支援制度<br>※各種手当は条件等設けております</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEM.m" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

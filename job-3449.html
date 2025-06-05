@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社PIM</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【コンサルティング営業（未経験・女性歓迎）】ネイルOK・オフィカジOK★渋谷・表参道勤務★</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社PIM</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区渋谷1-2-5　MFPR渋谷ビル4F</dd>
+
       <dt>都道府県</dt>
       <dd>愛知県</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500002</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 12000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>資産形成のご提案として、投資用不動産をお客様にご紹介するお仕事です！<br>簡単にお話しすると、「都内の1Kタイプのマンションの大屋さんになって、将来安定した収入を得ませんか？」というような内容のご紹介になります。<br>お客様の加入している保険や資産運用の方法などをヒアリングし、その方に合ったプランをご提案していきます！<br><br>＜具体的な仕事内容＞<br>・新規顧客（個人）の開拓、テレアポ<br>・アポイント取得<br>・お客様の資産運用計画などについてヒアリング<br>・ヒアリング内容をもとに適切な投資物件を提案<br>・見積もり、契約<br>・引き渡し<br>・アフターフォロー<br><br>＜営業手法＞<br>電話・メールにて顧客にアプローチします。（中堅社員は紹介営業がメイン）<br>成約までの商談実施件数：3〜4件程度<br><br>当社主催のセミナーにご来場の方へ、アプローチ・イベント（資産運用EXPO・ゴルフイベント主催など）も行っています。<br><br>＜商材・サービス＞<br>当社が扱う物件は、東京23区内の1Kマンションがメインです。<br>新築物件：3000万円～程度<br>中古物件：2000万円～程度<br><br>＜主な顧客＞<br>・富裕層<br>・一般企業の会社員<br>・公務員　など<br>男女問わず30代～40代の方が中心です。<br><br>【入社後の流れ】<br>PIM営業部の女性社員はほとんどが未経験者です！<br>もちろん、中途入社社員向けに研修を行います。<br>不動産の知識がなくても大丈夫ですので安心してくださいね！<br>自分なりのトークスクリプトを考えて頂き、ロープレ等を行いながらテレアポを始めていただきます♪<br>困ったこと、分からない事があれば先輩社員へどんどん聞いていってください。<br><br>【キャリアステップ】<br>・不動産売買経験者で入社最短2ヶ月での昇格実績あり<br>・完全未経験者でも入社1年で昇格実績あり</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>◇10:00〜19:00<br>（所定労働時間：7時間、休憩：2時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>・週休2日　（日曜・土曜）、祝日<br>　※土は月に1、2回程度出勤していただく場合があります。　<br>　※休日にアポイントで出社の場合、振替休日を取得しています。<br>・夏季休暇（7月〜9月に選択）<br>・年末年始休暇<br>・GW<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）<br>・慶弔休暇<br>・リフレッシュ休暇（勤続5年以上の社員）<br>・産前、産後休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・交通費支給（上限月5万円）<br>・営業交通費（全額支給）<br>・住宅手当（会社負担40％：上限月3万円）<br>・宅地建物取引士手当（月2万円）<br>・宅建資格取得講座あり<br>・賃貸不動産経営管理士手当（月１万円）<br>・退職金積立制度<br>・社員旅行（年1回）<br>※6年連続ハワイに行きました。<br>・結婚、出産祝い金あり（社内規定あり）<br>・ゴルフレッスン(月1回開催予定)</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEPIM" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

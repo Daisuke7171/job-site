@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜株式会社PIM</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【事務スタッフ】不動産の宅建事務★完全週休2日制★時差出勤あり★渋谷勤務</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社PIM</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区渋谷1-2-5　MFPR渋谷ビル4F</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500002</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>◆日常業務<br>契約から引き渡しまでスムーズに進めるためのサポートを行う部署です。お客様の大切な取引を支える、やりがいのあるポジションです！<br><br>最初は契約書や書類作成業務からスタート。経験を積むことで、金融機関との打ち合わせや火災保険の手続きなど、業務の幅を広げられます。宅地建物取引士の資格を保有の方は、現場でお客様と直接接する機会が多いため、信頼関係を築きながら仕事を進められるのが魅力です。<br><br>部署内ではそれぞれの役割を分担していますが、将来的には業務全般を担当できるよう成長していただきます。<br><br>主な業務内容<br>〇契約書作成・チェック<br>法的観点からも正確で安心できる契約書を作成します。<br>〇重要事項説明・契約立ち合い　※宅建資格　保有の方<br>お客様へ物件の詳細や契約内容をわかりやすく説明し、スムーズな契約締結をサポートします。<br>〇金融機関との調整<br>ローン審査の進捗確認や必要書類の準備を行い、お客様のスムーズな資金調達を支援します。<br>〇火災保険の手続き<br>お客様が安心して物件を所有できるよう、保険契約の更新や手続きのサポートを行います。<br>〇物件引き渡し業務<br>お客様へ物件を確実に引き渡すための書類準備や調整を担当します。<br>〇顧客管理・資料作成<br>お客様の情報や物件資料を整理し、円滑な業務進行をサポートします。<br><br>この仕事の魅力<br>・多岐にわたるスキルが身につく<br>書類作成から金融機関との調整、顧客対応まで幅広いスキルを磨けます。<br>・お客様と直接関われる<br>現場対応を通じてお客様の声を直接聞けるため、感謝の言葉をいただく機会が多く、やりがいを実感できます。<br>・チームで協力して働ける<br>部署内での分担と連携を大切にしながら、目標達成の喜びを共有できる環境です。<br><br>お客様の満足度を第一に、安心・信頼のサービスを提供するサポート業務で成長できる仕事です！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>◆10:00～19:00（所定労働時間8時間、休憩1時間）<br><br>※入社半年後からは、時差出勤も可能です。<br>　希望があれば業務の状況を見て部署内でご相談ください。</dd>
+
       <dt>休暇・休日</dt>
       <dd>◆土日・祝日休み（年間休日120日越）<br>※月1～2回程度の休日出勤の可能性があります。<br>　出勤した場合は振替休日または休日出勤手当のどちらかの選択ができます。<br>◆夏季休暇（7月〜9月に取得）<br>◆年末年始（社内カレンダーによる）<br>◆GW<br>◆有給休暇（初年度10日〜勤続年数に応じて20日）<br>◆産前産後・育児・介護休暇（利用実績あり）<br>◆慶弔休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙
 受動喫煙対策（詳細）： フロア内禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◇社会保険完備（健康／労災／雇用／厚生年金）<br>◇交通費支給（上限月5万円）<br>◇営業交通費（全額支給）<br>◇住宅手当（会社負担40％：上限月3万円）<br>◇宅地建物取引士手当（月2万円）<br>◇宅建資格取得講座あり<br>◇退職金積立制度<br>◇社員旅行（年1回：海外）<br>◇結婚、出産祝い金あり（社内規定あり）<br>◇ゴルフレッスン(月1回開催予定)無料</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEPIM" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
