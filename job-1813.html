@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社クオンツ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【東京勤務/IT営業】急成長中ITベンチャー企業で営業力を強化させたい方大募集！</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社クオンツ</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区築地2-14-3　NIT築地ビル3階</dd>
+
       <dt>都道府県</dt>
       <dd>北海道</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1040045</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>自社のプロパーとお取引先企業のマッチング業務がメインになります。<br>飛び込みやテレアポ業務はございません。<br>取引先は既存の大手Sierへのルート営業が主になります。<br><br>【SES営業】<br>SESとは、「システムエンジニアリングサービス」の略でIT業界における契約形態の一つです。<br><br>SES営業は、案件を持っている会社に営業して「人材不足してませんか？当社の技術提供しますよ！」と聞いて人材募集中の募集要項をもらい、募集要項に合った人材を提案（マッチング）することです。<br><br>主な業務は、<br>①　取引先に人材募集の状況を確認し、情報を入手する<br>②　自社、パートナーで募集要項に合った人材を探す<br>③　募集要項にマッチした人材を提案する<br>④　マッチしたら面談をコーディネートし実施する<br>⑤　アサイン後も働きやすいようにフォローをする<br><br>【受託営業】<br>受託開発とは、お客様のソフトウェア開発を自社で請け負うお仕事です。<br>受託営業とは、お客様専用のシステムで実現したい顧客の課題を聞き出し、契約を獲得するお仕事です。<br><br>主な業務は、<br>①　アポイントを取る（手法は様々）<br>②　お客様の課題のヒアリング<br>③　契約締結<br><br><br>また、将来的には責任者候補として入っていただき、経営周りにも関わってもらう機会もあります。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10:00～19:00（休憩1時間）<br>所定労働時間8時間</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日125日以上<br>完全週休2日制（土・日）<br>祝日<br>夏季休暇3日<br>年末年始休暇<br>慶弔休暇<br>有給休暇（入社半年経過後10日付与〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（健康／労災／雇用／厚生年金）<br>入社後研修期間標準6ヶ月<br>資格取得祝金<br>通勤手当全額支給<br>エンジニア専用の人事評価制度<br>オンライン学習手当<br>資格試験費用負担<br>研修参加費補助<br>書籍購入制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%AF%E3%82%AA%E3%83%B3%E3%83%84" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>技能工（整備・工場生産・製造・工事）｜行徳紙工株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【採用率大幅UP】【製紙の運搬/雑務・３交替】老舗紙工クリエイティブ企業★賞与年2回</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>行徳紙工株式会社</dd>
+
       <dt>職種名</dt>
       <dd>技能工（整備・工場生産・製造・工事）</dd>
+
       <dt>勤務地</dt>
       <dd>千葉県市川市大洲3丁目21-1　北越コーポレーション（株）関東工場市川工務部</dd>
+
       <dt>都道府県</dt>
       <dd>埼玉県</dd>
+
       <dt>市区町村</dt>
       <dd>市</dd>
+
       <dt>郵便番号</dt>
       <dd>2720032</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 3500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>製紙の運搬、運搬に関わる準備<br><br>＜具体的な仕事内容＞<br>・フォークリフトによる製品運搬<br>・パレットの設置<br>・製紙運搬の準備（パレット設置や周辺片づけ等）<br><br>※3ヶ月程度の見習い期間があります<br><br>【キャリアステップ】<br>当社は、手厚い育成による着実なキャリアステップを実現できます。<br><br>＜1年目：基礎習熟（見習い）期の第1段階＞<br>社会人基礎を固めながら、下記の目標スキルを習得していただきます。<br>①社会人としてのマナー<br>②当社ルール<br>③基本技能<br>④労働安全の基礎<br>⑤機械操作<br>⑥製品知識<br><br>＜2年目〜3年目：基礎習熟（見習い）期の第2段階＞<br>仕事の知識・技能を身につけながら、下記の目標スキルを習得していただきます。<br>①心構えと実践<br>②各種業務<br>③労働安全の実践<br><br>＜4年目〜5年目：基礎習熟（見習い）期の第3段階＞<br>仕事の知識・技能に磨きをかけながら、下記の目標スキルを習得していただきます。<br>①心構えと実践<br>②各種業務<br>③労働安全の実践・指導<br>④リーダーシップの基礎（4年目）<br>⑤リーダーシップの実践（5年目）<br><br>【6年目以降の役職キャリアステップ】<br>6年目以降も役職のキャリアステップがあります。<br><br>＜熟練職群＞<br>◆副班長<br>分析・判断力を要する業務も指示を受け、相違工夫を加えながら確実に遂行。また、係長・主任を補佐し、部下に助言します。<br><br>◆班長<br>グループ目標の設定と推進など、課長・係長を補佐し、問題解決しながら責任を持って推進し、部下に的確な指示と助言をします。<br><br>◆係長<br>グループ目標の設定と推進のほか、問題の発見・解決を的確に行い、課長を補佐しながらかかるに与えられた仕事を個人またはグループで遂行します。<br><br>＜管理職群＞<br>◆課長・副課長<br>課や部の企画・立案をし、上長を補佐するとともに部下を指導監督して実質的な責任を持ち、日々の業務を効率的に遂行します。<br><br>◆次長・副部長<br>当社の基本方針の立案・検討・決定に責任を持ち、社内外に対し経営層としての連帯責任の一部を担います。<br><br>◆部長<br>高度な経営的判断をもとに、当社全体の長期的方針ならびに、高度な戦略を打ち出し推進します。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>①6:50〜15:00<br>→労働時間：7時間10分、休憩60分<br>②14:00〜22:10<br>→労働時間：7時間10分、休憩60分<br>③21:50〜7:50<br>→労働時間：8時間35分、休憩60分<br><br>以上の時間を交替で勤務していただきます。<br>例）①を4日間勤務→1日公休→②を4日間勤務→1日公休→③を4日間勤務→2日公休→①を・・・と勤務時間を交替しながら繰り返し勤務していただきます。<br><br>※1日平均7.58時間、月間170時間（170時間を超える場合は残業又は公休。試用期間中も同様）※試用期間中は8:00〜17:00<br><br>1ヶ月単位の変形労働時間制（月平均労働日数22.4日）</dd>
+
       <dt>休暇・休日</dt>
       <dd>・4組3交代シフトにより4日勤務で1〜2日の休日<br>・年次有給休暇（入社半年後に10日付与〜勤続年数に応じて最大20日）<br>・産前産後休暇（取得実績あり）<br>・育児休暇（取得実績あり）<br>・介護休暇（取得実績あり）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋内全面禁煙。屋外に喫煙室あり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（雇用／労災／健康／厚生年金）<br>・通勤手当（実費支給）<br>※上限なし<br>・車通勤可（1ヶ月後に申請可）<br>・皆勤手当（6000円）<br>・家族手当<br>・昇給年1回（5月）<br>※昇給率月〜6,100円（前年度実績）<br>・賞与年2回（6月、12月）<br>※計1ヶ月分（前年度実績）<br>・退職金制度（勤続3年以上）<br>・確定拠出年金<br>・定年制（一律60歳）<br>・再雇用制度（上限65歳まで）<br>・復職制度（本人と応相談）<br>・社員食堂<br>・売店利用可<br>・作業服貸与<br>・技能、免許取得制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E8%A1%8C%E5%BE%B3%E7%B4%99%E5%B7%A5%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

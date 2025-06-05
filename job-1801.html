@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>サービスエンジニア・サポートエンジニア｜フォロフライ株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【EV車／技術営業(整備士)】完全週休2日制・土日祝休み</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>フォロフライ株式会社</dd>
+
       <dt>職種名</dt>
       <dd>サービスエンジニア・サポートエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区千駄ヶ谷5-27-5 リンクスクエア新宿16F</dd>
+
       <dt>都道府県</dt>
       <dd>兵庫県</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1510051</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>いま、わたしたちは業務量が増加し、人員増員及び補充をしたいと考えています。法人顧客へ販売された後の自社車両のフォローを行い、増車へとつなげます。<br><br>ポジション概要<br>・納車先顧客への車両状況のヒアリング<br>・問合せ対応及び比較的簡単な修理・修繕、アドバイスをしながらの顧客フォローの実施<br>・社内各セクションとの連携を取り、技術的側面を含んだ自社車両ノウハウの醸成<br>・外部パートナー（整備工場、提携企業）への整備指導、協力体制の構築<br>など<br><br>ポジション詳細<br>【顧客管理】　・既存顧客の定期フォロー（状況ヒアリング、トラブルシュート、定期点検の案内など）　・顧客コミュニケーション　・その他各種問い合わせ対応<br>【車両管理】　・品質確認、検査、修繕　・現地整備、修繕　<br>【部品管理】　・補給部品の調達、受注、出庫、納品、請求　・見積り　・在庫管理<br>【認証登録】　・陸運局との調整　・検査/登録<br>【サービス関連】　・整備研修、整備工具類の準備及び実施等　・整備マニュアルなど各種文書の編集　<br>【その他】　・モーターショーを含むイベントの補助　・出展方法やタイアップの吟味　・調整、アンケート、試乗、顧客の掘り起こし　・メディア対応</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>裁量労働時間制<br>1日のみなし労働時間：8時間<br>※標準労働時間9:00〜18:00（休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>土・日・祝日<br>夏期休暇<br>年末年始<br>GW休暇<br>年次有給休暇（10日～勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>各種保険完備<br>通勤手当<br>交通費全額支給</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%83%95%E3%82%A9%E3%83%AD%E3%83%95%E3%83%A9%E3%82%A4%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

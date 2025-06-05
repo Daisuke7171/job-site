@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>施工管理・設備・環境保全｜株式会社NEXT CONSTRUCTION</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【施工管理】未経験OK！20代活躍中★配属先は大手のみ！フォロー専任者がいて安心★賞与2回</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社NEXT CONSTRUCTION</dd>
+
       <dt>職種名</dt>
       <dd>施工管理・設備・環境保全</dd>
+
       <dt>勤務地</dt>
       <dd>東京都港区三田一丁目四番一号 住友不動産麻布十番ビル四階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>港区</dd>
+
       <dt>郵便番号</dt>
       <dd>1080073</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 7000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>＼35歳までの方限定！新規部署で一緒に部署を盛り上げてくださる方を募集してます！／<br><br>≪応募時の注意点≫<br>過去に弊社求人へ応募済みの方や他店舗の求人へご応募済みの方は、重複しての応募をお控え下さい<br><br>※長期キャリア形成を目的とした採用のため、35歳までの方限定採用です。<br><br>【未経験OK！バリバリ稼ぎたい若手活躍中！】<br>1都3県の大手サブコンに特化した施工管理職のお仕事です。資格手当や各種手当も充実しており、出張もほぼございません。<br><br>▼主な仕事内容<br>・施工図面の作図・チェック・訂正業務<br>・各種検査、安全管理<br>・現場での工務的な後方支援<br>・写真管理など<br><br>▼入社後のイメージ<br>(1)最初の1～2週間は研修で業界や、電気工事などの知識を学んでいただくところからスタート。<br>(2)一通り業務を学んだら現場へ配属。一人ひとりのレベルに合わせて丁寧にお教えします。未経験の方でも安心です！<br>(3)まずは日程調整や写真撮影、書類整理など、先輩のアシスタント業務からお任せ。少しずつお仕事の幅を広げていけます。<br><br>▼NEXT CONSTRUCTIONの魅力<br>(1)社会貢献性の高いお仕事です！<br>→日本社会を支える、電気設備の大規模なプロジェクトを手がけることになります。普通の会社では関われないような社会に貢献するやりがいは、大変大きいです。<br><br>(2)未経験でも活躍できるよう、しっかりと研修や手厚いフォローがあります！<br>→活躍している社員も、ほとんどが異業界・異業種からの転職で、未経験からのスタートでした。内勤スタッフが、しっかりフォローアップしていきます！<br><br>(3)好待遇・高収入が実現できます！<br>ワークライフバランスを大切にする社風です。業界最高水準の給与体系、資格手当等の福利厚生、少ない残業時間等社員の方々の働きやすさを重視した取り組みが多数あります。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:00〜17:00<br>所定労働時間8時間、休憩1時間<br>（就業先によっては夜勤・シフト勤務あり）<br>※本人の希望考慮</dd>
+
       <dt>休暇・休日</dt>
       <dd>▼休暇制度<br>・完全週休⼆⽇制（原則、⼟⽇祝日※プロジェクト先により異なる）<br>・夏季休暇<br>・冬季休暇<br>・有給休暇<br>・産休育休休暇（取得実績あり）<br>・育児休暇（取得実績あり）<br><br>▼NEXT CONSTRUCTIONの休暇制度<br>・誕生日休暇<br>・結婚記念日休暇<br>・療養休暇<br>・マタニティ休暇<br>・生理休暇<br>・おひとりさま休暇<br>・慶弔休暇<br>・追加忌引制度</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>▼福利厚生<br>・昇給年1回<br>・賞与年2回（業績に応じて）<br>・各種社会保険完備<br>・交通費全額⽀給<br>・残業⼿当全額⽀給<br>・資格⼿当<br><br>▼NEXT CONSTRUCTIONの福利厚生<br>・ランチ会<br>・社員交流会/イベント<br>・スポーツサークル活動<br>・表彰制度<br>・異動/転勤選択制度<br>・勤続感謝旅行<br>・長期勤続報酬<br>・選挙タイム<br>・リファラル採用報酬<br>・新聞購読奨励<br>・独立支援<br>・ライフプランニング研修<br>・建築技能講習費補助<br>・産業医面談の実施<br><br>▼各種手当<br>・資格手当<br>1級電気施工管理（3万円）<br>2級電気施工管理（1万5000円）<br>1級電気工事士（3万円）<br>2級電気工事士（1万5000円）<br>1級設備施工管理（3万円）<br>2級設備施工管理（1万5000円）<br>・結婚手当 10,000円<br>・出産祝い手当 50,000～100,000円<br>・子供の入学お祝い手当(小～高) 30,000円<br>・スキルアップ手当（実額の最大50%）<br>・美容手当 毎月3,000円</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>建築・土木・建設</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BENEXT%20CONSTRUCTION" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

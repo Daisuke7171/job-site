@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>インフラエンジニア｜株式会社はばたーく</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>★インフラ/サーバ募集★ 年間休日125日以上 / 副業OK / 平均残業時間15h</h1>
     </div>
   </header>
@@ -146,46 +152,63 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社はばたーく</dd>
+
       <dt>職種名</dt>
       <dd>インフラエンジニア</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区日本橋本町4-8-15ネオカワイビル5F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1030023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>エンジニアリングサービスや自社内、グループ会社のプロジェクトなどにて、要件定義・設計構築が主な業務となります。<br>AWSのクラウド案件がからクラサバの案件まで幅広くあります。<br><br>◆1日のスケジュール例◆<br>09:00　メール、チャットツール確認<br>09:30　朝会<br>10:00　手順書・設定ファイル作成<br>11:00　チームレビュー<br>12:00　ランチタイム<br>13:00　作業準備<br>14:00　顧客レビュー<br>15:00　設定変更作業<br>17:00　作業報告、翌日のタスク確認等<br><br>【構築環境例】<br>◆クラウド<br>AWS・GCP・Azure　など<br>◆オンプレ<br>Linux・Windows・RedHat・Ubuntu　など<br><br>【プロジェクト例】<br>◆大手ゲーム会社におけるサーバーの構築、運用業務<br>工程：運用/構築<br>環境：Linux/Vmware<br><br>◆住宅産業向けシステムのインフラ全般の設定変更、問合せ対応、障害対応<br>工程：構築/運用/ツール開発<br>環境：Winows/Linux/Shell/Powershell/VBScript<br><br>◆サーバ構築バッチの全自動化における改修と運用設計（AWS）<br>工程：設計構築/運用設計<br>環境：CloudFormation/AWS<br><br>◆CSプラットフォームのインフラ(AWS)案件<br>工程：要件定義/設計/構築/テスト<br>環境：AWS/MySQL/Linux<br><br>◆クラウドインフラエンジニア募集<br>工程：設計/構築/運用<br>環境：AWS<br><br>◆CSプラットフォームのインフラ(AWS)案件<br>工程：サービス管理/運用保守<br>業務：Linux/AWS/MySQL/CloudSearch/CircleCI<br><br>【自社サービス】<br>システム開発・ICT導入における受託事例紹介サイト『FALCON』</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:30〜18:30（所定労働時間8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日125日+有給消化5日以上<br>・完全週休2日制（土日休み）<br>・祝日<br>・年末年始休暇（12/29～1/4）<br>・夏季休暇<br>・有給休暇（勤続年数に応じて最大20日）<br>・慶弔休暇<br>・特別休暇<br>・産前産後休暇<br>・育児休暇<br>・介護休暇<br>・バースデー休暇<br>・生理休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 屋内禁煙
 ※敷地内喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・定期健康診断<br>・書籍購入補助<br>・資格取得報酬金あり（社内規定あり）<br>・資格取得支援制度<br>・社内旅行（会社負担）、各種イベントあり（BBQなど）<br>・リモート応相談（プロジェクトによる）<br>・副業OK（業務に支障のない範囲内）<br>・フリーアドレス制<br>・各種勉強会<br>・グループ内の同好会/サークルあり（任意参加）<br>・保養所あり<br>・出張手当<br>・慶弔見舞金<br>・コンビニ徒歩30秒<br>・本社ビル最寄り駅より徒歩1分<br>・クラブオフサービス利用可能（外部福利厚生サービス）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%81%AF%E3%81%B0%E3%81%9F%E3%83%BC%E3%81%8F" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

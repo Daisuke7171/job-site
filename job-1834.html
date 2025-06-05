@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Webサービス系エンジニア・プログラマ｜株式会社はばたーく</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>◆SE/PG募集◆ 年間休日125日以上 / 平均残業時間15h / 資格支援制度あり</h1>
     </div>
   </header>
@@ -146,46 +152,63 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社はばたーく</dd>
+
       <dt>職種名</dt>
       <dd>Webサービス系エンジニア・プログラマ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区日本橋本町4-8-15ネオカワイビル5F</dd>
+
       <dt>都道府県</dt>
       <dd>茨城県</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1030023</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>エンジニアリングサービスや受託開発のプロジェクトにて、要件定義～開発、単体・結合・システムテストや受入テストなど開発エンジニアとしての主な業務となります。<br>ECサイトやBtoC向けのWebサービス業務系システム開発、Ｗebコンテンツの制作などの業務がございます。<br><br>◆1日のスケジュール例◆<br>09:00　朝会<br>09:30　プログラミング<br>12:00　ランチタイム<br>13:00　プログラミング<br>17:00　進捗報告・夕会<br><br>【開発環境】<br>◆言語<br>Java、PHP、C#、.net　など<br>◆DB<br>PostgreSQL、MySQL、PL/SQL、Oracle、SQLServer　など<br>◆ツール<br>Git、Redmine、SVN、GitHub、Slack、Microsoft、Backlog　など<br><br>【プロジェクト例】<br>◆大手製造業向けアプリ開発支援<br>工程：要件定義/設計/実装/テスト/運用保守<br>環境：Java/OracleDB<br><br>◆大手重工業向けPLM業務領域のシステム刷新<br>工程：詳細設計/実装/テスト<br>言語：Java/TypeScript/Angular/Spring<br><br>◆特定保険指導システムの保険者追加・機能追加開発<br>工程：基本設計/詳細設計/実装/テスト<br>言語：Linux/PHP/Cake/SQL<br><br>◆インバウンド向け旅行商材APIの開発<br>工程：調査/要件定義/設計/実装/テスト<br>言語：PHP/Oracle/PostgreSQL/node.js/Typescript<br><br>◆鉄道会社向けIOS端末アプリの開発支援<br>工程：詳細設計/実装/テスト<br>言語：Windows/Mas/C#/.net<br><br>◆会計業務支援のためのWebアプリ開発<br>工程：設計/実装/テスト<br>言語：C#/ASP.net/AWS<br><br>【自社サービス】<br>システム開発・ICT導入における受託事例紹介サイト『FALCON』</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>勤務時間　9:30～18:30（プロジェクトによって変更の可能性あり）<br>所定労働時間　8時間<br>休憩　60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日125日+有給消化5日以上<br>・完全週休2日制（土日休み）<br>・祝日<br>・年末年始休暇（12/29～1/4）<br>・夏季休暇<br>・有給休暇（勤続年数に応じて最大20日）<br>・慶弔休暇<br>・特別休暇<br>・産前産後休暇<br>・育児休暇<br>・介護休暇<br>・バースデー休暇<br>・生理休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 室内完全禁煙
 ※敷地内屋外喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>【各種保険】<br>・健康保険<br>・雇用保険<br>・労災保険<br>・厚生年金<br><br>【各種手当】<br>・定期健康診断<br>・書籍購入補助<br>・資格取得報酬金あり（社内規定あり）<br>・資格取得支援制度（社内規定あり）<br>・社内旅行（会社負担）、各種イベントあり（BBQなど）<br>・リモート応相談（プロジェクトによる）<br>・副業OK（業務に支障がない範囲内）<br>・フリーアドレス制<br>・各種勉強会<br>・グループ内の同好会/サークルあり（任意参加）<br>・保養所あり<br>・出張手当<br>・慶弔見舞金<br>・コンビニ徒歩30秒<br>・本社ビル最寄り駅より徒歩1分<br>・クラブオフサービス利用可能（外部福利厚生サービス）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>IT・クリエイティブ</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%81%AF%E3%81%B0%E3%81%9F%E3%83%BC%E3%81%8F" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

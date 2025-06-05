@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜株式会社ワット・コンサルティング</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>未経験から手に職をつける【CAD事務】</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ワット・コンサルティング</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>愛知県名古屋市中村区名駅南1-17-23 ニッタビル 7F</dd>
+
       <dt>都道府県</dt>
       <dd>宮城県</dd>
+
       <dt>市区町村</dt>
       <dd>名古屋市</dd>
+
       <dt>郵便番号</dt>
       <dd>4500003</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 3000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br><br>“事務＋α”の活躍が可能です！<br><br>　＜例えば――＞<br>◆CADを使った図面作成（設計図・施工図など）<br>◆建物等の写真のファイリング<br>◆書類作成（見積書・請求書など）<br>◆電話応対<br>◆スケジュール管理　など<br>　　※研修終了後、各配属先で実務スタート<br><br><br><br>【入社後の流れ】<br><br>まずは同期の仲間と一緒に、約2か月間の研修を受講していただきます！<br>◆建設業界の基礎知識・PCやCAD（図面作成ソフト）の使い方<br>◆基本的なビジネスマナー<br>◆書類の作り方・電話応対の仕方<br>◆スケジュール管理の仕方　など<br><br>当社では、 “新卒並み”の手厚さを超え、 “専門学校レベル”の充実した研修をご用意！<br>街づくりに必要な知識を、 “同期&amp;同世代”の仲間と学べる貴重なチャンスです。<br><br>研修は、以下いずれかの研修センターで受講していただきます。<br>---------------------------------------------------<br>【研修センター所在地】<br>・東京研修センター<br>　東京都中央区新川1-10-14 FORECAST 茅場町1F<br>　【 https://www.jp-wat.com/company/access/tokyo_edc/ 】<br><br>・大阪研修センター<br>　大阪府大阪市西区北堀江1-19-1 八光心斎橋AIRビル 4F<br>　【 https://www.jp-wat.com/company/access/osaka-edu/ 】<br><br>・福岡研修センター<br>　福岡県福岡市博多区店屋町6-17 ランダムスクエアⅡ 3Ｆ<br>　【 https://www.jp-wat.com/company/access/fukuoka_edc/ 】<br>---------------------------------------------------<br>※遠方の方には、家具・家電付きの寮をご用意いたします。<br><br><br>2ヶ月間の研修修了後は、配属先で“適性にあった”仕事をお任せします。<br><br>プロジェクトへ配属された後も、<br>担当営業やキャリアアドバイザーによるフォロー体制が充実♪<br><br>実務の流れを経験しながら、一歩ずつできることを増やしていけます！</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:00～17:00 or 9:00～18:00（所定労働時間8時間、休憩1時間）<br>※現場により変動があります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休2日制（土日）<br>・祝日 <br>・年次有給休暇（入社後半年に10日付与〜最大20日）<br>・年末年始休暇<br>・夏季休暇<br>・GW<br>・産前産後休暇<br>・育児休暇<br>・特別休暇<br>★現場完了後に、1週間程度のリフレッシュ休暇取得も可能です！</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・各種社会保険完備<br>・資格取得奨励金<br>★Web資格講座やeラーニングコンテンツ（PCで勉強できるシステム）があります！<br>　その他建設関係の国家資格取得支援など<br>　あなたが希望するキャリアプランに合わせたサポート制度をご用意しています！<br>・紹介奨励金<br>・保養所有<br>・単身寮完備（家具・家電付）（※社内規定あり）<br>　└寮費控除100%、住宅手当50%（上限25,000円）<br>・法律相談窓口<br>・メンタルヘルスケア制度</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AF%E3%83%83%E3%83%88%E3%83%BB%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

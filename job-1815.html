@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>法人営業｜株式会社クオンツ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【東京勤務/IT系法人営業】会社と一緒に営業力が成長できる！裁量大きく仕事が出来る！</h1>
     </div>
   </header>
@@ -146,46 +152,63 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社クオンツ</dd>
+
       <dt>職種名</dt>
       <dd>法人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都中央区築地2-14-3　NIT築地ビル3階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>中央区</dd>
+
       <dt>郵便番号</dt>
       <dd>1040045</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>■仕事内容<br>主な仕事内容はこちらです。<br>・SES営業<br>・受託開発営業<br>・エンジニアと会社の架け橋<br><br>SESとは、「システムエンジニアリングサービス」の略でIT業界における契約形態の一つです。<br>SES営業は、案件を持っている会社に営業して「人材不足してませんか？当社の技術提供しますよ！」と聞いて人材募集中の募集要項を貰い、募集要項に合った人材を提案（マッチング）することです。<br>主な業務は、<br>①　取引先に人材募集の状況を確認し、情報を入手する<br>②　自社、パートナーで募集要項に合った人材を探す<br>③　募集要項にマッチした人材を提案する<br>④　マッチしたら面談をコーディネートし実施する<br>⑤　アサイン後も働きやすいようにフォローをする<br><br>受託開発とは、お客様のソフトウェア開発を自社で請け負うお仕事です。<br>受託営業とは、お客様専用のシステムで実現したい顧客の課題を聞き出し、契約を獲得するお仕事です。<br>主な業務は、<br>①　アポイントを取る（手法は様々）<br>②　お客様の課題のヒアリング<br>③　契約締結<br>現場で活躍するエンジニアと連携して、企業様へSalesforceの導入や運用サポート、システム開発等を行います。お客様のニーズにあったエンジニアをコーディネートし、業務改善につながるソリューション提案を担っていただきます。<br>具体的にお任せするのは以下の業務です。<br>・企業とITエンジニアのマッチング<br>・提携企業のフォロー<br>・その他請求書作成等の事務業務<br>・企業開拓<br><br>飛び込み営業は一切ありません。<br><br>先輩社員から得意先を引継ぎつつ、交流会などでの名刺交換で徐々に人脈を増やしていただきます。<br>また、通常はエンジニアのフォローアップも営業職が担う場合が多いですが、弊社では営業職が営業に集中できるよう、エンジニア同士でマネジメントを行います。<br><br>将来的には責任者候補として入ってもらいつつ、加えて経営周りにも関わってもらう機会があります。<br><br>■□■Salesforceとは？■□■<br>世界15万社以上が利用するクラウドベースの顧客管理システムや営業支援システムです！<br>業界問わず、幅広い有名企業が利用！<br>例）SMBCグループ、中央電力株式会社、任天堂株式会社　等</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>フレックスタイム制（1日の標準労働時間：8時間）<br>コアタイム：10:00〜15:00<br>※10:00〜19:00の時間帯に勤務している社員が中心です。<br>※試用期間中は10:00〜19:00固定での勤務になります。</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土・日）<br>祝日<br>夏季休暇3日<br>年末年始休暇<br>慶弔休暇<br>有給休暇（入社半年経過後10日付与〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 本社（築地）：全面禁煙
 秋葉原オフィス：フロア内禁煙、建物の内に喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備（健康／労災／雇用／厚生年金）<br>入社後研修期間標準6ヶ月<br>資格取得祝金<br>通勤手当全額支給<br>オンライン学習手当<br>資格試験費用負担<br>研修参加費補助<br>書籍購入制度<br>リファラル採用手当</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%AF%E3%82%AA%E3%83%B3%E3%83%84" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

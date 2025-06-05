@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社prorise（カブシキガイシャプライズ）</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【一回面接！人柄重視！】セールスプロモーション【平均月収100万円以上！】</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社prorise（カブシキガイシャプライズ）</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都豊島区南池袋1-16-15 ダイヤゲート池袋5階</dd>
+
       <dt>都道府県</dt>
       <dd>大阪府</dd>
+
       <dt>市区町村</dt>
       <dd>豊島区</dd>
+
       <dt>郵便番号</dt>
       <dd>1710022</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 12000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事の魅力】<br>＜仕事も遊びも圧倒的に＞がモットー！<br>社員の平均年齢は25歳！平均月収は約100万円を越えることも！<br>この額に驚く方がほとんどです。<br>もちろんこの数字を出すために、努力は必須です。<br>北海道～鹿児島まで全国出張（毎週5日間単位）があり、数字を追いかけ、キツイこともあります。<br>しかし、当社は頑張っただけの評価・給与還元・経験がついてきます。<br>頑張りぬいた後の『スーパー達成感』をあなたも味わってみませんか？<br><br>【仕事内容】<br>「家庭向け浄水型ウォーターサーバー」の正規代理店として、ショッピングモール等に特設ブースを設け、販売・営業していただきます。お客様に対して、浄水型ウォーターサーバーの長所・魅力を提案・説明し、ご納得いただけたらその場でご契約となります。<br><br>■具体的な業務<br>・イベントブースの設営<br>・イベントでの集客<br>・商品のご案内<br>・重要事項の説明、ご成約<br>・その他(数字管理等)<br><br>■働く環境<br>・北海道～鹿児島まで宿泊を伴う全国出張あり<br>・3～5人のチームで営業・販売<br>・業務終了後も宿泊先で先輩社員に不明点をレクチャーしてもらうなど和気あいあいとしています！<br>・部署責任者は30歳、その他18～30歳の若手スタッフが活躍中！<br><br>■入社後の教育について<br>1ヶ月目：お客様へお声掛けし、ブースに人を集めることがメイン業務。<br>その後は先輩社員が契約対応までフォローします。<br>※上記の流れで先輩社員が契約した数字は新人に付けるようにしています。<br>※お声掛けのタイミングのルールやその他マニュアルから学んでいただきます<br><br>2カ月目：一人で契約までできるようになってきます。<br>不明点や困った時はみんなでフォローしながら営業・販売を行っていきます。<br><br>近年、家庭向けウォーターサーバー(宅配水)の市場は右肩上がりで成長していますが、物流コスト上昇による価格の高騰や環境問題(ペットボトルごみ)が話題となっています。そんな中、「浄水型ウォーターサーバー」がテレビCMやSNS広告、クチコミで注目を集め、認知度・需要が高まっており、成果が出しやすい商品です。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>10：00～21：00の間で実働8時間（シフト制）</dd>
+
       <dt>休暇・休日</dt>
       <dd>■週休2日制（シフト制／平日休み）<br>■年次有給休暇<br>■夏季休暇（合計7日間程度）<br>■年末年始休暇（合計7日間程度）<br>■慶弔休暇<br>■産前・産後休暇<br>■育児休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>■各種社会保険完備<br>■インセンティブ制度<br>■交通費・宿泊費全額支給<br>■役職手当<br>■特別賞与支給（個人の成績による／最高100万円）<br>■社員旅行（年3回）<br>■健康診断（年1回）<br>■服装・髪型・ネイル自由<br>■引っ越し時の仲介手数料補助（9割）<br>■家賃補助あり（入社1年後から、上限あり）<br>■社員寮（準備中）<br>■その他、社員満足度向上のために随時導入予定</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEprorise%EF%BC%88%E3%82%AB%E3%83%96%E3%82%B7%E3%82%AD%E3%82%AC%E3%82%A4%E3%82%B7%E3%83%A3%E3%83%97%E3%83%A9%E3%82%A4%E3%82%BA%EF%BC%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
