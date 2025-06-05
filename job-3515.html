@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜コクー株式会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【IT事務:EXCEL女子】首都圏4月入社1名のみ募集</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>コクー株式会社</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>東京都千代田区神田神保町3-29 帝国書院ビル5階</dd>
+
       <dt>都道府県</dt>
       <dd>兵庫県</dd>
+
       <dt>市区町村</dt>
       <dd>千代田区</dd>
+
       <dt>郵便番号</dt>
       <dd>1010051</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>2500000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>土日休みの完全週休二日制／有給消化率72.5％<br>データ入力など“Excel”を使用した事務ワークをお任せします。<br>研修が充実！時間有給あり<br><br>＜具体的な仕事内容＞<br>経験に合わせて、業務を担当していただきます。<br>研修で学んだExcelスキルを活かし、主にお客様先で業務に取り組みます。<br><br>まずは基礎的な業務からスタート！<br>▼簡単なデータ入力<br>▼グラフの作成や集計作業<br>▼資料やツールの作成<br>▼受発注処理<br><br>スキルが身に着いてきたら…<br>▼現状分析・ヒアリング<br>▼各種ツールの構築提案～作成<br>などExcelを使った改善・効率化を行い、お客様の業務をサポートします。<br><br>単に“作業”をするだけではなく、課題の抽出～アイデアを活かして施策を行えるので、課題解決しながら自分自身の成長も実感できます◎<br><br>★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆<br><br>【入社後の流れ】<br>まず8日間、Excelを中心に必要なスキルを身につける研修を実施。<br>その後は“事務未経験・Excel初心者”など、<br>一人ひとりのスキルにあった仕事をお任せ。<br><br>経験豊富な先輩がサポートするので「ブラインドタッチすらできなかった」というメンバーも、今ではスキルUPを叶えてイキイキと活躍中♪<br><br>【キャリアステップ】<br>＜“なりたい自分”に成長できる、多彩なキャリアパス！＞<br>「スキルUP後はExcelを活用した業務効率化」「多数点在するExceデータを一元管理」など、お客様からのリクエストにも柔軟にお応えできるように。<br><br>マネジメントや社員教育を担うリーダー職やメンター、VBA・BIなどを専門に行う部署への転向など多彩なキャリアパスをご用意しています！<br><br>「データを扱う仕事をしていきたい」「ゆくゆくはVBAなど専門の技術を磨きたい」など、面接ではあなたの想いを聞かせてください。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00～18:00（所定労働時間：8時間、休憩1時間）<br>※配属先によって異なります</dd>
+
       <dt>休暇・休日</dt>
       <dd>★年休124日以上／5連休以上もOK<br><br>・完全週休2日制（土日）<br>・祝日<br>・GW（カレンダー通り）<br>・年末年始休暇（12/30〜1/3）<br>・有給休暇（10日〜勤続年数に応じて最大20日）<br>・慶弔休暇<br>・介護休暇<br>・育休休暇<br>・子の看護休暇<br>・永年勤続休暇制度<br>・産前産後休暇（前倒し相談可）<br>・フリーバカンス休暇（3日／年）<br>・生理休暇<br>・妊産婦通院休暇<br>・レディース休暇<br>・リフレッシュ休暇（勤続年数に応じる）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備<br>・交通費支給（月上限15万円まで）<br>・資格取得支援（ベンダー資格から国家試験など、会社推奨資格の受講費用をサポート、お祝い金付与）<br>・表彰制度（年4回）<br>・企業型確定拠出年金制度<br>ベネフィット・ステーション加入<br>（国内12000のリゾート施設、スポーツジム、映画館利用優遇等、ご家族も利用可能）<br>・結婚お祝い金、出産お祝い金<br>・永年勤続表彰制度（3年、5年、～5年毎）<br>・社内インターン制度<br>・図書館<br>・健康診断 （女性は婦人科検診も隔年受診可）<br>・インフルエンザ予防接種（ご家族も可・最大3000円／1名）<br>・永年勤続休暇制度<br>・副業制度<br>・社員紹介制度<br>・WELCOMEBACK制度<br>・クリエイテイブワーク（サテライトワーク）制度※月16時間利用可<br>・TUNAG（社内報アプリ／社長ブログ／社員投稿）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E3%82%B3%E3%82%AF%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
