@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>機械・機構設計・金型設計｜株式会社アウトソーシングテクノロジー</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【機械・設備/東海エリア】経験活かせる★正社員★各種研修制度あり★大手メーカー等での勤務</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社アウトソーシングテクノロジー</dd>
+
       <dt>職種名</dt>
       <dd>機械・機構設計・金型設計</dd>
+
       <dt>勤務地</dt>
       <dd>茨城県ひたちなか市</dd>
+
       <dt>都道府県</dt>
       <dd>栃木県</dd>
+
       <dt>市区町村</dt>
       <dd>ひたちなか市</dd>
+
       <dt>郵便番号</dt>
       <dd></dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 6500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>配属先の業種は多岐に渡りますが、ご経験やスキルを活かせる配属先をご提案いたします。<br><br>【具体的には…】<br>・自動車のエンジン構造や流体CAE業務<br>・自動車のパワートレイン系（エンジン、ミッション等々）の生産設備の工程設計業務<br>・自動二輪製品の設計業務<br>・産業用設備装置の機械設計<br>・I-CADやケーラムを用いた機械設計及び電気設計業務<br>・自動車用エンジン部品の設計業務<br>・搬送設備に関する機械設計及び付帯業務<br>・減速機の製造工程における生産技術業務<br>・半導体用生産設備の組立、立上げ業務<br>など<br>※配属先は常に変動しています。<br><br>＜取引先＞<br>超大手電機メーカー、大手自動車メーカー、自動車系大手工作機械メーカー、自動車部品メーカー、世界的に有名な自動車完成車メーカー、大手機械メーカー　など<br><br>【充実の研修体制】<br>＜グループ会社のKENスクール＞<br>それぞれのお仕事で使用するツールの使用経験がなかったとしても、弊社にて、事前研修を受けていただき業務の準備が可能です。<br><br>＜無料のオンライン研修（希望者参加制）＞<br>土曜日に社員向けのオンライン研修を配信しています。ソフトウェア、機械、officeなど講座内容は社員向け掲示板で告知を行っています！<br><br>＜Eラーニングサイト利用可能！＞<br>社員向けのEラーニングサイトでは100種類以上の授業動画・参考情報が常に公開されています。資格取得準備や、将来関わってみたい業界知識に触れるなど、活用の仕方は自由です！<br><br>【正社員（無期雇用派遣）としての採用です】<br>・配属先顧客での常駐業務です<br>・弊社の正社員として、顧客企業で働く勤務形態です（無期雇用派遣）</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>例　8:00～17:00<br>（所定労働時間8時間、休憩1時間）<br>※配属先による</dd>
+
       <dt>休暇・休日</dt>
       <dd>週休2日制<br>長期休暇有<br>有給休暇（10日～勤続年数に応じて最大20日）<br>※会社カレンダー有<br>※配属先による</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>業績賞与：年2回の支給あり<br>確定拠出年金制度（401K）<br>家族手当<br>帰省旅費（規定あり）<br>単身赴任手当（一律5万円／月）<br>U・Iターン支援あり<br>時間外手当（1分単位）<br>通勤交通費 全額支給<br>資格取得祝い金<br>鳥人間コンテストへの出場<br>E-SPORTSサークル（AfterSixLeague所属）<br>フットサルサークル<br>借上寮制度<br>・家賃50％補助（上限あり）<br>・初期費用会社負担（規定あり）<br>・引越費用全額会社負担<br>・赴任交通費支給（規定あり）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd></dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%82%A6%E3%83%88%E3%82%BD%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
