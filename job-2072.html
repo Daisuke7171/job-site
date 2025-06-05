@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>施工管理・設備・環境保全｜株式会社テクノスマイル</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【大阪府／大阪市】経験者！施工管理！完全土日休み！年間休日120日以上！交通費支給あり！/26</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社テクノスマイル</dd>
+
       <dt>職種名</dt>
       <dd>施工管理・設備・環境保全</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府大阪市</dd>
+
       <dt>都道府県</dt>
       <dd>神奈川県</dd>
+
       <dt>市区町村</dt>
       <dd>大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd></dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4000000 ～ 5500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>あなたの経験とスキルを活かし、次世代を支える建設プロジェクトのインフラ設計・施工管理に携わりませんか？<br>このポジションでは、企画立案から設計、調達、工事管理までの全プロセスに関わることができます。効率的で持続可能な建設プロジェクトを実現するためのインフラ整備に取り組んでいただきます。<br><br>具体的には、施設計画の企画から施工に至るまで、最新技術を取り入れた建築プロジェクトの設計や工事監理に従事していただきます。建築、土木、電気の各分野を総合的に考慮し、持続可能で効率的なインフラを構築します。<br><br>～業務内容～<br>企画立案<br>・最新技術やトレンドを反映させた建物や施設の計画を作成し、効率的な施工プロジェクトを設計<br><br>設計<br>・建築、土木、電気設備に関する設計業務を担当し、効率性と生産性を考慮した施工プランを作成<br><br>調達<br>・必要な設備や資材の選定、購買プロセスの管理、及びコスト削減を考慮した調達計画の実施<br><br>工事管理<br>・施工現場での進行状況を監視し、品質と納期を保証。安全基準を遵守し、スムーズな工事が行われるように調整</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>08:30〜17:30<br>所定労働時間：8時間<br>休憩：60分</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休2日制（土・日・祝）<br>※配属先のカレンダーに準じ、繁忙期の土日出社の可能性あり<br>※就業後のギャップがないよう、<br>　土日出社可能かどうかを面接時にお伺いすることがございます。<br><br>■GW<br>■夏季休暇<br>■年末年始休暇<br>■有給休暇（入社半年後10日〜勤続年数に応じて最大20日。取得率100%）<br>■産前・産後休暇（取得・復職実績あり）<br>■育児休暇（取得・復職実績あり）<br>■慶弔休暇<br>■その他、特別休暇あり</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>◇ 雇用保険<br>◇ 厚生年金<br>◇ 労災保険<br>◇ 健康保険<br>◇ 交通費支給あり<br>◇引越し・赴任費用負担（入社に際し転居を伴う方が対象）<br>◇キャリアサポート支援制度<br>◇スキルアップ研修<br>◇社内交流会（年2回懇親会費用補助）<br>◇各種社内同好会（ゴルフ、モーターレース、アウトドア等）<br>◇自社登録ポータルサイト（登録で入社後に現金化可能なポイントを付与）<br>◇単身寮完備<br>◇企業型確定拠出年金<br>◇寮費補助あり<br>└5万円以下の物件の場合、一律2万5000円控除<br>└5万円以上の物件の場合、半額控除<br> <br>※感染症対策として以下の取り組みを行っています<br>◇ オンライン選考OK</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>建築・土木・建設</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%86%E3%82%AF%E3%83%8E%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

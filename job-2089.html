@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人営業｜株式会社イッセイカネコ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>リフォーム工事営業　売上ノルマなし／100％反響営業／誠実な対応でお客様のご要望にお応えしています。</h1>
     </div>
   </header>
@@ -146,45 +152,62 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社イッセイカネコ</dd>
+
       <dt>職種名</dt>
       <dd>個人営業</dd>
+
       <dt>勤務地</dt>
       <dd>東京都世田谷区千歳台3-3-16　HN千歳台ビル5F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>世田谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1570071</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 5000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>一般家庭の水回りなどを中心にリフォームを手がける当社。<br>何よりも大切にしているのは、お客様に喜んでいただくこと。<br>一軒一軒のご依頼に誠実で丁寧な対応を心がけています。<br><br>そんな当社では、現在16名の社員が活躍中！<br>依頼数増加に伴い、【営業スタッフ】を募集しています。<br><br>普通自動車免許をお持ちで、営業経験のある方は是非！<br>経験年数や業界は問いません。<br>営業計画の立案や顧客対応などの基本できればOKです。<br>CADができる方は歓迎致します。<br>転勤もないので、腰を据えて働きやすい職場です。<br><br>リフォームを検討しているお客様に対し、現地調査とニーズに合わせた提案を行います。<br><br>＜業務の流れ＞<br>▼電話・メールでの案件受注<br>100％反響営業。事務スタッフから連絡がきます。<br>▼お客様宅を訪問<br>現場調査・打ち合わせを行います。<br>▼見積書作成<br>▼契約<br>▼工事完了後アフターフォロー<br><br>＜担当案件＞<br>住宅リフォームに関する幅広い案件をご担当いただきます。<br>■既存住宅設備・機器の交換（トイレ、水栓、給湯器など）<br>■間取り変更など建築の知識が必要な工事<br>■マンションスケルトン工事　など<br>まずは簡単な案件からお任せするので安心してくださいね。<br><br>■100％反響営業。売上ノルマもありません。<br>受注は、配布したチラシを見たお客様からお問い合わせをいただく形が基本。<br>飛び込みやテレアポもないので、お客様のご要望を叶えることに専念できます。</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>8:45～17:45（実働8時間、休憩60分）</dd>
+
       <dt>休暇・休日</dt>
       <dd>■隔週休2日制（毎週日曜＋隔週水曜）<br>■祝日<br>■ゴールデンウィーク<br>■夏季休暇（6日）<br>■年末年始休暇（8日）<br>■有給休暇　※入社6ヵ月後に10日付与（最高40日）<br>■産前産後休暇<br>■育児休暇（取得・復職実績あり）<br>■長期・連続休暇<br>■慶弔休暇<br>◎年間休日105日<br>◎5日以上の連休を取得可能</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり
 受動喫煙対策（詳細）： 社内喫煙スペースで電子タバコは喫煙可能です。</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>社会保険完備<br>資格取得支援<br>スキルアップ講習<br>外部講習</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A4%E3%83%83%E3%82%BB%E3%82%A4%E3%82%AB%E3%83%8D%E3%82%B3" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

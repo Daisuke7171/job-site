@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>一般事務・営業事務｜生和コーポレーション株式会社（西日本）</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>東大阪市　長田駅近く　工事部門・品質管理部門の一般事務職（パート）募集</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>生和コーポレーション株式会社（西日本）</dd>
+
       <dt>職種名</dt>
       <dd>一般事務・営業事務</dd>
+
       <dt>勤務地</dt>
       <dd>大阪府東大阪市長田東3-1-17</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>東大阪市</dd>
+
       <dt>郵便番号</dt>
       <dd>5770012</dd>
+
       <dt>雇用形態</dt>
       <dd>アルバイト・パート</dd>
+
       <dt>給与</dt>
       <dd>2000000 ～ 2500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>不動産有効活用の企画から賃貸マンション他各種ビル、商業施設の施工会社の事務職として、特に工事部門や品質管理部門のオフィス内でのサポート事務業務を行って頂きます。工事系部門社員の業務がスムーズに進むための事務業務全般をお任せします。同一建物に複数の部署があり、各フロアに事務職がおりコミュニケーションがとれるため異業界の方でも比較的早く慣れて頂ける環境です。<br><br>＜具体的には＞<br>・各種定型の社内帳票<br>・勤怠管理<br>・ExcelやWordなどの表や文書の作成<br>・部内データ管理入力作業<br>・資料の作成補助<br>・施工図面や品質安全書類他の整理<br>・電話や来客一次応対<br>・本社総務経理部門との連携事務業務<br>・備品管理　など</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>月曜日～金曜日（祝日を除きます）のうち週3～5日<br>1日6～8時間を想定しています<br>（勤務時間例）<br>8：30～16：30（勤務7時間休憩1時間）<br>9：00～17：00（勤務7時間休憩1時間）<br>9：30～17：30（勤務7時間休憩1時間）<br>9：00～16：00（勤務6時間休憩1時間）<br>9：30～16：30（勤務6時間休憩1時間）<br>などその他ご希望踏まえ可能です。上限はフルタイム勤務（1日8時間）も可能です。</dd>
+
       <dt>休暇・休日</dt>
       <dd>完全週休二日（土日祝）<br>その他週3～4日勤務の方は月曜日～金曜日の出勤日以外はお休みとなります。<br>夏期・年末年始は全社員が通常の公休日と合わせ1週間程度の連休となります。<br><br>（その他休暇）<br>有給休暇は入社半年以降から出勤日数に応じた法定に準じて付与します。<br>育児介護休業制度</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>雇用保険・厚生年金・健康保険・労働保険<br>※勤務日数・時間及び法定の範囲内で加入保険についてはご相談可能です。</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>事務・オフィスワーク</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E7%94%9F%E5%92%8C%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%EF%BC%88%E8%A5%BF%E6%97%A5%E6%9C%AC%EF%BC%89" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

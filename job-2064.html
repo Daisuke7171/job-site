@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜株式会社エコリングネクスト</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【買取スタッフ（未経験OK）】社会に誇れる仕事『買取専門店エコリング』新会社設立スタッフ募集</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社エコリングネクスト</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>北海道札幌市豊平区福住ニ条1丁目3-3</dd>
+
       <dt>都道府県</dt>
       <dd>北海道</dd>
+
       <dt>市区町村</dt>
       <dd>札幌市</dd>
+
       <dt>郵便番号</dt>
       <dd>620042</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>4500000 ～ 8000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【おすすめポイント】<br>・「不動産業×リユース業×片づけ業」の融合で他社にない圧倒的なサービス<br>・オープニング！<br>・未経験活躍中<br>・高収入◎昇給・賞与あり<br>・試用期間中、条件変更なし<br>・月9日以上休み<br>・社員割引あり<br><br><br>店舗スタッフとして、<br>商品の査定や買取をお願いします。<br><br>具体的に…<br>来店されたお客様のお品を、<br>・鑑定・査定をして買取価格を決定<br>・お客様にご説明<br>・価格に納得されたら買取成立<br>・配送の準備 など<br>・不動産、お片づけの要望をヒアリング<br>・要望あれば不動産部、片づけ部へお繋ぎ<br>業界未経験の方でも大丈夫。<br>まずは「笑顔」をご用意ください◎<br><br>☆☆誰でも最初は未経験☆☆<br>お仕事内容は決して難しくないです＾＾<br>あなたの頑張りをしっかり見ています。<br><br>☆☆昇給・賞与あり☆☆<br>あなたの挑戦と努力をを正当に評価いたします。<br>頑張り次第でグングン昇給します！<br><br><br>☆☆定着率バツグン☆☆<br>2022年度　社員退職1名<br>2023年度　社員退職2名<br>2024年度　社員退職0名<br>（現在従業員数　代表1名　社員14名　パート3名　在宅ワーカー3名　計21名）<br><br>入社後、OJTや研修などはもちろん、<br>Ｕ・Ｉターン希望の方は家賃補助の<br>支給も可能です。<br>多くの社員が腰を据えてお仕事できます◎</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:45～18:45<br>1日の労働時間：8時間、休憩1時間<br>1ヶ月単位の変形労働時間制（週の平均労働時間40時間以下）<br><br>商業施設内の店舗の場合は早番9:00～18:00・<br>遅番11：00～20：00の完全シフト制です。</dd>
+
       <dt>休暇・休日</dt>
       <dd>【休日休暇】<br>・年間休日115日<br>・完全シフト制（週休2日）<br>・年次有給休暇<br>（入社半年後に10日付与〜勤続年数に応じて最大20日)<br>・年末年始<br>・夏季休暇<br>（最低5日以上の大型休暇奨励）<br>・慶弔<br>・特別<br>・産前・産後休暇</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・昇給・賞与あり<br>・健康保険<br>・厚生年金<br>・雇用保険<br>・労災保険<br>・社員割引<br>・交通費支給<br>・自主学習補助金<br>（業務に役立つ勉強を最大10万円まで補助します）<br>・家賃補助の支給（規定有）<br>※遠距離の方で入社に転居を伴う場合のみ<br>※全国転勤あり(相談可)</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%82%B3%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%8D%E3%82%AF%E3%82%B9%E3%83%88" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
