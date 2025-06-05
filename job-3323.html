@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>販売・サービススタッフ｜高野商事有限会社</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【リユースジュエリー販売（未経験OK）】ジュエリー・ブランド品などの販売・買取★インセンティブあり</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>高野商事有限会社</dd>
+
       <dt>職種名</dt>
       <dd>販売・サービススタッフ</dd>
+
       <dt>勤務地</dt>
       <dd>東京都江東区東陽6丁目3-2 イ-ストモ-ル 1F</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>江東区</dd>
+
       <dt>郵便番号</dt>
       <dd>1350016</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4500000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>【仕事内容】<br>新品のジュエリー専門店のようにきれいなお店で新品仕上げしたリユースジュエリー、ブランドバック、高級腕時計などの販売、陳列、値付け、製品化をしていただきます。あわせてAIも使い、商品の査定、買取なども徐々に身に付けながら活躍していただきます。営業ノルマはありませんが、店舗ごとの月間営業目標を達成することでインセンティブが発生するので、自分から仕事を求めて動く方にマッチしています。さらに店長を目指す方にはショップの運営を通じて、店舗全体の経営を学んでいただきます。<br>直近で大規模な都市再開発エリアの新築ビル・ショッピング街への出店を準備しています。<br><br>＜具体的な仕事内容＞<br>・ブランドリユースショップでの接客、お客様対応<br>・査定、買取、製品化、陳列、販売、業者への発送など。<br>・販促企画、店舗管理　など<br><br>＜取扱商品＞<br>・ジュエリー、貴金属<br>・ブランド品<br>・時計<br>・お酒<br>・金券<br>・骨董品<br>・食器<br>・雑貨　など、幅広く取り扱っています。<br><br>＜客層＞<br>・個人のお客様<br>※老若男女、幅広い層のお客様がご来店されます。<br><br>＜勤務時の服装＞<br>男女とも、年配のお客様に失礼のない服装<br>NG：接客にふさわしくない服装・濃すぎる化粧・匂いの強い香水<br><br>【1日の流れ】<br>9:45　出社<br>▼<br>10:00　店舗にて接客、買取・販売・商品整理など<br>▼<br>12:00　休憩1時間　交代制<br>▼<br>19:00　店舗にて接客、買取・販売・商品整理など<br>▼<br>19:15　退勤<br><br>【入社後の流れ】<br>入社後、社長と一緒に各店舗を回りながら、買取ビジネスの仕組みや基本業務について学んでいただきます。<br>▼<br>実際の店舗で、ベテランスタッフが査定のポイントやノウハウなどを丁寧にレクチャーいたします。商品知識研修のため、大阪FC本部での宿泊研修（約1週間）が行われることもあります。<br>1人で業務が進められるようになるまで、約半年を想定しております。<br><br>【キャリアステップ】<br>・未経験入社2年目の35歳で店長代理に就任<br>・入社3年目以降に店長に就任<br><br>【先輩社員の前職例】<br>・靴の販売スタッフ<br>・大手時計メーカー系列会社の販売促進、商品企画　など<br>・各種リユース業経験者（ブランドに限りません）<br>・有名コーヒー専門店、バリスタ</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9：45～19:15<br>所定労働時間：8時間～8時間30分、休憩1時間<br>1年単位の変形労働時間制（週の平均労働時間40時間以下）</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休二日制（シフト制）<br>・夏季休暇（6日程度）<br>・年末年始休暇（6日程度）<br>・年次有給休暇（10日〜勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・昇給年1回（4月）<br>・インセンティブ<br>・交通費支給（上限月30,000円）<br>・役職手当<br>・残業手当（100％支給）<br>・定年制度（60歳）</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E9%AB%98%E9%87%8E%E5%95%86%E4%BA%8B%E6%9C%89%E9%99%90%E4%BC%9A%E7%A4%BE" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

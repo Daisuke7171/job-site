@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>キャリアカウンセラー・人材コーディネーター｜株式会社ミギナナメウエ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>【キャリアアドバイザー（業界未経験OK）】20代向け転職支援／求職者ファースト</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社ミギナナメウエ</dd>
+
       <dt>職種名</dt>
       <dd>キャリアカウンセラー・人材コーディネーター</dd>
+
       <dt>勤務地</dt>
       <dd>東京都渋谷区渋谷東1-22-11 東京セントラル渋谷5階</dd>
+
       <dt>都道府県</dt>
       <dd>東京都</dd>
+
       <dt>市区町村</dt>
       <dd>渋谷区</dd>
+
       <dt>郵便番号</dt>
       <dd>1500011</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3500000 ～ 6000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>20代向けのキャリア支援事業「よりそい転職」を運営する当社のキャリアアドバイザーとして、 求職者の転職サポートをお任せします。<br><br><br>&lt;具体的な仕事内容&gt;<br>・求職者の方へ職業紹介<br>・面談<br>・選考対策<br>・選考の日程調整<br>・面接後のフィードバック<br>・内定後のフォロー、入社後フォロー<br><br><br>単なる求人紹介ではなく、まずは求職者の理想の働き方を汲み取り、 その上で転職市場の状況やキャリア設計の観点から本質的なアドバイスを行います。<br>その後、適切な求人の紹介から面接対策まで一貫して支援します。<br>転職を支援した求職者から別の求職者の紹介をいただけるくらい、 満足度の高いキャリアサポートを目指しましょう!<br><br><br><br><br>&lt;営業手法&gt;<br>自社で運用している広告からお問合せがあった求職者にアプローチします。<br><br><br>&lt;目標の目安&gt;<br>毎月の新規面談数:20~25件 毎月の成約数:4名〜<br><br><br>&lt;1日の流れ(例)&gt;<br><br>12:00 出社<br>▼<br>・面談6件<br>・書類作成<br>▼<br>21:00 退社</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>フレックスタイム制（1日の標準労働時間：8時間、休憩1時間）<br>コアタイム：13:00〜18:00</dd>
+
       <dt>休暇・休日</dt>
       <dd>・完全週休二日制（土日）<br>・祝日<br>・年末年始休暇<br>・夏季休暇<br>・慶弔休暇<br>・有給休暇（初年度10日〜勤続年数に応じて最大20日）<br>・育児休暇<br>・産前産後休暇<br>・就業3年で休暇3日付与（以降3年経過ごとに3日付与）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 禁煙</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（健康／労災／雇用／厚生年金）<br>・昇給年4回<br>・賞与<br><br>※会社業績・個人成果による<br>・役職手当<br>・交通費支給（上限月3万円）<br>・時間外手当（超過分を支給）<br>・服装自由<br>・PC支給<br>・「オフィスでおかん」による食事提供</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>営業</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%9F%E3%82%AE%E3%83%8A%E3%83%8A%E3%83%A1%E3%82%A6%E3%82%A8" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る

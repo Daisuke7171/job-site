@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>宿泊施設・ホテル｜株式会社Ｅｄｅｙａｎｓ</title>
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* 全体のスタイル */
+    /* ――― 全体のスタイル ――― */
     body {
       font-family: "Noto Sans JP", sans-serif;
       background: #f2f5f8;
@@ -63,19 +63,19 @@
       align-items: center;
       justify-content: center;
     }
-    .banner__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 1em;
-      flex-shrink: 0;
-    }
     .banner h1 {
       margin: 0;
       font-size: 1.4em;
       color: #0073aa;
     }
+    .banner__icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 1em;
+      color: #0073aa;
+    }
 
-    /* コンテンツ領域 */
+    /* ――― コンテンツ領域 ――― */
     .container {
       max-width: 720px;
       margin: 1.5em auto;
@@ -104,6 +104,8 @@
       margin: 0.4em 0 0;
       line-height: 1.6;
     }
+
+    /* ――― 応募ボタン ――― */
     .apply-button {
       display: inline-block;
       margin-top: 1.2em;
@@ -117,6 +119,8 @@
     .apply-button:hover {
       background: #005f8d;
     }
+
+    /* ――― モバイル時の調整 ――― */
     @media (max-width: 600px) {
       .container {
         padding: 0.8em;
@@ -135,10 +139,12 @@
 <body>
   <header>
     <div class="banner">
-      <!-- GitHub の raw URL を指定してアイコンを表示 -->
-      <img class="banner__icon"
-           src="https://raw.githubusercontent.com/Daisuke7171/job-site/main/assets/handshake-icon.svg"
-           alt="握手マーク ロゴ">
+      <!-- ■ ロゴは必ずルート配下の /assets/handshake-icon.svg を参照する ■ -->
+      <img
+        class="banner__icon"
+        src="/assets/handshake-icon.svg"
+        alt="握手マーク ロゴ"
+      >
       <h1>ホテル客室清掃の現場責任者／千葉</h1>
     </div>
   </header>
@@ -146,44 +152,61 @@
   <div class="container">
     <h2>求人詳細</h2>
     <dl class="info">
-      <!-- 以下、職種情報などを出力… -->
       <dt>会社名</dt>
       <dd>株式会社Ｅｄｅｙａｎｓ</dd>
+
       <dt>職種名</dt>
       <dd>宿泊施設・ホテル</dd>
+
       <dt>勤務地</dt>
       <dd>千葉県浦安市舞浜２６−５</dd>
+
       <dt>都道府県</dt>
       <dd>福岡県</dd>
+
       <dt>市区町村</dt>
       <dd>浦安市</dd>
+
       <dt>郵便番号</dt>
       <dd>2790031</dd>
+
       <dt>雇用形態</dt>
       <dd>正社員</dd>
+
       <dt>給与</dt>
       <dd>3000000 ～ 4000000 (年収)</dd>
+
       <dt>仕事内容</dt>
       <dd>Edeyans は非効率なホテルのオペレーションをデジタル化するベンチャーです。<br><br>自社で開発しているホテルのフロント業務と客室清掃をシームレスに連携する「Jtas」というプロダクトを用いて、ホテル客室清掃のゲームチェンジャーを目指しています。<br><br>実際に自社プロダクトを駆使して、各ホテル現場オペレーション責任者を担ってくださる方を募集します！<br><br>《業務内容》<br><br>★各ホテルの責任者と連携して、よりクオリティ高い清掃品質の提供、より良いチーム作りを行なっていただきます。 5～20名程度のスタッフが活躍するホテル清掃現場で、清掃業務のマネジメントとメンバーの育成をお任せします。<br><br>・客室清掃管理業務<br>・インスペクション<br>・新人トレーニング<br>・採用面接<br>・チームマネージメント</dd>
+
       <dt>勤務時間・曜日</dt>
       <dd>9:00~18:00（実労働8時間、休憩1時間）<br>もしくは<br>8:30~17:30（実労働8時間、休憩1時間）</dd>
+
       <dt>休暇・休日</dt>
       <dd>年間休日118日<br>・休日：月に10日（2月・8月は9日）<br>※ホテル清掃は365日稼働のためGW、お盆、年末年始休暇分のおやすみはシフトにて調整いたします。<br>・有給休暇（10日～勤続年数に応じて最大20日）</dd>
+
       <dt>受動喫煙対策</dt>
       <dd>受動喫煙対策： 喫煙スペースあり</dd>
+
       <dt>待遇・福利厚生</dt>
       <dd>・社会保険完備（雇用・健康・労災・厚生）<br>・交通費全額支給</dd>
+
       <dt>職種カテゴリー</dt>
       <dd>販売・接客・サービス</dd>
 
-      <!-- 掲載画像があれば表示 -->
+      <!-- 掲載画像 があれば表示 -->
       
 
-      <!-- 「応募」リンクがあれば表示 -->
-      
+      <!-- 「応募URL」を必ず formURL に差し替える -->
+      <dt>応募</dt>
+      <dd>
+        <a class="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLScMq_bf90BSVy21kV2OxXPMw-oO7GIzbYGAbqG_QBQ1QoICQA/viewform?usp=pp_url&entry.799972674=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%EF%BC%A5%EF%BD%84%EF%BD%85%EF%BD%99%EF%BD%81%EF%BD%8E%EF%BD%93" target="_blank">
+          📝 この求人に応募する
+        </a>
+      </dd>
     </dl>
 
-    <!-- 求人一覧へのリンク -->
+    <!-- ページ下部に一覧ページへ戻るリンク -->
     <p style="text-align:center; margin: 2em 0;">
       <a href="/jobs.html" style="color:#0073aa; text-decoration:none;">
         ← 求人一覧に戻る
